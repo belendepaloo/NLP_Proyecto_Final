@@ -1,0 +1,126 @@
+\documentclass[11pt]{article}
+\usepackage[review]{acl}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{inconsolata}
+\usepackage{graphicx}
+
+\title{Membership Inference Attack en Large Languaje Models}
+
+\author{Isabel Castañeda \and Belén Depalo \and Francesca Ragonesi \and Isidro Valeriano \and Florencia Zoffi \\
+  Procesamiento del Lenguaje Natural \\
+  \texttt{\{email1, email2, email3, email4, email5\}@dominio.com}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+La adopción masiva de modelos de lenguaje de gran escala (LLMs) ha intensificado 
+los debates sobre copyright y la influencia de un texto de entrenamiento sobre las salidas de un modelo. Esto se debe principalemnte a que los datos utilizados para 
+entrenarlos están en su mayoría protejidos bajo leyes de derechos de autor y propiedad intelectual. El problema de Membership Inference 
+Attack (MIA) consiste en determinar, dado un texto y acceso de caja negra a un 
+modelo, si ese texto formó parte del corpus de entrenamiento \citep{shokri2017membership}. 
+En este trabajo, se abordará este problema combinando múltiples métodos 
+complementarios; desde pruebas de preferencia por paráfrasis hasta señales de 
+memorización y likelihood, para construir una estimación probabilística robusta 
+de pertenencia al corpus original de entrenamiento. Los métodos serán evaluados sobre los datsets de WikiMIA, BookTection y artículos periodisticos, entre otros, teniendo en cuenta el grado de confianza que se tiene en ellos. Se discutirán, además, las limitaciones inherentes que traen consigo los métodos utilizados, producto de la dificultad intrinseca del problema que se intenta resolver.
+\end{abstract}
+
+\section{Introducción}
+El problema de Membership Inference Attack (MIA) se define como: \textit{"given 
+a data record and black-box access to a model, determine if the record was in 
+the model's training dataset"} \citep{shokri2017membership}. Si bien este 
+concepto fue definido originalmente en el contexto del aprendizaje automático, 
+en este trabajo es llevado al campo del procesamiento del lenguaje natural.
+
+Este problema es inherentemente complejo por varias razones. En primer lugar, 
+no existe una prueba matemática de que un texto haya estado en el entrenamiento 
+de un modelo: a diferencia de otros problemas de verificación formal, la 
+membresía en un corpus no deja una huella observable directa. En segundo lugar, 
+construir un ground truth confiable es difícil dado que las empresas que 
+desarrollan los LLMs más relevantes no hacen públicos sus datasets de 
+entrenamiento \citep{duan2024membership}. Finalmente, los enfoques que 
+permitirían pruebas más precisas (como analizar los pesos del modelo 
+directamente o entrenar modelos desde cero con conjuntos controlados) son 
+computacionalmente prohibitivos en un contexto académico universitario. Por 
+estas razones, cualquier método de MIA produce necesariamente evidencia 
+probabilística e indirecta, lo cual motiva el enfoque combinado que se propone 
+en este trabajo.
+
+La pregunta de investigación concreta que se responderá es: dado un conjunto de 
+textos de cierto autor y acceso de caja negra a un modelo, ¿cuál es la 
+probabilidad de que esos textos hayan sido parte del corpus de entrenamiento? 
+Este problema es relevante porque los datasets de entrenamiento de los LLMs son 
+en su mayoría privados, lo que genera debates legales vinculados al copyright y 
+dificulta la auditoría externa de los modelos.
+\citep{duan2024membership}.
+
+Aplicar MIA sobre LLMs presenta desafíos particulares: los modelos más grandes 
+generalizan mejor y memorizan menos \citep{duan2024membership}, y construir un 
+ground truth confiable es no trivial dado que la fecha de publicación como proxy 
+de membresía introduce sesgos de distribución temporal \citep{das2024blind}. 
+Debido a estas limitaciones, el objetivo no será obtener una prueba 
+determinística de pertenencia, sino combinar múltiples señales parciales de 
+evidencia para construir una estimación probabilística más robusta que cualquier 
+método individual.
+
+
+\section{Estado del Arte}
+
+\subsection{Fundamentos de MIA}
+% Shokri et al. (2017), Carlini et al. (2023)
+\subsection{Métodos Black-Box y Limitaciones del Ground Truth}
+% DE-COP (Duarte et al., 2024), Das et al. (2024), Duan et al. (2024), SimMIA (Yi et al., 2026)
+\subsubsection{DE-COP}
+DE-COP \citep{duarte2024decop} genera variantes alteradas de un fragmento 
+de texto reemplazando palabras por sinónimos, y le pide al modelo que identifique 
+el original. La premisa es que un modelo que vio el texto durante el entrenamiento 
+lo identificará consistentemente, por ley de grandes números. El método opera en 
+modo estrictamente black-box y no requiere acceso a probabilidades del modelo. 
+Su principal limitación es que depende de memorización: un modelo que generaliza 
+bien no debería recordar pasajes específicos aun habiéndolos visto, lo que puede 
+producir falsos negativos en modelos de gran escala \citep{duan2024membership}.
+
+\subsection{Métodos Grey-Box}
+% Min-K% (Shi et al., 2024), Min-K%++ (Zhang et al., 2025), ReCaLL (Xie et al., 2024)
+
+
+
+\section{Metodología}
+
+\subsection{Métodos}
+% Descripción concisa de cada método: DE-COP, likelihood/memorización,
+% CAMIA, DUALTEST, Min-K%, Min-K%++
+% Una o dos oraciones por método
+
+\subsection{Datasets}
+% Wikipedia/WikiMIA, BookTection, noticias actuales
+\subsubsection{Wikipedia}
+Para llevar a cabo los experimentos, se necesita construir un dataset ground truth, donde esté definido qué textos son miembros y cuáles no. Nos vamos a aferrar al ‘saber general’ de que los grandes modelos fueron entrenados con información de Wikipedia, por lo que teniendo en cuenta la fecha de publicación de los modelos, se van a seleccionar artículos anteriores a esa fecha para evaluar verdaderos positivos y falsos negativos, mientras que los artículos posteriores funcionarán como verdaderos negativos y falsos positivos. Este dataset será usado para calibrar los métodos, ya que es el que ofrece mayor certeza sobre si fue usado o no en el entrenamiento. Esta misma lógica es la que sustenta WikiMIA (Shi et al., 2024), un benchmark que formaliza este enfoque usando artículos creados antes de 2017 como miembros y artículos posteriores a 2023 como no miembros, y que también consideraremos en nuestros experimentos. 
+
+\subsubsection{Noticias, textos actuales}
+Con la misma lógica de Wikipedia, se usa de forma contraria noticias y textos actuales que tenemos la garantía que el LLM no fue entrenado con el mismo. Esto nos permite detectar falsos positivos.
+
+\subsubsection{BookTection}
+Utilizado por el paper de DE-COP. Como fue mencionado anteriormente, el paper original de DE-COP posee asociado un dataset que ya tiene los extractos de texto originales, de obras como “1984” de George Orwell o “A tale of two cities” de Charles Dickens, junto con los modificados y el label de si el modelo es miembro o no del corpus de entrenamiento. Este dataset no se considera tan confiable. Los resultados obtenidos con este dataset entonces serán comparados con los obtenidos con el modelo calibrado. 
+
+
+\section{Evaluación}
+% AUC-ROC, TPR/FPR, Accuracy/Precision/Recall/F1
+% Combinación de scores: suma ponderada vs promedio
+Para la calibración con los textos que son “ground truth” se planea usar métricas de clasificación como Accuracy, Precision, Recall y F1. En los casos que se devuelve un score, una alternativa es plantear un threshold y de ahí hacer una clasificación como “miembro” y “no miembro”. Además, se plantean usar evaluaciones que plantean los papers como AUC-ROC Curve, TPR/FPR para evitar un threshold arbitrario. 
+Queda en discusión todavía si el score final que es la probabilidad final se planteará como una suma ponderada de los métodos o si se hará un promedio de los mismos
+
+\section*{Limitaciones}
+% Distribution shift temporal, dependencia de logprobs en métodos grey-box,
+% limitación de memorización en modelos que generalizan bien (Duan et al.)
+
+\section*{Agradecimientos}
+% Opcional
+
+\bibliography{custom}
+
+\end{document}
