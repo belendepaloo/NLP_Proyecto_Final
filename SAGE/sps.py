@@ -11,29 +11,21 @@ class SPS:
         - Hook point: blocks.12.hook_resid_post
     SPS = cosine_similarity(SAE(original), SAE(candidate))
     """
-    def __init__ (self, model_name: str = "gemma-2b", sae_release: str = "gemma-2b-res-jb",
-        sae_id: str = "blocks.12.hook_resid_post", device: str | None = None):
-
+    def __init__(self, model_name: str = "gemma-2b", sae_release: str = "gemma-2b-res-jb",
+             sae_id: str = "blocks.12.hook_resid_post", device: str | None = None):
         if device is None:
-            if torch.cuda.is_available():
-                device = "cuda"
-            elif torch.backends.mps.is_available():
-                device = "mps"
-            else:
-                device = "cpu"
-
+            device = "cuda" if torch.cuda.is_available() else "cpu"
         self.device = device
         self.hook_point = sae_id
 
         print(f"[SPS] Loading Gemma model on {device}...")
-
-        print("[SPS] Loading Gemma...")
-        self.model = HookedTransformer.from_pretrained(model_name, device=device)
+        self.model = HookedTransformer.from_pretrained(model_name, device=device, dtype=torch.float16)
 
         print("[SPS] Loading SAE...")
-        sae, _, _= SAE.from_pretrained(release=sae_release,  sae_id=sae_id,  device=device)
-        print("[SPS] SAE loaded!")
+        sae, _, _ = SAE.from_pretrained(release=sae_release, sae_id=sae_id, device=device)
         self.sae = sae[0] if isinstance(sae, tuple) else sae
+        self.sae = self.sae.to(torch.float16)
+        print("[SPS] SAE loaded!")
 
     def score(self, original: str, candidate: str) -> float:
 
@@ -55,9 +47,9 @@ class SPS:
                 prepend_bos=True,
             )
             _, cache = self.model.run_with_cache(tokens)
-            hidden = cache[self.hook_point]
+            hidden = cache[self.hook_point].to(torch.float16)
             if hidden.dim() == 3:
-                hidden = hidden.mean(dim=1)
+                hidden = hidden[:, 1:, :].mean(dim=1)
             features = self.sae.encode(hidden)
             if features.dim() > 1:
                 features = features.squeeze()

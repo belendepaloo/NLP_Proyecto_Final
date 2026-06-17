@@ -1,8 +1,9 @@
-from segmenter import DocumentSegmenter
-from paraphraser import Paraphraser
-from wordsim import WordSimilarity
-from selector import CandidateSelector
-from sps_light import SPSLight
+from .segmenter import DocumentSegmenter
+from .paraphraser import Paraphraser
+from .wordsim import WordSimilarity
+from .selector import CandidateSelector
+# from .sps_light import SPSLight
+from .sps import SPS
 
 
 class SAGE:
@@ -18,13 +19,15 @@ class SAGE:
     -> selector: max(SPS - WordSim)
     """
 
-    def __init__(self, use_sps_light: bool = True):
+    def __init__(self, device: str | None = None):
         self.segmenter = DocumentSegmenter()
+        self.sps = SPS(device=device)
         self.paraphraser = Paraphraser()
         self.wordsim = WordSimilarity()
         self.selector = CandidateSelector()
 
-        self.sps = SPSLight() if use_sps_light else None
+        # self.sps = SPSLight() if use_sps_light else None
+        
 
     def semantic_persistence(self, original: str, candidate: str) -> float:
         if self.sps is None:
