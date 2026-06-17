@@ -1,9 +1,9 @@
-from .segmenter import DocumentSegmenter
-from .paraphraser import Paraphraser
-from .wordsim import WordSimilarity
-from .selector import CandidateSelector
-# from .sps_light import SPSLight
-from .sps import SPS
+from segmenter import DocumentSegmenter
+from paraphraser import Paraphraser
+from wordsim import WordSimilarity
+from selector import CandidateSelector
+# from sps_light import SPSLight
+from sps import SPS
 
 
 class SAGE:
