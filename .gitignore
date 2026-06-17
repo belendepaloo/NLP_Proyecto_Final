@@ -68,7 +68,6 @@ Desktop.ini
 # ==========================================
 
 **/Raw Texts/*.html
-**/Datasets/
 **/__pycache__/
 *.pyc
 .ipynb_checkpoints/
