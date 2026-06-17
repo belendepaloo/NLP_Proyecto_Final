@@ -62,3 +62,13 @@ Desktop.ini
 # ==========================================
 
 .DS_Store
+
+# ==========================================
+# Textos crudos html
+# ==========================================
+
+**/Raw Texts/*.html
+**/Datasets/
+**/__pycache__/
+*.pyc
+.ipynb_checkpoints/
