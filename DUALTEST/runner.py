@@ -1,14 +1,14 @@
 
 import pandas as pd
-
-from DUALTEST.text_utils import read_text, split_text_for_dualtest
-from DUALTEST.metrics import (
+from pathlib import Path
+from text_utils import read_text, split_text_for_dualtest
+from metrics import (
     run_length_score,
     edit_similarity,
     first_word_match,
     token_overlap,
 )
-from DUALTEST.hf_model import generate_completion
+from hf_model import generate_completion
 
 
 def run_dualtest_row(
@@ -18,7 +18,8 @@ def run_dualtest_row(
     prefix_ratio=0.5,
     max_new_tokens=64
 ):
-    text = read_text(row["file_path"])
+    path = Path("..") / row["file_path"]
+    text = read_text(path)
 
     prefix, continuation = split_text_for_dualtest(
         text=text,
