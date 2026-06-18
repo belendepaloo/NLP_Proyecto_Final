@@ -36,7 +36,11 @@ class Completion:
 class HFLocalTarget:
     """Target corrido localmente via HuggingFace transformers."""
 
-    def __init__(self, model_name: str, device: str = "cuda", dtype=torch.bfloat16):
+    def __init__(self, model_name: str, device: None, dtype=torch.bfloat16):
+
+        if device is None:
+            device = "cuda" if torch.cuda.is_available() else "cpu"
+
         from transformers import AutoModelForCausalLM, AutoTokenizer
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
         self.model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype=dtype).to(device)

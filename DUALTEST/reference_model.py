@@ -34,7 +34,11 @@ from typing import List
 
 
 class ReferenceModel:
-    def __init__(self, model_name: str, device: str = "cuda", dtype=torch.bfloat16):
+    def __init__(self, model_name: str, device: None, dtype=torch.bfloat16):
+
+        if device is None:
+            device = "cuda" if torch.cuda.is_available() else "cpu"
+
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
         self.model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype=dtype).to(device)
         self.model.eval()
