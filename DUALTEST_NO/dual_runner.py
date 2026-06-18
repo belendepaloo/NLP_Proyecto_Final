@@ -1,18 +1,18 @@
 
 import pandas as pd
 
-from DUALTEST.text_utils import (
+from DUALTEST_NO.text_utils import (
     read_text,
     split_text_for_dualtest
 )
 
-from DUALTEST.metrics import (
+from DUALTEST_NO.metrics import (
     run_length_score,
     edit_similarity,
     token_overlap
 )
 
-from DUALTEST.hf_model import generate_completion
+from DUALTEST_NO.hf_model import generate_completion
 
 
 def run_dualtest_row(
