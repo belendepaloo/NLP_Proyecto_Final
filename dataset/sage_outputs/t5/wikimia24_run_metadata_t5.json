@@ -1,0 +1,13 @@
+{
+  "date": "2026-06-17T17:04:12.072649",
+  "dataset": "wikimia24",
+  "n_samples": 3712,
+  "paraphraser": "humarin/chatgpt_paraphraser_on_T5_base",
+  "sps_model": "gemma-2b",
+  "sae_release": "gemma-2b-res-jb",
+  "sae_hook": "blocks.12.hook_resid_post",
+  "avg_sps_members": 0.8778780926183807,
+  "avg_sps_non_members": 0.8934259596868481,
+  "paraphraser_provider": "t5",
+  "paraphraser_model": "humarin/chatgpt_paraphraser_on_T5_base"
+}

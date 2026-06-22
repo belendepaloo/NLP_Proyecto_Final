@@ -1,4 +1,4 @@
-from metrics import OverlapMetrics
+from SAGE.metrics import OverlapMetrics
 
 
 class WordSimilarity:
