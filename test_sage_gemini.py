@@ -8,7 +8,7 @@ from SAGE.sage import SAGE
 from SAGE.paraphraser import Paraphraser
 
 
-N_SAMPLES = 3
+N_SAMPLES = 10
 METADATA = "dataset/metadata/wikimia_metadata.csv"
 
 PROJECT = "nlp-sage"
@@ -18,14 +18,20 @@ df = pd.read_csv(METADATA)
 
 # print(df.iloc[0]["file_path"])
 
-PRICE_PER_M_INPUT = 0.30
-PRICE_PER_M_OUTPUT = 2.50
+# PRICE_PER_M_INPUT = 0.30
+# PRICE_PER_M_OUTPUT = 2.50
+EMPIRICAL_COST_PER_CALL = 0.10 / 45
+
+# def estimated_cost(usage_stats):
+#     output_tokens = usage_stats["candidates_tokens"] + usage_stats["thinking_tokens"]
+#     return (
+#         usage_stats["prompt_tokens"] / 1_000_000 * PRICE_PER_M_INPUT
+#         + output_tokens / 1_000_000 * PRICE_PER_M_OUTPUT
+#     )
 
 def estimated_cost(usage_stats):
-    return (
-        usage_stats["prompt_tokens"] / 1_000_000 * PRICE_PER_M_INPUT
-        + usage_stats["candidates_tokens"] / 1_000_000 * PRICE_PER_M_OUTPUT
-    )
+    return usage_stats["calls"] * EMPIRICAL_COST_PER_CALL
+
 
 def main():
 
@@ -109,6 +115,10 @@ def main():
     print("\n✓ Test finalizado")
     print(f"Resumen de uso: {sage.paraphraser.usage_stats}")
     print(f"Costo total estimado: ${estimated_cost(sage.paraphraser.usage_stats):.4f} USD")
+    full_df = pd.read_csv(METADATA)
+    cost_per_sample = estimated_cost(sage.paraphraser.usage_stats) / N_SAMPLES
+    projected_total = cost_per_sample * len(full_df)
+    print(f"\nProyección para todo el dataset ({len(full_df)} samples): ${projected_total:.2f} USD")
 
 
 if __name__ == "__main__":

@@ -3,12 +3,19 @@ import torch
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 
 #Imports de Vertex AI
+# try:
+#     import vertexai
+#     from vertexai.generative_models import GenerativeModel, GenerationConfig
+#     _VERTEXAI_AVAILABLE = True
+# except ImportError:
+#     _VERTEXAI_AVAILABLE = False
+
 try:
-    import vertexai
-    from vertexai.generative_models import GenerativeModel, GenerationConfig
-    _VERTEXAI_AVAILABLE = True
+    from google import genai
+    from google.genai import types as genai_types
+    _GENAI_AVAILABLE = True
 except ImportError:
-    _VERTEXAI_AVAILABLE = False
+    _GENAI_AVAILABLE = False
 
 #Para DeepSeek
 try:
@@ -91,8 +98,8 @@ class Paraphraser:
         self.provider = provider
         self.temperature = temperature
         self._model_alias = model_name
-        self.usage_stats = {"calls": 0, "retries": 0, "prompt_tokens": 0, "candidates_tokens": 0, "total_tokens": 0,}
-
+        # self.usage_stats = {"calls": 0, "retries": 0, "prompt_tokens": 0, "candidates_tokens": 0, "total_tokens": 0}
+        self.usage_stats = {"calls": 0, "retries": 0, "prompt_tokens": 0, "candidates_tokens": 0, "thinking_tokens": 0, "total_tokens": 0}
         # local (T5)                                                           
         if provider == "local":
             if device is None:
@@ -109,10 +116,10 @@ class Paraphraser:
 
         # VERTEX AI                                                            
         elif provider == "vertex_ai":
-            if not _VERTEXAI_AVAILABLE:
+            if not _GENAI_AVAILABLE:
                 raise ImportError(
-                    "google-cloud-aiplatform no está instalado.\n"
-                    "  pip install google-cloud-aiplatform"
+                    "google-genai no está instalado.\n"
+                    "  pip install google-genai"
                 )
 
             project = gcp_project or os.environ.get("GOOGLE_CLOUD_PROJECT")
@@ -125,19 +132,20 @@ class Paraphraser:
             self._gcp_project = project
             self._gcp_location = gcp_location
 
-            vertexai.init(project=project, location=gcp_location)
-
-            # GenerativeModels (Gemini, Grok)
             if model_name in VERTEX_MODEL_IDS:
                 vertex_id = VERTEX_MODEL_IDS[model_name]
                 print(
-                    f"[Paraphraser] Vertex AI (GenerativeModel)"
+                    f"[Paraphraser] Vertex AI (Gen AI SDK) "
                     f"proyecto={project}, región={gcp_location}, modelo={vertex_id}"
                 )
-                self._vertex_client = GenerativeModel(vertex_id)
-                self._gen_config = GenerationConfig(
+                self._genai_client = genai.Client(
+                    vertexai=True, project=project, location=gcp_location,
+                )
+                self._genai_model_id = vertex_id
+                self._gen_config = genai_types.GenerateContentConfig(
                     temperature=self.temperature,
-                    max_output_tokens=512,
+                    max_output_tokens=2048,
+                    thinking_config=genai_types.ThinkingConfig(thinking_budget=0),
                 )
                 self._vertex_type = "generative"
 
@@ -255,16 +263,22 @@ class Paraphraser:
             draft = ""
             for attempt in range(max_retries + 1):
                 try:
-                    response = self._vertex_client.generate_content(prompt, generation_config=self._gen_config)
-                    draft = response.text.strip()
+                    response = self._genai_client.models.generate_content(
+                        model=self._genai_model_id,
+                        contents=prompt,
+                        config=self._gen_config,
+                    )
+                    draft = response.text.strip() if response.text else ""
+
                     self.usage_stats["calls"] += 1
                     if attempt > 0:
                         self.usage_stats["retries"] += 1
                     usage = getattr(response, "usage_metadata", None)
                     if usage is not None:
-                        self.usage_stats["prompt_tokens"] += usage.prompt_token_count
-                        self.usage_stats["candidates_tokens"] += usage.candidates_token_count
-                        self.usage_stats["total_tokens"] += usage.total_token_count
+                        self.usage_stats["prompt_tokens"] += usage.prompt_token_count or 0
+                        self.usage_stats["candidates_tokens"] += usage.candidates_token_count or 0
+                        self.usage_stats["thinking_tokens"] += getattr(usage, "thoughts_token_count", 0) or 0
+                        self.usage_stats["total_tokens"] += usage.total_token_count or 0
                 except Exception as e:
                     print(f"[Paraphraser][generative] Error: {e}")
                     continue
