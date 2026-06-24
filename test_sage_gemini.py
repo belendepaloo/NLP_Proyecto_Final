@@ -8,7 +8,7 @@ from SAGE.sage import SAGE
 from SAGE.paraphraser import Paraphraser
 
 
-N_SAMPLES = 10
+N_SAMPLES = 1
 METADATA = "dataset/metadata/wikimia_metadata.csv"
 
 PROJECT = "nlp-sage"

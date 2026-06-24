@@ -1,0 +1,19 @@
+{
+  "date": "2026-06-23T18:01:58.669603",
+  "dataset": "wikimia",
+  "n_samples": 200,
+  "paraphraser": "gemini-2.5-flash",
+  "sps_model": "gemma-2b",
+  "sae_release": "gemma-2b-res-jb",
+  "sae_hook": "blocks.12.hook_resid_post",
+  "avg_sps_members": 0.9037247631860816,
+  "avg_sps_non_members": 0.9090280749258541,
+  "paraphraser_provider": "gemini",
+  "paraphraser_model": "gemini-2.5-flash",
+  "min_length_ratio": 0.75,
+  "total_gemini_calls": 597,
+  "total_gemini_retries": 0,
+  "total_prompt_tokens": 169434,
+  "total_candidate_tokens": 130020,
+  "estimated_cost_usd": 1.3266666666666667
+}

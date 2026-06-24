@@ -1,8 +1,7 @@
 import os
 import pandas as pd
 
-PARAPHRASER_NAME = os.environ.get("SAGE_PARAPHRASER", "t5")
-
+PARAPHRASER_NAME = os.environ.get("SAGE_PARAPHRASER", "gemini")
 OUTPUT_DIR = f"dataset/sage_outputs/{PARAPHRASER_NAME}"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 

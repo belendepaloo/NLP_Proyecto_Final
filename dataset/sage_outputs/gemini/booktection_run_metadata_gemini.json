@@ -1,0 +1,19 @@
+{
+  "date": "2026-06-23T18:40:48.335540",
+  "dataset": "booktection",
+  "n_samples": 200,
+  "paraphraser": "gemini-2.5-flash",
+  "sps_model": "gemma-2b",
+  "sae_release": "gemma-2b-res-jb",
+  "sae_hook": "blocks.12.hook_resid_post",
+  "avg_sps_members": 0.583768144883432,
+  "avg_sps_non_members": 0.6588838116567529,
+  "paraphraser_provider": "gemini",
+  "paraphraser_model": "gemini-2.5-flash",
+  "min_length_ratio": 0.75,
+  "total_gemini_calls": 1797,
+  "total_gemini_retries": 0,
+  "total_prompt_tokens": 517977,
+  "total_candidate_tokens": 389876,
+  "estimated_cost_usd": 3.993333333333333
+}
