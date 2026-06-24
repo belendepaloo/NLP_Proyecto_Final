@@ -11,6 +11,7 @@ __pycache__/
 .venv/
 venv/
 env/
+.env
 
 # ==========================================
 # VSCode
@@ -71,3 +72,9 @@ Desktop.ini
 **/__pycache__/
 *.pyc
 .ipynb_checkpoints/
+
+# ==========================================
+# Artifacts de runs del pipeline agentico (Fase 1+)
+# ==========================================
+
+runs/

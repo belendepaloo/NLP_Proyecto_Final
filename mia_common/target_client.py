@@ -1,0 +1,199 @@
+"""
+target_client.py — cliente unico, pluggable, para el modelo "black box" target bajo
+test de MIA. Generaliza DUALTEST/target_model.py::APITarget (que ya definia la idea
+correcta: "ustedes traen su propio call_fn") agregando lo que DE-COP y SiMIA necesitan
+y hoy duplican cada uno a su manera:
+
+  - .chat(messages) para prompts de instruccion de un turno (DE-COP MCQ, SiMIA
+    next-word) ademas de .complete(prompt) para continuacion cruda (DUALTEST).
+  - reintentos con backoff + deteccion de cap diario, generalizando la logica
+    `safe_ask` que hoy vive solo en el notebook de DE-COP (regex "try again in Xm Ys").
+  - soporte multi-provider: groq (default, OpenAI-compatible), openai, anthropic,
+    google, o hf_local (modelo HF corrido localmente, via DUALTEST.target_model).
+
+DUALTEST.target_model.APITarget / HFLocalTarget NO se tocan (fidelidad al paper) --
+`as_dualtest_target()` aca abajo es el adapter que los conecta con este cliente.
+"""
+
+from __future__ import annotations
+
+import re
+import time
+from dataclasses import dataclass
+from typing import Any, Callable, List, Optional, Protocol, runtime_checkable
+
+
+class DailyCapError(Exception):
+    """El proveedor reporto un cap diario/mensual (no transitorio) -- frenar el run."""
+
+
+@dataclass
+class Completion:
+    text: str
+    token_ids: Optional[List[int]] = None  # solo disponible con backend hf_local
+
+
+@runtime_checkable
+class TargetClient(Protocol):
+    has_tokenizer: bool
+
+    def complete(self, prompt: str, max_new_tokens: int = 64, **kw) -> Completion: ...
+
+    def chat(
+        self,
+        messages: list[dict],
+        max_new_tokens: int = 16,
+        temperature: float = 0.0,
+        **kw,
+    ) -> str: ...
+
+
+_RETRY_AFTER_MS = re.compile(r"try again in (\d+)m([\d.]+)s")
+_RETRY_AFTER_S = re.compile(r"try again in ([\d.]+)s")
+
+
+def _parse_retry_after(msg: str) -> float | None:
+    """Misma logica que safe_ask() en DE-COP/DE_COP_BookTection.ipynb, generalizada."""
+    if "429" not in msg and "rate_limit" not in msg.lower():
+        return None
+    m2 = _RETRY_AFTER_MS.search(msg)
+    if m2:
+        return int(m2.group(1)) * 60 + float(m2.group(2))
+    m1 = _RETRY_AFTER_S.search(msg)
+    if m1:
+        return float(m1.group(1))
+    return 20.0
+
+
+def _is_daily_cap(msg: str) -> bool:
+    return "per day" in msg.lower() or "TPD" in msg or "RPD" in msg
+
+
+class RateLimitedAPITarget:
+    """Cliente generico para un target API (Groq/OpenAI/Anthropic/Google), con
+    throttling + retry/backoff compartido por DE-COP, SiMIA y (via adapter) DUALTEST."""
+
+    has_tokenizer = False
+
+    def __init__(
+        self,
+        provider: str,
+        model_name: str,
+        api_key: str | None = None,
+        max_new_tokens: int = 64,
+        max_retries: int = 6,
+        min_seconds_between_calls: float = 0.0,
+    ):
+        self.provider = provider
+        self.model_name = model_name
+        self.max_new_tokens = max_new_tokens
+        self.max_retries = max_retries
+        self.min_seconds_between_calls = min_seconds_between_calls
+        self._last_call_ts = 0.0
+        self._client = self._build_client(provider, api_key)
+
+    def _build_client(self, provider: str, api_key: str | None) -> Any:
+        if provider == "groq":
+            from groq import Groq
+
+            return Groq(api_key=api_key)
+        if provider == "openai":
+            from openai import OpenAI
+
+            return OpenAI(api_key=api_key)
+        if provider == "anthropic":
+            import anthropic
+
+            return anthropic.Anthropic(api_key=api_key)
+        if provider == "google":
+            from google import genai
+
+            return genai.Client(api_key=api_key)
+        raise ValueError(f"Unknown target provider: {provider!r}")
+
+    def _throttle(self) -> None:
+        elapsed = time.time() - self._last_call_ts
+        if elapsed < self.min_seconds_between_calls:
+            time.sleep(self.min_seconds_between_calls - elapsed)
+
+    def _raw_chat_call(
+        self, messages: list[dict], max_tokens: int, temperature: float, **kw
+    ) -> str:
+        if self.provider in ("groq", "openai"):
+            resp = self._client.chat.completions.create(
+                model=self.model_name,
+                messages=messages,
+                max_tokens=max_tokens,
+                temperature=temperature,
+                **kw,
+            )
+            return resp.choices[0].message.content or ""
+        if self.provider == "anthropic":
+            system = next((m["content"] for m in messages if m["role"] == "system"), None)
+            turns = [m for m in messages if m["role"] != "system"]
+            resp = self._client.messages.create(
+                model=self.model_name,
+                system=system,
+                messages=turns,
+                max_tokens=max_tokens,
+                temperature=temperature,
+            )
+            return resp.content[0].text if resp.content else ""
+        if self.provider == "google":
+            prompt = "\n".join(m["content"] for m in messages)
+            resp = self._client.models.generate_content(model=self.model_name, contents=prompt)
+            return resp.text or ""
+        raise ValueError(f"Unknown target provider: {self.provider!r}")
+
+    def chat(
+        self,
+        messages: list[dict],
+        max_new_tokens: int = 16,
+        temperature: float = 0.0,
+        **kw,
+    ) -> str:
+        last_err: Exception | None = None
+        for _ in range(self.max_retries):
+            self._throttle()
+            try:
+                self._last_call_ts = time.time()
+                return self._raw_chat_call(messages, max_new_tokens, temperature, **kw)
+            except Exception as e:  # noqa: BLE001 -- proveedores tiran excepciones distintas
+                msg = str(e)
+                if _is_daily_cap(msg):
+                    raise DailyCapError(msg) from e
+                wait = _parse_retry_after(msg)
+                if wait is None:
+                    raise
+                last_err = e
+                time.sleep(wait + 1)
+        raise RuntimeError("max_retries agotado en 429 transitorio") from last_err
+
+    def complete(self, prompt: str, max_new_tokens: int | None = None, **kw) -> Completion:
+        text = self.chat(
+            [{"role": "user", "content": prompt}],
+            max_new_tokens=max_new_tokens or self.max_new_tokens,
+            **kw,
+        )
+        return Completion(text=text, token_ids=None)
+
+
+def make_target_client(provider: str, model_name: str, **kw) -> TargetClient:
+    """Factory unica: (provider, model_name) -> cliente listo. Punto de entrada que
+    usan agents/tools/mia_tools.py, DE-COP/decop.py y SiMIA/simia.py."""
+    if provider == "hf_local":
+        from DUALTEST.target_model import HFLocalTarget
+
+        return HFLocalTarget(model_name=model_name, device=kw.get("device"))
+    return RateLimitedAPITarget(provider=provider, model_name=model_name, **kw)
+
+
+def as_dualtest_target(client: TargetClient, max_new_tokens: int = 64):
+    """Adapter: envuelve un TargetClient como DUALTEST.target_model.APITarget, sin
+    tocar el modulo DUALTEST original (fidelidad al paper)."""
+    from DUALTEST.target_model import APITarget
+
+    def call_fn(prefix_text: str, max_new_tokens: int = 64, **kw) -> str:
+        return client.complete(prefix_text, max_new_tokens=max_new_tokens, **kw).text
+
+    return APITarget(call_fn=call_fn, max_new_tokens=max_new_tokens)

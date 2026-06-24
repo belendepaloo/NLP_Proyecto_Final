@@ -5,11 +5,21 @@ import pandas as pd
 import torch
 from tqdm.auto import tqdm
 
-from experiment_utils import prepare_records
-from prefixing import split_by_tokens
-from target_model import HFLocalTarget
-from reference_model import ReferenceModel
-from metrics import rlb_score, esb_score
+try:
+    # import como paquete (uso normal desde la raiz del repo, ej. agents/tools/)
+    from DUALTEST.experiment_utils import prepare_records
+    from DUALTEST.prefixing import split_by_tokens
+    from DUALTEST.target_model import HFLocalTarget
+    from DUALTEST.reference_model import ReferenceModel
+    from DUALTEST.metrics import rlb_score, esb_score
+except ImportError:
+    # fallback para notebooks existentes que hacen sys.path.append(".../DUALTEST")
+    # y despues `from run_experiment import ...` con imports bare
+    from experiment_utils import prepare_records
+    from prefixing import split_by_tokens
+    from target_model import HFLocalTarget
+    from reference_model import ReferenceModel
+    from metrics import rlb_score, esb_score
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
