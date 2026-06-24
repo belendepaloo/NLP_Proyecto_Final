@@ -20,12 +20,13 @@ el script sigue corriendo y muestra claramente que etapas se saltearon y por que
 no es un requisito tener todo instalado para ver la forma del pipeline.
 
 Uso:
-    python scripts/run_pipeline_manual.py [--max-chunks-per-text N] [--no-sage]
+    python scripts/run_pipeline_manual.py [--chunks-per-text N] [--seed N] [--no-sage]
 """
 
 from __future__ import annotations
 
 import argparse
+import random
 import sys
 from pathlib import Path
 
@@ -126,20 +127,35 @@ def score_chunk(chunk_text_str: str, book_title: str, label: int, client, sage_r
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--max-chunks-per-text", type=int, default=2)
+    parser.add_argument(
+        "--chunks-per-text",
+        type=int,
+        default=settings.chunks_per_text,
+        help="Cuantos chunks por libro entran al pipeline costoso (default: "
+        "mia_common.settings.chunks_per_text, hoy %(default)s). Control de costo/computo: "
+        "subilo/bajalo aca o cambia el default en mia_common/settings.py sin tocar mas nada.",
+    )
+    parser.add_argument("--seed", type=int, default=settings.chunk_sample_seed)
     parser.add_argument("--no-sage", action="store_true")
     args = parser.parse_args()
 
     client = try_build_target_client()
     text_results = []
+    rng = random.Random(args.seed)
 
     for title, chunks in load_chunks_by_title().items():
         label = int(chunks[0]["label"])
         print(f"\n=== {title} (label={label}, {'member' if label else 'non-member'}) ===")
-        print(f"  {len(chunks)} chunks de ~128 tokens disponibles (ya limpios/chunkeados)")
+
+        # muestreo aleatorio (con seed fijo, reproducible) en vez de los primeros N --
+        # asi no testeamos siempre solo el comienzo del libro. Si hay menos chunks que
+        # los pedidos, se usan todos.
+        n_sample = min(args.chunks_per_text, len(chunks))
+        sampled = rng.sample(chunks, n_sample)
+        print(f"  {len(chunks)} chunks de ~128 tokens disponibles -> {n_sample} seleccionados (seed={args.seed})")
 
         chunk_results = []
-        for chunk in chunks[: args.max_chunks_per_text]:
+        for chunk in sampled:
             chunk_str = chunk["text"]
             sage_result = try_run_sage(chunk_str, use_sage=not args.no_sage)
             chunk_score = score_chunk(chunk_str, title, label, client, sage_result)

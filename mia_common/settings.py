@@ -39,6 +39,14 @@ class Settings(BaseSettings):
     target_min_seconds_between_calls: float = 2.1
     target_max_retries: int = 6
 
+    # Cuantos chunks por texto entran al pipeline costoso (SAGE + 3 metodos MIA).
+    # Control de costo/computo, no de cuantos chunks existen en el dataset -- eso lo
+    # define MAX_CHUNKS_PER_PAGE en scrape_clean_chunk.ipynb al armar el CSV. Pensado
+    # para poder bajarlo/subirlo facil sin tocar codigo (ver scripts/run_pipeline_manual.py
+    # y --chunks-per-text, que sigue pudiendo overridear esto por run).
+    chunks_per_text: int = 10
+    chunk_sample_seed: int = 42
+
     # Thresholds de curacion (ver agents/tools/curator_tools.py) -- viven aca, no
     # hardcodeados en los prompts, para que la skill persistente pueda ajustarlos.
     authorship_min_confidence: float = 0.6
