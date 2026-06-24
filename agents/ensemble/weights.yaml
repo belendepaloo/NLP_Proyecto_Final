@@ -1,0 +1,6 @@
+# Pesos del ensemble por metodo. SiMIA deliberadamente bajo: AUC medido ~0.51 en
+# BookTection (notebooks/simMIA.ipynb), casi azar. Historial de cambios en
+# calibration_history.csv (Fase 3); este archivo siempre tiene los pesos ACTUALES.
+dualtest: 0.50
+decop: 0.35
+simia: 0.15
