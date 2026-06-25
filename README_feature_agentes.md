@@ -18,18 +18,23 @@ tocar código.
 
 - **Fase 0 y Fase 1 están terminadas y validadas contra Groq real** (no es teoría, se
   corrió de punta a punta varias veces). El ensemble discrimina member/non-member en
-  promedio, aunque con superposición a nivel texto individual (ver resultados abajo).
-- **Lo que sigue es la Fase 2** (orquestador deepagents + sub-agentes + human-in-the-loop)
-  — no se empezó código todavía, ver la sección de esa fase para el plan concreto.
-- Pendiente menor, deliberadamente no resuelto hoy: el módulo se llama `SiMIA/` pero el
-  método del paper que implementa se llama **"SimMIA"** (con dos emes: "Sim"+"MIA") — se
-  decidió no renombrar todavía para no interrumpir una corrida en curso; renombrar
-  `SiMIA/` → `SimMIA/` (y `simia.py` → `simmia.py`) y actualizar los ~10 archivos que lo
-  referencian (`grep -rn "SiMIA"`) es un buen primer paso de housekeeping si retomás esto.
-- Hay una corrida de validación grande corriendo/recién corrida en background al momento
-  de escribir esto (`runs/manual_phase1_smoke_test/`, 50 chunks, `--chunks-per-text 5`,
-  4 keys de Groq en paralelo) — revisar `runs/manual_phase1_smoke_test/results/author_final.json`
-  para el resultado mas reciente.
+  promedio, aunque con superposición a nivel texto individual.
+- **Fase 2 (orquestador deepagents + 5 sub-agentes + human-in-the-loop) está construida
+  y compila/arranca**, pero la validación end-to-end real está **bloqueada esperando
+  `GOOGLE_API_KEY`** (o `ANTHROPIC_API_KEY`) — ver el hallazgo de Groq como agent_model
+  en la sección de esa fase, es importante leerlo antes de asumir que "no funciona".
+- **Se agotó la cuota diaria (TPD) de Groq** probando todo esto (parece ser un límite
+  por organización, no por key individual — las 4 keys no lo evitan, solo ayudan con el
+  límite por minuto). El error es `mia_common.target_client.DailyCapError`; ya no tumba
+  el proceso entero (se arregló para guardar progreso parcial), pero hasta que resetee
+  la cuota no se puede seguir validando contra Groq real.
+- Pendiente menor, deliberadamente no resuelto: el módulo se llama `SiMIA/` pero el
+  método del paper que implementa se llama **"SimMIA"** (con dos emes: "Sim"+"MIA") —
+  renombrar `SiMIA/` → `SimMIA/` (y `simia.py` → `simmia.py`) y actualizar los archivos
+  que lo referencian (`grep -rn "SiMIA"`) es un buen primer paso de housekeeping.
+- Última corrida grande de Fase 1 (antes de agotar la cuota):
+  `runs/manual_phase1_smoke_test/` tiene resultados parciales en `chunks/` aunque
+  `results/author_final.json` haya quedado del intento anterior (sin el fix de SiMIA).
 - **Todas las llamadas a APIs externas se cachean** (`runs/_api_cache/`, ver
   `mia_common/cache.py`) — rerunear el mismo pipeline sobre el mismo texto no vuelve a
   gastar cuota. Esto es una regla de proyecto, no opcional: cualquier código nuevo que
@@ -147,21 +152,37 @@ interfaz común.
      (`decop`, `simia`, `dualtest`) además del score combinado del ensemble — no solo
      el número final.
 
-- ⬜ **Fase 2 — orquestador deepagents + sub-agentes + human-in-the-loop.** Pendiente,
-  **siguiente prioridad**. `deepagents`/`langgraph`/`tavily-python`/`langchain-google-genai`
-  ya están en `requirements.txt` y se confirmó que
-  `create_deep_agent(model=, tools=, subagents=, system_prompt=, skills=, interrupt_on=,
-  store=...)` tiene la forma que el plan asume. Falta construir:
-  - `bibliography_agent` (Tavily search + scraping, con interrupt en
-    `propose_candidate_texts` para la revisión humana).
-  - `curator_agent` con los dos LLM-judges sin precedente en el repo: ¿es texto del
-    autor o una reseña/resumen?, ¿es un pasaje característico de su voz o boilerplate
-    genérico? (sin benchmark etiquetado, van a quedar configurables + revisión humana
-    en casos borderline).
-  - `sage_qa_agent`, `mia_agent` (agrupa DE-COP/SiMIA/DUALTEST en un solo subagent con 3
-    tools, ver el plan original), `flow_checker_agent`.
-  - Convertir las funciones planas de `agents/tools/*.py` en tools decoradas (`@tool`)
-    que estos subagents puedan llamar.
+- 🟡 **Fase 2 — orquestador deepagents + sub-agentes + human-in-the-loop.** Construida,
+  **falta la validación end-to-end** (bloqueada por credenciales, ver abajo).
+  - `agents/subagents/`: los 5 subagentes (`bibliography_agent`, `curator_agent`,
+    `sage_qa_agent`, `mia_agent`, `flow_checker_agent`). En `curator_agent` el rubric de
+    los dos LLM-judges (autoría / voz característica) vive en el system prompt del
+    subagent — el agente mismo razona el veredicto; los tools
+    (`agents/tools/curator_tools.py`) solo lo registran y aplican el threshold de
+    `mia_common/settings.py` (no hardcodeado en el prompt).
+  - `agents/orchestrator.py`: `create_deep_agent` con los 5 subagentes + tools propios
+    de ensemble/artifacts. **Confirmado que compila y arranca** (con un modelo de
+    prueba). `skills=` queda vacío a propósito (Fase 3).
+  - `scripts/run_pipeline_agentic.py`: driver de CLI, maneja
+    interrupt/`Command(resume=...)` por stdin (aprobar/editar/rechazar).
+  - **No se decoran las funciones de `agents/tools/*.py` con `@tool`** — se confirmó
+    (probando contra la API real instalada) que `create_deep_agent`/`SubAgent` aceptan
+    callables planos directo (`tools: Sequence[BaseTool | Callable | dict]`), siempre
+    que tengan type hints + docstring. Un bug real: `read_run_artifact` no tenía
+    docstring y deepagents rechazaba armar el grafo entero por eso.
+  - **Hallazgo importante, bloqueante**: probamos `groq:llama-3.3-70b-versatile` como
+    `agent_model` (el LLM que razona DENTRO del orquestador, no el target de MIA) y la
+    tool `task` que deepagents usa para delegar a subagentes le generaba argumentos mal
+    formados — ese modelo no maneja con suficiente fidelidad el tool-calling anidado de
+    deepagents. El nivel simple (una tool con interrupt directo en el orquestador, sin
+    subagentes de por medio) sí funcionó perfecto con Groq. El plan original ya preveía
+    Gemini como default (`settings.agent_model`) pero no había `GOOGLE_API_KEY`
+    disponible en este entorno para probarlo — **pendiente de validar end-to-end en
+    cuanto se consiga esa key** (o una de Anthropic, `langchain-anthropic` ya está
+    instalado).
+  - `TAVILY_API_KEY` tampoco está configurada — sin ella, `bibliography_agent` no puede
+    buscar de verdad (el resto del pipeline se puede seguir probando con textos fijos
+    mientras tanto).
 
 - ⬜ **Fase 3 — skill persistente + flow-checkers en cada etapa.** Pendiente. La idea
   es `agents/skills/pipeline-learnings/SKILL.md` + `learnings.jsonl` +
