@@ -12,6 +12,12 @@ en vez de romper el import de este modulo entero.
 
 from __future__ import annotations
 
+import mia_common.settings  # noqa: F401 -- dispara el env-bridge de HF_TOKEN/GOOGLE_CLOUD_PROJECT
+# antes de que SAGE.sps intente bajar el modelo gated google/gemma-2b. Sin este
+# import, llamar run_sage_tool() desde un script que no haya importado
+# mia_common.settings por su cuenta falla con 401 aunque el .env tenga el token bien
+# (se detecto exactamente asi al probar esto en aislado).
+
 _sage_singleton = None
 
 
