@@ -194,6 +194,10 @@ def as_dualtest_target(client: TargetClient, max_new_tokens: int = 64):
     from DUALTEST.target_model import APITarget
 
     def call_fn(prefix_text: str, max_new_tokens: int = 64, **kw) -> str:
+        # DUALTEST.scoring.score_texts siempre pasa do_sample=False (parametro de
+        # generate() de HuggingFace) -- no existe equivalente en una API de chat
+        # completions (Groq/OpenAI/etc usan temperature), se descarta aca.
+        kw.pop("do_sample", None)
         return client.complete(prefix_text, max_new_tokens=max_new_tokens, **kw).text
 
     return APITarget(call_fn=call_fn, max_new_tokens=max_new_tokens)

@@ -85,5 +85,6 @@ class APITarget:
         self.has_tokenizer = False
 
     def complete(self, prefix_text: str, **kwargs) -> Completion:
-        text = self.call_fn(prefix_text, max_new_tokens=self.max_new_tokens, **kwargs)
+        kwargs.setdefault("max_new_tokens", self.max_new_tokens)
+        text = self.call_fn(prefix_text, **kwargs)
         return Completion(text=text, token_ids=None)
