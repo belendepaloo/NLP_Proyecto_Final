@@ -45,7 +45,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from agents.ensemble.combine import aggregate_chunk_scores, aggregate_text_scores, combine_scores  # noqa: E402
 from agents.tools.fs_tools import write_run_artifact  # noqa: E402
 from mia_common.settings import settings  # noqa: E402
-from mia_common.target_client import TargetClientPool, make_target_client_pool  # noqa: E402
+from mia_common.target_client import DailyCapError, TargetClientPool, make_target_client_pool  # noqa: E402
 
 DATASET_CSV = Path(__file__).resolve().parents[1] / "processRawText" / "Datasets" / "dataset_len128.csv"
 RUN_ID = "manual_phase1_smoke_test"
@@ -141,11 +141,16 @@ def score_chunk(chunk_text_str: str, book_title: str, label: int, client, sage_r
     }
 
 
-def process_one_chunk(title: str, label: int, chunk_text_str: str, pool: TargetClientPool | None, use_sage: bool) -> dict:
+def process_one_chunk(
+    title: str, label: int, chunk_idx: int, chunk_text_str: str, pool: TargetClientPool | None, use_sage: bool
+) -> dict:
     client = pool.get() if pool is not None else None
     sage_result = try_run_sage(chunk_text_str, use_sage=use_sage)
     record = score_chunk(chunk_text_str, title, label, client, sage_result)
     record.update({"title": title, "label": label})
+    # se escribe ACA, apenas termina este chunk -- no al final de todo el run, para no
+    # perder el trabajo ya hecho si otro chunk en paralelo tira DailyCapError despues.
+    write_run_artifact(RUN_ID, "chunks", f"{title.replace(' ', '_')}_{chunk_idx}", record)
     with _print_lock:
         decop_skip = record["decop"]["reason"] if record["decop"] and record["decop"]["skipped"] else None
         simia_skip = record["simia"]["reason"] if record["simia"] and record["simia"]["skipped"] else None
@@ -184,7 +189,7 @@ def main() -> int:
     pool = try_build_target_pool()
     rng = random.Random(args.seed)
 
-    tasks: list[tuple[str, int, str]] = []
+    tasks: list[tuple[str, int, int, str]] = []
     for title, chunks in load_chunks_by_title().items():
         label = int(chunks[0]["label"])
         n_sample = min(args.chunks_per_text, len(chunks))
@@ -193,20 +198,32 @@ def main() -> int:
         sampled = rng.sample(chunks, n_sample)
         print(f"=== {title} (label={label}, {'member' if label else 'non-member'}): "
               f"{len(chunks)} chunks disponibles -> {n_sample} seleccionados (seed={args.seed}) ===")
-        tasks.extend((title, label, c["text"]) for c in sampled)
+        tasks.extend((title, label, idx, c["text"]) for idx, c in enumerate(sampled))
 
     workers = args.workers or (len(pool) if pool is not None else 1)
     print(f"\nProcesando {len(tasks)} chunks con {workers} worker(s) en paralelo...\n")
 
     records_by_title: dict[str, list[dict]] = {}
+    daily_cap_hit = False
     with ThreadPoolExecutor(max_workers=workers) as executor:
-        futures = [
-            executor.submit(process_one_chunk, title, label, chunk_text_str, pool, not args.no_sage)
-            for title, label, chunk_text_str in tasks
-        ]
+        futures = {
+            executor.submit(process_one_chunk, title, label, idx, chunk_text_str, pool, not args.no_sage): title
+            for title, label, idx, chunk_text_str in tasks
+        }
         for future in as_completed(futures):
-            record = future.result()
-            records_by_title.setdefault(record["title"], []).append(record)
+            try:
+                record = future.result()
+                records_by_title.setdefault(record["title"], []).append(record)
+            except DailyCapError as e:
+                if not daily_cap_hit:
+                    daily_cap_hit = True
+                    print(
+                        f"\n[DAILY CAP] {e}\nSe llego al limite diario de tokens de Groq -- "
+                        "cancelando tareas pendientes (best-effort) y guardando los resultados "
+                        "parciales ya calculados en vez de perder todo el run."
+                    )
+                for pending in futures:
+                    pending.cancel()  # solo afecta las que todavia no arrancaron
 
     text_results = []
     for title, records in records_by_title.items():
@@ -225,6 +242,8 @@ def main() -> int:
     write_run_artifact(RUN_ID, "results", "author_final", {"author": AUTHOR, **author_rollup, "texts": text_results})
 
     print(f"\n=== Resultado final para {AUTHOR} ===")
+    if daily_cap_hit:
+        print("(PARCIAL -- se corto por limite diario de Groq, ver mensaje [DAILY CAP] arriba)")
     print(f"Probabilidad de membership: {author_rollup['author_probability']} "
           f"({author_rollup['n_texts_scored']}/{author_rollup['n_texts_total']} textos con score)")
     if author_rollup["author_probability"] is None:
