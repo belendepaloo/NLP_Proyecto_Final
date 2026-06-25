@@ -12,6 +12,8 @@ en vez de romper el import de este modulo entero.
 
 from __future__ import annotations
 
+import threading
+
 import mia_common.settings  # noqa: F401 -- dispara el env-bridge de HF_TOKEN/GOOGLE_CLOUD_PROJECT
 # antes de que SAGE.sps intente bajar el modelo gated google/gemma-2b. Sin este
 # import, llamar run_sage_tool() desde un script que no haya importado
@@ -19,6 +21,12 @@ import mia_common.settings  # noqa: F401 -- dispara el env-bridge de HF_TOKEN/GO
 # (se detecto exactamente asi al probar esto en aislado).
 
 _sage_singleton = None
+# SAGE carga modelos de PyTorch (T5 + Gemma-2B via transformer_lens) que no estan
+# garantizados thread-safe para forward passes concurrentes sobre la misma instancia.
+# Al paralelizar chunks (ThreadPoolExecutor), este lock serializa el uso de SAGE sin
+# bloquear las llamadas a la API del target (que corren en threads distintos, sobre
+# clientes distintos del pool).
+_sage_lock = threading.Lock()
 
 
 def _get_sage(device: str | None = None, min_length_ratio: float = 0.75):
@@ -41,8 +49,9 @@ def _get_sage(device: str | None = None, min_length_ratio: float = 0.75):
 def run_sage_tool(text: str, device: str | None = None, min_length_ratio: float = 0.75) -> dict:
     """Paraphrasea `text` con SAGE. Devuelve el dict tal cual lo emite SAGE().paraphrase()
     (original/paraphrase/segments, cada segmento con sps/wordsim/final_score/all_candidates)."""
-    sage = _get_sage(device=device, min_length_ratio=min_length_ratio)
-    return sage.paraphrase(text)
+    with _sage_lock:
+        sage = _get_sage(device=device, min_length_ratio=min_length_ratio)
+        return sage.paraphrase(text)
 
 
 def sage_quality_check(sage_segment: dict, min_sps: float = 0.7, min_length_ratio: float = 0.75) -> dict:

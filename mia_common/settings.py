@@ -7,6 +7,7 @@ sueltas via os.environ.get -- esto es additivo, no las reemplaza.
 import os
 from pathlib import Path
 
+from pydantic import Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]  # mismo patron que DUALTEST/experiment_utils.py
@@ -36,6 +37,17 @@ class Settings(BaseSettings):
     google_cloud_project: str | None = None
     hf_token: str | None = None
 
+    # Lista de keys de Groq separadas por coma (GROQ_API_KEYS=key1,key2,key3), para
+    # paralelizar con un pool de clientes (mia_common.target_client.TargetClientPool)
+    # en vez de quedar atado al rate limit de una sola key. Numero de keys no fijo --
+    # se agregan las que se tengan. Si no esta seteada, cae a [groq_api_key].
+    groq_api_keys_csv: str | None = Field(default=None, alias="GROQ_API_KEYS")
+
+    def groq_api_keys(self) -> list[str]:
+        if self.groq_api_keys_csv:
+            return [k.strip() for k in self.groq_api_keys_csv.split(",") if k.strip()]
+        return [self.groq_api_key] if self.groq_api_key else []
+
     # Rate limiting / reintentos para clientes API (Groq free tier es el caso mas chico)
     target_min_seconds_between_calls: float = 2.1
     target_max_retries: int = 6
@@ -57,6 +69,12 @@ class Settings(BaseSettings):
     dualtest_prefix_len: int = 40
     dualtest_continuation_len: int = 24
     dualtest_max_new_tokens: int = 24
+
+    # SiMIA (ver SiMIA/simia.py) -- el paper (arXiv:2601.11314) usa N=10 samples por
+    # posicion "to reduce API costs" (vs. N=100 default) y un prefijo non-member FIJO
+    # (no aleatorio) de varios cientos de caracteres.
+    simia_n_samples: int = 10
+    simia_calibration_chars: int = 600
 
     # Thresholds de curacion (ver agents/tools/curator_tools.py) -- viven aca, no
     # hardcodeados en los prompts, para que la skill persistente pueda ajustarlos.

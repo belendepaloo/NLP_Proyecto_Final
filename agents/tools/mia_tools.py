@@ -11,9 +11,16 @@ puede calcular, para que agents/ensemble/combine.py decida que hacer con eso.
 
 from __future__ import annotations
 
+import threading
+
 from mia_common.target_client import TargetClient
 
 _reference_model_singleton = None
+# El reference model de DUALTEST es un modelo de PyTorch local (singleton) -- no
+# garantizado thread-safe para forward passes concurrentes. Al paralelizar chunks,
+# este lock serializa el uso del reference model sin bloquear las llamadas a la API
+# del target (que tienen su propio lock por cliente en mia_common.target_client).
+_dualtest_lock = threading.Lock()
 
 
 def get_reference_model(model_name: str):
@@ -60,11 +67,14 @@ def run_decop_tool(
 def run_simia_tool(
     text: str,
     client: TargetClient,
-    non_member_prefix: str = "",
-    n_samples: int = 3,
+    non_member_prefix: str | None = None,
+    n_samples: int | None = None,
     max_words: int = 20,
 ) -> dict:
-    """Devuelve {"method": "simia", "skipped": bool, "result": float | None, "reason": str | None}."""
+    """Devuelve {"method": "simia", "skipped": bool, "result": float | None, "reason": str | None}.
+    non_member_prefix=None / n_samples=None usan los defaults de simmia_score (prefijo
+    de calibracion fijo + mia_common.settings.simia_n_samples) -- no hardcodear "" ni 1
+    aca, ver el docstring de SiMIA/simia.py sobre por que eso rompia la formula."""
     from SiMIA.simia import simmia_score
 
     score = simmia_score(
@@ -101,16 +111,17 @@ def run_dualtest_tool(
 
     reference = get_reference_model(reference_model_name)
     dualtest_target = as_dualtest_target(client, max_new_tokens=max_new_tokens)
-    df = score_texts(
-        texts=[text],
-        target=dualtest_target,
-        reference=reference,
-        prefix_len=prefix_len,
-        continuation_len=continuation_len,
-        max_new_tokens=max_new_tokens,
-        label=label,
-        dataset_name="pipeline",
-    )
+    with _dualtest_lock:
+        df = score_texts(
+            texts=[text],
+            target=dualtest_target,
+            reference=reference,
+            prefix_len=prefix_len,
+            continuation_len=continuation_len,
+            max_new_tokens=max_new_tokens,
+            label=label,
+            dataset_name="pipeline",
+        )
     if df.empty:
         return {"method": "dualtest", "skipped": True, "result": None, "reason": "texto demasiado corto"}
     row = df.iloc[0].to_dict()

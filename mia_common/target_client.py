@@ -17,10 +17,14 @@ DUALTEST.target_model.APITarget / HFLocalTarget NO se tocan (fidelidad al paper)
 
 from __future__ import annotations
 
+import itertools
 import re
+import threading
 import time
 from dataclasses import dataclass
 from typing import Any, Callable, List, Optional, Protocol, runtime_checkable
+
+from mia_common import cache
 
 
 class DailyCapError(Exception):
@@ -71,7 +75,13 @@ def _is_daily_cap(msg: str) -> bool:
 
 class RateLimitedAPITarget:
     """Cliente generico para un target API (Groq/OpenAI/Anthropic/Google), con
-    throttling + retry/backoff compartido por DE-COP, SiMIA y (via adapter) DUALTEST."""
+    throttling + retry/backoff compartido por DE-COP, SiMIA y (via adapter) DUALTEST.
+
+    Thread-safe via un lock por instancia: cuando se paraleliza el pipeline (varios
+    chunks en simultaneo repartidos sobre un TargetClientPool), mas de un chunk puede
+    terminar compartiendo la MISMA key/cliente -- el lock serializa esas llamadas para
+    que el throttle (_last_call_ts) no se pise entre threads, sin bloquear llamadas que
+    caen en OTRO cliente del pool (otra key), que siguen corriendo en paralelo."""
 
     has_tokenizer = False
 
@@ -90,6 +100,7 @@ class RateLimitedAPITarget:
         self.max_retries = max_retries
         self.min_seconds_between_calls = min_seconds_between_calls
         self._last_call_ts = 0.0
+        self._lock = threading.Lock()
         self._client = self._build_client(provider, api_key)
 
     def _build_client(self, provider: str, api_key: str | None) -> Any:
@@ -150,24 +161,42 @@ class RateLimitedAPITarget:
         messages: list[dict],
         max_new_tokens: int = 16,
         temperature: float = 0.0,
+        cache_sample_index: int | None = None,
         **kw,
     ) -> str:
-        last_err: Exception | None = None
-        for _ in range(self.max_retries):
-            self._throttle()
-            try:
-                self._last_call_ts = time.time()
-                return self._raw_chat_call(messages, max_new_tokens, temperature, **kw)
-            except Exception as e:  # noqa: BLE001 -- proveedores tiran excepciones distintas
-                msg = str(e)
-                if _is_daily_cap(msg):
-                    raise DailyCapError(msg) from e
-                wait = _parse_retry_after(msg)
-                if wait is None:
-                    raise
-                last_err = e
-                time.sleep(wait + 1)
-        raise RuntimeError("max_retries agotado en 429 transitorio") from last_err
+        """Cachea toda llamada (request+response) en mia_common.cache antes de pegarle
+        a la API real. `cache_sample_index` es obligatorio en la practica para
+        cualquier caller que haga sampling (temperature>0, ej. SiMIA pidiendo N
+        muestras del mismo prompt) -- sin el, la 2da..Nesima muestra pegarian todas
+        contra el mismo cache hit de la 1ra, perdiendo la independencia de las muestras."""
+        payload = {"messages": messages, "max_new_tokens": max_new_tokens, "temperature": temperature, **kw}
+        cached = cache.get(self.provider, self.model_name, payload, cache_sample_index)
+        if cached is not None:
+            return cached
+
+        with self._lock:  # serializa llamadas reales+throttle de ESTE cliente entre threads
+            cached = cache.get(self.provider, self.model_name, payload, cache_sample_index)
+            if cached is not None:
+                return cached
+
+            last_err: Exception | None = None
+            for _ in range(self.max_retries):
+                self._throttle()
+                try:
+                    self._last_call_ts = time.time()
+                    text = self._raw_chat_call(messages, max_new_tokens, temperature, **kw)
+                    cache.put(self.provider, self.model_name, payload, text, cache_sample_index)
+                    return text
+                except Exception as e:  # noqa: BLE001 -- proveedores tiran excepciones distintas
+                    msg = str(e)
+                    if _is_daily_cap(msg):
+                        raise DailyCapError(msg) from e
+                    wait = _parse_retry_after(msg)
+                    if wait is None:
+                        raise
+                    last_err = e
+                    time.sleep(wait + 1)
+            raise RuntimeError("max_retries agotado en 429 transitorio") from last_err
 
     # DUALTEST necesita continuacion cruda de texto (RLB/ESB comparan la continuacion
     # del target contra la continuacion fuente token a token). Un modelo chat-tuned
@@ -201,6 +230,38 @@ def make_target_client(provider: str, model_name: str, **kw) -> TargetClient:
 
         return HFLocalTarget(model_name=model_name, device=kw.get("device"))
     return RateLimitedAPITarget(provider=provider, model_name=model_name, **kw)
+
+
+class TargetClientPool:
+    """Pool de clientes (uno por API key) para paralelizar llamadas reales sin
+    pisarse el rate limit de una sola key -- cada key mantiene su propio throttle
+    independiente, asi que N keys ~ N x el throughput de una sola. `.get()` reparte
+    clientes round-robin (thread-safe); pensado para asignar UN cliente por chunk/tarea
+    en un pool de workers, no por llamada individual, asi el throttle de cada key sigue
+    siendo coherente con la secuencia de llamadas de ese chunk."""
+
+    def __init__(self, clients: list[TargetClient]):
+        if not clients:
+            raise ValueError("TargetClientPool necesita al menos un cliente")
+        self._clients = clients
+        self._counter = itertools.count()
+        self._lock = threading.Lock()
+
+    def __len__(self) -> int:
+        return len(self._clients)
+
+    def get(self) -> TargetClient:
+        with self._lock:
+            idx = next(self._counter) % len(self._clients)
+        return self._clients[idx]
+
+
+def make_target_client_pool(provider: str, model_name: str, api_keys: list[str], **kw) -> TargetClientPool:
+    """Un RateLimitedAPITarget por key en `api_keys`. Ver TargetClientPool."""
+    clients = [
+        RateLimitedAPITarget(provider=provider, model_name=model_name, api_key=key, **kw) for key in api_keys
+    ]
+    return TargetClientPool(clients)
 
 
 def as_dualtest_target(client: TargetClient, max_new_tokens: int = 64):
