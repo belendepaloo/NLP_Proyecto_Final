@@ -41,9 +41,16 @@ interfaz común.
   centraliza ese cliente target y la config. `requirements.txt` (no existía ninguno).
 - ✅ **Fase 1 — pipeline determinista end-to-end, sin agentes.**
   `scripts/run_pipeline_manual.py` corre limpieza/chunking → SAGE → DE-COP/SiMIA/DUALTEST
-  → ensemble sobre texto real (3 novelas de Dickens + 1 artículo de Wikipedia,
-  `processRawText/Datasets/dataset_len128.csv`), sin scraping ni curación automática
-  todavía (textos fijos).
+  → ensemble sobre texto real (5 novelas de Gutenberg como member + 5 capítulos de
+  novelas serializadas de Royal Road, publicados en 2026, como non-member —
+  `processRawText/Datasets/dataset_len128.csv`, ver `scripts/expand_dataset.py`), sin
+  scraping ni curación automática todavía (textos fijos). **Validado de punta a punta
+  contra Groq real**: separación consistente entre member (~0.81-0.86 de probabilidad)
+  y non-member (~0.62) en la primera corrida con SAGE+DE-COP habilitados. Dos bugs
+  reales encontrados y arreglados en el camino: `APITarget.complete()` rompía con
+  `max_new_tokens` duplicado, y `agents/ensemble/combine.normalize_dualtest` colapsaba
+  a una constante por no normalizar por largo las probabilidades de DUALTEST (que son
+  productos de muchos tokens, ~1e-17 a 1e-24).
 - ⬜ **Fase 2 — orquestador deepagents + sub-agentes + human-in-the-loop.** Pendiente.
   `deepagents`/`langgraph`/`tavily-python`/`langchain-google-genai` ya están en
   `requirements.txt` y se confirmó que `create_deep_agent(model=, tools=, subagents=,
@@ -73,8 +80,8 @@ mismo cliente Groq, sin pipeline ni agentes):
 python scripts/verify_phase0_target_client.py
 ```
 
-**Pipeline manual completo** (Fase 1) sobre los chunks ya preparados de Dickens +
-Wikipedia:
+**Pipeline manual completo** (Fase 1) sobre los chunks ya preparados (5 member +
+5 non-member):
 
 ```bash
 python scripts/run_pipeline_manual.py --chunks-per-text 10
@@ -82,31 +89,43 @@ python scripts/run_pipeline_manual.py --chunks-per-text 10
 
 `--chunks-per-text` controla cuántos chunks por libro entran al pipeline costoso
 (default: `mia_common.settings.chunks_per_text`, hoy 10) — pensado para subir/bajar sin
-tocar código a medida que el dataset crezca (ej. ~20 libros x 10 chunks). Otras flags:
-`--seed` (muestreo reproducible) y `--no-sage` (saltea SAGE si no están instalados
-`transformer_lens`/`sae_lens`).
+tocar código a medida que el dataset crezca. Otras flags: `--seed` (muestreo
+reproducible) y `--no-sage` (saltea SAGE si no están instalados `transformer_lens`/
+`sae_lens` o no se aceptó la licencia gated de `google/gemma-2b` en HuggingFace, ver
+`.env.example` -> `HF_TOKEN`).
 
 Sin `GROQ_API_KEY` configurada, ambos scripts corren igual pero muestran `[SKIP ...]`
 en cada paso que necesita el modelo target, en vez de fallar.
 
+**Para ampliar el dataset** con más libros member/non-member, ver
+`scripts/expand_dataset.py` (agrega entradas a `NEW_SOURCES`, corre, regenera
+`dataset_len128.csv`). Los non-member deben ser del mismo TIPO de texto que los member
+(narrativo, no resúmenes/listas) para que la comparación tenga sentido — hoy se usan
+capítulos de Royal Road (novelas serializadas públicas, con fecha de publicación
+verificable vía el atributo `datetime` de cada página) por ser claramente posteriores
+al cutoff de entrenamiento del target y prosa narrativa real. AO3 se intentó como
+fuente alternativa pero bloquea con error 525 (protección anti-scraping).
+
 ## Limitaciones conocidas / próximos riesgos a resolver
 
 - `processRawText.text_pipeline.chunk_text` (pysbd) escala mal sobre un libro entero de
-  una sola vez (~5 min medido sobre "A Tale of Two Cities"). El pipeline manual usa el
-  dataset ya chunkeado para evitar esto; si el scraping de la Fase 2 trae libros
-  completos, va a necesitar chunkear por capítulo/página, no el libro entero junto.
+  una sola vez (~5 min medido sobre "A Tale of Two Cities"; chunkear las 5 novelas
+  member completas en `expand_dataset.py` tarda varios minutos). Si el scraping de la
+  Fase 2 trae libros completos, va a necesitar chunkear por capítulo/página, no el
+  libro entero junto.
 - `DE_COP/` se nombra con guión bajo (no `DE-COP` con guión medio, como en la branch
   `feature/decop`) porque un guión medio no es válido en un nombre de paquete Python.
   Al mergear `feature/decop`, el notebook original cae en una carpeta `DE-COP/` (con
   guión) que queda solo como referencia de evaluación contra BookTection — no colisiona.
-- No se probó todavía contra un `GROQ_API_KEY` real en este entorno de desarrollo (no
-  había una key disponible) — la lógica de retry/backoff/`DailyCapError` de
-  `mia_common/target_client.py` está escrita pero no ejercitada contra rate limits
-  reales.
-- `transformer_lens`/`sae_lens` (SPS de SAGE) no están instalados en este entorno por
-  ser pesados — `agents/tools/sage_tools.py` lo detecta y lo reporta como `[SKIP SAGE]`
-  en vez de romper, pero el paraphraseo real de SAGE no se probó end-to-end todavía.
+- DUALTEST sigue siendo un proxy SIN CALIBRAR en el ensemble (ver
+  `agents/ensemble/combine.normalize_dualtest`) — el bug de escala ya se arregló, pero
+  el protocolo real de calibración de dos etapas (`DUALTEST/calibration.py`) no se
+  corrió. La separación member/non-member observada (Fase 1) es alentadora pero es
+  sobre un solo seed/muestra, no una validación estadística.
 - Los dos LLM-judges de curación que necesita la Fase 2 (¿es texto del autor o una
   reseña/resumen?, ¿es una pasaje característico de su voz o boilerplate genérico?) no
   tienen benchmark etiquetado para validar — van a quedar configurables y con revisión
   humana en casos borderline, no completamente automatizados.
+- AO3 (Archive of Our Own) bloquea requests programáticos con error 525 (protección
+  anti-scraping) — no se pudo usar como fuente de non-members narrativos, se usó Royal
+  Road en su lugar.
