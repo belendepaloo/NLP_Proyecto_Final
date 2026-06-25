@@ -22,11 +22,23 @@ def load_weights() -> dict[str, float]:
 
 def normalize_dualtest(row: dict) -> float:
     """row tiene p_rlb/p_esb en [0,1] (mas bajo = mas sospechoso de memorizacion, ver
-    DUALTEST/metrics.py). Proxy graduado: 1 - min(p_rlb, p_esb), clippeado a [0,1].
-    La decision calibrada binaria (DUALTEST/calibration.py) se muestra aparte en el
-    detalle por transparencia, pero no es lo que entra a esta cuenta."""
+    DUALTEST/metrics.py). OJO: son productos de probabilidades token a token, asi que
+    son numeros astronomicamente chicos para CUALQUIER completion no trivial (medido:
+    ~1e-17 a ~1e-24 en chunks de ~24 palabras, sin diferencia practica entre member y
+    non-member). Restar directo de 1 colapsa ambos casos a ~1.0 en floating point y
+    pierde toda la variacion real -- por eso antes este score salia constante. Se
+    normaliza por largo (media geometrica por token, aproximando el largo con la
+    cantidad de palabras de `ground_truth`) antes de restar de 1, para preservar la
+    diferencia real entre casos.
+
+    Sigue siendo un proxy SIN CALIBRAR -- el protocolo real de DUALTEST
+    (DUALTEST/calibration.py: 100% precision en setting normal + 0% FPR en
+    generalization sets adversariales) no se corre aca. Tratar como senal continua,
+    no como decision de membership ya calibrada."""
     p = min(row.get("p_rlb", 1.0), row.get("p_esb", 1.0))
-    return max(0.0, min(1.0, 1.0 - p))
+    length_proxy = max(len(str(row.get("ground_truth", "")).split()), 1)
+    p_per_token = p ** (1.0 / length_proxy)
+    return max(0.0, min(1.0, 1.0 - p_per_token))
 
 
 def normalize_simia(raw: float | None, k: float = 1.0) -> float | None:

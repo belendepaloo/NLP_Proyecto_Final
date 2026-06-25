@@ -169,9 +169,24 @@ class RateLimitedAPITarget:
                 time.sleep(wait + 1)
         raise RuntimeError("max_retries agotado en 429 transitorio") from last_err
 
+    # DUALTEST necesita continuacion cruda de texto (RLB/ESB comparan la continuacion
+    # del target contra la continuacion fuente token a token). Un modelo chat-tuned
+    # sin instruccion explicita tiende a responder conversacionalmente en vez de
+    # continuar el texto ("Parece que esto es de una novela...") -- esta instruccion
+    # es necesaria para que el black-box test tenga sentido contra APIs instruct,
+    # no solo contra modelos base (que es lo que usa el paper original).
+    _CONTINUATION_SYSTEM_PROMPT = (
+        "Continue the following text exactly as it would naturally continue in its "
+        "original source. Output ONLY the continuation -- no commentary, no preamble, "
+        "no explanation, no quotation marks."
+    )
+
     def complete(self, prompt: str, max_new_tokens: int | None = None, **kw) -> Completion:
         text = self.chat(
-            [{"role": "user", "content": prompt}],
+            [
+                {"role": "system", "content": self._CONTINUATION_SYSTEM_PROMPT},
+                {"role": "user", "content": prompt},
+            ],
             max_new_tokens=max_new_tokens or self.max_new_tokens,
             **kw,
         )

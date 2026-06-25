@@ -47,6 +47,16 @@ class Settings(BaseSettings):
     chunks_per_text: int = 10
     chunk_sample_seed: int = 42
 
+    # DUALTEST contra un target sin tokenizer (API): split_by_words necesita
+    # prefijo+continuacion en PALABRAS que entren dentro de un chunk de ~128 tokens
+    # (mediana ~80-85 palabras, ver processRawText/Datasets/dataset_len128.csv). Con
+    # los defaults del paper (50 palabras de prefijo) la continuacion quedaba vacia o
+    # casi vacia para la mitad de los chunks. Bajado para que la mayoria de los chunks
+    # tengan continuacion no-trivial.
+    dualtest_prefix_len: int = 40
+    dualtest_continuation_len: int = 24
+    dualtest_max_new_tokens: int = 24
+
     # Thresholds de curacion (ver agents/tools/curator_tools.py) -- viven aca, no
     # hardcodeados en los prompts, para que la skill persistente pueda ajustarlos.
     authorship_min_confidence: float = 0.6

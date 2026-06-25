@@ -112,9 +112,9 @@ def score_chunk(chunk_text_str: str, book_title: str, label: int, client, sage_r
             chunk_text_str,
             client,
             reference_model_name=settings.reference_model_name,
-            prefix_len=50,
-            continuation_len=32,
-            max_new_tokens=32,
+            prefix_len=settings.dualtest_prefix_len,
+            continuation_len=settings.dualtest_continuation_len,
+            max_new_tokens=settings.dualtest_max_new_tokens,
             label=label,
         )
         if not dualtest_out["skipped"]:
