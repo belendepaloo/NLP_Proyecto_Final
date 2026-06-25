@@ -4,6 +4,7 @@ mia_common/). El resto del repo (SAGE/, DUALTEST/) sigue leyendo sus propias env
 sueltas via os.environ.get -- esto es additivo, no las reemplaza.
 """
 
+import os
 from pathlib import Path
 
 from pydantic_settings import BaseSettings, SettingsConfigDict
@@ -74,3 +75,21 @@ class Settings(BaseSettings):
 
 
 settings = Settings()
+
+# Algunas librerias de terceros leen credenciales directo de os.environ, no de este
+# objeto Settings (huggingface_hub/transformers via HF_TOKEN para modelos gated como
+# google/gemma-2b en SAGE/sps.py; SAGE/paraphraser.py via GOOGLE_CLOUD_PROJECT). Sin
+# este bridge, completar .env no alcanzaba para esos casos -- se detecto al intentar
+# descargar Gemma-2B. No se pisa nada que el usuario ya haya exportado en su shell.
+_ENV_BRIDGE = {
+    "HF_TOKEN": settings.hf_token,
+    "GOOGLE_CLOUD_PROJECT": settings.google_cloud_project,
+    "GROQ_API_KEY": settings.groq_api_key,
+    "OPENAI_API_KEY": settings.openai_api_key,
+    "ANTHROPIC_API_KEY": settings.anthropic_api_key,
+    "GOOGLE_API_KEY": settings.google_api_key,
+    "TAVILY_API_KEY": settings.tavily_api_key,
+}
+for _env_key, _env_value in _ENV_BRIDGE.items():
+    if _env_value and not os.environ.get(_env_key):
+        os.environ[_env_key] = _env_value

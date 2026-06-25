@@ -30,12 +30,10 @@ tiktoken==0.13.0
 # SAGE (paraphraser)
 # ---------------------------------------------------------------------------
 google-genai==2.10.0
-# transformer_lens y sae_lens son pesados (descarga multi-GB de Gemma-2B + SAE) y no
-# se instalaron en este venv de verificacion -- necesarios solo para SAGE/sps.py
-# (Semantic Persistence Score). Confirmar version + tiempo de carga en CPU/GPU antes
-# de la Fase 1 (ver riesgos abiertos en el plan).
-transformer_lens>=2.0
-sae_lens>=4.0
+# Pesados (Gemma-2B + SAE se descargan en runtime, no en el install) -- usados solo
+# por SAGE/sps.py (Semantic Persistence Score).
+transformer_lens==3.4.0
+sae_lens==6.44.4
 
 # ---------------------------------------------------------------------------
 # SiMIA / DE-COP / DUALTEST (metodos de scoring MIA)
