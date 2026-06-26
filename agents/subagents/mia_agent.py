@@ -25,7 +25,34 @@ from mia_common.target_client import TargetClient
 from agents.tools.fs_tools import list_run_artifacts, read_run_artifact, write_run_artifact
 from agents.tools.mia_tools import run_decop_tool, run_dualtest_tool, run_simia_tool
 
-SYSTEM_PROMPT = """Sos el agente de scoring MIA. Recibis un run_id, el titulo del libro,
+_STEPS_WITH_SIMIA = """1. Llama a run_decop_tool con el chunk verbatim + los paraphrase candidates de SAGE.
+   Si te dice skipped=true (no hay >=3 candidatos), anotalo y segui -- no es un error,
+   DE-COP simplemente no puede evaluar ese chunk.
+2. Llama a run_simia_tool con el chunk.
+3. Llama a run_dualtest_tool con el chunk y el label (0 si no sabes la membership real
+   de este chunk, que es el caso normal en inferencia).
+4. Llama a write_run_artifact(run_id, "mia_scores", chunk_id, {"decop": <el "result" de
+   run_decop_tool, o null si skipped>, "simia": <el "result" de run_simia_tool, o null
+   si skipped>, "dualtest": <el "result" de run_dualtest_tool, o null si skipped>})."""
+
+_STEPS_WITHOUT_SIMIA = """1. Llama a run_decop_tool con el chunk verbatim + los paraphrase candidates de SAGE.
+   Si te dice skipped=true (no hay >=3 candidatos), anotalo y segui -- no es un error,
+   DE-COP simplemente no puede evaluar ese chunk.
+2. Llama a run_dualtest_tool con el chunk y el label (0 si no sabes la membership real
+   de este chunk, que es el caso normal en inferencia).
+3. SiMIA esta DESACTIVADO por ahora (todavia no esta terminado, decision del usuario
+   -- ver mia_common.settings.simia_enabled) -- NO intentes correrlo, no tenes la tool
+   disponible. Llama a write_run_artifact(run_id, "mia_scores", chunk_id, {"decop": <el
+   "result" de run_decop_tool, o null si skipped>, "simia": null, "dualtest": <el
+   "result" de run_dualtest_tool, o null si skipped>})."""
+
+_FOOTER = """ -- el orquestador llama a combine_scores DESPUES, leyendo este artifact,
+no tu resumen de texto (mismo motivo que el resto de la cadena: tu resumen no lleva los
+dicts completos, solo lo esencial para que un humano lo lea). Resumi en texto los
+resultados (o las razones de skip) para el humano que lea el run -- vos NO combinas
+los scores, solo los recolectas y los persistis crudos."""
+
+_HEADER = """Sos el agente de scoring MIA. Recibis un run_id, el titulo del libro,
 el autor, y una lista de chunk_id -- el cliente target y el modelo de referencia de
 DUALTEST ya estan configurados para todo este run, no son algo que vos elijas. Para
 CADA chunk_id:
@@ -43,20 +70,7 @@ CADA chunk_id:
    "paraphrase_candidates". Si NO esta listado, sage_qa_agent descarto ese chunk --
    segui sin DE-COP para el (paraphrase_candidates=[]), no inventes candidatos. NUNCA
    puntues un chunk con texto que no recuperaste de esta forma.
-1. Llama a run_decop_tool con el chunk verbatim + los paraphrase candidates de SAGE.
-   Si te dice skipped=true (no hay >=3 candidatos), anotalo y segui -- no es un error,
-   DE-COP simplemente no puede evaluar ese chunk.
-2. Llama a run_simia_tool con el chunk.
-3. Llama a run_dualtest_tool con el chunk y el label (0 si no sabes la membership real
-   de este chunk, que es el caso normal en inferencia).
-4. Llama a write_run_artifact(run_id, "mia_scores", chunk_id, {"decop": <el "result" de
-   run_decop_tool, o null si skipped>, "simia": <el "result" de run_simia_tool, o null
-   si skipped>, "dualtest": <el "result" de run_dualtest_tool, o null si skipped>}) --
-   el orquestador llama a combine_scores DESPUES, leyendo este artifact, no tu resumen
-   de texto (mismo motivo que el resto de la cadena: tu resumen no lleva los dicts
-   completos, solo lo esencial para que un humano lo lea). Resumi en texto los 3
-   resultados (o las razones de skip) para el humano que lea el run -- vos NO
-   combinas los scores, solo los recolectas y los persistis crudos."""
+"""
 
 
 def build_mia_subagent(client: TargetClient, reference_model_name: str | None = None) -> dict:
@@ -64,8 +78,15 @@ def build_mia_subagent(client: TargetClient, reference_model_name: str | None = 
     para este run, ver agents/orchestrator.py) y el reference model de DUALTEST ya
     bindeados via closures -- la eleccion de modelo target es una decision de RUN (la
     hace el humano via la webapp), no algo que mia_agent deba rellenar en cada tool
-    call."""
+    call.
+
+    Si mia_common.settings.simia_enabled es False (default actual, a pedido del
+    usuario: "SiMIA todavia no esta terminado"), run_simia_tool ni siquiera se incluye
+    en las tools del subagent -- no alcanza con pedirle al prompt que no lo use, si la
+    tool esta disponible un LLM puede llamarla igual."""
     ref_model = reference_model_name or settings.reference_model_name
+    steps = _STEPS_WITH_SIMIA if settings.simia_enabled else _STEPS_WITHOUT_SIMIA
+    system_prompt = _HEADER + steps + _FOOTER
 
     def run_decop_tool_bound(
         verbatim_passage: str,
@@ -126,16 +147,20 @@ def build_mia_subagent(client: TargetClient, reference_model_name: str | None = 
             label=label,
         )
 
+    tools = [
+        list_run_artifacts,
+        read_run_artifact,
+        write_run_artifact,
+        run_decop_tool_bound,
+        run_dualtest_tool_bound,
+    ]
+    if settings.simia_enabled:
+        tools.append(run_simia_tool_bound)
+
+    methods_desc = "DE-COP, SiMIA y DUALTEST" if settings.simia_enabled else "DE-COP y DUALTEST (SiMIA desactivado)"
     return {
         "name": "mia_agent",
-        "description": "Corre DE-COP, SiMIA y DUALTEST sobre un chunk y devuelve los 3 resultados crudos.",
-        "system_prompt": SYSTEM_PROMPT,
-        "tools": [
-            list_run_artifacts,
-            read_run_artifact,
-            write_run_artifact,
-            run_decop_tool_bound,
-            run_simia_tool_bound,
-            run_dualtest_tool_bound,
-        ],
+        "description": f"Corre {methods_desc} sobre un chunk y devuelve los resultados crudos.",
+        "system_prompt": system_prompt,
+        "tools": tools,
     }

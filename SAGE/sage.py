@@ -19,7 +19,13 @@ class SAGE:
     -> selector: max(SPS - WordSim)
     """
 
-    def __init__(self, device: str | None = None, min_length_ratio: float = 0.75):
+    def __init__(
+        self,
+        device: str | None = None,
+        min_length_ratio: float = 0.75,
+        n_candidates_generated: int = 3,
+        n_candidates_kept: int = 3,
+    ):
         self.segmenter = DocumentSegmenter()
         self.sps = SPS(device=device)
         self.paraphraser = Paraphraser()
@@ -31,8 +37,15 @@ class SAGE:
         # truncadas/resumidas antes de hacerles SPS+WordSim.
         self.min_length_ratio = min_length_ratio
 
+        # Generar mas candidatos de los que se necesitan y quedarse con los mejores
+        # (por final_score = sps - wordsim) da mejor calidad que generar exactamente
+        # n_candidates_kept -- n_candidates_kept es lo que termina viendo DE-COP como
+        # paraphrase_candidates, no n_candidates_generated.
+        self.n_candidates_generated = max(n_candidates_generated, n_candidates_kept)
+        self.n_candidates_kept = n_candidates_kept
+
         # self.sps = SPSLight() if use_sps_light else None
-    
+
 
     def semantic_persistence(self, original: str, candidate: str) -> float:
         if self.sps is None:
@@ -71,12 +84,19 @@ class SAGE:
         print("SEGMENT:")
         print(text)
         print("-" * 80)
-        candidates_text = self.paraphraser.generate_candidates(text, n=3, min_length_ratio=self.min_length_ratio)
+        candidates_text = self.paraphraser.generate_candidates(
+            text, n=self.n_candidates_generated, min_length_ratio=self.min_length_ratio
+        )
 
         scored_candidates = [self.score_candidate(text, candidate) for candidate in candidates_text]
 
-        best = self.selector.select(scored_candidates)
-        best["all_candidates"] = scored_candidates
+        # Quedarse con los n_candidates_kept de mejor final_score -- el resto se
+        # genero solo para tener de donde elegir, no se expone a DE-COP.
+        scored_candidates.sort(key=lambda c: c["final_score"], reverse=True)
+        kept_candidates = scored_candidates[: self.n_candidates_kept]
+
+        best = self.selector.select(kept_candidates)
+        best["all_candidates"] = kept_candidates
         return best
     
 

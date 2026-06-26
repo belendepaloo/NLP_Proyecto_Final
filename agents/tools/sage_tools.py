@@ -14,7 +14,7 @@ from __future__ import annotations
 
 import threading
 
-import mia_common.settings  # noqa: F401 -- dispara el env-bridge de HF_TOKEN/GOOGLE_CLOUD_PROJECT
+from mia_common.settings import settings  # dispara el env-bridge de HF_TOKEN/GOOGLE_CLOUD_PROJECT
 # antes de que SAGE.sps intente bajar el modelo gated google/gemma-2b. Sin este
 # import, llamar run_sage_tool() desde un script que no haya importado
 # mia_common.settings por su cuenta falla con 401 aunque el .env tenga el token bien
@@ -29,9 +29,17 @@ _sage_singleton = None
 _sage_lock = threading.Lock()
 
 
-def _get_sage(device: str | None = None, min_length_ratio: float = 0.75):
+def _get_sage(
+    device: str | None = None,
+    min_length_ratio: float = 0.75,
+    n_candidates_generated: int = 4,
+    n_candidates_kept: int = 3,
+):
     """Singleton lazy: instanciar SAGE() carga Gemma-2B + SAE (pesado), no se quiere
-    pagar ese costo mas de una vez por proceso (ver webapp/main.py startup en Fase 4)."""
+    pagar ese costo mas de una vez por proceso (ver webapp/main.py startup en Fase 4).
+    n_candidates_generated/n_candidates_kept quedan fijos para la vida del singleton
+    (no son algo que sage_qa_agent deba variar por llamada, ver el docstring de
+    run_sage_tool)."""
     global _sage_singleton
     if _sage_singleton is None:
         try:
@@ -42,15 +50,31 @@ def _get_sage(device: str | None = None, min_length_ratio: float = 0.75):
                 "(dependencias pesadas de SPS, ver requirements.txt). Instalalas con "
                 "`pip install transformer_lens sae_lens` para poder usar este tool."
             ) from e
-        _sage_singleton = SAGE(device=device, min_length_ratio=min_length_ratio)
+        _sage_singleton = SAGE(
+            device=device,
+            min_length_ratio=min_length_ratio,
+            n_candidates_generated=n_candidates_generated,
+            n_candidates_kept=n_candidates_kept,
+        )
     return _sage_singleton
 
 
 def run_sage_tool(text: str, device: str | None = None, min_length_ratio: float = 0.75) -> dict:
     """Paraphrasea `text` con SAGE. Devuelve el dict tal cual lo emite SAGE().paraphrase()
-    (original/paraphrase/segments, cada segmento con sps/wordsim/final_score/all_candidates)."""
+    (original/paraphrase/segments, cada segmento con sps/wordsim/final_score/all_candidates).
+
+    n_candidates_generated/n_candidates_kept (ver mia_common.settings,
+    sage_n_candidates_generated=4/sage_n_candidates_kept=3 por defecto) NO se exponen
+    como parametro de esta tool -- es una decision de calidad/costo del humano, no algo
+    que sage_qa_agent deba variar por chunk (mismo criterio que min_length_ratio/min_sps
+    en sage_quality_check, que tampoco varian entre llamadas)."""
     with _sage_lock:
-        sage = _get_sage(device=device, min_length_ratio=min_length_ratio)
+        sage = _get_sage(
+            device=device,
+            min_length_ratio=min_length_ratio,
+            n_candidates_generated=settings.sage_n_candidates_generated,
+            n_candidates_kept=settings.sage_n_candidates_kept,
+        )
         return sage.paraphrase(text)
 
 

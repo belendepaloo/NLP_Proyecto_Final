@@ -46,10 +46,11 @@ class Settings(BaseSettings):
 
     # Limite duro de gasto (USD) para agent_model cuando es un modelo facturado por uso
     # (Vertex AI) -- ver mia_common/spend_guard.py. Por debajo de lo que el usuario
-    # pidio a proposito (no de los $5 exactos): el calculo de costo ANTES de cada
-    # llamada es una estimacion (no se sabe cuanto va a generar el modelo todavia), asi
-    # que se deja margen para no pasarse del limite real por error de estimacion.
-    agent_model_spend_cap_usd: float = 4.5
+    # autorizo a proposito (no del limite real de $10 de credito): el calculo de costo
+    # ANTES de cada llamada es una estimacion (no se sabe cuanto va a generar el modelo
+    # todavia), asi que se deja margen para no pasarse del limite real por error de
+    # estimacion. Subido de $4.50 a $9.00 (usuario autorizo $10 de credito).
+    agent_model_spend_cap_usd: float = 9.0
 
     # Lista de keys de Groq separadas por coma (GROQ_API_KEYS=key1,key2,key3), para
     # paralelizar con un pool de clientes (mia_common.target_client.TargetClientPool)
@@ -101,6 +102,14 @@ class Settings(BaseSettings):
     simia_n_samples: int = 10
     simia_calibration_chars: int = 600
 
+    # Apagado temporal de SiMIA en el pipeline agentico (Fase 2) -- decision del
+    # usuario: "todavia no esta terminado", validar primero que el resto del pipeline
+    # (orquestador, agentes, webapp) funciona bien de punta a punta con DE-COP +
+    # DUALTEST, sumar SiMIA de vuelta despues. NO afecta a la Fase 1 manual
+    # (scripts/run_pipeline_manual.py sigue corriendo los 3 metodos) -- esto es
+    # especifico de agents/subagents/mia_agent.py.
+    simia_enabled: bool = False
+
     # Thresholds de curacion (ver agents/tools/curator_tools.py) -- viven aca, no
     # hardcodeados en los prompts, para que la skill persistente pueda ajustarlos.
     authorship_min_confidence: float = 0.6
@@ -110,6 +119,14 @@ class Settings(BaseSettings):
     # QA de SAGE (ver agents/tools/sage_tools.py)
     sage_min_sps: float = 0.7
     sage_min_length_ratio: float = 0.75
+
+    # Cuantos candidatos de paraphrase genera SAGE por segmento, y cuantos de esos
+    # se quedan (los de mejor final_score = sps - wordsim) antes de exponerlos a
+    # DE-COP como paraphrase_candidates -- generar de mas y filtrar da mejor calidad
+    # que generar exactamente los que se necesitan. DE-COP necesita >=3 para no
+    # skippear el chunk, por eso sage_n_candidates_kept no deberia bajar de 3.
+    sage_n_candidates_generated: int = 4
+    sage_n_candidates_kept: int = 3
 
     # Paths
     runs_dir: Path = PROJECT_ROOT / "runs"

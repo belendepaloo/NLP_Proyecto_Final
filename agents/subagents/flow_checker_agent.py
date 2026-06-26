@@ -21,6 +21,12 @@ run_id y el nombre de la etapa que acaba de terminar.
      calibrados para ese autor, no necesariamente un problema real)
    - ¿Algun metodo se skippeo en TODOS los chunks de un texto (en vez de solo
      puntualmente)? Eso si es señal de un problema sistematico.
+   - **Especifico de la etapa "curation" (bug real que ya paso)**: para cada
+     authorship_<document_id> con decision="keep", ¿hay AL MENOS un
+     chunk_<document_id>_<i> en la lista de artifacts? Si un documento paso autoria
+     pero no aparece NINGUN chunk suyo, curator_agent se quedo a mitad de camino
+     (no es un "drop" legitimo) -- eso es severity="error",
+     recommended_action="retry_stage", no "continue".
 4. Llama a flag_anomaly(run_id, stage, severity, message, recommended_action) por
    cada cosa que encuentres -- severity en ["info","warning","error"],
    recommended_action en ["continue","retry_stage","skip_item","escalate_to_human"].

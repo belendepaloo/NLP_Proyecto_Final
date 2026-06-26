@@ -467,6 +467,45 @@ interfaz común.
         subir `settings.agent_model_spend_cap_usd`): completar
         `sage_qa_agent` → `mia_agent` → `combine_scores` → `aggregate_text_scores` con
         datos 100% reales.
+    - **Dos ajustes a pedido del usuario, antes de la próxima corrida real**:
+      - SAGE genera 4 candidatos de paraphrase por segmento y se queda con los 3 de
+        mejor `final_score` (antes generaba exactamente 3, sin margen) —
+        `settings.sage_n_candidates_generated`/`sage_n_candidates_kept`. `SAGE/sage.py`
+        sigue sin depender de `mia_common` (los valores se pasan como argumentos desde
+        `agents/tools/sage_tools.py`, respetando la separación investigación/ingeniería
+        del proyecto). Validado offline (lógica de orden/filtro, sin cargar los
+        modelos pesados de SAGE).
+      - **SiMIA desactivado temporalmente** (`settings.simia_enabled = False`,
+        default): el pipeline agéntico corre solo DE-COP + DUALTEST hasta validar el
+        resto de punta a punta — SiMIA "todavía no está terminado". Implementado
+        quitando `run_simia_tool` de la lista de tools de `mia_agent` cuando está
+        desactivado (no alcanza con pedírselo solo al prompt). `combine_scores` ya
+        manejaba `simia_raw=None` sin cambios. No afecta `scripts/run_pipeline_manual.py`
+        (Fase 1), que sigue corriendo los 3 métodos siempre. Reactivar: una sola
+        variable (`simia_enabled=True`), sin tocar más código.
+    - **Bug real grave, encontrado en un run de la webapp con autores reales (Jane
+      Austen)**: `bibliography_agent` encontró y descargó **novelas completas**
+      (`Pride and Prejudice`, `Sense and Sensibility`, ~700.000 caracteres cada una —
+      no fragmentos). `curator_agent` necesitaba mandarle ese texto entero como
+      argumento de tool call a Gemini para chunkearlo — exactamente el riesgo que el
+      README ya advertía ("va a necesitar chunkear por capítulo/página, no el libro
+      entero junto"). El run costó **\$2.81** y nunca terminó de chunkear — los dos
+      documentos pasaron autoría (`decision=keep`) pero cero chunks se generaron.
+      `flow_checker_agent` no lo detectó ("no anomalies found"). **Fix de raíz**:
+      nueva tool `agents/tools/chunk_tools.clean_and_chunk_document(run_id,
+      document_id)` que lee el texto del disco, chunkea, y persiste CADA chunk
+      server-side — el texto completo del documento ya NUNCA pasa por el contexto del
+      LLM (ni como argumento ni como respuesta). `curator_agent` ahora lee cada chunk
+      individualmente con `read_run_artifact` antes de juzgarlo, mismo patrón que
+      `sage_qa_agent`/`mia_agent`. **Validado offline con el texto REAL de "Pride and
+      Prejudice"** (gratis, sin LLM): 3.6 segundos para chunkear el libro completo en
+      139 chunks — el chunking en sí nunca fue el problema de performance (la
+      preocupación de ~5 min documentada antes parece ya no aplicar en este entorno);
+      el problema 100% era el costo de mandarle el texto completo a un LLM. Reforzado
+      `flow_checker_agent` para detectar este caso específico (documento con
+      `authorship` keep pero cero chunks) como `severity=error`/`retry_stage`.
+      **Todavía no validado en vivo** (el bug se encontró justo después del run que lo
+      reveló, no se volvió a intentar).
 
 - 🟡 **Fase 3 — skill persistente.** Construida y validada (sin necesitar
   Groq/Tavily). `agents/skills/pipeline-learnings/` tiene `SKILL.md` (instrucciones de

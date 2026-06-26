@@ -46,7 +46,11 @@ def index(request: Request) -> HTMLResponse:
         for provider, model_name in TARGET_MODEL_CHOICES.items()
     ]
     default_provider = next((p["id"] for p in providers if p["has_key"]), providers[0]["id"])
-    return templates.TemplateResponse(request, "index.html", {"providers": providers, "default_provider": default_provider})
+    return templates.TemplateResponse(
+        request,
+        "index.html",
+        {"providers": providers, "default_provider": default_provider, "simia_enabled": settings.simia_enabled},
+    )
 
 
 @app.post("/runs")

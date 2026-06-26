@@ -6,10 +6,14 @@
     <h2 class="hero__title">¿Estuvo un autor en el training set del modelo?</h2>
     <p class="hero__lede">
       Tipeá el nombre de un autor. El pipeline busca su bibliografía, la cura,
-      la parafrasea y corre los métodos de MIA (DE-COP, SiMIA, DUALTEST) para
+      la parafrasea y corre los métodos de MIA
+      ({{ "DE-COP, SiMIA y DUALTEST" if simia_enabled else "DE-COP y DUALTEST" }}) para
       estimar si sus textos formaron parte del corpus de entrenamiento del
       modelo target — con un humano en el loop antes de avanzar.
     </p>
+    {% if not simia_enabled %}
+      <p class="hero__note">📋 SiMIA está temporalmente desactivado mientras se termina de validar.</p>
+    {% endif %}
   </section>
 
   <section class="card card--form">
@@ -66,7 +70,7 @@
     <div class="step">
       <span class="step__icon">📊</span>
       <h3>3. Scoring MIA</h3>
-      <p>SAGE parafrasea y DE-COP/SiMIA/DUALTEST puntúan cada chunk contra el modelo target.</p>
+      <p>SAGE parafrasea y {{ "DE-COP/SiMIA/DUALTEST" if simia_enabled else "DE-COP/DUALTEST" }} puntúan cada chunk contra el modelo target.</p>
     </div>
     <div class="step">
       <span class="step__icon">🎯</span>

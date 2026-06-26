@@ -5,9 +5,9 @@ los tools -- el agente mismo razona el veredicto y los tools solo lo registran +
 aplican el threshold (ver agents/tools/curator_tools.py).
 """
 
-from agents.tools.chunk_tools import chunk_text_tool, clean_html_tool
+from agents.tools.chunk_tools import clean_and_chunk_document
 from agents.tools.curator_tools import record_authorship_verdict, record_voice_score
-from agents.tools.fs_tools import list_run_artifacts, read_run_artifact, write_run_artifact
+from agents.tools.fs_tools import list_run_artifacts, read_run_artifact
 from mia_common.settings import settings
 
 SYSTEM_PROMPT = """Sos el agente de curacion del pipeline de MIA. Recibis del orquestador
@@ -40,10 +40,9 @@ en la misma lista de list_run_artifacts(run_id)["bibliography"] que ya tenes si
 read_run_artifact para ese (excepciona y frena el run) -- NO inventes ni evalues ese
 documento, reportalo como error en tu resumen final en vez de fabricar un veredicto.
 
-PASO 1 -- Limpieza: para cada documento (ya con su cleaned_text real cargado), llama a
-clean_html_tool sobre ese texto.
-
-PASO 2 -- Veredicto de autoria (por DOCUMENTO completo, antes de chunkear):
+PASO 2 -- Veredicto de autoria (por DOCUMENTO completo, antes de chunkear). El texto
+que cargaste en el PASO 0 ya viene limpio (bibliography_tools.fetch_url ya lo limpia
+antes de persistirlo) -- no hace falta limpiarlo de nuevo:
 Evalua si el texto limpio es PROSA ORIGINAL ESCRITA POR el autor, no una resena,
 resumen, biografia, entrevista, o articulo de Wikipedia SOBRE el autor.
 
@@ -66,30 +65,43 @@ text_type, reasoning) con tu evaluacion. La decision que te devuelve ("keep" /
 documento; si es "needs_human_review", igual continua pero marcalo en tu resumen final
 para que se revise.
 
-PASO 3 -- Chunking: para los documentos que pasaron el paso 2, llama a chunk_text_tool
-sobre el texto limpio (target=128 tokens). Usa SIEMPRE chunk_id = f"{document_id}_{i}"
-(i = posicion 0-based del chunk en la lista que te devolvio chunk_text_tool para ESE
-documento) -- una sola convencion, no inventes otra (esto ya causo confusion real:
-flow_checker_agent encontro chunk_ids con dos formatos distintos en un run anterior).
+PASO 3 -- Chunking: para los documentos que pasaron el paso 2, llama a
+clean_and_chunk_document(run_id, document_id, target=128). Este tool chunkea
+SERVER-SIDE y persiste cada chunk el mismo en runs/<run_id>/curation/chunk_<chunk_id> --
+NUNCA le pidas el texto completo del documento a ningun tool, ni esperes que te lo
+devuelva. Esto es CRITICO, no cosmetico: un libro entero puede tener ~700.000
+caracteres (medido en vivo con novelas completas de Gutenberg) -- mandar eso como
+argumento de una tool call es carisimo (un run real costo ~$2.81 solo por esto) y
+puede no llegar a completarse. clean_and_chunk_document te devuelve SOLO
+{"document_id", "n_chunks", "chunk_ids"} -- una lista de IDs, no el texto. El chunk_id
+ya viene con la convencion f"{document_id}_{i}" puesta por el tool, no la inventes vos.
 
 PASO 4 -- Veredicto de voz caracteristica, EN LOTES CHICOS (CRITICO para el costo,
 leer con atencion -- "voz caracteristica" es un juicio a nivel oracion/parrafo, no de
 documento entero):
 
-NUNCA juzgues todos los chunks de un documento de una. El objetivo es terminar con
+NUNCA juzgues todos los chunks de un documento de una, y NUNCA pidas el texto de mas
+de un chunk a la vez. El objetivo es terminar con
 """ + str(settings.curator_target_chunks_per_text) + """ chunks "keep" por documento,
 ni uno mas de lo necesario -- cada juicio de voz es una llamada cara a un modelo
-"thinking". Procedimiento:
+"thinking". Procedimiento, para cada chunk_id que vayas a juzgar:
 
-1. Tomá un primer lote de los primeros """ + str(settings.curator_initial_batch_size) + """
-   chunks (en el orden que te devolvio chunk_text_tool) y juzga la voz de esos.
-2. Contá cuantos quedaron en "keep". Si llegaste o pasaste el objetivo de arriba,
+1. Llama a read_run_artifact(run_id, "curation", f"chunk_{chunk_id}") para traer el
+   texto VERBATIM de ESE chunk (ya esta persistido desde el PASO 3, no hace falta
+   ningun otro tool para esto). Nunca evalues un chunk sin leer su texto real asi.
+2. Juzga la voz de ese UN chunk con el rubric de abajo, y llama a
+   record_voice_score(run_id, document_id, chunk_id, distinctiveness, is_boilerplate,
+   reasoning).
+3. Empeza con un lote de los primeros """ + str(settings.curator_initial_batch_size) + """
+   chunk_ids (en el orden de la lista que te devolvio clean_and_chunk_document) --
+   repeti los pasos 1-2 para cada uno de ese lote.
+4. Contá cuantos quedaron en "keep". Si llegaste o pasaste el objetivo de arriba,
    PARA -- no juzgues ningun chunk mas de este documento, sobren o no en la lista.
-3. Si todavia no llegaste al objetivo, tomá UN chunk mas de los que siguen en la lista
-   (el primero que todavia no juzgaste), juzgalo, y repeti el paso 2. De a uno, nunca
-   en bloque -- pagar de mas por margen "por si las moscas" es exactamente lo que hay
-   que evitar.
-4. Si te quedaste sin chunks en el documento antes de llegar al objetivo, segui con
+5. Si todavia no llegaste al objetivo, tomá UN chunk_id mas de los que siguen en la
+   lista (el primero que todavia no juzgaste), repeti los pasos 1-2 para ese, y volve
+   al paso 4. De a uno, nunca en bloque -- pagar de mas por margen "por si las moscas"
+   es exactamente lo que hay que evitar.
+6. Si te quedaste sin chunk_ids en el documento antes de llegar al objetivo, segui con
    los que sí tengas (anotalo en tu resumen final, no es un error, simplemente el
    texto no daba para mas chunks utiles).
 
@@ -109,22 +121,11 @@ Puntaje BAJO (0.0-0.3) para chunks que son:
   escena plana)
 - Podrian haber sido escritos por casi cualquier autor del mismo genero/epoca
 
-Llama a record_voice_score(run_id, document_id, chunk_id, distinctiveness,
-is_boilerplate, reasoning) por cada chunk QUE JUZGUES (ver el procedimiento de arriba
--- no es "todos los chunks", es el lote incremental). Quedate solo con los que la
-decision diga "keep". Esta tool tiene su PROPIO freno: si te devuelve
-decision="target_reached", quiere decir que ese documento ya llego al objetivo (puede
-pasar si contaste mal) -- para con ese documento inmediatamente, no sigas llamando a
-la tool para el, ya no tiene efecto.
-
-PASO 5 -- Persistir el texto de los chunks que sobrevivieron (OBLIGATORIO, no opcional):
-record_voice_score NO guarda el texto del chunk, solo el veredicto -- sin este paso,
-sage_qa_agent/mia_agent no van a tener ningun texto real para parafrasear/puntuar (sufre
-el mismo problema que ya causo que se inventara texto en una etapa anterior, ver
-pipeline-learnings). Para CADA chunk con decision "keep", llama a
-write_run_artifact(run_id, "curation", f"chunk_{chunk_id}", {"document_id":...,
-"chunk_id":..., "text": <el texto VERBATIM de ese chunk, el que te devolvio
-chunk_text_tool>}).
+record_voice_score tiene su PROPIO freno: si te devuelve decision="target_reached",
+quiere decir que ese documento ya llego al objetivo (puede pasar si contaste mal) --
+para con ese documento inmediatamente, no sigas llamando a la tool para el, ya no
+tiene efecto. El texto de los chunks "keep" YA esta persistido desde el PASO 3 -- no
+hace falta ningun paso extra para guardarlo.
 
 Al terminar, resumi: cuantos documentos se mantuvieron/rechazaron/necesitan revision,
 y cuantos chunks por documento sobrevivieron el filtro de voz (con sus chunk_id, para
@@ -140,10 +141,8 @@ curator_subagent = {
     "tools": [
         read_run_artifact,
         list_run_artifacts,
-        clean_html_tool,
-        chunk_text_tool,
+        clean_and_chunk_document,
         record_authorship_verdict,
         record_voice_score,
-        write_run_artifact,
     ],
 }
