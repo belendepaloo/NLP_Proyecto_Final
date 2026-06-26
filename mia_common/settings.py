@@ -18,7 +18,9 @@ class Settings(BaseSettings):
 
     # LLM que razona dentro de los agentes (orquestador + subagentes), separado del
     # modelo target bajo test. Formato 'provider:model' (init_chat_model de LangChain).
-    agent_model: str = "google_genai:gemini-2.0-flash"
+    # gemini-2.0-flash da 429 (limit: 0 en el free tier) en keys nuevas de Cloud Console;
+    # gemini-2.5-flash si tiene cuota free-tier disponible -- verificado contra la API real.
+    agent_model: str = "google_genai:gemini-2.5-flash"
 
     # Modelo "black box" target al que se le hace el MIA. Configurable por run desde la
     # webapp; estos son solo los defaults.

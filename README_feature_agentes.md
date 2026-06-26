@@ -19,15 +19,50 @@ tocar código.
 - **Fase 0 y Fase 1 están terminadas y validadas contra Groq real** (no es teoría, se
   corrió de punta a punta varias veces). El ensemble discrimina member/non-member en
   promedio, aunque con superposición a nivel texto individual.
-- **Fase 2 (orquestador deepagents + 5 sub-agentes + human-in-the-loop) está construida
-  y compila/arranca**, pero la validación end-to-end real está **bloqueada esperando
-  `GOOGLE_API_KEY`** (o `ANTHROPIC_API_KEY`) — ver el hallazgo de Groq como agent_model
-  en la sección de esa fase, es importante leerlo antes de asumir que "no funciona".
-- **Se agotó la cuota diaria (TPD) de Groq** probando todo esto (parece ser un límite
-  por organización, no por key individual — las 4 keys no lo evitan, solo ayudan con el
-  límite por minuto). El error es `mia_common.target_client.DailyCapError`; ya no tumba
-  el proceso entero (se arregló para guardar progreso parcial), pero hasta que resetee
-  la cuota no se puede seguir validando contra Groq real.
+- **Conseguimos `GOOGLE_API_KEY` y se validó el hallazgo bloqueante de Gemini vs. Groq**
+  como `agent_model` (ver detalle en la sección de Fase 2): Gemini delega bien a
+  subagentes via la tool `task` de deepagents, a diferencia de
+  `groq:llama-3.3-70b-versatile`. En el camino salieron 2 bugs reales más (ya
+  arreglados, ver Fase 2): un tool con parámetro `data: Any` que rompía la conversión a
+  function-calling de Gemini, y el default `agent_model` (`gemini-2.0-flash`) con cuota
+  0 en keys nuevas de Cloud Console — cambiado a `gemini-2.5-flash`.
+- **Sigue bloqueada la validación end-to-end REAL** (con bibliografía real y MIA real)
+  por falta de `GROQ_API_KEY` y `TAVILY_API_KEY` — sin ellas, `bibliography_agent` para
+  en cuanto intenta `tavily_search` (error claro, no un crash de tool-calling) y
+  `mia_agent` no tendría target contra el que correr. El usuario las va a pasar más
+  adelante; mientras tanto la arquitectura de la Fase 2 ya está validada en lo que se
+  puede probar sin esas keys.
+- **Se agotó la cuota diaria (TPD) de Groq** en la sesión anterior probando todo esto
+  (parece ser un límite por organización, no por key individual — las 4 keys no lo
+  evitan, solo ayudan con el límite por minuto). El error es
+  `mia_common.target_client.DailyCapError`; ya no tumba el proceso entero (se arregló
+  para guardar progreso parcial), pero hasta que resetee la cuota no se puede seguir
+  validando contra Groq real. No confirmado si ya reseteó -- revisar al retomar.
+- **Fase 3 (skill persistente) y Fase 4 (webapp) ya están construidas** (ver sus
+  secciones) — esta sesión avanzó sin esperar las keys de Groq/Tavily, usando mocks
+  acotados SOLO a las llamadas de red externas (nunca al orquestador/deepagents) para
+  poder seguir validando. La Fase 4 encontró y arregló un gap real de Fase 2 (el
+  orquestador no persistía los candidatos aprobados de bibliography_agent, asi que
+  flow_checker_agent escalaba siempre) — confirmar que el fix funciona de punta a punta
+  sigue pendiente porque **también se agotó la cuota diaria gratuita de Gemini**
+  (`gemini-2.5-flash`: 20 requests/día en el free tier de esta key) a mitad de esa
+  prueba. Ver `agents/skills/pipeline-learnings/learnings.jsonl` para el detalle de
+  ambos límites diarios (Groq y Gemini) antes de asumir que algo "no funciona".
+- **`GROQ_API_KEY`/`GROQ_API_KEYS` reales ya están en `.env`** (el usuario las agregó
+  en esta sesión). Armando el selector de modelo target de la webapp (Fase 4) se
+  encontró un bug serio preexistente: **`mia_agent` estaba roto para CUALQUIER
+  target**, nunca se había ejercitado en ningún test (`client: TargetClient` expuesto
+  crudo en la tool rompe la conversión a function-calling de Gemini) — arreglado con
+  closures en `agents/subagents/mia_agent.py` (`functools.partial` NO funciona para
+  esto, ver el detalle en Fase 2). Validado offline con el `TargetClient` real de Groq
+  bindeado. Lo único que falta para una corrida 100% real ya no es Groq — es
+  `TAVILY_API_KEY` + que resetee la cuota de Gemini como `agent_model`.
+- **Esta branch se retomó en una máquina nueva sin nada instalado** (sin `.env`, sin
+  venv, Python del sistema en 3.14 que no sirve para `requirements.txt`). Se creó un
+  entorno conda `mia-agentes` con Python 3.12 (`conda create -n mia-agentes
+  python=3.12`) y se instaló `requirements.txt` ahí sin conflictos de versiones. Si
+  retomás esto en esa misma máquina, activar ese entorno
+  (`conda activate mia-agentes`) en vez de reinstalar todo de nuevo.
 - Pendiente menor, deliberadamente no resuelto: el módulo se llama `SiMIA/` pero el
   método del paper que implementa se llama **"SimMIA"** (con dos emes: "Sim"+"MIA") —
   renombrar `SiMIA/` → `SimMIA/` (y `simia.py` → `simmia.py`) y actualizar los archivos
@@ -55,9 +90,11 @@ agents/
   tools/                Adapters delgados sobre SAGE/DUALTEST/SiMIA/DE_COP/text_pipeline,
                         hoy funciones planas (se decoran como @tool en la Fase 2)
   ensemble/              combine.py (promedio pesado de los 3 metodos) + weights.yaml
-  subagents/             (Fase 2, no existe todavia)
-  skills/                (Fase 3, no existe todavia)
-webapp/                  (Fase 4, no existe todavia)
+  subagents/             Los 5 subagentes de Fase 2 (ver "Estado por fase")
+  skills/pipeline-learnings/  SKILL.md + learnings.jsonl + calibration_history.csv
+                        (Fase 3) -- backend scopeado aca, no al resto del repo
+webapp/                  FastAPI + Jinja2 (Fase 4) -- run_manager.py es el puente
+                        sincrono/async con el orquestador, ver "Estado por fase"
 scripts/                  Scripts ejecutables para probar cada fase sin esperar al resto
 runs/                     Artifacts por run + cache de API (gitignored)
 ```
@@ -170,31 +207,167 @@ interfaz común.
     callables planos directo (`tools: Sequence[BaseTool | Callable | dict]`), siempre
     que tengan type hints + docstring. Un bug real: `read_run_artifact` no tenía
     docstring y deepagents rechazaba armar el grafo entero por eso.
-  - **Hallazgo importante, bloqueante**: probamos `groq:llama-3.3-70b-versatile` como
-    `agent_model` (el LLM que razona DENTRO del orquestador, no el target de MIA) y la
-    tool `task` que deepagents usa para delegar a subagentes le generaba argumentos mal
-    formados — ese modelo no maneja con suficiente fidelidad el tool-calling anidado de
-    deepagents. El nivel simple (una tool con interrupt directo en el orquestador, sin
-    subagentes de por medio) sí funcionó perfecto con Groq. El plan original ya preveía
-    Gemini como default (`settings.agent_model`) pero no había `GOOGLE_API_KEY`
-    disponible en este entorno para probarlo — **pendiente de validar end-to-end en
-    cuanto se consiga esa key** (o una de Anthropic, `langchain-anthropic` ya está
-    instalado).
-  - `TAVILY_API_KEY` tampoco está configurada — sin ella, `bibliography_agent` no puede
-    buscar de verdad (el resto del pipeline se puede seguir probando con textos fijos
-    mientras tanto).
+  - **Hallazgo bloqueante de la sesión anterior, ya VALIDADO**: probamos
+    `groq:llama-3.3-70b-versatile` como `agent_model` (el LLM que razona DENTRO del
+    orquestador, no el target de MIA) y la tool `task` que deepagents usa para delegar
+    a subagentes le generaba argumentos mal formados — ese modelo no maneja con
+    suficiente fidelidad el tool-calling anidado de deepagents. Con `GOOGLE_API_KEY`
+    real conseguida en esta sesión, se confirmó que **Gemini sí delega bien**: invocar
+    el orquestador con un mensaje real generó una llamada bien formada a `task` hacia
+    `bibliography_agent`, que a su vez llamó bien a su propia tool `tavily_search` (paró
+    ahí solo por `TAVILY_API_KEY` faltante, un `RuntimeError` claro y esperado, no un
+    crash de tool-calling). Conclusión: usar Gemini (o Anthropic) como `agent_model`,
+    nunca un Groq chat model para este rol.
+  - **2 bugs reales encontrados validando esto contra la API real de Gemini** (no eran
+    visibles sin probar — mismo patrón que en Fase 1):
+    - `agents/tools/fs_tools.write_run_artifact` tenía `data: Any` como tipo del
+      parámetro. `langchain-google-genai` convierte el schema de cada tool al formato
+      de function-calling de Gemini, y un `Any` sin estructura generaba
+      `properties.data: None` — `pydantic_core.ValidationError` apenas el orquestador
+      arma su primer mensaje (rompía el grafo entero antes de llamar a ningún
+      subagente, ni siquiera dependía del mensaje de entrada). Cambiado a
+      `data: dict[str, Any]` (coincide con todos los call-sites reales, que ya pasaban
+      dicts) — error desaparece.
+    - El default `agent_model = "google_genai:gemini-2.0-flash"` daba
+      `429 RESOURCE_EXHAUSTED` con `limit: 0` en el free tier para ESTE tipo de key
+      (generada desde Google Cloud Console, no desde el botón "Get API key" de AI
+      Studio — formato `AQ....` en vez de `AIzaSy...`). Probado directo contra la API
+      (`generateContent`): `gemini-2.0-flash` y `gemini-2.0-flash-lite-001` → 429 (cuota
+      0); `gemini-2.5-flash` → 200 OK. Cambiado el default a
+      `google_genai:gemini-2.5-flash` en `mia_common/settings.py`. Si en algún momento
+      se usa una key vieja tipo AI Studio (`AIzaSy...`), puede que vuelva a andar
+      `gemini-2.0-flash` y convenga revisar cuál conviene por costo/latencia — esto no
+      es una limitación de Gemini en general, es especifico de cuota por tipo de key.
+    - **`mia_agent` estaba roto para CUALQUIER target, nunca se había ejercitado**:
+      `run_decop_tool`/`run_simia_tool`/`run_dualtest_tool` tenían `client: TargetClient`
+      expuesto directo como parámetro de la tool — un objeto Python real, no
+      JSON-serializable. `convert_to_genai_function_declarations` rompe con
+      `PydanticInvalidForJsonSchema` apenas el orquestador intenta delegar a
+      `mia_agent`. `functools.partial` NO sirve para esconderlo (`inspect.signature`
+      sigue mostrando el parámetro con el objeto bindeado como default, y
+      `typing.get_type_hints` directamente rechaza un `partial`) — la solución real es
+      un closure (`def` anidado) que capture `client`/`reference_model_name` sin
+      exponerlos en su propia firma. `agents/subagents/mia_agent.py` ahora expone
+      `build_mia_subagent(client, reference_model_name)` en vez de un dict estático;
+      `agents/orchestrator.py` construye el `TargetClient` elegido
+      (`mia_common.target_client.resolve_target_client`, nuevo) antes de armar ese
+      subagent — por eso `mia_agent` ya no vive en `STATIC_SUBAGENTS`
+      (`agents/subagents/__init__.py`). Validado offline (sin gastar API, con el
+      `TargetClient` real de Groq bindeado): las 3 tools convierten bien al schema de
+      Gemini.
+  - **Selector de modelo target por run (Fase 4)**: la webapp deja elegir
+    `target_provider` (groq/openai/anthropic/google, botones que se deshabilitan solos
+    si falta la key en `.env`) antes de arrancar un run —
+    `webapp/run_manager.TARGET_MODEL_CHOICES` mapea cada proveedor a un model_name
+    default razonable. Como consecuencia, `build_orchestrator()` y el orquestador
+    global compartido de `webapp/run_manager.py` ya no existen — **cada run construye
+    su propio orquestador** (con su propio `mia_agent` bindeado al target elegido),
+    porque `mia_agent` necesita un `TargetClient` concreto por run, no uno fijo para
+    todo el proceso.
+  - `GROQ_API_KEY`/`GROQ_API_KEYS` (4 keys reales) y `HF_TOKEN` ya están configuradas en
+    esta máquina. `TAVILY_API_KEY` sigue sin configurar — sin ella,
+    `bibliography_agent` para apenas intenta `tavily_search` (error claro). **Pendiente
+    real**: con Groq real disponible, lo único que falta para una validación 100%
+    end-to-end es `TAVILY_API_KEY` — Y que resetee la cuota diaria de Gemini como
+    `agent_model` (ver TL;DR), porque el run actual no llega ni a delegar a
+    `bibliography_agent` sin eso. Una vez que ambas cosas se resuelvan: correr
+    `scripts/run_pipeline_agentic.py --author "..."` (o la webapp) de punta a punta de
+    verdad y validar que `flow_checker_agent` frena/escala cuando corresponde.
 
-- ⬜ **Fase 3 — skill persistente + flow-checkers en cada etapa.** Pendiente. La idea
-  es `agents/skills/pipeline-learnings/SKILL.md` + `learnings.jsonl` +
-  `calibration_history.csv`, cargada automáticamente por deepagents (`skills=[...]`) en
-  cada run y actualizada al final de cada uno (éxito o falla parcial).
+- 🟡 **Fase 3 — skill persistente.** Construida y validada (sin necesitar
+  Groq/Tavily). `agents/skills/pipeline-learnings/` tiene `SKILL.md` (instrucciones de
+  cuándo leer/escribir), `learnings.jsonl` (log apendable, seedeado con los bugs reales
+  de Fase 1/2 — SiMIA, DUALTEST, Groq-como-agent_model, etc.) y
+  `calibration_history.csv` (seedeado con los números de separación member/non-member
+  ya documentados en Fase 1).
+  - `agents/orchestrator.py::build_orchestrator` ahora pasa
+    `backend=FilesystemBackend(root_dir=settings.skill_dir.parent, virtual_mode=True)` +
+    `skills=["/"]` a `create_deep_agent` — el orquestador (y, como efecto del backend
+    compartido, los subagentes) ganan `read_file`/`ls` ahí, scopeados SOLO a
+    `agents/skills/` (no al resto del repo — decisión deliberada: `FilesystemBackend`
+    con un root amplio expondría `.env` y el resto del código a un agente con tools de
+    red, ver el warning de seguridad en la documentación de deepagents).
+  - `agents/tools/skill_tools.py`: `record_learning`/`record_calibration`, dos tools
+    nuevas para que el orquestador escriba al final de cada run (paso 8 nuevo en
+    `ORCHESTRATOR_SYSTEM_PROMPT`). Apendean, nunca reescriben.
+  - **Validado en vivo** (un solo mensaje, sin delegar a ningún subagente, para no
+    gastar Tavily/Groq): le pedí al orquestador que dijera qué modelo NO usar como
+    `agent_model` según lo aprendido — leyó `/pipeline-learnings/SKILL.md` con
+    `read_file` por su cuenta y contestó correctamente citando el bug real de Groq.
+  - **Límite deliberado**: la skill registra observaciones de calibración pero NO
+    ajusta sola los thresholds de `mia_common/settings.py` — eso sigue siendo decisión
+    humana (mismo principio que los LLM-judges de curación: escalar, no autoaplicar).
+  - **Pendiente real**: todavía no se validó `record_learning`/`record_calibration`
+    siendo llamados por el agente DENTRO de un run completo de punta a punta (necesita
+    `GROQ_API_KEY`/`TAVILY_API_KEY`, ver Fase 2) — solo se confirmó que el agente lee la
+    skill correctamente, no que la escriba bien al cierre de un run real.
 
-- ⬜ **Fase 4 — interfaz web.** Pendiente. FastAPI + Jinja2 + JS mínimo (fetch/EventSource),
-  sin SPA. `fastapi`/`uvicorn`/`Jinja2` ya están en `requirements.txt`.
+- 🟡 **Fase 4 — interfaz web.** Construida y validada de punta a punta (incluyendo el
+  ciclo completo de human-in-the-loop por HTTP) con `tavily_search`/`fetch_url`
+  mockeados — el resto del flujo (Gemini real, deepagents real) no está mockeado.
+  - `webapp/main.py`: rutas FastAPI server-rendered (Jinja2) — `GET /` (formulario con
+    el nombre del autor, eso es todo lo que pide la idea original), `POST /runs`
+    (arranca el run), `GET /runs/{run_id}` (estado + revisión humana + artifacts),
+    `POST /runs/{run_id}/decide` (aprobar tal cual / editar JSON / rechazar),
+    `GET /runs/{run_id}/stream` (SSE de una sola línea de JS para refrescar la
+    pantalla sola — sin SPA, sin polling manual en el cliente).
+  - `webapp/run_manager.py`: el puente entre el orquestador (síncrono, bloqueante,
+    `Command(resume=...)`) y FastAPI (async). Un `RunHandle` por run con un thread de
+    background — cuando el orquestador pega un `__interrupt__`, el thread se duerme en
+    un `threading.Event` hasta que `POST /runs/{run_id}/decide` lo despierta con la
+    decisión. Mismo patrón que el loop de `scripts/run_pipeline_agentic.py`, pero la
+    "pausa por stdin" de ese script ahora es una pantalla.
+  - Faltaba `python-multipart` en `requirements.txt` (necesario para que FastAPI lea
+    `Form(...)`, no estaba listado en la Fase 4 original) — agregado.
+  - **Validado con un test que mockea SOLO `tavily_search`/`fetch_url`** (no el
+    orquestador ni deepagents) manejando requests HTTP reales contra la app
+    (`TestClient`, sin mockear nada de FastAPI/Jinja2): el ciclo completo
+    `POST /runs` → pantalla de revisión humana con los candidatos reales que propuso
+    bibliography_agent → `POST .../decide` (approve) → resume → resultado final,
+    funcionó de punta a punta.
+  - **Hallazgo real en el camino** (no un bug introducido por la webapp, ya existía en
+    el orquestador de Fase 2, simplemente nadie lo había corrido lo bastante lejos
+    para verlo): el orquestador delegaba a bibliography_agent y pausaba para revisión
+    humana, pero nunca guardaba la lista de candidatos ya aprobada en
+    `runs/<run_id>/` antes de pasar a `curator_agent`. `flow_checker_agent` (que ya
+    existía, Fase 2) detectó correctamente que no había nada guardado para esa etapa y
+    recomendó `escalate_to_human` — el orquestador frenó como tenía que frenar. Esto es
+    justo lo que Fase 2 dejaba pendiente de validar ("que flow_checker_agent realmente
+    frena/escala cuando corresponde"): confirmado, frena bien. Arreglado agregando una
+    instrucción explícita en el paso 1 de `ORCHESTRATOR_SYSTEM_PROMPT`: guardar los
+    candidatos aprobados con `write_run_artifact` antes de la etapa 2.
+  - **No se pudo re-validar el fix de punta a punta**: al reintentar el mismo test
+    después del fix, se agotó la cuota diaria gratuita de `gemini-2.5-flash`
+    (**20 requests/día** en el free tier de esta key de Cloud Console — bastante más
+    chico de lo que parecía con `gemini-2.0-flash` dando directamente cuota 0). Mismo
+    patrón que el `DailyCapError` de Groq, ver `learnings.jsonl`. **Pendiente real**:
+    re-correr el mismo test (`isolation`/mock de Tavily, real Gemini) cuando resetee la
+    cuota o se agregue billing/otra key, para confirmar que el fix realmente hace que
+    `flow_checker_agent` recomiende `continue` y el run avance a `curator_agent`.
+  - **Rediseño visual** (a pedido del usuario, la v1 era deliberadamente mínima):
+    paleta bordó/dorado, tipografía Playfair Display + Inter (Google Fonts), cards con
+    sombra, botones primario/secundario/peligro diferenciados para
+    aprobar/editar/rechazar, badges de estado con ícono. `webapp/templates/base.html`
+    es el layout compartido (header/footer) — `index.html`/`run.html` solo llenan
+    `{% block content %}`, así que si algo del header/footer no se ve bien hay que
+    mirar `base.html`, no las otras dos. Sin venv con Playwright instalado en esta
+    máquina (poco espacio en disco) — los cambios de CSS se validaron por estructura de
+    HTML/clases, no con captura de pantalla real; usar `/run` o pedirle al usuario que
+    confirme visualmente.
+  - **Selector de modelo target** (`target_provider`, botones en `index.html`,
+    deshabilitados solos si falta la key): ver el detalle completo y el bug real que
+    encontró (`mia_agent` roto para cualquier target) en la sección de Fase 2 — está
+    documentado ahí porque el bug vivía en `agents/subagents/mia_agent.py`, no en la
+    webapp en sí.
+  - No probado todavía con `TAVILY_API_KEY` real ni con autores/bibliografía reales —
+    `GROQ_API_KEY` ya está configurada (ver Fase 2), pero sigue bloqueado por la cuota
+    de Gemini como `agent_model` (no llega a delegar a `bibliography_agent`).
 
 ## Cómo correr lo que existe hoy
 
 ```bash
+conda create -n mia-agentes python=3.12   # el python del sistema puede ser incompatible
+conda activate mia-agentes
 pip install -r requirements.txt
 cp .env.example .env   # completar GROQ_API_KEY como minimo
 ```
@@ -239,6 +412,19 @@ sola key son ~5-6 min/chunk. Con N keys en paralelo, dividir aproximadamente por
 
 Sin `GROQ_API_KEY`/`GROQ_API_KEYS` configurada, los scripts corren igual pero muestran
 `[SKIP ...]` en cada paso que necesita el modelo target, en vez de fallar.
+
+**Interfaz web** (Fase 4) sobre el mismo orquestador de Fase 2/3:
+
+```bash
+uvicorn webapp.main:app --reload
+```
+
+Abrir `http://127.0.0.1:8000/`. Necesita los mismos requisitos que
+`scripts/run_pipeline_agentic.py` (`GOOGLE_API_KEY`/`ANTHROPIC_API_KEY` para el
+`agent_model`, `GROQ_API_KEY`/`TAVILY_API_KEY` para un run real de punta a punta) — sin
+ellas el run arranca igual y la pantalla muestra el error claro en vez de fallar en
+silencio. El estado de los runs vive en memoria del proceso de uvicorn (no sobrevive un
+reinicio del server), igual que `InMemorySaver` en el script de CLI.
 
 **Para ampliar el dataset** con más libros member/non-member, ver
 `scripts/expand_dataset.py` (agrega entradas a `NEW_SOURCES`, corre, regenera

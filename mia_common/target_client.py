@@ -232,6 +232,35 @@ def make_target_client(provider: str, model_name: str, **kw) -> TargetClient:
     return RateLimitedAPITarget(provider=provider, model_name=model_name, **kw)
 
 
+def resolve_target_client(provider: str, model_name: str) -> TargetClient:
+    """make_target_client() pero resolviendo la api_key correspondiente desde
+    mia_common.settings -- usado por agents/orchestrator.py para construir el target
+    elegido en la webapp (Fase 4) sin que cada caller tenga que repetir el mapeo
+    provider->api_key. Para "groq" con varias keys en GROQ_API_KEYS usa la primera --
+    el round-robin de TargetClientPool esta pensado para paralelizar chunks con
+    ThreadPoolExecutor (ver scripts/run_pipeline_manual.py), no para un agente
+    razonando secuencialmente sobre un chunk a la vez."""
+    from mia_common.settings import settings
+
+    if provider == "hf_local":
+        return make_target_client(provider, model_name)
+
+    api_key_by_provider = {
+        "groq": next(iter(settings.groq_api_keys()), None),
+        "openai": settings.openai_api_key,
+        "anthropic": settings.anthropic_api_key,
+        "google": settings.google_api_key,
+    }
+    if provider not in api_key_by_provider:
+        raise ValueError(f"Unknown target provider: {provider!r}")
+    api_key = api_key_by_provider[provider]
+    if not api_key:
+        raise ValueError(
+            f"No hay API key configurada para target_provider={provider!r} (ver .env.example)"
+        )
+    return make_target_client(provider, model_name, api_key=api_key)
+
+
 class TargetClientPool:
     """Pool de clientes (uno por API key) para paralelizar llamadas reales sin
     pisarse el rate limit de una sola key -- cada key mantiene su propio throttle

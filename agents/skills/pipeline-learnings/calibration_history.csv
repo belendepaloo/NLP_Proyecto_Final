@@ -1,0 +1,5 @@
+timestamp,run_id,method,metric,value,notes
+2026-06-25T00:00:00Z,seed_fase1_v1,ensemble,mean_score_member,0.835,"Dataset chico (1 member-set viejo). Rango 0.81-0.86. Ver README_feature_agentes.md Fase 1 punto 4."
+2026-06-25T00:00:00Z,seed_fase1_v1,ensemble,mean_score_non_member,0.62,"Dataset chico (1 member-set viejo). Ver README_feature_agentes.md Fase 1 punto 4."
+2026-06-25T00:00:00Z,seed_fase1_v2,ensemble,mean_score_member,0.806,"Dataset ampliado 5M+5NM, 10 chunks/texto. SiMIA todavia tenia el bug de non_member_prefix vacio en esta corrida -- senal mas debil de lo esperable. Ver Fase 1 punto 5."
+2026-06-25T00:00:00Z,seed_fase1_v2,ensemble,mean_score_non_member,0.686,"Dataset ampliado 5M+5NM, 10 chunks/texto. Superposicion a nivel texto individual: un non-member puntuo 0.811 (mas alto que un member en 0.761). Ver Fase 1 punto 5."

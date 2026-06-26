@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proyecto de Investigación MIA{% block title %}{% endblock %}</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📖</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="/">
+        <span class="book-icon" aria-hidden="true">📖</span>
+        <span class="brand__text">
+          <span class="brand__title">Proyecto de Investigación MIA</span>
+          <span class="brand__subtitle">Membership Inference Attack — pipeline de autor</span>
+        </span>
+      </a>
+      <a class="btn btn--ghost btn--small" href="/">+ Nuevo run</a>
+    </div>
+  </header>
+  <main class="page">
+    {% block content %}{% endblock %}
+  </main>
+  <footer class="site-footer">
+    <p>Procesamiento del Lenguaje Natural — UdeSA · pipeline agéntico de Membership Inference Attack</p>
+  </footer>
+</body>
+</html>

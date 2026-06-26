@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% block title %} — {{ run.author }}{% endblock %}
+{% block content %}
+  <section class="run-head">
+    <div>
+      <span class="run-head__kicker">📚 Run en curso</span>
+      <h2>{{ run.author }}</h2>
+      <code class="run-id">{{ run.run_id }}</code>
+      <p class="run-head__target">Target: <strong>{{ run.target_provider }}</strong> · <code>{{ run.target_model_name }}</code></p>
+    </div>
+    <span class="status-badge status-{{ run.status }}">
+      {% if run.status == "running" %}⏳{% elif run.status == "waiting_human" %}🕊️{% elif run.status == "done" %}✅{% else %}⚠️{% endif %}
+      {{ run.status }}
+    </span>
+  </section>
+
+  {% if run.status == "waiting_human" %}
+    <section class="card card--review">
+      <h3>🕊️ Revisión humana requerida</h3>
+      <p class="card__lede">El agente de bibliografía propone lo siguiente. Aprobá, editá los argumentos o rechazá para que busque de nuevo.</p>
+      {% for req in action_requests %}
+        <div class="tool-call">
+          <div class="tool-call__bar">
+            <span>Tool call</span>
+            <code>{{ req.name }}</code>
+          </div>
+          <pre>{{ req.args | tojson(indent=2) }}</pre>
+        </div>
+      {% endfor %}
+      <form action="/runs/{{ run.run_id }}/decide" method="post">
+        <div class="field">
+          <label for="edited_args">Args editados (JSON)</label>
+          <textarea id="edited_args" name="edited_args" rows="8">{{ action_requests[0].args | tojson(indent=2) if action_requests else "" }}</textarea>
+          <p class="field__hint">Solo se usa si tocás "Editar y aprobar".</p>
+        </div>
+
+        <div class="field">
+          <label for="reject_message">Mensaje de rechazo</label>
+          <input type="text" id="reject_message" name="reject_message" placeholder="Por qué se rechaza">
+          <p class="field__hint">Solo se usa si tocás "Rechazar".</p>
+        </div>
+
+        <div class="actions">
+          <button type="submit" name="decision_type" value="approve" class="btn btn--primary">✓ Aprobar tal cual</button>
+          <button type="submit" name="decision_type" value="edit" class="btn btn--secondary">✎ Editar y aprobar</button>
+          <button type="submit" name="decision_type" value="reject" class="btn btn--danger">✗ Rechazar</button>
+        </div>
+      </form>
+    </section>
+  {% elif run.status == "done" %}
+    <section class="card card--done">
+      <h3>✅ Resultado final</h3>
+      <pre>{{ run.final_message }}</pre>
+    </section>
+  {% elif run.status == "error" %}
+    <section class="card card--error">
+      <h3>⚠️ Error</h3>
+      <pre>{{ run.error }}</pre>
+    </section>
+  {% else %}
+    <section class="card card--running">
+      <span class="spinner" aria-hidden="true"></span>
+      <p>Corriendo... esta pantalla se refresca sola cuando cambia de estado.</p>
+    </section>
+  {% endif %}
+
+  <section class="card card--artifacts">
+    <h3>🗂️ Artifacts en <code>runs/{{ run.run_id }}/</code></h3>
+    {% if artifacts %}
+      <ul class="artifact-list">
+        {% for stage, files in artifacts.items() %}
+          <li><strong>{{ stage }}</strong><span class="artifact-list__files">{{ files | join(", ") }}</span></li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p class="empty-state">Todavía no se escribió nada.</p>
+    {% endif %}
+  </section>
+
+  {% if run.status in ("running", "waiting_human") %}
+    <script>
+      new EventSource("/runs/{{ run.run_id }}/stream").onmessage = () => location.reload();
+    </script>
+  {% endif %}
+{% endblock %}

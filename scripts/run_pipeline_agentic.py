@@ -78,10 +78,25 @@ def main() -> int:
         help="Override de mia_common.settings.agent_model (ver advertencia en el docstring del archivo).",
     )
     parser.add_argument("--n-texts", type=int, default=5, help="Cuantos textos pedirle a bibliography_agent.")
+    parser.add_argument(
+        "--target-provider",
+        default=None,
+        help="Override de mia_common.settings.target_provider (groq|openai|anthropic|google|hf_local).",
+    )
+    parser.add_argument(
+        "--target-model",
+        default=None,
+        help="Override de mia_common.settings.target_model_name.",
+    )
     args = parser.parse_args()
 
     checkpointer = InMemorySaver()
-    orchestrator = build_orchestrator(checkpointer=checkpointer, agent_model=args.agent_model)
+    orchestrator = build_orchestrator(
+        checkpointer=checkpointer,
+        agent_model=args.agent_model,
+        target_provider=args.target_provider,
+        target_model_name=args.target_model,
+    )
 
     run_id = f"agentic_{args.author.lower().replace(' ', '_')}_{uuid.uuid4().hex[:8]}"
     config = {"configurable": {"thread_id": run_id}}

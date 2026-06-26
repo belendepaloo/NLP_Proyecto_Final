@@ -24,8 +24,8 @@ def stage_dir(run_id: str, stage: str) -> Path:
     return d
 
 
-def write_run_artifact(run_id: str, stage: str, name: str, data: Any) -> str:
-    """Escribe `data` (cualquier cosa JSON-serializable) como
+def write_run_artifact(run_id: str, stage: str, name: str, data: dict[str, Any]) -> str:
+    """Escribe `data` (un dict JSON-serializable) como
     runs/<run_id>/<stage>/<name>.json. Devuelve el path escrito (como string)."""
     path = stage_dir(run_id, stage) / f"{name}.json"
     path.write_text(json.dumps(data, indent=2, ensure_ascii=False, default=str))

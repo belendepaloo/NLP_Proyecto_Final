@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block title %} — nuevo run{% endblock %}
+{% block content %}
+  <section class="hero">
+    <span class="hero__kicker">📚 Membership Inference Attack</span>
+    <h2 class="hero__title">¿Estuvo un autor en el training set del modelo?</h2>
+    <p class="hero__lede">
+      Tipeá el nombre de un autor. El pipeline busca su bibliografía, la cura,
+      la parafrasea y corre los métodos de MIA (DE-COP, SiMIA, DUALTEST) para
+      estimar si sus textos formaron parte del corpus de entrenamiento del
+      modelo target — con un humano en el loop antes de avanzar.
+    </p>
+  </section>
+
+  <section class="card card--form">
+    <form action="/runs" method="post">
+      <div class="field">
+        <label for="author">Autor</label>
+        <input type="text" id="author" name="author" placeholder="Ej: Charles Dickens" required autofocus>
+        <p class="field__hint">Nombre y apellido tal como aparecería en una edición publicada.</p>
+      </div>
+
+      <div class="field">
+        <label for="n_texts">Cuántos textos candidatos pedir</label>
+        <input type="number" id="n_texts" name="n_texts" value="5" min="1" max="20">
+        <p class="field__hint">El agente de bibliografía propone hasta esta cantidad antes de pausar para tu revisión.</p>
+      </div>
+
+      <div class="field">
+        <label>Modelo target (el "black box" bajo test de MIA)</label>
+        <div class="model-picker">
+          {% for p in providers %}
+            <input
+              type="radio"
+              name="target_provider"
+              id="provider-{{ p.id }}"
+              value="{{ p.id }}"
+              {% if p.id == default_provider %}checked{% endif %}
+              {% if not p.has_key %}disabled{% endif %}
+            >
+            <label for="provider-{{ p.id }}" class="model-picker__option{% if not p.has_key %} model-picker__option--disabled{% endif %}">
+              <span class="model-picker__provider">{{ p.id }}</span>
+              <span class="model-picker__model">{{ p.model_name }}</span>
+              {% if not p.has_key %}<span class="model-picker__lock">🔒 sin key</span>{% endif %}
+            </label>
+          {% endfor %}
+        </div>
+        <p class="field__hint">Los proveedores sin key configurada en <code>.env</code> quedan deshabilitados.</p>
+      </div>
+
+      <button type="submit" class="btn btn--primary btn--block">📖 Arrancar run</button>
+    </form>
+  </section>
+
+  <section class="steps">
+    <div class="step">
+      <span class="step__icon">🔎</span>
+      <h3>1. Bibliografía</h3>
+      <p>Se buscan y proponen textos candidatos. Vos aprobás, editás o rechazás la lista.</p>
+    </div>
+    <div class="step">
+      <span class="step__icon">🧹</span>
+      <h3>2. Curación</h3>
+      <p>Se verifica autoría y se seleccionan los pasajes más característicos de la voz del autor.</p>
+    </div>
+    <div class="step">
+      <span class="step__icon">📊</span>
+      <h3>3. Scoring MIA</h3>
+      <p>SAGE parafrasea y DE-COP/SiMIA/DUALTEST puntúan cada chunk contra el modelo target.</p>
+    </div>
+    <div class="step">
+      <span class="step__icon">🎯</span>
+      <h3>4. Resultado</h3>
+      <p>El ensemble combina los tres métodos en una probabilidad final por autor.</p>
+    </div>
+  </section>
+{% endblock %}
