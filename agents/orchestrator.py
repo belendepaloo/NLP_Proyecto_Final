@@ -50,6 +50,13 @@ Etapas, en orden:
    aprobo, aunque el humano haya dicho que si).
 2. Una vez confirmados los candidatos, delega a curator_agent para limpiar, chunkear,
    verificar autoria, y seleccionar los chunks mas caracteristicos de la voz del autor.
+   IMPORTANTE: en el mensaje de la tool `task`, pasale el run_id y la lista COMPLETA de
+   candidatos aprobados (document_id, title, source_url) -- curator_agent NO tiene
+   acceso al texto crudo ni a tu conversacion, solo puede recuperar el texto real via
+   read_run_artifact(run_id, "bibliography", f"text_{document_id}") usando esos mismos
+   document_id, asi que si no se los pasas explicitamente no va a saber que documentos
+   procesar (esto ya causo que curator_agent inventara autores/textos que nunca se
+   bajaron -- ver pipeline-learnings antes de asumir que esta resuelto).
 3. Para cada chunk que sobrevivio la curacion: delega a sage_qa_agent (parafraseo +
    QA), y despues a mia_agent (DE-COP/SiMIA/DUALTEST) con los paraphrase candidates que
    produjo SAGE.

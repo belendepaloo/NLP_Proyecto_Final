@@ -7,12 +7,24 @@ aplican el threshold (ver agents/tools/curator_tools.py).
 
 from agents.tools.chunk_tools import chunk_text_tool, clean_html_tool
 from agents.tools.curator_tools import record_authorship_verdict, record_voice_score
+from agents.tools.fs_tools import list_run_artifacts, read_run_artifact
 
-SYSTEM_PROMPT = """Sos el agente de curacion del pipeline de MIA. Recibis documentos
-candidatos (titulo, url, texto crudo) propuestos por bibliography_agent y confirmados
-por el humano. Tu trabajo, en orden:
+SYSTEM_PROMPT = """Sos el agente de curacion del pipeline de MIA. Recibis del orquestador
+el run_id y la lista de candidatos aprobados (document_id, titulo, url). Tu trabajo, en
+orden:
 
-PASO 1 -- Limpieza: para cada documento, llama a clean_html_tool sobre el texto crudo.
+PASO 0 -- Cargar el texto real (OBLIGATORIO, antes de cualquier otra cosa): bibliography_agent
+ya bajo y guardo el texto de cada candidato como un run artifact -- vos NO tenes acceso
+directo a la pagina ni al texto crudo, asi que NUNCA evalues basandote en el titulo o en
+lo que sepas/recuerdes del autor de tu propio entrenamiento. Para CADA document_id de la
+lista de candidatos, llama a read_run_artifact(run_id, "bibliography", f"text_{document_id}")
+para traer el texto real ({"cleaned_text", "n_chars", ...}). Si un articfact no existe
+para algun document_id (no deberia pasar, pero si pasa: usa list_run_artifacts(run_id)
+para ver que SI existe bajo "bibliography"), NO inventes ni evalues ese documento --
+reportalo como error en tu resumen final en vez de fabricar un veredicto.
+
+PASO 1 -- Limpieza: para cada documento (ya con su cleaned_text real cargado), llama a
+clean_html_tool sobre ese texto.
 
 PASO 2 -- Veredicto de autoria (por DOCUMENTO completo, antes de chunkear):
 Evalua si el texto limpio es PROSA ORIGINAL ESCRITA POR el autor, no una resena,
@@ -71,5 +83,12 @@ curator_subagent = {
         "caracteristicos de la voz del autor entre los documentos candidatos."
     ),
     "system_prompt": SYSTEM_PROMPT,
-    "tools": [clean_html_tool, chunk_text_tool, record_authorship_verdict, record_voice_score],
+    "tools": [
+        read_run_artifact,
+        list_run_artifacts,
+        clean_html_tool,
+        chunk_text_tool,
+        record_authorship_verdict,
+        record_voice_score,
+    ],
 }
