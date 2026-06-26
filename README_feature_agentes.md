@@ -16,65 +16,49 @@ tocar código.
 
 ## TL;DR para retomar
 
-- **Fase 0 y Fase 1 están terminadas y validadas contra Groq real** (no es teoría, se
-  corrió de punta a punta varias veces). El ensemble discrimina member/non-member en
-  promedio, aunque con superposición a nivel texto individual.
-- **Conseguimos `GOOGLE_API_KEY` y se validó el hallazgo bloqueante de Gemini vs. Groq**
-  como `agent_model` (ver detalle en la sección de Fase 2): Gemini delega bien a
-  subagentes via la tool `task` de deepagents, a diferencia de
-  `groq:llama-3.3-70b-versatile`. En el camino salieron 2 bugs reales más (ya
-  arreglados, ver Fase 2): un tool con parámetro `data: Any` que rompía la conversión a
-  function-calling de Gemini, y el default `agent_model` (`gemini-2.0-flash`) con cuota
-  0 en keys nuevas de Cloud Console — cambiado a `gemini-2.5-flash`.
-- **Sigue bloqueada la validación end-to-end REAL** (con bibliografía real y MIA real)
-  por falta de `GROQ_API_KEY` y `TAVILY_API_KEY` — sin ellas, `bibliography_agent` para
-  en cuanto intenta `tavily_search` (error claro, no un crash de tool-calling) y
-  `mia_agent` no tendría target contra el que correr. El usuario las va a pasar más
-  adelante; mientras tanto la arquitectura de la Fase 2 ya está validada en lo que se
-  puede probar sin esas keys.
-- **Se agotó la cuota diaria (TPD) de Groq** en la sesión anterior probando todo esto
-  (parece ser un límite por organización, no por key individual — las 4 keys no lo
-  evitan, solo ayudan con el límite por minuto). El error es
-  `mia_common.target_client.DailyCapError`; ya no tumba el proceso entero (se arregló
-  para guardar progreso parcial), pero hasta que resetee la cuota no se puede seguir
-  validando contra Groq real. No confirmado si ya reseteó -- revisar al retomar.
-- **Fase 3 (skill persistente) y Fase 4 (webapp) ya están construidas** (ver sus
-  secciones) — esta sesión avanzó sin esperar las keys de Groq/Tavily, usando mocks
-  acotados SOLO a las llamadas de red externas (nunca al orquestador/deepagents) para
-  poder seguir validando. La Fase 4 encontró y arregló un gap real de Fase 2 (el
-  orquestador no persistía los candidatos aprobados de bibliography_agent, asi que
-  flow_checker_agent escalaba siempre) — confirmar que el fix funciona de punta a punta
-  sigue pendiente porque **también se agotó la cuota diaria gratuita de Gemini**
-  (`gemini-2.5-flash`: 20 requests/día en el free tier de esta key) a mitad de esa
-  prueba. Ver `agents/skills/pipeline-learnings/learnings.jsonl` para el detalle de
-  ambos límites diarios (Groq y Gemini) antes de asumir que algo "no funciona".
-- **`GROQ_API_KEY`/`GROQ_API_KEYS` reales ya están en `.env`** (el usuario las agregó
-  en esta sesión). Armando el selector de modelo target de la webapp (Fase 4) se
-  encontró un bug serio preexistente: **`mia_agent` estaba roto para CUALQUIER
-  target**, nunca se había ejercitado en ningún test (`client: TargetClient` expuesto
-  crudo en la tool rompe la conversión a function-calling de Gemini) — arreglado con
-  closures en `agents/subagents/mia_agent.py` (`functools.partial` NO funciona para
-  esto, ver el detalle en Fase 2). Validado offline con el `TargetClient` real de Groq
-  bindeado. Lo único que falta para una corrida 100% real ya no es Groq — es
-  `TAVILY_API_KEY` + que resetee la cuota de Gemini como `agent_model`.
-- **Esta branch se retomó en una máquina nueva sin nada instalado** (sin `.env`, sin
-  venv, Python del sistema en 3.14 que no sirve para `requirements.txt`). Se creó un
-  entorno conda `mia-agentes` con Python 3.12 (`conda create -n mia-agentes
-  python=3.12`) y se instaló `requirements.txt` ahí sin conflictos de versiones. Si
-  retomás esto en esa misma máquina, activar ese entorno
-  (`conda activate mia-agentes`) en vez de reinstalar todo de nuevo.
-- Pendiente menor, deliberadamente no resuelto: el módulo se llama `SiMIA/` pero el
-  método del paper que implementa se llama **"SimMIA"** (con dos emes: "Sim"+"MIA") —
-  renombrar `SiMIA/` → `SimMIA/` (y `simia.py` → `simmia.py`) y actualizar los archivos
-  que lo referencian (`grep -rn "SiMIA"`) es un buen primer paso de housekeeping.
-- Última corrida grande de Fase 1 (antes de agotar la cuota):
-  `runs/manual_phase1_smoke_test/` tiene resultados parciales en `chunks/` aunque
-  `results/author_final.json` haya quedado del intento anterior (sin el fix de SiMIA).
-- **Todas las llamadas a APIs externas se cachean** (`runs/_api_cache/`, ver
-  `mia_common/cache.py`) — rerunear el mismo pipeline sobre el mismo texto no vuelve a
-  gastar cuota. Esto es una regla de proyecto, no opcional: cualquier código nuevo que
-  llame a una API externa tiene que pasar por `mia_common.target_client` (que ya cachea
-  todo), no llamar al SDK del proveedor directo.
+- **Fase 0 y Fase 1 están terminadas y validadas contra Groq real**. El ensemble
+  discrimina member/non-member en promedio, aunque con superposición a nivel texto
+  individual.
+- **Fases 2, 3 y 4 están construidas.** Esta es la branch de varias personas trabajando
+  en paralelo (ver commits de `castaisa`/Isabel además de los de `belendepalo`) — si
+  retomás esto, hacé `git pull` primero y `pip install -r requirements.txt` de nuevo
+  (cada quien fue agregando dependencias nuevas: `langchain-google-vertexai`,
+  `langgraph-checkpoint-sqlite`, `python-multipart`, etc.).
+- **Se logró el primer run 100% real de la historia de este proyecto** (Tavily real +
+  descarga real de Gutenberg + Groq real + Gemini real como `agent_model`): autor Edgar
+  Allan Poe, candidato real aprobado, texto real persistido (39481 caracteres). Se cortó
+  en la pausa post-aprobación por agotar cuota de Gemini, antes de llegar a
+  `curator_agent` — pero la parte de bibliografía+aprobación humana ya está confirmada
+  funcionando con datos reales, no solo mocks.
+- **Bug de integridad serio, encontrado y arreglado en esta sesión** (ver Fase 2 para
+  el detalle completo): el orquestador podía fabricar una lista de candidatos falsa y
+  guardarla como "aprobada" cuando bibliography_agent no encontraba nada, sin que
+  ninguna revisión humana real hubiera ocurrido. Arreglado anclando la persistencia del
+  artifact al propio tool que la pausa humana protege (`propose_candidate_texts`), no a
+  que el orquestador "se acuerde" de guardarlo después. Esto era más importante que
+  cualquier otra cosa pendiente — un resultado de MIA sobre un libro que nunca se bajó
+  de verdad invalida todo lo que viene después.
+- **El cuello de botella real hoy es la cuota gratuita de Gemini como `agent_model`**:
+  20 requests/día, **por modelo** (no por key) — `gemini-2.5-flash`, `gemini-2.5-pro`,
+  `gemini-flash-latest` cada uno tiene su propio contador, así que probar con un alias
+  distinto da algo de margen pero se agota rápido igual. Parece resetear a medianoche
+  UTC (21hs Argentina). Opciones para destrabar esto en serio: habilitar billing en el
+  proyecto de Google Cloud, configurar Vertex AI (`gcloud auth application-default
+  login` — no viaja por `.env`, es por máquina) que es el default actual
+  (`google_vertexai:gemini-2.5-pro`, decisión de Isabel), o conseguir `ANTHROPIC_API_KEY`
+  (sigue vacía). La cuota de Groq como *target* no se volvió a agotar en esta sesión.
+- **Credenciales en `.env` de esta máquina**: `GROQ_API_KEY`/`GROQ_API_KEYS` (4 keys),
+  `TAVILY_API_KEY`, `GOOGLE_API_KEY`, `GOOGLE_CLOUD_PROJECT`, `HF_TOKEN` ya están.
+  `OPENAI_API_KEY`/`ANTHROPIC_API_KEY` siguen vacías.
+- **`mia_agent` estaba roto para CUALQUIER target** (otro bug encontrado esta sesión,
+  ver Fase 2): `client: TargetClient` expuesto crudo en una tool rompe la conversión a
+  function-calling de Gemini. Arreglado con closures (`functools.partial` NO sirve para
+  esto). Validado offline con el `TargetClient` real de Groq bindeado.
+- Pendiente menor, deliberadamente no resuelto: renombrar `SiMIA/` → `SimMIA/` (el
+  método del paper se llama con dos emes) — housekeeping, no urgente.
+- **Todas las llamadas a APIs externas se cachean** (`runs/_api_cache/`) — regla de
+  proyecto no opcional, cualquier código nuevo tiene que pasar por
+  `mia_common.target_client`, nunca el SDK del proveedor directo.
 
 ## Arquitectura
 
@@ -264,15 +248,225 @@ interfaz común.
     su propio orquestador** (con su propio `mia_agent` bindeado al target elegido),
     porque `mia_agent` necesita un `TargetClient` concreto por run, no uno fijo para
     todo el proceso.
-  - `GROQ_API_KEY`/`GROQ_API_KEYS` (4 keys reales) y `HF_TOKEN` ya están configuradas en
-    esta máquina. `TAVILY_API_KEY` sigue sin configurar — sin ella,
-    `bibliography_agent` para apenas intenta `tavily_search` (error claro). **Pendiente
-    real**: con Groq real disponible, lo único que falta para una validación 100%
-    end-to-end es `TAVILY_API_KEY` — Y que resetee la cuota diaria de Gemini como
-    `agent_model` (ver TL;DR), porque el run actual no llega ni a delegar a
-    `bibliography_agent` sin eso. Una vez que ambas cosas se resuelvan: correr
-    `scripts/run_pipeline_agentic.py --author "..."` (o la webapp) de punta a punta de
-    verdad y validar que `flow_checker_agent` frena/escala cuando corresponde.
+  - `GROQ_API_KEY`/`GROQ_API_KEYS`, `TAVILY_API_KEY` y `HF_TOKEN` ya están configuradas
+    (esta sesión + la de Isabel). Con eso, **se consiguió la primera búsqueda 100% real
+    de punta a punta** (Tavily real + descarga real + Gemini real, ver más abajo).
+  - **Trabajo de Isabel (`castaisa`) en esta branch, commits `2d58e0c` y `7de17de`**:
+    - `fetch_url` pasó de `requests` a `curl` via `subprocess` — Gutenberg bloquea el
+      fingerprint TLS (JA3) de `requests`/`urllib3` aunque el User-Agent sea de
+      navegador real; `curl` sí pasa. Encontró además que `--fail` combinado con
+      HTTP/2 hace que un error HTTP devuelva exit 56 (error de red) en vez de exit 22
+      (error HTTP claro) — se fuerza `--http1.1`. Reintentos con backoff,
+      `fetch_url` ya no excepciona (devuelve `{"url","error"}`) para que una fuente
+      caída no tire abajo el run.
+    - `agent_model` default cambiado a `google_vertexai:gemini-2.5-pro` —
+      `gemini-2.5-flash` generaba `MALFORMED_FUNCTION_CALL` intermitente en
+      `write_todos` (deepagents) que frenaba el orquestador EN SILENCIO (sin
+      excepción visible). Vertex AI además factura contra créditos de Cloud, no contra
+      el free tier de 20 req/día de AI Studio — pero necesita
+      `gcloud auth application-default login` (ADC) configurado por máquina, no viaja
+      por `.env`. Sin ADC en esta máquina, las pruebas de esta sesión siguen usando
+      `agent_model="google_genai:gemini-2.5-flash"` (o `gemini-flash-latest`) como
+      override explícito.
+    - Checkpointer cambiado de `InMemorySaver` a `SqliteSaver` persistente
+      (`runs/_checkpoints.sqlite`) en `scripts/run_pipeline_agentic.py` — un crash a
+      mitad de run se puede retomar con `--run-id <mismo run_id>` sin repetir las
+      etapas ya completadas. Confirmado por Isabel con una prueba real entre procesos
+      distintos.
+    - **Bug de integridad real, encontrado por Isabel y arreglado por mí en esta
+      sesión**: `bibliography_agent` descarga texto real pero esa conversación (y el
+      texto crudo) desaparece en cuanto termina su subtarea — `curator_agent` no tenía
+      forma de recuperarlo, y terminaba evaluando en base a lo que el modelo
+      recordaba de su propio entrenamiento (literalmente inventó estar evaluando "El
+      Aleph" de Borges en vez de los libros de Dickens que se habían bajado de
+      verdad). Fix de Isabel: `bibliography_agent` ahora guarda cada texto descargado
+      con `write_run_artifact(run_id, "bibliography", f"text_{document_id}", {...})`
+      apenas lo baja, y `curator_agent` está obligado a recuperarlo con
+      `read_run_artifact` antes de evaluar — nunca en base a memoria propia.
+    - **Bug MÁS serio que destapó ese mismo fix, sin arreglar hasta esta sesión**: si
+      `bibliography_agent` terminaba su subtarea SIN haber llamado a
+      `propose_candidate_texts` (ej. no encontró nada para ese autor), el
+      ORQUESTADOR podía fabricar él mismo una lista de candidatos plausible y
+      guardarla con `write_run_artifact` como si un humano la hubiera aprobado — sin
+      que ninguna pausa de revisión real hubiera ocurrido. El fix de `curator_agent`
+      de arriba contenía el daño (no encontraba el texto fabricado y fallaba en vez de
+      evaluarlo), pero el dato fabricado ya había pasado la etapa de bibliografía como
+      "aprobado". **Fix real**: `propose_candidate_texts(run_id, candidates)`
+      ahora persiste `candidates.json` ELLA MISMA, adentro del tool que el
+      `interrupt_on` protege — el orquestador ya no llama a `write_run_artifact` para
+      esto, ni puede. Como ese código solo corre como consecuencia de que un humano
+      resuelva una pausa real (deepagents reemplaza los args por la versión
+      aprobada/editada antes de ejecutar), el artifact en disco pasa a ser una prueba
+      MECÁNICA de aprobación humana genuina, no algo que dependa del juicio del
+      orquestador. Defensa en profundidad adicional: `curator_agent` ahora lee
+      `candidates.json` él mismo (`read_run_artifact`) en vez de confiar en la lista
+      que el orquestador le pasa en el mensaje de la tarea — así un eventual error de
+      fabricación del orquestador ya no se le puede contagiar.
+    - **Validado con el primer run 100% real de la historia de este proyecto**: autor
+      "Edgar Allan Poe", Tavily real, Groq real (`llama-3.1-8b-instant`),
+      `agent_model="google_genai:gemini-flash-latest"` (override, ver nota de ADC
+      arriba). El interrupt llegó con un candidato genuino ("The Fall of the House of
+      Usher", URL real de Gutenberg), se aprobó, y quedaron persistidos
+      `runs/real_e2e_test_1/bibliography/candidates.json` Y
+      `text_the_fall_of_the_house_of_usher.json` (39481 caracteres, texto real de
+      Gutenberg, verificado). El run se cortó ahí por agotar la cuota de Gemini (20
+      req/día, **es por modelo, no por key/proyecto** — `gemini-2.5-flash`,
+      `gemini-2.5-pro` y `gemini-flash-latest` cada uno tiene su propio contador) antes
+      de llegar a `curator_agent`. **Pendiente real**: re-correr el mismo test cuando
+      resetee alguna cuota (parece resetear a medianoche UTC, 21hs Argentina) o se
+      configure ADC de Vertex, para validar curator_agent → SAGE → mia_agent → ensemble
+      con datos reales de punta a punta.
+    - **Segundo intento (reusando el texto de Poe ya descargado, sin repetir Tavily)**:
+      delegar directo a `curator_agent` con `gemini-flash-lite-latest` pegó dos veces
+      seguidas contra `GenerateContentInputTokensPerModelPerMinute-FreeTier` (un límite
+      POR MINUTO, no diario) — el texto completo (~40K caracteres) más el system prompt
+      de deepagents se acerca al tope de tokens/minuto del free tier en una sola
+      llamada. Esperar ~75s entre intentos no alcanzó para que se liberara. No vale la
+      pena seguir reintentando a ciegas contra el free tier — el plan es retomar esto
+      con una key con billing habilitado (sin cap), que el usuario está gestionando.
+    - **Resuelto: proyecto nuevo de Vertex AI con crédito estudiantil, sin el cap del
+      free tier.** Setup real (con varios intentos fallidos por nombres de roles
+      confusos en la consola en español, ver `learnings.jsonl` para el detalle
+      paso a paso): service account nuevo en un proyecto propio (`nlpagentes`),
+      `GOOGLE_APPLICATION_CREDENTIALS` apuntando al JSON descargado (no hace falta
+      `gcloud auth login`, las credenciales de service account son no-interactivas),
+      `aiplatform.googleapis.com` habilitada, rol `Editor` otorgado al service account
+      (el rol específico "Vertex AI User" no aparecía de forma confiable en el buscador
+      de la consola — `Editor` es más permiso del necesario pero aceptable en un
+      proyecto personal de prueba).
+    - **Nuevo: `mia_common/spend_guard.py`** — tope duro de gasto en USD
+      (`settings.agent_model_spend_cap_usd`, default $4.50, deliberadamente por debajo
+      de los $5 que pidió el usuario por margen de estimación) para `agent_model`
+      cuando es un modelo de Vertex AI (factura por uso real, a diferencia del free
+      tier de AI Studio). `agents/orchestrator.py::_resolve_agent_model` envuelve el
+      chat model con un `VertexSpendGuardCallback` (trackeado en disco,
+      `runs/_spend_<project>.json`, sobrevive entre procesos) que frena ANTES de cada
+      llamada si se superaría el límite, y ajusta al costo real despues con
+      `usage_metadata`.
+    - **Bug real encontrado validando el spend guard con una llamada real**: Gemini 2.5
+      (modelos "thinking") factura los tokens de "reasoning" igual que el output, pero
+      `usage_metadata.output_tokens` NO los incluye — medido en vivo, una pregunta
+      trivial usó `output_tokens=3` pero `reasoning=6749` (`total_tokens=6766`). Contar
+      solo `output_tokens` subestimaba el costo real en ~1260x. Arreglado usando
+      `total_tokens - input_tokens` como output facturable (no depende de como cada
+      provider nombre el sub-campo de reasoning). Validado offline reproduciendo los
+      números reales de esa llamada.
+    - **Primera llamada real a Vertex AI confirmada**: "¿Cuál es la capital de
+      Argentina?" → "Buenos Aires", costo real ~$0.081 (con el fix de reasoning
+      tokens).
+    - **Bug real más, encontrado armando esto**: pasarle al chat model resuelto
+      `.with_config({"callbacks": [...]})` para adjuntar el `VertexSpendGuardCallback`
+      rompe `create_deep_agent` — envuelve el modelo en un `RunnableBinding`, que
+      `deepagents._models.resolve_model()` no reconoce como `isinstance(_,
+      BaseChatModel)` y lo trata como si fuera un string de nuevo
+      (`AttributeError: '<Modelo>' object has no attribute 'count'`). Fix: mutar
+      `model.callbacks = [callback]` directo en la instancia (`callbacks` es un campo
+      real de `BaseChatModel`) en vez de `.with_config()`.
+    - **Primer test real de `curator_agent` → SAGE → `mia_agent` con Vertex AI
+      (`gemini-2.5-pro`)**: llegó mucho más lejos que con el free tier — autoría real
+      (Poe, confianza 1.0, razonamiento correcto) + 8 chunks con voice score real
+      (0.9 de distintividad, identificó bien el estilo gótico). `flow_checker_agent`
+      detectó de verdad una inconsistencia real en el naming de los artifacts de voz
+      (`voice_<chunk_id>.json` vs `voice_<document_id>_<chunk_id>.json`) y la marcó
+      `severity="warning"`, `recommended_action="continue"` — juicio correcto, no era
+      grave. **Pero el run se cortó ahí**, sin delegar a `sage_qa_agent`/`mia_agent`, y
+      el mensaje final vino vacío — no investigado a fondo todavía (corta un test más
+      caro). **Costo real: ~$1.11** solo por esta etapa (curación de 1 texto, 8
+      chunks) — bastante más de lo esperado, ojo con el presupuesto para corridas
+      reales completas.
+    - **`gemini-2.5-flash` en Vertex AI: mismo bug que ya documentó Isabel en AI
+      Studio, confirmado que NO es específico de AI Studio.** Leyó bien la skill (3
+      `read_file` correctos) y el turno siguiente vino con `content` vacío y SIN tool
+      calls — el grafo terminó sin delegar nunca a `curator_agent`, sin excepción ni
+      error visible. Costó casi nada (~$0.007) pero no sirvió para nada. **No usar
+      `gemini-2.5-flash` como `agent_model` bajo ninguna circunstancia** (ni AI Studio
+      ni Vertex) — `gemini-2.5-pro` sigue siendo el único modelo Gemini validado para
+      este rol, a pesar de costar bastante más.
+    - **Segundo intento real con `gemini-2.5-pro` (run `real_e2e_test_2`, mismo texto
+      de Poe)**: esta vez SÍ llegó a delegar a `sage_qa_agent` — se vio
+      `[SPS] Loading Gemma model on cpu...` en los logs. Pero `google/gemma-2b`
+      (modelo gated que usa SAGE para el Semantic Persistence Score) tardó **25+
+      minutos** en descargarse la primera vez (no estaba cacheado en esta máquina) y
+      la tarea en background se mató por superar el tiempo disponible — **no fue un
+      problema de plata ni del código del agente**. El modelo quedó cacheado
+      (`~/.cache/huggingface/hub`, 4.7GB) para la próxima vez. Costo real de esta
+      corrida (curación de nuevo, ya que cada proceso es una conversación nueva sin
+      memoria): ~$1.33.
+    - **Revisando el código antes de gastar más, encontré que el mismo patrón de bug
+      se repetía un escalón más adelante**: `sage_qa_agent` y `mia_agent` esperaban
+      recibir el texto del chunk (y `mia_agent` además los paraphrase candidates de
+      SAGE) directo en el mensaje de la tarea del orquestador — pero el resumen final
+      que un subagent le devuelve a su padre no incluye el contenido completo (a
+      propósito, para no gastar tokens de más), así que el orquestador nunca iba a
+      tener ese contenido para relayar. **Arreglado con el mismo patrón ya validado**
+      (disco, no conversación): `curator_agent` ahora persiste cada chunk verbatim en
+      `runs/<run_id>/curation/chunk_<chunk_id>`, `sage_qa_agent` lee eso y persiste
+      sus paraphrase candidates en `runs/<run_id>/sage/paraphrase_<chunk_id>`,
+      `mia_agent` lee ambos. De paso, se fijó `chunk_id = f"{document_id}_{i}"` como
+      única convención (arregla la inconsistencia de naming que `flow_checker_agent`
+      ya había detectado solo).
+    - **Tercer intento (run limpio, fix de persistencia puesto, modelo de SAGE ya
+      cacheado): validado en vivo, y el spend guard frenó exactamente como debía.**
+      `curator_agent` curó los **51 chunks** de "The Fall of the House of Usher" con
+      `chunk_id` consistente (`the_fall_of_the_house_of_usher_0` .. `_50`) y persistió
+      el texto verbatim real de cada uno en `runs/real_e2e_test_2/curation/chunk_*`
+      (confirmado leyendo el contenido — es el texto real de Poe) — el fix de
+      persistencia entre subagentes funciona. El run **se frenó solo** cuando el costo
+      acumulado llegó a $4.0844 y la siguiente llamada estimada ($0.443) hubiera
+      superado el tope de $4.50: `SpendCapExceededError`, exactamente el
+      comportamiento pedido por el usuario, no un fallo. No llegó a `sage_qa_agent`
+      para estos 51 chunks dentro del presupuesto.
+    - **Hallazgo de costo real importante**: curar 51 chunks (autoría una vez +
+      voz **51 veces**, una por chunk) con `gemini-2.5-pro` consume la enorme mayoría
+      de un presupuesto de $4.50 — antes de llegar siquiera a parafrasear con SAGE o
+      puntuar con MIA. El chunking a ~128 tokens/chunk (el mismo default que usa la
+      Fase 1 manual) genera demasiados chunks para que la curación agéntica con un
+      modelo "thinking" sea barata.
+    - **Arreglado (propuesta del usuario)**: `curator_agent` ya NO juzga la voz de
+      todos los chunks de un documento. Ahora pide un lote inicial chico
+      (`settings.curator_initial_batch_size`, default 6) y, si no llegó al objetivo
+      (`settings.curator_target_chunks_per_text`, default 5 "keep" por documento),
+      pide chunks adicionales **de a uno** (no en bloque) hasta llegar al objetivo o
+      agotar el documento — paga solo por lo que efectivamente termina usando. Esto es
+      distinto de `chunks_per_text` (esa es la muestra de chunks CRUDOS sin curar que
+      usa la Fase 1 manual, antes de cualquier juicio LLM). Debería reducir ~80-90% el
+      costo de la etapa de curación (6-10 juicios de voz en vez de 51 para un texto de
+      este tamaño) — **validado que compila, todavía no probado en vivo** (sin
+      presupuesto al momento de escribir esto, ver abajo).
+    - **Presupuesto final de esta sesión: $4.08 de $4.50** (tope configurado
+      deliberadamente por debajo de los $5 que pidió el usuario — el margen de
+      seguridad cumplió su función). El guard de gasto (`mia_common/spend_guard.py`)
+      quedó validado de punta a punta: reserva conservadora antes de cada llamada,
+      ajuste al costo real después, y corte duro cuando corresponde.
+    - **Auditoría completa pedida por el usuario antes de gastar más** (sin tocar
+      ninguna API, todo offline): encontró 2 bugs más, ningún costo real.
+      1. `read_run_artifact` lanza `FileNotFoundError` sin atrapar cuando el archivo
+         no existe — por default LangGraph NO lo convierte en mensaje de error legible
+         por el agente (`_default_handle_tool_errors` solo atrapa
+         `ToolInvocationError`, cualquier otra excepción se relanza y frena el run
+         ENTERO). Esto iba a explotar la primera vez que un chunk legítimamente no
+         tuviera paraphrase de SAGE (descartado por QA) y `mia_agent` intentara leerlo
+         — exactamente el tipo de caso que SÍ iba a pasar en un run real. Fix aplicado
+         en toda la cadena (`curator_agent`, `sage_qa_agent`, `mia_agent`): siempre
+         `list_run_artifacts()` primero para confirmar que el archivo está listado
+         antes de leerlo, nunca asumir y atrapar la excepción después.
+      2. `mia_agent` nunca persistía sus 3 resultados crudos a disco — el orquestador
+         iba a necesitar extraerlos de su resumen de texto para llamar a
+         `combine_scores`, el mismo patrón frágil que ya se arregló para
+         bibliografía/curación/SAGE. Fix: `mia_agent` ahora persiste
+         `runs/<run_id>/mia_scores/<chunk_id>` con los 3 resultados crudos; el
+         orquestador lee de ahí, no del resumen.
+      3. Reforzado en código (no solo en el prompt) el límite de chunks curados por
+         documento: `record_voice_score` ahora cuenta cuántos "keep" hay para ese
+         `document_id` y devuelve `decision="target_reached"` sin registrar nada si ya
+         se llegó al objetivo — verificado offline (10 chunks simulados → exactamente
+         5 "keep" + 5 "target_reached", sin gastar nada).
+      - Todo lo de arriba: validado que compila y que el schema de TODAS las tools de
+        TODOS los subagentes convierte bien a Gemini. **No probado en vivo todavía**
+        (sin presupuesto) — pendiente para la próxima sesión (necesita más crédito o
+        subir `settings.agent_model_spend_cap_usd`): completar
+        `sage_qa_agent` → `mia_agent` → `combine_scores` → `aggregate_text_scores` con
+        datos 100% reales.
 
 - 🟡 **Fase 3 — skill persistente.** Construida y validada (sin necesitar
   Groq/Tavily). `agents/skills/pipeline-learnings/` tiene `SKILL.md` (instrucciones de
@@ -433,6 +627,16 @@ reinicio del server), igual que `InMemorySaver` en el script de CLI.
 
 ## Limitaciones conocidas / próximos riesgos a resolver
 
+- **Costo de la curación agéntica con un modelo "thinking" — ARREGLADO, no probado en
+  vivo todavía**: con chunks de ~128 tokens, un texto narrativo normal genera 50+
+  chunks. Medido en vivo: curar los 51 chunks de un cuento (un `record_voice_score`
+  por chunk, sin límite) consumió la mayor parte de un presupuesto de $4.50 de Vertex
+  AI sin llegar a SAGE/MIA. Fix (`agents/subagents/curator_agent.py`,
+  `mia_common.settings.curator_target_chunks_per_text`/`curator_initial_batch_size`):
+  `curator_agent` ahora pide un lote chico y completa de a un chunk extra hasta llegar
+  al objetivo, en vez de juzgar el documento entero. **Pendiente**: validar cuánto
+  ahorra esto de verdad en un run real (se espera ~80-90% menos llamadas en la etapa
+  de curación) — no se pudo probar en esta sesión por falta de presupuesto.
 - **Naming**: el módulo `SiMIA/` debería llamarse `SimMIA/` (y `simia.py` →
   `simmia.py`) para coincidir con el nombre real del método del paper — pendiente
   deliberadamente, ver TL;DR arriba.

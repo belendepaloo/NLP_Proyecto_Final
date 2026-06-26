@@ -41,7 +41,15 @@ class Settings(BaseSettings):
     google_api_key: str | None = None
     tavily_api_key: str | None = None
     google_cloud_project: str | None = None
+    google_application_credentials: str | None = None
     hf_token: str | None = None
+
+    # Limite duro de gasto (USD) para agent_model cuando es un modelo facturado por uso
+    # (Vertex AI) -- ver mia_common/spend_guard.py. Por debajo de lo que el usuario
+    # pidio a proposito (no de los $5 exactos): el calculo de costo ANTES de cada
+    # llamada es una estimacion (no se sabe cuanto va a generar el modelo todavia), asi
+    # que se deja margen para no pasarse del limite real por error de estimacion.
+    agent_model_spend_cap_usd: float = 4.5
 
     # Lista de keys de Groq separadas por coma (GROQ_API_KEYS=key1,key2,key3), para
     # paralelizar con un pool de clientes (mia_common.target_client.TargetClientPool)
@@ -65,6 +73,17 @@ class Settings(BaseSettings):
     # y --chunks-per-text, que sigue pudiendo overridear esto por run).
     chunks_per_text: int = 10
     chunk_sample_seed: int = 42
+
+    # Cuantos chunks CURADOS (que pasaron el filtro de voz) busca curator_agent por
+    # documento en la Fase 2 agentica -- distinto de chunks_per_text de arriba (esa es
+    # una muestra de chunks CRUDOS, sin curar, que usa la Fase 1 manual). Medido en
+    # vivo: juzgar la voz de los 51 chunks de un cuento entero con gemini-2.5-pro
+    # (modelo "thinking") consumio la mayoria de un presupuesto de Vertex AI de $4.50
+    # antes de llegar a SAGE/MIA. curator_agent tiene que pedir de a poco (un batch
+    # chico, despues de a uno mas si algo se descarta) hasta llegar a este numero, no
+    # juzgar el documento entero y filtrar despues.
+    curator_target_chunks_per_text: int = 5
+    curator_initial_batch_size: int = 6  # target + margen chico, para no tener que pedir de a uno desde el principio
 
     # DUALTEST contra un target sin tokenizer (API): split_by_words necesita
     # prefijo+continuacion en PALABRAS que entren dentro de un chunk de ~128 tokens
@@ -108,6 +127,7 @@ settings = Settings()
 _ENV_BRIDGE = {
     "HF_TOKEN": settings.hf_token,
     "GOOGLE_CLOUD_PROJECT": settings.google_cloud_project,
+    "GOOGLE_APPLICATION_CREDENTIALS": settings.google_application_credentials,
     "GROQ_API_KEY": settings.groq_api_key,
     "OPENAI_API_KEY": settings.openai_api_key,
     "ANTHROPIC_API_KEY": settings.anthropic_api_key,

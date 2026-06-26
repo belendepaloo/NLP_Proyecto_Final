@@ -11,6 +11,11 @@ virtual_mode=True) -- el orquestador y los subagentes ganan read_file/ls ahi (y 
 ahi, no sobre el resto del repo) via la SkillsMiddleware de deepagents, mas
 record_learning/record_calibration para escribir. runs/<run_id>/ sigue usando sus
 propios tools dedicados (fs_tools.write_run_artifact, etc.), no este backend.
+
+Si agent_model es un modelo de Vertex AI (factura por uso real, no el free tier de AI
+Studio), _resolve_agent_model lo envuelve con un VertexSpendGuardCallback que frena
+duro contra un limite en USD (mia_common.settings.agent_model_spend_cap_usd) -- ver
+mia_common/spend_guard.py.
 """
 
 from __future__ import annotations
@@ -26,7 +31,40 @@ from agents.subagents import STATIC_SUBAGENTS, build_mia_subagent
 from agents.tools.fs_tools import list_run_artifacts, read_run_artifact, write_run_artifact
 from agents.tools.skill_tools import record_calibration, record_learning
 from mia_common.settings import settings
+from mia_common.spend_guard import VertexSpendGuardCallback
 from mia_common.target_client import resolve_target_client
+
+
+def _resolve_agent_model(agent_model: str) -> str | Any:
+    """Si `agent_model` es un modelo de Vertex AI (factura por uso, a diferencia del
+    free tier de AI Studio), lo construye con un VertexSpendGuardCallback que frena
+    duro (SpendCapExceededError) si se supera settings.agent_model_spend_cap_usd
+    acumulado para el proyecto de GOOGLE_CLOUD_PROJECT -- ver mia_common/spend_guard.py.
+    Para otros providers devuelve el string tal cual (create_deep_agent lo resuelve el
+    solo); no facturan por este mismo mecanismo asi que no necesitan el wrapper.
+
+    Reusa deepagents._models.resolve_model (no reimplementa la logica de
+    provider-profiles) para construir el modelo base antes de wrappearlo -- depende de
+    un modulo "privado" de deepagents (prefijo _), revisar si deepagents cambia de
+    version (pineado a 0.6.11 en requirements.txt)."""
+    if not agent_model.startswith("google_vertexai:"):
+        return agent_model
+
+    from deepagents._models import resolve_model
+
+    model_name = agent_model.split(":", 1)[1]
+    base_model = resolve_model(agent_model)
+    account = settings.google_cloud_project or "vertex_default"
+    callback = VertexSpendGuardCallback(
+        account=account, model_name=model_name, max_usd=settings.agent_model_spend_cap_usd
+    )
+    # NO usar .with_config({"callbacks": [...]}) -- envuelve el modelo en un
+    # RunnableBinding, que deepagents.resolve_model() no reconoce como
+    # isinstance(_, BaseChatModel) y termina tratando como si fuera un string de
+    # nuevo (rompe con AttributeError: '<Modelo>' object has no attribute 'count').
+    # `callbacks` es un campo real de BaseChatModel -- mutarlo directo preserva el tipo.
+    base_model.callbacks = [callback]
+    return base_model
 
 ORCHESTRATOR_SYSTEM_PROMPT = """Sos el orquestador del pipeline de Membership
 Inference Attack. Dado el nombre de un autor, tu trabajo es coordinar todo el flujo
@@ -42,25 +80,37 @@ Etapas, en orden:
    modelos NO usar como agent_model si en algun momento delegaras eso).
 1. Delega a bibliography_agent (via la tool task) para encontrar y proponer textos
    candidatos del autor. Esto SIEMPRE pausa para revision humana -- no hay nada que
-   hacer de tu parte ahi mas que esperar la confirmacion. ANTES de pasar a la etapa 2,
-   guarda la lista de candidatos ya aprobada/editada con
-   write_run_artifact(run_id, "bibliography", "candidates", {...}) -- flow_checker_agent
-   chequea esto despues de la etapa 1, y si no encuentra nada ahi va a recomendar
-   escalate_to_human (correctamente: sin este artifact no hay registro de que se
-   aprobo, aunque el humano haya dicho que si).
-2. Una vez confirmados los candidatos, delega a curator_agent para limpiar, chunkear,
-   verificar autoria, y seleccionar los chunks mas caracteristicos de la voz del autor.
-   IMPORTANTE: en el mensaje de la tool `task`, pasale el run_id y la lista COMPLETA de
-   candidatos aprobados (document_id, title, source_url) -- curator_agent NO tiene
-   acceso al texto crudo ni a tu conversacion, solo puede recuperar el texto real via
-   read_run_artifact(run_id, "bibliography", f"text_{document_id}") usando esos mismos
-   document_id, asi que si no se los pasas explicitamente no va a saber que documentos
-   procesar (esto ya causo que curator_agent inventara autores/textos que nunca se
-   bajaron -- ver pipeline-learnings antes de asumir que esta resuelto).
-3. Para cada chunk que sobrevivio la curacion: delega a sage_qa_agent (parafraseo +
-   QA), y despues a mia_agent (DE-COP/SiMIA/DUALTEST) con los paraphrase candidates que
-   produjo SAGE.
-4. Llama a combine_scores con los 3 resultados crudos de mia_agent para ese chunk.
+   hacer de tu parte ahi mas que esperar la confirmacion. La tool que usa
+   bibliography_agent para proponer (propose_candidate_texts) YA guarda sola la lista
+   aprobada/editada en runs/<run_id>/bibliography/candidates en cuanto el humano
+   resuelve la pausa -- vos NUNCA llames a write_run_artifact con stage="bibliography"
+   ni "candidates" por tu cuenta, ni fabriques una lista de candidatos vos mismo bajo
+   ninguna circunstancia.
+   **GUARDRAIL CRITICO (bug real que ya paso)**: si la tarea de bibliography_agent
+   termina SIN que haya ocurrido una pausa de revision humana real (osea, nunca llamo a
+   propose_candidate_texts -- por ejemplo porque no encontro nada y te lo dice en texto
+   plano), eso significa que NO HAY candidatos aprobados, sin excepcion. En ese caso NO
+   sigas a la etapa 2, no inventes titulos/autores/URLs "plausibles" para completar el
+   pipeline -- PARATE y reportale al usuario que la busqueda de bibliografia fallo. Un
+   candidato que nadie aprobo de verdad invalida cualquier resultado de MIA que se
+   calcule despues.
+2. Una vez confirmados los candidatos (con una pausa real de por medio, ver guardrail
+   arriba), delega a curator_agent pasandole el run_id -- curator_agent lee la lista de
+   candidatos EL MISMO desde runs/<run_id>/bibliography/candidates (no confia en lo que
+   le digas en el mensaje de la tool `task` sobre cuales son, justamente para que un
+   eventual error de tu parte no se le contagie) y el texto real de cada uno via
+   read_run_artifact(run_id, "bibliography", f"text_{document_id}").
+3. Para los chunks que sobrevivieron la curacion: delega a sage_qa_agent pasandole el
+   run_id y la lista de chunk_id (el lee el texto el mismo desde
+   runs/<run_id>/curation/), despues a mia_agent pasandole run_id, chunk_id, titulo y
+   autor (el lee el texto Y los paraphrase candidates de SAGE el mismo, tampoco
+   confies en relayar contenido en el mensaje -- ninguno de los dos espera texto
+   crudo en la tarea, solo identificadores).
+4. Para cada chunk, leé runs/<run_id>/mia_scores/<chunk_id> con read_run_artifact (NO
+   confíes en el resumen de texto de mia_agent para esto, lee el artifact que el mismo
+   persistio) y llama a combine_scores con los 3 resultados crudos de ahi
+   (dualtest_row, simia_raw, decop_result -- cualquiera puede ser null si ese metodo
+   abstuvo para ese chunk).
 5. Despues de CADA etapa (1-4), delega a flow_checker_agent pasandole el run_id y el
    nombre de la etapa que acaba de terminar, para que valide que los artifacts tienen
    sentido. Si te devuelve recommended_action="escalate_to_human", parate y avisale al
@@ -104,7 +154,7 @@ def build_orchestrator(
     )
     subagents = [*STATIC_SUBAGENTS, build_mia_subagent(target_client)]
     return create_deep_agent(
-        model=agent_model or settings.agent_model,
+        model=_resolve_agent_model(agent_model or settings.agent_model),
         tools=[combine_scores, aggregate_chunk_scores, aggregate_text_scores,
                write_run_artifact, read_run_artifact, list_run_artifacts,
                record_learning, record_calibration],

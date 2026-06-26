@@ -10,6 +10,7 @@ from __future__ import annotations
 import subprocess
 import time
 
+from agents.tools.fs_tools import write_run_artifact
 from mia_common.settings import settings
 
 FETCH_MAX_RETRIES = 3
@@ -93,10 +94,24 @@ def fetch_url(url: str) -> dict:
     }
 
 
-def propose_candidate_texts(candidates: list[dict]) -> dict:
+def propose_candidate_texts(run_id: str, candidates: list[dict]) -> dict:
     """Terminal tool de la etapa de bibliografia. Llamar a este tool SIEMPRE dispara
     una pausa de revision humana (interrupt_on en el orquestador) -- el humano puede
     aprobar la lista tal cual, editarla (sacar/agregar candidatos), o rechazarla para
     que el agente busque de nuevo. `candidates`: lista de
-    {"title", "source_url", "author", "date"} por documento propuesto."""
-    return {"status": "awaiting_human_review", "candidates": candidates}
+    {"document_id", "title", "source_url", "author", "date"} por documento propuesto.
+
+    Persiste `candidates` en runs/<run_id>/bibliography/candidates.json DESPUES de que
+    el humano resuelve la pausa (con los args ya aprobados/editados, nunca los
+    originales que propuso el agente -- deepagents reemplaza `candidates` por la
+    version editada antes de ejecutar esto si el humano elige "editar"). Que esto se
+    persista ACA, adentro del tool que la pausa humana protege, en vez de que el
+    orquestador lo guarde el solo despues, es deliberado: bug real encontrado en una
+    sesion anterior -- el orquestador, cuando bibliography_agent no encontraba nada,
+    fabricaba el una lista de candidatos y la guardaba como si el humano la hubiera
+    aprobado, sin que ninguna pausa real hubiera ocurrido. Si el artifact en disco solo
+    puede existir como consecuencia de este tool ejecutandose post-resume, un candidato
+    fabricado por el orquestador ya no puede pasar por "aprobado" (ver
+    pipeline-learnings antes de asumir que esto sigue roto)."""
+    write_run_artifact(run_id, "bibliography", "candidates", {"candidates": candidates})
+    return {"status": "approved", "candidates": candidates}
