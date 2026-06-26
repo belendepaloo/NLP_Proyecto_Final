@@ -78,3 +78,9 @@ Desktop.ini
 # ==========================================
 
 runs/
+
+# Scratch del FilesystemBackend de deepagents (Fase 3) -- resultados de tools grandes
+# y archivos temporales que el orquestador/subagentes escriben en agents/skills/ en
+# vivo durante un run, no son parte de la skill versionada.
+agents/skills/large_tool_results/
+agents/skills/tmp/

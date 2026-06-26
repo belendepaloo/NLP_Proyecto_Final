@@ -2,10 +2,12 @@
 run_manager.py — puente entre el orquestador deepagents (sincrono, bloqueante,
 maneja human-in-the-loop con Command(resume=...)) y FastAPI (async, request/response).
 
-Un RunHandle por run vive en RUNS mientras el proceso de uvicorn este arriba -- no hay
-persistencia entre reinicios del server, igual que scripts/run_pipeline_agentic.py (que
-tambien usa InMemorySaver). El estado "real" del run (lo que se decidio en cada etapa)
-sigue viviendo en runs/<run_id>/ via fs_tools, no aca.
+Un RunHandle por run vive en RUNS mientras el proceso de uvicorn este arriba -- ese
+diccionario en memoria (status, decisiones pendientes) no sobrevive un reinicio del
+server. El checkpoint del orquestador (SqliteSaver, runs/_checkpoints.sqlite) si
+sobrevive -- ver scripts/run_pipeline_agentic.py --run-id para reanudar un thread_id
+existente fuera de la webapp. El estado "real" del run (lo que se decidio en cada
+etapa) sigue viviendo en runs/<run_id>/ via fs_tools, no aca.
 
 El orquestador corre en un thread de background por run; la vuelta de un humano
 (aprobar/editar/rechazar) se entrega via submit_decisions(), que despierta ese thread.
@@ -18,10 +20,11 @@ import uuid
 from dataclasses import dataclass, field
 from typing import Any, Literal
 
-from langgraph.checkpoint.memory import InMemorySaver
+from langgraph.checkpoint.sqlite import SqliteSaver
 from langgraph.types import Command
 
 from agents.orchestrator import build_orchestrator
+from mia_common.settings import settings
 
 RunStatus = Literal["running", "waiting_human", "done", "error"]
 
@@ -89,19 +92,24 @@ _RUNS_LOCK = threading.Lock()
 
 def _run_loop(handle: RunHandle, initial_message: str, config: dict[str, Any]) -> None:
     try:
-        orchestrator = build_orchestrator(
-            checkpointer=InMemorySaver(),
-            target_provider=handle.target_provider,
-            target_model_name=handle.target_model_name,
-        )
-        result = orchestrator.invoke({"messages": [{"role": "user", "content": initial_message}]}, config=config)
-        while "__interrupt__" in result:
-            interrupt = result["__interrupt__"][0]
-            handle.set_waiting(interrupt.value)
-            decisions = handle.wait_for_decisions()
-            result = orchestrator.invoke(Command(resume={"decisions": decisions}), config=config)
-        last = result["messages"][-1]
-        handle.set_done(last.content if hasattr(last, "content") else str(last))
+        # SqliteSaver (no InMemorySaver): si este thread revienta por un bug, el
+        # checkpoint del run queda en runs/_checkpoints.sqlite -- arreglar el bug y
+        # reanudar el mismo thread_id no repite las etapas ya completadas.
+        db_path = str(settings.runs_dir / "_checkpoints.sqlite")
+        with SqliteSaver.from_conn_string(db_path) as checkpointer:
+            orchestrator = build_orchestrator(
+                checkpointer=checkpointer,
+                target_provider=handle.target_provider,
+                target_model_name=handle.target_model_name,
+            )
+            result = orchestrator.invoke({"messages": [{"role": "user", "content": initial_message}]}, config=config)
+            while "__interrupt__" in result:
+                interrupt = result["__interrupt__"][0]
+                handle.set_waiting(interrupt.value)
+                decisions = handle.wait_for_decisions()
+                result = orchestrator.invoke(Command(resume={"decisions": decisions}), config=config)
+            last = result["messages"][-1]
+            handle.set_done(last.content if hasattr(last, "content") else str(last))
     except Exception as exc:  # noqa: BLE001 -- se muestra en la pantalla del run, no debe tumbar el thread en silencio
         handle.set_error(str(exc))
 

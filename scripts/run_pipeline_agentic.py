@@ -6,17 +6,22 @@ manejada por stdin en vez de una pantalla web (eso es Fase 4).
 
 Uso:
     python scripts/run_pipeline_agentic.py --author "Charles Dickens"
+    python scripts/run_pipeline_agentic.py --run-id agentic_charles_dickens_abc123   # retomar
 
 Necesita (ver .env.example): GROQ_API_KEY (target), y un modelo de agente que maneje
-bien tool-calling anidado -- GOOGLE_API_KEY (Gemini, default) o ANTHROPIC_API_KEY
-(pasar --agent-model "anthropic:claude-...") o, si no hay otra, un modelo de Groq con
---agent-model "groq:..." (ver advertencia abajo).
+bien tool-calling anidado -- default google_vertexai:gemini-2.5-pro (necesita
+GOOGLE_CLOUD_PROJECT + `gcloud auth application-default login`, ver
+mia_common/settings.py) o ANTHROPIC_API_KEY (pasar --agent-model "anthropic:claude-...").
 
-ADVERTENCIA verificada en esta sesion: probamos con Groq llama-3.3-70b-versatile como
-agent_model y la tool `task` (la que deepagents usa para delegar a subagentes) le
-generaba argumentos mal formados -- ese modelo no maneja con suficiente fidelidad el
-tool-calling anidado de deepagents. Funciona bien para el modelo TARGET (lo que se
-testea con MIA), pero no se confirmo que funcione para el rol de agente razonador.
+ADVERTENCIAS verificadas en vivo: Groq (`llama-3.3-70b-versatile`) como agent_model le
+generaba argumentos mal formados a la tool `task` -- no usar Groq para este rol, solo
+como target. `gemini-2.5-flash` via Vertex tambien mostro fallas intermitentes
+(`MALFORMED_FUNCTION_CALL` en `write_todos`) -- `gemini-2.5-pro` no mostro este
+problema en las mismas pruebas, por eso es el default.
+
+El checkpointer es persistente (SQLite, runs/_checkpoints.sqlite) -- si el run crashea
+por un bug, arreglar el bug y correr de nuevo con --run-id <el mismo run_id> retoma
+desde el ultimo paso completado en vez de repetir todo desde el principio.
 """
 
 from __future__ import annotations
@@ -28,10 +33,11 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from langgraph.checkpoint.memory import InMemorySaver  # noqa: E402
+from langgraph.checkpoint.sqlite import SqliteSaver  # noqa: E402
 from langgraph.types import Command  # noqa: E402
 
 from agents.orchestrator import build_orchestrator  # noqa: E402
+from mia_common.settings import settings  # noqa: E402
 
 
 def print_interrupt(interrupt) -> None:
@@ -79,6 +85,14 @@ def main() -> int:
     )
     parser.add_argument("--n-texts", type=int, default=5, help="Cuantos textos pedirle a bibliography_agent.")
     parser.add_argument(
+        "--run-id",
+        default=None,
+        help="Retomar un run existente (mismo thread_id) en vez de arrancar uno nuevo -- "
+        "el checkpointer es persistente (SQLite, runs/_checkpoints.sqlite), asi que esto "
+        "funciona incluso si el run anterior crasheo por un bug ya arreglado. No hace "
+        "falta repetir bibliography_agent/curacion ya completados en ese run.",
+    )
+    parser.add_argument(
         "--target-provider",
         default=None,
         help="Override de mia_common.settings.target_provider (groq|openai|anthropic|google|hf_local).",
@@ -90,36 +104,42 @@ def main() -> int:
     )
     args = parser.parse_args()
 
-    checkpointer = InMemorySaver()
-    orchestrator = build_orchestrator(
-        checkpointer=checkpointer,
-        agent_model=args.agent_model,
-        target_provider=args.target_provider,
-        target_model_name=args.target_model,
-    )
+    db_path = str(settings.runs_dir / "_checkpoints.sqlite")
+    with SqliteSaver.from_conn_string(db_path) as checkpointer:
+        orchestrator = build_orchestrator(
+            checkpointer=checkpointer,
+            agent_model=args.agent_model,
+            target_provider=args.target_provider,
+            target_model_name=args.target_model,
+        )
 
-    run_id = f"agentic_{args.author.lower().replace(' ', '_')}_{uuid.uuid4().hex[:8]}"
-    config = {"configurable": {"thread_id": run_id}}
+        if args.run_id:
+            run_id = args.run_id
+            config = {"configurable": {"thread_id": run_id}}
+            print(f"=== Retomando run {run_id} (checkpoint persistente) ===")
+            result = orchestrator.invoke(None, config=config)
+        else:
+            run_id = f"agentic_{args.author.lower().replace(' ', '_')}_{uuid.uuid4().hex[:8]}"
+            config = {"configurable": {"thread_id": run_id}}
+            initial_message = (
+                f"Autor: {args.author}. run_id: {run_id}. Pedile a bibliography_agent "
+                f"{args.n_texts} textos candidatos y corre el pipeline completo desde ahi."
+            )
+            print(f"=== Arrancando run {run_id} ===")
+            result = orchestrator.invoke({"messages": [{"role": "user", "content": initial_message}]}, config=config)
 
-    initial_message = (
-        f"Autor: {args.author}. run_id: {run_id}. Pedile a bibliography_agent "
-        f"{args.n_texts} textos candidatos y corre el pipeline completo desde ahi."
-    )
-    print(f"=== Arrancando run {run_id} ===")
-    result = orchestrator.invoke({"messages": [{"role": "user", "content": initial_message}]}, config=config)
+        while "__interrupt__" in result:
+            interrupt = result["__interrupt__"][0]
+            print_interrupt(interrupt)
+            decisions = [ask_decision(req) for req in interrupt.value.get("action_requests", [])]
+            result = orchestrator.invoke(Command(resume={"decisions": decisions}), config=config)
 
-    while "__interrupt__" in result:
-        interrupt = result["__interrupt__"][0]
-        print_interrupt(interrupt)
-        decisions = [ask_decision(req) for req in interrupt.value.get("action_requests", [])]
-        result = orchestrator.invoke(Command(resume={"decisions": decisions}), config=config)
-
-    print("\n" + "=" * 70)
-    print("Resultado final")
-    print("=" * 70)
-    last_message = result["messages"][-1]
-    print(last_message.content if hasattr(last_message, "content") else last_message)
-    print(f"\n(artifacts completos en runs/{run_id}/)")
+        print("\n" + "=" * 70)
+        print("Resultado final")
+        print("=" * 70)
+        last_message = result["messages"][-1]
+        print(last_message.content if hasattr(last_message, "content") else last_message)
+        print(f"\n(artifacts completos en runs/{run_id}/ -- run_id: {run_id} si hace falta retomar con --run-id)")
     return 0
 
 

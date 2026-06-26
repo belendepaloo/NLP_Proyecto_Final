@@ -20,7 +20,11 @@ class Settings(BaseSettings):
     # modelo target bajo test. Formato 'provider:model' (init_chat_model de LangChain).
     # gemini-2.0-flash da 429 (limit: 0 en el free tier) en keys nuevas de Cloud Console;
     # gemini-2.5-flash si tiene cuota free-tier disponible -- verificado contra la API real.
-    agent_model: str = "google_genai:gemini-2.5-flash"
+    # gemini-2.5-flash genera tool calls malformados con cierta frecuencia para
+    # write_todos (deepagents) -- confirmado en vivo (finish_reason=MALFORMED_FUNCTION_CALL,
+    # el mensaje queda vacio y el orquestador se frena en silencio, sin error visible).
+    # gemini-2.5-pro no mostro este problema en las mismas pruebas.
+    agent_model: str = "google_vertexai:gemini-2.5-pro"
 
     # Modelo "black box" target al que se le hace el MIA. Configurable por run desde la
     # webapp; estos son solo los defaults.

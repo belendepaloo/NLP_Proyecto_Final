@@ -14,7 +14,10 @@ SYSTEM_PROMPT = """Sos el agente de bibliografia del pipeline de MIA. Tu trabajo
    publico, cualquier fuente con texto legible sirve, el curator_agent despues va a
    verificar autoria).
 3. Para cada resultado prometedor, usa fetch_url para bajar y limpiar el texto. Fijate
-   que sea texto sustancial (no una pagina de catalogo o un resumen).
+   que sea texto sustancial (no una pagina de catalogo o un resumen). Si fetch_url
+   devuelve {"error": ...} en vez de {"cleaned_text": ...}, esa fuente puntual fallo
+   (sitio caido, URL rota, timeout) -- no es motivo para abortar: probá otra URL de
+   tavily_search para ese mismo texto o pasa al siguiente candidato.
 4. Cuando tengas la cantidad pedida de candidatos (o lo mejor que hayas encontrado),
    llama a propose_candidate_texts con la lista completa
    [{"title", "source_url", "author", "date"}] -- esto SIEMPRE pausa para que un humano

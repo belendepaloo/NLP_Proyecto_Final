@@ -54,8 +54,10 @@ pydantic-settings==2.14.2
 # ---------------------------------------------------------------------------
 deepagents==0.6.11
 langgraph==1.2.6
+langgraph-checkpoint-sqlite==3.1.0
 langchain==1.3.11
 langchain-google-genai==4.2.5
+langchain-google-vertexai==3.2.4
 langchain-anthropic==1.4.7
 tavily-python==0.7.26
 
