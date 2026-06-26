@@ -1,10 +1,9 @@
 import argparse
 from pathlib import Path
-
 import pandas as pd
 import torch
-from tqdm.auto import tqdm
 
+from tqdm.auto import tqdm
 from experiment_utils import prepare_records
 from prefixing import split_by_tokens
 from target_model import HFLocalTarget
