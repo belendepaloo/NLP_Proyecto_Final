@@ -1,0 +1,18 @@
+{
+  "query_id": "05f6b3165b88d4c7ca838dded2b9c2cc",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0052",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "When he’d found",
+  "target_word": "his",
+  "sample_idx": 0,
+  "generated_text": "her",
+  "generated_first_word": "her",
+  "similarity": 0.8214579820632935,
+  "timestamp": "2026-06-27 01:14:00"
+}

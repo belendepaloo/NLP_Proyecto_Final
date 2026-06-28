@@ -1,0 +1,18 @@
+{
+  "query_id": "b2f5d1357cac420c0097b8583fb6aa0d",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0081",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "The next moment the two of",
+  "target_word": "them",
+  "sample_idx": 2,
+  "generated_text": "them",
+  "generated_first_word": "them",
+  "similarity": 1.0,
+  "timestamp": "2026-06-27 15:41:16"
+}

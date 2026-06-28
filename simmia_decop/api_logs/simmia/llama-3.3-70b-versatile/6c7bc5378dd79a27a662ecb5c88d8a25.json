@@ -1,0 +1,18 @@
+{
+  "query_id": "6c7bc5378dd79a27a662ecb5c88d8a25",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0056",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "That guy is",
+  "target_word": "so",
+  "sample_idx": 1,
+  "generated_text": "crazy",
+  "generated_first_word": "crazy",
+  "similarity": 0.6488884687423706,
+  "timestamp": "2026-06-27 01:56:39"
+}

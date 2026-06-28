@@ -1,0 +1,18 @@
+{
+  "query_id": "2f688083763c29c895796f5ea43d026e",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0113",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Back in New York? Persona non",
+  "target_word": "grata.",
+  "sample_idx": 2,
+  "generated_text": "grata",
+  "generated_first_word": "grata",
+  "similarity": 0.9858452081680298,
+  "timestamp": "2026-06-27 16:52:09"
+}

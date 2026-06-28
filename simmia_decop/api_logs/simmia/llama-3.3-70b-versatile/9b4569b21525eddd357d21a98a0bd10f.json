@@ -1,0 +1,18 @@
+{
+  "query_id": "9b4569b21525eddd357d21a98a0bd10f",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0046",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Yet Archer",
+  "target_word": "was",
+  "sample_idx": 1,
+  "generated_text": "managed",
+  "generated_first_word": "managed",
+  "similarity": 0.6877647638320923,
+  "timestamp": "2026-06-27 01:00:01"
+}

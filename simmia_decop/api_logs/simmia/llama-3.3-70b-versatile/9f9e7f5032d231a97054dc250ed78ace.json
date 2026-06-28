@@ -1,0 +1,18 @@
+{
+  "query_id": "9f9e7f5032d231a97054dc250ed78ace",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0081",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "The next moment the two of them",
+  "target_word": "were",
+  "sample_idx": 0,
+  "generated_text": "were",
+  "generated_first_word": "were",
+  "similarity": 0.9999999403953552,
+  "timestamp": "2026-06-27 15:41:19"
+}

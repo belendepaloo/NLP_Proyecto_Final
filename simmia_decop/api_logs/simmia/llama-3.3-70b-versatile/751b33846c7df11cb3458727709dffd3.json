@@ -1,0 +1,18 @@
+{
+  "query_id": "751b33846c7df11cb3458727709dffd3",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0016",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "There he would often wander long, and late would",
+  "target_word": "return.",
+  "sample_idx": 0,
+  "generated_text": "return",
+  "generated_first_word": "return",
+  "similarity": 0.9157041907310486,
+  "timestamp": "2026-06-26 23:27:37"
+}

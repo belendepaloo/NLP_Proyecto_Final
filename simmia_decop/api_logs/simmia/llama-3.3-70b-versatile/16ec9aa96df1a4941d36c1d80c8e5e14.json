@@ -1,0 +1,18 @@
+{
+  "query_id": "16ec9aa96df1a4941d36c1d80c8e5e14",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0162",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 11,
+  "prefix": "Kat bunched her fists and fought the urge to swing at",
+  "target_word": "him.",
+  "sample_idx": 1,
+  "generated_text": "him",
+  "generated_first_word": "him",
+  "similarity": 0.9139955639839172,
+  "timestamp": "2026-06-27 18:41:26"
+}

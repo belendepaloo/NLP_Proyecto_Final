@@ -1,0 +1,18 @@
+{
+  "query_id": "5e754fa963af16a081005ce04e78ec05",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0000",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 15,
+  "prefix": "Since he was arrested he had not been fed. He sat as still as he",
+  "target_word": "could",
+  "sample_idx": 2,
+  "generated_text": "could,",
+  "generated_first_word": "could,",
+  "similarity": 0.9452558159828186,
+  "timestamp": "2026-06-26 22:42:54"
+}

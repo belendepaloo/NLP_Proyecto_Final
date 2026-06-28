@@ -1,0 +1,18 @@
+{
+  "query_id": "beae98b210187961b0826f3e0f4c58ce",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0024",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 17,
+  "prefix": "Side out o' t' gate now, this minute!\" Catherine frowned and retreated to the window-seat chewing her",
+  "target_word": "lip,",
+  "sample_idx": 0,
+  "generated_text": "lip",
+  "generated_first_word": "lip",
+  "similarity": 0.9678676128387451,
+  "timestamp": "2026-06-26 23:47:17"
+}

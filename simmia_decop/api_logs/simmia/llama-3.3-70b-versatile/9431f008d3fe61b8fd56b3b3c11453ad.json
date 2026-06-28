@@ -1,0 +1,18 @@
+{
+  "query_id": "9431f008d3fe61b8fd56b3b3c11453ad",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0162",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Kat bunched her fists",
+  "target_word": "and",
+  "sample_idx": 0,
+  "generated_text": "tightly",
+  "generated_first_word": "tightly",
+  "similarity": 0.6119689345359802,
+  "timestamp": "2026-06-27 18:40:35"
+}

@@ -1,0 +1,18 @@
+{
+  "query_id": "0af1db3c523a52a3b8f09d865b568362",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0072",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "As Tatterlain ambled towards the sentry, Kat",
+  "target_word": "spared",
+  "sample_idx": 0,
+  "generated_text": "watched",
+  "generated_first_word": "watched",
+  "similarity": 0.6317794322967529,
+  "timestamp": "2026-06-27 02:36:11"
+}

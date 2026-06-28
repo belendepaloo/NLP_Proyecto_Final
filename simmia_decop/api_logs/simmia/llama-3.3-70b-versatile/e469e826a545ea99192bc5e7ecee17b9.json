@@ -1,0 +1,18 @@
+{
+  "query_id": "e469e826a545ea99192bc5e7ecee17b9",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0183",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Im nineteen and",
+  "target_word": "not",
+  "sample_idx": 0,
+  "generated_text": "still",
+  "generated_first_word": "still",
+  "similarity": 0.7654421329498291,
+  "timestamp": "2026-06-27 19:26:34"
+}

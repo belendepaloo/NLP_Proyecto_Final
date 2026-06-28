@@ -1,0 +1,18 @@
+{
+  "query_id": "49d497131dd9735eac009f3dccc68f22",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0099",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "And not a hint of rot. The last",
+  "target_word": "attack",
+  "sample_idx": 0,
+  "generated_text": "time",
+  "generated_first_word": "time",
+  "similarity": 0.6819654107093811,
+  "timestamp": "2026-06-27 16:21:20"
+}

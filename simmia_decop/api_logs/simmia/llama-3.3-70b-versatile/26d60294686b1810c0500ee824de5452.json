@@ -1,0 +1,18 @@
+{
+  "query_id": "26d60294686b1810c0500ee824de5452",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0020",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 12,
+  "prefix": "Yes, I suppose I will, Lore sighed. Break it up! The shouts",
+  "target_word": "came",
+  "sample_idx": 0,
+  "generated_text": "came",
+  "generated_first_word": "came",
+  "similarity": 1.0,
+  "timestamp": "2026-06-26 23:37:44"
+}

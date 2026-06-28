@@ -1,0 +1,18 @@
+{
+  "query_id": "16cf681f26b8f7f2d32ca89a2badcd63",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0155",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "And this inner land, which was long",
+  "target_word": "named",
+  "sample_idx": 2,
+  "generated_text": "considered",
+  "generated_first_word": "considered",
+  "similarity": 0.6405002474784851,
+  "timestamp": "2026-06-27 18:25:35"
+}

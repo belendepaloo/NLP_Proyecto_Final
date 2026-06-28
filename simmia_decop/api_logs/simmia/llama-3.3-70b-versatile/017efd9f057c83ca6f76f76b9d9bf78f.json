@@ -1,0 +1,18 @@
+{
+  "query_id": "017efd9f057c83ca6f76f76b9d9bf78f",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0089",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 13,
+  "prefix": "Still I couldn't dote on Heath- cliff, and I wondered often what my",
+  "target_word": "master",
+  "sample_idx": 2,
+  "generated_text": "sister",
+  "generated_first_word": "sister",
+  "similarity": 0.7149651050567627,
+  "timestamp": "2026-06-27 15:59:48"
+}

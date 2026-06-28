@@ -1,0 +1,18 @@
+{
+  "query_id": "e8fad50a70e3ee86f0be03428c1854b3",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0141",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "I am of average",
+  "target_word": "height,",
+  "sample_idx": 2,
+  "generated_text": "height",
+  "generated_first_word": "height",
+  "similarity": 0.9631200432777405,
+  "timestamp": "2026-06-27 17:54:06"
+}

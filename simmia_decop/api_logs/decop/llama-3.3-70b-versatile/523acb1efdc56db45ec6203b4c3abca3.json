@@ -1,0 +1,25 @@
+{
+  "query_id": "523acb1efdc56db45ec6203b4c3abca3",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0129",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "title": "Oliver Twist",
+  "author": "Charles Dickens",
+  "length": "medium",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Oliver Twist\" book by Charles Dickens?\nOptions:\nA. Mr. Giles was very worried that the boy would die. He told the doctor he would be devastated if that happened, and wouldn't even cut off Brittles despite all the plate in the county. The doctor said that wasn't the issue and asked Mr. Giles if he was Protestant. Mr. Giles nervously confirmed he hoped he was. The doctor then sharply questioned Brittles about his religion too. Brittles was startled but said he was the same as Mr. Giles.\nB. Mr. Giles was trembling at the thought that the boy might die. He told the doctor he'd never be happy again if that happened, and wouldn't even cut off Brittles despite the plate. The doctor said that wasn't the issue and asked if Mr. Giles was Protestant. Mr. Giles faltered that he hoped so. The doctor sharply asked Brittles the same question about his religion. Brittles was startled but said he was the same as Mr. Giles.\nC. Giles.' 'I hope you don't mean to say, sir,' said Mr. Giles, trembling, 'that he's going to die. If I thought it, I should never be happy again. I wouldn't cut a boy off: no, not even Brittles here; not for all the plate in the county, sir.' 'That's not the point,' said the doctor, mysteriously. 'Mr. Giles, are you a Protestant?' 'Yes, sir, I hope so,' faltered Mr. Giles, who had turned very pale. 'And what are YOU, boy?' said the doctor, turning sharply upon Brittles. 'Lord bless me, sir!' replied Brittles, starting violently; 'I'm the same as Mr. Giles, sir.\nD. Mr. Giles expressed anxiety to the doctor that the boy might pass away. He said he'd never be happy again if that occurred, and wouldn't even cut off Brittles, not for all the plate in the county. The doctor mysteriously said that wasn't the point. He asked Mr. Giles if he was Protestant, to which Mr. Giles hesitantly replied he hoped so. The doctor then sharply turned to Brittles, questioning his religion. Brittles was startled but said he was the same as Mr. Giles.  \nAnswer:",
+  "options": {
+    "A": "Mr. Giles was very worried that the boy would die. He told the doctor he would be devastated if that happened, and wouldn't even cut off Brittles despite all the plate in the county. The doctor said that wasn't the issue and asked Mr. Giles if he was Protestant. Mr. Giles nervously confirmed he hoped he was. The doctor then sharply questioned Brittles about his religion too. Brittles was startled but said he was the same as Mr. Giles.",
+    "B": "Mr. Giles was trembling at the thought that the boy might die. He told the doctor he'd never be happy again if that happened, and wouldn't even cut off Brittles despite the plate. The doctor said that wasn't the issue and asked if Mr. Giles was Protestant. Mr. Giles faltered that he hoped so. The doctor sharply asked Brittles the same question about his religion. Brittles was startled but said he was the same as Mr. Giles.",
+    "C": "Giles.' 'I hope you don't mean to say, sir,' said Mr. Giles, trembling, 'that he's going to die. If I thought it, I should never be happy again. I wouldn't cut a boy off: no, not even Brittles here; not for all the plate in the county, sir.' 'That's not the point,' said the doctor, mysteriously. 'Mr. Giles, are you a Protestant?' 'Yes, sir, I hope so,' faltered Mr. Giles, who had turned very pale. 'And what are YOU, boy?' said the doctor, turning sharply upon Brittles. 'Lord bless me, sir!' replied Brittles, starting violently; 'I'm the same as Mr. Giles, sir.",
+    "D": "Mr. Giles expressed anxiety to the doctor that the boy might pass away. He said he'd never be happy again if that occurred, and wouldn't even cut off Brittles, not for all the plate in the county. The doctor mysteriously said that wasn't the point. He asked Mr. Giles if he was Protestant, to which Mr. Giles hesitantly replied he hoped so. The doctor then sharply turned to Brittles, questioning his religion. Brittles was startled but said he was the same as Mr. Giles.  "
+  },
+  "gold_letter": "C",
+  "predicted_letter": "C",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 15:13:24"
+}

@@ -1,0 +1,18 @@
+{
+  "query_id": "e47e7190e8efa79cbb4dee685a0c72c5",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0054",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "All that confidence",
+  "target_word": "he",
+  "sample_idx": 0,
+  "generated_text": "seemed",
+  "generated_first_word": "seemed",
+  "similarity": 0.6895825862884521,
+  "timestamp": "2026-06-27 01:52:07"
+}

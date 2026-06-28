@@ -1,0 +1,18 @@
+{
+  "query_id": "f3dba24b83d64710dd05f381fc8fc7f0",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0095",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 11,
+  "prefix": "Youve really got to stop doing this, one of the EMTs",
+  "target_word": "joked,",
+  "sample_idx": 2,
+  "generated_text": "said",
+  "generated_first_word": "said",
+  "similarity": 0.7213972806930542,
+  "timestamp": "2026-06-27 16:12:53"
+}

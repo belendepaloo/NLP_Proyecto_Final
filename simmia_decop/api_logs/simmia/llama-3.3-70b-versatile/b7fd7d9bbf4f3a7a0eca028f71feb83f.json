@@ -1,0 +1,18 @@
+{
+  "query_id": "b7fd7d9bbf4f3a7a0eca028f71feb83f",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0068",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "In Oldspeak it is called, quite frankly, 'reality control'.",
+  "target_word": "In",
+  "sample_idx": 2,
+  "generated_text": "This",
+  "generated_first_word": "This",
+  "similarity": 0.6797816157341003,
+  "timestamp": "2026-06-27 02:27:28"
+}

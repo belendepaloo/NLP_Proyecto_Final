@@ -1,0 +1,18 @@
+{
+  "query_id": "2a785840f84f19611561943ed2287b06",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0194",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "‘He’s",
+  "target_word": "a",
+  "sample_idx": 0,
+  "generated_text": "going",
+  "generated_first_word": "going",
+  "similarity": 0.6469022631645203,
+  "timestamp": "2026-06-27 19:50:32"
+}

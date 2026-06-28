@@ -1,0 +1,18 @@
+{
+  "query_id": "610e2460ca63009f5a07dbda661cd56d",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0169",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "There they fought to",
+  "target_word": "the",
+  "sample_idx": 1,
+  "generated_text": "defend",
+  "generated_first_word": "defend",
+  "similarity": 0.6439564228057861,
+  "timestamp": "2026-06-27 18:56:03"
+}

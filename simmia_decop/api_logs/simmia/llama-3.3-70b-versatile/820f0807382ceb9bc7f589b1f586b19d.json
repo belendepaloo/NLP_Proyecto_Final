@@ -1,0 +1,18 @@
+{
+  "query_id": "820f0807382ceb9bc7f589b1f586b19d",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0048",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 13,
+  "prefix": "Were going to take you to the hospital to get you checked out.",
+  "target_word": "I",
+  "sample_idx": 2,
+  "generated_text": "because",
+  "generated_first_word": "because",
+  "similarity": 0.691633939743042,
+  "timestamp": "2026-06-27 01:05:53"
+}

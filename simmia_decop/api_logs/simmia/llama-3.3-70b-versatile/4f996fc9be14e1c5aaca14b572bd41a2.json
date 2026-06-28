@@ -1,0 +1,18 @@
+{
+  "query_id": "4f996fc9be14e1c5aaca14b572bd41a2",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0139",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 10,
+  "prefix": "Before he knew it, he was the boss of his",
+  "target_word": "team,",
+  "sample_idx": 0,
+  "generated_text": "own",
+  "generated_first_word": "own",
+  "similarity": 0.681665301322937,
+  "timestamp": "2026-06-27 17:50:17"
+}

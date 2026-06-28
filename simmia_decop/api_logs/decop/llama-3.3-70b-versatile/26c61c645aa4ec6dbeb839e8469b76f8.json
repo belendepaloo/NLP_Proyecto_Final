@@ -1,0 +1,25 @@
+{
+  "query_id": "26c61c645aa4ec6dbeb839e8469b76f8",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0029",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "title": "The Spectacular",
+  "author": "Fiona Davis",
+  "length": "medium",
+  "permutation_index": 0,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Spectacular\" book by Fiona Davis?\nOptions:\nA. I was the sole provider for our family after your mother pursued her aspirations in Boston. I recognize now that prohibiting her from visiting you two was unethical, though at the time I believed our family was ideal before she deserted us. I wanted to guarantee your happiness after she left, which was my only priority. I hope you can forgive the mistakes I made then. \nB. It was challenging to find work after calling out unethical practices. I relied on that job to support our family, especially after your mom moved to Boston for her career. I wrongfully kept you from her because I felt she had abandoned our perfect family. I know now that was incorrect. I'm sorry. My only concern was caring for you girls after she left.\nC. After your mother left, I struggled as a single father trying to make sure you were happy. I should not have prevented her from seeing you just because she went after her dreams. Our family seemed perfect before she went to Boston, so I felt hurt when she left. But I know that was not right. I hope you understand I was focused entirely on being a good dad and providing for you both. Please forgive me for the mistakes I made.\nD. And it wouldnt have been easy to get another. The corporate world doesnt like whistleblowers. I had the two of you to support, and I wanted to make sure you were happy, especially after Lucille left us. Thats all I was thinking about, my two darling girls. Please believe me. I know the truth about Moms time in Boston. You told her she couldnt see us, threatened her with full custody. All because she wanted to follow her dream. I shouldnt have done that. But we had a perfect family, why did she have to abandon us? I tried my best, after she left.\nAnswer:",
+  "options": {
+    "A": "I was the sole provider for our family after your mother pursued her aspirations in Boston. I recognize now that prohibiting her from visiting you two was unethical, though at the time I believed our family was ideal before she deserted us. I wanted to guarantee your happiness after she left, which was my only priority. I hope you can forgive the mistakes I made then. ",
+    "B": "It was challenging to find work after calling out unethical practices. I relied on that job to support our family, especially after your mom moved to Boston for her career. I wrongfully kept you from her because I felt she had abandoned our perfect family. I know now that was incorrect. I'm sorry. My only concern was caring for you girls after she left.",
+    "C": "After your mother left, I struggled as a single father trying to make sure you were happy. I should not have prevented her from seeing you just because she went after her dreams. Our family seemed perfect before she went to Boston, so I felt hurt when she left. But I know that was not right. I hope you understand I was focused entirely on being a good dad and providing for you both. Please forgive me for the mistakes I made.",
+    "D": "And it wouldnt have been easy to get another. The corporate world doesnt like whistleblowers. I had the two of you to support, and I wanted to make sure you were happy, especially after Lucille left us. Thats all I was thinking about, my two darling girls. Please believe me. I know the truth about Moms time in Boston. You told her she couldnt see us, threatened her with full custody. All because she wanted to follow her dream. I shouldnt have done that. But we had a perfect family, why did she have to abandon us? I tried my best, after she left."
+  },
+  "gold_letter": "D",
+  "predicted_letter": "D",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 05:00:38"
+}

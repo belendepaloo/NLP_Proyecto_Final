@@ -1,0 +1,18 @@
+{
+  "query_id": "bb015a10fbd1dc2f2370d5f8e8b6f996",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0049",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Yes: his",
+  "target_word": "decision",
+  "sample_idx": 2,
+  "generated_text": "name",
+  "generated_first_word": "name",
+  "similarity": 0.6985766291618347,
+  "timestamp": "2026-06-27 01:06:50"
+}

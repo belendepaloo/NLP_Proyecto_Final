@@ -1,0 +1,18 @@
+{
+  "query_id": "7444eb294dfe3bd33a6167bed7d7077a",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0151",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 17,
+  "prefix": "Then I plop it onto the wheel and flatten it with the heels of my hands. The",
+  "target_word": "moment",
+  "sample_idx": 1,
+  "generated_text": "dough",
+  "generated_first_word": "dough",
+  "similarity": 0.6137089729309082,
+  "timestamp": "2026-06-27 18:17:53"
+}

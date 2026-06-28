@@ -1,0 +1,18 @@
+{
+  "query_id": "05257b4c512c7ea840887dfa93c7bb75",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0167",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "Let the Orcs have the realm that is theirs,",
+  "target_word": "and",
+  "sample_idx": 1,
+  "generated_text": "by",
+  "generated_first_word": "by",
+  "similarity": 0.7020533680915833,
+  "timestamp": "2026-06-27 18:52:14"
+}

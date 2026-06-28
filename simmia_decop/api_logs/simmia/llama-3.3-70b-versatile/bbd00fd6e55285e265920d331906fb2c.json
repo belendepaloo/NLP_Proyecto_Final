@@ -1,0 +1,18 @@
+{
+  "query_id": "bbd00fd6e55285e265920d331906fb2c",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0181",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "But when he had drawn forth,",
+  "target_word": "as",
+  "sample_idx": 1,
+  "generated_text": "it",
+  "generated_first_word": "it",
+  "similarity": 0.6593477725982666,
+  "timestamp": "2026-06-27 19:22:33"
+}

@@ -1,0 +1,18 @@
+{
+  "query_id": "fcd57de5896e28edca7bfa887cc71b31",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0016",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "There he would",
+  "target_word": "often",
+  "sample_idx": 2,
+  "generated_text": "meet",
+  "generated_first_word": "meet",
+  "similarity": 0.6284621357917786,
+  "timestamp": "2026-06-26 23:26:59"
+}

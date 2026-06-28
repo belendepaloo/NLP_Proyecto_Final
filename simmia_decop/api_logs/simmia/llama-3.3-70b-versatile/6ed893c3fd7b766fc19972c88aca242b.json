@@ -1,0 +1,18 @@
+{
+  "query_id": "6ed893c3fd7b766fc19972c88aca242b",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0187",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 1,
+  "prefix": "She",
+  "target_word": "wears",
+  "sample_idx": 2,
+  "generated_text": "was",
+  "generated_first_word": "was",
+  "similarity": 0.655979335308075,
+  "timestamp": "2026-06-27 19:35:12"
+}

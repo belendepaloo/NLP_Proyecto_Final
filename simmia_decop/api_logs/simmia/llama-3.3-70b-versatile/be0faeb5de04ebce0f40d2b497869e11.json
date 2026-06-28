@@ -1,0 +1,18 @@
+{
+  "query_id": "be0faeb5de04ebce0f40d2b497869e11",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0173",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "But no ship",
+  "target_word": "came",
+  "sample_idx": 1,
+  "generated_text": "could",
+  "generated_first_word": "could",
+  "similarity": 0.6458428502082825,
+  "timestamp": "2026-06-27 19:04:40"
+}

@@ -1,0 +1,18 @@
+{
+  "query_id": "edfc10f104a6bd2ad7ce42d9d2b51c70",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0062",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "So am I,' said the tinker, waking up, as suddenly as he",
+  "target_word": "had",
+  "sample_idx": 2,
+  "generated_text": "had fallen",
+  "generated_first_word": "had",
+  "similarity": 1.0,
+  "timestamp": "2026-06-27 02:11:19"
+}

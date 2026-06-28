@@ -1,0 +1,18 @@
+{
+  "query_id": "81af35de960c7e19feae3aac1aba97c2",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0157",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Who knows what",
+  "target_word": "the",
+  "sample_idx": 0,
+  "generated_text": "happens",
+  "generated_first_word": "happens",
+  "similarity": 0.6343864798545837,
+  "timestamp": "2026-06-27 18:29:28"
+}

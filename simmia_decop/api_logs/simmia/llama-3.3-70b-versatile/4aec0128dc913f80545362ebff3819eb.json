@@ -1,0 +1,18 @@
+{
+  "query_id": "4aec0128dc913f80545362ebff3819eb",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0016",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "There he would often wander",
+  "target_word": "long,",
+  "sample_idx": 1,
+  "generated_text": "through",
+  "generated_first_word": "through",
+  "similarity": 0.6662509441375732,
+  "timestamp": "2026-06-26 23:27:11"
+}

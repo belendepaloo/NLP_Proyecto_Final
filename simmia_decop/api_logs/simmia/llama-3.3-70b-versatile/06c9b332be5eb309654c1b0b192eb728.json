@@ -1,0 +1,18 @@
+{
+  "query_id": "06c9b332be5eb309654c1b0b192eb728",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0162",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 16,
+  "prefix": "Kat bunched her fists and fought the urge to swing at him. “This is what Vallant",
+  "target_word": "wanted,",
+  "sample_idx": 2,
+  "generated_text": "wanted,",
+  "generated_first_word": "wanted,",
+  "similarity": 0.9999999403953552,
+  "timestamp": "2026-06-27 18:42:03"
+}

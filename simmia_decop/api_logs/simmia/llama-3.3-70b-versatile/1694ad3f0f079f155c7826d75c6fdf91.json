@@ -1,0 +1,18 @@
+{
+  "query_id": "1694ad3f0f079f155c7826d75c6fdf91",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0166",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Wulf grabbed whatever he",
+  "target_word": "could",
+  "sample_idx": 0,
+  "generated_text": "could",
+  "generated_first_word": "could",
+  "similarity": 1.0,
+  "timestamp": "2026-06-27 18:49:24"
+}

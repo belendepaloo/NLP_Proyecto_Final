@@ -1,0 +1,18 @@
+{
+  "query_id": "f896d25733d907732e75d898b22121f5",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0019",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Edgar Linton,",
+  "target_word": "as",
+  "sample_idx": 1,
+  "generated_text": "a",
+  "generated_first_word": "a",
+  "similarity": 0.6719319820404053,
+  "timestamp": "2026-06-26 23:33:32"
+}

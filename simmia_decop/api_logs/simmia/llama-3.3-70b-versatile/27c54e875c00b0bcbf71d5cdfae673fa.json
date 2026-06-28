@@ -1,0 +1,18 @@
+{
+  "query_id": "27c54e875c00b0bcbf71d5cdfae673fa",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0169",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "There",
+  "target_word": "they",
+  "sample_idx": 1,
+  "generated_text": "is",
+  "generated_first_word": "is",
+  "similarity": 0.651160717010498,
+  "timestamp": "2026-06-27 18:55:42"
+}

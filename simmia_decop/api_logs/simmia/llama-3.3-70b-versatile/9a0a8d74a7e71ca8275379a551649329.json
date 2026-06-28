@@ -1,0 +1,18 @@
+{
+  "query_id": "9a0a8d74a7e71ca8275379a551649329",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0105",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "And Peter was nothing like Leonard. When she",
+  "target_word": "arrived",
+  "sample_idx": 2,
+  "generated_text": "met",
+  "generated_first_word": "met",
+  "similarity": 0.6690530180931091,
+  "timestamp": "2026-06-27 16:34:41"
+}

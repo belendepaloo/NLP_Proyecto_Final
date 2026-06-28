@@ -1,0 +1,18 @@
+{
+  "query_id": "f013f7f71550e9427018689cdd69c961",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0010",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "Hareton would not open his fingers, so I laid it",
+  "target_word": "on",
+  "sample_idx": 1,
+  "generated_text": "on",
+  "generated_first_word": "on",
+  "similarity": 1.0000001192092896,
+  "timestamp": "2026-06-26 23:14:19"
+}

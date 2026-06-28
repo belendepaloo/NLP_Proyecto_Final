@@ -1,0 +1,18 @@
+{
+  "query_id": "5f45ea40e27709899520396f4f0e4607",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0130",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 13,
+  "prefix": "“The Eternity King too requires an explanation,” said the thin, darkly handsome man",
+  "target_word": "standing",
+  "sample_idx": 2,
+  "generated_text": "with",
+  "generated_first_word": "with",
+  "similarity": 0.6480921506881714,
+  "timestamp": "2026-06-27 17:30:42"
+}

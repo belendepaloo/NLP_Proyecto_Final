@@ -1,0 +1,25 @@
+{
+  "query_id": "60d7bc764fe3a88e2b43174f7057353a",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0025",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "title": "Wuthering Heights",
+  "author": "Emily Bronte",
+  "length": "medium",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Wuthering Heights\" book by Emily Bronte?\nOptions:\nA. Miss Cathy had been ill, which made her quiet. She rested on her father's knee, and Heathcliff lay on the floor with his head in her lap. I remember the master, before he dozed off, caressing her pretty hair--it rarely pleased him to see her mild-mannered--and saying-- \"Why can't you always be an obedient lass, Cathy?\" And she turned her face up to his, and chuckled, and replied-- \"Why can't you always be a decent man, father?\" But when she saw he was irritated again, she kissed his hand, and said she would sing him to slumber.\nB. Miss Cathy had been sickly, which made her still. She leaned on her father's knee, and Heathcliff was on the floor with his head in her lap. I recall the master, before he fell asleep, stroking her lovely hair--it seldom delighted him to see her gentle--and saying-- \"Why aren't you always a good girl, Cathy?\" And she looked up at him, and laughed, and responded-- \"Why aren't you always a righteous man, father?\" But when she saw he was vexed again, she kissed his hand, and said she would sing him to sleep.  \nC. Miss Cathy had been unwell, which made her quiet. She rested against her father's knee, and Heathcliff was lying on the floor with his head in her lap. I remember the master, before he drifted into a nap, caressing her pretty hair--it rarely pleased him to see her docile--and saying-- \"Why can you not always be an obedient girl, Cathy?\" And she turned her face up to his, and chuckled, and replied-- \"Why can you not always be a decent man, father?\" But as soon as she saw him irritated again, she kissed his hand, and said she would sing him to slumber.\nD. Miss Cathy had been sick, and that made her still. She leant against her father's knee, and Heathcliff was lying on the floor with his head in her lap. I remember the master, before he fell into a doze, stroking her bonny hair--it pleased him rarely to see her gentle--and saying-- \"Why canst thou not always be a good lass, Cathy?\" And she turned her face up to his, and laughed, and answered-- \"Why cannot you always be a good man, father?\" But as soon as she saw him vexed again, she kissed his hand, and said she would sing him to sleep.\nAnswer:",
+  "options": {
+    "A": "Miss Cathy had been ill, which made her quiet. She rested on her father's knee, and Heathcliff lay on the floor with his head in her lap. I remember the master, before he dozed off, caressing her pretty hair--it rarely pleased him to see her mild-mannered--and saying-- \"Why can't you always be an obedient lass, Cathy?\" And she turned her face up to his, and chuckled, and replied-- \"Why can't you always be a decent man, father?\" But when she saw he was irritated again, she kissed his hand, and said she would sing him to slumber.",
+    "B": "Miss Cathy had been sickly, which made her still. She leaned on her father's knee, and Heathcliff was on the floor with his head in her lap. I recall the master, before he fell asleep, stroking her lovely hair--it seldom delighted him to see her gentle--and saying-- \"Why aren't you always a good girl, Cathy?\" And she looked up at him, and laughed, and responded-- \"Why aren't you always a righteous man, father?\" But when she saw he was vexed again, she kissed his hand, and said she would sing him to sleep.  ",
+    "C": "Miss Cathy had been unwell, which made her quiet. She rested against her father's knee, and Heathcliff was lying on the floor with his head in her lap. I remember the master, before he drifted into a nap, caressing her pretty hair--it rarely pleased him to see her docile--and saying-- \"Why can you not always be an obedient girl, Cathy?\" And she turned her face up to his, and chuckled, and replied-- \"Why can you not always be a decent man, father?\" But as soon as she saw him irritated again, she kissed his hand, and said she would sing him to slumber.",
+    "D": "Miss Cathy had been sick, and that made her still. She leant against her father's knee, and Heathcliff was lying on the floor with his head in her lap. I remember the master, before he fell into a doze, stroking her bonny hair--it pleased him rarely to see her gentle--and saying-- \"Why canst thou not always be a good lass, Cathy?\" And she turned her face up to his, and laughed, and answered-- \"Why cannot you always be a good man, father?\" But as soon as she saw him vexed again, she kissed his hand, and said she would sing him to sleep."
+  },
+  "gold_letter": "D",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-06-26 04:52:02"
+}

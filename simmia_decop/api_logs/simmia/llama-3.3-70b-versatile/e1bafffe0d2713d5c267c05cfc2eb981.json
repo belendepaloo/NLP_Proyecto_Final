@@ -1,0 +1,18 @@
+{
+  "query_id": "e1bafffe0d2713d5c267c05cfc2eb981",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0088",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 12,
+  "prefix": "There was nothing to know. Nothing that could be proved. The trees",
+  "target_word": "opened",
+  "sample_idx": 1,
+  "generated_text": "stood",
+  "generated_first_word": "stood",
+  "similarity": 0.562886655330658,
+  "timestamp": "2026-06-27 15:57:27"
+}

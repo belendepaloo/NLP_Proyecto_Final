@@ -1,0 +1,18 @@
+{
+  "query_id": "a22e88e575b997ae7e4db0a69e24c5b8",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0163",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 15,
+  "prefix": "A happiness so bright and hot you feel like it could incinerate you. That comes",
+  "target_word": "later",
+  "sample_idx": 2,
+  "generated_text": "from",
+  "generated_first_word": "from",
+  "similarity": 0.705375611782074,
+  "timestamp": "2026-06-27 18:44:08"
+}

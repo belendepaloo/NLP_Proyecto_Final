@@ -1,0 +1,18 @@
+{
+  "query_id": "1721f270dca3effb8c27246497a11845",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0145",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "'Tell yer what?' asked",
+  "target_word": "the",
+  "sample_idx": 0,
+  "generated_text": "Jack",
+  "generated_first_word": "Jack",
+  "similarity": 0.660701334476471,
+  "timestamp": "2026-06-27 18:02:54"
+}

@@ -1,0 +1,25 @@
+{
+  "query_id": "11e4d2e8f531ccd5f63f2a0cbca0c4f9",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0100",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "title": "Harry Potter and the Chamber of Secrets",
+  "author": "JK Rowling",
+  "length": "medium",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Harry Potter and the Chamber of Secrets\" book by JK Rowling?\nOptions:\nA. \"Be careful not to pass through any people,\" Ron said anxiously, and they began walking around the outside of the dance area. As they went, they went by a group of sad-looking nuns, a ragged man in chains, and the Fat Friar, a happy Hufflepuff ghost, who was chatting with a knight that had an arrow poking out of his head. Harry wasn't shocked to see that the Bloody Baron, a thin, staring Slytherin ghost covered in silver blood stains, was being avoided by the other ghosts. \nB. \"Watch out not to go through anyone,\" said Ron worriedly, and they started to circle around the dance floor's edge. They went past a group of gloomy nuns, a shabby man in chains, and the Fat Friar, a merry Hufflepuff ghost, who was speaking with a knight that had an arrow coming out of his forehead. Harry wasn't surprised to notice that the Bloody Baron, a skeletal, staring Slytherin ghost drenched in silver blood marks, was being given a wide space by the other ghosts.\nC. \"Be careful not to pass through people,\" Ron said anxiously, and they began to walk around the perimeter of the dance floor. As they did so, they passed by a group of sad nuns, a ragged man wearing chains, and the Fat Friar, a cheerful Hufflepuff ghost, who was talking to a knight with an arrow in his forehead. Harry wasn't surprised to see the Bloody Baron, a thin, staring Slytherin ghost covered in silver bloodstains, being avoided by the other ghosts.\nD. “Careful not to walk through anyone,” said Ron nervously, and they set off around the edge of the dance floor. They passed a group of gloomy nuns, a ragged man wearing chains, and the Fat Friar, a cheerful Hufflepuff ghost, who was talking to a knight with an arrow sticking out of his forehead. Harry wasn’t surprised to see that the Bloody Baron, a gaunt, staring Slytherin ghost covered in silver bloodstains, was being given a wide berth by the other ghosts. \nAnswer:",
+  "options": {
+    "A": "\"Be careful not to pass through any people,\" Ron said anxiously, and they began walking around the outside of the dance area. As they went, they went by a group of sad-looking nuns, a ragged man in chains, and the Fat Friar, a happy Hufflepuff ghost, who was chatting with a knight that had an arrow poking out of his head. Harry wasn't shocked to see that the Bloody Baron, a thin, staring Slytherin ghost covered in silver blood stains, was being avoided by the other ghosts. ",
+    "B": "\"Watch out not to go through anyone,\" said Ron worriedly, and they started to circle around the dance floor's edge. They went past a group of gloomy nuns, a shabby man in chains, and the Fat Friar, a merry Hufflepuff ghost, who was speaking with a knight that had an arrow coming out of his forehead. Harry wasn't surprised to notice that the Bloody Baron, a skeletal, staring Slytherin ghost drenched in silver blood marks, was being given a wide space by the other ghosts.",
+    "C": "\"Be careful not to pass through people,\" Ron said anxiously, and they began to walk around the perimeter of the dance floor. As they did so, they passed by a group of sad nuns, a ragged man wearing chains, and the Fat Friar, a cheerful Hufflepuff ghost, who was talking to a knight with an arrow in his forehead. Harry wasn't surprised to see the Bloody Baron, a thin, staring Slytherin ghost covered in silver bloodstains, being avoided by the other ghosts.",
+    "D": "“Careful not to walk through anyone,” said Ron nervously, and they set off around the edge of the dance floor. They passed a group of gloomy nuns, a ragged man wearing chains, and the Fat Friar, a cheerful Hufflepuff ghost, who was talking to a knight with an arrow sticking out of his forehead. Harry wasn’t surprised to see that the Bloody Baron, a gaunt, staring Slytherin ghost covered in silver bloodstains, was being given a wide berth by the other ghosts. "
+  },
+  "gold_letter": "D",
+  "predicted_letter": "D",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 15:01:24"
+}

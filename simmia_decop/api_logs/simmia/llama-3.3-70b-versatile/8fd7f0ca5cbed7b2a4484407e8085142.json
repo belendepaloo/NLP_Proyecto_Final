@@ -1,0 +1,18 @@
+{
+  "query_id": "8fd7f0ca5cbed7b2a4484407e8085142",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0168",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Stop. I cannot handle Cody",
+  "target_word": "Benham",
+  "sample_idx": 1,
+  "generated_text": "anymore",
+  "generated_first_word": "anymore",
+  "similarity": 0.6075563430786133,
+  "timestamp": "2026-06-27 18:53:58"
+}

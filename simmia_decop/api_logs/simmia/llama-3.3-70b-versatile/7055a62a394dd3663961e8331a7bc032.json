@@ -1,0 +1,18 @@
+{
+  "query_id": "7055a62a394dd3663961e8331a7bc032",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0137",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 19,
+  "prefix": "Glorian drew herself up. Mother retires after eventide. I will need to be at the spyhole by then. She",
+  "target_word": "grimaced.",
+  "sample_idx": 2,
+  "generated_text": "checked",
+  "generated_first_word": "checked",
+  "similarity": 0.6034054160118103,
+  "timestamp": "2026-06-27 17:46:59"
+}

@@ -1,0 +1,18 @@
+{
+  "query_id": "741bbe1f1a39312fa9a96a9b1ee62575",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0157",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Who knows what the future holds,",
+  "target_word": "right?",
+  "sample_idx": 1,
+  "generated_text": "but",
+  "generated_first_word": "but",
+  "similarity": 0.7110229730606079,
+  "timestamp": "2026-06-27 18:29:51"
+}

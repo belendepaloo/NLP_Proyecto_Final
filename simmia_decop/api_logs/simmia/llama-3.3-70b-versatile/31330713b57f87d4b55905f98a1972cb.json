@@ -1,0 +1,18 @@
+{
+  "query_id": "31330713b57f87d4b55905f98a1972cb",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0043",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "The Vicar soon",
+  "target_word": "abandoned",
+  "sample_idx": 1,
+  "generated_text": "realized",
+  "generated_first_word": "realized",
+  "similarity": 0.6588162779808044,
+  "timestamp": "2026-06-27 00:53:25"
+}

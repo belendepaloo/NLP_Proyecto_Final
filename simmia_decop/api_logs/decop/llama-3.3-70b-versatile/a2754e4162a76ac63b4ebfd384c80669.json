@@ -1,0 +1,25 @@
+{
+  "query_id": "a2754e4162a76ac63b4ebfd384c80669",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0033",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "title": "Matilda",
+  "author": "Roald Dahl",
+  "length": "medium",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Matilda\" book by Roald Dahl?\nOptions:\nA. There was a filthy pond at the bottom of Lavender's garden which was inhabited by a group of newts. Although somewhat prevalent in English ponds, newts are not frequently encountered by regular people since they are timid and murky creatures. They are incredibly grotesque-looking animals that resemble baby crocodiles except with shorter heads. They appear dangerous but are actually harmless. They are about six inches long and are covered in very slippery greenish-gray skin on top and orange skin on the bottom. Newts are in fact amphibians capable of living in or outside of water.\nB. At the bottom of Lavender's garden was a muddy pond that was home to a colony of newts. Though fairly common in English ponds, newts are rarely seen by average people because they are shy and live in gloomy areas. With its short head, the newt looks like an ugly, frightening baby crocodile. Despite its harmless nature, its appearance suggests otherwise. Around six inches long, the very slimy newt has greenish-gray skin on its back and an orange underside. As an amphibian, the newt can live in or out of the water.  \nC. There was a muddy pond at the bottom of Lavender’s garden and this was the home of a colony of newts. The newt, although fairly common in English ponds, is not often seen by ordinary people because it is a shy and murky creature. It is an incredibly ugly gruesome-looking animal, rather like a baby crocodile but with a shorter head. It is quite harmless but doesn’t look it. It is about six inches long and very slimy, with a greenish-grey skin on top and an orange-coloured belly underneath. It is, in fact, an amphibian, which can live in or out of water. \nD. There was a dirty pond at the bottom of Lavender's backyard which was the habitat of a group of newts. The newt, while somewhat common in English ponds, isn't frequently seen by regular people since it's a timid and murky animal. It's an incredibly hideous, grisly-looking creature, rather similar to a baby crocodile but with a shorter head. It's completely harmless but doesn't appear that way. It's about six inches long and very slimy, with a greenish-grey skin on top and an orange-colored stomach below. It is, in fact, an amphibian, which is able to live in or outside of water.\nAnswer:",
+  "options": {
+    "A": "There was a filthy pond at the bottom of Lavender's garden which was inhabited by a group of newts. Although somewhat prevalent in English ponds, newts are not frequently encountered by regular people since they are timid and murky creatures. They are incredibly grotesque-looking animals that resemble baby crocodiles except with shorter heads. They appear dangerous but are actually harmless. They are about six inches long and are covered in very slippery greenish-gray skin on top and orange skin on the bottom. Newts are in fact amphibians capable of living in or outside of water.",
+    "B": "At the bottom of Lavender's garden was a muddy pond that was home to a colony of newts. Though fairly common in English ponds, newts are rarely seen by average people because they are shy and live in gloomy areas. With its short head, the newt looks like an ugly, frightening baby crocodile. Despite its harmless nature, its appearance suggests otherwise. Around six inches long, the very slimy newt has greenish-gray skin on its back and an orange underside. As an amphibian, the newt can live in or out of the water.  ",
+    "C": "There was a muddy pond at the bottom of Lavender’s garden and this was the home of a colony of newts. The newt, although fairly common in English ponds, is not often seen by ordinary people because it is a shy and murky creature. It is an incredibly ugly gruesome-looking animal, rather like a baby crocodile but with a shorter head. It is quite harmless but doesn’t look it. It is about six inches long and very slimy, with a greenish-grey skin on top and an orange-coloured belly underneath. It is, in fact, an amphibian, which can live in or out of water. ",
+    "D": "There was a dirty pond at the bottom of Lavender's backyard which was the habitat of a group of newts. The newt, while somewhat common in English ponds, isn't frequently seen by regular people since it's a timid and murky animal. It's an incredibly hideous, grisly-looking creature, rather similar to a baby crocodile but with a shorter head. It's completely harmless but doesn't appear that way. It's about six inches long and very slimy, with a greenish-grey skin on top and an orange-colored stomach below. It is, in fact, an amphibian, which is able to live in or outside of water."
+  },
+  "gold_letter": "C",
+  "predicted_letter": "C",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 05:02:07"
+}

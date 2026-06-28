@@ -1,0 +1,18 @@
+{
+  "query_id": "d029aa1be627a0a52326a792a3444b72",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0018",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 16,
+  "prefix": "Mere self-interest, then, if no better motive can be enlisted, should, especially with high-tempered men, prompt",
+  "target_word": "all",
+  "sample_idx": 0,
+  "generated_text": "them",
+  "generated_first_word": "them",
+  "similarity": 0.7111369371414185,
+  "timestamp": "2026-06-26 23:32:55"
+}

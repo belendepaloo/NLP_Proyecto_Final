@@ -1,0 +1,18 @@
+{
+  "query_id": "5367902004ae58d83c2bf504b6f31cf4",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0186",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "O'Brien had",
+  "target_word": "sat",
+  "sample_idx": 2,
+  "generated_text": "been",
+  "generated_first_word": "been",
+  "similarity": 0.6567476391792297,
+  "timestamp": "2026-06-27 19:33:07"
+}

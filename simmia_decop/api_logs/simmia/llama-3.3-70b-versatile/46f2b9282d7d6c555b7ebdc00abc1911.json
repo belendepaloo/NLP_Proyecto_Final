@@ -1,0 +1,18 @@
+{
+  "query_id": "46f2b9282d7d6c555b7ebdc00abc1911",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0050",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 9,
+  "prefix": "At the very least, its enough to get me",
+  "target_word": "booted",
+  "sample_idx": 2,
+  "generated_text": "started",
+  "generated_first_word": "started",
+  "similarity": 0.7484384775161743,
+  "timestamp": "2026-06-27 01:09:54"
+}

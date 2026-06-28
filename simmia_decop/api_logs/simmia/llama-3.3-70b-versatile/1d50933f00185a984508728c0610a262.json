@@ -1,0 +1,18 @@
+{
+  "query_id": "1d50933f00185a984508728c0610a262",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0135",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 12,
+  "prefix": "Not when Im finally finding my way in the world. I miss",
+  "target_word": "you.",
+  "sample_idx": 1,
+  "generated_text": "her",
+  "generated_first_word": "her",
+  "similarity": 0.6924943923950195,
+  "timestamp": "2026-06-27 17:41:40"
+}

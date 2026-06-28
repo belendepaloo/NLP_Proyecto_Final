@@ -1,0 +1,18 @@
+{
+  "query_id": "3937ebedc0c7332343c4a38a3a4486cb",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0094",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "“Rather than finding a saintly man, though, our hero, on entering the",
+  "target_word": "main",
+  "sample_idx": 1,
+  "generated_text": "room,",
+  "generated_first_word": "room,",
+  "similarity": 0.6542447805404663,
+  "timestamp": "2026-06-27 16:10:45"
+}

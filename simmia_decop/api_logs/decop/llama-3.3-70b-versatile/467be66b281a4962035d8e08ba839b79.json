@@ -1,0 +1,25 @@
+{
+  "query_id": "467be66b281a4962035d8e08ba839b79",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0058",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "title": "The Wildest Sun A Novel",
+  "author": "Asha Lemmie",
+  "length": "medium",
+  "permutation_index": 3,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Wildest Sun A Novel\" book by Asha Lemmie?\nOptions:\nA. I play with a rosary that isn't mine, feeling the beads between my fingers. My mother hoped for me to be well-educated, so when I was young, she left me to the care of the nuns at the Académie de Sainte Geneviève, and her closest childhood friend, the Mother Superior Louise. We didn't have money for tuition, my mother's family fortune was long spent, our only belongings were our home, heirlooms she refused to sell, and a reputation damaged by gossip about who my father was.\nB. I fiddle with the borrowed rosary in my hands. Maman wanted me to have a good education, and so she entrusted me at a young age to the care of the nuns at the Académie de Sainte Geneviève, under the watchful eye of their Mother Superior, her dearest childhood friend, Louise. It did not matter that we could not afford the fees, that all of Maman’s family money had trickled away over the years, that all we had was the roof over our heads, heirlooms she was too proud to sell, and a good name tarnished by the rumors about my begetting. \nC. I play with the rosary beads that aren't mine, rolling them between my fingers. My mother hoped I would be well-educated, so when I was young she left me at the Académie de Sainte Geneviève, under the supervision of the head nun there, Louise, who was my mother's closest friend from childhood. We didn't have money for the tuition, my mother's family fortune was long gone, our only assets were our home, heirlooms she refused to sell, and a reputation damaged by gossip about my parentage.  \nD. I fidget with a borrowed rosary, running my fingers over the beads. My mother wanted me to be educated, so she entrusted me at a young age to her dearest childhood friend, the Mother Superior Louise, and the nuns at the Académie de Sainte Geneviève. We couldn't afford the fees, my mother's family money had slowly disappeared over time, our only possessions were the house we lived in, heirlooms she was too dignified to sell, and a good name tainted by rumors surrounding my origins.\nAnswer:",
+  "options": {
+    "A": "I play with a rosary that isn't mine, feeling the beads between my fingers. My mother hoped for me to be well-educated, so when I was young, she left me to the care of the nuns at the Académie de Sainte Geneviève, and her closest childhood friend, the Mother Superior Louise. We didn't have money for tuition, my mother's family fortune was long spent, our only belongings were our home, heirlooms she refused to sell, and a reputation damaged by gossip about who my father was.",
+    "B": "I fiddle with the borrowed rosary in my hands. Maman wanted me to have a good education, and so she entrusted me at a young age to the care of the nuns at the Académie de Sainte Geneviève, under the watchful eye of their Mother Superior, her dearest childhood friend, Louise. It did not matter that we could not afford the fees, that all of Maman’s family money had trickled away over the years, that all we had was the roof over our heads, heirlooms she was too proud to sell, and a good name tarnished by the rumors about my begetting. ",
+    "C": "I play with the rosary beads that aren't mine, rolling them between my fingers. My mother hoped I would be well-educated, so when I was young she left me at the Académie de Sainte Geneviève, under the supervision of the head nun there, Louise, who was my mother's closest friend from childhood. We didn't have money for the tuition, my mother's family fortune was long gone, our only assets were our home, heirlooms she refused to sell, and a reputation damaged by gossip about my parentage.  ",
+    "D": "I fidget with a borrowed rosary, running my fingers over the beads. My mother wanted me to be educated, so she entrusted me at a young age to her dearest childhood friend, the Mother Superior Louise, and the nuns at the Académie de Sainte Geneviève. We couldn't afford the fees, my mother's family money had slowly disappeared over time, our only possessions were the house we lived in, heirlooms she was too dignified to sell, and a good name tainted by rumors surrounding my origins."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "B",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 14:09:00"
+}

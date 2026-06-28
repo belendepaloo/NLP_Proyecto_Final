@@ -1,0 +1,18 @@
+{
+  "query_id": "d5928a70fd4a83b6d257f9f3563ac8cf",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0066",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "No one answered. The noon-bell rang. Still no one spoke.",
+  "target_word": "Frodo",
+  "sample_idx": 2,
+  "generated_text": "Suddenly,",
+  "generated_first_word": "Suddenly,",
+  "similarity": 0.64910489320755,
+  "timestamp": "2026-06-27 02:23:06"
+}

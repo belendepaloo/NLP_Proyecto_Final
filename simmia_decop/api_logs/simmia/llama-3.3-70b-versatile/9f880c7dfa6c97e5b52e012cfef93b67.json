@@ -1,0 +1,18 @@
+{
+  "query_id": "9f880c7dfa6c97e5b52e012cfef93b67",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0128",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Their fits relieved each other like",
+  "target_word": "guards.",
+  "sample_idx": 0,
+  "generated_text": "clockwork",
+  "generated_first_word": "clockwork",
+  "similarity": 0.6007468700408936,
+  "timestamp": "2026-06-27 17:25:21"
+}

@@ -1,0 +1,18 @@
+{
+  "query_id": "629d630628e661799f447b2cc45197a4",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0136",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "He missed Hogwarts so much it was like having a constant stomachache.",
+  "target_word": "He",
+  "sample_idx": 2,
+  "generated_text": "Every",
+  "generated_first_word": "Every",
+  "similarity": 0.6695529818534851,
+  "timestamp": "2026-06-27 17:43:55"
+}

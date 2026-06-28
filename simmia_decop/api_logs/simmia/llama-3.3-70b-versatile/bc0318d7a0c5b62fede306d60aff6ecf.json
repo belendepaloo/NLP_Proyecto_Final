@@ -1,0 +1,18 @@
+{
+  "query_id": "bc0318d7a0c5b62fede306d60aff6ecf",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0163",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "A happiness so bright",
+  "target_word": "and",
+  "sample_idx": 1,
+  "generated_text": "it",
+  "generated_first_word": "it",
+  "similarity": 0.7091041207313538,
+  "timestamp": "2026-06-27 18:42:49"
+}

@@ -1,0 +1,18 @@
+{
+  "query_id": "a18e5c0a9f8f7a70fe5f9dde533e4017",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0007",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 19,
+  "prefix": "My mother was right about many things—God knows I wish I could tell her that—but she was also the",
+  "target_word": "architect",
+  "sample_idx": 1,
+  "generated_text": "most",
+  "generated_first_word": "most",
+  "similarity": 0.5776072144508362,
+  "timestamp": "2026-06-26 23:08:11"
+}

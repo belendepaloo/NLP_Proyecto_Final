@@ -1,0 +1,18 @@
+{
+  "query_id": "19ddca839be38775fb1d78334f57bd39",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0031",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "Whenever he could, he sought out a new road to",
+  "target_word": "travel.",
+  "sample_idx": 2,
+  "generated_text": "travel",
+  "generated_first_word": "travel",
+  "similarity": 0.9484057426452637,
+  "timestamp": "2026-06-27 00:02:41"
+}

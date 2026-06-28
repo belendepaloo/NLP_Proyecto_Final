@@ -1,0 +1,25 @@
+{
+  "query_id": "05d228fe613463ee82262a9f7c7be824",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0067",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "title": "Happy Place",
+  "author": "Emily Henry",
+  "length": "medium",
+  "permutation_index": 3,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Happy Place\" book by Emily Henry?\nOptions:\nA. Wyn kisses my head tenderly. Michael and Lou trade an ambiguous glance, perhaps having seen Wyn act this way with girlfriends before. But I don't believe our love is ordinary. Over those four days, I fall in love again - with Wyn, his family, and previously unknown aspects of him. I want to stay up late, looking through childhood mementos like the homemade stormtrooper costume stored in his old closet. I could sit for hours listening to tales of his middle school fights defending Lou from bullies.\nB. Wyn shows affection by kissing my head. Michael and Lou seem to share a knowing look, as if they've witnessed this before between Wyn and his romantic partners. But I'm convinced our love is unique. During those four days, I fall deeply in love all over again - with Wyn, his family, and the new facets of him I discover. I yearn to stay up late exploring artifacts of his childhood like the homemade stormtrooper costume his mom saved. I'm happy to sit listening for hours as he tells stories of defending Lou from bullies in middle school.  \nC. Wyn kisses the top of my head. Michael and Lou exchange a look I cant read. Maybe theyve seen this before, I think. Maybe hes always like this with his girlfriends. But I dont really believe it. I am in that phase of love where youre sure no two people have ever felt this way before. And over those four days, I fall in love again. With Wyns family, with all the new pieces of him. I want to stay up late, digging through his old closet, where his mom stored his homemade stormtrooper costume. I want to sit for five hours in the woodshop, sawdust drifting in the air, while he recounts the fights he got into with Lous middle school bullies.\nD. Wyn gives me an affectionate kiss on the head. Michael and Lou share a look I can't interpret, as if they might have witnessed similar behavior from Wyn with past girlfriends. But I'm convinced our love is unique. In those four days, I fall deeply in love again - with Wyn, his family, and new facets of him. I long to stay up late, searching his childhood closet where his mom kept his homemade stormtrooper costume. I'm content to sit for hours listening to stories of his middle school scuffles defending Lou from bullies.\nAnswer:",
+  "options": {
+    "A": "Wyn kisses my head tenderly. Michael and Lou trade an ambiguous glance, perhaps having seen Wyn act this way with girlfriends before. But I don't believe our love is ordinary. Over those four days, I fall in love again - with Wyn, his family, and previously unknown aspects of him. I want to stay up late, looking through childhood mementos like the homemade stormtrooper costume stored in his old closet. I could sit for hours listening to tales of his middle school fights defending Lou from bullies.",
+    "B": "Wyn shows affection by kissing my head. Michael and Lou seem to share a knowing look, as if they've witnessed this before between Wyn and his romantic partners. But I'm convinced our love is unique. During those four days, I fall deeply in love all over again - with Wyn, his family, and the new facets of him I discover. I yearn to stay up late exploring artifacts of his childhood like the homemade stormtrooper costume his mom saved. I'm happy to sit listening for hours as he tells stories of defending Lou from bullies in middle school.  ",
+    "C": "Wyn kisses the top of my head. Michael and Lou exchange a look I cant read. Maybe theyve seen this before, I think. Maybe hes always like this with his girlfriends. But I dont really believe it. I am in that phase of love where youre sure no two people have ever felt this way before. And over those four days, I fall in love again. With Wyns family, with all the new pieces of him. I want to stay up late, digging through his old closet, where his mom stored his homemade stormtrooper costume. I want to sit for five hours in the woodshop, sawdust drifting in the air, while he recounts the fights he got into with Lous middle school bullies.",
+    "D": "Wyn gives me an affectionate kiss on the head. Michael and Lou share a look I can't interpret, as if they might have witnessed similar behavior from Wyn with past girlfriends. But I'm convinced our love is unique. In those four days, I fall deeply in love again - with Wyn, his family, and new facets of him. I long to stay up late, searching his childhood closet where his mom kept his homemade stormtrooper costume. I'm content to sit for hours listening to stories of his middle school scuffles defending Lou from bullies."
+  },
+  "gold_letter": "C",
+  "predicted_letter": "C",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 14:45:10"
+}

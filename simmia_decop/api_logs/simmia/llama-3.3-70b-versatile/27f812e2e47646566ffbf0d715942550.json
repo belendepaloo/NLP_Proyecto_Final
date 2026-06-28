@@ -1,0 +1,18 @@
+{
+  "query_id": "27f812e2e47646566ffbf0d715942550",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0078",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "Together, they proclaimed that the Lord Protector was",
+  "target_word": "in",
+  "sample_idx": 2,
+  "generated_text": "no",
+  "generated_first_word": "no",
+  "similarity": 0.6340465545654297,
+  "timestamp": "2026-06-27 02:49:52"
+}

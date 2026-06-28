@@ -1,0 +1,25 @@
+{
+  "query_id": "8cccf474d70602a018acb6d38656dd10",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0194",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "title": "Matilda",
+  "author": "Roald Dahl",
+  "length": "medium",
+  "permutation_index": 5,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Matilda\" book by Roald Dahl?\nOptions:\nA. The Trunchbull yelled, \"He's a criminal! A week ago he sold me a used car claiming it was practically new. At the time I thought he was a fantastic guy. But this morning, as I was driving that car through town, the entire engine fell onto the road! The whole thing was stuffed with sawdust! That man is a thief and a crook! I'm going to get revenge on him, just you watch!\"\nB. The Trunchbull exclaimed, \"He's a deceitful crook! A week ago he duped me into buying a used car from him, claiming it was almost brand new. At the time I thought he was a splendid gentleman. But this morning, as I drove that car through town, the entire engine fell out onto the road! It was stuffed with sawdust! That man is a thief and a scoundrel! I'm going to make him pay dearly for this, just you see!\"\nC. ‘He’s a crook!’ the Trunchbull shouted. ‘A week ago he sold me a second-hand car that he said was almost new. I thought he was a splendid fellow then. But this morning, while I was driving that car through the village, the entire engine fell out on to the road! The whole thing was filled with sawdust! The man’s a thief and a robber! I’ll have his skin for sausages, you see if I don’t!’ \nD. \"He's a scoundrel!\" shouted the Trunchbull furiously. \"Last week he convinced me to buy a second-hand car from him, insisting it was nearly new. I believed he was an upstanding fellow back then. However, this morning while driving that car through the village, the whole engine tumbled out onto the street! It was crammed full of sawdust! That man is a swindler and a villain! I'll have him skinned alive, mark my words!\"  \nAnswer:",
+  "options": {
+    "A": "The Trunchbull yelled, \"He's a criminal! A week ago he sold me a used car claiming it was practically new. At the time I thought he was a fantastic guy. But this morning, as I was driving that car through town, the entire engine fell onto the road! The whole thing was stuffed with sawdust! That man is a thief and a crook! I'm going to get revenge on him, just you watch!\"",
+    "B": "The Trunchbull exclaimed, \"He's a deceitful crook! A week ago he duped me into buying a used car from him, claiming it was almost brand new. At the time I thought he was a splendid gentleman. But this morning, as I drove that car through town, the entire engine fell out onto the road! It was stuffed with sawdust! That man is a thief and a scoundrel! I'm going to make him pay dearly for this, just you see!\"",
+    "C": "‘He’s a crook!’ the Trunchbull shouted. ‘A week ago he sold me a second-hand car that he said was almost new. I thought he was a splendid fellow then. But this morning, while I was driving that car through the village, the entire engine fell out on to the road! The whole thing was filled with sawdust! The man’s a thief and a robber! I’ll have his skin for sausages, you see if I don’t!’ ",
+    "D": "\"He's a scoundrel!\" shouted the Trunchbull furiously. \"Last week he convinced me to buy a second-hand car from him, insisting it was nearly new. I believed he was an upstanding fellow back then. However, this morning while driving that car through the village, the whole engine tumbled out onto the street! It was crammed full of sawdust! That man is a swindler and a villain! I'll have him skinned alive, mark my words!\"  "
+  },
+  "gold_letter": "C",
+  "predicted_letter": "C",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 15:54:01"
+}

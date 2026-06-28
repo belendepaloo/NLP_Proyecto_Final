@@ -1,0 +1,18 @@
+{
+  "query_id": "f1e15521cde6bdf421fec2a54f7a8761",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0128",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Their fits relieved",
+  "target_word": "each",
+  "sample_idx": 1,
+  "generated_text": "the",
+  "generated_first_word": "the",
+  "similarity": 0.7465588450431824,
+  "timestamp": "2026-06-27 17:25:02"
+}

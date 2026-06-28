@@ -1,0 +1,25 @@
+{
+  "query_id": "0ba76321280c6d6a42fa73bbe7cef5e4",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0065",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "title": "Business or Pleasure",
+  "author": "Rachel Lynn Solomon",
+  "length": "medium",
+  "permutation_index": 0,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Business or Pleasure\" book by Rachel Lynn Solomon?\nOptions:\nA. If we aren't together, I'm working on his novel. He's always on my mind, even when he's not next to me, which must be why I feel so connected to him. I haven't spoken with any other single men for weeks. When he doesn't join me or text me, I return, getting two cups of hot cocoa in the lobby before entering our room. I knock briefly, just so he knows I'm coming in. And nothing could prepare me for what I'm about to witness.\nB. If we're not together physically, I'm typically working on his novel. He's constantly on my mind, which must be why I feel so connected to him. I haven't spoken to any other unmarried men in weeks. When he doesn't meet me or text, I return, getting two cups of hot cocoa in the lobby before entering our room. I knock briefly, just so he's aware I'm coming in. And I'm completely unprepared for what I witness next.\nC. If were not in the same room, then Im usually working on his book. Whether hes next to me or not, hes always in my head. That has to be the explanation for why Im feeling this odd attachment to him. I simply havent talked to another single guy in weeks. When he doesnt join me and doesnt send any texts, I head back, picking up two mugs of hot cocoa in the lobby before going up to our room. I knock once, just to make sure he knows Im coming in. And nothing in the world could prepare me for what I see next.\nD. When we're apart, I'm often editing his book. Whether or not he's with me, he occupies my thoughts. That probably explains this unusual attachment I feel toward him. I haven't talked to any single men recently. If he's not there or doesn't message me, I go back, grabbing two mugs of hot chocolate downstairs before going to our room. I knock quickly, so he knows I'm coming in. Nothing could get me ready for what I'm about to see.  \nAnswer:",
+  "options": {
+    "A": "If we aren't together, I'm working on his novel. He's always on my mind, even when he's not next to me, which must be why I feel so connected to him. I haven't spoken with any other single men for weeks. When he doesn't join me or text me, I return, getting two cups of hot cocoa in the lobby before entering our room. I knock briefly, just so he knows I'm coming in. And nothing could prepare me for what I'm about to witness.",
+    "B": "If we're not together physically, I'm typically working on his novel. He's constantly on my mind, which must be why I feel so connected to him. I haven't spoken to any other unmarried men in weeks. When he doesn't meet me or text, I return, getting two cups of hot cocoa in the lobby before entering our room. I knock briefly, just so he's aware I'm coming in. And I'm completely unprepared for what I witness next.",
+    "C": "If were not in the same room, then Im usually working on his book. Whether hes next to me or not, hes always in my head. That has to be the explanation for why Im feeling this odd attachment to him. I simply havent talked to another single guy in weeks. When he doesnt join me and doesnt send any texts, I head back, picking up two mugs of hot cocoa in the lobby before going up to our room. I knock once, just to make sure he knows Im coming in. And nothing in the world could prepare me for what I see next.",
+    "D": "When we're apart, I'm often editing his book. Whether or not he's with me, he occupies my thoughts. That probably explains this unusual attachment I feel toward him. I haven't talked to any single men recently. If he's not there or doesn't message me, I go back, grabbing two mugs of hot chocolate downstairs before going to our room. I knock quickly, so he knows I'm coming in. Nothing could get me ready for what I'm about to see.  "
+  },
+  "gold_letter": "C",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-06-26 14:10:35"
+}

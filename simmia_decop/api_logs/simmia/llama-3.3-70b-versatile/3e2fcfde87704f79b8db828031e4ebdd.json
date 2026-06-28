@@ -1,0 +1,18 @@
+{
+  "query_id": "3e2fcfde87704f79b8db828031e4ebdd",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0028",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Theres no need to go",
+  "target_word": "excavating",
+  "sample_idx": 0,
+  "generated_text": "there",
+  "generated_first_word": "there",
+  "similarity": 0.5614399909973145,
+  "timestamp": "2026-06-26 23:54:52"
+}

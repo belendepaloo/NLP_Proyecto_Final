@@ -1,0 +1,18 @@
+{
+  "query_id": "4860635296c251c995eac26e96e83fe1",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0159",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "The mother’s",
+  "target_word": "handbag",
+  "sample_idx": 2,
+  "generated_text": "eyes",
+  "generated_first_word": "eyes",
+  "similarity": 0.6051205992698669,
+  "timestamp": "2026-06-27 18:33:51"
+}

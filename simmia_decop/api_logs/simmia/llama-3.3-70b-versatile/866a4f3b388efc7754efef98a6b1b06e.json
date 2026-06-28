@@ -1,0 +1,18 @@
+{
+  "query_id": "866a4f3b388efc7754efef98a6b1b06e",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0002",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 11,
+  "prefix": "Master Bates followed, with a thoughtful countenance. The noise of footsteps",
+  "target_word": "on",
+  "sample_idx": 2,
+  "generated_text": "echoed",
+  "generated_first_word": "echoed",
+  "similarity": 0.6744687557220459,
+  "timestamp": "2026-06-26 22:46:55"
+}

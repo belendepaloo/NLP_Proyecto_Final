@@ -1,0 +1,18 @@
+{
+  "query_id": "c83911296fc66f2b4f38a069d485f5bd",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0100",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "“Careful not to walk through",
+  "target_word": "anyone,”",
+  "sample_idx": 0,
+  "generated_text": "the",
+  "generated_first_word": "the",
+  "similarity": 0.6861004829406738,
+  "timestamp": "2026-06-27 16:23:13"
+}

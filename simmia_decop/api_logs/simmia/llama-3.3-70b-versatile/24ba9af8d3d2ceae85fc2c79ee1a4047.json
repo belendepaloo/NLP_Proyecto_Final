@@ -1,0 +1,18 @@
+{
+  "query_id": "24ba9af8d3d2ceae85fc2c79ee1a4047",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0043",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "The",
+  "target_word": "Vicar",
+  "sample_idx": 2,
+  "generated_text": "man",
+  "generated_first_word": "man",
+  "similarity": 0.6041141152381897,
+  "timestamp": "2026-06-27 00:53:13"
+}

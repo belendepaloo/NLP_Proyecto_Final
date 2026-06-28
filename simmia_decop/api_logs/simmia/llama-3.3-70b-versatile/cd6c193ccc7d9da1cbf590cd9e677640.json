@@ -1,0 +1,18 @@
+{
+  "query_id": "cd6c193ccc7d9da1cbf590cd9e677640",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0012",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "Bathed in starlight and dotted by leaping watch-flames",
+  "target_word": "from",
+  "sample_idx": 0,
+  "generated_text": "that danced across",
+  "generated_first_word": "that",
+  "similarity": 0.6672544479370117,
+  "timestamp": "2026-06-26 23:18:31"
+}

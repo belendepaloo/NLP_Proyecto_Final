@@ -1,0 +1,18 @@
+{
+  "query_id": "9fcce1e9fade8a421701ff1e70417baa",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0190",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 19,
+  "prefix": "If Bastian knows who I am, Lore said, then why not just tell me? Or kill me? Isnt that",
+  "target_word": "what",
+  "sample_idx": 1,
+  "generated_text": "what",
+  "generated_first_word": "what",
+  "similarity": 1.0,
+  "timestamp": "2026-06-27 19:43:51"
+}

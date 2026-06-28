@@ -1,0 +1,18 @@
+{
+  "query_id": "e7a26b1c69945e07960b19f025ff04d8",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0062",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "So am I,' said the",
+  "target_word": "tinker,",
+  "sample_idx": 2,
+  "generated_text": "man",
+  "generated_first_word": "man",
+  "similarity": 0.595228910446167,
+  "timestamp": "2026-06-27 02:10:29"
+}

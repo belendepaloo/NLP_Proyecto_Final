@@ -1,0 +1,18 @@
+{
+  "query_id": "72e0b2e9a35b55583221cda03a303a69",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0167",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "Let the Orcs have the realm that is theirs, and we will have ours. There is room in",
+  "target_word": "the",
+  "sample_idx": 2,
+  "generated_text": "Middle-earth",
+  "generated_first_word": "Middle-earth",
+  "similarity": 0.6271368265151978,
+  "timestamp": "2026-06-27 18:53:19"
+}

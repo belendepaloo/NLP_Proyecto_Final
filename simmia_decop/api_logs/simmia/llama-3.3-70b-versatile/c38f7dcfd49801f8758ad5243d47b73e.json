@@ -1,0 +1,18 @@
+{
+  "query_id": "c38f7dcfd49801f8758ad5243d47b73e",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0041",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 9,
+  "prefix": "He still broke into your room, Ethan pointed out.",
+  "target_word": "If",
+  "sample_idx": 2,
+  "generated_text": "Uninvited",
+  "generated_first_word": "Uninvited",
+  "similarity": 0.6286832094192505,
+  "timestamp": "2026-06-27 00:49:41"
+}

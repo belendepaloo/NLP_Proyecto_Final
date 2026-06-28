@@ -1,0 +1,18 @@
+{
+  "query_id": "df629b563a526c92642ccbcb2b0f4399",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0025",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "Miss Cathy had been sick, and that made her still. She leant against her father's knee, and Heathcliff",
+  "target_word": "was",
+  "sample_idx": 0,
+  "generated_text": "stood",
+  "generated_first_word": "stood",
+  "similarity": 0.6805266737937927,
+  "timestamp": "2026-06-26 23:49:39"
+}

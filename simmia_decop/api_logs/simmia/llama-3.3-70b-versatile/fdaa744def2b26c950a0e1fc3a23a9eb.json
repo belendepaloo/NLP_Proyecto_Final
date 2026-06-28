@@ -1,0 +1,18 @@
+{
+  "query_id": "fdaa744def2b26c950a0e1fc3a23a9eb",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0111",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "The",
+  "target_word": "vaults",
+  "sample_idx": 2,
+  "generated_text": "man",
+  "generated_first_word": "man",
+  "similarity": 0.6070166826248169,
+  "timestamp": "2026-06-27 16:47:12"
+}

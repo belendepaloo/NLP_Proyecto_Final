@@ -1,0 +1,18 @@
+{
+  "query_id": "c06a21923886f64ce1a091b2ba93debd",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0080",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "Harry heard from Hogwarts one sunny morning about a week after he",
+  "target_word": "had",
+  "sample_idx": 0,
+  "generated_text": "had",
+  "generated_first_word": "had",
+  "similarity": 1.0,
+  "timestamp": "2026-06-27 15:39:41"
+}

@@ -1,0 +1,18 @@
+{
+  "query_id": "820dc9305414b840b86e4e13db6d68ea",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0186",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "O'Brien had sat down beside the bed, so that his face was",
+  "target_word": "almost",
+  "sample_idx": 1,
+  "generated_text": "no more than",
+  "generated_first_word": "no",
+  "similarity": 0.6908652186393738,
+  "timestamp": "2026-06-27 19:34:14"
+}

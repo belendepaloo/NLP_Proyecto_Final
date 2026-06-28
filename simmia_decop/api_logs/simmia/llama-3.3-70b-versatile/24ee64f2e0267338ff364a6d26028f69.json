@@ -1,0 +1,18 @@
+{
+  "query_id": "24ee64f2e0267338ff364a6d26028f69",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0029",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 12,
+  "prefix": "And it wouldnt have been easy to get another. The corporate world",
+  "target_word": "doesnt",
+  "sample_idx": 0,
+  "generated_text": "was",
+  "generated_first_word": "was",
+  "similarity": 0.6240044236183167,
+  "timestamp": "2026-06-26 23:57:56"
+}

@@ -1,0 +1,18 @@
+{
+  "query_id": "e00c4d9979f2746209df571b4c667ef9",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0128",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 13,
+  "prefix": "Their fits relieved each other like guards. When Nippers was on, Turkeys was",
+  "target_word": "off;",
+  "sample_idx": 0,
+  "generated_text": "off.",
+  "generated_first_word": "off.",
+  "similarity": 0.9202076196670532,
+  "timestamp": "2026-06-27 17:26:10"
+}

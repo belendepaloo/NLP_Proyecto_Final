@@ -1,0 +1,18 @@
+{
+  "query_id": "46e42ed7b3c0d5bce75fb7ba2e874702",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0195",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 16,
+  "prefix": "His need for power has grown in this chaos. This fire will have convinced him that",
+  "target_word": "Clan",
+  "sample_idx": 0,
+  "generated_text": "he",
+  "generated_first_word": "he",
+  "similarity": 0.6429516077041626,
+  "timestamp": "2026-06-27 19:54:28"
+}

@@ -1,0 +1,18 @@
+{
+  "query_id": "f1e1799c1cd10fa81e00632befa89189",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0082",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "The hills drew nearer. They made an undulating ridge, often",
+  "target_word": "rising",
+  "sample_idx": 0,
+  "generated_text": "broken",
+  "generated_first_word": "broken",
+  "similarity": 0.6057875752449036,
+  "timestamp": "2026-06-27 15:43:51"
+}

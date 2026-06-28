@@ -1,0 +1,18 @@
+{
+  "query_id": "f5c75905e56a189787cc5637046029af",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0020",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 9,
+  "prefix": "Yes, I suppose I will, Lore sighed. Break it",
+  "target_word": "up!",
+  "sample_idx": 2,
+  "generated_text": "to me gently",
+  "generated_first_word": "to",
+  "similarity": 0.6696154475212097,
+  "timestamp": "2026-06-26 23:37:28"
+}

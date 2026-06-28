@@ -1,0 +1,18 @@
+{
+  "query_id": "b2244151a9d122c51a25d03f8d2b9ef1",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0112",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "No problemthat would give me more time to",
+  "target_word": "get",
+  "sample_idx": 0,
+  "generated_text": "think",
+  "generated_first_word": "think",
+  "similarity": 0.7049793004989624,
+  "timestamp": "2026-06-27 16:50:07"
+}

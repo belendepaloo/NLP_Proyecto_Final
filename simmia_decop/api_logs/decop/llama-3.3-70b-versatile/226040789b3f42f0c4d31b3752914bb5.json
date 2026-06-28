@@ -1,0 +1,25 @@
+{
+  "query_id": "226040789b3f42f0c4d31b3752914bb5",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0110",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "title": "The Darkness Before Them",
+  "author": "Matthew Ward",
+  "length": "medium",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Darkness Before Them\" book by Matthew Ward?\nOptions:\nA. The Countess confronted him furiously. She accused him that the custodium was in his charge, thus its failures were his responsibility. Although she had sanctioned Tazah's promotion, it was Jorais who recommended it to purchase his silence. The Countess was cognizant that Jorais made the suggestion to keep Tazah from exposing the many \"accidents\" and corpses when Jorais was disgracing their family name. Tazah was privy to it all and his thorough reports were verifiable. She admonished that Jorais ought to have supported her earlier.\nB. The Countess turned on him in rage. She upbraided him that the custodium was his obligation, hence its flaws were his fault. Despite approving Tazah's promotion, it was Jorais who put forward his name to keep him quiet. The Countess knew why Jorais did it - to prevent Tazah from revealing the numerous \"mishaps\" and bodies when Jorais was smearing their family reputation. Tazah was aware of everything and his meticulous reports could substantiate it all. She rebuked that Jorais should have stood by her just now.\nC. The Countess turned on him angrily. She berated him that the custodium was his duty, so its problems were his fault too. She admitted approving Tazah's promotion, but only because Jorais had proposed it to keep him quiet. The Countess knew about all the \"accidents\" and bodies while Jorais was sullying their family reputation. Tazah was aware of everything and his detailed reports could prove it all. She said Jorais should have backed her up just now.  \nD. The Countess rounded on him. “I can’t do this? The custodium is your responsibility, Jorais. Its failings are yours. I may have approved Tazah’s promotion, but you made the suggestion. And while I knew you proposed him in order to buy his silence, you never knew why  I  agreed. So many little accidents while you were dragging the family name through the Gutterfields’ mire. So many secrets to be kept and bodies to be weighted down. Tazah knew them all. His reports were very thorough. And eminently verifiable.” The anger faded from her expression until she simply looked tired. “You should have supported me just now, Jorais.” \nAnswer:",
+  "options": {
+    "A": "The Countess confronted him furiously. She accused him that the custodium was in his charge, thus its failures were his responsibility. Although she had sanctioned Tazah's promotion, it was Jorais who recommended it to purchase his silence. The Countess was cognizant that Jorais made the suggestion to keep Tazah from exposing the many \"accidents\" and corpses when Jorais was disgracing their family name. Tazah was privy to it all and his thorough reports were verifiable. She admonished that Jorais ought to have supported her earlier.",
+    "B": "The Countess turned on him in rage. She upbraided him that the custodium was his obligation, hence its flaws were his fault. Despite approving Tazah's promotion, it was Jorais who put forward his name to keep him quiet. The Countess knew why Jorais did it - to prevent Tazah from revealing the numerous \"mishaps\" and bodies when Jorais was smearing their family reputation. Tazah was aware of everything and his meticulous reports could substantiate it all. She rebuked that Jorais should have stood by her just now.",
+    "C": "The Countess turned on him angrily. She berated him that the custodium was his duty, so its problems were his fault too. She admitted approving Tazah's promotion, but only because Jorais had proposed it to keep him quiet. The Countess knew about all the \"accidents\" and bodies while Jorais was sullying their family reputation. Tazah was aware of everything and his detailed reports could prove it all. She said Jorais should have backed her up just now.  ",
+    "D": "The Countess rounded on him. “I can’t do this? The custodium is your responsibility, Jorais. Its failings are yours. I may have approved Tazah’s promotion, but you made the suggestion. And while I knew you proposed him in order to buy his silence, you never knew why  I  agreed. So many little accidents while you were dragging the family name through the Gutterfields’ mire. So many secrets to be kept and bodies to be weighted down. Tazah knew them all. His reports were very thorough. And eminently verifiable.” The anger faded from her expression until she simply looked tired. “You should have supported me just now, Jorais.” "
+  },
+  "gold_letter": "D",
+  "predicted_letter": "D",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 15:03:54"
+}

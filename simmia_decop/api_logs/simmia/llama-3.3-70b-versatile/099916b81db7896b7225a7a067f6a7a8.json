@@ -1,0 +1,18 @@
+{
+  "query_id": "099916b81db7896b7225a7a067f6a7a8",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0075",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 9,
+  "prefix": "Theres almost a swagger to him, a confidence that",
+  "target_word": "only",
+  "sample_idx": 2,
+  "generated_text": "is",
+  "generated_first_word": "is",
+  "similarity": 0.7475063800811768,
+  "timestamp": "2026-06-27 02:43:15"
+}

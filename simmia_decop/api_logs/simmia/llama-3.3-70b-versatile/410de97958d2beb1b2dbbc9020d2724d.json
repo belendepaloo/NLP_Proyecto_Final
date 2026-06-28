@@ -1,0 +1,18 @@
+{
+  "query_id": "410de97958d2beb1b2dbbc9020d2724d",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0011",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Ill have more",
+  "target_word": "time",
+  "sample_idx": 2,
+  "generated_text": "information",
+  "generated_first_word": "information",
+  "similarity": 0.6611867547035217,
+  "timestamp": "2026-06-26 23:15:45"
+}

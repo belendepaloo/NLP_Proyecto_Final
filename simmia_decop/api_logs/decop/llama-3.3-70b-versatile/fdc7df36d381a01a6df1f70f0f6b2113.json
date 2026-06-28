@@ -1,0 +1,25 @@
+{
+  "query_id": "fdc7df36d381a01a6df1f70f0f6b2113",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0149",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "title": "Bartleby the Scrivener A Story of Wall Street",
+  "author": "Herman Melville",
+  "length": "medium",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Bartleby the Scrivener A Story of Wall Street\" book by Herman Melville?\nOptions:\nA. Bartleby's distant and ungrateful manner bothered me, even though I had treated him well. I planned to fire him when I arrived but oddly felt I shouldn't be harsh, as if that would make me a villain. I approached kindly, asking him to try to follow the office's norms.\nB. Not only did there seem to lurk in it a certain calm disdain, but his perverseness seemed ungrateful, considering the undeniable good usage and indulgence he had received from me. Again I sat ruminating what I should do. Mortified as I was at his behavior, and resolved as I had been to dismiss him when I entered my offices, nevertheless I strangely felt something superstitious knocking at my heart, and forbidding me to carry out my purpose, and denouncing me for a villain if I dared to breathe one bitter word against this forlornest of mankind. At last, familiarly drawing my chair behind his screen, I sat down and said: Bartleby, never mind then about revealing your history; but let me entreat you, as a friend, to comply as far as may be with the usages of this office.\nC. Although he seemed to have an attitude of indifference and ingratitude despite my good treatment of him, I felt conflicted about firing Bartleby as I had intended. Some part of me was warning against acting harshly, even though his behavior was unacceptable. I tried gently persuading him to comply with the expected duties. \nD. Bartleby appeared aloof and unappreciative, although I had been good to him. I meant to dismiss him but strangely felt superstitious, like some force was telling me not to react bitterly. So I gently asked him to try to conform to the office's standards, as a friend.\nAnswer:",
+  "options": {
+    "A": "Bartleby's distant and ungrateful manner bothered me, even though I had treated him well. I planned to fire him when I arrived but oddly felt I shouldn't be harsh, as if that would make me a villain. I approached kindly, asking him to try to follow the office's norms.",
+    "B": "Not only did there seem to lurk in it a certain calm disdain, but his perverseness seemed ungrateful, considering the undeniable good usage and indulgence he had received from me. Again I sat ruminating what I should do. Mortified as I was at his behavior, and resolved as I had been to dismiss him when I entered my offices, nevertheless I strangely felt something superstitious knocking at my heart, and forbidding me to carry out my purpose, and denouncing me for a villain if I dared to breathe one bitter word against this forlornest of mankind. At last, familiarly drawing my chair behind his screen, I sat down and said: Bartleby, never mind then about revealing your history; but let me entreat you, as a friend, to comply as far as may be with the usages of this office.",
+    "C": "Although he seemed to have an attitude of indifference and ingratitude despite my good treatment of him, I felt conflicted about firing Bartleby as I had intended. Some part of me was warning against acting harshly, even though his behavior was unacceptable. I tried gently persuading him to comply with the expected duties. ",
+    "D": "Bartleby appeared aloof and unappreciative, although I had been good to him. I meant to dismiss him but strangely felt superstitious, like some force was telling me not to react bitterly. So I gently asked him to try to conform to the office's standards, as a friend."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "B",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 15:20:09"
+}

@@ -1,0 +1,18 @@
+{
+  "query_id": "5342c6d260059762710dac8b384ab237",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0048",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 11,
+  "prefix": "Were going to take you to the hospital to get you",
+  "target_word": "checked",
+  "sample_idx": 2,
+  "generated_text": "checked",
+  "generated_first_word": "checked",
+  "similarity": 1.0,
+  "timestamp": "2026-06-27 01:05:38"
+}

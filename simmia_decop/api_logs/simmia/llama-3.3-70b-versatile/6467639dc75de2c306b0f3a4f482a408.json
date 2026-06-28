@@ -1,0 +1,18 @@
+{
+  "query_id": "6467639dc75de2c306b0f3a4f482a408",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0057",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 11,
+  "prefix": "There were times when it went on and on until the",
+  "target_word": "cruel,",
+  "sample_idx": 2,
+  "generated_text": "point",
+  "generated_first_word": "point",
+  "similarity": 0.6427493095397949,
+  "timestamp": "2026-06-27 01:59:52"
+}

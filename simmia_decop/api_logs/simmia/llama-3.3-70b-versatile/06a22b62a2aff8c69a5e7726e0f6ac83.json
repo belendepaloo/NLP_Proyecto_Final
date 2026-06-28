@@ -1,0 +1,18 @@
+{
+  "query_id": "06a22b62a2aff8c69a5e7726e0f6ac83",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0002",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "Master Bates followed, with a thoughtful countenance.",
+  "target_word": "The",
+  "sample_idx": 0,
+  "generated_text": "and",
+  "generated_first_word": "and",
+  "similarity": 0.6808874011039734,
+  "timestamp": "2026-06-26 22:46:22"
+}

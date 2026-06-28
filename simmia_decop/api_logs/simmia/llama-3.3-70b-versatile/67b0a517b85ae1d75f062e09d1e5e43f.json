@@ -1,0 +1,18 @@
+{
+  "query_id": "67b0a517b85ae1d75f062e09d1e5e43f",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0029",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "And it wouldnt have been easy to get",
+  "target_word": "another.",
+  "sample_idx": 1,
+  "generated_text": "them",
+  "generated_first_word": "them",
+  "similarity": 0.6279646754264832,
+  "timestamp": "2026-06-26 23:57:30"
+}

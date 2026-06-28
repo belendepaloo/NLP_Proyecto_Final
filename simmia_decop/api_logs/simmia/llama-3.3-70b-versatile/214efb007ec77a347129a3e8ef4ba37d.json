@@ -1,0 +1,18 @@
+{
+  "query_id": "214efb007ec77a347129a3e8ef4ba37d",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0117",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "Frodo looked round. It did look like home. Many",
+  "target_word": "of",
+  "sample_idx": 0,
+  "generated_text": "memories",
+  "generated_first_word": "memories",
+  "similarity": 0.6657527685165405,
+  "timestamp": "2026-06-27 17:01:16"
+}

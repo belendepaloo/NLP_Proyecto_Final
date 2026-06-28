@@ -1,0 +1,25 @@
+{
+  "query_id": "c74a0dc6d204ec40b41d41760df0dce2",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0197",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "title": "1984",
+  "author": "George Orwell",
+  "length": "medium",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"1984\" book by George Orwell?\nOptions:\nA. He figured he was getting three meals every 24 hours, but couldn't tell if it was day or night. The food was surprisingly good, with meat every third meal. He even got a pack of cigarettes once, though he had no matches. The guard who silently brought his food would give him a light. Smoking at first made him sick, but he kept at it, making the pack last by smoking half a cigarette after each meal. They had provided him a white slate with a pencil stub tied to one corner.\nB. He was getting, he judged, three meals in the twenty-four hours; sometimes he wondered dimly whether he was getting them by night or by day. The food was surprisingly good, with meat at every third meal. Once there was even a packet of cigarettes. He had no matches, but the never-speaking guard who brought his food would give him a light. The first time he tried to smoke it made him sick, but he persevered, and spun the packet out for a long time, smoking half a cigarette after each meal. They had given him a white slate with a stump of pencil tied to the corner.\nC. He estimated that he was receiving three meals per day, though he was unsure if it was day or night. The food quality was good, including meat every third meal. He even received a packet of cigarettes once. Without matches, a silent guard who delivered meals would light them for him. His first attempt at smoking made him ill, but he persisted, rationing the pack over a long period, smoking half a cigarette following each meal. He had been given a white slate with a pencil stub attached. \nD. He estimated receiving three meals in a 24 hour period, unsure if it was day or night. The food quality was good, including meat every third meal. Once he even received a packet of cigarettes, though without matches. The quiet guard delivering meals would light them. Initially smoking made him ill, but he persevered, rationing the pack over time, smoking half a cigarette following meals. He was given a white slate with a pencil stub attached.\nAnswer:",
+  "options": {
+    "A": "He figured he was getting three meals every 24 hours, but couldn't tell if it was day or night. The food was surprisingly good, with meat every third meal. He even got a pack of cigarettes once, though he had no matches. The guard who silently brought his food would give him a light. Smoking at first made him sick, but he kept at it, making the pack last by smoking half a cigarette after each meal. They had provided him a white slate with a pencil stub tied to one corner.",
+    "B": "He was getting, he judged, three meals in the twenty-four hours; sometimes he wondered dimly whether he was getting them by night or by day. The food was surprisingly good, with meat at every third meal. Once there was even a packet of cigarettes. He had no matches, but the never-speaking guard who brought his food would give him a light. The first time he tried to smoke it made him sick, but he persevered, and spun the packet out for a long time, smoking half a cigarette after each meal. They had given him a white slate with a stump of pencil tied to the corner.",
+    "C": "He estimated that he was receiving three meals per day, though he was unsure if it was day or night. The food quality was good, including meat every third meal. He even received a packet of cigarettes once. Without matches, a silent guard who delivered meals would light them for him. His first attempt at smoking made him ill, but he persisted, rationing the pack over a long period, smoking half a cigarette following each meal. He had been given a white slate with a pencil stub attached. ",
+    "D": "He estimated receiving three meals in a 24 hour period, unsure if it was day or night. The food quality was good, including meat every third meal. Once he even received a packet of cigarettes, though without matches. The quiet guard delivering meals would light them. Initially smoking made him ill, but he persevered, rationing the pack over time, smoking half a cigarette following meals. He was given a white slate with a pencil stub attached."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "B",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 15:54:42"
+}

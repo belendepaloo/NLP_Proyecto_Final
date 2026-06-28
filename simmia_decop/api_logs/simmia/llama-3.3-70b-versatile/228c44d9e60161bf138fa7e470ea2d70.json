@@ -1,0 +1,18 @@
+{
+  "query_id": "228c44d9e60161bf138fa7e470ea2d70",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0060",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 13,
+  "prefix": "Soon only Yennika remained in the circle, her eyes downcast. “Mirela’s wrong, Ihsan.",
+  "target_word": "All",
+  "sample_idx": 0,
+  "generated_text": "You're",
+  "generated_first_word": "You're",
+  "similarity": 0.6813055276870728,
+  "timestamp": "2026-06-27 02:06:51"
+}

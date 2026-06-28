@@ -1,0 +1,25 @@
+{
+  "query_id": "bbcb7507935ef3b15386a2d6f92a39be",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0056",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "title": "Hedge",
+  "author": "Jane Delury",
+  "length": "medium",
+  "permutation_index": 0,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Hedge\" book by Jane Delury?\nOptions:\nA. That guy is so weird, she said when, out of earshot, they were walking along the drive. Dont say that, Ella, Maud said. You cant judge a book by its cover, Louise singsonged and waved her bouquet. I know that, Ella said. Its justhe kind of freaks me out. The way he looks without looking. I see what you mean, Maud said. But hes nice. I promise. Hes just different. Chris had looked at Ella the same way he looked at Louise, which was the same way that he sometimes looked at Maud or Gabriel or his father. There was nothing sexual to the gaze.\nB. Ella felt unsettled by a man as she, Maud, and Louise walked together out of his hearing. Maud warned against quick judgments. Louise recited the cliché about books and covers. Ella agreed but found his staring manner creepy. Maud promised he was fine, simply distinctive. His look at Ella was the same as at others. \nC. Ella expressed her discomfort about a man's odd behavior as she, Maud, and Louise were walking and talking privately. Maud cautioned her not to judge prematurely. Louise reminded them not to judge by appearances. Ella acknowledged but said his manner disturbed her. Maud assured he was nice, just different. His gaze toward Ella was no different than toward others.\nD. Ella voiced unease about a man while privately chatting with Maud and Louise during a stroll. Maud advised not to rush to conclusions. Louise quoted the old saying on books and covers. Ella conceded but his stare troubled her. Maud guaranteed he was pleasant, merely atypical. His gaze at Ella matched his gaze at anyone.\nAnswer:",
+  "options": {
+    "A": "That guy is so weird, she said when, out of earshot, they were walking along the drive. Dont say that, Ella, Maud said. You cant judge a book by its cover, Louise singsonged and waved her bouquet. I know that, Ella said. Its justhe kind of freaks me out. The way he looks without looking. I see what you mean, Maud said. But hes nice. I promise. Hes just different. Chris had looked at Ella the same way he looked at Louise, which was the same way that he sometimes looked at Maud or Gabriel or his father. There was nothing sexual to the gaze.",
+    "B": "Ella felt unsettled by a man as she, Maud, and Louise walked together out of his hearing. Maud warned against quick judgments. Louise recited the cliché about books and covers. Ella agreed but found his staring manner creepy. Maud promised he was fine, simply distinctive. His look at Ella was the same as at others. ",
+    "C": "Ella expressed her discomfort about a man's odd behavior as she, Maud, and Louise were walking and talking privately. Maud cautioned her not to judge prematurely. Louise reminded them not to judge by appearances. Ella acknowledged but said his manner disturbed her. Maud assured he was nice, just different. His gaze toward Ella was no different than toward others.",
+    "D": "Ella voiced unease about a man while privately chatting with Maud and Louise during a stroll. Maud advised not to rush to conclusions. Louise quoted the old saying on books and covers. Ella conceded but his stare troubled her. Maud guaranteed he was pleasant, merely atypical. His gaze at Ella matched his gaze at anyone."
+  },
+  "gold_letter": "A",
+  "predicted_letter": "A",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 05:07:56"
+}

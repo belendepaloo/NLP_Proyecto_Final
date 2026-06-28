@@ -1,0 +1,18 @@
+{
+  "query_id": "70da8f60c0f346a0dbfdb1c6ac146546",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0178",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 12,
+  "prefix": "Not worth the sting. Natalie started to back up into the shadows",
+  "target_word": "to",
+  "sample_idx": 2,
+  "generated_text": "slowly",
+  "generated_first_word": "slowly",
+  "similarity": 0.7029085755348206,
+  "timestamp": "2026-06-27 19:16:42"
+}

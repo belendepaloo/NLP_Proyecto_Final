@@ -1,0 +1,18 @@
+{
+  "query_id": "ff6bdc9e6455010c653b105edbfc606c",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0115",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 18,
+  "prefix": "If I were someone who partook in such things, it would make his job easier, but Ive always",
+  "target_word": "had",
+  "sample_idx": 0,
+  "generated_text": "been",
+  "generated_first_word": "been",
+  "similarity": 0.7633194923400879,
+  "timestamp": "2026-06-27 16:57:53"
+}

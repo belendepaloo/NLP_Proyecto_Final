@@ -1,0 +1,18 @@
+{
+  "query_id": "ef94116f62cf1c7221a3b9635203887d",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0170",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "There were",
+  "target_word": "many",
+  "sample_idx": 1,
+  "generated_text": "many",
+  "generated_first_word": "many",
+  "similarity": 1.0,
+  "timestamp": "2026-06-27 18:58:01"
+}

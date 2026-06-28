@@ -1,0 +1,18 @@
+{
+  "query_id": "4912ed5e75e5b766860339c76187dacf",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0040",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "At that point, the mother",
+  "target_word": "came",
+  "sample_idx": 1,
+  "generated_text": "realized",
+  "generated_first_word": "realized",
+  "similarity": 0.6943809986114502,
+  "timestamp": "2026-06-27 00:22:33"
+}

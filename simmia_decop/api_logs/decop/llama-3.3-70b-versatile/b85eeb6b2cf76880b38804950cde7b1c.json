@@ -1,0 +1,25 @@
+{
+  "query_id": "b85eeb6b2cf76880b38804950cde7b1c",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0147",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "title": "Business or Pleasure",
+  "author": "Rachel Lynn Solomon",
+  "length": "medium",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Business or Pleasure\" book by Rachel Lynn Solomon?\nOptions:\nA. Just when I think he's going to kiss me, he reveals he read my books on his flight. He could detect me in the voices of my characters Maddy and Amber, even though I didn't write in first person. I'm amazed he recognized so much of me after knowing me for only 7 weeks, leaving me speechless.\nB. Im certain hes going to kiss me, but instead he says, I read your books. I back up, this revelation a shock to my system. I wanted to tell you earlier, he continues, but I thought it might be too nerve-racking if you knew I was reading them on the flight. You mean, you read Maddy and Ambers books. Sure, he says. Their names are on the covers, I guess. Maybe its because I was looking for you, but I could hear you, even in their voices. I open my mouth to argue, but nothing comes out. The fact that I was that visible in those books, enough for this person whos known me for only seven weeks to see me there .\nC. I'm surprised when he tells me he read my books on his flight rather than kissing me. He explains he could sense me in the stories, even though they were written from my characters' perspectives, because he was looking for me. I'm stunned he could see so much of me in those books when we've only known each other for 7 weeks.\nD. I'm taken aback when he reveals that he read my books during his flight instead of kissing me like I expected. He could hear my voice in my characters' stories, even though they weren't written from my perspective. I'm shocked that my presence was so evident to someone who has known me for such a short time. \nAnswer:",
+  "options": {
+    "A": "Just when I think he's going to kiss me, he reveals he read my books on his flight. He could detect me in the voices of my characters Maddy and Amber, even though I didn't write in first person. I'm amazed he recognized so much of me after knowing me for only 7 weeks, leaving me speechless.",
+    "B": "Im certain hes going to kiss me, but instead he says, I read your books. I back up, this revelation a shock to my system. I wanted to tell you earlier, he continues, but I thought it might be too nerve-racking if you knew I was reading them on the flight. You mean, you read Maddy and Ambers books. Sure, he says. Their names are on the covers, I guess. Maybe its because I was looking for you, but I could hear you, even in their voices. I open my mouth to argue, but nothing comes out. The fact that I was that visible in those books, enough for this person whos known me for only seven weeks to see me there .",
+    "C": "I'm surprised when he tells me he read my books on his flight rather than kissing me. He explains he could sense me in the stories, even though they were written from my characters' perspectives, because he was looking for me. I'm stunned he could see so much of me in those books when we've only known each other for 7 weeks.",
+    "D": "I'm taken aback when he reveals that he read my books during his flight instead of kissing me like I expected. He could hear my voice in my characters' stories, even though they weren't written from my perspective. I'm shocked that my presence was so evident to someone who has known me for such a short time. "
+  },
+  "gold_letter": "B",
+  "predicted_letter": "B",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 15:19:33"
+}

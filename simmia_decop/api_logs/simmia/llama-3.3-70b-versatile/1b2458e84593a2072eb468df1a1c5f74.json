@@ -1,0 +1,18 @@
+{
+  "query_id": "1b2458e84593a2072eb468df1a1c5f74",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0192",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "\"Call it",
+  "target_word": "what",
+  "sample_idx": 1,
+  "generated_text": "fate\"",
+  "generated_first_word": "fate\"",
+  "similarity": 0.6356086730957031,
+  "timestamp": "2026-06-27 19:46:17"
+}

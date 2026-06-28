@@ -1,0 +1,25 @@
+{
+  "query_id": "2abcd9d1b564d755353387fd7f12ed7d",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0031",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "title": "The Alchemist",
+  "author": "Paulo Coelho",
+  "length": "medium",
+  "permutation_index": 0,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Alchemist\" book by Paulo Coelho?\nOptions:\nA. Whenever he was able, he looked for a new road to travel down. Even though he had gone through those parts many times, he had never been to that dilapidated church before. The world was enormous and inexhaustible; he only needed to let his sheep set the path for a bit, and he would find other interesting sights. The problem is they do not realize they are walking a new road every day. They do not see the fields are new and the seasons change. All they think about is food and water.\nB. He sought out new roads to travel whenever possible. Despite passing through that area many times, he had never been to that crumbling church before. The world was vast and inexhaustible; he just had to let his sheep determine the route for a while, and he would uncover other fascinating things. The issue is they do not even realize they are treading a new path daily. They fail to notice the landscapes are new and the seasons change. All they care about is food and water.\nC. Whenever he could, he sought out a new road to travel. He had never been to that ruined church before, in spite of having traveled through those parts many times. The world was huge and inexhaustible; he had only to allow his sheep to set the route for a while, and he would discover other interesting things. The problem is that they don’t even realize that they’re walking a new road every day. They don’t see that the fields are new and the seasons change. All they think about is food and water. \nD. He constantly searched for new paths to explore when possible. Despite traveling through that area frequently, he had never been to that run-down church before. The world was massive and inexhaustible; he just had to let his sheep determine the path for a while, and he would uncover other fascinating things. The issue is that they are not even aware that they are traveling a new route daily. They do not notice that the landscapes are new and the seasons change. All they care about is food and water.\nAnswer:",
+  "options": {
+    "A": "Whenever he was able, he looked for a new road to travel down. Even though he had gone through those parts many times, he had never been to that dilapidated church before. The world was enormous and inexhaustible; he only needed to let his sheep set the path for a bit, and he would find other interesting sights. The problem is they do not realize they are walking a new road every day. They do not see the fields are new and the seasons change. All they think about is food and water.",
+    "B": "He sought out new roads to travel whenever possible. Despite passing through that area many times, he had never been to that crumbling church before. The world was vast and inexhaustible; he just had to let his sheep determine the route for a while, and he would uncover other fascinating things. The issue is they do not even realize they are treading a new path daily. They fail to notice the landscapes are new and the seasons change. All they care about is food and water.",
+    "C": "Whenever he could, he sought out a new road to travel. He had never been to that ruined church before, in spite of having traveled through those parts many times. The world was huge and inexhaustible; he had only to allow his sheep to set the route for a while, and he would discover other interesting things. The problem is that they don’t even realize that they’re walking a new road every day. They don’t see that the fields are new and the seasons change. All they think about is food and water. ",
+    "D": "He constantly searched for new paths to explore when possible. Despite traveling through that area frequently, he had never been to that run-down church before. The world was massive and inexhaustible; he just had to let his sheep determine the path for a while, and he would uncover other fascinating things. The issue is that they are not even aware that they are traveling a new route daily. They do not notice that the landscapes are new and the seasons change. All they care about is food and water."
+  },
+  "gold_letter": "C",
+  "predicted_letter": "C",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 05:01:27"
+}

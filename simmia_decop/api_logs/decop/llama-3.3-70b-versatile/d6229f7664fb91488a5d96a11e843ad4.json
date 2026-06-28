@@ -1,0 +1,25 @@
+{
+  "query_id": "d6229f7664fb91488a5d96a11e843ad4",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0143",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "title": "Lord of the Rings The Fellowship of the Ring",
+  "author": "J R R Tolkien",
+  "length": "medium",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Lord of the Rings The Fellowship of the Ring\" book by J R R Tolkien?\nOptions:\nA. Frodo's friends laughed when they saw the shocked look on his face. Pippin joked that Frodo had not tricked them at all over the past year. They had heard him wondering if he would ever see the valley again. And they knew he was only pretending to be out of money when he sold Bag End. His close relationship with Gandalf had also given his plans away.\nB. Frodo opened his mouth and shut it again. His look of surprise was so comical that they laughed. ‘Dear old Frodo!’ said Pippin. ‘Did you really think you had thrown dust in all our eyes? You have not been nearly careful or clever enough for that! You have obviously been planning to go and saying farewell to all your haunts all this year since April. We have constantly heard you muttering: “Shall I ever look down into that valley again, I wonder”, and things like that. And pretending that you had come to the end of your money, and actually selling your beloved Bag End to those Sackville-Bagginses! And all those close talks with Gandalf.’\nC. Frodo was taken aback when his friends revealed that they knew he was planning to leave the Shire. His surprised expression made them laugh. Pippin teased him, saying Frodo thought he had fooled them all this time. But he had not been careful or clever enough to conceal his plans from his close friends. \nD. When Frodo's friends revealed they were aware of his plans to depart, he was so surprised that he opened and closed his mouth without speaking. His comical expression made his friends laugh. Pippin chided him affectionately, saying Frodo had not been sly enough to fool them. All year they had heard him muttering about whether he would see the valley again. And it was obvious he was only pretending to be out of money when he sold Bag End. His frequent talks with Gandalf had also tipped them off.\nAnswer:",
+  "options": {
+    "A": "Frodo's friends laughed when they saw the shocked look on his face. Pippin joked that Frodo had not tricked them at all over the past year. They had heard him wondering if he would ever see the valley again. And they knew he was only pretending to be out of money when he sold Bag End. His close relationship with Gandalf had also given his plans away.",
+    "B": "Frodo opened his mouth and shut it again. His look of surprise was so comical that they laughed. ‘Dear old Frodo!’ said Pippin. ‘Did you really think you had thrown dust in all our eyes? You have not been nearly careful or clever enough for that! You have obviously been planning to go and saying farewell to all your haunts all this year since April. We have constantly heard you muttering: “Shall I ever look down into that valley again, I wonder”, and things like that. And pretending that you had come to the end of your money, and actually selling your beloved Bag End to those Sackville-Bagginses! And all those close talks with Gandalf.’",
+    "C": "Frodo was taken aback when his friends revealed that they knew he was planning to leave the Shire. His surprised expression made them laugh. Pippin teased him, saying Frodo thought he had fooled them all this time. But he had not been careful or clever enough to conceal his plans from his close friends. ",
+    "D": "When Frodo's friends revealed they were aware of his plans to depart, he was so surprised that he opened and closed his mouth without speaking. His comical expression made his friends laugh. Pippin chided him affectionately, saying Frodo had not been sly enough to fool them. All year they had heard him muttering about whether he would see the valley again. And it was obvious he was only pretending to be out of money when he sold Bag End. His frequent talks with Gandalf had also tipped them off."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "B",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 15:17:24"
+}

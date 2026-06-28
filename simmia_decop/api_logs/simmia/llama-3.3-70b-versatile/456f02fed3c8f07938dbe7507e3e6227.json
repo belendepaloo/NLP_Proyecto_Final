@@ -1,0 +1,18 @@
+{
+  "query_id": "456f02fed3c8f07938dbe7507e3e6227",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0171",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Now",
+  "target_word": "what",
+  "sample_idx": 1,
+  "generated_text": "that",
+  "generated_first_word": "that",
+  "similarity": 0.719485878944397,
+  "timestamp": "2026-06-27 19:00:05"
+}

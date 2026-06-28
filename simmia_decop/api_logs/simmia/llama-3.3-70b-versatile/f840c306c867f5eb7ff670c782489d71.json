@@ -1,0 +1,18 @@
+{
+  "query_id": "f840c306c867f5eb7ff670c782489d71",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0089",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 11,
+  "prefix": "Still I couldn't dote on Heath- cliff, and I wondered often",
+  "target_word": "what",
+  "sample_idx": 1,
+  "generated_text": "what",
+  "generated_first_word": "what",
+  "similarity": 1.0,
+  "timestamp": "2026-06-27 15:59:31"
+}

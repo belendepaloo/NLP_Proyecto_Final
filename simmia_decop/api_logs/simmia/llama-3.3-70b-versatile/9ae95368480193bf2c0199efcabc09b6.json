@@ -1,0 +1,18 @@
+{
+  "query_id": "9ae95368480193bf2c0199efcabc09b6",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0186",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "O'Brien had sat down beside the bed, so that his face was almost on a level with Winston's.",
+  "target_word": "'Three",
+  "sample_idx": 2,
+  "generated_text": "He",
+  "generated_first_word": "He",
+  "similarity": 0.6967058181762695,
+  "timestamp": "2026-06-27 19:34:58"
+}

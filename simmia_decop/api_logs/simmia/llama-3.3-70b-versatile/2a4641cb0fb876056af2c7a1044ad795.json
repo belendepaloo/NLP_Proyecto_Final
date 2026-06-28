@@ -1,0 +1,18 @@
+{
+  "query_id": "2a4641cb0fb876056af2c7a1044ad795",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0091",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 19,
+  "prefix": "It was only an hour, Maud said. It turned out okay, didnt it? Going back down the hall, she",
+  "target_word": "was",
+  "sample_idx": 0,
+  "generated_text": "stopped",
+  "generated_first_word": "stopped",
+  "similarity": 0.7325120568275452,
+  "timestamp": "2026-06-27 16:04:53"
+}

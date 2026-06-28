@@ -1,0 +1,25 @@
+{
+  "query_id": "eff46a81e754b9610894dea956a15556",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0000",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "title": "1984",
+  "author": "George Orwell",
+  "length": "medium",
+  "permutation_index": 5,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"1984\" book by George Orwell?\nOptions:\nA. He had been given no food since being arrested. He sat very still on the small bench, with his hands on his knees. He had learned not to move suddenly, or the telescreen would shout at him. But his hunger was increasing. More than anything, he wanted a piece of bread. He thought maybe there were some crumbs in his overalls pocket. Something seemed to be brushing his leg occasionally, so there could even be a large piece of crust there.\nB. Since his arrest, he had been given nothing to eat. He sat as motionless as possible on the narrow bench, his hands on his knees. He had already learned not to make any sudden movements or the telescreen would yell at him. But his craving for food was growing. He desperately wanted a piece of bread. He imagined there might be some crumbs in his overalls pocket. He felt something tickle his leg now and then, so perhaps there was a sizable bit of crust there as well.\nC. Since he was arrested he had not been fed. He sat as still as he could on the narrow bench, with his hands crossed on his knee. He had already learned to sit still. If you made unexpected movements they yelled at you from the telescreen. But the craving for food was growing upon him. What he longed for above all was a piece of bread. He had an idea that there were a few breadcrumbs in the pocket of his overalls. It was even possible--he thought this because from time to time something seemed to tickle his leg--that there might be a sizeable bit of crust there.\nD. He had not eaten anything since being arrested. He sat motionless on the small bench, with his hands folded on his knee. He had learned to stay still, since any sudden movements brought shouts from the telescreen. However, his hunger was increasing. More than anything, he wanted a piece of bread. He thought there might be some breadcrumbs in his overalls pocket. Something seemed to brush his leg occasionally, so maybe there was a good sized chunk of crust there too.\nAnswer:",
+  "options": {
+    "A": "He had been given no food since being arrested. He sat very still on the small bench, with his hands on his knees. He had learned not to move suddenly, or the telescreen would shout at him. But his hunger was increasing. More than anything, he wanted a piece of bread. He thought maybe there were some crumbs in his overalls pocket. Something seemed to be brushing his leg occasionally, so there could even be a large piece of crust there.",
+    "B": "Since his arrest, he had been given nothing to eat. He sat as motionless as possible on the narrow bench, his hands on his knees. He had already learned not to make any sudden movements or the telescreen would yell at him. But his craving for food was growing. He desperately wanted a piece of bread. He imagined there might be some crumbs in his overalls pocket. He felt something tickle his leg now and then, so perhaps there was a sizable bit of crust there as well.",
+    "C": "Since he was arrested he had not been fed. He sat as still as he could on the narrow bench, with his hands crossed on his knee. He had already learned to sit still. If you made unexpected movements they yelled at you from the telescreen. But the craving for food was growing upon him. What he longed for above all was a piece of bread. He had an idea that there were a few breadcrumbs in the pocket of his overalls. It was even possible--he thought this because from time to time something seemed to tickle his leg--that there might be a sizeable bit of crust there.",
+    "D": "He had not eaten anything since being arrested. He sat motionless on the small bench, with his hands folded on his knee. He had learned to stay still, since any sudden movements brought shouts from the telescreen. However, his hunger was increasing. More than anything, he wanted a piece of bread. He thought there might be some breadcrumbs in his overalls pocket. Something seemed to brush his leg occasionally, so maybe there was a good sized chunk of crust there too."
+  },
+  "gold_letter": "C",
+  "predicted_letter": "C",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 04:45:35"
+}

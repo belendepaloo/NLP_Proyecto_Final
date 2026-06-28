@@ -1,0 +1,18 @@
+{
+  "query_id": "aaba3efdbc475045ddc0c94f290518fb",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0022",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "I can",
+  "target_word": "come",
+  "sample_idx": 1,
+  "generated_text": "still",
+  "generated_first_word": "still",
+  "similarity": 0.6562262773513794,
+  "timestamp": "2026-06-26 23:41:04"
+}

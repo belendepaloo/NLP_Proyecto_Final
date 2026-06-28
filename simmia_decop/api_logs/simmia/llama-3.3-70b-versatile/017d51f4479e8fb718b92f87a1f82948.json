@@ -1,0 +1,18 @@
+{
+  "query_id": "017d51f4479e8fb718b92f87a1f82948",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0094",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 19,
+  "prefix": "“Rather than finding a saintly man, though, our hero, on entering the main room of the castle, saw a",
+  "target_word": "hive",
+  "sample_idx": 1,
+  "generated_text": "figure",
+  "generated_first_word": "figure",
+  "similarity": 0.5700927376747131,
+  "timestamp": "2026-06-27 16:11:34"
+}

@@ -1,0 +1,18 @@
+{
+  "query_id": "9e7305d29502609bade5ea02126100cb",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0001",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 13,
+  "prefix": "“And I know the Soul of the World, because we have talked at",
+  "target_word": "great",
+  "sample_idx": 0,
+  "generated_text": "length",
+  "generated_first_word": "length",
+  "similarity": 0.6269004344940186,
+  "timestamp": "2026-06-26 22:44:50"
+}

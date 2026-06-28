@@ -1,0 +1,18 @@
+{
+  "query_id": "6bf67952b271db46f281f39ac89783d6",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0156",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "I glance out the window. I see some",
+  "target_word": "new",
+  "sample_idx": 2,
+  "generated_text": "people",
+  "generated_first_word": "people",
+  "similarity": 0.6226250529289246,
+  "timestamp": "2026-06-27 18:27:54"
+}

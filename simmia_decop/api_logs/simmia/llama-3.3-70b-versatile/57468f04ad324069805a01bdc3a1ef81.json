@@ -1,0 +1,18 @@
+{
+  "query_id": "57468f04ad324069805a01bdc3a1ef81",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0047",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 13,
+  "prefix": "The sun began its departure, as well. The boy watched it through its",
+  "target_word": "trajectory",
+  "sample_idx": 2,
+  "generated_text": "entire",
+  "generated_first_word": "entire",
+  "similarity": 0.56991046667099,
+  "timestamp": "2026-06-27 01:03:38"
+}

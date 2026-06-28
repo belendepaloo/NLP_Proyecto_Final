@@ -1,0 +1,18 @@
+{
+  "query_id": "10adaa2474a2d186a9a168f1c3cb6933",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0071",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 10,
+  "prefix": "I did once before. You cant this time, Anton said",
+  "target_word": "gently.",
+  "sample_idx": 2,
+  "generated_text": "smirking",
+  "generated_first_word": "smirking",
+  "similarity": 0.6427347660064697,
+  "timestamp": "2026-06-27 02:34:21"
+}

@@ -1,0 +1,18 @@
+{
+  "query_id": "dade5f241204bb8bdab910111eef7b41",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0052",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "When he’d found his scarlet team",
+  "target_word": "robes",
+  "sample_idx": 2,
+  "generated_text": "jersey",
+  "generated_first_word": "jersey",
+  "similarity": 0.6657438278198242,
+  "timestamp": "2026-06-27 01:23:22"
+}

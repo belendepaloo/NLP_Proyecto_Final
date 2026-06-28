@@ -1,0 +1,18 @@
+{
+  "query_id": "03f6279d6570f9389b81a72a5da60f72",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0058",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "I fiddle with the",
+  "target_word": "borrowed",
+  "sample_idx": 1,
+  "generated_text": "strings",
+  "generated_first_word": "strings",
+  "similarity": 0.6352449655532837,
+  "timestamp": "2026-06-27 02:01:18"
+}

@@ -1,0 +1,18 @@
+{
+  "query_id": "72929a845fa6d6097c6434733258455b",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0017",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 15,
+  "prefix": "How polite of him. And he momentarily softened, cupping the side of her face. Im",
+  "target_word": "adding",
+  "sample_idx": 1,
+  "generated_text": "mediately",
+  "generated_first_word": "mediately",
+  "similarity": 0.5978795289993286,
+  "timestamp": "2026-06-26 23:30:36"
+}

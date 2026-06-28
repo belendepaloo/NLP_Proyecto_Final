@@ -1,0 +1,18 @@
+{
+  "query_id": "028551785d8f71a1930a02b40b5ab859",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0029",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 17,
+  "prefix": "And it wouldnt have been easy to get another. The corporate world doesnt like whistleblowers. I had",
+  "target_word": "the",
+  "sample_idx": 2,
+  "generated_text": "already",
+  "generated_first_word": "already",
+  "similarity": 0.6430520415306091,
+  "timestamp": "2026-06-26 23:58:47"
+}

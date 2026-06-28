@@ -1,0 +1,18 @@
+{
+  "query_id": "8ca71d483219f255b8ae88fa205421ce",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0008",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "I am starting to",
+  "target_word": "feel",
+  "sample_idx": 0,
+  "generated_text": "feel",
+  "generated_first_word": "feel",
+  "similarity": 1.0,
+  "timestamp": "2026-06-26 23:08:37"
+}

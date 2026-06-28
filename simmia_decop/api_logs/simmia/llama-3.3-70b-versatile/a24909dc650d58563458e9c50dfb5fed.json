@@ -1,0 +1,18 @@
+{
+  "query_id": "a24909dc650d58563458e9c50dfb5fed",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0169",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "There they fought to the death; but Thingol gave",
+  "target_word": "no",
+  "sample_idx": 0,
+  "generated_text": "them aid",
+  "generated_first_word": "them",
+  "similarity": 0.6501550674438477,
+  "timestamp": "2026-06-27 18:56:36"
+}

@@ -1,0 +1,18 @@
+{
+  "query_id": "f551f3ab3e70572f98affcfe6552d2cc",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0183",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 19,
+  "prefix": "Im nineteen and not married. And certainly not getting married anytime soon, after her last conversation with Nathaniel. Excellent.",
+  "target_word": "Room",
+  "sample_idx": 2,
+  "generated_text": "Now",
+  "generated_first_word": "Now",
+  "similarity": 0.6114284992218018,
+  "timestamp": "2026-06-27 19:28:29"
+}

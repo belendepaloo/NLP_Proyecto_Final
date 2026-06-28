@@ -1,0 +1,18 @@
+{
+  "query_id": "071daf70626c23ebee620de2b396ec5d",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0062",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "So am I,' said the tinker, waking up, as suddenly as he had fallen asleep. Brittles capitualated on",
+  "target_word": "these",
+  "sample_idx": 1,
+  "generated_text": "the",
+  "generated_first_word": "the",
+  "similarity": 0.6893589496612549,
+  "timestamp": "2026-06-27 02:11:59"
+}

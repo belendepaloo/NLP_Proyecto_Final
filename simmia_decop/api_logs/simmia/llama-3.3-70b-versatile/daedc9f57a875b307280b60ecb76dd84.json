@@ -1,0 +1,18 @@
+{
+  "query_id": "daedc9f57a875b307280b60ecb76dd84",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0039",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "She settled herself and began to concentrate, and very quickly this time she felt the electricity beginning to",
+  "target_word": "flow",
+  "sample_idx": 0,
+  "generated_text": "build",
+  "generated_first_word": "build",
+  "similarity": 0.6300156712532043,
+  "timestamp": "2026-06-27 00:21:49"
+}

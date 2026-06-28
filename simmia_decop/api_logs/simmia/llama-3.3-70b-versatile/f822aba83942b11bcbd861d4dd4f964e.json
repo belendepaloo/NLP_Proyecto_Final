@@ -1,0 +1,18 @@
+{
+  "query_id": "f822aba83942b11bcbd861d4dd4f964e",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0176",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Men in powerful positions were",
+  "target_word": "unsettled",
+  "sample_idx": 1,
+  "generated_text": "often",
+  "generated_first_word": "often",
+  "similarity": 0.5918022990226746,
+  "timestamp": "2026-06-27 19:11:27"
+}

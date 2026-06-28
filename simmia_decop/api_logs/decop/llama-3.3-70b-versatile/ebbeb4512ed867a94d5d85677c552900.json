@@ -1,0 +1,25 @@
+{
+  "query_id": "ebbeb4512ed867a94d5d85677c552900",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0154",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "title": "The Alchemist",
+  "author": "Paulo Coelho",
+  "length": "medium",
+  "permutation_index": 3,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Alchemist\" book by Paulo Coelho?\nOptions:\nA. The man kept quiet, and the boy understood that he must make a choice. He removed his jacket from his pouch, since he wouldn't need it in the desert. Employing the jacket, he began washing the glasses. In half an hour, he had washed all the glasses in the window, and while doing so, a couple of customers had come into the shop and bought some crystal.\nB. The man was still not speaking, so the boy realized he had to make a decision. He took out his jacket from his pouch, knowing he wouldn't need it in the desert environment. Using the jacket, he started polishing the glasses. Within thirty minutes, he had polished all the window glasses, and in the process, two shoppers had entered the store and purchased some crystal.\nC. The man still said nothing, and the boy sensed that he was going to have to make a decision. In his pouch, he had his jacket—he certainly wasn’t going to need it in the desert. Taking the jacket out, he began to clean the glasses. In half an hour, he had cleaned all the glasses in the window, and, as he was doing so, two customers had entered the shop and bought some crystal. \nD. The man remained silent, so the boy realized he would need to decide what to do. He took his jacket out of his bag, knowing he wouldn't require it in the desert. Using the jacket, he started cleaning the glasses. After thirty minutes, he had cleaned all the window glasses, and during that time, two people entered the store and purchased some crystal.\nAnswer:",
+  "options": {
+    "A": "The man kept quiet, and the boy understood that he must make a choice. He removed his jacket from his pouch, since he wouldn't need it in the desert. Employing the jacket, he began washing the glasses. In half an hour, he had washed all the glasses in the window, and while doing so, a couple of customers had come into the shop and bought some crystal.",
+    "B": "The man was still not speaking, so the boy realized he had to make a decision. He took out his jacket from his pouch, knowing he wouldn't need it in the desert environment. Using the jacket, he started polishing the glasses. Within thirty minutes, he had polished all the window glasses, and in the process, two shoppers had entered the store and purchased some crystal.",
+    "C": "The man still said nothing, and the boy sensed that he was going to have to make a decision. In his pouch, he had his jacket—he certainly wasn’t going to need it in the desert. Taking the jacket out, he began to clean the glasses. In half an hour, he had cleaned all the glasses in the window, and, as he was doing so, two customers had entered the shop and bought some crystal. ",
+    "D": "The man remained silent, so the boy realized he would need to decide what to do. He took his jacket out of his bag, knowing he wouldn't require it in the desert. Using the jacket, he started cleaning the glasses. After thirty minutes, he had cleaned all the window glasses, and during that time, two people entered the store and purchased some crystal."
+  },
+  "gold_letter": "C",
+  "predicted_letter": "C",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 15:21:19"
+}

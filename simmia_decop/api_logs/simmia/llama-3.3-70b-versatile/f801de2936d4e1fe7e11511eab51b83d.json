@@ -1,0 +1,18 @@
+{
+  "query_id": "f801de2936d4e1fe7e11511eab51b83d",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0025",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Miss Cathy had",
+  "target_word": "been",
+  "sample_idx": 0,
+  "generated_text": "always",
+  "generated_first_word": "always",
+  "similarity": 0.6198526620864868,
+  "timestamp": "2026-06-26 23:47:52"
+}

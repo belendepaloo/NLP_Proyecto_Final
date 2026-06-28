@@ -1,0 +1,25 @@
+{
+  "query_id": "d22318b7cd0ccac3be27216903e6b21c",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0178",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "title": "Unfortunately Yours",
+  "author": "Tessa Bailey",
+  "length": "medium",
+  "permutation_index": 0,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Unfortunately Yours\" book by Tessa Bailey?\nOptions:\nA. Not worth the sting. Natalie started to back up into the shadows to wait out Augusts departure, but in the wake of Teri driving away, he rounded the back bumper of his truck and spied her, doing a double take. Natalie? He paused mid-stride, frowning. What are you doing lurking over there in the dark? He snapped his fingers. Let me guess. Sucking the souls from children caught outdoors after eight P.M.? Thats right. I wait until theyve been stuffed full of chicken fingers and ice cream all day. Thats when I strike. She shrugged. But you have the IQ of a child, so I guess youll do.\nB. Natalie tried to sneak away unnoticed after Teri's departure, but August spotted her lurking in the shadows. He stopped and questioned why she was hiding over there in the dark. He jokingly guessed she was stealing souls from kids out past curfew. She fired back that he had a child's IQ himself. \nC. Natalie was hiding in the shadows to avoid August after he saw Teri leave, but he noticed her and confronted her about skulking around. He made a sarcastic remark about her sucking souls from children out late, and she responded with an insult about his intelligence.\nD. After Teri drove off, Natalie attempted to slip away unseen, but August caught sight of her retreating into the darkness. He was surprised to see her and demanded to know why she was sneaking around back there. He mockingly accused her of preying on children out late, to which she retorted that he had the intelligence of a child himself.\nAnswer:",
+  "options": {
+    "A": "Not worth the sting. Natalie started to back up into the shadows to wait out Augusts departure, but in the wake of Teri driving away, he rounded the back bumper of his truck and spied her, doing a double take. Natalie? He paused mid-stride, frowning. What are you doing lurking over there in the dark? He snapped his fingers. Let me guess. Sucking the souls from children caught outdoors after eight P.M.? Thats right. I wait until theyve been stuffed full of chicken fingers and ice cream all day. Thats when I strike. She shrugged. But you have the IQ of a child, so I guess youll do.",
+    "B": "Natalie tried to sneak away unnoticed after Teri's departure, but August spotted her lurking in the shadows. He stopped and questioned why she was hiding over there in the dark. He jokingly guessed she was stealing souls from kids out past curfew. She fired back that he had a child's IQ himself. ",
+    "C": "Natalie was hiding in the shadows to avoid August after he saw Teri leave, but he noticed her and confronted her about skulking around. He made a sarcastic remark about her sucking souls from children out late, and she responded with an insult about his intelligence.",
+    "D": "After Teri drove off, Natalie attempted to slip away unseen, but August caught sight of her retreating into the darkness. He was surprised to see her and demanded to know why she was sneaking around back there. He mockingly accused her of preying on children out late, to which she retorted that he had the intelligence of a child himself."
+  },
+  "gold_letter": "A",
+  "predicted_letter": "A",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 15:49:56"
+}

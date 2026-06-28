@@ -1,0 +1,18 @@
+{
+  "query_id": "8fb31329ad1f1d5a581fa99d122b72f9",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0111",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "The vaults were reached by means of",
+  "target_word": "small,",
+  "sample_idx": 1,
+  "generated_text": "a",
+  "generated_first_word": "a",
+  "similarity": 0.6940746307373047,
+  "timestamp": "2026-06-27 16:47:51"
+}

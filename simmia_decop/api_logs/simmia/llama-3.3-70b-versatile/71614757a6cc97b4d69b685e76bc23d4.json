@@ -1,0 +1,18 @@
+{
+  "query_id": "71614757a6cc97b4d69b685e76bc23d4",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0016",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "There he",
+  "target_word": "would",
+  "sample_idx": 2,
+  "generated_text": "was",
+  "generated_first_word": "was",
+  "similarity": 0.683516263961792,
+  "timestamp": "2026-06-26 23:26:52"
+}

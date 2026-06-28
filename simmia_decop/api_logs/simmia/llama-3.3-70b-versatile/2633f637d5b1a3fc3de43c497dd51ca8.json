@@ -1,0 +1,18 @@
+{
+  "query_id": "2633f637d5b1a3fc3de43c497dd51ca8",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0111",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "The vaults",
+  "target_word": "were",
+  "sample_idx": 2,
+  "generated_text": "were",
+  "generated_first_word": "were",
+  "similarity": 0.9999999403953552,
+  "timestamp": "2026-06-27 16:47:18"
+}

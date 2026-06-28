@@ -1,0 +1,18 @@
+{
+  "query_id": "5b2f005349f6bb0c4c425b07bd1b8d50",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0101",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "Oh, don't tell you are going to send me away,",
+  "target_word": "sir,",
+  "sample_idx": 1,
+  "generated_text": "again?",
+  "generated_first_word": "again?",
+  "similarity": 0.6364288330078125,
+  "timestamp": "2026-06-27 16:26:02"
+}

@@ -1,0 +1,18 @@
+{
+  "query_id": "1691cf82b184caeb92bd0b773abdb400",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0054",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "All that",
+  "target_word": "confidence",
+  "sample_idx": 2,
+  "generated_text": "remains",
+  "generated_first_word": "remains",
+  "similarity": 0.6008782386779785,
+  "timestamp": "2026-06-27 01:52:05"
+}

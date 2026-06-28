@@ -1,0 +1,18 @@
+{
+  "query_id": "c0b9404c9fbcebee91a4ea01b8d06ef0",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0110",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 9,
+  "prefix": "The Countess rounded on him. “I can’t do this?",
+  "target_word": "The",
+  "sample_idx": 2,
+  "generated_text": "Anymore",
+  "generated_first_word": "Anymore",
+  "similarity": 0.669640064239502,
+  "timestamp": "2026-06-27 16:45:54"
+}

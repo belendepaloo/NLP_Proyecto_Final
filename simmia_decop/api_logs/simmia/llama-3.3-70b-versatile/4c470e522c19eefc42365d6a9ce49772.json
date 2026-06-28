@@ -1,0 +1,18 @@
+{
+  "query_id": "4c470e522c19eefc42365d6a9ce49772",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0113",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Back in New",
+  "target_word": "York?",
+  "sample_idx": 1,
+  "generated_text": "York",
+  "generated_first_word": "York",
+  "similarity": 0.9638890027999878,
+  "timestamp": "2026-06-27 16:51:46"
+}

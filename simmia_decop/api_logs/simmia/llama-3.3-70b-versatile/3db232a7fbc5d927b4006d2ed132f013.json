@@ -1,0 +1,18 @@
+{
+  "query_id": "3db232a7fbc5d927b4006d2ed132f013",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0074",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 12,
+  "prefix": "Not exactly, she says. I, um, took on two new clients? Noemie.",
+  "target_word": "Her",
+  "sample_idx": 2,
+  "generated_text": "smiled",
+  "generated_first_word": "smiled",
+  "similarity": 0.6178886890411377,
+  "timestamp": "2026-06-27 02:41:22"
+}

@@ -1,0 +1,18 @@
+{
+  "query_id": "0531297c11f55e57350e4ec6cbe01e4c",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0124",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 11,
+  "prefix": "She regarded it (once her clothes were ordered) as merely an",
+  "target_word": "enlarged",
+  "sample_idx": 0,
+  "generated_text": "afterthought",
+  "generated_first_word": "afterthought",
+  "similarity": 0.6315170526504517,
+  "timestamp": "2026-06-27 17:17:04"
+}

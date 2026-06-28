@@ -1,0 +1,18 @@
+{
+  "query_id": "1865b13d1ce081fde8c86c48a6ff9cfe",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0037",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "After Id",
+  "target_word": "moved",
+  "sample_idx": 2,
+  "generated_text": "Ego",
+  "generated_first_word": "Ego",
+  "similarity": 0.6025784611701965,
+  "timestamp": "2026-06-27 00:15:27"
+}

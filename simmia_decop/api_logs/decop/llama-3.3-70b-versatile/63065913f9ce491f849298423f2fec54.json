@@ -1,0 +1,25 @@
+{
+  "query_id": "63065913f9ce491f849298423f2fec54",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0008",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "title": "The Wildest Sun A Novel",
+  "author": "Asha Lemmie",
+  "length": "medium",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Wildest Sun A Novel\" book by Asha Lemmie?\nOptions:\nA. I'm starting to feel comfortable nowadays. I can approach a street vendor and know if he's asking for too high a price; I can understand vulgar humor or pick up the meaning of a song when I pass a street performer. On the way to the accommodation, a nice-looking old gentleman with skin so dark it's nearly navy, shiny like the patent leather on good new footwear, lets me beat his conga drum after I gave him some money. The lady beside him smiles a gummy smile at me as she strums her guitar.\nB. I'm beginning to feel at ease now. I can go up to a seller and tell when he's quoting me a price that's too much; I can grasp a crude joke or get the meaning of a song when I walk by a musician on the street. While heading to the hotel, a kindly-appearing elderly man with skin so dark it's nearly blue, glossy like the patent leather on brand new shoes, allows me to hit his conga drum after I tipped him. The woman next to him beams a toothless grin at me as she plucks her guitar.\nC. I am starting to feel comfortable now. I can approach a vendor and know when he is offering me a rate that is too high; I can understand a bawdy joke or pick out the meaning of a song when I pass a musician on the street. On the way to the hotel, a kindly-looking old man with skin so dark that it is nearly blue, shiny like  the patent leather on good new shoes, lets me slap his conga drum after I gave him a tip. The woman beside him smiles a toothless smile at me as she strums her guitar. \nD. I'm beginning to feel at ease these days. I can go up to a merchant and tell if he's quoting me an excessively high rate; I can grasp a bawdy joke or grasp the meaning of a song when I walk past a musician on the street. While heading to the lodging, a kindly-seeming elderly man with skin so dark it's nearly indigo, glossy like the patent leather on nice new shoes, allows me to hit his conga drum after I tipped him. The woman next to him beams a gummy grin at me as she plucks her guitar.\nAnswer:",
+  "options": {
+    "A": "I'm starting to feel comfortable nowadays. I can approach a street vendor and know if he's asking for too high a price; I can understand vulgar humor or pick up the meaning of a song when I pass a street performer. On the way to the accommodation, a nice-looking old gentleman with skin so dark it's nearly navy, shiny like the patent leather on good new footwear, lets me beat his conga drum after I gave him some money. The lady beside him smiles a gummy smile at me as she strums her guitar.",
+    "B": "I'm beginning to feel at ease now. I can go up to a seller and tell when he's quoting me a price that's too much; I can grasp a crude joke or get the meaning of a song when I walk by a musician on the street. While heading to the hotel, a kindly-appearing elderly man with skin so dark it's nearly blue, glossy like the patent leather on brand new shoes, allows me to hit his conga drum after I tipped him. The woman next to him beams a toothless grin at me as she plucks her guitar.",
+    "C": "I am starting to feel comfortable now. I can approach a vendor and know when he is offering me a rate that is too high; I can understand a bawdy joke or pick out the meaning of a song when I pass a musician on the street. On the way to the hotel, a kindly-looking old man with skin so dark that it is nearly blue, shiny like  the patent leather on good new shoes, lets me slap his conga drum after I gave him a tip. The woman beside him smiles a toothless smile at me as she strums her guitar. ",
+    "D": "I'm beginning to feel at ease these days. I can go up to a merchant and tell if he's quoting me an excessively high rate; I can grasp a bawdy joke or grasp the meaning of a song when I walk past a musician on the street. While heading to the lodging, a kindly-seeming elderly man with skin so dark it's nearly indigo, glossy like the patent leather on nice new shoes, allows me to hit his conga drum after I tipped him. The woman next to him beams a gummy grin at me as she plucks her guitar."
+  },
+  "gold_letter": "C",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-06-26 04:47:30"
+}

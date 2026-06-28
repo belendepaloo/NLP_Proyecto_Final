@@ -1,0 +1,18 @@
+{
+  "query_id": "7db777ac356fe86935c80a0bde0d790e",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0193",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 18,
+  "prefix": "No ones forcing you to stay! Sabrina says. If you want to go, go! Cleo looks down at",
+  "target_word": "her",
+  "sample_idx": 0,
+  "generated_text": "her feet",
+  "generated_first_word": "her",
+  "similarity": 1.0,
+  "timestamp": "2026-06-27 19:50:18"
+}

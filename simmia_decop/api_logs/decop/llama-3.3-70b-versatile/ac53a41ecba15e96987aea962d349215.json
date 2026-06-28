@@ -1,0 +1,25 @@
+{
+  "query_id": "ac53a41ecba15e96987aea962d349215",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0097",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "title": "Harry Potter and the Chamber of Secrets",
+  "author": "JK Rowling",
+  "length": "medium",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Harry Potter and the Chamber of Secrets\" book by JK Rowling?\nOptions:\nA. Stuttering anxiously, Hermione approached Professor Lockhart about signing a form so she could borrow a restricted book from the library. She said it was just for some background reading on slow-acting poisons that would help make sense of what he said in Gadding with Ghouls.\nB. With a shaky hand, Hermione asked Professor Lockhart to sign a paper allowing her to take out a restricted book. She claimed she wanted to read up on slow-working toxins as background knowledge, saying it would help her grasp what he wrote about them in his book Gadding with Ghouls.\nC. “Er — Professor Lockhart?” Hermione stammered. “I wanted to — to get this book out of the library. Just for background reading.” She held out the piece of paper, her hand shaking slightly. “But the thing is, it’s in the Restricted Section of the library, so I need a teacher to sign for it — I’m sure it would help me understand what you say in  Gadding with Ghouls  about slow-acting venoms —” \nD. Hermione nervously asked Professor Lockhart if he could sign a permission form so she could check out a restricted book from the library. She explained it was for background reading on slow-acting venoms, which would help her understand what he wrote in his book Gadding with Ghouls. \nAnswer:",
+  "options": {
+    "A": "Stuttering anxiously, Hermione approached Professor Lockhart about signing a form so she could borrow a restricted book from the library. She said it was just for some background reading on slow-acting poisons that would help make sense of what he said in Gadding with Ghouls.",
+    "B": "With a shaky hand, Hermione asked Professor Lockhart to sign a paper allowing her to take out a restricted book. She claimed she wanted to read up on slow-working toxins as background knowledge, saying it would help her grasp what he wrote about them in his book Gadding with Ghouls.",
+    "C": "“Er — Professor Lockhart?” Hermione stammered. “I wanted to — to get this book out of the library. Just for background reading.” She held out the piece of paper, her hand shaking slightly. “But the thing is, it’s in the Restricted Section of the library, so I need a teacher to sign for it — I’m sure it would help me understand what you say in  Gadding with Ghouls  about slow-acting venoms —” ",
+    "D": "Hermione nervously asked Professor Lockhart if he could sign a permission form so she could check out a restricted book from the library. She explained it was for background reading on slow-acting venoms, which would help her understand what he wrote in his book Gadding with Ghouls. "
+  },
+  "gold_letter": "C",
+  "predicted_letter": "C",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 15:00:39"
+}

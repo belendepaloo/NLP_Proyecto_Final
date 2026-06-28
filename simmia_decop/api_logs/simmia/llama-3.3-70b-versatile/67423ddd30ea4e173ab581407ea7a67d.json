@@ -1,0 +1,18 @@
+{
+  "query_id": "67423ddd30ea4e173ab581407ea7a67d",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0063",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "The boy mumbled an answer",
+  "target_word": "that",
+  "sample_idx": 2,
+  "generated_text": "and looked down",
+  "generated_first_word": "and",
+  "similarity": 0.7436981201171875,
+  "timestamp": "2026-06-27 02:12:44"
+}

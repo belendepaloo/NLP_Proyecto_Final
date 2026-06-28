@@ -1,0 +1,18 @@
+{
+  "query_id": "9481d735a2365d67c74361bbcb59d732",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0064",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "As Noah's red nose grew redder with",
+  "target_word": "anger,",
+  "sample_idx": 0,
+  "generated_text": "each",
+  "generated_first_word": "each",
+  "similarity": 0.6370420455932617,
+  "timestamp": "2026-06-27 02:15:08"
+}

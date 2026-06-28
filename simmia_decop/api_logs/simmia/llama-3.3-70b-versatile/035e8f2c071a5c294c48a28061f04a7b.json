@@ -1,0 +1,18 @@
+{
+  "query_id": "035e8f2c071a5c294c48a28061f04a7b",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0053",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "We talked about this. You",
+  "target_word": "talked",
+  "sample_idx": 2,
+  "generated_text": "know",
+  "generated_first_word": "know",
+  "similarity": 0.6864795684814453,
+  "timestamp": "2026-06-27 01:50:12"
+}

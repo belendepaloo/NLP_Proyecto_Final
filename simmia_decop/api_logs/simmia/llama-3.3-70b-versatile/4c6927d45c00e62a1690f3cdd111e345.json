@@ -1,0 +1,18 @@
+{
+  "query_id": "4c6927d45c00e62a1690f3cdd111e345",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0184",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "As for you? Marrying and employing a",
+  "target_word": "Vos",
+  "sample_idx": 1,
+  "generated_text": "nanny",
+  "generated_first_word": "nanny",
+  "similarity": 0.5816447734832764,
+  "timestamp": "2026-06-27 19:29:15"
+}

@@ -1,0 +1,18 @@
+{
+  "query_id": "e6a156baa25dc4a2c8e01115857d97dd",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0136",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 15,
+  "prefix": "He missed Hogwarts so much it was like having a constant stomachache. He missed the",
+  "target_word": "castle,",
+  "sample_idx": 2,
+  "generated_text": "castle",
+  "generated_first_word": "castle",
+  "similarity": 0.9767815470695496,
+  "timestamp": "2026-06-27 17:44:17"
+}

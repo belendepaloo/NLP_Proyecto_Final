@@ -1,0 +1,18 @@
+{
+  "query_id": "4351b97cf5ec24fad95be69ed99c1673",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0158",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 17,
+  "prefix": "He walked slowly through the market. The merchants were assembling their stalls, and the boy helped a",
+  "target_word": "candy",
+  "sample_idx": 0,
+  "generated_text": "vendor",
+  "generated_first_word": "vendor",
+  "similarity": 0.6453455090522766,
+  "timestamp": "2026-06-27 18:33:18"
+}

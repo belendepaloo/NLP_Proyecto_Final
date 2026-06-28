@@ -1,0 +1,18 @@
+{
+  "query_id": "7e95ff1049a2d380bbc48e1ce77231bd",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0118",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Ardin Javar",
+  "target_word": "was",
+  "sample_idx": 0,
+  "generated_text": "is",
+  "generated_first_word": "is",
+  "similarity": 0.8565042018890381,
+  "timestamp": "2026-06-27 17:02:41"
+}

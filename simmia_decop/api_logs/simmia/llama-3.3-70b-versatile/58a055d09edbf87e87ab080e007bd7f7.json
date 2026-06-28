@@ -1,0 +1,18 @@
+{
+  "query_id": "58a055d09edbf87e87ab080e007bd7f7",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0072",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 1,
+  "prefix": "As",
+  "target_word": "Tatterlain",
+  "sample_idx": 1,
+  "generated_text": "the",
+  "generated_first_word": "the",
+  "similarity": 0.6442050933837891,
+  "timestamp": "2026-06-27 02:35:31"
+}

@@ -1,0 +1,18 @@
+{
+  "query_id": "ed44db5ca638aeded3b6e0fb956a7fd9",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0152",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 19,
+  "prefix": "Before, I had never experienced aught but a not-unpleasing sadness. The bond of a common humanity now drew me",
+  "target_word": "irresistibly",
+  "sample_idx": 1,
+  "generated_text": "closer",
+  "generated_first_word": "closer",
+  "similarity": 0.5526764392852783,
+  "timestamp": "2026-06-27 18:20:19"
+}

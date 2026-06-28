@@ -1,0 +1,25 @@
+{
+  "query_id": "582434e9d08d5488b1b2c5449c0d63ae",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0131",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "title": "Lord of the Rings The Fellowship of the Ring",
+  "author": "J R R Tolkien",
+  "length": "medium",
+  "permutation_index": 2,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Lord of the Rings The Fellowship of the Ring\" book by J R R Tolkien?\nOptions:\nA. On the far side of the room by the outer door, a woman sat in a chair. Flowing down around her shoulders was long, yellow hair; she was dressed in a green gown, green like young reeds, shot through with silver similar to glistening drops of dew; her belt was gold, shaped like a chain of flag-lilies and set with forget-me-nots of a pale blue. Surrounding her feet in large vessels of green and brown earthenware, white water lilies floated, making it seem as if she were seated on a throne in the middle of a pool.\nB. Seated in a chair on the opposite side of the room near the outer door was a woman. Her long blonde hair cascaded down over her shoulders; she wore a green gown, the color of young reeds, accented with silver reminiscent of dewdrops; her belt was gold, formed in the shape of a chain of flag-lilies and studded with pale-blue forget-me-nots. At her feet in wide containers made of green and brown clay, white water lilies floated, giving the impression she was enthroned in the center of a pond.  \nC. Across the room next to the outer door, a woman was seated in a chair. Her long yellow hair cascaded over her shoulders; she was clothed in a green gown, green as young reeds, accented with silver reminiscent of beads of dew; her belt was golden, formed like a chain of flag-lilies and inset with pale blue forget-me-nots. At her feet in wide containers of green and brown clay, white water lilies floated, giving the impression that she was enthroned amidst a pool.\nD. In a chair, at the far side of the room facing the outer door, sat a woman. Her long yellow hair rippled down her shoulders; her gown was green, green as young reeds, shot with silver like beads of dew; and her belt was of gold, shaped like a chain of flag-lilies set with the pale-blue eyes of forget-me-nots. About her feet in wide vessels of green and brown earthenware, white water-lilies were floating, so that she seemed to be enthroned in the midst of a pool.\nAnswer:",
+  "options": {
+    "A": "On the far side of the room by the outer door, a woman sat in a chair. Flowing down around her shoulders was long, yellow hair; she was dressed in a green gown, green like young reeds, shot through with silver similar to glistening drops of dew; her belt was gold, shaped like a chain of flag-lilies and set with forget-me-nots of a pale blue. Surrounding her feet in large vessels of green and brown earthenware, white water lilies floated, making it seem as if she were seated on a throne in the middle of a pool.",
+    "B": "Seated in a chair on the opposite side of the room near the outer door was a woman. Her long blonde hair cascaded down over her shoulders; she wore a green gown, the color of young reeds, accented with silver reminiscent of dewdrops; her belt was gold, formed in the shape of a chain of flag-lilies and studded with pale-blue forget-me-nots. At her feet in wide containers made of green and brown clay, white water lilies floated, giving the impression she was enthroned in the center of a pond.  ",
+    "C": "Across the room next to the outer door, a woman was seated in a chair. Her long yellow hair cascaded over her shoulders; she was clothed in a green gown, green as young reeds, accented with silver reminiscent of beads of dew; her belt was golden, formed like a chain of flag-lilies and inset with pale blue forget-me-nots. At her feet in wide containers of green and brown clay, white water lilies floated, giving the impression that she was enthroned amidst a pool.",
+    "D": "In a chair, at the far side of the room facing the outer door, sat a woman. Her long yellow hair rippled down her shoulders; her gown was green, green as young reeds, shot with silver like beads of dew; and her belt was of gold, shaped like a chain of flag-lilies set with the pale-blue eyes of forget-me-nots. About her feet in wide vessels of green and brown earthenware, white water-lilies were floating, so that she seemed to be enthroned in the midst of a pool."
+  },
+  "gold_letter": "D",
+  "predicted_letter": "D",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 15:13:54"
+}

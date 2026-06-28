@@ -1,0 +1,18 @@
+{
+  "query_id": "05259ca4ce1ecf94df61e0268ebd941f",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0102",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "Maud smiled as she passed the pond",
+  "target_word": "again.",
+  "sample_idx": 2,
+  "generated_text": "and",
+  "generated_first_word": "and",
+  "similarity": 0.6598023176193237,
+  "timestamp": "2026-06-27 16:27:56"
+}

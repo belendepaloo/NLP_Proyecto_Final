@@ -1,0 +1,18 @@
+{
+  "query_id": "36f9b0a530ea4d1dd4aaf6c9e28bc2fe",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0182",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "He was buttering his bread, not looking",
+  "target_word": "up",
+  "sample_idx": 2,
+  "generated_text": "at",
+  "generated_first_word": "at",
+  "similarity": 0.7293312549591064,
+  "timestamp": "2026-06-27 19:24:54"
+}

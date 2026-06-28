@@ -1,0 +1,25 @@
+{
+  "query_id": "5b7278c0c40d9ab160b0ee6903fc05f0",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0108",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "title": "Business or Pleasure",
+  "author": "Rachel Lynn Solomon",
+  "length": "medium",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Business or Pleasure\" book by Rachel Lynn Solomon?\nOptions:\nA. It's the first real recognition of our deal today, and it's almost comforting that he mentions it first. I'm still figuring out what I want. He chews slowly and deliberately. He asks if I'm considering opting out, because it's fine if I do. It's completely fine. I say no. I ask if he is. His eyes go to my mouth. He says not at all. When warmth fills my cheeks, I'm unsure if it's the lack of AC or something else completely. I realize we still barely know each other - I'm being compensated to know him, not vice versa.\nB. This is the first real acknowledgement of our agreement today, and it's almost a relief that he brings it up first. I'm still deciding what I want. He chews slowly and thoughtfully. He asks if I'm thinking of backing out, because it's okay if I am. It's totally okay. I say no. I ask if he is. His gaze goes to my mouth. He says not one bit. When my cheeks flush, I'm not sure if it's the lack of AC or something else entirely. I realize we still barely know each other - I'm being paid to know him, not the other way around.  \nC. Its the first real acknowledgment of our agreement all day, and its almost a relief that hes the first to bring it up. I think Im still deciding what I want. He chews slowly. Thoughtfully. Are you thinking of backing out? he asks. Because its okay if you are. Its absolutely okay. No. Are you? His gaze drops to my mouth. Not one bit. When heat floods my cheeks, Im not certain if its the lack of AC or something else entirely. It occurs to me that we still barely know each otherand that Im getting paid to know him, and not the other way around.\nD. It's the first real recognition of our arrangement today, and it's almost comforting that he's the first one to mention it. I'm still figuring out what I want. He chews slowly. Contemplatively. Are you considering withdrawing? he asks. Since it’s alright if you do. It’s totally alright. No. Are you? His eyes go to my mouth. Not at all. When warmth rushes to my cheeks, I'm not sure if it's the absence of AC or something else completely. I realize that we still barely know each other- and that I'm being paid to know him, not vice versa.\nAnswer:",
+  "options": {
+    "A": "It's the first real recognition of our deal today, and it's almost comforting that he mentions it first. I'm still figuring out what I want. He chews slowly and deliberately. He asks if I'm considering opting out, because it's fine if I do. It's completely fine. I say no. I ask if he is. His eyes go to my mouth. He says not at all. When warmth fills my cheeks, I'm unsure if it's the lack of AC or something else completely. I realize we still barely know each other - I'm being compensated to know him, not vice versa.",
+    "B": "This is the first real acknowledgement of our agreement today, and it's almost a relief that he brings it up first. I'm still deciding what I want. He chews slowly and thoughtfully. He asks if I'm thinking of backing out, because it's okay if I am. It's totally okay. I say no. I ask if he is. His gaze goes to my mouth. He says not one bit. When my cheeks flush, I'm not sure if it's the lack of AC or something else entirely. I realize we still barely know each other - I'm being paid to know him, not the other way around.  ",
+    "C": "Its the first real acknowledgment of our agreement all day, and its almost a relief that hes the first to bring it up. I think Im still deciding what I want. He chews slowly. Thoughtfully. Are you thinking of backing out? he asks. Because its okay if you are. Its absolutely okay. No. Are you? His gaze drops to my mouth. Not one bit. When heat floods my cheeks, Im not certain if its the lack of AC or something else entirely. It occurs to me that we still barely know each otherand that Im getting paid to know him, and not the other way around.",
+    "D": "It's the first real recognition of our arrangement today, and it's almost comforting that he's the first one to mention it. I'm still figuring out what I want. He chews slowly. Contemplatively. Are you considering withdrawing? he asks. Since it’s alright if you do. It’s totally alright. No. Are you? His eyes go to my mouth. Not at all. When warmth rushes to my cheeks, I'm not sure if it's the absence of AC or something else completely. I realize that we still barely know each other- and that I'm being paid to know him, not vice versa."
+  },
+  "gold_letter": "C",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-06-26 15:03:13"
+}

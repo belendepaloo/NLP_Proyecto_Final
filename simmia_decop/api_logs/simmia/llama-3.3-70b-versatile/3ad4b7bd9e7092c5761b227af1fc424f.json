@@ -1,0 +1,18 @@
+{
+  "query_id": "3ad4b7bd9e7092c5761b227af1fc424f",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0127",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "You cant",
+  "target_word": "judge",
+  "sample_idx": 0,
+  "generated_text": "always",
+  "generated_first_word": "always",
+  "similarity": 0.5910742878913879,
+  "timestamp": "2026-06-27 17:22:40"
+}

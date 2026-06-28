@@ -1,0 +1,25 @@
+{
+  "query_id": "f3de786ed6b5aa8cf016afdf13d71bdc",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0089",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "title": "Wuthering Heights",
+  "author": "Emily Bronte",
+  "length": "medium",
+  "permutation_index": 0,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Wuthering Heights\" book by Emily Bronte?\nOptions:\nA. I could not fawn over Heathcliff. I often wondered why my master admired the morose boy so much, when Heathcliff never showed gratitude for his kindness, to my memory. He was not rude to his benefactor, just unfeeling, though he knew he had a hold on his heart and only had to speak for the whole household to obey his desires. I remember when Mr. Earnshaw once got two colts at the county fair and gave one to each boy.\nB. I did not dote on Heathcliff at all. I was puzzled about why my master admired the gloomy boy so greatly. Heathcliff never expressed any thankfulness for the favor shown to him, as far as I recall. He was not impolite to the man who helped him, he just seemed numb. Yet he was aware he had a grip on his guardian's heart, and that everyone would have to bend to his wishes if he simply asked. For example, Mr. Earnshaw once purchased a pair of colts at the local fair and gave one to each lad.\nC. I still could not fawn over Heathcliff. I often wondered what my master saw that made him admire the sullen boy so much. Heathcliff never showed any gratitude for my master's kindness, as far as I can remember. He was not rude to his benefactor, he was just unfeeling, although he knew he had a hold on his heart. He knew he could just speak and the whole household would be forced to obey his desires. I remember once when Mr. Earnshaw bought two colts at the county fair and gave one to each of the boys.  \nD. Still I couldn't dote on Heath- cliff, and I wondered often what my master saw to ad- mire so much in the sullen boy, who never, to my recol- lection, repaid his indulgence by any sign of gratitude. He was not insolent to his benefactor, he was simply insensible, though knowing perfectly the hold he had on his heart, and conscious he had only to speak and all the house would be obliged to bend to his wishes. As an instance, I remember Mr. Earnshaw once bought a couple of colts at the parish fair, and gave the lads each one.\nAnswer:",
+  "options": {
+    "A": "I could not fawn over Heathcliff. I often wondered why my master admired the morose boy so much, when Heathcliff never showed gratitude for his kindness, to my memory. He was not rude to his benefactor, just unfeeling, though he knew he had a hold on his heart and only had to speak for the whole household to obey his desires. I remember when Mr. Earnshaw once got two colts at the county fair and gave one to each boy.",
+    "B": "I did not dote on Heathcliff at all. I was puzzled about why my master admired the gloomy boy so greatly. Heathcliff never expressed any thankfulness for the favor shown to him, as far as I recall. He was not impolite to the man who helped him, he just seemed numb. Yet he was aware he had a grip on his guardian's heart, and that everyone would have to bend to his wishes if he simply asked. For example, Mr. Earnshaw once purchased a pair of colts at the local fair and gave one to each lad.",
+    "C": "I still could not fawn over Heathcliff. I often wondered what my master saw that made him admire the sullen boy so much. Heathcliff never showed any gratitude for my master's kindness, as far as I can remember. He was not rude to his benefactor, he was just unfeeling, although he knew he had a hold on his heart. He knew he could just speak and the whole household would be forced to obey his desires. I remember once when Mr. Earnshaw bought two colts at the county fair and gave one to each of the boys.  ",
+    "D": "Still I couldn't dote on Heath- cliff, and I wondered often what my master saw to ad- mire so much in the sullen boy, who never, to my recol- lection, repaid his indulgence by any sign of gratitude. He was not insolent to his benefactor, he was simply insensible, though knowing perfectly the hold he had on his heart, and conscious he had only to speak and all the house would be obliged to bend to his wishes. As an instance, I remember Mr. Earnshaw once bought a couple of colts at the parish fair, and gave the lads each one."
+  },
+  "gold_letter": "D",
+  "predicted_letter": "D",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 14:51:13"
+}

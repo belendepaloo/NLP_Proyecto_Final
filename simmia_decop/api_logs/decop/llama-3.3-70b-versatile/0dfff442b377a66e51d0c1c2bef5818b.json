@@ -1,0 +1,25 @@
+{
+  "query_id": "0dfff442b377a66e51d0c1c2bef5818b",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0135",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "title": "The Spectacular",
+  "author": "Fiona Davis",
+  "length": "medium",
+  "permutation_index": 5,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Spectacular\" book by Fiona Davis?\nOptions:\nA. Just when I'm establishing my own way, I can't go. I yearn for you. Tears filled her eyes. I miss you as well, said Simon. Nathaniel comes by sometimes, we share a drink, he's an honorable man. More devoted than I was as a daughter. I've been working with the authorities on this case, attempting to assist in capturing the bomber. A doctor acquaintance is consulting too. Simon looked taken aback. A dancer and a physician aiding the police? I'd say they're the most improbable pair to decipher the Big Apple Bomber mystery.\nB. Now that I'm finding my path, I can't leave. I ache for you. Her eyes glistened with tears. I miss you too, Simon said. Nathaniel stops by now and then, we have a drink, he's a good person. More dutiful than I was to my mother. I've been cooperating with the police on this case, trying to help them catch the bomber. A doctor friend of mine is advising them too. Simon seemed surprised. A Rockette and a doctor helping the police? I'd call them the least likely team to crack the Big Apple Bomber case.\nC. Not when Im finally finding my way in the world. I miss you. Her eyes burned. I miss you, too. Nathaniel comes over every few days, we have a drink together, said Simon. Hes a good man. A better son than she was a daughter. Listen, Ive been working with the police on the case, trying to help them catch the bomber. A friend of mine whos a doctor is consulting as well. Simons eyes registered surprise. A Rockette and a doctor consulting with the police? I would say thats the least likely duo to crack the mystery of the Big Apple Bomber if ever I saw one.\nD. I'm finally establishing myself in life. I long for you. Tears welled up in her eyes. I also miss you, said Simon. Nathaniel visits periodically, we share a drink, he's an honorable man. Better child than I was to my mother. I've been aiding the authorities in resolving this case, attempting to assist in apprehending the bomber. An associate of mine who's a physician is also providing counsel. Simon looked startled. A dancer and a medical professional working with law enforcement? I'd say that's the most improbable pair imaginable to unravel the enigma of the Big Apple Bomber.  \nAnswer:",
+  "options": {
+    "A": "Just when I'm establishing my own way, I can't go. I yearn for you. Tears filled her eyes. I miss you as well, said Simon. Nathaniel comes by sometimes, we share a drink, he's an honorable man. More devoted than I was as a daughter. I've been working with the authorities on this case, attempting to assist in capturing the bomber. A doctor acquaintance is consulting too. Simon looked taken aback. A dancer and a physician aiding the police? I'd say they're the most improbable pair to decipher the Big Apple Bomber mystery.",
+    "B": "Now that I'm finding my path, I can't leave. I ache for you. Her eyes glistened with tears. I miss you too, Simon said. Nathaniel stops by now and then, we have a drink, he's a good person. More dutiful than I was to my mother. I've been cooperating with the police on this case, trying to help them catch the bomber. A doctor friend of mine is advising them too. Simon seemed surprised. A Rockette and a doctor helping the police? I'd call them the least likely team to crack the Big Apple Bomber case.",
+    "C": "Not when Im finally finding my way in the world. I miss you. Her eyes burned. I miss you, too. Nathaniel comes over every few days, we have a drink together, said Simon. Hes a good man. A better son than she was a daughter. Listen, Ive been working with the police on the case, trying to help them catch the bomber. A friend of mine whos a doctor is consulting as well. Simons eyes registered surprise. A Rockette and a doctor consulting with the police? I would say thats the least likely duo to crack the mystery of the Big Apple Bomber if ever I saw one.",
+    "D": "I'm finally establishing myself in life. I long for you. Tears welled up in her eyes. I also miss you, said Simon. Nathaniel visits periodically, we share a drink, he's an honorable man. Better child than I was to my mother. I've been aiding the authorities in resolving this case, attempting to assist in apprehending the bomber. An associate of mine who's a physician is also providing counsel. Simon looked startled. A dancer and a medical professional working with law enforcement? I'd say that's the most improbable pair imaginable to unravel the enigma of the Big Apple Bomber.  "
+  },
+  "gold_letter": "C",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-06-26 15:15:05"
+}

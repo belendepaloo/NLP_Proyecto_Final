@@ -1,0 +1,18 @@
+{
+  "query_id": "8ef29e682b68fb244e382af28af4eaea",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0141",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 11,
+  "prefix": "I am of average height, but as gangly as someone much",
+  "target_word": "taller,",
+  "sample_idx": 1,
+  "generated_text": "taller.",
+  "generated_first_word": "taller.",
+  "similarity": 0.9658631682395935,
+  "timestamp": "2026-06-27 17:54:52"
+}

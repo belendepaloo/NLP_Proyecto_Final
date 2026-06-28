@@ -1,0 +1,25 @@
+{
+  "query_id": "7c0a366adf2c9ccd6d9b923c8682f05e",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0185",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "title": "A Day of Fallen Night",
+  "author": "Samantha Shannon",
+  "length": "medium",
+  "permutation_index": 2,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"A Day of Fallen Night\" book by Samantha Shannon?\nOptions:\nA. Illuminated by the weak firelight, they reminisced about their ventures, honoring those who had passed on to Halgalant. Scarce rations left them famished. Though they previously enjoyed opulent banquets, now even the ruler and his protectors ate plain fare. All of you fought bravely today, Einlek affirmed, after they had scraped the platters clean. Gthur Wyrmkiller especially, having felled the beast with his harpoon. At last, the guests cheered loudly. Gthur was commended enthusiastically. In the past, our people desired a gallant death in battle, Einlek declared.\nB. Around dimming bonfires, they recalled their exploits, saluting fallen comrades in Halgalant. Hunger plagued the gathering. Though once feasting on lavish spreads, now even the monarch and his men ate modestly. You battled with valor today, said Einlek, once plates were licked clean. None more than Gthur Wyrmkiller, whose harpoon struck down the monster. For the first time, the company shouted praise. Gthur was heartily congratulated. Our forebears sought a noble end in combat, Einlek proclaimed.\nC. Around the dim flames, they recounted stories of their exploits, toasting the fallen warriors in Halgalant. Hunger plagued them all. Though feasts were once lavish, now even the king and his men ate modestly. You battled courageously today, said Einlek, once the plates were licked clean. None more than Gthur Wyrmkiller, who speared the monster with his harpoon. For once, the company shouted praise. Gthur was congratulated heartily. Our ancestors hoped for a heroic end in combat, proclaimed Einlek.  \nD. By the light of the low-burning fires, they shared tales of their deeds, raising their cups to those who had ascended to Halgalant. Hunger was the unwelcome guest. Where food had once been rich, now there was only simple fare, even for the king and his guard. You all fought like the Saint himself today, Einlek said, when they had scraped every plate. None more than Gthur Wyrmkiller, whose harpoon felled the beast. For the first time, the guests raised their voices in a cheer. Gthur was pounded on the back. In the past, our people longed for a glorious death in battle, Einlek called.\nAnswer:",
+  "options": {
+    "A": "Illuminated by the weak firelight, they reminisced about their ventures, honoring those who had passed on to Halgalant. Scarce rations left them famished. Though they previously enjoyed opulent banquets, now even the ruler and his protectors ate plain fare. All of you fought bravely today, Einlek affirmed, after they had scraped the platters clean. Gthur Wyrmkiller especially, having felled the beast with his harpoon. At last, the guests cheered loudly. Gthur was commended enthusiastically. In the past, our people desired a gallant death in battle, Einlek declared.",
+    "B": "Around dimming bonfires, they recalled their exploits, saluting fallen comrades in Halgalant. Hunger plagued the gathering. Though once feasting on lavish spreads, now even the monarch and his men ate modestly. You battled with valor today, said Einlek, once plates were licked clean. None more than Gthur Wyrmkiller, whose harpoon struck down the monster. For the first time, the company shouted praise. Gthur was heartily congratulated. Our forebears sought a noble end in combat, Einlek proclaimed.",
+    "C": "Around the dim flames, they recounted stories of their exploits, toasting the fallen warriors in Halgalant. Hunger plagued them all. Though feasts were once lavish, now even the king and his men ate modestly. You battled courageously today, said Einlek, once the plates were licked clean. None more than Gthur Wyrmkiller, who speared the monster with his harpoon. For once, the company shouted praise. Gthur was congratulated heartily. Our ancestors hoped for a heroic end in combat, proclaimed Einlek.  ",
+    "D": "By the light of the low-burning fires, they shared tales of their deeds, raising their cups to those who had ascended to Halgalant. Hunger was the unwelcome guest. Where food had once been rich, now there was only simple fare, even for the king and his guard. You all fought like the Saint himself today, Einlek said, when they had scraped every plate. None more than Gthur Wyrmkiller, whose harpoon felled the beast. For the first time, the guests raised their voices in a cheer. Gthur was pounded on the back. In the past, our people longed for a glorious death in battle, Einlek called."
+  },
+  "gold_letter": "D",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-06-26 15:51:44"
+}

@@ -1,0 +1,18 @@
+{
+  "query_id": "99b6200392aa7ba864def768b6c7d808",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0046",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 17,
+  "prefix": "Yet Archer was convinced that Madame Olenska had not accepted her grandmother's offer from interested motives. She",
+  "target_word": "had",
+  "sample_idx": 0,
+  "generated_text": "had",
+  "generated_first_word": "had",
+  "similarity": 1.0,
+  "timestamp": "2026-06-27 01:01:47"
+}

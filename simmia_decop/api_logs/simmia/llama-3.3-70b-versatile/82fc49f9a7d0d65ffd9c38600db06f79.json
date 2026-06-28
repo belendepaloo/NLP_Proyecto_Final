@@ -1,0 +1,18 @@
+{
+  "query_id": "82fc49f9a7d0d65ffd9c38600db06f79",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0024",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "Side out o' t' gate now, this minute!\"",
+  "target_word": "Catherine",
+  "sample_idx": 2,
+  "generated_text": "or",
+  "generated_first_word": "or",
+  "similarity": 0.5871735215187073,
+  "timestamp": "2026-06-26 23:46:18"
+}

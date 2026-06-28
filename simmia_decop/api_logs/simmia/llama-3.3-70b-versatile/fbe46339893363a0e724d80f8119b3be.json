@@ -1,0 +1,18 @@
+{
+  "query_id": "fbe46339893363a0e724d80f8119b3be",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0065",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "If were not in",
+  "target_word": "the",
+  "sample_idx": 0,
+  "generated_text": "school",
+  "generated_first_word": "school",
+  "similarity": 0.672359824180603,
+  "timestamp": "2026-06-27 02:20:03"
+}

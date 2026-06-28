@@ -1,0 +1,18 @@
+{
+  "query_id": "cff0bbbec207ad88a9ecd117bc64a730",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0186",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 16,
+  "prefix": "O'Brien had sat down beside the bed, so that his face was almost on a level",
+  "target_word": "with",
+  "sample_idx": 0,
+  "generated_text": "with Winston's",
+  "generated_first_word": "with",
+  "similarity": 1.0,
+  "timestamp": "2026-06-27 19:34:40"
+}

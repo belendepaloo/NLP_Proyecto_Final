@@ -1,0 +1,18 @@
+{
+  "query_id": "ba2c81d79639c31dc8c06cd7511ee45b",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0148",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "They",
+  "target_word": "did",
+  "sample_idx": 0,
+  "generated_text": "were",
+  "generated_first_word": "were",
+  "similarity": 0.6959192752838135,
+  "timestamp": "2026-06-27 18:09:16"
+}

@@ -1,0 +1,18 @@
+{
+  "query_id": "b7cefcdbb1ef6f767f4e65d7f1922ff2",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0070",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "In this way",
+  "target_word": "he",
+  "sample_idx": 0,
+  "generated_text": "we",
+  "generated_first_word": "we",
+  "similarity": 0.7485470771789551,
+  "timestamp": "2026-06-27 02:31:11"
+}

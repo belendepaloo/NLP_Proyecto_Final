@@ -1,0 +1,18 @@
+{
+  "query_id": "b104f3fb202c244c04d078096ff90eed",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0010",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Hareton would not open",
+  "target_word": "his",
+  "sample_idx": 0,
+  "generated_text": "his",
+  "generated_first_word": "his",
+  "similarity": 1.0,
+  "timestamp": "2026-06-26 23:13:34"
+}

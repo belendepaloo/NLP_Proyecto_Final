@@ -1,0 +1,18 @@
+{
+  "query_id": "c46e05f0e6a0b8b2198f519a2b70d8d7",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0102",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Maud",
+  "target_word": "smiled",
+  "sample_idx": 2,
+  "generated_text": "was",
+  "generated_first_word": "was",
+  "similarity": 0.6650621294975281,
+  "timestamp": "2026-06-27 16:27:14"
+}

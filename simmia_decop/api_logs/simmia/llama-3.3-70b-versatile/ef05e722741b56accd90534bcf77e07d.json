@@ -1,0 +1,18 @@
+{
+  "query_id": "ef05e722741b56accd90534bcf77e07d",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0180",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "The horses galloped into the",
+  "target_word": "middle",
+  "sample_idx": 1,
+  "generated_text": "field",
+  "generated_first_word": "field",
+  "similarity": 0.6673117280006409,
+  "timestamp": "2026-06-27 19:20:14"
+}

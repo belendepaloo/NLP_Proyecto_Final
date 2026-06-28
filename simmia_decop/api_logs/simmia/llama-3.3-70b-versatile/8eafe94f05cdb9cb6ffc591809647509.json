@@ -1,0 +1,18 @@
+{
+  "query_id": "8eafe94f05cdb9cb6ffc591809647509",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0179",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 1,
+  "prefix": "A",
+  "target_word": "shadowed",
+  "sample_idx": 0,
+  "generated_text": "large",
+  "generated_first_word": "large",
+  "similarity": 0.6239748001098633,
+  "timestamp": "2026-06-27 19:17:33"
+}

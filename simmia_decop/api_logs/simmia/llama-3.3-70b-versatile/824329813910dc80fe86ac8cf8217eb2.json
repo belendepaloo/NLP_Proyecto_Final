@@ -1,0 +1,18 @@
+{
+  "query_id": "824329813910dc80fe86ac8cf8217eb2",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0055",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "‘The speedometer,’ Mr Wormwood said, ‘is run off a cable",
+  "target_word": "that",
+  "sample_idx": 1,
+  "generated_text": "that",
+  "generated_first_word": "that",
+  "similarity": 1.0000001192092896,
+  "timestamp": "2026-06-27 01:55:14"
+}

@@ -1,0 +1,25 @@
+{
+  "query_id": "a1eb497750dfa36243f170a8e77faac9",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0037",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "title": "The Spectacular",
+  "author": "Fiona Davis",
+  "length": "medium",
+  "permutation_index": 2,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Spectacular\" book by Fiona Davis?\nOptions:\nA. After Id moved back home, Simon became very isolated and lonely, as all his friends abandoned him when they learned about his involvement in the bombing incident. Although he wasn't criminally charged, he was treated like a social outcast. This was very difficult for Simon, who had always been very outgoing and friendly, known for warmly greeting people. He changed dramatically, becoming withdrawn and closed off, with his hands in fists, shoulders hunched, and head down.\nB. After Id moved back home, Simon didnt go out much, as there was nowhere to go and every one of his friends dropped him once the news of his role in the bombing case came to light. There were no criminal charges, thank goodness, but he became a social pariah. For a man who lived on laughter and camaraderie, known for his enthusiastic handshakes when he bumped into a casual acquaintance, a man who remembered everyones wives and kids names, the toll was steep. He withdrew into himself, literally: his hands turned into fists, his shoulders caved in toward his chest, his head tilted forward.\nC. After moving back in with Id, Simon became a recluse, since all his friends disowned him when they learned of his involvement in the bombing incident, even though he wasn't criminally charged. Extremely outgoing and amiable before, known for warm handshakes and remembering people's families, Simon was devastated to be treated as a social outcast. He changed dramatically, becoming closed off, with fists for hands, caved-in shoulders, and head tilted down.\nD. When Id returned home, Simon stopped going out much because all his friends shunned him after hearing about his role in the bombing case. He wasn't charged criminally, but people saw him as a pariah. This was hard for Simon, who was normally gregarious and affable, enthusiastically greeting acquaintances. A man who recalled everyone's family members' names, he withdrew into himself, with clenched fists, hunched shoulders, and tilted head.  \nAnswer:",
+  "options": {
+    "A": "After Id moved back home, Simon became very isolated and lonely, as all his friends abandoned him when they learned about his involvement in the bombing incident. Although he wasn't criminally charged, he was treated like a social outcast. This was very difficult for Simon, who had always been very outgoing and friendly, known for warmly greeting people. He changed dramatically, becoming withdrawn and closed off, with his hands in fists, shoulders hunched, and head down.",
+    "B": "After Id moved back home, Simon didnt go out much, as there was nowhere to go and every one of his friends dropped him once the news of his role in the bombing case came to light. There were no criminal charges, thank goodness, but he became a social pariah. For a man who lived on laughter and camaraderie, known for his enthusiastic handshakes when he bumped into a casual acquaintance, a man who remembered everyones wives and kids names, the toll was steep. He withdrew into himself, literally: his hands turned into fists, his shoulders caved in toward his chest, his head tilted forward.",
+    "C": "After moving back in with Id, Simon became a recluse, since all his friends disowned him when they learned of his involvement in the bombing incident, even though he wasn't criminally charged. Extremely outgoing and amiable before, known for warm handshakes and remembering people's families, Simon was devastated to be treated as a social outcast. He changed dramatically, becoming closed off, with fists for hands, caved-in shoulders, and head tilted down.",
+    "D": "When Id returned home, Simon stopped going out much because all his friends shunned him after hearing about his role in the bombing case. He wasn't charged criminally, but people saw him as a pariah. This was hard for Simon, who was normally gregarious and affable, enthusiastically greeting acquaintances. A man who recalled everyone's family members' names, he withdrew into himself, with clenched fists, hunched shoulders, and tilted head.  "
+  },
+  "gold_letter": "B",
+  "predicted_letter": "B",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 05:02:58"
+}

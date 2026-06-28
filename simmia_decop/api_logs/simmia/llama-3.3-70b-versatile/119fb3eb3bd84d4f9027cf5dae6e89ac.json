@@ -1,0 +1,18 @@
+{
+  "query_id": "119fb3eb3bd84d4f9027cf5dae6e89ac",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0143",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Frodo opened his",
+  "target_word": "mouth",
+  "sample_idx": 1,
+  "generated_text": "eyes",
+  "generated_first_word": "eyes",
+  "similarity": 0.7582429647445679,
+  "timestamp": "2026-06-27 17:58:21"
+}

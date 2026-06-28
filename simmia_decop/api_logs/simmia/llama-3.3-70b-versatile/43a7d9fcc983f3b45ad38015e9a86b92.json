@@ -1,0 +1,18 @@
+{
+  "query_id": "43a7d9fcc983f3b45ad38015e9a86b92",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0025",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Miss Cathy had been sick, and",
+  "target_word": "that",
+  "sample_idx": 0,
+  "generated_text": "was",
+  "generated_first_word": "was",
+  "similarity": 0.6732878684997559,
+  "timestamp": "2026-06-26 23:48:13"
+}

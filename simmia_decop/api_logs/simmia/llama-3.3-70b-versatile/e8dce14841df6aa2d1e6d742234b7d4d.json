@@ -1,0 +1,18 @@
+{
+  "query_id": "e8dce14841df6aa2d1e6d742234b7d4d",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0189",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "‘A girl doesn’t get a man by being brainy,’",
+  "target_word": "Mrs",
+  "sample_idx": 1,
+  "generated_text": "she",
+  "generated_first_word": "she",
+  "similarity": 0.7365830540657043,
+  "timestamp": "2026-06-27 19:40:29"
+}

@@ -1,0 +1,18 @@
+{
+  "query_id": "5d363027ae8a217a7818c094c74b2fe5",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0091",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "It was only an hour, Maud",
+  "target_word": "said.",
+  "sample_idx": 1,
+  "generated_text": "later",
+  "generated_first_word": "later",
+  "similarity": 0.6688783168792725,
+  "timestamp": "2026-06-27 16:03:24"
+}

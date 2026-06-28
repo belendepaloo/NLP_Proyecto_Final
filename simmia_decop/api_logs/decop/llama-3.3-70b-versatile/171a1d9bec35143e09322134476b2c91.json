@@ -1,0 +1,25 @@
+{
+  "query_id": "171a1d9bec35143e09322134476b2c91",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0069",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "title": "The Spectacular",
+  "author": "Fiona Davis",
+  "length": "medium",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Spectacular\" book by Fiona Davis?\nOptions:\nA. When Marion slipped while ice skating, Judy was there to catch her hand and support her. Judy told Marion that Nathaniel comes to their house often, and she feels her dad prefers Nathaniel over her, saying \"Dad should just adopt Nathaniel instead of me since he likes him more. They can forget I exist.\" Marion was taken aback when Judy asked if she wanted to marry Nathaniel, since she had assumed they would wed. Marion said \"I don't know. You might be right that I could do better.\" She was surprised Judy had an opinion on her marriage plans.\nB. Marion started to fall while ice skating but Judy grabbed her hand to keep her upright. Judy mentioned Nathaniel's frequent visits, saying \"Dad should officially make Nathaniel his son since he likes him way more than me. They could cut me out completely.\" Marion was startled when Judy asked if she wanted to marry Nathaniel, since their wedding had seemed predestined. Marion responded \"I'm not certain. You may be right that I could find someone better.\" She hadn't considered Judy might have thoughts on her engagement.\nC. But when one of Marions skates slid out from under her and she wobbled, Judy grasped her hand and didnt let it go. Nathaniel comes by the house every few days, said Judy. Sometimes I think Dad should just adopt him as his son and get it over with. He likes Nathaniel way better than me. They can cut me out of the picture altogether. Do you want to marry him? Marion hadnt ever been asked this by anyone; the wedding had simply been a given. I dont know. I think you could do better. She hadnt even considered that Judy might have an opinion on the matter.\nD. But when Marion lost her balance on the ice, Judy quickly grabbed her hand to keep her steady. Judy mentioned that Nathaniel visits their house frequently, saying \"I think Dad should just officially adopt Nathaniel as his son since he likes him way more than me. They can leave me out completely.\" Marion was surprised when Judy asked if she wanted to marry Nathaniel, since their wedding had always seemed inevitable. Marion responded \"I'm not sure. I think you're right that I could find someone better.\" She hadn't realized Judy might have thoughts about her engagement.  \nAnswer:",
+  "options": {
+    "A": "When Marion slipped while ice skating, Judy was there to catch her hand and support her. Judy told Marion that Nathaniel comes to their house often, and she feels her dad prefers Nathaniel over her, saying \"Dad should just adopt Nathaniel instead of me since he likes him more. They can forget I exist.\" Marion was taken aback when Judy asked if she wanted to marry Nathaniel, since she had assumed they would wed. Marion said \"I don't know. You might be right that I could do better.\" She was surprised Judy had an opinion on her marriage plans.",
+    "B": "Marion started to fall while ice skating but Judy grabbed her hand to keep her upright. Judy mentioned Nathaniel's frequent visits, saying \"Dad should officially make Nathaniel his son since he likes him way more than me. They could cut me out completely.\" Marion was startled when Judy asked if she wanted to marry Nathaniel, since their wedding had seemed predestined. Marion responded \"I'm not certain. You may be right that I could find someone better.\" She hadn't considered Judy might have thoughts on her engagement.",
+    "C": "But when one of Marions skates slid out from under her and she wobbled, Judy grasped her hand and didnt let it go. Nathaniel comes by the house every few days, said Judy. Sometimes I think Dad should just adopt him as his son and get it over with. He likes Nathaniel way better than me. They can cut me out of the picture altogether. Do you want to marry him? Marion hadnt ever been asked this by anyone; the wedding had simply been a given. I dont know. I think you could do better. She hadnt even considered that Judy might have an opinion on the matter.",
+    "D": "But when Marion lost her balance on the ice, Judy quickly grabbed her hand to keep her steady. Judy mentioned that Nathaniel visits their house frequently, saying \"I think Dad should just officially adopt Nathaniel as his son since he likes him way more than me. They can leave me out completely.\" Marion was surprised when Judy asked if she wanted to marry Nathaniel, since their wedding had always seemed inevitable. Marion responded \"I'm not sure. I think you're right that I could find someone better.\" She hadn't realized Judy might have thoughts about her engagement.  "
+  },
+  "gold_letter": "C",
+  "predicted_letter": "C",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 14:45:35"
+}

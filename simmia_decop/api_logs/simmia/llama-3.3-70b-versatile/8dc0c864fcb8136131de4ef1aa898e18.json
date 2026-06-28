@@ -1,0 +1,18 @@
+{
+  "query_id": "8dc0c864fcb8136131de4ef1aa898e18",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0034",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Well, hes a lot",
+  "target_word": "more",
+  "sample_idx": 2,
+  "generated_text": "older",
+  "generated_first_word": "older",
+  "similarity": 0.6394115090370178,
+  "timestamp": "2026-06-27 00:08:50"
+}
