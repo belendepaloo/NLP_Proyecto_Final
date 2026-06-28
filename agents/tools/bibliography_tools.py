@@ -9,9 +9,12 @@ from __future__ import annotations
 
 import subprocess
 import time
+from typing import Callable
 
-from agents.tools.fs_tools import write_run_artifact
+from agents.tools.chunk_tools import get_token_counter
+from agents.tools.fs_tools import read_run_artifact, write_run_artifact
 from mia_common.settings import settings
+from processRawText.text_pipeline import chunk_text
 
 FETCH_MAX_RETRIES = 3
 FETCH_RETRY_BACKOFF_SECONDS = 3
@@ -94,6 +97,58 @@ def fetch_url(url: str) -> dict:
     }
 
 
+def fetch_and_chunk_document(run_id: str, document_id: str, url: str, target: int = 128, min_len: int = 24) -> dict:
+    """Descarga `url` (via fetch_url), RECORTA el texto limpio a
+    settings.bibliography_max_chars_per_document caracteres (~15 paginas -- nunca el
+    libro entero, sin importar cuanto mida la fuente real) y lo chunkea -- todo
+    server-side, en una sola llamada. Persiste CADA chunk en
+    runs/<run_id>/curation/chunk_<document_id>_<i>; el texto completo (ni siquiera el
+    recorte de 15 paginas) se devuelve nunca como string ni se guarda como un solo
+    artifact -- vive en una variable de Python el tiempo que tarda esta funcion y se
+    descarta. NUNCA se persiste runs/<run_id>/bibliography/text_<document_id> (ese
+    artifact ya no existe en este pipeline): el libro completo no puede quedar guardado
+    en ningun lugar, ni local ni en el contexto de un LLM.
+
+    bibliography_agent llama a esto en vez de fetch_url + write_run_artifact por
+    separado -- esa version anterior le pedia al LLM que copiara el texto completo como
+    argumento de una tool call para guardarlo, y eso fallaba en silencio: ningun modelo
+    reproduce fielmente un texto de cientos de miles de caracteres, terminaba
+    "guardando" un resumen de ~900 caracteres sin avisar que habia recortado nada (bug
+    real, ver pipeline-learnings).
+
+    Devuelve {"document_id", "url", "n_chunks", "chunk_ids", "n_chars_used",
+    "n_chars_available", "preview"} si la descarga funciono, o {"document_id", "url",
+    "error"} si fetch_url fallo -- preview son los primeros ~300 caracteres del
+    recorte, para que el agente pueda confirmar de un vistazo que esto es prosa real y
+    no una pagina de catalogo/resumen, sin tener que leer todo el texto."""
+    fetched = fetch_url(url)
+    if "error" in fetched:
+        return {"document_id": document_id, "url": url, "error": fetched["error"]}
+
+    cleaned = fetched["cleaned_text"]
+    capped = cleaned[: settings.bibliography_max_chars_per_document]
+
+    chunks = chunk_text(capped, target=target, count_fn=get_token_counter(), min_len=min_len)
+    chunk_ids = []
+    for i, chunk in enumerate(chunks):
+        chunk_id = f"{document_id}_{i}"
+        write_run_artifact(
+            run_id, "curation", f"chunk_{chunk_id}",
+            {"document_id": document_id, "chunk_id": chunk_id, "text": chunk.text},
+        )
+        chunk_ids.append(chunk_id)
+
+    return {
+        "document_id": document_id,
+        "url": url,
+        "n_chunks": len(chunk_ids),
+        "chunk_ids": chunk_ids,
+        "n_chars_used": len(capped),
+        "n_chars_available": len(cleaned),
+        "preview": capped[:300],
+    }
+
+
 def propose_candidate_texts(run_id: str, candidates: list[dict]) -> dict:
     """Terminal tool de la etapa de bibliografia. Llamar a este tool SIEMPRE dispara
     una pausa de revision humana (interrupt_on en el orquestador) -- el humano puede
@@ -112,6 +167,60 @@ def propose_candidate_texts(run_id: str, candidates: list[dict]) -> dict:
     aprobado, sin que ninguna pausa real hubiera ocurrido. Si el artifact en disco solo
     puede existir como consecuencia de este tool ejecutandose post-resume, un candidato
     fabricado por el orquestador ya no puede pasar por "aprobado" (ver
-    pipeline-learnings antes de asumir que esto sigue roto)."""
-    write_run_artifact(run_id, "bibliography", "candidates", {"candidates": candidates})
-    return {"status": "approved", "candidates": candidates}
+    pipeline-learnings antes de asumir que esto sigue roto).
+
+    SUMA en vez de PISAR si ya existe runs/<run_id>/bibliography/candidates.json: una
+    ronda de reemplazo (curator_agent descarto un candidato y bibliography_agent busco
+    uno nuevo para esa misma corrida) llama a esto una segunda vez con SOLO los
+    candidatos nuevos -- si pisara el archivo entero, se perderian los candidatos
+    aprobados en la primera ronda. Mergea por document_id (un id repetido pisa solo esa
+    entrada, no el resto)."""
+    existing = []
+    try:
+        existing = read_run_artifact(run_id, "bibliography", "candidates")["candidates"]
+    except FileNotFoundError:
+        pass
+
+    by_id = {c["document_id"]: c for c in existing}
+    for c in candidates:
+        by_id[c["document_id"]] = c
+    merged = list(by_id.values())
+
+    write_run_artifact(run_id, "bibliography", "candidates", {"candidates": merged})
+    return {"status": "approved", "candidates": merged}
+
+
+def make_run_scoped_bibliography_tools(run_id: str) -> dict[str, Callable]:
+    """Devuelve fetch_and_chunk_document/propose_candidate_texts con `run_id` ya fijo
+    via closure -- mismo motivo que make_run_scoped_fs_tools (agents/tools/fs_tools.py):
+    bibliography_agent ya opera sobre UN run fijo durante toda su tarea, asi que no
+    hay razon para dejar que el LLM tipee el run_id en cada llamada (y arriesgue un
+    typo que mande chunks a un directorio fantasma)."""
+
+    def fetch_and_chunk_document_bound(document_id: str, url: str, target: int = 128, min_len: int = 24) -> dict:
+        """Descarga `url`, RECORTA a settings.bibliography_max_chars_per_document
+        caracteres (~15 paginas -- nunca el libro entero) y chunkea -- todo
+        server-side, en una sola llamada. Persiste CADA chunk en
+        runs/<este run>/curation/chunk_<document_id>_<i>; el texto completo (ni
+        siquiera el recorte) se devuelve nunca como string ni se guarda como un solo
+        artifact. Devuelve {"document_id", "url", "n_chunks", "chunk_ids",
+        "n_chars_used", "n_chars_available", "preview"} si funciono, o {"document_id",
+        "url", "error"} si la descarga fallo."""
+        return fetch_and_chunk_document(run_id, document_id, url, target=target, min_len=min_len)
+
+    def propose_candidate_texts_bound(candidates: list[dict]) -> dict:
+        """Terminal tool de la etapa de bibliografia -- SIEMPRE pausa para revision
+        humana. `candidates`: lista de {"document_id", "title", "source_url",
+        "author", "date"} por documento propuesto (el document_id de cada uno tiene
+        que ser EXACTAMENTE el mismo que se uso al llamar a fetch_and_chunk_document).
+        Suma a la lista existente de este run si ya hay candidatos aprobados de una
+        ronda anterior (no la pisa)."""
+        return propose_candidate_texts(run_id, candidates)
+
+    fetch_and_chunk_document_bound.__name__ = "fetch_and_chunk_document"
+    propose_candidate_texts_bound.__name__ = "propose_candidate_texts"
+
+    return {
+        "fetch_and_chunk_document": fetch_and_chunk_document_bound,
+        "propose_candidate_texts": propose_candidate_texts_bound,
+    }

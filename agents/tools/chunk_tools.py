@@ -14,7 +14,6 @@ from processRawText.text_pipeline import (
     make_tiktoken_counter,
 )
 
-from agents.tools.fs_tools import read_run_artifact, write_run_artifact
 
 _token_counter = None
 
@@ -51,8 +50,10 @@ def chunk_text_tool(clean: str, target: int = 128, min_len: int = 24, source: st
     argumento de function-calling. Eso es justo el riesgo que ya advertia este repo
     ("va a necesitar chunkear por capitulo/pagina, no el libro entero junto") y que
     causo un run real carisimo (~$2.81) que ademas nunca termino de chunkear. Para
-    curator_agent usar clean_and_chunk_document() en vez de este -- chunkea server-side
-    sin que el texto completo pase nunca por el contexto del LLM."""
+    bibliography_agent usar bibliography_tools.fetch_and_chunk_document() en vez de
+    este -- descarga, recorta a ~15 paginas, y chunkea server-side en una sola llamada,
+    sin que el texto completo (ni siquiera el recorte) pase nunca por el contexto del
+    LLM ni se guarde como un solo artifact."""
     chunks = chunk_text(
         clean,
         target=target,
@@ -62,30 +63,3 @@ def chunk_text_tool(clean: str, target: int = 128, min_len: int = 24, source: st
         date=date,
     )
     return [asdict(c) for c in chunks]
-
-
-def clean_and_chunk_document(run_id: str, document_id: str, target: int = 128, min_len: int = 24) -> dict:
-    """Lee el texto de runs/<run_id>/bibliography/text_<document_id> (ya viene limpio
-    de bibliography_tools.fetch_url, no hace falta re-limpiarlo), lo chunkea, y persiste
-    CADA chunk en runs/<run_id>/curation/chunk_<document_id>_<i> -- todo server-side, el
-    texto completo del documento NUNCA se pasa como argumento de una tool call ni se
-    devuelve entero en la respuesta (ver el docstring de chunk_text_tool sobre por que
-    eso es un problema real con libros completos, no solo teorico).
-
-    Devuelve {"document_id", "n_chunks", "chunk_ids"} -- liviano a proposito. El agente
-    tiene que leer el texto de cada chunk individualmente con
-    read_run_artifact(run_id, "curation", f"chunk_{chunk_id}") cuando lo necesite (ver
-    el procedimiento de lotes chicos en agents/subagents/curator_agent.py), nunca todos
-    de una."""
-    doc = read_run_artifact(run_id, "bibliography", f"text_{document_id}")
-    chunks = chunk_text(doc["cleaned_text"], target=target, count_fn=get_token_counter(), min_len=min_len)
-
-    chunk_ids = []
-    for i, chunk in enumerate(chunks):
-        chunk_id = f"{document_id}_{i}"
-        write_run_artifact(
-            run_id, "curation", f"chunk_{chunk_id}", {"document_id": document_id, "chunk_id": chunk_id, "text": chunk.text}
-        )
-        chunk_ids.append(chunk_id)
-
-    return {"document_id": document_id, "n_chunks": len(chunk_ids), "chunk_ids": chunk_ids}

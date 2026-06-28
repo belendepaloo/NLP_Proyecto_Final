@@ -67,6 +67,20 @@ class Settings(BaseSettings):
     target_min_seconds_between_calls: float = 2.1
     target_max_retries: int = 6
 
+    # Tope de caracteres por documento que bibliography_agent puede chunkear (~15
+    # paginas de un libro tipico, ~2000 caracteres/pagina) -- el libro completo NUNCA
+    # se procesa ni se guarda entero, ni en disco ni en el contexto de un LLM, sin
+    # importar cuanto mida la fuente real (se vio en vivo: Gutenberg/archive.org dan
+    # libros de ~280.000-700.000 caracteres). De sobra para los
+    # curator_target_chunks_per_text chunks curados que se necesitan por texto.
+    bibliography_max_chars_per_document: int = 30_000
+
+    # Cuantas rondas de "buscar candidatos de reemplazo" intenta el orquestador cuando
+    # curator_agent descarta un candidato (autoria=drop, o 0 chunks "keep" tras voz) --
+    # acotado para no generar un loop de costo si el autor simplemente no tiene mas
+    # textos disponibles online.
+    bibliography_max_replacement_rounds: int = 1
+
     # Cuantos chunks por texto entran al pipeline costoso (SAGE + 3 metodos MIA).
     # Control de costo/computo, no de cuantos chunks existen en el dataset -- eso lo
     # define MAX_CHUNKS_PER_PAGE en scrape_clean_chunk.ipynb al armar el CSV. Pensado

@@ -14,7 +14,7 @@ de descartarse en silencio.
 
 from __future__ import annotations
 
-from typing import Literal
+from typing import Callable, Literal
 
 from agents.tools.fs_tools import list_run_artifacts, read_run_artifact, write_run_artifact
 from mia_common.settings import settings
@@ -116,3 +116,41 @@ def record_voice_score(
     }
     write_run_artifact(run_id, "curation", f"voice_{chunk_id}", record)
     return record
+
+
+def make_run_scoped_curator_tools(run_id: str) -> dict[str, Callable]:
+    """Devuelve record_authorship_verdict/record_voice_score con `run_id` ya fijo via
+    closure -- mismo motivo que make_run_scoped_fs_tools (agents/tools/fs_tools.py):
+    curator_agent ya opera sobre UN run fijo durante toda su tarea."""
+
+    def record_authorship_verdict_bound(
+        document_id: str,
+        is_by_author: bool,
+        confidence: float,
+        text_type: Literal["original_prose", "review", "summary", "biography", "interview", "other"],
+        reasoning: str,
+    ) -> dict:
+        """Registra el veredicto de autoria que EL AGENTE ya evaluo para
+        `document_id` y devuelve la decision de gating ("keep" / "needs_human_review"
+        / "drop")."""
+        return record_authorship_verdict(run_id, document_id, is_by_author, confidence, text_type, reasoning)
+
+    def record_voice_score_bound(
+        document_id: str,
+        chunk_id: str,
+        distinctiveness: float,
+        is_boilerplate: bool,
+        reasoning: str,
+    ) -> dict:
+        """Registra el puntaje de distintividad de voz que EL AGENTE ya evaluo para
+        un chunk. decision="keep"/"drop"/"target_reached" segun el threshold y el
+        objetivo de chunks por documento."""
+        return record_voice_score(run_id, document_id, chunk_id, distinctiveness, is_boilerplate, reasoning)
+
+    record_authorship_verdict_bound.__name__ = "record_authorship_verdict"
+    record_voice_score_bound.__name__ = "record_voice_score"
+
+    return {
+        "record_authorship_verdict": record_authorship_verdict_bound,
+        "record_voice_score": record_voice_score_bound,
+    }

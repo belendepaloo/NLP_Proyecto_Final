@@ -104,9 +104,16 @@ def main() -> int:
     )
     args = parser.parse_args()
 
+    # run_id se resuelve ANTES de build_orchestrator() -- se bindea via closure en las
+    # tools del orquestador y de cada subagente (ver agents/orchestrator.py), asi que
+    # tiene que existir antes de construir el grafo, no despues.
+    run_id = args.run_id or f"agentic_{args.author.lower().replace(' ', '_')}_{uuid.uuid4().hex[:8]}"
+    config = {"configurable": {"thread_id": run_id}}
+
     db_path = str(settings.runs_dir / "_checkpoints.sqlite")
     with SqliteSaver.from_conn_string(db_path) as checkpointer:
         orchestrator = build_orchestrator(
+            run_id=run_id,
             checkpointer=checkpointer,
             agent_model=args.agent_model,
             target_provider=args.target_provider,
@@ -114,13 +121,9 @@ def main() -> int:
         )
 
         if args.run_id:
-            run_id = args.run_id
-            config = {"configurable": {"thread_id": run_id}}
             print(f"=== Retomando run {run_id} (checkpoint persistente) ===")
             result = orchestrator.invoke(None, config=config)
         else:
-            run_id = f"agentic_{args.author.lower().replace(' ', '_')}_{uuid.uuid4().hex[:8]}"
-            config = {"configurable": {"thread_id": run_id}}
             initial_message = (
                 f"Autor: {args.author}. run_id: {run_id}. Pedile a bibliography_agent "
                 f"{args.n_texts} textos candidatos y corre el pipeline completo desde ahi."

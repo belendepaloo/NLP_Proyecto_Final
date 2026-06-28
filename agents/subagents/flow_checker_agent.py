@@ -3,15 +3,18 @@ flow_checker_agent — invocado por el orquestador DESPUES de cada etapa para va
 que lo que se produjo tiene sentido, antes de seguir a la proxima. No tiene acceso a
 una skill persistente todavia (eso es Fase 3) -- por ahora solo mira los artifacts del
 run actual.
+
+build_flow_checker_subagent(run_id) en vez de un dict estatico: mismo motivo que los
+otros subagentes -- run_id queda bindeado por closure.
 """
 
-from agents.tools.fs_tools import flag_anomaly, list_run_artifacts, read_run_artifact
+from agents.tools.fs_tools import make_run_scoped_fs_tools
 
 SYSTEM_PROMPT = """Sos el agente que chequea que el flujo del pipeline vaya bien. Te
 invocan despues de cada etapa (bibliografia, curacion, SAGE, scoring MIA) con el
-run_id y el nombre de la etapa que acaba de terminar.
+nombre de la etapa que acaba de terminar.
 
-1. Llama a list_run_artifacts(run_id) para ver que se produjo.
+1. Llama a list_run_artifacts() para ver que se produjo.
 2. Llama a read_run_artifact para inspeccionar los artifacts relevantes a la etapa que
    termino.
 3. Evalua cosas como:
@@ -27,7 +30,7 @@ run_id y el nombre de la etapa que acaba de terminar.
      pero no aparece NINGUN chunk suyo, curator_agent se quedo a mitad de camino
      (no es un "drop" legitimo) -- eso es severity="error",
      recommended_action="retry_stage", no "continue".
-4. Llama a flag_anomaly(run_id, stage, severity, message, recommended_action) por
+4. Llama a flag_anomaly(stage, severity, message, recommended_action) por
    cada cosa que encuentres -- severity en ["info","warning","error"],
    recommended_action en ["continue","retry_stage","skip_item","escalate_to_human"].
    Si todo esta bien, llama a flag_anomaly con severity="info" y
@@ -36,9 +39,14 @@ run_id y el nombre de la etapa que acaba de terminar.
 No tomes la decision final vos -- tu trabajo es señalar, el orquestador decide que
 hacer con recommended_action."""
 
-flow_checker_subagent = {
-    "name": "flow_checker_agent",
-    "description": "Valida que la etapa que acaba de terminar produjo resultados razonables antes de seguir.",
-    "system_prompt": SYSTEM_PROMPT,
-    "tools": [list_run_artifacts, read_run_artifact, flag_anomaly],
-}
+
+def build_flow_checker_subagent(run_id: str) -> dict:
+    """Devuelve el SubAgent spec de flow_checker_agent con sus tools bindeadas a
+    `run_id` (ver el docstring del modulo)."""
+    fs = make_run_scoped_fs_tools(run_id)
+    return {
+        "name": "flow_checker_agent",
+        "description": "Valida que la etapa que acaba de terminar produjo resultados razonables antes de seguir.",
+        "system_prompt": SYSTEM_PROMPT,
+        "tools": [fs["list_run_artifacts"], fs["read_run_artifact"], fs["flag_anomaly"]],
+    }

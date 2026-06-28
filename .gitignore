@@ -84,3 +84,9 @@ runs/
 # vivo durante un run, no son parte de la skill versionada.
 agents/skills/large_tool_results/
 agents/skills/tmp/
+
+# ==========================================
+# Credenciales (service accounts, etc.)
+# ==========================================
+
+credentials/

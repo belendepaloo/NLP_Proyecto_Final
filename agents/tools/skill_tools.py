@@ -15,7 +15,7 @@ from __future__ import annotations
 import csv
 import json
 from datetime import UTC, datetime
-from typing import Literal
+from typing import Callable, Literal
 
 from mia_common.settings import settings
 
@@ -67,3 +67,33 @@ def record_calibration(
             writer.writerow(["timestamp", "run_id", "method", "metric", "value", "notes"])
         writer.writerow([_now(), run_id, method, metric, value, notes])
     return {"run_id": run_id, "method": method, "metric": metric, "value": value, "notes": notes}
+
+
+def make_run_scoped_skill_tools(run_id: str) -> dict[str, Callable]:
+    """Devuelve record_learning/record_calibration con `run_id` ya fijo via closure --
+    mismo motivo que make_run_scoped_fs_tools (agents/tools/fs_tools.py): el
+    orquestador es el unico que llama a estos, y run_id es constante durante todo el
+    run, asi que no hay razon para dejar que lo tipee de nuevo cada vez (y arriesgue
+    contaminar el log de aprendizajes ENTRE runs con un run_id mal escrito)."""
+
+    def record_learning_bound(stage: str, learning: str, severity: Literal["info", "warning", "critical"]) -> dict:
+        """Agrega una linea a agents/skills/pipeline-learnings/learnings.jsonl -- algo
+        que valga la pena que un run futuro sepa (un bug, un patron de falla
+        recurrente, un ajuste que funciono). Llamalo al final de cada run, exito o
+        falla parcial."""
+        return record_learning(run_id, stage, learning, severity)
+
+    def record_calibration_bound(
+        method: Literal["sage", "decop", "simia", "dualtest", "ensemble"],
+        metric: str,
+        value: float,
+        notes: str = "",
+    ) -> dict:
+        """Agrega una fila a agents/skills/pipeline-learnings/calibration_history.csv --
+        un numero agregado de este run (ej. separacion member/non-member promedio)."""
+        return record_calibration(run_id, method, metric, value, notes)
+
+    record_learning_bound.__name__ = "record_learning"
+    record_calibration_bound.__name__ = "record_calibration"
+
+    return {"record_learning": record_learning_bound, "record_calibration": record_calibration_bound}
