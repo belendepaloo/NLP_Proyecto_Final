@@ -203,6 +203,48 @@ def get_run(run_id: str) -> RunHandle | None:
         return _RUNS.get(run_id)
 
 
+def _guess_author_from_run_id(run_id: str) -> str:
+    """Heuristica solo para mostrar algo legible en la vista degradada (ver
+    reconstruct_handle_from_disk) -- start_run() genera run_id como
+    f"webapp_{author.lower().replace(' ', '_')}_{uuid.uuid4().hex[:8]}", asi que le
+    sacamos el prefijo "webapp_" y el sufijo de 8 hex random para recuperar el autor."""
+    slug = run_id.removeprefix("webapp_")
+    head, _, tail = slug.rpartition("_")
+    if head and len(tail) == 8 and all(c in "0123456789abcdef" for c in tail):
+        slug = head
+    return slug.replace("_", " ").title()
+
+
+def reconstruct_handle_from_disk(run_id: str) -> RunHandle:
+    """Vista degradada para cuando el RunHandle en memoria se perdio (reinicio del
+    server -- _RUNS es un dict en memoria, no sobrevive) pero runs/<run_id>/ sigue en
+    disco con artifacts reales. Bug real: GET /runs/{run_id} tiraba 404 en este caso,
+    aunque el run hubiera terminado bien -- un reinicio de uvicorn en desarrollo activo
+    (pasa todo el tiempo) volvia invisible cualquier run anterior.
+
+    status="error" a proposito, no "done": no hay forma de saber desde aca si el run
+    realmente termino, se trabo a mitad de camino, o quedo esperando una revision
+    humana que nunca se va a poder resolver (el pending_interrupt tambien vivia solo en
+    memoria) -- afirmar "done" sin evidencia real seria mentir. Los artifacts/resultados
+    reales (ver webapp/results.py, que lee directo de disco) se muestran igual en la
+    pantalla, independiente de este status."""
+    return RunHandle(
+        run_id=run_id,
+        author=_guess_author_from_run_id(run_id),
+        target_provider="?",
+        target_model_name="?",
+        status="error",
+        error=(
+            "El servidor se reinicio despues de este run -- no queda estado en memoria "
+            "para saber con certeza si termino bien, se trabo, o seguia esperando una "
+            "revision humana. Esta vista se reconstruyo desde los artifacts reales en "
+            "disco (ver el resultado y los artifacts abajo). Si quedo una pausa de "
+            "revision humana sin resolver, hay que reanudar por CLI "
+            "(scripts/run_pipeline_agentic.py --run-id) o arrancar un run nuevo."
+        ),
+    )
+
+
 def submit_decision(run_id: str, decisions: list[dict[str, Any]]) -> None:
     handle = get_run(run_id)
     if handle is None:

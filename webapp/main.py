@@ -20,7 +20,8 @@ from fastapi.templating import Jinja2Templates
 
 from agents.tools.fs_tools import list_run_artifacts
 from mia_common.settings import settings
-from webapp.run_manager import TARGET_MODEL_CHOICES, get_run, start_run, submit_decision
+from webapp.results import build_results
+from webapp.run_manager import TARGET_MODEL_CHOICES, get_run, reconstruct_handle_from_disk, start_run, submit_decision
 
 BASE_DIR = Path(__file__).resolve().parent
 
@@ -62,9 +63,16 @@ def create_run(author: str = Form(...), n_texts: int = Form(5), target_provider:
 @app.get("/runs/{run_id}", response_class=HTMLResponse)
 def run_page(request: Request, run_id: str) -> HTMLResponse:
     handle = get_run(run_id)
-    if handle is None:
-        raise HTTPException(404, f"run '{run_id}' no encontrado (el server se reinicio?)")
     artifacts = list_run_artifacts(run_id)
+    if handle is None:
+        if not artifacts:
+            raise HTTPException(404, f"run '{run_id}' no encontrado (ni en memoria ni en disco)")
+        # El handle en memoria se perdio (reinicio del server) pero quedan artifacts
+        # reales en runs/<run_id>/ -- mostrar una vista degradada en vez de un 404 que
+        # esconde un run que en realidad si produjo resultados (ver el docstring de
+        # reconstruct_handle_from_disk).
+        handle = reconstruct_handle_from_disk(run_id)
+    results = build_results(run_id)
     action_requests = (handle.pending_interrupt or {}).get("action_requests", [])
     return templates.TemplateResponse(
         request,
@@ -73,6 +81,7 @@ def run_page(request: Request, run_id: str) -> HTMLResponse:
             "run": handle,
             "artifacts": artifacts,
             "action_requests": action_requests,
+            "results": results,
         },
     )
 

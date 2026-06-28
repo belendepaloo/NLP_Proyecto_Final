@@ -45,12 +45,11 @@ class Settings(BaseSettings):
     hf_token: str | None = None
 
     # Limite duro de gasto (USD) para agent_model cuando es un modelo facturado por uso
-    # (Vertex AI) -- ver mia_common/spend_guard.py. Por debajo de lo que el usuario
-    # autorizo a proposito (no del limite real de $10 de credito): el calculo de costo
-    # ANTES de cada llamada es una estimacion (no se sabe cuanto va a generar el modelo
-    # todavia), asi que se deja margen para no pasarse del limite real por error de
-    # estimacion. Subido de $4.50 a $9.00 (usuario autorizo $10 de credito).
-    agent_model_spend_cap_usd: float = 9.0
+    # (Vertex AI) -- ver mia_common/spend_guard.py. El calculo de costo ANTES de cada
+    # llamada es una estimacion (no se sabe cuanto va a generar el modelo todavia).
+    # Tope en $15.00 (usuario agrego $15 de credito nuevo y pidio el tope exacto en
+    # ese valor, sin margen adicional esta vez).
+    agent_model_spend_cap_usd: float = 15.0
 
     # Lista de keys de Groq separadas por coma (GROQ_API_KEYS=key1,key2,key3), para
     # paralelizar con un pool de clientes (mia_common.target_client.TargetClientPool)

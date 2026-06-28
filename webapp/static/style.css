@@ -341,6 +341,32 @@ pre {
 
 .empty-state { color: var(--ink-soft); font-style: italic; }
 
+/* ---------- results table ---------- */
+
+.card--results { border-left: 5px solid var(--gold); }
+
+.results-summary { font-size: 1rem; }
+.results-summary__n { color: var(--ink-soft); font-size: 0.85rem; }
+
+.results-text { margin-top: 1.2rem; }
+.results-text h4 { margin: 0 0 0.5rem; color: var(--maroon-dark); font-size: 0.95rem; }
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+.results-table th, .results-table td {
+  text-align: left;
+  padding: 0.45rem 0.6rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.results-table th { color: var(--maroon-dark); font-weight: 700; }
+.results-table tbody tr:hover { background: var(--cream); }
+.results-table__reason { color: var(--ink-soft); font-size: 0.78rem; }
+
 /* ---------- pipeline steps (landing) ---------- */
 
 .steps {

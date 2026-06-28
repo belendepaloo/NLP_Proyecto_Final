@@ -64,6 +64,45 @@
     </section>
   {% endif %}
 
+  {% if results %}
+    <section class="card card--results">
+      <h3>🎯 Resultado de MIA (recalculado desde los artifacts en disco)</h3>
+      <p class="results-summary">
+        Probabilidad de membership del autor:
+        <strong>{{ "%.3f" | format(results.author_probability) if results.author_probability is not none else "—" }}</strong>
+        <span class="results-summary__n">({{ results.n_texts_scored }}/{{ results.n_texts_total }} textos puntuados)</span>
+      </p>
+      {% for text in results.texts %}
+        <div class="results-text">
+          <h4>
+            <code>{{ text.document_id }}</code> —
+            {{ "%.3f" | format(text.text_probability) if text.text_probability is not none else "—" }}
+            <span class="results-summary__n">({{ text.n_chunks_scored }}/{{ text.n_chunks_total }} chunks)</span>
+          </h4>
+          <table class="results-table">
+            <thead>
+              <tr>
+                <th>chunk</th><th>final</th><th>DE-COP</th><th>SiMIA</th><th>DUALTEST</th><th>motivo</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for chunk in text.chunks %}
+                <tr>
+                  <td><code>{{ chunk.chunk_id }}</code></td>
+                  <td>{{ "%.3f" | format(chunk.final_probability) if chunk.final_probability is not none else "—" }}</td>
+                  <td>{{ "%.3f" | format(chunk.per_method.decop.normalized) if "decop" in chunk.per_method else "—" }}</td>
+                  <td>{{ "%.3f" | format(chunk.per_method.simia.normalized) if "simia" in chunk.per_method else "—" }}</td>
+                  <td>{{ "%.3f" | format(chunk.per_method.dualtest.normalized) if "dualtest" in chunk.per_method else "—" }}</td>
+                  <td class="results-table__reason">{{ chunk.reason or "" }}</td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      {% endfor %}
+    </section>
+  {% endif %}
+
   <section class="card card--artifacts">
     <h3>🗂️ Artifacts en <code>runs/{{ run.run_id }}/</code></h3>
     {% if artifacts %}
