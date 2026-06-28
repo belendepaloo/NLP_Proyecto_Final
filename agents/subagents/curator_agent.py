@@ -38,6 +38,10 @@ document_id de la lista del PASO -1, fijate en list_run_artifacts()["curation"] 
 existe "authorship_{document_id}.json" -- si ya existe, ESE documento ya se evaluo en
 una ronda anterior, saltealo por completo (no lo leas, no lo re-juzgues, no lo cuentes
 de nuevo). Procesa SOLO los document_id que todavia no tengan ese artifact.
+record_authorship_verdict ADEMAS tiene su PROPIO freno en codigo para esto -- si lo
+llamas para un document_id que ya tiene veredicto, te devuelve el veredicto VIEJO sin
+pisarlo ("already_recorded": true) -- pero no dependas de eso, chequear antes te
+ahorra la llamada entera.
 
 PASO 0 -- Confirmar que hay chunks reales (OBLIGATORIO, antes de cualquier otra cosa):
 bibliography_agent ya descargo, recorto a ~15 paginas, y chunkeo cada candidato -- vos
@@ -51,13 +55,31 @@ resumen final como descartado por "sin chunks", NO llames a record_authorship_ve
 para el (no hay nada que evaluar).
 
 PASO 2 -- Veredicto de autoria, sobre una MUESTRA de chunks (no el documento completo
--- nunca tenes ni necesitas el texto completo del documento, eso es deliberado). Llama
-a read_run_artifact("curation", f"chunk_{document_id}_0") y, si hay un segundo chunk
-listado, tambien f"chunk_{document_id}_1" -- con eso alcanza para juzgar si es prosa
-real del autor (un chunk de ~128 tokens de boilerplate/resumen/resena se nota igual
-que uno mas largo). El texto de los chunks ya viene limpio (bibliography_tools.
-fetch_and_chunk_document ya lo limpia antes de chunkear) -- no hace falta limpiarlo de
-nuevo:
+-- nunca tenes ni necesitas el texto completo del documento, eso es deliberado).
+
+OJO -- bug real que ya paso: los primeros chunks de un libro casi SIEMPRE son
+boilerplate (credito del editor/transcriptor, licencia, portada) ANTES de llegar a la
+prosa real, y CUANTO ocupa ese boilerplate varia mucho segun la fuente (Standard
+Ebooks, por ejemplo, ocupa los primeros DOS chunks completos -- mas que Gutenberg o
+archive.org). Si juzgas SOLO el/los primeros 1-2 chunks y son boilerplate, NO podes
+concluir "no es del autor" -- estarias juzgando al editor, no al autor. Procedimiento:
+
+1. Llama a read_run_artifact("curation", f"chunk_{document_id}_0").
+2. Si ese chunk es CLARAMENTE boilerplate (credito de transcripcion/edicion, licencia,
+   informacion de la editorial, portada -- no prosa narrativa ni ensayo), NO juzgues
+   autoria todavia: pedi el siguiente chunk (f"chunk_{document_id}_1"), despues el
+   siguiente (f"_2"), asi hasta encontrar uno que SI sea prosa sustancial -- hasta un
+   maximo de 5 chunks (si los primeros 5 son TODOS boilerplate, ahi si es razonable
+   sospechar que la fuente no tiene contenido util; anotalo como tal, no como "no es
+   del autor").
+3. Juzga autoria sobre el PRIMER chunk sustancial que encontraste (no sobre los
+   chunks de boilerplate que saltaste) -- un chunk de ~128 tokens de prosa real
+   alcanza para juzgar si es del autor (un chunk de boilerplate/resumen/resena se nota
+   igual que uno mas largo, pero tiene que ser un chunk que REALMENTE intente ser
+   prosa, no metadata del editor).
+
+El texto de los chunks ya viene limpio (bibliography_tools.fetch_and_chunk_document ya
+lo limpia antes de chunkear) -- no hace falta limpiarlo de nuevo:
 Evalua si el texto es PROSA ORIGINAL ESCRITA POR el autor, no una resena,
 resumen, biografia, entrevista, o articulo de Wikipedia SOBRE el autor.
 

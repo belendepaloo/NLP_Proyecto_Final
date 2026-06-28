@@ -49,7 +49,7 @@ class Settings(BaseSettings):
     # llamada es una estimacion (no se sabe cuanto va a generar el modelo todavia).
     # Tope en $15.00 (usuario agrego $15 de credito nuevo y pidio el tope exacto en
     # ese valor, sin margen adicional esta vez).
-    agent_model_spend_cap_usd: float = 15.0
+    agent_model_spend_cap_usd: float = 20.0
 
     # Lista de keys de Groq separadas por coma (GROQ_API_KEYS=key1,key2,key3), para
     # paralelizar con un pool de clientes (mia_common.target_client.TargetClientPool)
@@ -90,14 +90,17 @@ class Settings(BaseSettings):
 
     # Cuantos chunks CURADOS (que pasaron el filtro de voz) busca curator_agent por
     # documento en la Fase 2 agentica -- distinto de chunks_per_text de arriba (esa es
-    # una muestra de chunks CRUDOS, sin curar, que usa la Fase 1 manual). Medido en
-    # vivo: juzgar la voz de los 51 chunks de un cuento entero con gemini-2.5-pro
-    # (modelo "thinking") consumio la mayoria de un presupuesto de Vertex AI de $4.50
-    # antes de llegar a SAGE/MIA. curator_agent tiene que pedir de a poco (un batch
-    # chico, despues de a uno mas si algo se descarta) hasta llegar a este numero, no
-    # juzgar el documento entero y filtrar despues.
-    curator_target_chunks_per_text: int = 5
-    curator_initial_batch_size: int = 6  # target + margen chico, para no tener que pedir de a uno desde el principio
+    # una muestra de chunks CRUDOS, sin curar, que usa la Fase 1 manual). Subido de 5 a
+    # 20 a pedido del usuario (mas chunks = estadistica mas robusta para la
+    # probabilidad final) -- OJO: el juicio de voz es UNA llamada "thinking" de
+    # gemini-2.5-pro POR CHUNK, el driver de costo mas grande del pipeline (medido en
+    # vivo: juzgar la voz de 51 chunks crudos consumio la mayoria de un presupuesto de
+    # $4.50). Subir esto a 20 multiplica ese costo ~4x respecto del default anterior
+    # (5) -- vigilar agent_model_spend_cap_usd. curator_agent sigue pidiendo de a poco
+    # (un batch chico, despues de a uno mas si algo se descarta) hasta llegar a este
+    # numero, no juzga el documento entero de una.
+    curator_target_chunks_per_text: int = 20
+    curator_initial_batch_size: int = 21  # target + margen chico, para no tener que pedir de a uno desde el principio
 
     # DUALTEST contra un target sin tokenizer (API): split_by_words necesita
     # prefijo+continuacion en PALABRAS que entren dentro de un chunk de ~128 tokens

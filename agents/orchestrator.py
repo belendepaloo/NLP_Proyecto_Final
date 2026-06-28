@@ -24,6 +24,7 @@ from typing import Any
 
 from deepagents import create_deep_agent
 from deepagents.backends import FilesystemBackend
+from langchain.agents.middleware import AgentMiddleware, ModelRequest, ModelResponse
 from langgraph.checkpoint.base import BaseCheckpointSaver
 
 from agents.ensemble.combine import aggregate_chunk_scores, aggregate_text_scores, combine_scores
@@ -33,6 +34,54 @@ from agents.tools.skill_tools import make_run_scoped_skill_tools
 from mia_common.settings import settings
 from mia_common.spend_guard import VertexSpendGuardCallback
 from mia_common.target_client import resolve_target_client
+
+_MAX_MODEL_RETRIES = 2
+
+
+def message_has_real_content(msg: Any) -> bool:
+    """True si `msg` (un AIMessage) tiene texto real o tool_calls -- False si es un
+    AIMessage "vacio" (sin texto Y sin tool_calls), la firma de un glitch transitorio
+    de Gemini (Vertex AI rechaza una tool call mal formada -- ej. generada como codigo
+    Python en vez de function-call real, finish_reason "Unexpected tool call: print(
+    default_api.task(...))" -- y el mensaje vuelve vacio en vez de un error visible).
+    El content de un AIMessage puede ser un string O una lista de bloques (modelos
+    "thinking" como gemini-2.5-pro), por eso esto maneja los dos casos -- usado tanto
+    aca (RetryEmptyResponseMiddleware) como en webapp/run_manager.py."""
+    if getattr(msg, "tool_calls", None):
+        return True
+    content = getattr(msg, "content", None)
+    if isinstance(content, str):
+        return bool(content.strip())
+    if isinstance(content, list):
+        return any(
+            (isinstance(b, str) and b.strip()) or (isinstance(b, dict) and b.get("text"))
+            for b in content
+        )
+    return bool(content)
+
+
+class RetryEmptyResponseMiddleware(AgentMiddleware):
+    """Reintenta la llamada al modelo (hasta _MAX_MODEL_RETRIES veces) si devuelve un
+    AIMessage vacio -- ver message_has_real_content. Sin esto, el glitch se confunde
+    con "el agente ya termino, no tiene nada mas que hacer": visto en vivo en DOS
+    lugares distintos -- el orquestador (no llegaba a delegar a bibliography_agent) Y
+    un subagente (curator_agent volvio vacio sin haber llamado nunca a
+    record_authorship_verdict, y el run siguio de largo como si curacion hubiera
+    terminado bien -- flow_checker_agent fue quien lo detecto recien una etapa
+    despues). Se engancha via wrap_model_call, que deepagents llama para CUALQUIER
+    agente al que se le agregue esta middleware -- por eso se agrega una instancia al
+    orquestador Y a cada subagente en build_orchestrator(), en vez de reimplementar el
+    reintento en cada lugar que invoca un agente."""
+
+    def wrap_model_call(
+        self, request: ModelRequest, handler: Any
+    ) -> ModelResponse:
+        response = handler(request)
+        attempt = 0
+        while attempt < _MAX_MODEL_RETRIES and response.result and not message_has_real_content(response.result[-1]):
+            attempt += 1
+            response = handler(request)
+        return response
 
 
 def _resolve_agent_model(agent_model: str) -> str | Any:
@@ -180,12 +229,19 @@ def build_orchestrator(
     fs = make_run_scoped_fs_tools(run_id)
     skill = make_run_scoped_skill_tools(run_id)
     subagents = [*build_static_subagents(run_id), build_mia_subagent(run_id, target_client)]
+    # RetryEmptyResponseMiddleware tiene que ir en CADA subagente por separado, no solo
+    # en el orquestador -- cada subagent spec arma su propio stack de middleware (ver
+    # deepagents/middleware/subagents.py), el `middleware=` de create_deep_agent de aca
+    # abajo solo aplica al agente top-level.
+    for subagent in subagents:
+        subagent.setdefault("middleware", []).append(RetryEmptyResponseMiddleware())
     return create_deep_agent(
         model=_resolve_agent_model(agent_model or settings.agent_model),
         tools=[combine_scores, aggregate_chunk_scores, aggregate_text_scores,
                fs["write_run_artifact"], fs["read_run_artifact"], fs["list_run_artifacts"],
                skill["record_learning"], skill["record_calibration"]],
         subagents=subagents,
+        middleware=[RetryEmptyResponseMiddleware()],
         system_prompt=ORCHESTRATOR_SYSTEM_PROMPT,
         checkpointer=checkpointer,
         backend=skills_backend,

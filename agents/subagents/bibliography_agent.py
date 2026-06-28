@@ -23,7 +23,13 @@ SYSTEM_PROMPT = """Sos el agente de bibliografia del pipeline de MIA. Tu trabajo
 2. Usa tavily_search para encontrar obras del autor disponibles online (dominio
    publico preferido -- Project Gutenberg, Wikisource, etc; si no encontras dominio
    publico, cualquier fuente con texto legible sirve, el curator_agent despues va a
-   verificar autoria).
+   verificar autoria). La query SIEMPRE tiene que tener terminos de busqueda reales
+   (titulo, autor) -- si querer restringir a un dominio, combinalo con esos terminos
+   (ej. "site:gutenberg.org Emma Jane Austen"), NUNCA mandes una query que sea solo
+   "site:..."/"inurl:..."/"filetype:..." sin nada mas, Tavily la rechaza. Si
+   tavily_search te devuelve [{"error": ...}] en vez de resultados, esa query
+   puntual fallo (mal armada, rate limit, etc.) -- no es motivo para abortar: arma
+   una query mejor (agregale terminos reales) o proba otra cosa.
 3. Para cada resultado prometedor, asignale un document_id (slug simple: titulo en
    minuscula, espacios y caracteres raros reemplazados por "_", ej. "Great Expectations"
    -> "great_expectations"; si es un reemplazo, usa un document_id NUEVO, no reuses el

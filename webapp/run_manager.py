@@ -23,7 +23,7 @@ from typing import Any, Literal
 from langgraph.checkpoint.sqlite import SqliteSaver
 from langgraph.types import Command
 
-from agents.orchestrator import build_orchestrator
+from agents.orchestrator import build_orchestrator, message_has_real_content
 from mia_common.settings import settings
 
 RunStatus = Literal["running", "waiting_human", "done", "error"]
@@ -147,20 +147,21 @@ def _run_loop(handle: RunHandle, initial_message: str, config: dict[str, Any]) -
 
                 last = result["messages"][-1]
                 content = _extract_text(last.content) if hasattr(last, "content") else str(last)
-                has_tool_calls = bool(getattr(last, "tool_calls", None))
                 # Respuesta vacia (sin texto Y sin tool_calls) significa que el modelo no
                 # produjo ni una respuesta final real ni el siguiente paso -- visto en vivo
                 # con gemini-2.5-pro devolviendo finish_reason="Unexpected tool call" cuando
-                # genera la tool call de delegacion en un formato invalido. Tratarlo como
-                # "done" silencioso (como hacia antes) deja un run que no hizo nada parecer
-                # exitoso. Reintentar empujando al modelo, acotado, antes de rendirse.
-                if not content.strip() and not has_tool_calls and empty_retries < _MAX_EMPTY_RETRIES:
+                # genera la tool call de delegacion en un formato invalido. RetryEmptyResponseMiddleware
+                # (agents/orchestrator.py) ya reintenta esto DENTRO de cada llamada al modelo
+                # (orquestador y subagentes) -- esto de aca es la red de seguridad para cuando
+                # el glitch persiste incluso despues de esos reintentos. Tratarlo como "done"
+                # silencioso (como hacia antes) deja un run que no hizo nada parecer exitoso.
+                if not message_has_real_content(last) and empty_retries < _MAX_EMPTY_RETRIES:
                     empty_retries += 1
                     result = orchestrator.invoke(
                         {"messages": [{"role": "user", "content": _EMPTY_RETRY_NUDGE}]}, config=config
                     )
                     continue
-                if not content.strip() and not has_tool_calls:
+                if not message_has_real_content(last):
                     handle.set_error(
                         f"El modelo devolvio una respuesta vacia {_MAX_EMPTY_RETRIES + 1} veces "
                         "seguidas (glitch transitorio de Gemini al generar una tool call) -- "

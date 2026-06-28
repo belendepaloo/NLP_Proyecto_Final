@@ -43,9 +43,24 @@ def _get_tavily_client():
 
 def tavily_search(query: str, max_results: int = 5) -> list[dict]:
     """Busca en la web (Tavily) y devuelve una lista de {title, url, snippet} -- usar
-    para encontrar la bibliografia/obras de un autor, ediciones de dominio publico, etc."""
+    para encontrar la bibliografia/obras de un autor, ediciones de dominio publico, etc.
+
+    `query` tiene que tener termino(s) de busqueda reales, no solo operadores tipo
+    `site:`/`inurl:`/`filetype:` -- Tavily rechaza una query que sea SOLO eso (bug real
+    visto en vivo: "site:gutenberg.org/ebooks/158" sin ningun otro termino crasheaba el
+    run entero). Si necesitas restringir a un dominio, combinalo con palabras reales
+    (ej. "site:gutenberg.org Emma Jane Austen"), no lo mandes solo.
+
+    NO lanza excepcion si Tavily rechaza la query o falla la llamada -- devuelve
+    [{"error": ...}] en vez de la lista de resultados. Motivo: una sola busqueda mal
+    armada (mismo principio que fetch_url con una URL caida) no tiene que tirar abajo
+    el run entero -- el agente que llama a esto tiene que poder ver el error y probar
+    una query mejor."""
     client = _get_tavily_client()
-    resp = client.search(query=query, max_results=max_results)
+    try:
+        resp = client.search(query=query, max_results=max_results)
+    except Exception as e:  # noqa: BLE001 -- cualquier falla de Tavily (query invalida, rate limit, red) es recuperable
+        return [{"error": f"{type(e).__name__}: {e}"}]
     return [
         {"title": r.get("title"), "url": r.get("url"), "snippet": r.get("content", "")[:500]}
         for r in resp.get("results", [])

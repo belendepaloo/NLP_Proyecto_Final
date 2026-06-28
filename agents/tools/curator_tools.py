@@ -34,7 +34,22 @@ def record_authorship_verdict(
       - "needs_human_review": confidence en zona borderline -- mostrar en la pantalla
         de revision en vez de descartar en silencio.
       - "drop": no es texto del autor (resena/resumen/biografia/etc), se descarta.
-    """
+
+    Freno duro en CODIGO (no solo en el prompt): si `document_id` YA tiene un
+    veredicto registrado (de esta corrida o de una ronda de reemplazo anterior), esta
+    llamada NO lo pisa -- devuelve el veredicto EXISTENTE con "already_recorded": true.
+    Bug real que motivo esto: curator_agent reproceso "emma" en una ronda de reemplazo
+    aunque ya tenia veredicto de la ronda anterior (el prompt ya le decia que lo
+    saltee, pero un LLM no sigue esa instruccion el 100% de las veces) -- gasto ~22
+    llamadas de voz de mas Y termino pisando el veredicto con uno inconsistente. Un
+    veredicto de autoria, una vez registrado, es el registro historico de esa ronda --
+    nunca se pisa solo."""
+    try:
+        existing = read_run_artifact(run_id, "curation", f"authorship_{document_id}")
+        return {**existing, "already_recorded": True}
+    except FileNotFoundError:
+        pass
+
     low, high = settings.authorship_review_band
     if not is_by_author:
         decision = "drop"
