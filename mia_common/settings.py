@@ -49,7 +49,7 @@ class Settings(BaseSettings):
     # llamada es una estimacion (no se sabe cuanto va a generar el modelo todavia).
     # Tope en $15.00 (usuario agrego $15 de credito nuevo y pidio el tope exacto en
     # ese valor, sin margen adicional esta vez).
-    agent_model_spend_cap_usd: float = 20.0
+    agent_model_spend_cap_usd: float = 40.0
 
     # Lista de keys de Groq separadas por coma (GROQ_API_KEYS=key1,key2,key3), para
     # paralelizar con un pool de clientes (mia_common.target_client.TargetClientPool)
