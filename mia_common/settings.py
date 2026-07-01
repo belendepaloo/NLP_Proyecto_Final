@@ -78,7 +78,7 @@ class Settings(BaseSettings):
     # curator_agent descarta un candidato (autoria=drop, o 0 chunks "keep" tras voz) --
     # acotado para no generar un loop de costo si el autor simplemente no tiene mas
     # textos disponibles online.
-    bibliography_max_replacement_rounds: int = 1
+    bibliography_max_replacement_rounds: int = 2
 
     # Cuantos chunks por texto entran al pipeline costoso (SAGE + 3 metodos MIA).
     # Control de costo/computo, no de cuantos chunks existen en el dataset -- eso lo

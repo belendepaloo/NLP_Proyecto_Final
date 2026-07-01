@@ -50,8 +50,14 @@ def write_run_artifact(run_id: str, stage: str, name: str, data: dict[str, Any])
 
 def read_run_artifact(run_id: str, stage: str, name: str) -> Any:
     """Lee de vuelta el artifact escrito por write_run_artifact en
-    runs/<run_id>/<stage>/<name>.json (pasar `name` SIN extension)."""
+    runs/<run_id>/<stage>/<name>.json (pasar `name` SIN extension).
+    Si el archivo no existe, devuelve {"error": "not_found", "path": str(path)} en vez
+    de lanzar -- LangGraph solo convierte ToolInvocationError en mensajes legibles para
+    el agente; cualquier otra excepcion mata el run entero sin mensaje util. Siempre
+    chequear "error" in result antes de acceder al contenido."""
     path = _artifact_path(run_id, stage, name)
+    if not path.exists():
+        return {"error": "not_found", "path": str(path)}
     return json.loads(path.read_text())
 
 

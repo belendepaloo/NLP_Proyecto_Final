@@ -399,6 +399,55 @@ pre {
   .steps { grid-template-columns: 1fr; }
 }
 
+/* ---------- candidate review cards ---------- */
+
+.candidate-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.candidate-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) - 4px);
+  padding: 0.7rem 0.9rem;
+}
+
+.candidate-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.candidate-card__meta strong { font-size: 0.93rem; }
+.candidate-card__meta code { font-size: 0.78rem; color: var(--ink-soft); }
+.candidate-card__meta a { font-size: 0.78rem; word-break: break-all; }
+
+.candidate-card__preview {
+  margin: 0;
+  padding: 0.45rem 0.7rem;
+  border-left: 3px solid var(--gold);
+  background: var(--cream);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  max-height: 7rem;
+  overflow-y: auto;
+}
+
+.candidate-card__no-preview {
+  font-size: 0.78rem;
+  color: var(--maroon-light);
+  font-style: italic;
+  margin: 0;
+}
+
 /* ---------- footer ---------- */
 
 .site-footer {

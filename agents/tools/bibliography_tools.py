@@ -160,7 +160,7 @@ def fetch_and_chunk_document(run_id: str, document_id: str, url: str, target: in
         "chunk_ids": chunk_ids,
         "n_chars_used": len(capped),
         "n_chars_available": len(cleaned),
-        "preview": capped[:300],
+        "preview": capped[:800],
     }
 
 
@@ -190,11 +190,8 @@ def propose_candidate_texts(run_id: str, candidates: list[dict]) -> dict:
     candidatos nuevos -- si pisara el archivo entero, se perderian los candidatos
     aprobados en la primera ronda. Mergea por document_id (un id repetido pisa solo esa
     entrada, no el resto)."""
-    existing = []
-    try:
-        existing = read_run_artifact(run_id, "bibliography", "candidates")["candidates"]
-    except FileNotFoundError:
-        pass
+    existing_artifact = read_run_artifact(run_id, "bibliography", "candidates")
+    existing = existing_artifact.get("candidates", []) if "error" not in existing_artifact else []
 
     by_id = {c["document_id"]: c for c in existing}
     for c in candidates:

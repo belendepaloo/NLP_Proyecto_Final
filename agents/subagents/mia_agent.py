@@ -61,9 +61,9 @@ estan configurados para todo este run, no son algo que vos elijas. Para CADA chu
 
 0. Llama a list_run_artifacts() UNA vez (la lista te sirve para todos los
    chunk_id, no hace falta repetirla). NUNCA llames a read_run_artifact para un
-   archivo que no viste listado primero -- tira una excepcion que frena el run
-   ENTERO (a diferencia de las tools de scoring, que devuelven skipped=true en vez de
-   excepcionar). Fijate si "chunk_{chunk_id}.json" esta en "curation" -- si no esta,
+   archivo que no viste listado primero -- devuelve {"error": "not_found"} si no
+   existe (a diferencia de las tools de scoring, que devuelven skipped=true de forma
+   limpia). Fijate si "chunk_{chunk_id}.json" esta en "curation" -- si no esta,
    ese chunk_id no es real, anotalo como error y segui con el siguiente. Si esta,
    llama a read_run_artifact("curation", f"chunk_{chunk_id}") para el texto
    verbatim real (el campo "text" de ese artifact). Despues fijate si

@@ -24,6 +24,24 @@
             <span>Tool call</span>
             <code>{{ req.name }}</code>
           </div>
+          {% if req.name == "propose_candidate_texts" and req.args.candidates %}
+            <div class="candidate-list">
+              {% for c in req.args.candidates %}
+                <div class="candidate-card">
+                  <div class="candidate-card__meta">
+                    <strong>{{ c.title or c.document_id }}</strong>
+                    <code>{{ c.document_id }}</code>
+                    <a href="{{ c.source_url }}" target="_blank" rel="noopener">{{ c.source_url }}</a>
+                  </div>
+                  {% if c.preview %}
+                    <blockquote class="candidate-card__preview">{{ c.preview }}</blockquote>
+                  {% else %}
+                    <p class="candidate-card__no-preview">Sin preview disponible — aprobá solo si conocés esta fuente.</p>
+                  {% endif %}
+                </div>
+              {% endfor %}
+            </div>
+          {% endif %}
           <pre>{{ req.args | tojson(indent=2) }}</pre>
         </div>
       {% endfor %}

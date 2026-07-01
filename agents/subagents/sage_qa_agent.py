@@ -27,9 +27,9 @@ de arrancar, llama a list_run_artifacts() UNA vez y guarda esa lista -- la vas a
 necesitar para cada chunk_id sin volver a pedirla. Para CADA chunk_id:
 
 1. Fijate en la lista de "curation" que ya tenes si "chunk_{chunk_id}.json" esta ahi
-   -- NUNCA llames a read_run_artifact para un archivo que no viste listado, tira una
-   excepcion que frena el run ENTERO (a diferencia de las tools de scoring, que
-   devuelven skipped=true en vez de excepcionar). Si no esta listado, ese chunk_id no
+   -- NUNCA llames a read_run_artifact para un archivo que no viste listado: devuelve
+   {"error": "not_found"} si no existe (a diferencia de las tools de scoring, que
+   devuelven skipped=true de forma limpia). Si no esta listado, ese chunk_id no
    es real -- anotalo como error en tu resumen y segui con el siguiente, no inventes
    texto. Si SI esta, llama a read_run_artifact("curation", f"chunk_{chunk_id}")
    para traer el artifact {"document_id", "chunk_id", "text"} que persistio

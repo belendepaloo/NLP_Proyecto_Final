@@ -44,11 +44,9 @@ def record_authorship_verdict(
     llamadas de voz de mas Y termino pisando el veredicto con uno inconsistente. Un
     veredicto de autoria, una vez registrado, es el registro historico de esa ronda --
     nunca se pisa solo."""
-    try:
-        existing = read_run_artifact(run_id, "curation", f"authorship_{document_id}")
+    existing = read_run_artifact(run_id, "curation", f"authorship_{document_id}")
+    if "error" not in existing:
         return {**existing, "already_recorded": True}
-    except FileNotFoundError:
-        pass
 
     low, high = settings.authorship_review_band
     if not is_by_author:

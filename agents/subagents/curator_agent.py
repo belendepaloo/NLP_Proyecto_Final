@@ -22,8 +22,9 @@ PASO -1 -- Cargar la lista de candidatos real (OBLIGATORIO, primero que nada): N
 asumas que la lista de candidatos que te paso el orquestador en el mensaje de la tarea
 es la real. PRIMERO llama a list_run_artifacts() y fijate si "candidates.json"
 aparece bajo "bibliography" -- NUNCA llames a read_run_artifact para un archivo que no
-viste listado ahi, tira una excepcion que frena el run ENTERO (a diferencia de las
-tools de scoring, que devuelven un resultado con skipped=true en vez de excepcionar).
+viste listado ahi -- devuelve {"error": "not_found"} si no existe (a diferencia de las
+tools de scoring, que devuelven skipped=true de forma limpia). Llamar sin chequear
+primero te deja con un dict de error en vez de datos reales.
 Si SI esta listado, ahi si llama a read_run_artifact("bibliography", "candidates") y
 usa SOLO lo que esta ahi (el campo "candidates"). Ese artifact solo puede existir si un
 humano de verdad aprobo una pausa de revision (lo escribe la tool
