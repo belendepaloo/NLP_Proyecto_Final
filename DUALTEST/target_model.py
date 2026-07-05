@@ -1,36 +1,14 @@
-"""
-target_model.py
-
-El modelo "sospechoso" bajo prueba. Segun la Seccion 3.1 (Non-Privileged Access),
-DUALTEST tiene que funcionar con SOLO una llamada black-box por muestra: un prompt
-entra, una completion sale. Sin logits, sin internals.
-
-Soportamos dos backends porque la decision del grupo sobre el target sigue abierta
-(local open-weight vs. API cerrada):
-    - HFLocalTarget: corre un modelo HF local. PODRIAMOS leer sus logits, pero
-      deliberadamente no los usamos en ningun lado del scoring de DUALTEST -- solo el
-      texto generado importa, para mantenernos fieles al supuesto black-box incluso
-      cuando por comodidad tenemos acceso white-box.
-    - APITarget: wrapper delgado sobre cualquier API tipo chat/completions (OpenAI-style,
-      Anthropic-style, etc.). Ustedes traen su propio cliente; esta clase solo
-      estandariza la interfaz .complete().
-
-El Apendice B del paper (experimentos con GPT-4) es el analogo mas parecido a un target
-"real" via API en el paper, y es justo donde el propio paper admite que no puede armar
-un prefijo exacto de 64 tokens porque no tiene acceso al tokenizer de GPT-4 -- caen a
-prefijos de 50 PALABRAS ("Standard" en sus tablas). Replicamos ese fallback en
-prefixing.py.
-"""
+import torch
 
 from dataclasses import dataclass
 from typing import Optional, List, Callable
-import torch
+from transformers import AutoModelForCausalLM, AutoTokenizer
 
 
 @dataclass
 class Completion:
     text: str
-    token_ids: Optional[List[int]] = None  # solo disponible si tenemos un tokenizer compatible
+    token_ids: Optional[List[int]] = None  
 
 
 class HFLocalTarget:
@@ -41,7 +19,6 @@ class HFLocalTarget:
         if device is None:
             device = "cuda" if torch.cuda.is_available() else "cpu"
 
-        from transformers import AutoModelForCausalLM, AutoTokenizer
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
         self.model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype=dtype).to(device)
         self.model.eval()
@@ -85,5 +62,6 @@ class APITarget:
         self.has_tokenizer = False
 
     def complete(self, prefix_text: str, **kwargs) -> Completion:
-        text = self.call_fn(prefix_text, max_new_tokens=self.max_new_tokens, **kwargs)
+        max_new_tokens = kwargs.pop("max_new_tokens", self.max_new_tokens)
+        text = self.call_fn(prefix_text, max_new_tokens=max_new_tokens, **kwargs)
         return Completion(text=text, token_ids=None)

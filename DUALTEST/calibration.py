@@ -26,7 +26,7 @@ class CalibrationResult:
     threshold: float
     recall_normal: float
     fpr_adversarial: float
-    threshold_2: float = None  # usado para el segundo eje de ESB (similitud)
+    threshold_2: float = None
 
 
 def _is_flagged(score, threshold, lower_is_suspicious):
