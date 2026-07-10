@@ -1,0 +1,19 @@
+{
+  "query_id": "a5b6d36ab0f8623fdf5f4fde090e3fec",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0114",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "‘The",
+  "target_word": "first",
+  "sample_idx": 2,
+  "generated_text": "mysterious'",
+  "generated_first_word": "mysterious'",
+  "similarity": 0.6032848358154297,
+  "timestamp": "2026-06-30 14:35:42"
+}

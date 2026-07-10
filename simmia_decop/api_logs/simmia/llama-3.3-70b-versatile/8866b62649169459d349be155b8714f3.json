@@ -1,0 +1,19 @@
+{
+  "query_id": "8866b62649169459d349be155b8714f3",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0012",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 13,
+  "prefix": "Bathed in starlight and dotted by leaping watch-flames from torch house minarets, Tyzanta",
+  "target_word": "possessed",
+  "sample_idx": 1,
+  "generated_text": "shone",
+  "generated_first_word": "shone",
+  "similarity": 0.695642352104187,
+  "timestamp": "2026-07-01 14:35:40"
+}

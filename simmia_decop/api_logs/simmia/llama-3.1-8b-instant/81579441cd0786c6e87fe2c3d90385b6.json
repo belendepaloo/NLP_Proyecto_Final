@@ -1,0 +1,19 @@
+{
+  "query_id": "81579441cd0786c6e87fe2c3d90385b6",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0106",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Who knows…maybe it’s better to",
+  "target_word": "be",
+  "sample_idx": 1,
+  "generated_text": "just leave things",
+  "generated_first_word": "just",
+  "similarity": 0.6263973116874695,
+  "timestamp": "2026-06-30 13:56:48"
+}

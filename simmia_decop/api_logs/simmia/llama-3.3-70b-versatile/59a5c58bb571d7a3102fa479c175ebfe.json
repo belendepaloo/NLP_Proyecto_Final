@@ -1,0 +1,19 @@
+{
+  "query_id": "59a5c58bb571d7a3102fa479c175ebfe",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0009",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 17,
+  "prefix": "‘You look splendid,’ he said aloud. ‘I will risk a brief tale without consulting Elrond. But quite",
+  "target_word": "brief,",
+  "sample_idx": 2,
+  "generated_text": "frankly",
+  "generated_first_word": "frankly",
+  "similarity": 0.6370532512664795,
+  "timestamp": "2026-07-01 14:22:31"
+}

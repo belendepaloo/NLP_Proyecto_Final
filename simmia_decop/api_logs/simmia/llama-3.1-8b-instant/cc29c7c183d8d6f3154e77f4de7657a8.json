@@ -1,0 +1,19 @@
+{
+  "query_id": "cc29c7c183d8d6f3154e77f4de7657a8",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0040",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 13,
+  "prefix": "At that point, the mother came in carrying a large tray on which",
+  "target_word": "were",
+  "sample_idx": 1,
+  "generated_text": "were placed ste",
+  "generated_first_word": "were",
+  "similarity": 0.9999999403953552,
+  "timestamp": "2026-06-30 08:18:20"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "d699e1c5080f9697a9a0344d91a6b4c4",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0099",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "And not a hint of",
+  "target_word": "rot.",
+  "sample_idx": 2,
+  "generated_text": "regret",
+  "generated_first_word": "regret",
+  "similarity": 0.644208550453186,
+  "timestamp": "2026-07-04 19:23:51"
+}

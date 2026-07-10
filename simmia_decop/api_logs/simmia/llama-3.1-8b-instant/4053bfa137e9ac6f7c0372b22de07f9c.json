@@ -1,0 +1,19 @@
+{
+  "query_id": "4053bfa137e9ac6f7c0372b22de07f9c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0073",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "‘Would it? Would any of you have believed me till now?’ said",
+  "target_word": "Strider.",
+  "sample_idx": 2,
+  "generated_text": "A voice from",
+  "generated_first_word": "A",
+  "similarity": 0.6404842734336853,
+  "timestamp": "2026-06-30 11:11:30"
+}

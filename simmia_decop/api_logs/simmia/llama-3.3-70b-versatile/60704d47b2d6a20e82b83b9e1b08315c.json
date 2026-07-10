@@ -1,0 +1,19 @@
+{
+  "query_id": "60704d47b2d6a20e82b83b9e1b08315c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0196",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "The boy continued to listen to his heart as",
+  "target_word": "they",
+  "sample_idx": 2,
+  "generated_text": "it",
+  "generated_first_word": "it",
+  "similarity": 0.8096083402633667,
+  "timestamp": "2026-07-08 02:34:42"
+}

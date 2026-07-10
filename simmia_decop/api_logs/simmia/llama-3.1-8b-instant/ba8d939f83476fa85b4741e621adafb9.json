@@ -1,0 +1,19 @@
+{
+  "query_id": "ba8d939f83476fa85b4741e621adafb9",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0000",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "Since he was arrested he had not been fed.",
+  "target_word": "He",
+  "sample_idx": 2,
+  "generated_text": "His stomach grow",
+  "generated_first_word": "His",
+  "similarity": 0.8791528940200806,
+  "timestamp": "2026-06-30 04:48:21"
+}

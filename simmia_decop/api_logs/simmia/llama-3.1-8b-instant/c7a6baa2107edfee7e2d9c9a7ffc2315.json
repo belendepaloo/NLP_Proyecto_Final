@@ -1,0 +1,19 @@
+{
+  "query_id": "c7a6baa2107edfee7e2d9c9a7ffc2315",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0038",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 16,
+  "prefix": "But for all of that, it was a simple joy to come and go as one",
+  "target_word": "pleased,",
+  "sample_idx": 0,
+  "generated_text": "pleased.",
+  "generated_first_word": "pleased.",
+  "similarity": 0.9352404475212097,
+  "timestamp": "2026-06-30 08:08:44"
+}

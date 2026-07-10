@@ -1,0 +1,19 @@
+{
+  "query_id": "6ae1b3f1d656ec3452379a25b2030a0e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0126",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 9,
+  "prefix": "It makes my heart ache. Not just the memory",
+  "target_word": "but",
+  "sample_idx": 1,
+  "generated_text": "of her.",
+  "generated_first_word": "of",
+  "similarity": 0.7074191570281982,
+  "timestamp": "2026-06-30 15:38:24"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "2ac6b610d3f524b6f49454bd3cb4642b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0109",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 18,
+  "prefix": "Part love story, part thriller, this novel kept me entranced until the very last page. A warm, glorious,",
+  "target_word": "and",
+  "sample_idx": 0,
+  "generated_text": "sunshine-filled",
+  "generated_first_word": "sunshine-filled",
+  "similarity": 0.5784912705421448,
+  "timestamp": "2026-06-30 14:15:25"
+}

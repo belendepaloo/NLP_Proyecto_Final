@@ -1,0 +1,19 @@
+{
+  "query_id": "6ce482952711a571dc4963c4622899b1",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0181",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "But when he had drawn forth, as he hoped, the armies of Morgoth in answer, then Fingon should",
+  "target_word": "issue",
+  "sample_idx": 2,
+  "generated_text": "sally",
+  "generated_first_word": "sally",
+  "similarity": 0.6075667142868042,
+  "timestamp": "2026-07-08 01:28:02"
+}

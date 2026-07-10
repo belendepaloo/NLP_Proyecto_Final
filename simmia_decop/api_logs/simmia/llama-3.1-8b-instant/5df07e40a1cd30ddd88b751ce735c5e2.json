@@ -1,0 +1,19 @@
+{
+  "query_id": "5df07e40a1cd30ddd88b751ce735c5e2",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0053",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 14,
+  "prefix": "We talked about this. You talked about this. Bastian was doing something strange with",
+  "target_word": "his",
+  "sample_idx": 0,
+  "generated_text": "the mysterious box",
+  "generated_first_word": "the",
+  "similarity": 0.780502200126648,
+  "timestamp": "2026-06-30 09:27:18"
+}

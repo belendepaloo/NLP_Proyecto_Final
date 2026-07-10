@@ -1,0 +1,19 @@
+{
+  "query_id": "5b7443fb112b786a14ed0fbdf0e8c5a7",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0078",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 17,
+  "prefix": "Together, they proclaimed that the Lord Protector was in residence. The wind blew hard. Wulf coughed into",
+  "target_word": "a",
+  "sample_idx": 1,
+  "generated_text": "his sleeve",
+  "generated_first_word": "his",
+  "similarity": 0.7324447631835938,
+  "timestamp": "2026-07-03 16:24:31"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "0ac77f4bfd1b0a30a9834d0948aff5bb",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0164",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "With a sweep of his hand he cleared a",
+  "target_word": "vacant",
+  "sample_idx": 2,
+  "generated_text": "space",
+  "generated_first_word": "space",
+  "similarity": 0.6818437576293945,
+  "timestamp": "2026-07-06 17:21:08"
+}

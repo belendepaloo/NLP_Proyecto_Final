@@ -1,0 +1,25 @@
+{
+  "query_id": "5d60a8243c614a1dd3866907c4fd7520",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0186",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "title": "1984",
+  "author": "George Orwell",
+  "length": "medium",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"1984\" book by George Orwell?\nOptions:\nA. O'Brien positioned himself next to Winston's bed, putting his face almost level with Winston's. He stated to the man in the white coat that the amount was three thousand. Two damp, soft pads were pressed onto Winston's temples, causing him to recoil. Winston knew pain was imminent, a new type of pain. O'Brien placed his hand gently and comfortingly on Winston's and told him that this time it would not hurt. He instructed Winston to keep his eyes locked on O'Brien's. Just then, there seemed to be a powerful explosion, though it was unclear if any sound accompanied it.  \nB. O'Brien had sat down beside the bed, so that his face was almost on a level with Winston's. 'Three thousand,' he said, speaking over Winston's head to the man in the white coat. Two soft pads, which felt slightly moist, clamped themselves against Winston's temples. He quailed. There was pain coming, a new kind of pain. O'Brien laid a hand reassuringly, almost kindly, on his. 'This time it will not hurt,' he said. 'Keep your eyes fixed on mine.' At this moment there was a devastating explosion, or what seemed like an explosion, though it was not certain whether there was any noise.\nC. O'Brien sat on the bed next to Winston so their faces were at the same height. He said to the man in the white coat, \"Three thousand,\" as two moist, soft pads were pushed against Winston's temples, making him flinch. Winston sensed a new kind of pain was coming. O'Brien put his hand on Winston's reassuringly and kindly said this time it wouldn't hurt. He told Winston to keep his eyes fixed on O'Brien's. Suddenly there seemed to be a devastating explosion, though it wasn't clear if there was any noise.\nD. O'Brien took a seat on the bed next to Winston, positioning his face almost level with Winston's. Speaking over Winston to address the man in the white coat, O'Brien stated \"Three thousand.\" Two damp, soft pads were pressed to Winston's temples, causing him to recoil. Winston knew a new type of pain was imminent. In a reassuring, almost kind manner, O'Brien placed his hand on Winston's. \"This time it will not hurt,\" O'Brien said. \"Keep your eyes fixed on mine.\" Just then, there seemed to be an explosive blast, though it was unclear if any sound accompanied it.\nAnswer:",
+  "options": {
+    "A": "O'Brien positioned himself next to Winston's bed, putting his face almost level with Winston's. He stated to the man in the white coat that the amount was three thousand. Two damp, soft pads were pressed onto Winston's temples, causing him to recoil. Winston knew pain was imminent, a new type of pain. O'Brien placed his hand gently and comfortingly on Winston's and told him that this time it would not hurt. He instructed Winston to keep his eyes locked on O'Brien's. Just then, there seemed to be a powerful explosion, though it was unclear if any sound accompanied it.  ",
+    "B": "O'Brien had sat down beside the bed, so that his face was almost on a level with Winston's. 'Three thousand,' he said, speaking over Winston's head to the man in the white coat. Two soft pads, which felt slightly moist, clamped themselves against Winston's temples. He quailed. There was pain coming, a new kind of pain. O'Brien laid a hand reassuringly, almost kindly, on his. 'This time it will not hurt,' he said. 'Keep your eyes fixed on mine.' At this moment there was a devastating explosion, or what seemed like an explosion, though it was not certain whether there was any noise.",
+    "C": "O'Brien sat on the bed next to Winston so their faces were at the same height. He said to the man in the white coat, \"Three thousand,\" as two moist, soft pads were pushed against Winston's temples, making him flinch. Winston sensed a new kind of pain was coming. O'Brien put his hand on Winston's reassuringly and kindly said this time it wouldn't hurt. He told Winston to keep his eyes fixed on O'Brien's. Suddenly there seemed to be a devastating explosion, though it wasn't clear if there was any noise.",
+    "D": "O'Brien took a seat on the bed next to Winston, positioning his face almost level with Winston's. Speaking over Winston to address the man in the white coat, O'Brien stated \"Three thousand.\" Two damp, soft pads were pressed to Winston's temples, causing him to recoil. Winston knew a new type of pain was imminent. In a reassuring, almost kind manner, O'Brien placed his hand on Winston's. \"This time it will not hurt,\" O'Brien said. \"Keep your eyes fixed on mine.\" Just then, there seemed to be an explosive blast, though it was unclear if any sound accompanied it."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "B",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 15:51:57"
+}

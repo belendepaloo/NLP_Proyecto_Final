@@ -1,0 +1,19 @@
+{
+  "query_id": "ed36fd518aeed1091751c8a313f10065",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0055",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "‘The speedometer,’",
+  "target_word": "Mr",
+  "sample_idx": 1,
+  "generated_text": "‘read",
+  "generated_first_word": "read",
+  "similarity": 0.6310251355171204,
+  "timestamp": "2026-06-30 09:35:32"
+}

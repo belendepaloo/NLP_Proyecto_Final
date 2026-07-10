@@ -1,0 +1,19 @@
+{
+  "query_id": "65809fb2e1ef3adb21be2acbe1d3bc3d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0002",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Master Bates followed,",
+  "target_word": "with",
+  "sample_idx": 2,
+  "generated_text": "his loyal companion",
+  "generated_first_word": "his",
+  "similarity": 0.6904375553131104,
+  "timestamp": "2026-06-30 04:56:20"
+}

@@ -1,0 +1,25 @@
+{
+  "query_id": "afe8cbb72969120049b17620683e8916",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0050",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "title": "Business or Pleasure",
+  "author": "Rachel Lynn Solomon",
+  "length": "medium",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Business or Pleasure\" book by Rachel Lynn Solomon?\nOptions:\nA. At the very least, its enough to get me booted from this assignment. Blacklisted from publishing. The server returns with a new wrap, extra tzatziki. Finn barely glances at it, instead flicking his eyes around the restaurant to make sure no ones paying attention to us. Then he asks in this low, uncertain voice, So was it . . . not good for you? A dozen lies wait on the tip of my tongue, but I cant pick a single one. My silence gives me away. Holy shit. He leans back in the booth, running a hand down his face, along the reddish stubble thats just started to reappear.\nB. At the very least, this could get me removed from my role. Banned from publishing anything. The server brings a new wrap with extra tzatziki sauce. Finn barely glances at it, looking around instead to see if anyone notices us. Then uncertainly and quietly he asks if it wasn't good for me. Many lies wait to be said but I can't choose one. My silence reveals the truth. Leaning back, he strokes his face and the reddish stubble growing back.\nC. At minimum, my actions could get me removed from this job. Banned from publishing. The server brings a new wrap, extra tzatziki sauce. Finn barely looks at it, instead glancing around the restaurant to ensure nobody is noticing us. Then in a quiet, hesitant tone, he asks if it wasn't pleasurable for me. Many falsehoods are ready to say, but I can't choose any. My silence reveals the truth. He leans back in the booth, stroking his face and the reddish stubble regrowing there. \nD. I could be fired and blacklisted just for doing this. The server has a new wrap and extra tzatziki sauce. Finn doesn't look at it, checking if anyone sees us. Nervously, he asks if I didn't enjoy it. I have lies ready but say nothing. That shows how I feel. Leaning back, he runs his hand over his scratchy regrowing beard.\nAnswer:",
+  "options": {
+    "A": "At the very least, its enough to get me booted from this assignment. Blacklisted from publishing. The server returns with a new wrap, extra tzatziki. Finn barely glances at it, instead flicking his eyes around the restaurant to make sure no ones paying attention to us. Then he asks in this low, uncertain voice, So was it . . . not good for you? A dozen lies wait on the tip of my tongue, but I cant pick a single one. My silence gives me away. Holy shit. He leans back in the booth, running a hand down his face, along the reddish stubble thats just started to reappear.",
+    "B": "At the very least, this could get me removed from my role. Banned from publishing anything. The server brings a new wrap with extra tzatziki sauce. Finn barely glances at it, looking around instead to see if anyone notices us. Then uncertainly and quietly he asks if it wasn't good for me. Many lies wait to be said but I can't choose one. My silence reveals the truth. Leaning back, he strokes his face and the reddish stubble growing back.",
+    "C": "At minimum, my actions could get me removed from this job. Banned from publishing. The server brings a new wrap, extra tzatziki sauce. Finn barely looks at it, instead glancing around the restaurant to ensure nobody is noticing us. Then in a quiet, hesitant tone, he asks if it wasn't pleasurable for me. Many falsehoods are ready to say, but I can't choose any. My silence reveals the truth. He leans back in the booth, stroking his face and the reddish stubble regrowing there. ",
+    "D": "I could be fired and blacklisted just for doing this. The server has a new wrap and extra tzatziki sauce. Finn doesn't look at it, checking if anyone sees us. Nervously, he asks if I didn't enjoy it. I have lies ready but say nothing. That shows how I feel. Leaning back, he runs his hand over his scratchy regrowing beard."
+  },
+  "gold_letter": "A",
+  "predicted_letter": "C",
+  "is_correct": 0,
+  "timestamp": "2026-07-08 04:08:56"
+}

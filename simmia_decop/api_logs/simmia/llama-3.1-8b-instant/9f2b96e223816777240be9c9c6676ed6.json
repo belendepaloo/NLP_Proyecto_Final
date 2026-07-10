@@ -1,0 +1,19 @@
+{
+  "query_id": "9f2b96e223816777240be9c9c6676ed6",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0115",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 12,
+  "prefix": "If I were someone who partook in such things, it would make",
+  "target_word": "his",
+  "sample_idx": 1,
+  "generated_text": "me extremely happy",
+  "generated_first_word": "me",
+  "similarity": 0.7277578115463257,
+  "timestamp": "2026-06-30 14:44:25"
+}

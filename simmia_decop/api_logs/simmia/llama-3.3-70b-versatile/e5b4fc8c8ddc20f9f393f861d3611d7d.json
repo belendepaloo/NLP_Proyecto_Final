@@ -1,0 +1,19 @@
+{
+  "query_id": "e5b4fc8c8ddc20f9f393f861d3611d7d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0018",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Mere",
+  "target_word": "self-interest,",
+  "sample_idx": 2,
+  "generated_text": "existence",
+  "generated_first_word": "existence",
+  "similarity": 0.6221552491188049,
+  "timestamp": "2026-07-01 15:00:42"
+}

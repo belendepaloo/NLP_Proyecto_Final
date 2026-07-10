@@ -1,0 +1,19 @@
+{
+  "query_id": "78fcd3ee41edcdec27be1f175c76d323",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0130",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 9,
+  "prefix": "“The Eternity King too requires an explanation,” said the",
+  "target_word": "thin,",
+  "sample_idx": 1,
+  "generated_text": "philosopher,",
+  "generated_first_word": "philosopher,",
+  "similarity": 0.6450072526931763,
+  "timestamp": "2026-07-05 17:00:35"
+}

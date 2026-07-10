@@ -1,0 +1,19 @@
+{
+  "query_id": "31178d7469955ef48111efd2a3276847",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0113",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Back in New York? Persona",
+  "target_word": "non",
+  "sample_idx": 0,
+  "generated_text": "non-grata",
+  "generated_first_word": "non-grata",
+  "similarity": 0.7118672132492065,
+  "timestamp": "2026-06-30 14:31:29"
+}

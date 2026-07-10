@@ -1,0 +1,19 @@
+{
+  "query_id": "c2fc1a4600d5e40c4b3d29b6af78089c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0191",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "We were smiling. Someone must have told",
+  "target_word": "us",
+  "sample_idx": 2,
+  "generated_text": "them",
+  "generated_first_word": "them",
+  "similarity": 0.710708498954773,
+  "timestamp": "2026-07-08 02:11:43"
+}

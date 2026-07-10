@@ -1,0 +1,25 @@
+{
+  "query_id": "f3a2f5109a90e32609c4cee7423fc20a",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0192",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "title": "The Age of Innocence",
+  "author": "Edith Wharton",
+  "length": "medium",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Age of Innocence\" book by Edith Wharton?\nOptions:\nA. Name it as you wish: you look at things realistically. \"I've had to. I've had to face the Gorgon.\" \"She hasn't blinded you! You've seen she's just another old nightmare like the others.\" \"She doesn't blind one; but she dries one's tears.\" The answer stopped Archer's pleading words: it seemed to come from experience beyond his understanding. The ferry-boat had finished its slow advance, and its front bumped the dock piles violently, making the carriage shake and pushing Archer and Madame Olenska against each other.  \nB. \"Call it what you like: you look at things as they are.\" \"Ah--I've had to. I've had to look at the Gorgon.\" \"Well--it hasn't blinded you! You've seen that she's just an old bogey like all the others.\" \"She doesn't blind one; but she dries up one's tears.\" The answer checked the pleading on Archer's lips: it seemed to come from depths of experience beyond his reach. The slow advance of the ferry-boat had ceased, and her bows bumped against the piles of the slip with a violence that made the brougham stagger, and flung Archer and Madame Olenska against each other.\nC. Refer to it however you want: you observe things objectively. \"Yes--I've been forced to. I've had to confront the Gorgon.\" \"Well--she hasn't blinded you! You've realized she's just an old specter like the rest.\" \"She doesn't blind one; but she stops one's tears.\" The response silenced Archer's pleading words: it seemed to originate from depths of experience he couldn't access. The ferry-boat's slow approach had ended, and her front bumped the piles of the dock violently, making the carriage lurch and throwing Archer and Madame Olenska together.\nD. Refer to it as you choose: you view things pragmatically. \"I've had to. I've had to confront the monster.\" \"She doesn't blind you! You've realized she's just another old bogeyman like the rest.\" \"She doesn't blind one; but she stops one's tears.\" The response ended Archer's pleading words: it seemed to originate from experience outside his grasp. The ferry-boat's slow approach was over, and its front bumped the dock piles forcefully, causing the carriage to lurch and pressing Archer and Madame Olenska together.\nAnswer:",
+  "options": {
+    "A": "Name it as you wish: you look at things realistically. \"I've had to. I've had to face the Gorgon.\" \"She hasn't blinded you! You've seen she's just another old nightmare like the others.\" \"She doesn't blind one; but she dries one's tears.\" The answer stopped Archer's pleading words: it seemed to come from experience beyond his understanding. The ferry-boat had finished its slow advance, and its front bumped the dock piles violently, making the carriage shake and pushing Archer and Madame Olenska against each other.  ",
+    "B": "\"Call it what you like: you look at things as they are.\" \"Ah--I've had to. I've had to look at the Gorgon.\" \"Well--it hasn't blinded you! You've seen that she's just an old bogey like all the others.\" \"She doesn't blind one; but she dries up one's tears.\" The answer checked the pleading on Archer's lips: it seemed to come from depths of experience beyond his reach. The slow advance of the ferry-boat had ceased, and her bows bumped against the piles of the slip with a violence that made the brougham stagger, and flung Archer and Madame Olenska against each other.",
+    "C": "Refer to it however you want: you observe things objectively. \"Yes--I've been forced to. I've had to confront the Gorgon.\" \"Well--she hasn't blinded you! You've realized she's just an old specter like the rest.\" \"She doesn't blind one; but she stops one's tears.\" The response silenced Archer's pleading words: it seemed to originate from depths of experience he couldn't access. The ferry-boat's slow approach had ended, and her front bumped the piles of the dock violently, making the carriage lurch and throwing Archer and Madame Olenska together.",
+    "D": "Refer to it as you choose: you view things pragmatically. \"I've had to. I've had to confront the monster.\" \"She doesn't blind you! You've realized she's just another old bogeyman like the rest.\" \"She doesn't blind one; but she stops one's tears.\" The response ended Archer's pleading words: it seemed to originate from experience outside his grasp. The ferry-boat's slow approach was over, and its front bumped the dock piles forcefully, causing the carriage to lurch and pressing Archer and Madame Olenska together."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-07-08 05:32:43"
+}

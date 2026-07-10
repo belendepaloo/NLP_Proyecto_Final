@@ -1,0 +1,19 @@
+{
+  "query_id": "58f2b3d1c3e36a2000d20178d5d52faf",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0194",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "‘He’s a",
+  "target_word": "crook!’",
+  "sample_idx": 2,
+  "generated_text": "good",
+  "generated_first_word": "good",
+  "similarity": 0.6293575763702393,
+  "timestamp": "2026-07-08 02:24:03"
+}

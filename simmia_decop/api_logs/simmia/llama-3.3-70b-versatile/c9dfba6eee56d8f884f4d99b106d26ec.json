@@ -1,0 +1,19 @@
+{
+  "query_id": "c9dfba6eee56d8f884f4d99b106d26ec",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0081",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "The next",
+  "target_word": "moment",
+  "sample_idx": 1,
+  "generated_text": "step",
+  "generated_first_word": "step",
+  "similarity": 0.601917028427124,
+  "timestamp": "2026-07-04 18:01:09"
+}

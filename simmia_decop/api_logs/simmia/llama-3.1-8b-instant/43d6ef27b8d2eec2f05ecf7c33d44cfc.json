@@ -1,0 +1,19 @@
+{
+  "query_id": "43d6ef27b8d2eec2f05ecf7c33d44cfc",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0132",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 15,
+  "prefix": "Suppose that we quicken the tempo of human life till men are senile at thirty.",
+  "target_word": "Still",
+  "sample_idx": 0,
+  "generated_text": "Their grandchildren would",
+  "generated_first_word": "Their",
+  "similarity": 0.6611645817756653,
+  "timestamp": "2026-06-30 16:09:05"
+}

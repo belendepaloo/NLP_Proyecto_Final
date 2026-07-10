@@ -1,0 +1,19 @@
+{
+  "query_id": "4e98d946ccfbec8ff8de8c62c0613014",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0142",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 10,
+  "prefix": "I always worry more when Im tired. I frown. Ive",
+  "target_word": "been",
+  "sample_idx": 2,
+  "generated_text": "been there too",
+  "generated_first_word": "been",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 17:26:33"
+}

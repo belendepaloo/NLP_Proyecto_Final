@@ -1,0 +1,19 @@
+{
+  "query_id": "9e715796a95b37d68a7f16156d9bfb03",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0169",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 14,
+  "prefix": "There they fought to the death; but Thingol gave no heed, for he knelt",
+  "target_word": "by",
+  "sample_idx": 0,
+  "generated_text": "by",
+  "generated_first_word": "by",
+  "similarity": 1.0,
+  "timestamp": "2026-07-06 17:46:02"
+}

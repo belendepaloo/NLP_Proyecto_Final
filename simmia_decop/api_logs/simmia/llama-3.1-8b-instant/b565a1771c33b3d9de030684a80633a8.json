@@ -1,0 +1,19 @@
+{
+  "query_id": "b565a1771c33b3d9de030684a80633a8",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0144",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "If hereafter in your new",
+  "target_word": "place",
+  "sample_idx": 1,
+  "generated_text": "life you don",
+  "generated_first_word": "life",
+  "similarity": 0.7042829990386963,
+  "timestamp": "2026-06-30 17:34:37"
+}

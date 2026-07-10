@@ -1,0 +1,19 @@
+{
+  "query_id": "806b8f461681cc74b9bb93de9bbefb28",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0128",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "Their fits relieved each other like guards. When",
+  "target_word": "Nippers",
+  "sample_idx": 1,
+  "generated_text": "the night watch",
+  "generated_first_word": "the",
+  "similarity": 0.6085479855537415,
+  "timestamp": "2026-06-30 15:47:33"
+}

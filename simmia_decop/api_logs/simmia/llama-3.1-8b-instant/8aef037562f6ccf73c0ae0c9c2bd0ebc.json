@@ -1,0 +1,19 @@
+{
+  "query_id": "8aef037562f6ccf73c0ae0c9c2bd0ebc",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0156",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "I glance out",
+  "target_word": "the",
+  "sample_idx": 1,
+  "generated_text": "at the sky",
+  "generated_first_word": "at",
+  "similarity": 0.729163408279419,
+  "timestamp": "2026-06-30 18:32:54"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "914296089f032c31dc9f54b38fecf65c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0197",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "He was getting, he judged, three meals in",
+  "target_word": "the",
+  "sample_idx": 2,
+  "generated_text": "a day.",
+  "generated_first_word": "a",
+  "similarity": 0.7954018712043762,
+  "timestamp": "2026-07-01 04:36:08"
+}

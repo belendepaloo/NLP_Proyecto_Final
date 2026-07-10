@@ -1,0 +1,19 @@
+{
+  "query_id": "09e7e26fe8e9d6c509da7feb35a9998d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0094",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "“Rather than finding a saintly man, though, our hero,",
+  "target_word": "on",
+  "sample_idx": 2,
+  "generated_text": "encountered",
+  "generated_first_word": "encountered",
+  "similarity": 0.65962815284729,
+  "timestamp": "2026-07-04 19:02:30"
+}

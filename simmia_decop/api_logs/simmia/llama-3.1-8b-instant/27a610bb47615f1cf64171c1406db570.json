@@ -1,0 +1,19 @@
+{
+  "query_id": "27a610bb47615f1cf64171c1406db570",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0020",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Yes, I suppose",
+  "target_word": "I",
+  "sample_idx": 1,
+  "generated_text": "it's true",
+  "generated_first_word": "it's",
+  "similarity": 0.6753601431846619,
+  "timestamp": "2026-06-30 06:31:09"
+}

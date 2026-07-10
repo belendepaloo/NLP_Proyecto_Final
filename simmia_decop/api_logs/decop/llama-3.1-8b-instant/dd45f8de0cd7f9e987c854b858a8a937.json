@@ -1,0 +1,25 @@
+{
+  "query_id": "dd45f8de0cd7f9e987c854b858a8a937",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0034",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "title": "Unfortunately Yours",
+  "author": "Tessa Bailey",
+  "length": "medium",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Unfortunately Yours\" book by Tessa Bailey?\nOptions:\nA. Well, hes a lot more selfless than I am. No. Hallie shook her head. Hes just in a better position to help at this moment. I would help if they asked. If I thought they wanted my help She cut herself off with a wave of her hand, forcing a smile. I appreciate your offer to help, crazy pants. I accept. I will feed your need for chaos as long as you keep my secret among family. Hallie closed her eyes slowly, hands pressing together between her breasts. Thank you. I hereby declare myself your secret minion. Just dont ask me to call you that.\nB. Hallie disagreed that he was more selfless, arguing he was just better positioned to help right now. She would offer assistance too if asked, but didn't think they wanted it. She waved off her own words, smiling. Thankful for the offer of aid, Hallie agreed to the chaos on the condition of secrecy. With a prayer-like gesture, she accepted the role of covert helper, just not using that particular title.\nC. Hallie rejected the idea that he was more selfless, saying he just had a better opportunity to assist currently. She would help if requested and she believed they desired it. Dropping her own thoughts, she forced a grin. Appreciating the chaos offer if kept quiet, Hallie consented to being a secret supporter, simply not with that name. Clasping her hands, she closed her eyes and expressed gratitude.  \nD. No, Hallie disagreed, he's just in a situation to help more right now. I'd offer assistance too if they wanted it from me, she said, cutting herself off with a wave. Forcing a smile, she thanked him for the chaotic offer and agreed to be a secret ally, just not calling herself that title. Hands pressed together, Hallie closed her eyes slowly, accepting the role as covert helper as long as it stayed among family.\nAnswer:",
+  "options": {
+    "A": "Well, hes a lot more selfless than I am. No. Hallie shook her head. Hes just in a better position to help at this moment. I would help if they asked. If I thought they wanted my help She cut herself off with a wave of her hand, forcing a smile. I appreciate your offer to help, crazy pants. I accept. I will feed your need for chaos as long as you keep my secret among family. Hallie closed her eyes slowly, hands pressing together between her breasts. Thank you. I hereby declare myself your secret minion. Just dont ask me to call you that.",
+    "B": "Hallie disagreed that he was more selfless, arguing he was just better positioned to help right now. She would offer assistance too if asked, but didn't think they wanted it. She waved off her own words, smiling. Thankful for the offer of aid, Hallie agreed to the chaos on the condition of secrecy. With a prayer-like gesture, she accepted the role of covert helper, just not using that particular title.",
+    "C": "Hallie rejected the idea that he was more selfless, saying he just had a better opportunity to assist currently. She would help if requested and she believed they desired it. Dropping her own thoughts, she forced a grin. Appreciating the chaos offer if kept quiet, Hallie consented to being a secret supporter, simply not with that name. Clasping her hands, she closed her eyes and expressed gratitude.  ",
+    "D": "No, Hallie disagreed, he's just in a situation to help more right now. I'd offer assistance too if they wanted it from me, she said, cutting herself off with a wave. Forcing a smile, she thanked him for the chaotic offer and agreed to be a secret ally, just not calling herself that title. Hands pressed together, Hallie closed her eyes slowly, accepting the role as covert helper as long as it stayed among family."
+  },
+  "gold_letter": "A",
+  "predicted_letter": "D",
+  "is_correct": 0,
+  "timestamp": "2026-07-08 03:59:26"
+}

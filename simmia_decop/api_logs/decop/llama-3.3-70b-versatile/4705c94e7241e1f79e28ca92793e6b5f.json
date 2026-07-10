@@ -1,0 +1,25 @@
+{
+  "query_id": "4705c94e7241e1f79e28ca92793e6b5f",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0139",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "title": "The Spectacular",
+  "author": "Fiona Davis",
+  "length": "medium",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Spectacular\" book by Fiona Davis?\nOptions:\nA. Before long, Simon had rapidly progressed at Met Power from team leader to vice president of HR for thousands of employees. His rise was praised as embodying American ingenuity and determination, as evidenced by his multiple Employee of the Year awards, including several on his shelf. He was dedicated to his work and found it deeply fulfilling. So why was this issue arising now? Simon wondered, opening the file Judy had brought him and smoothing it on his desk.\nB. Before Simon knew it, he had rapidly risen through the ranks at Met Power, from leading a team to becoming vice president in charge of human resources for thousands of employees. His success was praised as an embodiment of American ingenuity and determination. The many Employee of the Year awards Simon had won reflected his status at the company. He was dedicated to and thrilled by his work. So why was this issue arising now? Simon wondered as he reviewed the file Judy had brought him.  \nC. In what felt like no time at all, Simon had gone from managing a team to being vice president of HR for Met Power, overseeing thousands of workers. His accomplishments were held up as examples of American resourcefulness and grit. The numerous Employee of the Year awards he had earned, including several on the shelf behind him, showed how valued he was by the company. Simon threw himself into his work with great enjoyment. What's happening here? Simon asked himself as he opened the file Judy had given him and laid it out on his desk.\nD. Before he knew it, he was the boss of his team, then the boss of the whole repair division, and, eventually, vice president in charge of hiring, evaluating, and paying thousands of Met Power employees. This last promotion had come five years ago, with Simon Brooks heralded as a shining example of American ingenuity and grit. The three Employee of the Year awards on the bookshelf behind himin addition to the one in his home studywere a testament to his standing in the company. He threw himself into his work and enjoyed it immensely. Whats going on, then? asked Simon. He opened the file Judy had given him and smoothed it flat on his desk.\nAnswer:",
+  "options": {
+    "A": "Before long, Simon had rapidly progressed at Met Power from team leader to vice president of HR for thousands of employees. His rise was praised as embodying American ingenuity and determination, as evidenced by his multiple Employee of the Year awards, including several on his shelf. He was dedicated to his work and found it deeply fulfilling. So why was this issue arising now? Simon wondered, opening the file Judy had brought him and smoothing it on his desk.",
+    "B": "Before Simon knew it, he had rapidly risen through the ranks at Met Power, from leading a team to becoming vice president in charge of human resources for thousands of employees. His success was praised as an embodiment of American ingenuity and determination. The many Employee of the Year awards Simon had won reflected his status at the company. He was dedicated to and thrilled by his work. So why was this issue arising now? Simon wondered as he reviewed the file Judy had brought him.  ",
+    "C": "In what felt like no time at all, Simon had gone from managing a team to being vice president of HR for Met Power, overseeing thousands of workers. His accomplishments were held up as examples of American resourcefulness and grit. The numerous Employee of the Year awards he had earned, including several on the shelf behind him, showed how valued he was by the company. Simon threw himself into his work with great enjoyment. What's happening here? Simon asked himself as he opened the file Judy had given him and laid it out on his desk.",
+    "D": "Before he knew it, he was the boss of his team, then the boss of the whole repair division, and, eventually, vice president in charge of hiring, evaluating, and paying thousands of Met Power employees. This last promotion had come five years ago, with Simon Brooks heralded as a shining example of American ingenuity and grit. The three Employee of the Year awards on the bookshelf behind himin addition to the one in his home studywere a testament to his standing in the company. He threw himself into his work and enjoyed it immensely. Whats going on, then? asked Simon. He opened the file Judy had given him and smoothed it flat on his desk."
+  },
+  "gold_letter": "D",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-06-26 15:16:10"
+}

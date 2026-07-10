@@ -1,0 +1,25 @@
+{
+  "query_id": "f8bbe44bb14bca2895e68538a09bc339",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0101",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "title": "Oliver Twist",
+  "author": "Charles Dickens",
+  "length": "medium",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Oliver Twist\" book by Charles Dickens?\nOptions:\nA. Oliver frantically expressed alarm to the old man about being sent away or back to the wretched place he originated from. Oliver appealed to the gentleman to have pity and let Oliver stay as a servant, promising to never give the old man cause to abandon him. The old gentleman assured Oliver he would not desert him unless Oliver gave him reason to.\nB. Oh, don't tell you are going to send me away, sir, pray!' exclaimed Oliver, alarmed at the serious tone of the old gentleman's commencement! 'Don't turn me out of doors to wander in the streets again. Let me stay here, and be a servant. Don't send me back to the wretched place I came from. Have mercy upon a poor boy, sir!' 'My dear child,' said the old gentleman, moved by the warmth of Oliver's sudden appeal; 'you need not be afraid of my deserting you, unless you give me cause.' 'I never, never will, sir,' interposed Oliver. 'I hope not,' rejoined the old gentleman.\nC. Oliver desperately begged the old gentleman not to cast him out into the streets again or return him to the awful place he came from. Oliver implored the man to show mercy and allow Oliver to remain as a servant, vowing he would never give the gentleman cause to send him away. The old man told Oliver not to be afraid, as he would not desert Oliver unless Oliver gave him reason to. \nD. Oliver pleaded with the old gentleman not to send him away or back to the miserable place he came from, but rather to let Oliver stay and serve him. Oliver promised to never give the man cause to abandon him. The old man assured Oliver he would not desert him unless Oliver gave him reason to.\nAnswer:",
+  "options": {
+    "A": "Oliver frantically expressed alarm to the old man about being sent away or back to the wretched place he originated from. Oliver appealed to the gentleman to have pity and let Oliver stay as a servant, promising to never give the old man cause to abandon him. The old gentleman assured Oliver he would not desert him unless Oliver gave him reason to.",
+    "B": "Oh, don't tell you are going to send me away, sir, pray!' exclaimed Oliver, alarmed at the serious tone of the old gentleman's commencement! 'Don't turn me out of doors to wander in the streets again. Let me stay here, and be a servant. Don't send me back to the wretched place I came from. Have mercy upon a poor boy, sir!' 'My dear child,' said the old gentleman, moved by the warmth of Oliver's sudden appeal; 'you need not be afraid of my deserting you, unless you give me cause.' 'I never, never will, sir,' interposed Oliver. 'I hope not,' rejoined the old gentleman.",
+    "C": "Oliver desperately begged the old gentleman not to cast him out into the streets again or return him to the awful place he came from. Oliver implored the man to show mercy and allow Oliver to remain as a servant, vowing he would never give the gentleman cause to send him away. The old man told Oliver not to be afraid, as he would not desert Oliver unless Oliver gave him reason to. ",
+    "D": "Oliver pleaded with the old gentleman not to send him away or back to the miserable place he came from, but rather to let Oliver stay and serve him. Oliver promised to never give the man cause to abandon him. The old man assured Oliver he would not desert him unless Oliver gave him reason to."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "B",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 15:01:32"
+}

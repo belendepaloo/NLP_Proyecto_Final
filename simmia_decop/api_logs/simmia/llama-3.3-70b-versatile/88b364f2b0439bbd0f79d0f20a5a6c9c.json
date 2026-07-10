@@ -1,0 +1,19 @@
+{
+  "query_id": "88b364f2b0439bbd0f79d0f20a5a6c9c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0038",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 18,
+  "prefix": "But for all of that, it was a simple joy to come and go as one pleased, without",
+  "target_word": "worrying",
+  "sample_idx": 0,
+  "generated_text": "the burden",
+  "generated_first_word": "the",
+  "similarity": 0.6538206934928894,
+  "timestamp": "2026-07-02 00:12:41"
+}

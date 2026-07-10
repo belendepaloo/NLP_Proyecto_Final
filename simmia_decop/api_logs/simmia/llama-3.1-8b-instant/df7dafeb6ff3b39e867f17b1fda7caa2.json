@@ -1,0 +1,19 @@
+{
+  "query_id": "df7dafeb6ff3b39e867f17b1fda7caa2",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0067",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Wyn kisses the",
+  "target_word": "top",
+  "sample_idx": 1,
+  "generated_text": "cheek of",
+  "generated_first_word": "cheek",
+  "similarity": 0.6547150611877441,
+  "timestamp": "2026-06-30 10:38:35"
+}

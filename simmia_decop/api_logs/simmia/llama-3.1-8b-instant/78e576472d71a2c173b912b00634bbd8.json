@@ -1,0 +1,19 @@
+{
+  "query_id": "78e576472d71a2c173b912b00634bbd8",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0196",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 19,
+  "prefix": "The boy continued to listen to his heart as they crossed the desert. He came to understand its dodges",
+  "target_word": "and",
+  "sample_idx": 2,
+  "generated_text": "and subtle signals",
+  "generated_first_word": "and",
+  "similarity": 1.0,
+  "timestamp": "2026-07-01 04:34:13"
+}

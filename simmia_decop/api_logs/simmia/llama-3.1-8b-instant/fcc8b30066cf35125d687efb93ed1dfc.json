@@ -1,0 +1,19 @@
+{
+  "query_id": "fcc8b30066cf35125d687efb93ed1dfc",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0087",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 19,
+  "prefix": "If I thought it, I should never be happy again. I wouldn't cut a boy off: no, not even",
+  "target_word": "Brittles",
+  "sample_idx": 2,
+  "generated_text": "him.",
+  "generated_first_word": "him.",
+  "similarity": 0.5475245118141174,
+  "timestamp": "2026-06-30 12:25:08"
+}

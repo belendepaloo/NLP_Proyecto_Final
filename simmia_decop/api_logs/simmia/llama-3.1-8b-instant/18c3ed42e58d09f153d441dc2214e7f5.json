@@ -1,0 +1,19 @@
+{
+  "query_id": "18c3ed42e58d09f153d441dc2214e7f5",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0146",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 14,
+  "prefix": "Countless times, Harry had been on the point of unlocking Hedwig’s cage by magic",
+  "target_word": "and",
+  "sample_idx": 1,
+  "generated_text": "but his wand",
+  "generated_first_word": "but",
+  "similarity": 0.8295847773551941,
+  "timestamp": "2026-06-30 17:46:37"
+}

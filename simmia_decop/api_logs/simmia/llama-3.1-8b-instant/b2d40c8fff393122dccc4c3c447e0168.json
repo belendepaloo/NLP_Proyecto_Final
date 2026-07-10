@@ -1,0 +1,19 @@
+{
+  "query_id": "b2d40c8fff393122dccc4c3c447e0168",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0178",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Not worth the sting. Natalie started",
+  "target_word": "to",
+  "sample_idx": 0,
+  "generated_text": "to remove the",
+  "generated_first_word": "to",
+  "similarity": 1.0,
+  "timestamp": "2026-07-01 02:58:35"
+}

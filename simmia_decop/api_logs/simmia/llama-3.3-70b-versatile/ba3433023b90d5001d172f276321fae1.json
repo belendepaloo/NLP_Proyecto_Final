@@ -1,0 +1,19 @@
+{
+  "query_id": "ba3433023b90d5001d172f276321fae1",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0011",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Ill have more time to",
+  "target_word": "adjust",
+  "sample_idx": 1,
+  "generated_text": "focus",
+  "generated_first_word": "focus",
+  "similarity": 0.7002016305923462,
+  "timestamp": "2026-07-01 14:28:50"
+}

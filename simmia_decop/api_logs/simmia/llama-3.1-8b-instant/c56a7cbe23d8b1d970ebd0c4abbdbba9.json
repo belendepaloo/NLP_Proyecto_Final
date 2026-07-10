@@ -1,0 +1,19 @@
+{
+  "query_id": "c56a7cbe23d8b1d970ebd0c4abbdbba9",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0154",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "The man still said nothing,",
+  "target_word": "and",
+  "sample_idx": 1,
+  "generated_text": "his eyes fixed",
+  "generated_first_word": "his",
+  "similarity": 0.6741752624511719,
+  "timestamp": "2026-06-30 18:23:38"
+}

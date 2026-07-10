@@ -1,0 +1,19 @@
+{
+  "query_id": "9971a0850094d5ecc78cce6aa5224601",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0077",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Hornsby. He said to",
+  "target_word": "be",
+  "sample_idx": 2,
+  "generated_text": "me, \"",
+  "generated_first_word": "me,",
+  "similarity": 0.6085909008979797,
+  "timestamp": "2026-06-30 11:30:02"
+}

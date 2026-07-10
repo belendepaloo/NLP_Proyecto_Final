@@ -1,0 +1,19 @@
+{
+  "query_id": "58646654d13114fd72292c05d72c7239",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0062",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "So am I,' said the tinker, waking up,",
+  "target_word": "as",
+  "sample_idx": 2,
+  "generated_text": "his eyes half",
+  "generated_first_word": "his",
+  "similarity": 0.6871515512466431,
+  "timestamp": "2026-06-30 10:13:54"
+}

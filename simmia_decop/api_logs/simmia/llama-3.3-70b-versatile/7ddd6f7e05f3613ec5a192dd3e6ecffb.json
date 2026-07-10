@@ -1,0 +1,19 @@
+{
+  "query_id": "7ddd6f7e05f3613ec5a192dd3e6ecffb",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0028",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 15,
+  "prefix": "Theres no need to go excavating ancient history. Though Alies blush was the color of",
+  "target_word": "the",
+  "sample_idx": 2,
+  "generated_text": "roses,",
+  "generated_first_word": "roses,",
+  "similarity": 0.6347103118896484,
+  "timestamp": "2026-07-01 15:51:12"
+}

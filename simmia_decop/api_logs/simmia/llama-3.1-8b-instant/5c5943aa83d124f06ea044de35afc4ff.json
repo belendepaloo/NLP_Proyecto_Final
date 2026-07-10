@@ -1,0 +1,19 @@
+{
+  "query_id": "5c5943aa83d124f06ea044de35afc4ff",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0048",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Were going to take you",
+  "target_word": "to",
+  "sample_idx": 2,
+  "generated_text": "on a little",
+  "generated_first_word": "on",
+  "similarity": 0.6971098184585571,
+  "timestamp": "2026-06-30 08:58:19"
+}

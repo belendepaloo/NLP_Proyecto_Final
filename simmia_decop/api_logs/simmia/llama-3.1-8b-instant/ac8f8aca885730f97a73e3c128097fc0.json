@@ -1,0 +1,19 @@
+{
+  "query_id": "ac8f8aca885730f97a73e3c128097fc0",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0001",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "“And I know the",
+  "target_word": "Soul",
+  "sample_idx": 1,
+  "generated_text": "reason why\"",
+  "generated_first_word": "reason",
+  "similarity": 0.6875802278518677,
+  "timestamp": "2026-06-30 04:51:34"
+}

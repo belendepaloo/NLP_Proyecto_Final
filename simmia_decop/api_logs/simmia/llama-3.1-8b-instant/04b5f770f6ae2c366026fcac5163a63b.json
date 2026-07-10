@@ -1,0 +1,19 @@
+{
+  "query_id": "04b5f770f6ae2c366026fcac5163a63b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0004",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "It creaked, but if the sound woke",
+  "target_word": "anyone",
+  "sample_idx": 0,
+  "generated_text": "him, he",
+  "generated_first_word": "him,",
+  "similarity": 0.6908485889434814,
+  "timestamp": "2026-06-30 05:07:57"
+}

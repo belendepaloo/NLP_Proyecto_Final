@@ -1,0 +1,19 @@
+{
+  "query_id": "09ecc538af7318211c59d5bc67308f48",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0163",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "A happiness so bright and hot you",
+  "target_word": "feel",
+  "sample_idx": 0,
+  "generated_text": "could almost feel",
+  "generated_first_word": "could",
+  "similarity": 0.6364527940750122,
+  "timestamp": "2026-07-01 01:42:49"
+}

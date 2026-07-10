@@ -1,0 +1,19 @@
+{
+  "query_id": "2fb277218e6ae61193f55b8a7e08fdd0",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0094",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 11,
+  "prefix": "“Rather than finding a saintly man, though, our hero, on entering",
+  "target_word": "the",
+  "sample_idx": 2,
+  "generated_text": "the old monastery",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 12:59:30"
+}

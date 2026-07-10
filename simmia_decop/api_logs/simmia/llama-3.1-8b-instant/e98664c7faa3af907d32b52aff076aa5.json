@@ -1,0 +1,19 @@
+{
+  "query_id": "e98664c7faa3af907d32b52aff076aa5",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0186",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "O'Brien had sat down beside",
+  "target_word": "the",
+  "sample_idx": 2,
+  "generated_text": "her, a",
+  "generated_first_word": "her,",
+  "similarity": 0.7658745646476746,
+  "timestamp": "2026-07-01 03:38:35"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "e7feaf274a1e2381f81635c5572e292d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0038",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 9,
+  "prefix": "But for all of that, it was a simple",
+  "target_word": "joy",
+  "sample_idx": 1,
+  "generated_text": "life",
+  "generated_first_word": "life",
+  "similarity": 0.7308985590934753,
+  "timestamp": "2026-07-02 00:10:32"
+}

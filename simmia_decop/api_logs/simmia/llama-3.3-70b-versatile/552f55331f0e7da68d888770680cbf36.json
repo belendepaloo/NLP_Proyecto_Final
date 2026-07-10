@@ -1,0 +1,19 @@
+{
+  "query_id": "552f55331f0e7da68d888770680cbf36",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0122",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Still, he couldnt",
+  "target_word": "walk",
+  "sample_idx": 0,
+  "generated_text": "help",
+  "generated_first_word": "help",
+  "similarity": 0.6060643792152405,
+  "timestamp": "2026-07-05 16:22:44"
+}

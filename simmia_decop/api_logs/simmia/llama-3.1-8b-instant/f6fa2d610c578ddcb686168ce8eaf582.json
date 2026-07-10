@@ -1,0 +1,19 @@
+{
+  "query_id": "f6fa2d610c578ddcb686168ce8eaf582",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0152",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Before, I had never experienced",
+  "target_word": "aught",
+  "sample_idx": 0,
+  "generated_text": "such a feeling",
+  "generated_first_word": "such",
+  "similarity": 0.5724468231201172,
+  "timestamp": "2026-06-30 18:13:35"
+}

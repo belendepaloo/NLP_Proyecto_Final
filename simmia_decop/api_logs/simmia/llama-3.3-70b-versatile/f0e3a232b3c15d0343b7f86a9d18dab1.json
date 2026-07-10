@@ -1,0 +1,19 @@
+{
+  "query_id": "f0e3a232b3c15d0343b7f86a9d18dab1",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0057",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "There were times when",
+  "target_word": "it",
+  "sample_idx": 2,
+  "generated_text": "everything",
+  "generated_first_word": "everything",
+  "similarity": 0.6610203981399536,
+  "timestamp": "2026-07-03 14:35:03"
+}

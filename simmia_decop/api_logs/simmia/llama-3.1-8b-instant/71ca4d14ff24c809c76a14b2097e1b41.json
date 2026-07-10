@@ -1,0 +1,19 @@
+{
+  "query_id": "71ca4d14ff24c809c76a14b2097e1b41",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0158",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "He walked",
+  "target_word": "slowly",
+  "sample_idx": 2,
+  "generated_text": "through the crowded",
+  "generated_first_word": "through",
+  "similarity": 0.7306236624717712,
+  "timestamp": "2026-06-30 18:42:45"
+}

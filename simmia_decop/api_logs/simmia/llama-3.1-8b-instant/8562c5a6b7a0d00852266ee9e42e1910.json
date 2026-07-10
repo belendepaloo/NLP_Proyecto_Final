@@ -1,0 +1,19 @@
+{
+  "query_id": "8562c5a6b7a0d00852266ee9e42e1910",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0151",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 11,
+  "prefix": "Then I plop it onto the wheel and flatten it with",
+  "target_word": "the",
+  "sample_idx": 2,
+  "generated_text": "a large metal",
+  "generated_first_word": "a",
+  "similarity": 0.7954018712043762,
+  "timestamp": "2026-06-30 18:10:46"
+}

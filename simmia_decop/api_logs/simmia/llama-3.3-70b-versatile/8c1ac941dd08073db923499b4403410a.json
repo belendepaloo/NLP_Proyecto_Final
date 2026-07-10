@@ -1,0 +1,19 @@
+{
+  "query_id": "8c1ac941dd08073db923499b4403410a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0051",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Javier always",
+  "target_word": "has",
+  "sample_idx": 1,
+  "generated_text": "wore",
+  "generated_first_word": "wore",
+  "similarity": 0.6541180610656738,
+  "timestamp": "2026-07-03 14:01:55"
+}

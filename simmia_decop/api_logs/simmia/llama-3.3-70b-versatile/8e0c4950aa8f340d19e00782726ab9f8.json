@@ -1,0 +1,19 @@
+{
+  "query_id": "8e0c4950aa8f340d19e00782726ab9f8",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0166",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 9,
+  "prefix": "Wulf grabbed whatever he could throw: weapons, two oars,",
+  "target_word": "a",
+  "sample_idx": 2,
+  "generated_text": "and",
+  "generated_first_word": "and",
+  "similarity": 0.6546069979667664,
+  "timestamp": "2026-07-06 17:30:25"
+}

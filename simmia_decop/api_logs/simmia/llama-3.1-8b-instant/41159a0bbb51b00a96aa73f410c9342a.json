@@ -1,0 +1,19 @@
+{
+  "query_id": "41159a0bbb51b00a96aa73f410c9342a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0131",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "In a chair, at",
+  "target_word": "the",
+  "sample_idx": 1,
+  "generated_text": "the edge.",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 16:01:20"
+}

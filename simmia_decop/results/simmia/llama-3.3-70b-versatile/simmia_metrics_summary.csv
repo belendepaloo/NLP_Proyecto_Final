@@ -1,0 +1,2 @@
+method,model,backend,length,n_samples,max_words,n_samples_per_prefix,mean_absolute_error,mean_error_members,mean_error_non_members,auc,auc_inverted,n_non_member_shots,score_used_for_auc,score_used_for_mae
+simmia,llama-3.3-70b-versatile,groq,medium,200,20,3,0.48185397636216587,0.48003747520598644,0.4836704775183452,0.5679000000000001,0.43210000000000004,3,raw_membership_score,membership_probability

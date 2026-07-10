@@ -1,0 +1,19 @@
+{
+  "query_id": "5ea27e91f840a81de4828eea4993a252",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0179",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "A shadowed",
+  "target_word": "shot",
+  "sample_idx": 0,
+  "generated_text": "figure emerged.",
+  "generated_first_word": "figure",
+  "similarity": 0.693926990032196,
+  "timestamp": "2026-07-01 03:02:35"
+}

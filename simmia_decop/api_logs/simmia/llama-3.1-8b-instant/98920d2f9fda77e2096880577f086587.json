@@ -1,0 +1,19 @@
+{
+  "query_id": "98920d2f9fda77e2096880577f086587",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0125",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 19,
+  "prefix": "One of these rooms had been turned into a bedroom by Mrs. Mingott when the burden of flesh descended",
+  "target_word": "on",
+  "sample_idx": 0,
+  "generated_text": "upon her.",
+  "generated_first_word": "upon",
+  "similarity": 0.7911531329154968,
+  "timestamp": "2026-06-30 15:36:15"
+}

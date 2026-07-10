@@ -1,0 +1,19 @@
+{
+  "query_id": "c99b7f90365844e07deb438beab87666",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0043",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "The Vicar soon abandoned the struggle;",
+  "target_word": "but",
+  "sample_idx": 2,
+  "generated_text": "and lay still",
+  "generated_first_word": "and",
+  "similarity": 0.8295847773551941,
+  "timestamp": "2026-06-30 08:32:10"
+}

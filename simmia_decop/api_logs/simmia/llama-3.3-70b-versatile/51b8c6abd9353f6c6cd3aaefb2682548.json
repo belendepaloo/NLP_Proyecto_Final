@@ -1,0 +1,19 @@
+{
+  "query_id": "51b8c6abd9353f6c6cd3aaefb2682548",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0044",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Lore scowled at his back, gathering",
+  "target_word": "her",
+  "sample_idx": 1,
+  "generated_text": "his",
+  "generated_first_word": "his",
+  "similarity": 0.8214578628540039,
+  "timestamp": "2026-07-02 03:07:38"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "b400c6bfd678597cc251bacd299daf8a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0197",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "He was getting,",
+  "target_word": "he",
+  "sample_idx": 0,
+  "generated_text": "older.",
+  "generated_first_word": "older.",
+  "similarity": 0.6138501763343811,
+  "timestamp": "2026-07-01 04:34:48"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "49b34ff325ff65d40cd16677de6b44b8",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0196",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 16,
+  "prefix": "The boy continued to listen to his heart as they crossed the desert. He came to",
+  "target_word": "understand",
+  "sample_idx": 1,
+  "generated_text": "a small oasis",
+  "generated_first_word": "a",
+  "similarity": 0.6636778116226196,
+  "timestamp": "2026-07-01 04:32:41"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "7839694accbcf114d34fc0a35c51d6ed",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0078",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 19,
+  "prefix": "Together, they proclaimed that the Lord Protector was in residence. The wind blew hard. Wulf coughed into a gloved",
+  "target_word": "hand.",
+  "sample_idx": 0,
+  "generated_text": "hand, covering",
+  "generated_first_word": "hand,",
+  "similarity": 0.9687128067016602,
+  "timestamp": "2026-06-30 11:39:08"
+}

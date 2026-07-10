@@ -1,0 +1,19 @@
+{
+  "query_id": "4286de5e464f6a75f43247668aca4e11",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0159",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "The mother’s handbag lay on",
+  "target_word": "a",
+  "sample_idx": 0,
+  "generated_text": "the floor beside",
+  "generated_first_word": "the",
+  "similarity": 0.7954018712043762,
+  "timestamp": "2026-07-01 01:22:27"
+}

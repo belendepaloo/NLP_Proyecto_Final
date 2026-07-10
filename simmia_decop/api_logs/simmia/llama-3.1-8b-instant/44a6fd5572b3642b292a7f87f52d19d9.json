@@ -1,0 +1,19 @@
+{
+  "query_id": "44a6fd5572b3642b292a7f87f52d19d9",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0022",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 10,
+  "prefix": "I can come back tomorrow, she said. Lets stick to",
+  "target_word": "Wednesdays,",
+  "sample_idx": 0,
+  "generated_text": "the original plan",
+  "generated_first_word": "the",
+  "similarity": 0.6300222873687744,
+  "timestamp": "2026-06-30 06:43:36"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "cdc3f5355b576ecccbe68f16bcbdadfa",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0004",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "It creaked, but if the",
+  "target_word": "sound",
+  "sample_idx": 2,
+  "generated_text": "door",
+  "generated_first_word": "door",
+  "similarity": 0.7012358903884888,
+  "timestamp": "2026-07-01 13:56:16"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "8eeef0d41b4066563761c4c5e2e8d050",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0035",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Another silver",
+  "target_word": "Noziken.",
+  "sample_idx": 1,
+  "generated_text": "lining",
+  "generated_first_word": "lining",
+  "similarity": 0.5996409058570862,
+  "timestamp": "2026-06-30 07:48:25"
+}

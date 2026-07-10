@@ -1,0 +1,19 @@
+{
+  "query_id": "70c7263afa03ea4c44798775d2d7bbb8",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0034",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 9,
+  "prefix": "Well, hes a lot more selfless than I am.",
+  "target_word": "No.",
+  "sample_idx": 2,
+  "generated_text": "That's something",
+  "generated_first_word": "That's",
+  "similarity": 0.6628279089927673,
+  "timestamp": "2026-06-30 07:45:01"
+}

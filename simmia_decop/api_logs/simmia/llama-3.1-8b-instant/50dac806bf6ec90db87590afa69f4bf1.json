@@ -1,0 +1,19 @@
+{
+  "query_id": "50dac806bf6ec90db87590afa69f4bf1",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0186",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "O'Brien had sat down beside the",
+  "target_word": "bed,",
+  "sample_idx": 0,
+  "generated_text": "fireplace.",
+  "generated_first_word": "fireplace.",
+  "similarity": 0.7169173955917358,
+  "timestamp": "2026-07-01 03:38:40"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "41a9f0dd5d2834013dc4636837190933",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0168",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Stop. I cannot handle",
+  "target_word": "Cody",
+  "sample_idx": 1,
+  "generated_text": "this",
+  "generated_first_word": "this",
+  "similarity": 0.6320956945419312,
+  "timestamp": "2026-07-06 17:38:44"
+}

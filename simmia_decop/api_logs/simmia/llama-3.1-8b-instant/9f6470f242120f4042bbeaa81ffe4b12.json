@@ -1,0 +1,19 @@
+{
+  "query_id": "9f6470f242120f4042bbeaa81ffe4b12",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0001",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "“And I know the Soul of the World, because we",
+  "target_word": "have",
+  "sample_idx": 2,
+  "generated_text": "are all part",
+  "generated_first_word": "are",
+  "similarity": 0.6693390607833862,
+  "timestamp": "2026-06-30 04:53:03"
+}

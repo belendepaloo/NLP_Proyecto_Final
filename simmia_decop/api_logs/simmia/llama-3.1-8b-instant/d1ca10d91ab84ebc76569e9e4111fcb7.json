@@ -1,0 +1,19 @@
+{
+  "query_id": "d1ca10d91ab84ebc76569e9e4111fcb7",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0161",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "But his personality changed drastically.",
+  "target_word": "Where",
+  "sample_idx": 2,
+  "generated_text": "He became cold",
+  "generated_first_word": "He",
+  "similarity": 0.6511996984481812,
+  "timestamp": "2026-07-01 01:32:26"
+}

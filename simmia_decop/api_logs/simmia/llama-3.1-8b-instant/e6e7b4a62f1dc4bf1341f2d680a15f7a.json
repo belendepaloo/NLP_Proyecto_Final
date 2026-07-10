@@ -1,0 +1,19 @@
+{
+  "query_id": "e6e7b4a62f1dc4bf1341f2d680a15f7a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0133",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 10,
+  "prefix": "They might be working together for a greater cause in",
+  "target_word": "public.",
+  "sample_idx": 1,
+  "generated_text": "the shadows.",
+  "generated_first_word": "the",
+  "similarity": 0.6709253191947937,
+  "timestamp": "2026-06-30 16:12:52"
+}

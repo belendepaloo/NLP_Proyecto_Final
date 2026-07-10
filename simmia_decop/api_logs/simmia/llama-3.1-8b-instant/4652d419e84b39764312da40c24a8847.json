@@ -1,0 +1,19 @@
+{
+  "query_id": "4652d419e84b39764312da40c24a8847",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0163",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "A happiness so bright and",
+  "target_word": "hot",
+  "sample_idx": 1,
+  "generated_text": "infectious",
+  "generated_first_word": "infectious",
+  "similarity": 0.6607449650764465,
+  "timestamp": "2026-07-01 01:42:23"
+}

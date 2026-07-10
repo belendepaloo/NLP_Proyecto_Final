@@ -1,0 +1,19 @@
+{
+  "query_id": "3177fa815aa62e12c63d431098ffde74",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0113",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 10,
+  "prefix": "Back in New York? Persona non grata. In St. Helena?",
+  "target_word": "Royalty.",
+  "sample_idx": 2,
+  "generated_text": "A fugitive",
+  "generated_first_word": "A",
+  "similarity": 0.6412943601608276,
+  "timestamp": "2026-06-30 14:32:57"
+}

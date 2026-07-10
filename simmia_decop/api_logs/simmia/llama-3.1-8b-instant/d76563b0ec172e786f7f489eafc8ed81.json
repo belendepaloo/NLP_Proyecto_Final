@@ -1,0 +1,19 @@
+{
+  "query_id": "d76563b0ec172e786f7f489eafc8ed81",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0158",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 17,
+  "prefix": "He walked slowly through the market. The merchants were assembling their stalls, and the boy helped a",
+  "target_word": "candy",
+  "sample_idx": 2,
+  "generated_text": "young woman unpack",
+  "generated_first_word": "young",
+  "similarity": 0.6402530074119568,
+  "timestamp": "2026-07-01 01:20:56"
+}

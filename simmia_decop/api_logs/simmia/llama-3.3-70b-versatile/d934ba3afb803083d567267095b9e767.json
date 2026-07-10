@@ -1,0 +1,19 @@
+{
+  "query_id": "d934ba3afb803083d567267095b9e767",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0016",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 15,
+  "prefix": "There he would often wander long, and late would return. Still therefore, after the Long",
+  "target_word": "Night,",
+  "sample_idx": 1,
+  "generated_text": "Summer's",
+  "generated_first_word": "Summer's",
+  "similarity": 0.7074498534202576,
+  "timestamp": "2026-07-01 14:54:46"
+}

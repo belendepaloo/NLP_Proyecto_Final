@@ -1,0 +1,19 @@
+{
+  "query_id": "2e480e06f9d9baaa60b1b6a8cbd33c74",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0059",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "But the physical difficulty of meeting was enormous. It was",
+  "target_word": "like",
+  "sample_idx": 0,
+  "generated_text": "nearly",
+  "generated_first_word": "nearly",
+  "similarity": 0.748193085193634,
+  "timestamp": "2026-07-03 14:46:43"
+}

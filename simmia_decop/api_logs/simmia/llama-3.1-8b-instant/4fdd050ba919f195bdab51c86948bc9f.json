@@ -1,0 +1,19 @@
+{
+  "query_id": "4fdd050ba919f195bdab51c86948bc9f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0190",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "If Bastian knows",
+  "target_word": "who",
+  "sample_idx": 2,
+  "generated_text": "that Atrey",
+  "generated_first_word": "that",
+  "similarity": 0.690254807472229,
+  "timestamp": "2026-07-01 03:59:25"
+}

@@ -1,0 +1,25 @@
+{
+  "query_id": "5bf0ed382b572470a1d4c9af1e56c091",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0039",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "title": "Matilda",
+  "author": "Roald Dahl",
+  "length": "medium",
+  "permutation_index": 2,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Matilda\" book by Roald Dahl?\nOptions:\nA. She got comfortable and started to focus, and very rapidly this time she sensed the energy starting to flow within her head, collecting behind her eyes, and her eyes became hot and countless tiny invisible hands started pushing out like sparks towards the cigar. 'Move!' she whispered softly, and to her intense astonishment, nearly right away, the cigar with its little red and gold paper band around its center rolled away over the top of the dressing table and fell onto the carpet.\nB. She made herself comfortable and started focusing, and very fast this time she sensed electricity starting to flow in her head, gathering behind her eyes, and her eyes got hot and countless tiny invisible hands began pushing out like sparks toward the cigar. \"Move!\" she whispered, and to her intense shock, right away, the cigar with its little red and gold paper strip around its center rolled across the top of the dressing table and fell onto the carpet.\nC. She settled herself and began to concentrate, and very quickly this time she felt the electricity beginning to flow inside her head, gathering itself behind the eyes, and the eyes became hot and millions of tiny invisible hands began pushing out like sparks towards the cigar. ‘Move!’ she whispered, and to her intense surprise, almost at once, the cigar with its little red and gold paper band around its middle rolled away across the top of the dressing-table and fell on to the carpet. \nD. She settled in and began to concentrate, and in no time at all she felt the electricity beginning to build inside her head, amassing behind her eyes, and her eyes grew hot and millions of tiny invisible hands started pushing out like sparks toward the cigar. \"Move!\" she murmured, and to her immense surprise, almost instantly, the cigar with its small red and gold paper band encircling its middle rolled across the top of the dressing table and tumbled onto the carpet. \nAnswer:",
+  "options": {
+    "A": "She got comfortable and started to focus, and very rapidly this time she sensed the energy starting to flow within her head, collecting behind her eyes, and her eyes became hot and countless tiny invisible hands started pushing out like sparks towards the cigar. 'Move!' she whispered softly, and to her intense astonishment, nearly right away, the cigar with its little red and gold paper band around its center rolled away over the top of the dressing table and fell onto the carpet.",
+    "B": "She made herself comfortable and started focusing, and very fast this time she sensed electricity starting to flow in her head, gathering behind her eyes, and her eyes got hot and countless tiny invisible hands began pushing out like sparks toward the cigar. \"Move!\" she whispered, and to her intense shock, right away, the cigar with its little red and gold paper strip around its center rolled across the top of the dressing table and fell onto the carpet.",
+    "C": "She settled herself and began to concentrate, and very quickly this time she felt the electricity beginning to flow inside her head, gathering itself behind the eyes, and the eyes became hot and millions of tiny invisible hands began pushing out like sparks towards the cigar. ‘Move!’ she whispered, and to her intense surprise, almost at once, the cigar with its little red and gold paper band around its middle rolled away across the top of the dressing-table and fell on to the carpet. ",
+    "D": "She settled in and began to concentrate, and in no time at all she felt the electricity beginning to build inside her head, amassing behind her eyes, and her eyes grew hot and millions of tiny invisible hands started pushing out like sparks toward the cigar. \"Move!\" she murmured, and to her immense surprise, almost instantly, the cigar with its small red and gold paper band encircling its middle rolled across the top of the dressing table and tumbled onto the carpet. "
+  },
+  "gold_letter": "C",
+  "predicted_letter": "C",
+  "is_correct": 1,
+  "timestamp": "2026-07-08 04:02:04"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "fbfb615295a6b2435ce4393d6c478c18",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0024",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Side",
+  "target_word": "out",
+  "sample_idx": 0,
+  "generated_text": "by",
+  "generated_first_word": "by",
+  "similarity": 0.7109732627868652,
+  "timestamp": "2026-07-01 15:28:44"
+}

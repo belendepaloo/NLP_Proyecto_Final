@@ -1,0 +1,19 @@
+{
+  "query_id": "f0e0d622f0df8dd402bc5a2513d11e6e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0170",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "There were many",
+  "target_word": "recesses",
+  "sample_idx": 1,
+  "generated_text": "people",
+  "generated_first_word": "people",
+  "similarity": 0.5843731164932251,
+  "timestamp": "2026-07-06 17:48:04"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "0d1cb54dba99e43b9310db21b11428bf",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0161",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "But his personality",
+  "target_word": "changed",
+  "sample_idx": 0,
+  "generated_text": "was a complex",
+  "generated_first_word": "was",
+  "similarity": 0.7268728017807007,
+  "timestamp": "2026-07-01 01:31:46"
+}

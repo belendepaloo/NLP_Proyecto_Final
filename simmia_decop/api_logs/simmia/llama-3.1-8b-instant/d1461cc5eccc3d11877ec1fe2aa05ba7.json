@@ -1,0 +1,19 @@
+{
+  "query_id": "d1461cc5eccc3d11877ec1fe2aa05ba7",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0126",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "It makes my heart ache. Not just",
+  "target_word": "the",
+  "sample_idx": 0,
+  "generated_text": "because",
+  "generated_first_word": "because",
+  "similarity": 0.6696462035179138,
+  "timestamp": "2026-06-30 15:37:52"
+}

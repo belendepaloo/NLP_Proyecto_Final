@@ -1,0 +1,19 @@
+{
+  "query_id": "c426b45086504b5835f3892d6822d76e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0114",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "‘The first time,’ Hortensia said, ‘I poured",
+  "target_word": "half",
+  "sample_idx": 1,
+  "generated_text": "the coffee,",
+  "generated_first_word": "the",
+  "similarity": 0.6290579438209534,
+  "timestamp": "2026-06-30 14:37:13"
+}

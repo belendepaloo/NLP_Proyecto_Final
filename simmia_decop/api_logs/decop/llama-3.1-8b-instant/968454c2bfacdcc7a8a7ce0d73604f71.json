@@ -1,0 +1,25 @@
+{
+  "query_id": "968454c2bfacdcc7a8a7ce0d73604f71",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0001",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "title": "The Alchemist",
+  "author": "Paulo Coelho",
+  "length": "medium",
+  "permutation_index": 0,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Alchemist\" book by Paulo Coelho?\nOptions:\nA. The essence of the universe has confided in me during our eternal journey through the cosmos. It says its biggest issue is that until now, only minerals and plants grasp that everything is unified. There's no requirement for iron to equal copper or copper to equal gold. Each plays its own precise role as a distinctive entity, and everything would be a symphony of harmony if the hand that authored all this had ceased on the fifth day of creation.  \nB. I'm privy to the psyche of the cosmos from our endless trek through space. Its greatest trouble is up to now, only minerals and greenery know all is one. Iron needn't be copper, or copper gold. Each does its unique duty as a discrete being, and all would be peaceful symphony if the writer of this paused on day five.\nC. The spirit of the world has confided in me during our timeless journey through the universe. It tells me its biggest problem is so far, only minerals and plants understand everything is connected. Iron doesn't have to equal copper, or copper equal gold. Each performs its specific function as a distinct entity, and everything would be harmonious if the hand behind this stopped on the fifth day.\nD. “And I know the Soul of the World, because we have talked at great length to each other during this endless trip through the universe. It tells me that its greatest problem is that, up until now, only the minerals and vegetables understand that all things are one. That there’s no need for iron to be the same as copper, or copper the same as gold. Each performs its own exact function as a unique being, and everything would be a symphony of peace if the hand that wrote all this had stopped on the fifth day of creation. \nAnswer:",
+  "options": {
+    "A": "The essence of the universe has confided in me during our eternal journey through the cosmos. It says its biggest issue is that until now, only minerals and plants grasp that everything is unified. There's no requirement for iron to equal copper or copper to equal gold. Each plays its own precise role as a distinctive entity, and everything would be a symphony of harmony if the hand that authored all this had ceased on the fifth day of creation.  ",
+    "B": "I'm privy to the psyche of the cosmos from our endless trek through space. Its greatest trouble is up to now, only minerals and greenery know all is one. Iron needn't be copper, or copper gold. Each does its unique duty as a discrete being, and all would be peaceful symphony if the writer of this paused on day five.",
+    "C": "The spirit of the world has confided in me during our timeless journey through the universe. It tells me its biggest problem is so far, only minerals and plants understand everything is connected. Iron doesn't have to equal copper, or copper equal gold. Each performs its specific function as a distinct entity, and everything would be harmonious if the hand behind this stopped on the fifth day.",
+    "D": "“And I know the Soul of the World, because we have talked at great length to each other during this endless trip through the universe. It tells me that its greatest problem is that, up until now, only the minerals and vegetables understand that all things are one. That there’s no need for iron to be the same as copper, or copper the same as gold. Each performs its own exact function as a unique being, and everything would be a symphony of peace if the hand that wrote all this had stopped on the fifth day of creation. "
+  },
+  "gold_letter": "D",
+  "predicted_letter": "D",
+  "is_correct": 1,
+  "timestamp": "2026-07-08 03:40:13"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "2e0b4717077bb53ad39606d0c2e57621",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0032",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "Even as the first shadows were felt",
+  "target_word": "in",
+  "sample_idx": 2,
+  "generated_text": "across",
+  "generated_first_word": "across",
+  "similarity": 0.7121222019195557,
+  "timestamp": "2026-07-01 17:38:57"
+}

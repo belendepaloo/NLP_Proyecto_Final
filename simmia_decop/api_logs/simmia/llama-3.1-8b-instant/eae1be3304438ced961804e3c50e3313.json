@@ -1,0 +1,19 @@
+{
+  "query_id": "eae1be3304438ced961804e3c50e3313",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0012",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 19,
+  "prefix": "Bathed in starlight and dotted by leaping watch-flames from torch house minarets, Tyzanta possessed an unlikely beauty. Over the",
+  "target_word": "centuries,",
+  "sample_idx": 0,
+  "generated_text": "years, this",
+  "generated_first_word": "years,",
+  "similarity": 0.832740306854248,
+  "timestamp": "2026-06-30 05:53:44"
+}

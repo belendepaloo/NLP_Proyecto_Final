@@ -1,0 +1,21 @@
+{
+  "query_id": "ce8c3d1fb640ad086f414a48cb3dcc24",
+  "query_type": "perturbed",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0013",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "It creaked, but if the sound woke anyone inside, they didnt protest. Bastian and Gabe settled Milo on the floor, then left quickly, soundlessly. He didnt stir. Youre a sneaky lot, Val commented once they were all outside. Have either of you considered poison running? Gabe looked stricken, but Bastian shrugged. Not as such, no, but never say never. Although my current schedule wouldnt allow for it. Thats a shame. Mari shook her head. Our crew is dwindling rapidly these days. Arrests? Lore asked quietly. Vals operation might be newly legal, but bloodcoats had been known to arrest anyone they didnt like the look of. If were not in the same room, then Im usually working on his book. Whether hes next to me or not, hes always in my head. That has to be the explanation for why Im feeling this odd attachment to him. I simply havent talked to another single guy in weeks. When he doesnt join me and doesnt send any texts, I head back, picking up two mugs of hot cocoa in the lobby before going up to our room. I knock once, just to make sure he knows Im coming in. And nothing in the world could prepare me for what I see next. Im certain hes going to kiss me, but instead he says, I read your books. I back up, this revelation a shock to my system. I wanted to tell you earlier, he continues, but I thought it might be too nerve-racking if you knew I was reading them on the flight. You mean, you read Maddy and Ambers books. Sure, he says. Their names are on the covers, I guess. Maybe its because I was looking for you, but I could hear you, even in their voices. I open my mouth to argue, but nothing comes out. The fact that I was that visible in those books, enough for this person whos known me for only seven weeks to see me there . ‘You ignorant little slug!’ the Trunchbull bellowed. ‘You witless",
+  "original_prefix": "‘You ignorant little slug!’ the Trunchbull bellowed. ‘You witless",
+  "non_member_prefix": "It creaked, but if the sound woke anyone inside, they didnt protest. Bastian and Gabe settled Milo on the floor, then left quickly, soundlessly. He didnt stir. Youre a sneaky lot, Val commented once they were all outside. Have either of you considered poison running? Gabe looked stricken, but Bastian shrugged. Not as such, no, but never say never. Although my current schedule wouldnt allow for it. Thats a shame. Mari shook her head. Our crew is dwindling rapidly these days. Arrests? Lore asked quietly. Vals operation might be newly legal, but bloodcoats had been known to arrest anyone they didnt like the look of. If were not in the same room, then Im usually working on his book. Whether hes next to me or not, hes always in my head. That has to be the explanation for why Im feeling this odd attachment to him. I simply havent talked to another single guy in weeks. When he doesnt join me and doesnt send any texts, I head back, picking up two mugs of hot cocoa in the lobby before going up to our room. I knock once, just to make sure he knows Im coming in. And nothing in the world could prepare me for what I see next. Im certain hes going to kiss me, but instead he says, I read your books. I back up, this revelation a shock to my system. I wanted to tell you earlier, he continues, but I thought it might be too nerve-racking if you knew I was reading them on the flight. You mean, you read Maddy and Ambers books. Sure, he says. Their names are on the covers, I guess. Maybe its because I was looking for you, but I could hear you, even in their voices. I open my mouth to argue, but nothing comes out. The fact that I was that visible in those books, enough for this person whos known me for only seven weeks to see me there .",
+  "target_word": "weed!",
+  "sample_idx": 2,
+  "generated_text": "thing!'",
+  "generated_first_word": "thing!'",
+  "similarity": 0.7017557621002197,
+  "timestamp": "2026-06-30 05:56:24"
+}

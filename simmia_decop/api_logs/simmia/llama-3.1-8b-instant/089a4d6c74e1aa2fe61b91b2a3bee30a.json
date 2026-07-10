@@ -1,0 +1,19 @@
+{
+  "query_id": "089a4d6c74e1aa2fe61b91b2a3bee30a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0059",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 14,
+  "prefix": "But the physical difficulty of meeting was enormous. It was like trying to make",
+  "target_word": "a",
+  "sample_idx": 2,
+  "generated_text": "a connection between",
+  "generated_first_word": "a",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 09:59:42"
+}

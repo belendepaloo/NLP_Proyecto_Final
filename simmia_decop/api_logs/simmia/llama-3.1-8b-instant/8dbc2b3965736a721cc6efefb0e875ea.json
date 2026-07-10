@@ -1,0 +1,19 @@
+{
+  "query_id": "8dbc2b3965736a721cc6efefb0e875ea",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0181",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 19,
+  "prefix": "But when he had drawn forth, as he hoped, the armies of Morgoth in answer, then Fingon should issue",
+  "target_word": "forth",
+  "sample_idx": 2,
+  "generated_text": "forth from the",
+  "generated_first_word": "forth",
+  "similarity": 1.0,
+  "timestamp": "2026-07-01 03:17:36"
+}

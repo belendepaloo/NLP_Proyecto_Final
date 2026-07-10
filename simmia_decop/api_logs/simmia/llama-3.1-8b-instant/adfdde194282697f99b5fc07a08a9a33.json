@@ -1,0 +1,19 @@
+{
+  "query_id": "adfdde194282697f99b5fc07a08a9a33",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0157",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "Who knows what the future holds, right? Besides,",
+  "target_word": "you",
+  "sample_idx": 0,
+  "generated_text": "we'll just",
+  "generated_first_word": "we'll",
+  "similarity": 0.6701052784919739,
+  "timestamp": "2026-06-30 18:39:36"
+}

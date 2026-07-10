@@ -1,0 +1,19 @@
+{
+  "query_id": "524ba9319a5f5cb4589dfcf9e5711dd1",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0136",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "He missed Hogwarts so much it was like having",
+  "target_word": "a",
+  "sample_idx": 1,
+  "generated_text": "a constant ache",
+  "generated_first_word": "a",
+  "similarity": 1.0,
+  "timestamp": "2026-07-05 17:27:58"
+}

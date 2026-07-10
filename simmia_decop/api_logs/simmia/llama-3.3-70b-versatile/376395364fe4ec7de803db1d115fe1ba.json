@@ -1,0 +1,19 @@
+{
+  "query_id": "376395364fe4ec7de803db1d115fe1ba",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0153",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "“So, Harry,” said Lockhart, while Hermione folded the",
+  "target_word": "note",
+  "sample_idx": 2,
+  "generated_text": "letters",
+  "generated_first_word": "letters",
+  "similarity": 0.6879041790962219,
+  "timestamp": "2026-07-06 16:29:32"
+}

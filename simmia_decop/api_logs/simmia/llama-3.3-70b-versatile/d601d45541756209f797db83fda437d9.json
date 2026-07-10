@@ -1,0 +1,19 @@
+{
+  "query_id": "d601d45541756209f797db83fda437d9",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0023",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "He was shoeless; large,",
+  "target_word": "dirty",
+  "sample_idx": 2,
+  "generated_text": "calloused",
+  "generated_first_word": "calloused",
+  "similarity": 0.6681149005889893,
+  "timestamp": "2026-07-01 15:24:59"
+}

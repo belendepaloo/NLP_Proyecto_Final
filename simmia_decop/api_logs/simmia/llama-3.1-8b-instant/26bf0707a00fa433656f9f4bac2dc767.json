@@ -1,0 +1,19 @@
+{
+  "query_id": "26bf0707a00fa433656f9f4bac2dc767",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0080",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 19,
+  "prefix": "Harry heard from Hogwarts one sunny morning about a week after he had arrived at the Burrow. He and",
+  "target_word": "Ron",
+  "sample_idx": 2,
+  "generated_text": "Ron's parents",
+  "generated_first_word": "Ron's",
+  "similarity": 0.8925056457519531,
+  "timestamp": "2026-06-30 11:49:30"
+}

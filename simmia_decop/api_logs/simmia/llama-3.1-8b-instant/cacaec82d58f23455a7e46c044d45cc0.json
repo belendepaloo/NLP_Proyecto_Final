@@ -1,0 +1,19 @@
+{
+  "query_id": "cacaec82d58f23455a7e46c044d45cc0",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0021",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "The men of the oasis surrounded the horsemen from",
+  "target_word": "the",
+  "sample_idx": 2,
+  "generated_text": "the rival tribe",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 06:38:14"
+}

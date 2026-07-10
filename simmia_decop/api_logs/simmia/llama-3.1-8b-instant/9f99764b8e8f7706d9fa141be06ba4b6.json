@@ -1,0 +1,19 @@
+{
+  "query_id": "9f99764b8e8f7706d9fa141be06ba4b6",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0045",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 16,
+  "prefix": "A decade younger than I was now. Had Stahl offered her a ride? Had he dragged",
+  "target_word": "her",
+  "sample_idx": 1,
+  "generated_text": "her along,",
+  "generated_first_word": "her",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 08:45:40"
+}

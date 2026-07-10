@@ -1,0 +1,19 @@
+{
+  "query_id": "9bf68a426c8bdb4e04cb9c469cedd356",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0094",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "“Rather than finding",
+  "target_word": "a",
+  "sample_idx": 1,
+  "generated_text": "a way to",
+  "generated_first_word": "a",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 12:57:36"
+}

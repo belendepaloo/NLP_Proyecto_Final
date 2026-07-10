@@ -1,0 +1,19 @@
+{
+  "query_id": "7ec886ba03b5f0905104073ee6588515",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0004",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "It creaked, but",
+  "target_word": "if",
+  "sample_idx": 0,
+  "generated_text": "the floorboards",
+  "generated_first_word": "the",
+  "similarity": 0.6255862712860107,
+  "timestamp": "2026-06-30 05:07:02"
+}

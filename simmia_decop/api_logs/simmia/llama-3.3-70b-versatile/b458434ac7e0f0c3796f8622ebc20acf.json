@@ -1,0 +1,19 @@
+{
+  "query_id": "b458434ac7e0f0c3796f8622ebc20acf",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0045",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "A decade younger than I was",
+  "target_word": "now.",
+  "sample_idx": 0,
+  "generated_text": "at",
+  "generated_first_word": "at",
+  "similarity": 0.6377514600753784,
+  "timestamp": "2026-07-02 03:12:07"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "3fbd4453ab4b0fe3d6de84af7fbecbcf",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0171",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "Now what sort of business would you like",
+  "target_word": "to",
+  "sample_idx": 0,
+  "generated_text": "to start.",
+  "generated_first_word": "to",
+  "similarity": 1.0,
+  "timestamp": "2026-07-01 02:23:42"
+}

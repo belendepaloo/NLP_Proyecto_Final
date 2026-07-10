@@ -1,0 +1,19 @@
+{
+  "query_id": "e4769d78280bd70a7bc6473d4a087b39",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0153",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 15,
+  "prefix": "“So, Harry,” said Lockhart, while Hermione folded the note with fumbling fingers and slipped it",
+  "target_word": "into",
+  "sample_idx": 2,
+  "generated_text": "into her pocket",
+  "generated_first_word": "into",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 18:21:39"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "41eee58751124e62387edb86b03502f5",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0031",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 16,
+  "prefix": "Whenever he could, he sought out a new road to travel. He had never been to",
+  "target_word": "that",
+  "sample_idx": 0,
+  "generated_text": "Europe",
+  "generated_first_word": "Europe",
+  "similarity": 0.5852620005607605,
+  "timestamp": "2026-07-01 16:05:26"
+}

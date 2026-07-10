@@ -1,0 +1,19 @@
+{
+  "query_id": "6a5d336c0f13df3f8dc614e5859bbb10",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0195",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 1,
+  "prefix": "His",
+  "target_word": "need",
+  "sample_idx": 0,
+  "generated_text": "name",
+  "generated_first_word": "name",
+  "similarity": 0.7001174688339233,
+  "timestamp": "2026-07-08 02:28:09"
+}

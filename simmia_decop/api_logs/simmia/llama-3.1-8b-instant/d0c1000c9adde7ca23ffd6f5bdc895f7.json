@@ -1,0 +1,19 @@
+{
+  "query_id": "d0c1000c9adde7ca23ffd6f5bdc895f7",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0114",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 17,
+  "prefix": "‘The first time,’ Hortensia said, ‘I poured half a tin of Golden Syrup on to the seat",
+  "target_word": "of",
+  "sample_idx": 1,
+  "generated_text": "of my mother",
+  "generated_first_word": "of",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 14:39:59"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "0e13ace1407a61a1b6b9db24527ee9b7",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0009",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "‘You look splendid,’ he said aloud.",
+  "target_word": "‘I",
+  "sample_idx": 2,
+  "generated_text": "His voice echoed",
+  "generated_first_word": "His",
+  "similarity": 0.6681818962097168,
+  "timestamp": "2026-06-30 05:34:02"
+}

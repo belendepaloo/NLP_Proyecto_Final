@@ -1,0 +1,19 @@
+{
+  "query_id": "62abcf8293dd962bbf15c5c6b8fb9c81",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0170",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "There were many recesses cut in the rock of",
+  "target_word": "the",
+  "sample_idx": 1,
+  "generated_text": "the ancient temple",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-07-01 02:19:33"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "f664e7db623a02d88b9460f3cc9cf6ae",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0134",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 11,
+  "prefix": "Then all listened while Elrond in his clear voice spoke of",
+  "target_word": "Sauron",
+  "sample_idx": 2,
+  "generated_text": "the perils",
+  "generated_first_word": "the",
+  "similarity": 0.625229001045227,
+  "timestamp": "2026-06-30 16:17:49"
+}

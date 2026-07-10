@@ -1,0 +1,19 @@
+{
+  "query_id": "14dd4bc2e90fbb947d4cfd3687f4e050",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0150",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "I had only met him four or",
+  "target_word": "five",
+  "sample_idx": 1,
+  "generated_text": "five",
+  "generated_first_word": "five",
+  "similarity": 1.0,
+  "timestamp": "2026-07-06 16:14:57"
+}

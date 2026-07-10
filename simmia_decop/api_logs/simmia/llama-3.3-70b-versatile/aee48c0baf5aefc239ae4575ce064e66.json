@@ -1,0 +1,19 @@
+{
+  "query_id": "aee48c0baf5aefc239ae4575ce064e66",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0114",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "‘The first time,’ Hortensia said, ‘I poured half a tin",
+  "target_word": "of",
+  "sample_idx": 0,
+  "generated_text": "of petrol",
+  "generated_first_word": "of",
+  "similarity": 1.0,
+  "timestamp": "2026-07-05 15:47:43"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "709badd46f7c6ceb37922c8c6432bf37",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0191",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 1,
+  "prefix": "We",
+  "target_word": "were",
+  "sample_idx": 2,
+  "generated_text": "are",
+  "generated_first_word": "are",
+  "similarity": 0.8519918322563171,
+  "timestamp": "2026-07-08 02:09:30"
+}

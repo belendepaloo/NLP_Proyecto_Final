@@ -1,0 +1,19 @@
+{
+  "query_id": "97b5583384a304e01fe057f479afd73f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0196",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "The boy continued to listen to his",
+  "target_word": "heart",
+  "sample_idx": 0,
+  "generated_text": "mother's story",
+  "generated_first_word": "mother's",
+  "similarity": 0.6671279668807983,
+  "timestamp": "2026-07-01 04:30:10"
+}

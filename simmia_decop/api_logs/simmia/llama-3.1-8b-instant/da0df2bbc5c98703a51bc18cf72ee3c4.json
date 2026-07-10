@@ -1,0 +1,19 @@
+{
+  "query_id": "da0df2bbc5c98703a51bc18cf72ee3c4",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0090",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 13,
+  "prefix": "Archer looked up and met his visitor's anxious gaze. \"Don't you know, Monsieur--is",
+  "target_word": "it",
+  "sample_idx": 1,
+  "generated_text": "it--that",
+  "generated_first_word": "it--that",
+  "similarity": 0.8077519536018372,
+  "timestamp": "2026-06-30 12:39:03"
+}

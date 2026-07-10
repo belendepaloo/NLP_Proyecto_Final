@@ -1,0 +1,25 @@
+{
+  "query_id": "feb60cfc87ec2cb681eed6ffc781b4e9",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0189",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "title": "Matilda",
+  "author": "Roald Dahl",
+  "length": "medium",
+  "permutation_index": 3,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Matilda\" book by Roald Dahl?\nOptions:\nA. A woman can't attract a man through intelligence alone, according to Mrs. Wormwood. She gestured at a voluptuous actress being held by a rugged actor on TV, doubting she wooed him with math. Now he'll probably marry her so she can live lavishly with servants, Mrs. Wormwood predicted.  \nB. ‘A girl doesn’t get a man by being brainy,’ Mrs Wormwood said. ‘Look at that film-star for instance,’ she added, pointing at the silent TV screen, where a bosomy female was being embraced by a craggy actor in the moonlight. ‘You don’t think she got him to do that by multiplying figures at him, do you? Not likely. And now he’s going to marry her, you see if he doesn’t, and she’s going to live in a mansion with a butler and lots of maids.’ \nC. Mrs. Wormwood insisted that being brainy doesn't get a woman a husband. She referenced a curvy actress on screen, embraced by a rugged actor, doubting math skills attracted him. She expected he'll now marry the actress, who'll live extravagantly with butlers and maids.\nD. Mrs. Wormwood claimed women don't get men by being smart. She pointed to a busty actress embraced by a craggy actor, doubting she did so by impressing him with numbers. She bet he'll marry the actress so she can live in luxury with butlers and maids.\nAnswer:",
+  "options": {
+    "A": "A woman can't attract a man through intelligence alone, according to Mrs. Wormwood. She gestured at a voluptuous actress being held by a rugged actor on TV, doubting she wooed him with math. Now he'll probably marry her so she can live lavishly with servants, Mrs. Wormwood predicted.  ",
+    "B": "‘A girl doesn’t get a man by being brainy,’ Mrs Wormwood said. ‘Look at that film-star for instance,’ she added, pointing at the silent TV screen, where a bosomy female was being embraced by a craggy actor in the moonlight. ‘You don’t think she got him to do that by multiplying figures at him, do you? Not likely. And now he’s going to marry her, you see if he doesn’t, and she’s going to live in a mansion with a butler and lots of maids.’ ",
+    "C": "Mrs. Wormwood insisted that being brainy doesn't get a woman a husband. She referenced a curvy actress on screen, embraced by a rugged actor, doubting math skills attracted him. She expected he'll now marry the actress, who'll live extravagantly with butlers and maids.",
+    "D": "Mrs. Wormwood claimed women don't get men by being smart. She pointed to a busty actress embraced by a craggy actor, doubting she did so by impressing him with numbers. She bet he'll marry the actress so she can live in luxury with butlers and maids."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "B",
+  "is_correct": 1,
+  "timestamp": "2026-07-08 05:31:01"
+}

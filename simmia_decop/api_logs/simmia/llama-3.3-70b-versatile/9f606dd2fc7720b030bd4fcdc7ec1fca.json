@@ -1,0 +1,19 @@
+{
+  "query_id": "9f606dd2fc7720b030bd4fcdc7ec1fca",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0115",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "If I were someone who",
+  "target_word": "partook",
+  "sample_idx": 0,
+  "generated_text": "enjoyed",
+  "generated_first_word": "enjoyed",
+  "similarity": 0.6201337575912476,
+  "timestamp": "2026-07-05 15:51:00"
+}

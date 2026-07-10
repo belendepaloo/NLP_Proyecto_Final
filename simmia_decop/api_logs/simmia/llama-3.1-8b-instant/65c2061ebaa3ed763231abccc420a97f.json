@@ -1,0 +1,19 @@
+{
+  "query_id": "65c2061ebaa3ed763231abccc420a97f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0047",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 17,
+  "prefix": "The sun began its departure, as well. The boy watched it through its trajectory for some time,",
+  "target_word": "until",
+  "sample_idx": 1,
+  "generated_text": "lost in thought",
+  "generated_first_word": "lost",
+  "similarity": 0.5955250263214111,
+  "timestamp": "2026-06-30 08:56:18"
+}

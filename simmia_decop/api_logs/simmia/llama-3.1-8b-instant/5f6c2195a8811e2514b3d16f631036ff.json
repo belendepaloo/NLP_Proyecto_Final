@@ -1,0 +1,19 @@
+{
+  "query_id": "5f6c2195a8811e2514b3d16f631036ff",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0038",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "But for all of that, it was a",
+  "target_word": "simple",
+  "sample_idx": 1,
+  "generated_text": "really special experience",
+  "generated_first_word": "really",
+  "similarity": 0.6565539836883545,
+  "timestamp": "2026-06-30 08:06:47"
+}

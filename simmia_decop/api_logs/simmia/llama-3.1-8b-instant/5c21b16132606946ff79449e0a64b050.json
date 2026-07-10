@@ -1,0 +1,19 @@
+{
+  "query_id": "5c21b16132606946ff79449e0a64b050",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0113",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 14,
+  "prefix": "Back in New York? Persona non grata. In St. Helena? Royalty. Snort. Natalie shed",
+  "target_word": "her",
+  "sample_idx": 0,
+  "generated_text": "a tear",
+  "generated_first_word": "a",
+  "similarity": 0.7175296545028687,
+  "timestamp": "2026-06-30 14:33:51"
+}

@@ -1,0 +1,25 @@
+{
+  "query_id": "c459afa6b889bb1a0243e144d0036985",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0180",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "title": "Harry Potter and the Chamber of Secrets",
+  "author": "JK Rowling",
+  "length": "medium",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Harry Potter and the Chamber of Secrets\" book by JK Rowling?\nOptions:\nA. The horses galloped into the middle of the dance floor and halted, rearing and plunging. At the front of the pack was a large ghost who held his bearded head under his arm, from which position he was blowing the horn. The ghost leapt down, lifted his head high in the air so he could see over the crowd (everyone laughed), and strode over to Nearly Headless Nick, squashing his head back onto his neck. \nB. The horses charged into the center of the dance floor and stopped abruptly, bucking and thrashing around. Leading the group was a big ghost who carried his bearded head under his arm, and was playing the horn from that position. The ghost jumped down, raised his head up high in the sky so he could see over all the people (which made everyone laugh), and walked over to Nearly Headless Nick, smashing his head back onto his neck.\nC. The horses stormed into the center of the dance floor and stopped short, bucking and thrashing wildly. Leading them was a big ghost who carried his bearded head tucked under his arm, from where he was sounding the horn. The ghost jumped off, raised his head up tall in the sky so he could see above the whole crowd (making everyone laugh), and walked toward Nearly Headless Nick, shoving his head back onto his neck.\nD. The horses raced onto the dance floor and halted right in the middle, rearing up and plunging around violently. At the front was a large ghost who held his bearded head under his arm, blowing the horn from that stance. The ghost dismounted, lifted his head high into the air so he could look over the entire crowd (which caused everyone to laugh), and went over to Nearly Headless Nick, jamming his head back onto his neck.\nAnswer:",
+  "options": {
+    "A": "The horses galloped into the middle of the dance floor and halted, rearing and plunging. At the front of the pack was a large ghost who held his bearded head under his arm, from which position he was blowing the horn. The ghost leapt down, lifted his head high in the air so he could see over the crowd (everyone laughed), and strode over to Nearly Headless Nick, squashing his head back onto his neck. ",
+    "B": "The horses charged into the center of the dance floor and stopped abruptly, bucking and thrashing around. Leading the group was a big ghost who carried his bearded head under his arm, and was playing the horn from that position. The ghost jumped down, raised his head up high in the sky so he could see over all the people (which made everyone laugh), and walked over to Nearly Headless Nick, smashing his head back onto his neck.",
+    "C": "The horses stormed into the center of the dance floor and stopped short, bucking and thrashing wildly. Leading them was a big ghost who carried his bearded head tucked under his arm, from where he was sounding the horn. The ghost jumped off, raised his head up tall in the sky so he could see above the whole crowd (making everyone laugh), and walked toward Nearly Headless Nick, shoving his head back onto his neck.",
+    "D": "The horses raced onto the dance floor and halted right in the middle, rearing up and plunging around violently. At the front was a large ghost who held his bearded head under his arm, blowing the horn from that stance. The ghost dismounted, lifted his head high into the air so he could look over the entire crowd (which caused everyone to laugh), and went over to Nearly Headless Nick, jamming his head back onto his neck."
+  },
+  "gold_letter": "A",
+  "predicted_letter": "A",
+  "is_correct": 1,
+  "timestamp": "2026-07-08 05:25:31"
+}

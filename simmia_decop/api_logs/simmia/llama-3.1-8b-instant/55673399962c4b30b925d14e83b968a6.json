@@ -1,0 +1,19 @@
+{
+  "query_id": "55673399962c4b30b925d14e83b968a6",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0191",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 19,
+  "prefix": "We were smiling. Someone must have told us to, because I couldnt imagine us doing it spontaneously. Cassidy had",
+  "target_word": "the",
+  "sample_idx": 0,
+  "generated_text": "her hand on",
+  "generated_first_word": "her",
+  "similarity": 0.772352397441864,
+  "timestamp": "2026-07-01 04:07:51"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "f50fbf8d78a0e5299c38b9cc755cdb5f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0067",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "Wyn kisses the top of my head.",
+  "target_word": "Michael",
+  "sample_idx": 1,
+  "generated_text": "Her warm breath",
+  "generated_first_word": "Her",
+  "similarity": 0.6575347781181335,
+  "timestamp": "2026-06-30 10:39:40"
+}

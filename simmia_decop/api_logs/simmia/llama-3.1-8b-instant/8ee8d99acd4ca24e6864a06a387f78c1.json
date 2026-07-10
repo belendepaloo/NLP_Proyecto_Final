@@ -1,0 +1,19 @@
+{
+  "query_id": "8ee8d99acd4ca24e6864a06a387f78c1",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0089",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 15,
+  "prefix": "Still I couldn't dote on Heath- cliff, and I wondered often what my master saw",
+  "target_word": "to",
+  "sample_idx": 0,
+  "generated_text": "in that rough",
+  "generated_first_word": "in",
+  "similarity": 0.7548444271087646,
+  "timestamp": "2026-06-30 12:34:28"
+}

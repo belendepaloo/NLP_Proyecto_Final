@@ -1,0 +1,19 @@
+{
+  "query_id": "b22c42f662369c6b9fcb3039c282bfc1",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0101",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Oh, don't",
+  "target_word": "tell",
+  "sample_idx": 0,
+  "generated_text": "worry about",
+  "generated_first_word": "worry",
+  "similarity": 0.6849082112312317,
+  "timestamp": "2026-06-30 13:31:34"
+}

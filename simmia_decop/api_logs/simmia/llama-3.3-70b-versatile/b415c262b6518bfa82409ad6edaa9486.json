@@ -1,0 +1,19 @@
+{
+  "query_id": "b415c262b6518bfa82409ad6edaa9486",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0165",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "And high in the north as a",
+  "target_word": "challenge",
+  "sample_idx": 0,
+  "generated_text": "star",
+  "generated_first_word": "star",
+  "similarity": 0.6823781728744507,
+  "timestamp": "2026-07-06 17:25:08"
+}

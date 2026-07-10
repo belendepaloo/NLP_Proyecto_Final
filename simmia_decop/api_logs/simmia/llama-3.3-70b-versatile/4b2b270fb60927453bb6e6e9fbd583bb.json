@@ -1,0 +1,19 @@
+{
+  "query_id": "4b2b270fb60927453bb6e6e9fbd583bb",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0172",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "But she was brought up in the country because her mother had",
+  "target_word": "to",
+  "sample_idx": 1,
+  "generated_text": "always wanted",
+  "generated_first_word": "always",
+  "similarity": 0.6799330711364746,
+  "timestamp": "2026-07-06 18:00:37"
+}

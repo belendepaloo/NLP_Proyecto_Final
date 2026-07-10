@@ -1,0 +1,19 @@
+{
+  "query_id": "ee5c61a73f2cff10efe49713f857dc33",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0111",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "The vaults were reached by means of small, goblin-driven carts that sped",
+  "target_word": "along",
+  "sample_idx": 1,
+  "generated_text": "along the twisting",
+  "generated_first_word": "along",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 14:23:18"
+}

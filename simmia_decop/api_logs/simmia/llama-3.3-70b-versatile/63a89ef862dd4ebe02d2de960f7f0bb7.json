@@ -1,0 +1,19 @@
+{
+  "query_id": "63a89ef862dd4ebe02d2de960f7f0bb7",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0190",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "If Bastian knows who",
+  "target_word": "I",
+  "sample_idx": 1,
+  "generated_text": "the culprit",
+  "generated_first_word": "the",
+  "similarity": 0.7449607253074646,
+  "timestamp": "2026-07-08 02:05:37"
+}

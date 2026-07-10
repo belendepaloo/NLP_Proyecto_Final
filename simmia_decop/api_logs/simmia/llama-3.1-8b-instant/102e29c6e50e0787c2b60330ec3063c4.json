@@ -1,0 +1,19 @@
+{
+  "query_id": "102e29c6e50e0787c2b60330ec3063c4",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0025",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "Miss Cathy had been sick, and that made her still.",
+  "target_word": "She",
+  "sample_idx": 2,
+  "generated_text": "her usual bubb",
+  "generated_first_word": "her",
+  "similarity": 0.9413529634475708,
+  "timestamp": "2026-06-30 06:59:08"
+}

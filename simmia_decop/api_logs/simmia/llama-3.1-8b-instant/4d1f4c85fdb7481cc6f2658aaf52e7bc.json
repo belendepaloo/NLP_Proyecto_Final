@@ -1,0 +1,19 @@
+{
+  "query_id": "4d1f4c85fdb7481cc6f2658aaf52e7bc",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0199",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 9,
+  "prefix": "What makes you think I would have you, Lady",
+  "target_word": "Sabran?",
+  "sample_idx": 2,
+  "generated_text": "in my home",
+  "generated_first_word": "in",
+  "similarity": 0.5989625453948975,
+  "timestamp": "2026-07-01 04:45:55"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "e5d864e6c1a4c78ca90c2c04ca4e5d9c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0168",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 18,
+  "prefix": "Stop. I cannot handle Cody Benham with words of wisdom, I told him, fending him off with an",
+  "target_word": "upheld",
+  "sample_idx": 2,
+  "generated_text": "upraised",
+  "generated_first_word": "upraised",
+  "similarity": 0.7216180562973022,
+  "timestamp": "2026-07-06 17:42:16"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "492e7ad8a34dd7614a9ffbc7947674fd",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0041",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "He still broke into",
+  "target_word": "your",
+  "sample_idx": 0,
+  "generated_text": "a cold sweat",
+  "generated_first_word": "a",
+  "similarity": 0.7083026170730591,
+  "timestamp": "2026-06-30 08:21:00"
+}

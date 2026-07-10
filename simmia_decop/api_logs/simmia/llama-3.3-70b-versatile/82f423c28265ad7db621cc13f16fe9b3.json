@@ -1,0 +1,19 @@
+{
+  "query_id": "82f423c28265ad7db621cc13f16fe9b3",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0013",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "‘You ignorant little slug!’",
+  "target_word": "the",
+  "sample_idx": 2,
+  "generated_text": "shouted",
+  "generated_first_word": "shouted",
+  "similarity": 0.6639877557754517,
+  "timestamp": "2026-07-01 14:38:12"
+}

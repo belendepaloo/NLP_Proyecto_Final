@@ -1,0 +1,19 @@
+{
+  "query_id": "966db3485aa96d6db0a4599281f8e959",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0182",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 9,
+  "prefix": "He was buttering his bread, not looking up at",
+  "target_word": "her.",
+  "sample_idx": 1,
+  "generated_text": "the woman who",
+  "generated_first_word": "the",
+  "similarity": 0.7721307873725891,
+  "timestamp": "2026-07-01 03:19:50"
+}

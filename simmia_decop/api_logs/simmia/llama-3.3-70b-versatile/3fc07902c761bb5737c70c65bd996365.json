@@ -1,0 +1,19 @@
+{
+  "query_id": "3fc07902c761bb5737c70c65bd996365",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0190",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "If Bastian knows who I am,",
+  "target_word": "Lore",
+  "sample_idx": 0,
+  "generated_text": "then",
+  "generated_first_word": "then",
+  "similarity": 0.5800154209136963,
+  "timestamp": "2026-07-08 02:06:01"
+}

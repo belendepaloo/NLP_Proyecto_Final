@@ -1,0 +1,19 @@
+{
+  "query_id": "40f4df8f1aa3cad399f69d3b4c06572a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0127",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 10,
+  "prefix": "You cant judge a book by its cover, Louise singsonged",
+  "target_word": "and",
+  "sample_idx": 1,
+  "generated_text": "as",
+  "generated_first_word": "as",
+  "similarity": 0.7607726454734802,
+  "timestamp": "2026-07-05 16:47:17"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "c59b2202074e8e3bce385ed5e5272d69",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0165",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "And high in the north as a challenge to Melkor she set the crown of seven mighty stars",
+  "target_word": "to",
+  "sample_idx": 2,
+  "generated_text": "Varda's",
+  "generated_first_word": "Varda's",
+  "similarity": 0.6182820796966553,
+  "timestamp": "2026-07-01 01:55:48"
+}

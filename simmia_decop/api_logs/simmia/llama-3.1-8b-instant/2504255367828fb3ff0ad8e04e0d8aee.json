@@ -1,0 +1,19 @@
+{
+  "query_id": "2504255367828fb3ff0ad8e04e0d8aee",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0004",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 18,
+  "prefix": "It creaked, but if the sound woke anyone inside, they didnt protest. Bastian and Gabe settled Milo on",
+  "target_word": "the",
+  "sample_idx": 2,
+  "generated_text": "the couch,",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 05:10:46"
+}

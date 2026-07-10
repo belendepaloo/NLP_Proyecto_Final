@@ -1,0 +1,19 @@
+{
+  "query_id": "5e0334a79cc59ff7b9133637feea6959",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0050",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "At the very",
+  "target_word": "least,",
+  "sample_idx": 2,
+  "generated_text": "beginning",
+  "generated_first_word": "beginning",
+  "similarity": 0.6179182529449463,
+  "timestamp": "2026-07-03 13:57:16"
+}

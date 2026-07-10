@@ -1,0 +1,19 @@
+{
+  "query_id": "f030a1d63867148882f2da18b8c4bb15",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0172",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "But she was brought up in the country because",
+  "target_word": "her",
+  "sample_idx": 1,
+  "generated_text": "her parents had",
+  "generated_first_word": "her",
+  "similarity": 1.0,
+  "timestamp": "2026-07-01 02:29:04"
+}

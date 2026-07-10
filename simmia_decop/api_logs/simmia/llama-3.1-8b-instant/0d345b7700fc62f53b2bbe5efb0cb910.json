@@ -1,0 +1,19 @@
+{
+  "query_id": "0d345b7700fc62f53b2bbe5efb0cb910",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0186",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 13,
+  "prefix": "O'Brien had sat down beside the bed, so that his face was almost",
+  "target_word": "on",
+  "sample_idx": 2,
+  "generated_text": "touching her",
+  "generated_first_word": "touching",
+  "similarity": 0.6497317552566528,
+  "timestamp": "2026-07-01 03:40:45"
+}

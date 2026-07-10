@@ -1,0 +1,19 @@
+{
+  "query_id": "f1167c68e7be248e362df700838ca442",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0113",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 12,
+  "prefix": "Back in New York? Persona non grata. In St. Helena? Royalty. Snort.",
+  "target_word": "Natalie",
+  "sample_idx": 0,
+  "generated_text": "The absurdity",
+  "generated_first_word": "The",
+  "similarity": 0.637354850769043,
+  "timestamp": "2026-06-30 14:33:19"
+}

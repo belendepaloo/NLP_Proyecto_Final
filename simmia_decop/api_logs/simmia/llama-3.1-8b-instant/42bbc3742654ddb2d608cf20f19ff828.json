@@ -1,0 +1,19 @@
+{
+  "query_id": "42bbc3742654ddb2d608cf20f19ff828",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0120",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "At first Frodo felt as if he had indeed been turned into stone by the incantation. Then a",
+  "target_word": "wild",
+  "sample_idx": 1,
+  "generated_text": "sudden chill",
+  "generated_first_word": "sudden",
+  "similarity": 0.6977615356445312,
+  "timestamp": "2026-06-30 15:11:10"
+}

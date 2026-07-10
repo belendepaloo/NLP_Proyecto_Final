@@ -1,0 +1,19 @@
+{
+  "query_id": "54a85e808e2c4c0ea1100acd66b6a499",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0122",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Still, he couldnt walk",
+  "target_word": "away",
+  "sample_idx": 0,
+  "generated_text": "properly",
+  "generated_first_word": "properly",
+  "similarity": 0.6355420351028442,
+  "timestamp": "2026-07-05 16:22:59"
+}

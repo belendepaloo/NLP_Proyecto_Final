@@ -1,0 +1,19 @@
+{
+  "query_id": "2a755debeff913c387e4a6dd106c01ac",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0053",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "We talked about this. You talked about this.",
+  "target_word": "Bastian",
+  "sample_idx": 0,
+  "generated_text": "But I don",
+  "generated_first_word": "But",
+  "similarity": 0.5683230757713318,
+  "timestamp": "2026-06-30 09:25:35"
+}

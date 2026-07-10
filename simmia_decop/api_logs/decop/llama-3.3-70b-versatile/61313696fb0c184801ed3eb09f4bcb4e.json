@@ -1,0 +1,25 @@
+{
+  "query_id": "61313696fb0c184801ed3eb09f4bcb4e",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0021",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "title": "The Alchemist",
+  "author": "Paulo Coelho",
+  "length": "medium",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Alchemist\" book by Paulo Coelho?\nOptions:\nA. The men living in the oasis encircled the riders who came from the desert and in under thirty minutes all except one of the unwanted visitors were killed. The kids were kept on the opposite side of a group of palm trees, and didn't see any of what had transpired. The wives had stayed in their tents, praying for the protection of their husbands, and also didn't see the fight. If not for the corpses there on the sand, it would have looked like a regular day at the oasis.  \nB. The men living at the oasis encircled the riders from the desert and in under 30 minutes, all but one of the trespassers were killed. The kids were kept on the other side of a group of palm trees and didn't witness any of what happened. The wives stayed in their tents, praying for their husbands' protection, and also didn't see the fight. If not for the dead bodies there in the sand, it would have looked like a normal day at the oasis.\nC. The men of the oasis surrounded the horsemen from the desert and within half an hour all but one of the intruders were dead. The children had been kept at the other side of a grove of palm trees, and saw nothing of what had happened. The women had remained in their tents, praying for the safekeeping of their husbands, and saw nothing of the battle, either. Were it not for the bodies there on the ground, it would have appeared to be a normal day at the oasis. \nD. The oasis dwellers surrounded the desert horsemen and within half an hour every one of the intruders except one was slain. The children were kept across a palm grove, seeing nothing of the events. The wives prayed in their tents for their husbands' safety, observing nothing of the battle. Without the bodies on the ground, it could have passed for an ordinary day at the oasis.\nAnswer:",
+  "options": {
+    "A": "The men living in the oasis encircled the riders who came from the desert and in under thirty minutes all except one of the unwanted visitors were killed. The kids were kept on the opposite side of a group of palm trees, and didn't see any of what had transpired. The wives had stayed in their tents, praying for the protection of their husbands, and also didn't see the fight. If not for the corpses there on the sand, it would have looked like a regular day at the oasis.  ",
+    "B": "The men living at the oasis encircled the riders from the desert and in under 30 minutes, all but one of the trespassers were killed. The kids were kept on the other side of a group of palm trees and didn't witness any of what happened. The wives stayed in their tents, praying for their husbands' protection, and also didn't see the fight. If not for the dead bodies there in the sand, it would have looked like a normal day at the oasis.",
+    "C": "The men of the oasis surrounded the horsemen from the desert and within half an hour all but one of the intruders were dead. The children had been kept at the other side of a grove of palm trees, and saw nothing of what had happened. The women had remained in their tents, praying for the safekeeping of their husbands, and saw nothing of the battle, either. Were it not for the bodies there on the ground, it would have appeared to be a normal day at the oasis. ",
+    "D": "The oasis dwellers surrounded the desert horsemen and within half an hour every one of the intruders except one was slain. The children were kept across a palm grove, seeing nothing of the events. The wives prayed in their tents for their husbands' safety, observing nothing of the battle. Without the bodies on the ground, it could have passed for an ordinary day at the oasis."
+  },
+  "gold_letter": "C",
+  "predicted_letter": "C",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 04:50:50"
+}

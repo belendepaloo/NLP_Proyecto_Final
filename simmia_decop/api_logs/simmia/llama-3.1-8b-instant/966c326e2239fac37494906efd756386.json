@@ -1,0 +1,19 @@
+{
+  "query_id": "966c326e2239fac37494906efd756386",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0102",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 18,
+  "prefix": "Maud smiled as she passed the pond again. Neither Frazer nor Chris had said anything about the slippers.",
+  "target_word": "She",
+  "sample_idx": 0,
+  "generated_text": "They had almost",
+  "generated_first_word": "They",
+  "similarity": 0.7838592529296875,
+  "timestamp": "2026-06-30 13:40:57"
+}

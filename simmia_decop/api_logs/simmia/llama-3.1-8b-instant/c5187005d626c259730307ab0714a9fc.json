@@ -1,0 +1,19 @@
+{
+  "query_id": "c5187005d626c259730307ab0714a9fc",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0081",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 19,
+  "prefix": "The next moment the two of them were running down the drive together and then out on to the",
+  "target_word": "road,",
+  "sample_idx": 2,
+  "generated_text": "road.",
+  "generated_first_word": "road.",
+  "similarity": 0.9650752544403076,
+  "timestamp": "2026-06-30 11:54:37"
+}

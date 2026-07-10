@@ -1,0 +1,19 @@
+{
+  "query_id": "ca3c12c6ff64d2628a63351c95a94fc6",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0077",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 15,
+  "prefix": "Hornsby. He said to be ready when the car comes at eleven. Let me know",
+  "target_word": "if",
+  "sample_idx": 0,
+  "generated_text": "if you need",
+  "generated_first_word": "if",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 11:32:52"
+}

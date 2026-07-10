@@ -1,0 +1,19 @@
+{
+  "query_id": "d1391429f9ff45a9ab952ddaeca04d88",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0160",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 9,
+  "prefix": "My room is on the top floor overlooking the",
+  "target_word": "harbor.",
+  "sample_idx": 2,
+  "generated_text": "garden",
+  "generated_first_word": "garden",
+  "similarity": 0.651466965675354,
+  "timestamp": "2026-07-06 17:02:32"
+}

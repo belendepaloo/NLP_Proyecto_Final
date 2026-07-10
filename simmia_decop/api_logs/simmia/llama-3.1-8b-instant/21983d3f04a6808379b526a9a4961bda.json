@@ -1,0 +1,19 @@
+{
+  "query_id": "21983d3f04a6808379b526a9a4961bda",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0114",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "‘The first time,’ Hortensia said, ‘I poured half a tin",
+  "target_word": "of",
+  "sample_idx": 0,
+  "generated_text": "of condensed milk",
+  "generated_first_word": "of",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 14:37:57"
+}

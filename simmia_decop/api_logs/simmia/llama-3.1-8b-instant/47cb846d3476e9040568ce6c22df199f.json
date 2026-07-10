@@ -1,0 +1,19 @@
+{
+  "query_id": "47cb846d3476e9040568ce6c22df199f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0143",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Frodo",
+  "target_word": "opened",
+  "sample_idx": 1,
+  "generated_text": "Baggins",
+  "generated_first_word": "Baggins",
+  "similarity": 0.5621916055679321,
+  "timestamp": "2026-06-30 17:28:46"
+}

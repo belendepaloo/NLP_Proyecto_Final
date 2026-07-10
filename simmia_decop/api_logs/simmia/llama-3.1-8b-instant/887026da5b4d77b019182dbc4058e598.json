@@ -1,0 +1,19 @@
+{
+  "query_id": "887026da5b4d77b019182dbc4058e598",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0100",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 19,
+  "prefix": "“Careful not to walk through anyone,” said Ron nervously, and they set off around the edge of the dance",
+  "target_word": "floor.",
+  "sample_idx": 1,
+  "generated_text": "floor.",
+  "generated_first_word": "floor.",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 13:31:08"
+}

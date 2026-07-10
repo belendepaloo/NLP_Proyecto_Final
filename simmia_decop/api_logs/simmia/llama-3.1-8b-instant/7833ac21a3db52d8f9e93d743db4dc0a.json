@@ -1,0 +1,19 @@
+{
+  "query_id": "7833ac21a3db52d8f9e93d743db4dc0a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0147",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Im",
+  "target_word": "certain",
+  "sample_idx": 2,
+  "generated_text": "not",
+  "generated_first_word": "not",
+  "similarity": 0.6886935234069824,
+  "timestamp": "2026-06-30 17:48:23"
+}

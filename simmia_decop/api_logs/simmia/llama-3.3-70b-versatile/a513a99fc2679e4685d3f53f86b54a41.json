@@ -1,0 +1,19 @@
+{
+  "query_id": "a513a99fc2679e4685d3f53f86b54a41",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0050",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "At the very least, its",
+  "target_word": "enough",
+  "sample_idx": 0,
+  "generated_text": "existence",
+  "generated_first_word": "existence",
+  "similarity": 0.5788249969482422,
+  "timestamp": "2026-07-03 13:57:37"
+}

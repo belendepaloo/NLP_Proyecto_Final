@@ -1,0 +1,19 @@
+{
+  "query_id": "494da0df23e1bce8cf1fc4df5655c351",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0031",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Whenever he could, he sought",
+  "target_word": "out",
+  "sample_idx": 0,
+  "generated_text": "out solitude.",
+  "generated_first_word": "out",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 07:28:48"
+}

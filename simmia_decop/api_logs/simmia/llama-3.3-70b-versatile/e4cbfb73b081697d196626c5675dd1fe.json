@@ -1,0 +1,19 @@
+{
+  "query_id": "e4cbfb73b081697d196626c5675dd1fe",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0100",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "“Careful not to walk through anyone,” said Ron nervously, and they set off around the edge of the",
+  "target_word": "dance",
+  "sample_idx": 1,
+  "generated_text": "lake",
+  "generated_first_word": "lake",
+  "similarity": 0.6240587830543518,
+  "timestamp": "2026-07-04 19:31:18"
+}

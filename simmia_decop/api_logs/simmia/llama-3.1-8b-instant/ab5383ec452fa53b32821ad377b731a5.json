@@ -1,0 +1,19 @@
+{
+  "query_id": "ab5383ec452fa53b32821ad377b731a5",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0161",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 18,
+  "prefix": "But his personality changed drastically. Where he once was an even-keeled, decent man, after his recovery he was",
+  "target_word": "prone",
+  "sample_idx": 1,
+  "generated_text": "aggressive.",
+  "generated_first_word": "aggressive.",
+  "similarity": 0.6960432529449463,
+  "timestamp": "2026-07-01 01:35:49"
+}

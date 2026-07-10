@@ -1,0 +1,19 @@
+{
+  "query_id": "714a8719d4440be4b8863f9468c018f6",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0123",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 10,
+  "prefix": "Natalie followed, smiling and thanking people who congratulated her as",
+  "target_word": "she",
+  "sample_idx": 1,
+  "generated_text": "she made her",
+  "generated_first_word": "she",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 15:23:20"
+}

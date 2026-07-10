@@ -1,0 +1,19 @@
+{
+  "query_id": "8067ca220234e92a658b82a547238e2f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0059",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 16,
+  "prefix": "But the physical difficulty of meeting was enormous. It was like trying to make a move",
+  "target_word": "at",
+  "sample_idx": 0,
+  "generated_text": "on a chess",
+  "generated_first_word": "on",
+  "similarity": 0.7666929960250854,
+  "timestamp": "2026-07-03 14:48:13"
+}

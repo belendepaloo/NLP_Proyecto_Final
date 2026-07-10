@@ -1,0 +1,19 @@
+{
+  "query_id": "38ccb88a5c15b1e92c32484089417856",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0191",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "We were",
+  "target_word": "smiling.",
+  "sample_idx": 0,
+  "generated_text": "on vacation.",
+  "generated_first_word": "on",
+  "similarity": 0.6462759375572205,
+  "timestamp": "2026-07-01 04:03:30"
+}

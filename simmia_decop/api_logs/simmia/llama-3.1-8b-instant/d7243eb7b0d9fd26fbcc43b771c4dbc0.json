@@ -1,0 +1,19 @@
+{
+  "query_id": "d7243eb7b0d9fd26fbcc43b771c4dbc0",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0115",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "If I were someone who",
+  "target_word": "partook",
+  "sample_idx": 1,
+  "generated_text": "had to make",
+  "generated_first_word": "had",
+  "similarity": 0.6318005323410034,
+  "timestamp": "2026-06-30 14:41:51"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "46b2a39a2c31f5f37e5c224baac9809d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0178",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Not worth the",
+  "target_word": "sting.",
+  "sample_idx": 2,
+  "generated_text": "trouble",
+  "generated_first_word": "trouble",
+  "similarity": 0.5918447971343994,
+  "timestamp": "2026-07-08 01:11:01"
+}

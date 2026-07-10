@@ -1,0 +1,19 @@
+{
+  "query_id": "3e3fe57baf396303fa166baa410f4a44",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0007",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 12,
+  "prefix": "My mother was right about many things—God knows I wish I could",
+  "target_word": "tell",
+  "sample_idx": 0,
+  "generated_text": "go back and",
+  "generated_first_word": "go",
+  "similarity": 0.6384671330451965,
+  "timestamp": "2026-06-30 05:24:52"
+}

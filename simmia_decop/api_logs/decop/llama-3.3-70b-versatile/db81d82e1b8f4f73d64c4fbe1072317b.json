@@ -1,0 +1,25 @@
+{
+  "query_id": "db81d82e1b8f4f73d64c4fbe1072317b",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0193",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "title": "Happy Place",
+  "author": "Emily Henry",
+  "length": "medium",
+  "permutation_index": 0,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Happy Place\" book by Emily Henry?\nOptions:\nA. Sabrina tells Cleo that she doesn't have to stay if she doesn't want to. Cleo says that she and Kimmy will find a hotel for the night. Sabrina laughs coldly that they won't find anywhere on the coast. Cleo responds that they will sleep in the guesthouse, and when Sabrina asks what then, Cleo doesn't respond. \nB.  No ones forcing you to stay! Sabrina says. If you want to go, go! Cleo looks down at her feet, a tiny fern growing up between the cracks in the sidewalk there, right between her sandals. Fine, she says. Kimmy and I will find a hotel for the night. Another cold laugh from Sabrina. So, what, youre going to consciously uncouple from our friendship? Im going to take some space, Cleo says. This is ridiculous, Sabrina replies. You wont find anywhere to stay on this entire coast. Cleos lips press tighter. Then well sleep in the guesthouse tonight. And then what? Sabrina says.\nC. Sabrina informs Cleo she can go if she wishes since no one is forcing her to stay. Cleo declares she and Kimmy will locate a hotel for the night. Sabrina chuckles frostily that they won't find any lodging on the entire coast. Cleo's lips tighten as she states they will sleep in the guesthouse tonight. When Sabrina questions what they'll do after that, Cleo doesn't reply.\nD. Sabrina says Cleo doesn't need to stay if she wants to leave. Cleo says she and Kimmy will get a hotel room for the night. Sabrina laughs harshly that they won't find a place on the whole coastline. Cleo stubbornly insists they'll sleep in the guesthouse that night. When Sabrina asks what their plan is after that, Cleo doesn't answer.\nAnswer:",
+  "options": {
+    "A": "Sabrina tells Cleo that she doesn't have to stay if she doesn't want to. Cleo says that she and Kimmy will find a hotel for the night. Sabrina laughs coldly that they won't find anywhere on the coast. Cleo responds that they will sleep in the guesthouse, and when Sabrina asks what then, Cleo doesn't respond. ",
+    "B": " No ones forcing you to stay! Sabrina says. If you want to go, go! Cleo looks down at her feet, a tiny fern growing up between the cracks in the sidewalk there, right between her sandals. Fine, she says. Kimmy and I will find a hotel for the night. Another cold laugh from Sabrina. So, what, youre going to consciously uncouple from our friendship? Im going to take some space, Cleo says. This is ridiculous, Sabrina replies. You wont find anywhere to stay on this entire coast. Cleos lips press tighter. Then well sleep in the guesthouse tonight. And then what? Sabrina says.",
+    "C": "Sabrina informs Cleo she can go if she wishes since no one is forcing her to stay. Cleo declares she and Kimmy will locate a hotel for the night. Sabrina chuckles frostily that they won't find any lodging on the entire coast. Cleo's lips tighten as she states they will sleep in the guesthouse tonight. When Sabrina questions what they'll do after that, Cleo doesn't reply.",
+    "D": "Sabrina says Cleo doesn't need to stay if she wants to leave. Cleo says she and Kimmy will get a hotel room for the night. Sabrina laughs harshly that they won't find a place on the whole coastline. Cleo stubbornly insists they'll sleep in the guesthouse that night. When Sabrina asks what their plan is after that, Cleo doesn't answer."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "B",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 15:53:35"
+}

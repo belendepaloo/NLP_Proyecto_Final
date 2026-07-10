@@ -1,0 +1,19 @@
+{
+  "query_id": "f2c0a1b097c3138d8d74f3091b7180f0",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0088",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "There was nothing to know. Nothing",
+  "target_word": "that",
+  "sample_idx": 0,
+  "generated_text": "but",
+  "generated_first_word": "but",
+  "similarity": 0.7817647457122803,
+  "timestamp": "2026-07-04 18:33:39"
+}

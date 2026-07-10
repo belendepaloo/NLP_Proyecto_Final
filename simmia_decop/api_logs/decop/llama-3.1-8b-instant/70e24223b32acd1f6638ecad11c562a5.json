@@ -1,0 +1,25 @@
+{
+  "query_id": "70e24223b32acd1f6638ecad11c562a5",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0091",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "title": "Hedge",
+  "author": "Jane Delury",
+  "length": "medium",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Hedge\" book by Jane Delury?\nOptions:\nA. Maud felt annoyed that Peter seemed to criticize her focus on work when he was often similarly engrossed. She administered cold medicine and orange juice to her feverish daughter Ella. When Ella's fever persisted, Maud took her for a strep test, which was positive, so she left her other daughter Louise at soccer practice to get Ella antibiotics. Queueing for the pink medicine, Maud contemplated how pioneer mother Juana Briones helplessly lost three children in a single month to illnesses curable today.\nB. Maud defended being absorbed in her work like Peter often was. She cared for her sick daughter Ella by giving her medicine, taking her to the doctor for a strep test, and getting antibiotics after the positive result. Waiting in line at the pharmacy, she pondered how pioneer Juana Briones had lost three children in one month to diseases preventable by modern medicine. \nC. Though absorbed in her work like Peter frequently was, Maud cared for sick daughter Ella with medicine, a doctor's visit confirming strep, and antibiotics after dropping Louise at soccer. Waiting for the pink medicine, she thought of pioneer Juana Briones losing three children in one month to diseases preventable now by vaccines Ella and Louise had received.\nD. It was only an hour, Maud said. It turned out okay, didnt it? Going back down the hall, she was annoyed with Peter, with both of them, really, for acting as if shed done something wrong by being caught up in her work, as Peter always was. She measured out a capful of cold medicine and brought Ella a glass of orange juice. When Ellas fever rose again, she took her to the doctors office for a strep test. The test positive, she ran to the pharmacy for antibiotics after dropping Louise at soccer practice. Standing in line for the bottle of pink medicine, she thought about Juana Briones losing three of her children in the same month, one after the other, from illnesses that Ella and Louise were vaccinated against.\nAnswer:",
+  "options": {
+    "A": "Maud felt annoyed that Peter seemed to criticize her focus on work when he was often similarly engrossed. She administered cold medicine and orange juice to her feverish daughter Ella. When Ella's fever persisted, Maud took her for a strep test, which was positive, so she left her other daughter Louise at soccer practice to get Ella antibiotics. Queueing for the pink medicine, Maud contemplated how pioneer mother Juana Briones helplessly lost three children in a single month to illnesses curable today.",
+    "B": "Maud defended being absorbed in her work like Peter often was. She cared for her sick daughter Ella by giving her medicine, taking her to the doctor for a strep test, and getting antibiotics after the positive result. Waiting in line at the pharmacy, she pondered how pioneer Juana Briones had lost three children in one month to diseases preventable by modern medicine. ",
+    "C": "Though absorbed in her work like Peter frequently was, Maud cared for sick daughter Ella with medicine, a doctor's visit confirming strep, and antibiotics after dropping Louise at soccer. Waiting for the pink medicine, she thought of pioneer Juana Briones losing three children in one month to diseases preventable now by vaccines Ella and Louise had received.",
+    "D": "It was only an hour, Maud said. It turned out okay, didnt it? Going back down the hall, she was annoyed with Peter, with both of them, really, for acting as if shed done something wrong by being caught up in her work, as Peter always was. She measured out a capful of cold medicine and brought Ella a glass of orange juice. When Ellas fever rose again, she took her to the doctors office for a strep test. The test positive, she ran to the pharmacy for antibiotics after dropping Louise at soccer practice. Standing in line for the bottle of pink medicine, she thought about Juana Briones losing three of her children in the same month, one after the other, from illnesses that Ella and Louise were vaccinated against."
+  },
+  "gold_letter": "D",
+  "predicted_letter": "C",
+  "is_correct": 0,
+  "timestamp": "2026-07-08 04:33:34"
+}

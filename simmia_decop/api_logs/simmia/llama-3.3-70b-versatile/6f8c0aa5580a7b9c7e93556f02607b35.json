@@ -1,0 +1,19 @@
+{
+  "query_id": "6f8c0aa5580a7b9c7e93556f02607b35",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0149",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "Not only did there seem to lurk in it a certain calm",
+  "target_word": "disdain,",
+  "sample_idx": 0,
+  "generated_text": "and",
+  "generated_first_word": "and",
+  "similarity": 0.5990545153617859,
+  "timestamp": "2026-07-06 16:11:24"
+}

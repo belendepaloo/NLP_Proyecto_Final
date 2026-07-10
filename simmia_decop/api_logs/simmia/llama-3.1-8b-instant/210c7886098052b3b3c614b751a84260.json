@@ -1,0 +1,19 @@
+{
+  "query_id": "210c7886098052b3b3c614b751a84260",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0033",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "There was",
+  "target_word": "a",
+  "sample_idx": 2,
+  "generated_text": "a mysterious",
+  "generated_first_word": "a",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 07:37:52"
+}

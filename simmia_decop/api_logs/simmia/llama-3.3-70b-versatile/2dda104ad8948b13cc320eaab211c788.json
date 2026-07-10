@@ -1,0 +1,19 @@
+{
+  "query_id": "2dda104ad8948b13cc320eaab211c788",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0155",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "And this inner",
+  "target_word": "land,",
+  "sample_idx": 0,
+  "generated_text": "turmoil",
+  "generated_first_word": "turmoil",
+  "similarity": 0.6466364860534668,
+  "timestamp": "2026-07-06 16:37:31"
+}

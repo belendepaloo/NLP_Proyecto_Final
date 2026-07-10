@@ -1,0 +1,19 @@
+{
+  "query_id": "21f851614092bde3b3537f0ffd2d31b3",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0140",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Another reason I",
+  "target_word": "know",
+  "sample_idx": 2,
+  "generated_text": "think",
+  "generated_first_word": "think",
+  "similarity": 0.7049915790557861,
+  "timestamp": "2026-07-05 17:47:04"
+}

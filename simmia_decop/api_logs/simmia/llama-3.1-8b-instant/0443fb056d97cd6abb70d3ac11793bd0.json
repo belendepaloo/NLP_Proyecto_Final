@@ -1,0 +1,19 @@
+{
+  "query_id": "0443fb056d97cd6abb70d3ac11793bd0",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0049",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 14,
+  "prefix": "Yes: his decision was irreversible. It is not seldom the case that when a",
+  "target_word": "man",
+  "sample_idx": 2,
+  "generated_text": "man has made",
+  "generated_first_word": "man",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 09:06:07"
+}

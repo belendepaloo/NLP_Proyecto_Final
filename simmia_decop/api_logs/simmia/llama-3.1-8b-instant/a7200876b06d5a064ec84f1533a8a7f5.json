@@ -1,0 +1,19 @@
+{
+  "query_id": "a7200876b06d5a064ec84f1533a8a7f5",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0006",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "I've seen none like Edgar.\" \"You may see some. And",
+  "target_word": "he",
+  "sample_idx": 2,
+  "generated_text": "they may be",
+  "generated_first_word": "they",
+  "similarity": 0.7872570753097534,
+  "timestamp": "2026-06-30 05:19:11"
+}

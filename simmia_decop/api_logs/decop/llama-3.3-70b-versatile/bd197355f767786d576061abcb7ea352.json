@@ -1,0 +1,25 @@
+{
+  "query_id": "bd197355f767786d576061abcb7ea352",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0092",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "title": "A Day of Fallen Night",
+  "author": "Samantha Shannon",
+  "length": "medium",
+  "permutation_index": 3,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"A Day of Fallen Night\" book by Samantha Shannon?\nOptions:\nA. As the injury smoked, he watched the glow fade from its eye, an ember cooling in its hole. His own eye was swollen shut. He did not know what had hit him. He lost track of the claws scratching his armor, the beaks hitting his helmet. He stuck the end of his long axe in the sand. Wheezing from the smoke, he swept his hair from his eyes and peered toward Bithandun, so weary he was nearly drunk with it, swaying. The Silver Hall had not collapsed yet, but its roof burned with fire, and no amount of water tossed could extinguish it.\nB. Watching the smoke rise from the wound, he saw the light leave its eye, like an ember growing cold in the socket. His own eye was puffed shut. He didn't know what had struck him. He couldn't count the talons scraping his mail, the beaks pounding his helmet. He planted the end of his long axe in the sand. Coughing from the smoke, he pushed his hair out of his eyes and looked toward Bithandun, so tired he was nearly drunk with exhaustion, swaying. The Silver Hall hadn't fallen yet, but its roof was burning, and no water thrown could put out the fire.  \nC. As the injury smoldered, he observed the radiance fade from its eye, an ember cooling in its hollow. His own eye had swollen closed. He did not know what had hit him. He had lost track of the claws scratching his armor, the beaks hitting his helmet. He stuck the end of his long axe in the sand. Panting from the smoke, he brushed his hair from his eyes and peered towards Bithandun, so exhausted he was nearly intoxicated with it, swaying. The Silver Hall had not yet collapsed, but its roof was ablaze with fire, and no amount of tossed water could extinguish it.\nD. As the wound smoked, he watched the glow leave its eye, an ember turning cold in its socket. His own eye had puffed shut. What had struck him, he had no idea. He had lost count of the talons scraping at his mail, the beaks striking his helm. He planted the end of his long axe in the sand. Wheezing from the smoke, he scraped his hair from his eyes and peered towards Bithandun, so tired he was almost drunk with it, swaying. The Silver Hall had not yet fallen, but its roof glowed with fire, and no amount of thrown water could quench it.\nAnswer:",
+  "options": {
+    "A": "As the injury smoked, he watched the glow fade from its eye, an ember cooling in its hole. His own eye was swollen shut. He did not know what had hit him. He lost track of the claws scratching his armor, the beaks hitting his helmet. He stuck the end of his long axe in the sand. Wheezing from the smoke, he swept his hair from his eyes and peered toward Bithandun, so weary he was nearly drunk with it, swaying. The Silver Hall had not collapsed yet, but its roof burned with fire, and no amount of water tossed could extinguish it.",
+    "B": "Watching the smoke rise from the wound, he saw the light leave its eye, like an ember growing cold in the socket. His own eye was puffed shut. He didn't know what had struck him. He couldn't count the talons scraping his mail, the beaks pounding his helmet. He planted the end of his long axe in the sand. Coughing from the smoke, he pushed his hair out of his eyes and looked toward Bithandun, so tired he was nearly drunk with exhaustion, swaying. The Silver Hall hadn't fallen yet, but its roof was burning, and no water thrown could put out the fire.  ",
+    "C": "As the injury smoldered, he observed the radiance fade from its eye, an ember cooling in its hollow. His own eye had swollen closed. He did not know what had hit him. He had lost track of the claws scratching his armor, the beaks hitting his helmet. He stuck the end of his long axe in the sand. Panting from the smoke, he brushed his hair from his eyes and peered towards Bithandun, so exhausted he was nearly intoxicated with it, swaying. The Silver Hall had not yet collapsed, but its roof was ablaze with fire, and no amount of tossed water could extinguish it.",
+    "D": "As the wound smoked, he watched the glow leave its eye, an ember turning cold in its socket. His own eye had puffed shut. What had struck him, he had no idea. He had lost count of the talons scraping at his mail, the beaks striking his helm. He planted the end of his long axe in the sand. Wheezing from the smoke, he scraped his hair from his eyes and peered towards Bithandun, so tired he was almost drunk with it, swaying. The Silver Hall had not yet fallen, but its roof glowed with fire, and no amount of thrown water could quench it."
+  },
+  "gold_letter": "D",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-06-26 14:59:20"
+}

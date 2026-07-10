@@ -1,0 +1,19 @@
+{
+  "query_id": "afaf7abad4504a2e1d65a70a13ed812d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0163",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 11,
+  "prefix": "A happiness so bright and hot you feel like it could",
+  "target_word": "incinerate",
+  "sample_idx": 0,
+  "generated_text": "burn your skin",
+  "generated_first_word": "burn",
+  "similarity": 0.766710638999939,
+  "timestamp": "2026-07-01 01:43:52"
+}

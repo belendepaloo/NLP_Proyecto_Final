@@ -1,0 +1,19 @@
+{
+  "query_id": "315cc0ff6f92b9a860645f391af32fb7",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0042",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Never mind how",
+  "target_word": "he",
+  "sample_idx": 1,
+  "generated_text": "it",
+  "generated_first_word": "it",
+  "similarity": 0.7859602570533752,
+  "timestamp": "2026-07-02 00:27:50"
+}

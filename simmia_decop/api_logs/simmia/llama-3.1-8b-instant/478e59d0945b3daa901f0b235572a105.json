@@ -1,0 +1,19 @@
+{
+  "query_id": "478e59d0945b3daa901f0b235572a105",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0083",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Youre clearly",
+  "target_word": "very",
+  "sample_idx": 0,
+  "generated_text": "not happy about",
+  "generated_first_word": "not",
+  "similarity": 0.7340974807739258,
+  "timestamp": "2026-06-30 12:00:08"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "f1e06801531ed7ae3bf4f3c6db7e7e07",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0059",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "But the physical difficulty of meeting",
+  "target_word": "was",
+  "sample_idx": 1,
+  "generated_text": "in",
+  "generated_first_word": "in",
+  "similarity": 0.6989962458610535,
+  "timestamp": "2026-07-03 14:45:46"
+}

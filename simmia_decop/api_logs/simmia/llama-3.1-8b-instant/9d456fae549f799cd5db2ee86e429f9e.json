@@ -1,0 +1,19 @@
+{
+  "query_id": "9d456fae549f799cd5db2ee86e429f9e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0154",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "The man still said nothing, and",
+  "target_word": "the",
+  "sample_idx": 0,
+  "generated_text": "his silence only",
+  "generated_first_word": "his",
+  "similarity": 0.780502200126648,
+  "timestamp": "2026-06-30 18:23:47"
+}

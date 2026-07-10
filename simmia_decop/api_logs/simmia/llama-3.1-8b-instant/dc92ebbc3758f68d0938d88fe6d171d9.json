@@ -1,0 +1,19 @@
+{
+  "query_id": "dc92ebbc3758f68d0938d88fe6d171d9",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0056",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "That guy is so weird, she said",
+  "target_word": "when,",
+  "sample_idx": 2,
+  "generated_text": "and started to",
+  "generated_first_word": "and",
+  "similarity": 0.6029235124588013,
+  "timestamp": "2026-06-30 09:41:52"
+}

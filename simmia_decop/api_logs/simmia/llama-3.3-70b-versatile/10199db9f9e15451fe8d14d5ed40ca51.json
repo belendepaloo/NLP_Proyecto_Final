@@ -1,0 +1,19 @@
+{
+  "query_id": "10199db9f9e15451fe8d14d5ed40ca51",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0091",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 17,
+  "prefix": "It was only an hour, Maud said. It turned out okay, didnt it? Going back down the",
+  "target_word": "hall,",
+  "sample_idx": 2,
+  "generated_text": "mountain",
+  "generated_first_word": "mountain",
+  "similarity": 0.6657025814056396,
+  "timestamp": "2026-07-04 18:51:03"
+}

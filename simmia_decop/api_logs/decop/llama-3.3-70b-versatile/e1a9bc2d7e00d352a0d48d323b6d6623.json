@@ -1,0 +1,25 @@
+{
+  "query_id": "e1a9bc2d7e00d352a0d48d323b6d6623",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0010",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "title": "Wuthering Heights",
+  "author": "Emily Bronte",
+  "length": "medium",
+  "permutation_index": 0,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Wuthering Heights\" book by Emily Bronte?\nOptions:\nA. Hareton kept his fist closed around the gift, refusing to accept it even when Catherine set it on his knee. She went back to her work until she heard him unwrap it. Then she quietly sat next to him. Hareton shook with emotion, his usual gruffness gone. At first he could not find the courage to respond to her pleading look and request for forgiveness. \nB. Hareton would not open his fingers, so I laid it on his knee. He did not strike it off either. I returned to my work. Catherine leaned her head and arms on the table, till she heard the slight rustle of the covering being removed; then she stole away and quietly seated herself beside her cousin. He trembled, and his face glowed; all his rudeness and all his surly harshness had deserted him. He could not summon courage at first to utter a syllable in reply to her questioning look and her murmured petition,--- \"Say you forgive me, Hareton, do. You can make me so happy by speaking that little word.\nC. Hareton stubbornly kept his fingers clasped around the present, not opening them or knocking it away when Catherine put it on his leg. She returned to her task until the soft sound of him unwrapping it reached her. Catherine quietly took the seat beside her cousin, whose harshness had vanished, replaced by trembling and a flushed face. He struggled to work up the nerve to answer her beseeching gaze and hushed appeal for forgiveness.\nD. Though Catherine set the gift in Hareton's lap, he refused to release his grip or toss it aside. She went back to her work until the faint noise of the present being unwrapped prompted her to silently sit by her cousin's side. Hareton shook and blushed, his customary gruffness and rudeness nowhere to be seen. At first he could not bring himself to respond to Catherine's imploring look and whispered plea for forgiveness.\nAnswer:",
+  "options": {
+    "A": "Hareton kept his fist closed around the gift, refusing to accept it even when Catherine set it on his knee. She went back to her work until she heard him unwrap it. Then she quietly sat next to him. Hareton shook with emotion, his usual gruffness gone. At first he could not find the courage to respond to her pleading look and request for forgiveness. ",
+    "B": "Hareton would not open his fingers, so I laid it on his knee. He did not strike it off either. I returned to my work. Catherine leaned her head and arms on the table, till she heard the slight rustle of the covering being removed; then she stole away and quietly seated herself beside her cousin. He trembled, and his face glowed; all his rudeness and all his surly harshness had deserted him. He could not summon courage at first to utter a syllable in reply to her questioning look and her murmured petition,--- \"Say you forgive me, Hareton, do. You can make me so happy by speaking that little word.",
+    "C": "Hareton stubbornly kept his fingers clasped around the present, not opening them or knocking it away when Catherine put it on his leg. She returned to her task until the soft sound of him unwrapping it reached her. Catherine quietly took the seat beside her cousin, whose harshness had vanished, replaced by trembling and a flushed face. He struggled to work up the nerve to answer her beseeching gaze and hushed appeal for forgiveness.",
+    "D": "Though Catherine set the gift in Hareton's lap, he refused to release his grip or toss it aside. She went back to her work until the faint noise of the present being unwrapped prompted her to silently sit by her cousin's side. Hareton shook and blushed, his customary gruffness and rudeness nowhere to be seen. At first he could not bring himself to respond to Catherine's imploring look and whispered plea for forgiveness."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "B",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 04:47:56"
+}

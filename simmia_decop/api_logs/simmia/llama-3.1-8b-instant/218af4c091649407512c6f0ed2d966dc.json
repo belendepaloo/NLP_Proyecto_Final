@@ -1,0 +1,19 @@
+{
+  "query_id": "218af4c091649407512c6f0ed2d966dc",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0133",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 16,
+  "prefix": "They might be working together for a greater cause in public. In private, his favorite pastime",
+  "target_word": "was",
+  "sample_idx": 0,
+  "generated_text": "was secretly manipulating",
+  "generated_first_word": "was",
+  "similarity": 1.0000001192092896,
+  "timestamp": "2026-06-30 16:14:23"
+}

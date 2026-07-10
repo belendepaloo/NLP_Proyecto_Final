@@ -1,0 +1,19 @@
+{
+  "query_id": "0cd8979e29134d0b5c99ea08b2c047de",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0106",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "Who knows…maybe it’s better to be like",
+  "target_word": "the",
+  "sample_idx": 0,
+  "generated_text": "a leaf that",
+  "generated_first_word": "a",
+  "similarity": 0.7954018712043762,
+  "timestamp": "2026-06-30 13:57:13"
+}

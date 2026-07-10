@@ -1,0 +1,19 @@
+{
+  "query_id": "81cfb6a43f91d7f4a14265700cf7075e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0101",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Oh, don't tell you are",
+  "target_word": "going",
+  "sample_idx": 1,
+  "generated_text": "going to freak",
+  "generated_first_word": "going",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 13:32:27"
+}

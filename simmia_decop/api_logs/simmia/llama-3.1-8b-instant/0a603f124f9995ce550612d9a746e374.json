@@ -1,0 +1,19 @@
+{
+  "query_id": "0a603f124f9995ce550612d9a746e374",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0071",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "I did once before. You cant",
+  "target_word": "this",
+  "sample_idx": 1,
+  "generated_text": "imagine how",
+  "generated_first_word": "imagine",
+  "similarity": 0.6590198278427124,
+  "timestamp": "2026-06-30 11:00:06"
+}

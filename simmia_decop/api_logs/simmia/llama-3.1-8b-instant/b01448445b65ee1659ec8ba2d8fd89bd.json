@@ -1,0 +1,19 @@
+{
+  "query_id": "b01448445b65ee1659ec8ba2d8fd89bd",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0019",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "Edgar Linton, as mul- titudes have been before, and will be after",
+  "target_word": "him,",
+  "sample_idx": 2,
+  "generated_text": "him, found",
+  "generated_first_word": "him,",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 06:28:25"
+}

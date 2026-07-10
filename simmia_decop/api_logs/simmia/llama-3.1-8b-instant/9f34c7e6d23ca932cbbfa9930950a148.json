@@ -1,0 +1,19 @@
+{
+  "query_id": "9f34c7e6d23ca932cbbfa9930950a148",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0102",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Maud",
+  "target_word": "smiled",
+  "sample_idx": 0,
+  "generated_text": "Gonne",
+  "generated_first_word": "Gonne",
+  "similarity": 0.5970117449760437,
+  "timestamp": "2026-06-30 13:36:31"
+}

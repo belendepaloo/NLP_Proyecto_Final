@@ -1,0 +1,19 @@
+{
+  "query_id": "e889edd85c868559b9fe59124cdaf67d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0153",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "“So, Harry,” said",
+  "target_word": "Lockhart,",
+  "sample_idx": 2,
+  "generated_text": "Professor",
+  "generated_first_word": "Professor",
+  "similarity": 0.6819049119949341,
+  "timestamp": "2026-07-06 16:28:17"
+}

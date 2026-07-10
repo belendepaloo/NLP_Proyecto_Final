@@ -1,0 +1,19 @@
+{
+  "query_id": "0b8abdbaf5f2719f835e53864e8bfd0e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0173",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 19,
+  "prefix": "But no ship came ever again from the West to Nmenor, and Avalln was veiled in cloud. Now Gimilkhd",
+  "target_word": "died",
+  "sample_idx": 0,
+  "generated_text": "had long since",
+  "generated_first_word": "had",
+  "similarity": 0.6867440938949585,
+  "timestamp": "2026-07-01 02:36:52"
+}

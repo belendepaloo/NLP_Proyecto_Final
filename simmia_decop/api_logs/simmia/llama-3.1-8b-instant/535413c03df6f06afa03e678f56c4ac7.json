@@ -1,0 +1,19 @@
+{
+  "query_id": "535413c03df6f06afa03e678f56c4ac7",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0058",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "I fiddle with the borrowed",
+  "target_word": "rosary",
+  "sample_idx": 1,
+  "generated_text": "piano keys",
+  "generated_first_word": "piano",
+  "similarity": 0.572586715221405,
+  "timestamp": "2026-06-30 09:51:48"
+}

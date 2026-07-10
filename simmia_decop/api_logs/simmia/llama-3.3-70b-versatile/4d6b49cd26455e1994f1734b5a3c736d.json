@@ -1,0 +1,19 @@
+{
+  "query_id": "4d6b49cd26455e1994f1734b5a3c736d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0026",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "Go to the next room, and tell Nippers to",
+  "target_word": "come",
+  "sample_idx": 0,
+  "generated_text": "stop",
+  "generated_first_word": "stop",
+  "similarity": 0.7491542100906372,
+  "timestamp": "2026-07-01 15:40:05"
+}

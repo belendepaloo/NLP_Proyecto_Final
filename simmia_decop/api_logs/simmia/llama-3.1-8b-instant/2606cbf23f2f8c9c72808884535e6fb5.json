@@ -1,0 +1,19 @@
+{
+  "query_id": "2606cbf23f2f8c9c72808884535e6fb5",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0102",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 9,
+  "prefix": "Maud smiled as she passed the pond again. Neither",
+  "target_word": "Frazer",
+  "sample_idx": 2,
+  "generated_text": "of the ducks",
+  "generated_first_word": "of",
+  "similarity": 0.6202510595321655,
+  "timestamp": "2026-06-30 13:38:43"
+}

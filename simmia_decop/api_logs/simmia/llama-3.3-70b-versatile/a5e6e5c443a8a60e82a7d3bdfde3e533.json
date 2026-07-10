@@ -1,0 +1,19 @@
+{
+  "query_id": "a5e6e5c443a8a60e82a7d3bdfde3e533",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0068",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "In Oldspeak it is called,",
+  "target_word": "quite",
+  "sample_idx": 1,
+  "generated_text": "\"war\"",
+  "generated_first_word": "war\"",
+  "similarity": 0.5989125370979309,
+  "timestamp": "2026-07-03 15:30:39"
+}

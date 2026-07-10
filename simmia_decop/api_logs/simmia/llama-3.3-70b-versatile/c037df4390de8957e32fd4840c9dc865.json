@@ -1,0 +1,19 @@
+{
+  "query_id": "c037df4390de8957e32fd4840c9dc865",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0107",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 11,
+  "prefix": "Still it became in a manner necessary. Twice or thrice Hindley's",
+  "target_word": "manifestation",
+  "sample_idx": 2,
+  "generated_text": "sister",
+  "generated_first_word": "sister",
+  "similarity": 0.6237711906433105,
+  "timestamp": "2026-07-04 20:02:23"
+}

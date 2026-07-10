@@ -1,0 +1,19 @@
+{
+  "query_id": "163bca31a1262c66a3bd63fad0ca8965",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0135",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 15,
+  "prefix": "Not when Im finally finding my way in the world. I miss you. Her eyes",
+  "target_word": "burned.",
+  "sample_idx": 1,
+  "generated_text": "filled",
+  "generated_first_word": "filled",
+  "similarity": 0.6547560095787048,
+  "timestamp": "2026-07-05 17:24:48"
+}

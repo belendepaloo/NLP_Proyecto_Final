@@ -1,0 +1,19 @@
+{
+  "query_id": "82878f52e22b71045a6d8252d68b8909",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0019",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 14,
+  "prefix": "Edgar Linton, as mul- titudes have been before, and will be after him, was",
+  "target_word": "in-",
+  "sample_idx": 0,
+  "generated_text": "a gentleman.",
+  "generated_first_word": "a",
+  "similarity": 0.678855299949646,
+  "timestamp": "2026-06-30 06:28:48"
+}

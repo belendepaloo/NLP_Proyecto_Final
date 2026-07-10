@@ -1,0 +1,19 @@
+{
+  "query_id": "73cb1815885cc7024d40b430de73da90",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0079",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "This version of myselfI",
+  "target_word": "dont",
+  "sample_idx": 1,
+  "generated_text": "am",
+  "generated_first_word": "am",
+  "similarity": 0.618645429611206,
+  "timestamp": "2026-07-03 16:26:05"
+}

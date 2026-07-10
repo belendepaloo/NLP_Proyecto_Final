@@ -1,0 +1,19 @@
+{
+  "query_id": "d0e29b38508f86b337f0531815293214",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0100",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "“Careful not to walk through anyone,” said",
+  "target_word": "Ron",
+  "sample_idx": 0,
+  "generated_text": "the voice behind",
+  "generated_first_word": "the",
+  "similarity": 0.6575431227684021,
+  "timestamp": "2026-06-30 13:27:57"
+}

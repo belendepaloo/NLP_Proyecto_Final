@@ -1,0 +1,19 @@
+{
+  "query_id": "2b864ea20bbf47bce706410fc3f1e1c4",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0016",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 14,
+  "prefix": "There he would often wander long, and late would return. Still therefore, after the",
+  "target_word": "Long",
+  "sample_idx": 0,
+  "generated_text": "years, his",
+  "generated_first_word": "years,",
+  "similarity": 0.7959297895431519,
+  "timestamp": "2026-06-30 06:13:32"
+}

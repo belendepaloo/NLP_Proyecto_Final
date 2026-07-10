@@ -1,0 +1,19 @@
+{
+  "query_id": "381969f81d90b669ade057b8215f3cd9",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0195",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 17,
+  "prefix": "His need for power has grown in this chaos. This fire will have convinced him that Clan",
+  "target_word": "Kuposa",
+  "sample_idx": 1,
+  "generated_text": "Nobles",
+  "generated_first_word": "Nobles",
+  "similarity": 0.6332054138183594,
+  "timestamp": "2026-07-08 02:31:59"
+}

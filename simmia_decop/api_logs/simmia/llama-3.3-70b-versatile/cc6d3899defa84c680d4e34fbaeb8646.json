@@ -1,0 +1,19 @@
+{
+  "query_id": "cc6d3899defa84c680d4e34fbaeb8646",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0143",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 19,
+  "prefix": "Frodo opened his mouth and shut it again. His look of surprise was so comical that they laughed. ‘Dear",
+  "target_word": "old",
+  "sample_idx": 0,
+  "generated_text": "me’",
+  "generated_first_word": "me’",
+  "similarity": 0.6473352313041687,
+  "timestamp": "2026-07-05 22:24:05"
+}

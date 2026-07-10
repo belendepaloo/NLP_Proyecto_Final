@@ -1,0 +1,19 @@
+{
+  "query_id": "7b4cddd9cc30169ec76559805a8ed7c5",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0056",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 16,
+  "prefix": "That guy is so weird, she said when, out of earshot, they were walking along the",
+  "target_word": "drive.",
+  "sample_idx": 2,
+  "generated_text": "street.",
+  "generated_first_word": "street.",
+  "similarity": 0.7677950263023376,
+  "timestamp": "2026-06-30 09:44:28"
+}

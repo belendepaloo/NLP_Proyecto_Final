@@ -1,0 +1,25 @@
+{
+  "query_id": "6c8a1a005c63492c5fafbdedfff2a5cd",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0191",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "title": "What Lies in the Woods",
+  "author": "Kate Alice Marshall",
+  "length": "medium",
+  "permutation_index": 0,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"What Lies in the Woods\" book by Kate Alice Marshall?\nOptions:\nA. We were all smiling in the photo, but they seemed forced. Cassidy had a big smile like she was used to having her photo taken. Liv barely smiled, with her hands together and feet crossed. She had a distant look, since she was struggling after being attacked. They didn't know her diagnosis yet, so her medication wasn't right, making her detached. And I had a pathetic smile.  \nB. We were smiling. Someone must have told us to, because I couldnt imagine us doing it spontaneously. Cassidy had the bright, practiced smile of the mayors daughter, used to being photographed. Livs smile was barely a tug at the corners of her mouth, her hands knotted together and her feet crossed at the ankle. She always had a vague look in the photos around that time. In the weeks after the attack shed gone into her first major spiral, but they were still scrambling for a diagnosis and the meds werent right yet, leaving her disconnected from herself. And of course my smile was pitiable.\nC. Our smiles in the picture were not natural. Cassidy grinned widely like she was accustomed to having her photo taken as the mayor's daughter. Liv hardly smiled, with knotted hands and crossed ankles. She had a vague expression, spiraling after the attack without the right diagnosis or medication yet, disconnected from herself. And I had a pitiful smile.\nD. We were smiling in the picture but they weren't genuine. Cassidy had a bright, practiced smile like she was used to photos being the mayor's daughter. Liv barely smiled, hands knotted and feet crossed. She had a distant look, struggling after being attacked without the right diagnosis or medication yet, detached from herself. And I had a sad smile.\nAnswer:",
+  "options": {
+    "A": "We were all smiling in the photo, but they seemed forced. Cassidy had a big smile like she was used to having her photo taken. Liv barely smiled, with her hands together and feet crossed. She had a distant look, since she was struggling after being attacked. They didn't know her diagnosis yet, so her medication wasn't right, making her detached. And I had a pathetic smile.  ",
+    "B": "We were smiling. Someone must have told us to, because I couldnt imagine us doing it spontaneously. Cassidy had the bright, practiced smile of the mayors daughter, used to being photographed. Livs smile was barely a tug at the corners of her mouth, her hands knotted together and her feet crossed at the ankle. She always had a vague look in the photos around that time. In the weeks after the attack shed gone into her first major spiral, but they were still scrambling for a diagnosis and the meds werent right yet, leaving her disconnected from herself. And of course my smile was pitiable.",
+    "C": "Our smiles in the picture were not natural. Cassidy grinned widely like she was accustomed to having her photo taken as the mayor's daughter. Liv hardly smiled, with knotted hands and crossed ankles. She had a vague expression, spiraling after the attack without the right diagnosis or medication yet, disconnected from herself. And I had a pitiful smile.",
+    "D": "We were smiling in the picture but they weren't genuine. Cassidy had a bright, practiced smile like she was used to photos being the mayor's daughter. Liv barely smiled, hands knotted and feet crossed. She had a distant look, struggling after being attacked without the right diagnosis or medication yet, detached from herself. And I had a sad smile."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "D",
+  "is_correct": 0,
+  "timestamp": "2026-07-08 05:31:50"
+}

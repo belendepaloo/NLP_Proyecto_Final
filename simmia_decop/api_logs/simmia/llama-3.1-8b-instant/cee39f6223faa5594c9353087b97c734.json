@@ -1,0 +1,19 @@
+{
+  "query_id": "cee39f6223faa5594c9353087b97c734",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0105",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "And Peter was nothing like Leonard.",
+  "target_word": "When",
+  "sample_idx": 0,
+  "generated_text": "He was reckless",
+  "generated_first_word": "He",
+  "similarity": 0.6494832634925842,
+  "timestamp": "2026-06-30 13:52:32"
+}

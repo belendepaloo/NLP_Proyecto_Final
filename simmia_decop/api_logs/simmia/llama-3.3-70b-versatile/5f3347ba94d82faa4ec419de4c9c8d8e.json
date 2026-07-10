@@ -1,0 +1,19 @@
+{
+  "query_id": "5f3347ba94d82faa4ec419de4c9c8d8e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0107",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Still",
+  "target_word": "it",
+  "sample_idx": 2,
+  "generated_text": "there",
+  "generated_first_word": "there",
+  "similarity": 0.7918474674224854,
+  "timestamp": "2026-07-04 20:00:01"
+}

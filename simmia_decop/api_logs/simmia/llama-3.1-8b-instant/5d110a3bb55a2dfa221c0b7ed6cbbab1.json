@@ -1,0 +1,19 @@
+{
+  "query_id": "5d110a3bb55a2dfa221c0b7ed6cbbab1",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0159",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "The mother’s",
+  "target_word": "handbag",
+  "sample_idx": 2,
+  "generated_text": "worried expression",
+  "generated_first_word": "worried",
+  "similarity": 0.5925032496452332,
+  "timestamp": "2026-07-01 01:21:54"
+}

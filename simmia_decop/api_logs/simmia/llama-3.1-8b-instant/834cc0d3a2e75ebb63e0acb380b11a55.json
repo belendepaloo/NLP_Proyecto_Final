@@ -1,0 +1,19 @@
+{
+  "query_id": "834cc0d3a2e75ebb63e0acb380b11a55",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0022",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "I can come back tomorrow,",
+  "target_word": "she",
+  "sample_idx": 0,
+  "generated_text": "and check on",
+  "generated_first_word": "and",
+  "similarity": 0.715050995349884,
+  "timestamp": "2026-06-30 06:42:11"
+}

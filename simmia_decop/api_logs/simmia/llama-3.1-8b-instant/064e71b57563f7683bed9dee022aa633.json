@@ -1,0 +1,19 @@
+{
+  "query_id": "064e71b57563f7683bed9dee022aa633",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0001",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "“And",
+  "target_word": "I",
+  "sample_idx": 1,
+  "generated_text": "I've been",
+  "generated_first_word": "I've",
+  "similarity": 0.7498114705085754,
+  "timestamp": "2026-06-30 04:50:52"
+}

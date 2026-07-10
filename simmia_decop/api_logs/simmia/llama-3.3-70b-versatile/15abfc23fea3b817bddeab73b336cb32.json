@@ -1,0 +1,19 @@
+{
+  "query_id": "15abfc23fea3b817bddeab73b336cb32",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0091",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "It was",
+  "target_word": "only",
+  "sample_idx": 2,
+  "generated_text": "a",
+  "generated_first_word": "a",
+  "similarity": 0.6237211227416992,
+  "timestamp": "2026-07-04 18:47:35"
+}

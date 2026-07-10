@@ -1,0 +1,19 @@
+{
+  "query_id": "2e41c5d4dd1a419b0ae6cb3aaaa314e7",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0046",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Yet Archer was convinced that Madame",
+  "target_word": "Olenska",
+  "sample_idx": 1,
+  "generated_text": "Butterfly",
+  "generated_first_word": "Butterfly",
+  "similarity": 0.5725021958351135,
+  "timestamp": "2026-06-30 08:48:08"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "3752b0bd10be54da1d862ef5b9f9678f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0180",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "The horses",
+  "target_word": "galloped",
+  "sample_idx": 2,
+  "generated_text": "galloped",
+  "generated_first_word": "galloped",
+  "similarity": 1.0,
+  "timestamp": "2026-07-08 01:19:47"
+}

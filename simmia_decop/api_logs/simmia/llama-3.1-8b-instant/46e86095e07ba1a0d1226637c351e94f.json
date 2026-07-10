@@ -1,0 +1,19 @@
+{
+  "query_id": "46e86095e07ba1a0d1226637c351e94f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0184",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "As for you? Marrying and employing a Vos",
+  "target_word": "will",
+  "sample_idx": 2,
+  "generated_text": "member of House",
+  "generated_first_word": "member",
+  "similarity": 0.6387993097305298,
+  "timestamp": "2026-07-01 03:29:31"
+}

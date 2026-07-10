@@ -1,0 +1,2 @@
+method,model,backend,length,n_samples,mean_absolute_error,mean_error_members,mean_error_non_members,auc
+decop,llama-3.1-8b-instant,groq,medium,200,0.3575,0.30166666666666664,0.41333333333333333,0.77565

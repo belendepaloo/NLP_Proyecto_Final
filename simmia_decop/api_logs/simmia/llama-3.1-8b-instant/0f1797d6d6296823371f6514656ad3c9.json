@@ -1,0 +1,19 @@
+{
+  "query_id": "0f1797d6d6296823371f6514656ad3c9",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0096",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Hallie whooped and held up a",
+  "target_word": "glass",
+  "sample_idx": 2,
+  "generated_text": "small, perfectly",
+  "generated_first_word": "small,",
+  "similarity": 0.631496250629425,
+  "timestamp": "2026-06-30 13:07:56"
+}

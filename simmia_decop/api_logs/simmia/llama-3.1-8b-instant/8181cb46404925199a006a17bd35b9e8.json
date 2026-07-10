@@ -1,0 +1,19 @@
+{
+  "query_id": "8181cb46404925199a006a17bd35b9e8",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0094",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "“Rather than finding a saintly man, though, our",
+  "target_word": "hero,",
+  "sample_idx": 0,
+  "generated_text": "family was blessed",
+  "generated_first_word": "family",
+  "similarity": 0.6124733090400696,
+  "timestamp": "2026-06-30 12:58:40"
+}

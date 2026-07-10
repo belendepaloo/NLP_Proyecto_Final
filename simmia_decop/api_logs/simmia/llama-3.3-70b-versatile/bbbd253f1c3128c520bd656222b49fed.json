@@ -1,0 +1,19 @@
+{
+  "query_id": "bbbd253f1c3128c520bd656222b49fed",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0101",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Oh, don't tell you",
+  "target_word": "are",
+  "sample_idx": 1,
+  "generated_text": "about",
+  "generated_first_word": "about",
+  "similarity": 0.6910688281059265,
+  "timestamp": "2026-07-04 19:32:30"
+}

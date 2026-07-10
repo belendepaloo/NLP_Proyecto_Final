@@ -1,0 +1,19 @@
+{
+  "query_id": "8775a9b662207abe8b7cd0fb48e96baf",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0126",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 14,
+  "prefix": "It makes my heart ache. Not just the memory but the smell, the cedar",
+  "target_word": "and",
+  "sample_idx": 2,
+  "generated_text": "wood that still",
+  "generated_first_word": "wood",
+  "similarity": 0.601590633392334,
+  "timestamp": "2026-06-30 15:39:38"
+}

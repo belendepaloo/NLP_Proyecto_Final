@@ -1,0 +1,19 @@
+{
+  "query_id": "498f98471cb69fb84808e1db57162450",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0004",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 10,
+  "prefix": "It creaked, but if the sound woke anyone inside, they",
+  "target_word": "didnt",
+  "sample_idx": 0,
+  "generated_text": "didn't",
+  "generated_first_word": "didn't",
+  "similarity": 0.9388880729675293,
+  "timestamp": "2026-07-01 13:57:18"
+}

@@ -1,0 +1,25 @@
+{
+  "query_id": "176c5ed7ed03d9b625e9e199c54e8c9b",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0028",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "title": "The Foxglove King",
+  "author": "Hannah Whitten",
+  "length": "medium",
+  "permutation_index": 0,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Foxglove King\" book by Hannah Whitten?\nOptions:\nA. Though Alie turned as red as the jam on Lore's pastry at the mention of Gabriel, there was still a glimmer of optimism in her eyes. Lore knew that light--Alie had carried a flame for Gabriel for ages. It made Lore think of Gabe's warm, bare skin on her back just a week prior--why must everything be complicated? Brigitte jokingly admonished Alie for taking advantage of Bastian's hospitality solely to ask about Gabriel, despite Alie and Bastian having no romance between them.\nB. Alie's face turned red at the mention of Gabriel, though she still had an optimistic gleam in her eyes. Lore knew that look--Alie had long carried a flame for Gabriel. Thinking back to Gabe's warm bare skin against her just a week prior, Lore sighed. Why did everything have to be so complicated? Brigitte jokingly chided Alie for taking advantage of Bastian's hospitality just to ask about Gabe, but Alie insisted there was nothing romantic between her and Bastian.\nC. Theres no need to go excavating ancient history. Though Alies blush was the color of the cherry jam in Lores pastry, there was a still a hopeful light in her eyes. Lore recognized it. A torch long held. And it made her think of Gabes bare chest and how itd felt pressed warm against her back a week ago and Bleeding God nothing could be simple, could it? Poor Bastian. Brigitte shook her head, face solemn, though the words were teasing. Went to all this trouble, let Alie use his suite and everything, just for her to ask about Gabriel. You know its not like that with Bastian, Alie said.\nD. Alie blushed deeply when Gabriel's name came up, but there was still hope in her expression. Lore recognized that torch Alie had held for so long. It reminded Lore of Gabriel's bare chest pressed against her back just last week--why did nothing come easily? Brigitte teasingly scolded Alie for using Bastian's suite just to ask about Gabriel, even though Alie and Bastian weren't like that. \nAnswer:",
+  "options": {
+    "A": "Though Alie turned as red as the jam on Lore's pastry at the mention of Gabriel, there was still a glimmer of optimism in her eyes. Lore knew that light--Alie had carried a flame for Gabriel for ages. It made Lore think of Gabe's warm, bare skin on her back just a week prior--why must everything be complicated? Brigitte jokingly admonished Alie for taking advantage of Bastian's hospitality solely to ask about Gabriel, despite Alie and Bastian having no romance between them.",
+    "B": "Alie's face turned red at the mention of Gabriel, though she still had an optimistic gleam in her eyes. Lore knew that look--Alie had long carried a flame for Gabriel. Thinking back to Gabe's warm bare skin against her just a week prior, Lore sighed. Why did everything have to be so complicated? Brigitte jokingly chided Alie for taking advantage of Bastian's hospitality just to ask about Gabe, but Alie insisted there was nothing romantic between her and Bastian.",
+    "C": "Theres no need to go excavating ancient history. Though Alies blush was the color of the cherry jam in Lores pastry, there was a still a hopeful light in her eyes. Lore recognized it. A torch long held. And it made her think of Gabes bare chest and how itd felt pressed warm against her back a week ago and Bleeding God nothing could be simple, could it? Poor Bastian. Brigitte shook her head, face solemn, though the words were teasing. Went to all this trouble, let Alie use his suite and everything, just for her to ask about Gabriel. You know its not like that with Bastian, Alie said.",
+    "D": "Alie blushed deeply when Gabriel's name came up, but there was still hope in her expression. Lore recognized that torch Alie had held for so long. It reminded Lore of Gabriel's bare chest pressed against her back just last week--why did nothing come easily? Brigitte teasingly scolded Alie for using Bastian's suite just to ask about Gabriel, even though Alie and Bastian weren't like that. "
+  },
+  "gold_letter": "C",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-06-26 04:52:46"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "1b77b41e561ca79725adfb48fd5404fe",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0174",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "Her eyes gleamed. “You see? I knew you’d",
+  "target_word": "missed",
+  "sample_idx": 1,
+  "generated_text": "finally understand.”",
+  "generated_first_word": "finally",
+  "similarity": 0.6812631487846375,
+  "timestamp": "2026-07-01 02:39:03"
+}

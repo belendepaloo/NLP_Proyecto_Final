@@ -1,0 +1,19 @@
+{
+  "query_id": "63be9e5f5286a40e678f1d317c083069",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0108",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 11,
+  "prefix": "Its the first real acknowledgment of our agreement all day, and",
+  "target_word": "its",
+  "sample_idx": 2,
+  "generated_text": "now",
+  "generated_first_word": "now",
+  "similarity": 0.6689748167991638,
+  "timestamp": "2026-07-04 20:06:50"
+}

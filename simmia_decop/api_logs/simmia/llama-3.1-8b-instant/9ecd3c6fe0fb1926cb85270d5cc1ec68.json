@@ -1,0 +1,19 @@
+{
+  "query_id": "9ecd3c6fe0fb1926cb85270d5cc1ec68",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0183",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Im nineteen",
+  "target_word": "and",
+  "sample_idx": 2,
+  "generated_text": "years old.",
+  "generated_first_word": "years",
+  "similarity": 0.6529427766799927,
+  "timestamp": "2026-07-01 03:23:38"
+}

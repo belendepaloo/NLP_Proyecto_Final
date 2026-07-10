@@ -1,0 +1,19 @@
+{
+  "query_id": "02cf801ecedadf3d256ff2276c1150f0",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0061",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Promiscuity went",
+  "target_word": "unpunished,",
+  "sample_idx": 1,
+  "generated_text": "hand in hand",
+  "generated_first_word": "hand",
+  "similarity": 0.6411722898483276,
+  "timestamp": "2026-06-30 10:06:58"
+}

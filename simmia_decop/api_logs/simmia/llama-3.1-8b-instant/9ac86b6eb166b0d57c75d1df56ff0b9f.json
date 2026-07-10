@@ -1,0 +1,19 @@
+{
+  "query_id": "9ac86b6eb166b0d57c75d1df56ff0b9f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0046",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Yet Archer was convinced that",
+  "target_word": "Madame",
+  "sample_idx": 1,
+  "generated_text": "he had finally",
+  "generated_first_word": "he",
+  "similarity": 0.5971750020980835,
+  "timestamp": "2026-06-30 08:47:53"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "f82ce69410451a49dffd3263af51cc91",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0044",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Lore scowled at",
+  "target_word": "his",
+  "sample_idx": 2,
+  "generated_text": "the dark figure",
+  "generated_first_word": "the",
+  "similarity": 0.780502200126648,
+  "timestamp": "2026-06-30 08:36:34"
+}

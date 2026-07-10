@@ -1,0 +1,19 @@
+{
+  "query_id": "8eda3ba8fef3900305374f12aab87dfd",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0103",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 18,
+  "prefix": "Fell in love. Met his vet. Fell in love. And lived quietly ever after, Maud said. Yeah, I",
+  "target_word": "guess.",
+  "sample_idx": 2,
+  "generated_text": "thought.",
+  "generated_first_word": "thought.",
+  "similarity": 0.784161388874054,
+  "timestamp": "2026-06-30 13:46:10"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "15908f5710e67bcfe44e7e28f6b1a0c2",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0086",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "The musicians had fallen silent with Jocozah’s departure",
+  "target_word": "from",
+  "sample_idx": 1,
+  "generated_text": "and the dark",
+  "generated_first_word": "and",
+  "similarity": 0.7181423306465149,
+  "timestamp": "2026-06-30 12:16:55"
+}

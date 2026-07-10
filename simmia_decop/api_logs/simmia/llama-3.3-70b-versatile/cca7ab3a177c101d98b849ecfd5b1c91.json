@@ -1,0 +1,19 @@
+{
+  "query_id": "cca7ab3a177c101d98b849ecfd5b1c91",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0102",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Maud smiled",
+  "target_word": "as",
+  "sample_idx": 0,
+  "generated_text": "gently",
+  "generated_first_word": "gently",
+  "similarity": 0.6326420307159424,
+  "timestamp": "2026-07-04 19:36:28"
+}

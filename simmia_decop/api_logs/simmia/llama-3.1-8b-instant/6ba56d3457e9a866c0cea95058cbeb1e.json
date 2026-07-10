@@ -1,0 +1,19 @@
+{
+  "query_id": "6ba56d3457e9a866c0cea95058cbeb1e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0032",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Even as the first shadows",
+  "target_word": "were",
+  "sample_idx": 1,
+  "generated_text": "fell across the",
+  "generated_first_word": "fell",
+  "similarity": 0.6604442000389099,
+  "timestamp": "2026-06-30 07:33:26"
+}

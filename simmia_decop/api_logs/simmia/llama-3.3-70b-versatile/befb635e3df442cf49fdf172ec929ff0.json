@@ -1,0 +1,19 @@
+{
+  "query_id": "befb635e3df442cf49fdf172ec929ff0",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0031",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Whenever he could, he sought out",
+  "target_word": "a",
+  "sample_idx": 2,
+  "generated_text": "new",
+  "generated_first_word": "new",
+  "similarity": 0.675939679145813,
+  "timestamp": "2026-07-01 16:03:09"
+}

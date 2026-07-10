@@ -1,0 +1,19 @@
+{
+  "query_id": "dfc5ab97254c38e29b10fa926cb65ae3",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0048",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 19,
+  "prefix": "Were going to take you to the hospital to get you checked out. I dont want to. We need",
+  "target_word": "to",
+  "sample_idx": 2,
+  "generated_text": "to make sure",
+  "generated_first_word": "to",
+  "similarity": 1.0,
+  "timestamp": "2026-07-03 13:51:38"
+}

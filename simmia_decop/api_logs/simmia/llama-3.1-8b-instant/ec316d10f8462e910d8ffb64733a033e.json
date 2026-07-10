@@ -1,0 +1,19 @@
+{
+  "query_id": "ec316d10f8462e910d8ffb64733a033e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0166",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Wulf grabbed whatever he could throw:",
+  "target_word": "weapons,",
+  "sample_idx": 0,
+  "generated_text": "a heavy wooden",
+  "generated_first_word": "a",
+  "similarity": 0.683076024055481,
+  "timestamp": "2026-07-01 01:57:28"
+}

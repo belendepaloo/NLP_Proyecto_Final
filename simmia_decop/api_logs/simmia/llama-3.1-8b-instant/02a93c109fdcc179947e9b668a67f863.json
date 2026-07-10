@@ -1,0 +1,19 @@
+{
+  "query_id": "02a93c109fdcc179947e9b668a67f863",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0195",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 14,
+  "prefix": "His need for power has grown in this chaos. This fire will have convinced",
+  "target_word": "him",
+  "sample_idx": 1,
+  "generated_text": "him that the",
+  "generated_first_word": "him",
+  "similarity": 1.0000001192092896,
+  "timestamp": "2026-07-01 04:27:04"
+}

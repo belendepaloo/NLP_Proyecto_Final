@@ -1,0 +1,19 @@
+{
+  "query_id": "b3c36fb6f705b15da6a1a298578a9435",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0145",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 14,
+  "prefix": "'Tell yer what?' asked the sleepy Noah, shaking himself pettishy. 'That about--NANCY,' said Fagin,",
+  "target_word": "clutching",
+  "sample_idx": 1,
+  "generated_text": "'...is",
+  "generated_first_word": "is",
+  "similarity": 0.5891906023025513,
+  "timestamp": "2026-06-30 17:41:35"
+}

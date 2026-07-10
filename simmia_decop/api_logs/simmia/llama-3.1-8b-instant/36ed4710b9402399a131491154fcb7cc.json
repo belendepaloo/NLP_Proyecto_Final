@@ -1,0 +1,19 @@
+{
+  "query_id": "36ed4710b9402399a131491154fcb7cc",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0173",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 11,
+  "prefix": "But no ship came ever again from the West to Nmenor,",
+  "target_word": "and",
+  "sample_idx": 1,
+  "generated_text": "and the port",
+  "generated_first_word": "and",
+  "similarity": 1.0,
+  "timestamp": "2026-07-01 02:34:44"
+}

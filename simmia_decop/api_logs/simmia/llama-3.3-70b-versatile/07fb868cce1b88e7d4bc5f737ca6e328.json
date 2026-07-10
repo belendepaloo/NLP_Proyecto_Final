@@ -1,0 +1,19 @@
+{
+  "query_id": "07fb868cce1b88e7d4bc5f737ca6e328",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0029",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "And it",
+  "target_word": "wouldnt",
+  "sample_idx": 1,
+  "generated_text": "was",
+  "generated_first_word": "was",
+  "similarity": 0.6677332520484924,
+  "timestamp": "2026-07-01 15:52:35"
+}

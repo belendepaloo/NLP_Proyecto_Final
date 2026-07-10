@@ -1,0 +1,19 @@
+{
+  "query_id": "45cc521ee2a43c61198fceb66e92222d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0063",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "The boy mumbled an answer that allowed him to avoid",
+  "target_word": "responding",
+  "sample_idx": 2,
+  "generated_text": "further",
+  "generated_first_word": "further",
+  "similarity": 0.6952708959579468,
+  "timestamp": "2026-07-03 15:06:22"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "e02a0732c2234630ecb33077a243c6e9",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0140",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Another reason",
+  "target_word": "I",
+  "sample_idx": 2,
+  "generated_text": "is",
+  "generated_first_word": "is",
+  "similarity": 0.697468638420105,
+  "timestamp": "2026-07-05 17:46:50"
+}

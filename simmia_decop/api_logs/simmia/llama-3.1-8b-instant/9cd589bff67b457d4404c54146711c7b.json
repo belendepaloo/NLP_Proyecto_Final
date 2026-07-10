@@ -1,0 +1,19 @@
+{
+  "query_id": "9cd589bff67b457d4404c54146711c7b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0162",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Kat bunched",
+  "target_word": "her",
+  "sample_idx": 2,
+  "generated_text": "up her hair",
+  "generated_first_word": "up",
+  "similarity": 0.667851448059082,
+  "timestamp": "2026-07-01 01:36:43"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "bc7ba94779a888703058217b8914d6a9",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0085",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "It was rather weak in me",
+  "target_word": "I",
+  "sample_idx": 1,
+  "generated_text": "to stand up",
+  "generated_first_word": "to",
+  "similarity": 0.7094370722770691,
+  "timestamp": "2026-06-30 12:11:17"
+}

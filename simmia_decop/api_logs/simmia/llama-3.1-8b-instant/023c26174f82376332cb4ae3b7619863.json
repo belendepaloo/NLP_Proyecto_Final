@@ -1,0 +1,19 @@
+{
+  "query_id": "023c26174f82376332cb4ae3b7619863",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0101",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Oh, don't tell",
+  "target_word": "you",
+  "sample_idx": 2,
+  "generated_text": "my sister.",
+  "generated_first_word": "my",
+  "similarity": 0.7555348873138428,
+  "timestamp": "2026-06-30 13:32:01"
+}

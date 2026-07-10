@@ -1,0 +1,19 @@
+{
+  "query_id": "d2c1caffc6e821cb9488e8812859b8db",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0105",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 10,
+  "prefix": "And Peter was nothing like Leonard. When she arrived at",
+  "target_word": "the",
+  "sample_idx": 0,
+  "generated_text": "the small café",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 13:53:28"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "eaf8e557268b5e23dd53d65284570976",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0033",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 14,
+  "prefix": "There was a muddy pond at the bottom of Lavender’s garden and this was",
+  "target_word": "the",
+  "sample_idx": 2,
+  "generated_text": "where Lavender",
+  "generated_first_word": "where",
+  "similarity": 0.6956837773323059,
+  "timestamp": "2026-06-30 07:41:06"
+}

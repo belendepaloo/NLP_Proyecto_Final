@@ -1,0 +1,19 @@
+{
+  "query_id": "02fca15e00371032c5261c6e9a544063",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0181",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "But when he had drawn",
+  "target_word": "forth,",
+  "sample_idx": 1,
+  "generated_text": "an arrow",
+  "generated_first_word": "an",
+  "similarity": 0.67104172706604,
+  "timestamp": "2026-07-08 01:24:53"
+}

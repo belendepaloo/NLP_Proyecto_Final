@@ -1,0 +1,19 @@
+{
+  "query_id": "97eb0b8eafbe1325ddbf98f5ad496195",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0111",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 11,
+  "prefix": "The vaults were reached by means of small, goblin-driven carts that",
+  "target_word": "sped",
+  "sample_idx": 2,
+  "generated_text": "wound their",
+  "generated_first_word": "wound",
+  "similarity": 0.650884747505188,
+  "timestamp": "2026-06-30 14:23:08"
+}

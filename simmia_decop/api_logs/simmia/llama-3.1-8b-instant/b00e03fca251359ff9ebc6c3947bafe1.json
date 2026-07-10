@@ -1,0 +1,19 @@
+{
+  "query_id": "b00e03fca251359ff9ebc6c3947bafe1",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0021",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "The men of",
+  "target_word": "the",
+  "sample_idx": 2,
+  "generated_text": "the village",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 06:36:38"
+}

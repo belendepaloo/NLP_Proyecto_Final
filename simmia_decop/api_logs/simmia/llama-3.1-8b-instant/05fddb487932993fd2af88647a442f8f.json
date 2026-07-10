@@ -1,0 +1,19 @@
+{
+  "query_id": "05fddb487932993fd2af88647a442f8f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0185",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 10,
+  "prefix": "By the light of the low-burning fires, they shared tales",
+  "target_word": "of",
+  "sample_idx": 1,
+  "generated_text": "of adventure and",
+  "generated_first_word": "of",
+  "similarity": 1.0,
+  "timestamp": "2026-07-01 03:34:44"
+}

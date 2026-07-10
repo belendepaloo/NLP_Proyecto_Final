@@ -1,0 +1,19 @@
+{
+  "query_id": "65cb3b25f1a22b92297f8155068de82a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0154",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "The man still said nothing, and the boy sensed that he was going to have to make a",
+  "target_word": "decision.",
+  "sample_idx": 2,
+  "generated_text": "decision.",
+  "generated_first_word": "decision.",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 18:27:06"
+}

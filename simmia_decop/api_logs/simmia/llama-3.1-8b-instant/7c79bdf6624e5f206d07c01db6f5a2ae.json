@@ -1,0 +1,19 @@
+{
+  "query_id": "7c79bdf6624e5f206d07c01db6f5a2ae",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0004",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 16,
+  "prefix": "It creaked, but if the sound woke anyone inside, they didnt protest. Bastian and Gabe settled",
+  "target_word": "Milo",
+  "sample_idx": 1,
+  "generated_text": "into the silence",
+  "generated_first_word": "into",
+  "similarity": 0.6284998655319214,
+  "timestamp": "2026-06-30 05:10:06"
+}

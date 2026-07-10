@@ -1,0 +1,19 @@
+{
+  "query_id": "6b6c7885e6f579b70765a000f7415a52",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0103",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 10,
+  "prefix": "Fell in love. Met his vet. Fell in love. And",
+  "target_word": "lived",
+  "sample_idx": 1,
+  "generated_text": "they got married",
+  "generated_first_word": "they",
+  "similarity": 0.6064533591270447,
+  "timestamp": "2026-06-30 13:43:55"
+}

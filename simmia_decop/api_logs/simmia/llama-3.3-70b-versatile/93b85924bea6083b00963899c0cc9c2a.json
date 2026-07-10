@@ -1,0 +1,19 @@
+{
+  "query_id": "93b85924bea6083b00963899c0cc9c2a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0164",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "With a sweep of his",
+  "target_word": "hand",
+  "sample_idx": 2,
+  "generated_text": "arm",
+  "generated_first_word": "arm",
+  "similarity": 0.7914845943450928,
+  "timestamp": "2026-07-06 17:20:09"
+}

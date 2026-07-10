@@ -1,0 +1,19 @@
+{
+  "query_id": "26a8524ff435e1da56bed8cc9a9999df",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0114",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 11,
+  "prefix": "‘The first time,’ Hortensia said, ‘I poured half a tin of",
+  "target_word": "Golden",
+  "sample_idx": 2,
+  "generated_text": "baking",
+  "generated_first_word": "baking",
+  "similarity": 0.5683290958404541,
+  "timestamp": "2026-07-05 15:48:07"
+}

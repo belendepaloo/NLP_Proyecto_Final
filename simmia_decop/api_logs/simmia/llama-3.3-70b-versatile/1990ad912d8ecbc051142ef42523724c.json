@@ -1,0 +1,19 @@
+{
+  "query_id": "1990ad912d8ecbc051142ef42523724c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0152",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 14,
+  "prefix": "Before, I had never experienced aught but a not-unpleasing sadness. The bond of a",
+  "target_word": "common",
+  "sample_idx": 1,
+  "generated_text": "deep",
+  "generated_first_word": "deep",
+  "similarity": 0.6148353815078735,
+  "timestamp": "2026-07-06 16:26:12"
+}

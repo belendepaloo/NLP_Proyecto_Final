@@ -1,0 +1,19 @@
+{
+  "query_id": "37ee6aab427d8d7fbd119d0483c8112f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0177",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "What",
+  "target_word": "can",
+  "sample_idx": 0,
+  "generated_text": "happened",
+  "generated_first_word": "happened",
+  "similarity": 0.6768903732299805,
+  "timestamp": "2026-07-01 02:52:46"
+}

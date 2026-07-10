@@ -1,0 +1,19 @@
+{
+  "query_id": "ce9a79539acfe593da258cc48e8e5ede",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0140",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 11,
+  "prefix": "Another reason I know this is not a real game: Sabrina",
+  "target_word": "clearly",
+  "sample_idx": 0,
+  "generated_text": "the",
+  "generated_first_word": "the",
+  "similarity": 0.6258057951927185,
+  "timestamp": "2026-07-05 17:48:47"
+}

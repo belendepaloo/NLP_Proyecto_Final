@@ -1,0 +1,19 @@
+{
+  "query_id": "347bfc40c6f7ddd491553b8acdb29a41",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0037",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "After Id moved back home, Simon didnt go",
+  "target_word": "out",
+  "sample_idx": 0,
+  "generated_text": "to the movies",
+  "generated_first_word": "to",
+  "similarity": 0.7056702375411987,
+  "timestamp": "2026-06-30 08:00:56"
+}

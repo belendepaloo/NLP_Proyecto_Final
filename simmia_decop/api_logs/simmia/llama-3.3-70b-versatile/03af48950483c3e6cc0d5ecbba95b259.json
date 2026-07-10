@@ -1,0 +1,19 @@
+{
+  "query_id": "03af48950483c3e6cc0d5ecbba95b259",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0100",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "“Careful not to walk through anyone,” said Ron nervously, and they set",
+  "target_word": "off",
+  "sample_idx": 0,
+  "generated_text": "off",
+  "generated_first_word": "off",
+  "similarity": 1.0000001192092896,
+  "timestamp": "2026-07-04 19:29:49"
+}

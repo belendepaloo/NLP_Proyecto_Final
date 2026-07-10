@@ -1,0 +1,19 @@
+{
+  "query_id": "68b8c9497b427716f30f069e160bbb41",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0014",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 9,
+  "prefix": "And Mom will def get over this, eventually. She",
+  "target_word": "got",
+  "sample_idx": 1,
+  "generated_text": "just needs time",
+  "generated_first_word": "just",
+  "similarity": 0.6446603536605835,
+  "timestamp": "2026-06-30 06:01:38"
+}

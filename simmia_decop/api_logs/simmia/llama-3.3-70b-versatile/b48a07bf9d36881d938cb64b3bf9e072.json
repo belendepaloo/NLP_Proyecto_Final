@@ -1,0 +1,19 @@
+{
+  "query_id": "b48a07bf9d36881d938cb64b3bf9e072",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0151",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 9,
+  "prefix": "Then I plop it onto the wheel and flatten",
+  "target_word": "it",
+  "sample_idx": 1,
+  "generated_text": "it",
+  "generated_first_word": "it",
+  "similarity": 1.0,
+  "timestamp": "2026-07-06 16:20:10"
+}

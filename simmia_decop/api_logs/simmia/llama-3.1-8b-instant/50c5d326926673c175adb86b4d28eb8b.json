@@ -1,0 +1,19 @@
+{
+  "query_id": "50c5d326926673c175adb86b4d28eb8b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0055",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "‘The",
+  "target_word": "speedometer,’",
+  "sample_idx": 0,
+  "generated_text": "mysterious'",
+  "generated_first_word": "mysterious'",
+  "similarity": 0.5978946089744568,
+  "timestamp": "2026-06-30 09:35:13"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "1564a7b8bd7f138f36900b896f54196d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0165",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "And high in the north as a challenge to Melkor",
+  "target_word": "she",
+  "sample_idx": 1,
+  "generated_text": "Aragorn",
+  "generated_first_word": "Aragorn",
+  "similarity": 0.6351386904716492,
+  "timestamp": "2026-07-01 01:53:38"
+}

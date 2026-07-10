@@ -1,0 +1,19 @@
+{
+  "query_id": "52ad825ad6e7643d3c4866ae6aec2c56",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0107",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Still it became in a",
+  "target_word": "manner",
+  "sample_idx": 1,
+  "generated_text": "matter of days",
+  "generated_first_word": "matter",
+  "similarity": 0.6281119585037231,
+  "timestamp": "2026-06-30 14:01:56"
+}

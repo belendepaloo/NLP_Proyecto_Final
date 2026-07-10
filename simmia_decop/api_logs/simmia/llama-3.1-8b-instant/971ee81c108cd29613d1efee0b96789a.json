@@ -1,0 +1,19 @@
+{
+  "query_id": "971ee81c108cd29613d1efee0b96789a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0144",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 11,
+  "prefix": "If hereafter in your new place of abode I can be",
+  "target_word": "of",
+  "sample_idx": 2,
+  "generated_text": "of service to",
+  "generated_first_word": "of",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 17:36:20"
+}

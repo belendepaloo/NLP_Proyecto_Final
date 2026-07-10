@@ -1,0 +1,19 @@
+{
+  "query_id": "21f51ef383e3330b4d03869bd00b9401",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0101",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 15,
+  "prefix": "Oh, don't tell you are going to send me away, sir, pray!' exclaimed Oliver, alarmed",
+  "target_word": "at",
+  "sample_idx": 0,
+  "generated_text": "his eyes growing",
+  "generated_first_word": "his",
+  "similarity": 0.6977838277816772,
+  "timestamp": "2026-06-30 13:35:06"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "17a028f4d231438095b4ada2908a6311",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0028",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Theres no need to go excavating",
+  "target_word": "ancient",
+  "sample_idx": 1,
+  "generated_text": "in the dead",
+  "generated_first_word": "in",
+  "similarity": 0.601141095161438,
+  "timestamp": "2026-06-30 07:13:32"
+}

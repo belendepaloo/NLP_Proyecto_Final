@@ -1,0 +1,19 @@
+{
+  "query_id": "7b7e946be2eda8c92be3065192eacfd3",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0030",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "He dreamed that he was on show in a",
+  "target_word": "zoo,",
+  "sample_idx": 0,
+  "generated_text": "large, crowded",
+  "generated_first_word": "large,",
+  "similarity": 0.6564104557037354,
+  "timestamp": "2026-06-30 07:25:02"
+}

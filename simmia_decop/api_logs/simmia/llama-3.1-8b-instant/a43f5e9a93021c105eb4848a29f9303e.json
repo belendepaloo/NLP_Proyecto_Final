@@ -1,0 +1,19 @@
+{
+  "query_id": "a43f5e9a93021c105eb4848a29f9303e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0042",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Never",
+  "target_word": "mind",
+  "sample_idx": 1,
+  "generated_text": "forget",
+  "generated_first_word": "forget",
+  "similarity": 0.7118585109710693,
+  "timestamp": "2026-06-30 08:25:37"
+}

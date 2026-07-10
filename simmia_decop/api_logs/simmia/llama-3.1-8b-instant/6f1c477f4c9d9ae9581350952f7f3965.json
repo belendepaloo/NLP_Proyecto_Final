@@ -1,0 +1,19 @@
+{
+  "query_id": "6f1c477f4c9d9ae9581350952f7f3965",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0042",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Never mind how he came",
+  "target_word": "there;",
+  "sample_idx": 2,
+  "generated_text": "to possess such",
+  "generated_first_word": "to",
+  "similarity": 0.6315935850143433,
+  "timestamp": "2026-06-30 08:26:45"
+}

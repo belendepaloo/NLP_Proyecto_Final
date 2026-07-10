@@ -1,0 +1,19 @@
+{
+  "query_id": "dfc80b86740079de0fb67497d143ca87",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0021",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "The men of the oasis surrounded the horsemen from the desert and",
+  "target_word": "within",
+  "sample_idx": 2,
+  "generated_text": "prepared to launch",
+  "generated_first_word": "prepared",
+  "similarity": 0.6971455812454224,
+  "timestamp": "2026-06-30 06:39:03"
+}

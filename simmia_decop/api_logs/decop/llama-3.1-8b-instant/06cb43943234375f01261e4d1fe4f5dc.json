@@ -1,0 +1,25 @@
+{
+  "query_id": "06cb43943234375f01261e4d1fe4f5dc",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0104",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "title": "A Day of Fallen Night",
+  "author": "Samantha Shannon",
+  "length": "medium",
+  "permutation_index": 2,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"A Day of Fallen Night\" book by Samantha Shannon?\nOptions:\nA. Glorian's initial thought was that the gallery had been sealed up. But the hanging was pulled aside, revealing an anguished face obscured by shadow. Who in Halgalant are you? Glorian asked sharply, her voice hardened by pain and embarrassment since she hadn't expected to encounter anyone. The young man - scarcely older than her - gaped back, stunned. My lady, he said deferentially after regaining himself, bowing his head. Please forgive me. Are you injured? His accent had the brittle, icy quality of the North. Hurt? Glorian retorted irritably.\nB. Her first wild thought was that the gallery must have been walled up. Then the hanging was drawn back, and a stricken face appeared, cast into shadow. Who in Halgalant are you? Glorian demanded. Pain and embarrassment sharpened her voice. She had not thought to see anyone up here. The man  a young man, not much older than her  stared back at her in shock. My lady. Recovering, he lowered his head. Your pardon. Are you hurt? His accent was a flinty burr. She could have sworn it had the rime of the North on it. Hurt? Glorian snapped.\nC. Glorian's first instinct was that the gallery had been closed off completely. However, the curtain was drawn back, and a distressed face shrouded in shadow appeared. Glorian demanded to know who he was in Halgalant, her voice tight with pain and embarrassment since she hadn't anticipated anyone being present. The man - a young man, barely older than Glorian - stared back, shocked. My lady, he said respectfully after recovering his composure, lowering his head apologetically. Pardon me. Are you hurt? His accent had the harsh, frosty edge of the North. Hurt? Glorian snapped back sharply. \nD. Her initial reaction was that the gallery had been sealed off. But then the hanging was pulled back, revealing an anguished face obscured in shadow. Glorian sharply asked who he was, taken aback at seeing someone there when she hadn't expected anyone. The young man, only a little older than her, gaped at her in astonishment. My lady, he said deferentially after regaining his composure, bowing his head. Please forgive me. Are you injured? His speech had the hard, gritty accent of the North. Glorian irritably responded that she was not hurt.\nAnswer:",
+  "options": {
+    "A": "Glorian's initial thought was that the gallery had been sealed up. But the hanging was pulled aside, revealing an anguished face obscured by shadow. Who in Halgalant are you? Glorian asked sharply, her voice hardened by pain and embarrassment since she hadn't expected to encounter anyone. The young man - scarcely older than her - gaped back, stunned. My lady, he said deferentially after regaining himself, bowing his head. Please forgive me. Are you injured? His accent had the brittle, icy quality of the North. Hurt? Glorian retorted irritably.",
+    "B": "Her first wild thought was that the gallery must have been walled up. Then the hanging was drawn back, and a stricken face appeared, cast into shadow. Who in Halgalant are you? Glorian demanded. Pain and embarrassment sharpened her voice. She had not thought to see anyone up here. The man  a young man, not much older than her  stared back at her in shock. My lady. Recovering, he lowered his head. Your pardon. Are you hurt? His accent was a flinty burr. She could have sworn it had the rime of the North on it. Hurt? Glorian snapped.",
+    "C": "Glorian's first instinct was that the gallery had been closed off completely. However, the curtain was drawn back, and a distressed face shrouded in shadow appeared. Glorian demanded to know who he was in Halgalant, her voice tight with pain and embarrassment since she hadn't anticipated anyone being present. The man - a young man, barely older than Glorian - stared back, shocked. My lady, he said respectfully after recovering his composure, lowering his head apologetically. Pardon me. Are you hurt? His accent had the harsh, frosty edge of the North. Hurt? Glorian snapped back sharply. ",
+    "D": "Her initial reaction was that the gallery had been sealed off. But then the hanging was pulled back, revealing an anguished face obscured in shadow. Glorian sharply asked who he was, taken aback at seeing someone there when she hadn't expected anyone. The young man, only a little older than her, gaped at her in astonishment. My lady, he said deferentially after regaining his composure, bowing his head. Please forgive me. Are you injured? His speech had the hard, gritty accent of the North. Glorian irritably responded that she was not hurt."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "B",
+  "is_correct": 1,
+  "timestamp": "2026-07-08 04:40:54"
+}

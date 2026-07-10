@@ -1,0 +1,25 @@
+{
+  "query_id": "36ccdd6d313a77b9099e5452f9865bad",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0051",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "title": "The Wildest Sun A Novel",
+  "author": "Asha Lemmie",
+  "length": "medium",
+  "permutation_index": 3,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Wildest Sun A Novel\" book by Asha Lemmie?\nOptions:\nA. Javier never seems to lack female companionship. The women are quite pretty but the relationships are fleeting. They feel uneasy about me initially but then become at ease. I'm currently involved with a man named Ramón who works at a bakery and is not very intelligent. However his intellect is immaterial to me. I find it amusing to recall worrying that I'd never get a man's attention. I sense Javier silently condemns my casual trysts with men, despite not voicing it.\nB. Javier never seems to be without a girlfriend. They are all quite attractive but the relationships never endure. They get nervous when they hear my name, but calm down after meeting me. I'm dating a man named Ramón now. He works at a bakery and is not very bright. But I'm not concerned with his intellect. It's funny to think I once fretted over never getting male attention. I know Javier silently judges my casual affairs with men, though he won't admit it. \nC. Javier always has a good-looking girlfriend, but the relationships are short-lived. His girlfriends get anxious when I come up, but relax after we meet. I'm seeing a guy named Ramón now who works at a bread factory and isn't too smart. But his mind isn't what interests me. I used to worry I'd never attract men, which is laughable now. I can tell Javier hypocritically disapproves of me dating men casually, even if he won't say it.\nD. Javier  always  has a girlfriend. They are always very pretty and none of them last long. They are usually uneasy when they hear about me, but they always seem to relax when they see me. I am currently seeing a young man named Ramón. He works at a bread factory and doesn’t strike me as the sharpest tool in the box. But  then, it’s not his mind I’m interested in. I could laugh when I remember that I was worried I’d never turn a man’s head. I sense that Javier both quietly and hypocritically disapproves of my casual dalliances with men, but he never says so to me. \nAnswer:",
+  "options": {
+    "A": "Javier never seems to lack female companionship. The women are quite pretty but the relationships are fleeting. They feel uneasy about me initially but then become at ease. I'm currently involved with a man named Ramón who works at a bakery and is not very intelligent. However his intellect is immaterial to me. I find it amusing to recall worrying that I'd never get a man's attention. I sense Javier silently condemns my casual trysts with men, despite not voicing it.",
+    "B": "Javier never seems to be without a girlfriend. They are all quite attractive but the relationships never endure. They get nervous when they hear my name, but calm down after meeting me. I'm dating a man named Ramón now. He works at a bakery and is not very bright. But I'm not concerned with his intellect. It's funny to think I once fretted over never getting male attention. I know Javier silently judges my casual affairs with men, though he won't admit it. ",
+    "C": "Javier always has a good-looking girlfriend, but the relationships are short-lived. His girlfriends get anxious when I come up, but relax after we meet. I'm seeing a guy named Ramón now who works at a bread factory and isn't too smart. But his mind isn't what interests me. I used to worry I'd never attract men, which is laughable now. I can tell Javier hypocritically disapproves of me dating men casually, even if he won't say it.",
+    "D": "Javier  always  has a girlfriend. They are always very pretty and none of them last long. They are usually uneasy when they hear about me, but they always seem to relax when they see me. I am currently seeing a young man named Ramón. He works at a bread factory and doesn’t strike me as the sharpest tool in the box. But  then, it’s not his mind I’m interested in. I could laugh when I remember that I was worried I’d never turn a man’s head. I sense that Javier both quietly and hypocritically disapproves of my casual dalliances with men, but he never says so to me. "
+  },
+  "gold_letter": "D",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-06-26 05:06:42"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "8ed04063ad5f809c7d4fbf2f34ad2f8f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0195",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "His need for",
+  "target_word": "power",
+  "sample_idx": 0,
+  "generated_text": "validation grew.",
+  "generated_first_word": "validation",
+  "similarity": 0.5880414247512817,
+  "timestamp": "2026-07-01 04:24:06"
+}

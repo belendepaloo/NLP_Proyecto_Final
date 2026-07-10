@@ -1,0 +1,19 @@
+{
+  "query_id": "21e24409657a26306bb03a556d2857a9",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0104",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Her first",
+  "target_word": "wild",
+  "sample_idx": 2,
+  "generated_text": "job",
+  "generated_first_word": "job",
+  "similarity": 0.6589994430541992,
+  "timestamp": "2026-07-04 19:46:47"
+}

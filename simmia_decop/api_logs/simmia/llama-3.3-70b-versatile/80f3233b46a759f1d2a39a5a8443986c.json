@@ -1,0 +1,19 @@
+{
+  "query_id": "80f3233b46a759f1d2a39a5a8443986c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0053",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 18,
+  "prefix": "We talked about this. You talked about this. Bastian was doing something strange with his hands. They flexed",
+  "target_word": "back",
+  "sample_idx": 2,
+  "generated_text": "inward",
+  "generated_first_word": "inward",
+  "similarity": 0.6589435338973999,
+  "timestamp": "2026-07-03 14:16:19"
+}

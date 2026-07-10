@@ -1,0 +1,19 @@
+{
+  "query_id": "e243ab31b07d5494ad328a24a34f45e9",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0023",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "He was shoeless; large, dirty toes were sticking",
+  "target_word": "out",
+  "sample_idx": 0,
+  "generated_text": "out",
+  "generated_first_word": "out",
+  "similarity": 1.0,
+  "timestamp": "2026-07-01 15:25:48"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "b3f39c94ed380ae86ffbf42b21e8ce4b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0107",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Still it became",
+  "target_word": "in",
+  "sample_idx": 2,
+  "generated_text": "clear",
+  "generated_first_word": "clear",
+  "similarity": 0.6490588188171387,
+  "timestamp": "2026-07-04 20:00:30"
+}

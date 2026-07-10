@@ -1,0 +1,19 @@
+{
+  "query_id": "9d6aad9253b8d1a105bf6ceccba683bf",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0079",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "This version of myselfI dont",
+  "target_word": "hate",
+  "sample_idx": 1,
+  "generated_text": "exist in reality",
+  "generated_first_word": "exist",
+  "similarity": 0.6558797955513,
+  "timestamp": "2026-06-30 11:40:31"
+}

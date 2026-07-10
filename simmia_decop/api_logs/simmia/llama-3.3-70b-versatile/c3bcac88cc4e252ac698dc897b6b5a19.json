@@ -1,0 +1,19 @@
+{
+  "query_id": "c3bcac88cc4e252ac698dc897b6b5a19",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0004",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 13,
+  "prefix": "It creaked, but if the sound woke anyone inside, they didnt protest. Bastian",
+  "target_word": "and",
+  "sample_idx": 0,
+  "generated_text": "slowly",
+  "generated_first_word": "slowly",
+  "similarity": 0.6668332815170288,
+  "timestamp": "2026-07-01 13:58:03"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "d5677c3a81b7fd068ed1a3164bf47a8f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0056",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 14,
+  "prefix": "That guy is so weird, she said when, out of earshot, they were walking",
+  "target_word": "along",
+  "sample_idx": 2,
+  "generated_text": "back",
+  "generated_first_word": "back",
+  "similarity": 0.6881630420684814,
+  "timestamp": "2026-07-03 14:31:10"
+}

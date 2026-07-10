@@ -1,0 +1,19 @@
+{
+  "query_id": "e8766d6e52c1d4ee4e573595ba3db117",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0002",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 14,
+  "prefix": "Master Bates followed, with a thoughtful countenance. The noise of footsteps on the creaking",
+  "target_word": "stairs,",
+  "sample_idx": 2,
+  "generated_text": "stairs",
+  "generated_first_word": "stairs",
+  "similarity": 0.9751111268997192,
+  "timestamp": "2026-07-01 13:49:00"
+}

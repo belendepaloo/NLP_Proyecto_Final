@@ -1,0 +1,19 @@
+{
+  "query_id": "c4a7b08502da75e4db1c4d892d41d0ff",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0186",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 17,
+  "prefix": "O'Brien had sat down beside the bed, so that his face was almost on a level with",
+  "target_word": "Winston's.",
+  "sample_idx": 0,
+  "generated_text": "the patient's",
+  "generated_first_word": "the",
+  "similarity": 0.6297031044960022,
+  "timestamp": "2026-07-01 03:41:39"
+}

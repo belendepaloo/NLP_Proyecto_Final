@@ -1,0 +1,19 @@
+{
+  "query_id": "2899f00cb8d92525c2211983dc5cdfbb",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0164",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "With a",
+  "target_word": "sweep",
+  "sample_idx": 1,
+  "generated_text": "deep breath",
+  "generated_first_word": "deep",
+  "similarity": 0.6443309187889099,
+  "timestamp": "2026-07-01 01:46:39"
+}

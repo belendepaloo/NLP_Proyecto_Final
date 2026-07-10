@@ -1,0 +1,25 @@
+{
+  "query_id": "bff6ed464a40d99054d4ce7b364a8b25",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0126",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "title": "Happy Place",
+  "author": "Emily Henry",
+  "length": "medium",
+  "permutation_index": 3,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Happy Place\" book by Emily Henry?\nOptions:\nA. My heart hurts thinking about this place. The smell of cedar and sawdust and something unique to Wyn brings back memories. Do you enjoy being in this workshop? I ask, running my hand along the sanded table waiting to be refinished. I've always enjoyed it here, he says. After the accident my parents insisted I keep coming so I wouldn't obsess over it. That helped for the most part. I stop, hands still on the table, and turn to look at him. It makes me happy to see you here. He comes over and softly holds my hips. \nB. My heart aches not just from the memories but from the scents - cedar, sawdust, and Wyn's unique smell. I ask if he likes being out here as I walk along the partly finished table, its top freshly sanded. I've always loved it here, he says. After the accident my parents pushed me to keep coming so I wouldn't fixate on it. That mostly worked. I pause, fingers halted on the table, and look back at him. Seeing you here brings me joy. He approaches and gently grasps my hips.\nC. Ache fills my heart, not just from the memories but from the smells - cedar, sawdust, and something uniquely Wyn. Do you like being out here? I ask, trailing my hand along the sanded but unfinished tabletop. I've always enjoyed it here, he says. After the accident my parents insisted I keep at it so I wouldn't obsess. That helped somewhat. I stop, hands paused on the table, and turn back to him. Having you here makes me happy. He comes over and tenderly holds my hips in his hands.\nD. It makes my heart ache. Not just the memory but the smell, the cedar and sawdust and that touch of something thats all Wyn to me. You dont mind being out here? I ask, walking along the table in-process, its top sanded down to be refinished. I always loved it out here, he says. So after the accident, my parents were adamant about getting me back out before I started fixating. It worked, mostly. I pause, fingers stilling on the table, and look back at him. I like seeing you here. He crosses toward me, gently takes my hips in his hands.\nAnswer:",
+  "options": {
+    "A": "My heart hurts thinking about this place. The smell of cedar and sawdust and something unique to Wyn brings back memories. Do you enjoy being in this workshop? I ask, running my hand along the sanded table waiting to be refinished. I've always enjoyed it here, he says. After the accident my parents insisted I keep coming so I wouldn't obsess over it. That helped for the most part. I stop, hands still on the table, and turn to look at him. It makes me happy to see you here. He comes over and softly holds my hips. ",
+    "B": "My heart aches not just from the memories but from the scents - cedar, sawdust, and Wyn's unique smell. I ask if he likes being out here as I walk along the partly finished table, its top freshly sanded. I've always loved it here, he says. After the accident my parents pushed me to keep coming so I wouldn't fixate on it. That mostly worked. I pause, fingers halted on the table, and look back at him. Seeing you here brings me joy. He approaches and gently grasps my hips.",
+    "C": "Ache fills my heart, not just from the memories but from the smells - cedar, sawdust, and something uniquely Wyn. Do you like being out here? I ask, trailing my hand along the sanded but unfinished tabletop. I've always enjoyed it here, he says. After the accident my parents insisted I keep at it so I wouldn't obsess. That helped somewhat. I stop, hands paused on the table, and turn back to him. Having you here makes me happy. He comes over and tenderly holds my hips in his hands.",
+    "D": "It makes my heart ache. Not just the memory but the smell, the cedar and sawdust and that touch of something thats all Wyn to me. You dont mind being out here? I ask, walking along the table in-process, its top sanded down to be refinished. I always loved it out here, he says. So after the accident, my parents were adamant about getting me back out before I started fixating. It worked, mostly. I pause, fingers stilling on the table, and look back at him. I like seeing you here. He crosses toward me, gently takes my hips in his hands."
+  },
+  "gold_letter": "D",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-06-26 15:12:45"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "efeda72a06b44c8c810a54b3466f1896",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0125",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "One of these rooms had been turned into a bedroom by Mrs.",
+  "target_word": "Mingott",
+  "sample_idx": 2,
+  "generated_text": "White.",
+  "generated_first_word": "White.",
+  "similarity": 0.6044009923934937,
+  "timestamp": "2026-06-30 15:34:13"
+}

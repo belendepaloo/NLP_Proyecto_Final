@@ -1,0 +1,19 @@
+{
+  "query_id": "33f564c8998fc6f806cbf5a83ec0f2f6",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0134",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 16,
+  "prefix": "Then all listened while Elrond in his clear voice spoke of Sauron and the Rings of",
+  "target_word": "Power,",
+  "sample_idx": 1,
+  "generated_text": "Power",
+  "generated_first_word": "Power",
+  "similarity": 0.9481247663497925,
+  "timestamp": "2026-07-05 17:20:25"
+}

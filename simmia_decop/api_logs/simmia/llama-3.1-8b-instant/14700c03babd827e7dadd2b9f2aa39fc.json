@@ -1,0 +1,19 @@
+{
+  "query_id": "14700c03babd827e7dadd2b9f2aa39fc",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0107",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "Still it became in a manner necessary. Twice or thrice Hindley's manifestation",
+  "target_word": "of",
+  "sample_idx": 0,
+  "generated_text": "of malevolent",
+  "generated_first_word": "of",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 14:03:44"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "16e63b2ae863e5adcfa1ceb858fd71b8",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0176",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "Men in powerful positions were unsettled by popular",
+  "target_word": "heirs",
+  "sample_idx": 0,
+  "generated_text": "protests.",
+  "generated_first_word": "protests.",
+  "similarity": 0.5744911432266235,
+  "timestamp": "2026-07-01 02:49:02"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "b7355418637b7a016707c19a372e1761",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0078",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 13,
+  "prefix": "Together, they proclaimed that the Lord Protector was in residence. The wind blew",
+  "target_word": "hard.",
+  "sample_idx": 0,
+  "generated_text": "strongly",
+  "generated_first_word": "strongly",
+  "similarity": 0.7127125263214111,
+  "timestamp": "2026-07-03 16:23:24"
+}

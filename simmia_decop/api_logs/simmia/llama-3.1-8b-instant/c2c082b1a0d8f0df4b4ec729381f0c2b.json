@@ -1,0 +1,19 @@
+{
+  "query_id": "c2c082b1a0d8f0df4b4ec729381f0c2b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0076",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Archer bent down and",
+  "target_word": "pressed",
+  "sample_idx": 1,
+  "generated_text": "pulled out",
+  "generated_first_word": "pulled",
+  "similarity": 0.7389702796936035,
+  "timestamp": "2026-06-30 11:24:47"
+}

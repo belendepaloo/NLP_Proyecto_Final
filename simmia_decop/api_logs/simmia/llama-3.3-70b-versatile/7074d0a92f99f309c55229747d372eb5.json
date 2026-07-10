@@ -1,0 +1,19 @@
+{
+  "query_id": "7074d0a92f99f309c55229747d372eb5",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0040",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "At that point, the mother came in carrying a large tray on",
+  "target_word": "which",
+  "sample_idx": 0,
+  "generated_text": "which",
+  "generated_first_word": "which",
+  "similarity": 1.0,
+  "timestamp": "2026-07-02 00:20:42"
+}

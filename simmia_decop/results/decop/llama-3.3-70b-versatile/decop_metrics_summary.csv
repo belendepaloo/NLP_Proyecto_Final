@@ -1,0 +1,2 @@
+method,model,backend,length,n_samples,mean_absolute_error,mean_error_members,mean_error_non_members,auc
+decop,llama-3.3-70b-versatile,groq,medium,200,0.285,0.034999999999999996,0.535,0.86815

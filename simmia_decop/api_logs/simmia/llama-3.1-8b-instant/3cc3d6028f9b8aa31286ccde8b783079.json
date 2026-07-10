@@ -1,0 +1,19 @@
+{
+  "query_id": "3cc3d6028f9b8aa31286ccde8b783079",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0173",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 17,
+  "prefix": "But no ship came ever again from the West to Nmenor, and Avalln was veiled in cloud.",
+  "target_word": "Now",
+  "sample_idx": 0,
+  "generated_text": "The mist that",
+  "generated_first_word": "The",
+  "similarity": 0.6695749163627625,
+  "timestamp": "2026-07-01 02:36:18"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "02e6da8ee67d8a8bd96e2ae0c2bca91a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0161",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "But his",
+  "target_word": "personality",
+  "sample_idx": 0,
+  "generated_text": "efforts",
+  "generated_first_word": "efforts",
+  "similarity": 0.5811882615089417,
+  "timestamp": "2026-07-06 17:05:19"
+}

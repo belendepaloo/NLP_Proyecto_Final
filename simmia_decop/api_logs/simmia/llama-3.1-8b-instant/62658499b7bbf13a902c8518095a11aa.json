@@ -1,0 +1,19 @@
+{
+  "query_id": "62658499b7bbf13a902c8518095a11aa",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0104",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 12,
+  "prefix": "Her first wild thought was that the gallery must have been walled",
+  "target_word": "up.",
+  "sample_idx": 0,
+  "generated_text": "off.",
+  "generated_first_word": "off.",
+  "similarity": 0.7712705135345459,
+  "timestamp": "2026-06-30 13:49:23"
+}

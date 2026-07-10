@@ -1,0 +1,19 @@
+{
+  "query_id": "7c1d7758ae222490488e7a3af54327b4",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0060",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "Soon only Yennika remained in the circle,",
+  "target_word": "her",
+  "sample_idx": 1,
+  "generated_text": "standing",
+  "generated_first_word": "standing",
+  "similarity": 0.6174329519271851,
+  "timestamp": "2026-07-03 14:50:56"
+}

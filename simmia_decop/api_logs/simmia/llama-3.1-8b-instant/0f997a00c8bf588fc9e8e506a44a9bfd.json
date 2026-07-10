@@ -1,0 +1,19 @@
+{
+  "query_id": "0f997a00c8bf588fc9e8e506a44a9bfd",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0094",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "“Rather than finding a",
+  "target_word": "saintly",
+  "sample_idx": 1,
+  "generated_text": "solution\"",
+  "generated_first_word": "solution\"",
+  "similarity": 0.5354506373405457,
+  "timestamp": "2026-06-30 12:57:50"
+}

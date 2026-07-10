@@ -1,0 +1,19 @@
+{
+  "query_id": "137656df37eb4257a4a0e466424cd016",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0014",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "And Mom will def get",
+  "target_word": "over",
+  "sample_idx": 0,
+  "generated_text": "it",
+  "generated_first_word": "it",
+  "similarity": 0.6490554213523865,
+  "timestamp": "2026-07-01 14:42:59"
+}

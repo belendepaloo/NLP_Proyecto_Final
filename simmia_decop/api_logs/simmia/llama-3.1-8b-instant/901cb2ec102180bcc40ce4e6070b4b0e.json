@@ -1,0 +1,19 @@
+{
+  "query_id": "901cb2ec102180bcc40ce4e6070b4b0e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0028",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Theres no need to go",
+  "target_word": "excavating",
+  "sample_idx": 1,
+  "generated_text": "to the movies",
+  "generated_first_word": "to",
+  "similarity": 0.6080803275108337,
+  "timestamp": "2026-06-30 07:13:15"
+}

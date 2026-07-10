@@ -1,0 +1,19 @@
+{
+  "query_id": "87e6c2a6ed8d3472ff9f4b5348b00533",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0037",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "After Id moved back home, Simon didnt",
+  "target_word": "go",
+  "sample_idx": 0,
+  "generated_text": "talk to me",
+  "generated_first_word": "talk",
+  "similarity": 0.6980754733085632,
+  "timestamp": "2026-06-30 08:00:39"
+}

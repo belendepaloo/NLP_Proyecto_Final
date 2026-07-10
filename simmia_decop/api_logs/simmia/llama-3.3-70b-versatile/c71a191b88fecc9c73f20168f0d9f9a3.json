@@ -1,0 +1,19 @@
+{
+  "query_id": "c71a191b88fecc9c73f20168f0d9f9a3",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0147",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 16,
+  "prefix": "Im certain hes going to kiss me, but instead he says, I read your books. I",
+  "target_word": "back",
+  "sample_idx": 1,
+  "generated_text": "freeze, unsure",
+  "generated_first_word": "freeze,",
+  "similarity": 0.6376980543136597,
+  "timestamp": "2026-07-05 22:41:20"
+}

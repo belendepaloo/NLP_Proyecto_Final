@@ -1,0 +1,19 @@
+{
+  "query_id": "537c993fda04a0e94cffbeb3b9d2145f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0119",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "\"Safer from loving me?\"",
+  "target_word": "Her",
+  "sample_idx": 0,
+  "generated_text": "\"Than\"",
+  "generated_first_word": "Than\"",
+  "similarity": 0.6298470497131348,
+  "timestamp": "2026-07-05 16:08:41"
+}

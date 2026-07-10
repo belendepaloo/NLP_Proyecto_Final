@@ -1,0 +1,19 @@
+{
+  "query_id": "231bebbd725e71c60aa1c5aae25036c2",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0151",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "Then I plop it onto the wheel and",
+  "target_word": "flatten",
+  "sample_idx": 1,
+  "generated_text": "start to spin",
+  "generated_first_word": "start",
+  "similarity": 0.6107551455497742,
+  "timestamp": "2026-06-30 18:08:56"
+}

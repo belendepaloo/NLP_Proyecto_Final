@@ -1,0 +1,19 @@
+{
+  "query_id": "cc6bfb89f1f7594f07afc26949f4b6b1",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0119",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "\"Safer",
+  "target_word": "from",
+  "sample_idx": 1,
+  "generated_text": "roads\"",
+  "generated_first_word": "roads\"",
+  "similarity": 0.6599887609481812,
+  "timestamp": "2026-07-05 16:08:04"
+}

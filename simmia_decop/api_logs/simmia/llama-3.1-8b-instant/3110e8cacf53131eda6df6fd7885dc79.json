@@ -1,0 +1,19 @@
+{
+  "query_id": "3110e8cacf53131eda6df6fd7885dc79",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0123",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 19,
+  "prefix": "Natalie followed, smiling and thanking people who congratulated her as she passed. When they reached a quiet corner of",
+  "target_word": "the",
+  "sample_idx": 1,
+  "generated_text": "the street,",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 15:25:46"
+}

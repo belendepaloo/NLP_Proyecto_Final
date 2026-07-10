@@ -1,0 +1,19 @@
+{
+  "query_id": "0af61257b4c522061eb670aa0e2c74a5",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0097",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 16,
+  "prefix": "“Er — Professor Lockhart?” Hermione stammered. “I wanted to — to get this book out of",
+  "target_word": "the",
+  "sample_idx": 2,
+  "generated_text": "the restricted section",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 13:15:47"
+}

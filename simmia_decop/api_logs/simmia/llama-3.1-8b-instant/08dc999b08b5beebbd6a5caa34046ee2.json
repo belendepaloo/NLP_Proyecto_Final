@@ -1,0 +1,19 @@
+{
+  "query_id": "08dc999b08b5beebbd6a5caa34046ee2",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0034",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "Well, hes a lot more selfless than",
+  "target_word": "I",
+  "sample_idx": 2,
+  "generated_text": "I've noticed",
+  "generated_first_word": "I've",
+  "similarity": 0.7498114705085754,
+  "timestamp": "2026-06-30 07:44:27"
+}

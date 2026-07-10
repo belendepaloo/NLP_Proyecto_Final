@@ -1,0 +1,19 @@
+{
+  "query_id": "1e22cbd4c7827093ee23f6eda1c539de",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0164",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 19,
+  "prefix": "With a sweep of his hand he cleared a vacant space in front among the breakfast things, and leant",
+  "target_word": "forward",
+  "sample_idx": 1,
+  "generated_text": "forward, his",
+  "generated_first_word": "forward,",
+  "similarity": 0.9635391235351562,
+  "timestamp": "2026-07-01 01:51:15"
+}

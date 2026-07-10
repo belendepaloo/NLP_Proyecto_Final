@@ -1,0 +1,19 @@
+{
+  "query_id": "9ecb81dc62e195e4d8f19d4d616c24fc",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0065",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "If were not in the",
+  "target_word": "same",
+  "sample_idx": 0,
+  "generated_text": "middle of winter",
+  "generated_first_word": "middle",
+  "similarity": 0.6277831792831421,
+  "timestamp": "2026-06-30 10:28:28"
+}

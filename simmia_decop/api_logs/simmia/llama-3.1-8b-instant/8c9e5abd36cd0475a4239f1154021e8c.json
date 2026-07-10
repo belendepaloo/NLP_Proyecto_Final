@@ -1,0 +1,19 @@
+{
+  "query_id": "8c9e5abd36cd0475a4239f1154021e8c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0089",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 13,
+  "prefix": "Still I couldn't dote on Heath- cliff, and I wondered often what my",
+  "target_word": "master",
+  "sample_idx": 1,
+  "generated_text": "life would have",
+  "generated_first_word": "life",
+  "similarity": 0.6776020526885986,
+  "timestamp": "2026-06-30 12:34:04"
+}

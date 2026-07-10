@@ -1,0 +1,19 @@
+{
+  "query_id": "fb73d3a86b3affdaea12f79ffc21c5f4",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0077",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "Hornsby. He said to be ready when",
+  "target_word": "the",
+  "sample_idx": 0,
+  "generated_text": "the signal came",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 11:30:40"
+}

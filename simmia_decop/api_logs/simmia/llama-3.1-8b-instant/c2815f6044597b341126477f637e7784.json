@@ -1,0 +1,19 @@
+{
+  "query_id": "c2815f6044597b341126477f637e7784",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0043",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "The Vicar soon abandoned the struggle; but",
+  "target_word": "the",
+  "sample_idx": 0,
+  "generated_text": "the village children",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 08:32:15"
+}

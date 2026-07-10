@@ -1,0 +1,19 @@
+{
+  "query_id": "8ed60036ea3c212050f4bc886dc83b7d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0128",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Their fits relieved each",
+  "target_word": "other",
+  "sample_idx": 1,
+  "generated_text": "other's pain",
+  "generated_first_word": "other's",
+  "similarity": 0.9173471331596375,
+  "timestamp": "2026-06-30 15:46:30"
+}

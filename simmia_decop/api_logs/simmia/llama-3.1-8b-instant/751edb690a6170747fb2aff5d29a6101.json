@@ -1,0 +1,19 @@
+{
+  "query_id": "751edb690a6170747fb2aff5d29a6101",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0032",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Even as",
+  "target_word": "the",
+  "sample_idx": 2,
+  "generated_text": "the world",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 07:32:43"
+}

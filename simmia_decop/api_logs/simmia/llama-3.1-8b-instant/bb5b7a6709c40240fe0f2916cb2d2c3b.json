@@ -1,0 +1,19 @@
+{
+  "query_id": "bb5b7a6709c40240fe0f2916cb2d2c3b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0087",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 17,
+  "prefix": "If I thought it, I should never be happy again. I wouldn't cut a boy off: no,",
+  "target_word": "not",
+  "sample_idx": 2,
+  "generated_text": "not after what",
+  "generated_first_word": "not",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 12:24:34"
+}

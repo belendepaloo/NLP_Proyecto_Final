@@ -1,0 +1,19 @@
+{
+  "query_id": "077daaabc57327865af6773446921bb3",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0088",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "There was nothing to",
+  "target_word": "know.",
+  "sample_idx": 2,
+  "generated_text": "do about it",
+  "generated_first_word": "do",
+  "similarity": 0.6667110919952393,
+  "timestamp": "2026-06-30 12:26:09"
+}

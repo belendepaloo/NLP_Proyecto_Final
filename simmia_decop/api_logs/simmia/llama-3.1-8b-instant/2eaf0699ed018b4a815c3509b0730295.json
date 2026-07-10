@@ -1,0 +1,19 @@
+{
+  "query_id": "2eaf0699ed018b4a815c3509b0730295",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0158",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "He walked slowly through the market. The merchants",
+  "target_word": "were",
+  "sample_idx": 1,
+  "generated_text": "were calling out",
+  "generated_first_word": "were",
+  "similarity": 0.9999999403953552,
+  "timestamp": "2026-07-01 01:18:45"
+}

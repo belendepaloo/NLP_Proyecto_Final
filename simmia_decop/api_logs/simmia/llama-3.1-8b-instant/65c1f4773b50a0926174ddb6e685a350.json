@@ -1,0 +1,19 @@
+{
+  "query_id": "65c1f4773b50a0926174ddb6e685a350",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0193",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "No ones forcing you to stay!",
+  "target_word": "Sabrina",
+  "sample_idx": 1,
+  "generated_text": "Leave.",
+  "generated_first_word": "Leave.",
+  "similarity": 0.5957690477371216,
+  "timestamp": "2026-07-01 04:14:41"
+}

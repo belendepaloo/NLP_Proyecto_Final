@@ -1,0 +1,19 @@
+{
+  "query_id": "2696fa8469efe9e95ec6c0c144eace09",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0075",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Theres almost a",
+  "target_word": "swagger",
+  "sample_idx": 1,
+  "generated_text": "sense",
+  "generated_first_word": "sense",
+  "similarity": 0.5918464660644531,
+  "timestamp": "2026-07-03 16:06:23"
+}

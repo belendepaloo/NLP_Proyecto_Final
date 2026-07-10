@@ -1,0 +1,19 @@
+{
+  "query_id": "b80622f0aaeb722d45900765cd32394c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0117",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "Frodo looked round. It did look like",
+  "target_word": "home.",
+  "sample_idx": 1,
+  "generated_text": "a perfect spot",
+  "generated_first_word": "a",
+  "similarity": 0.6743209362030029,
+  "timestamp": "2026-07-05 16:00:29"
+}

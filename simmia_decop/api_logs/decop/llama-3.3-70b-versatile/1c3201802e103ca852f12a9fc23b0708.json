@@ -1,0 +1,25 @@
+{
+  "query_id": "1c3201802e103ca852f12a9fc23b0708",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0006",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "title": "Wuthering Heights",
+  "author": "Emily Bronte",
+  "length": "medium",
+  "permutation_index": 5,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Wuthering Heights\" book by Emily Bronte?\nOptions:\nA. I have never seen anyone like Edgar. You may encounter some others like him. And he won't always be attractive and young, and he may not always be wealthy. He is now; and I'm only concerned with the present. I wish you would speak reasonably. \nB. I've never met another man like Edgar before. There may be some others similar to him out there. He won't stay handsome and young forever, and he might not always have money either. But right now he does, and I only care about the present. I want you to talk sensibly.\nC. I've seen none like Edgar.\" \"You may see some. And he won't always be hand- some and young, and may not always be rich.\" \"He is now; and I have only to do with the present. I wish you would speak rationally.\" \"Well, that settles it. If you have only to do with the present, marry Mr. Linton.\" \"I don't want your permission for that---I shall marry him; and yet you have not told me whether I'm right.\" \"Perfectly right, if people be right to marry only for the present. And now, let us hear what you are unhappy about. Your brother will be pleased; the old lady and gentleman will not object, I think; you will escape from a disorderly, comfortless home into a wealthy, respecta- ble one; and you love Edgar, and Edgar loves you.\nD. I've never come across someone quite like Edgar. You might meet some comparable people. And he won't perpetually be good-looking and youthful, and he might not perpetually be affluent. Currently he is; and I'm only worried about the present. I desire you would speak rationally.\nAnswer:",
+  "options": {
+    "A": "I have never seen anyone like Edgar. You may encounter some others like him. And he won't always be attractive and young, and he may not always be wealthy. He is now; and I'm only concerned with the present. I wish you would speak reasonably. ",
+    "B": "I've never met another man like Edgar before. There may be some others similar to him out there. He won't stay handsome and young forever, and he might not always have money either. But right now he does, and I only care about the present. I want you to talk sensibly.",
+    "C": "I've seen none like Edgar.\" \"You may see some. And he won't always be hand- some and young, and may not always be rich.\" \"He is now; and I have only to do with the present. I wish you would speak rationally.\" \"Well, that settles it. If you have only to do with the present, marry Mr. Linton.\" \"I don't want your permission for that---I shall marry him; and yet you have not told me whether I'm right.\" \"Perfectly right, if people be right to marry only for the present. And now, let us hear what you are unhappy about. Your brother will be pleased; the old lady and gentleman will not object, I think; you will escape from a disorderly, comfortless home into a wealthy, respecta- ble one; and you love Edgar, and Edgar loves you.",
+    "D": "I've never come across someone quite like Edgar. You might meet some comparable people. And he won't perpetually be good-looking and youthful, and he might not perpetually be affluent. Currently he is; and I'm only worried about the present. I desire you would speak rationally."
+  },
+  "gold_letter": "C",
+  "predicted_letter": "C",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 04:47:10"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "7fb5c91facef51798bb915c5fdff76bd",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0153",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "“So, Harry,”",
+  "target_word": "said",
+  "sample_idx": 0,
+  "generated_text": "said",
+  "generated_first_word": "said",
+  "similarity": 1.0,
+  "timestamp": "2026-07-06 16:27:52"
+}

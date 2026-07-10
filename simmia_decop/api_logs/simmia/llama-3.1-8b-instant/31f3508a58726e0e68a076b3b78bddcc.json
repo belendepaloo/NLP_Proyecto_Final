@@ -1,0 +1,19 @@
+{
+  "query_id": "31f3508a58726e0e68a076b3b78bddcc",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0030",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "He dreamed that he was on show in a zoo, with a card reading UNDERAGE WIZARD attached to",
+  "target_word": "his",
+  "sample_idx": 1,
+  "generated_text": "his enclosure.",
+  "generated_first_word": "his",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 07:27:30"
+}

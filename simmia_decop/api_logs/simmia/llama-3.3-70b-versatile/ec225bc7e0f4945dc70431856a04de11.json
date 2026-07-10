@@ -1,0 +1,19 @@
+{
+  "query_id": "ec225bc7e0f4945dc70431856a04de11",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0116",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "I'll read it, for I keep it yet.",
+  "target_word": "Any",
+  "sample_idx": 1,
+  "generated_text": "in",
+  "generated_first_word": "in",
+  "similarity": 0.6924957036972046,
+  "timestamp": "2026-07-05 15:56:12"
+}

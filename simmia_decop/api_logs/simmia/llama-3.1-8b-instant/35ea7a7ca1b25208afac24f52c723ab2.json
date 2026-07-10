@@ -1,0 +1,19 @@
+{
+  "query_id": "35ea7a7ca1b25208afac24f52c723ab2",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0016",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 17,
+  "prefix": "There he would often wander long, and late would return. Still therefore, after the Long Night, the",
+  "target_word": "light",
+  "sample_idx": 1,
+  "generated_text": "people of the",
+  "generated_first_word": "people",
+  "similarity": 0.674461841583252,
+  "timestamp": "2026-06-30 06:14:28"
+}

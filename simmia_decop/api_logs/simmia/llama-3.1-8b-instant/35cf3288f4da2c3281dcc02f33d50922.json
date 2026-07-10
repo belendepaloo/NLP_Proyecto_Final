@@ -1,0 +1,19 @@
+{
+  "query_id": "35cf3288f4da2c3281dcc02f33d50922",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0063",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "The boy mumbled an answer that allowed him to",
+  "target_word": "avoid",
+  "sample_idx": 2,
+  "generated_text": "escape the detention",
+  "generated_first_word": "escape",
+  "similarity": 0.6960188746452332,
+  "timestamp": "2026-06-30 10:19:21"
+}

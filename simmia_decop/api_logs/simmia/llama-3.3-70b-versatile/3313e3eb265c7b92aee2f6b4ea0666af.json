@@ -1,0 +1,19 @@
+{
+  "query_id": "3313e3eb265c7b92aee2f6b4ea0666af",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0062",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "So",
+  "target_word": "am",
+  "sample_idx": 2,
+  "generated_text": "far",
+  "generated_first_word": "far",
+  "similarity": 0.6217294335365295,
+  "timestamp": "2026-07-03 14:59:22"
+}

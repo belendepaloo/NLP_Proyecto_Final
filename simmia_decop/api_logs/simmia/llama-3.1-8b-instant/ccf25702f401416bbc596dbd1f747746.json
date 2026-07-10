@@ -1,0 +1,19 @@
+{
+  "query_id": "ccf25702f401416bbc596dbd1f747746",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0167",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "Let the Orcs have the realm that is theirs, and we will",
+  "target_word": "have",
+  "sample_idx": 2,
+  "generated_text": "take the high",
+  "generated_first_word": "take",
+  "similarity": 0.6873519420623779,
+  "timestamp": "2026-07-01 02:04:20"
+}

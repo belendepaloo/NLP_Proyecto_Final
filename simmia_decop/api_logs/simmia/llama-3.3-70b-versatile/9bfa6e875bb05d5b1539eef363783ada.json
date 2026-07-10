@@ -1,0 +1,19 @@
+{
+  "query_id": "9bfa6e875bb05d5b1539eef363783ada",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0177",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "What can I",
+  "target_word": "do",
+  "sample_idx": 1,
+  "generated_text": "do",
+  "generated_first_word": "do",
+  "similarity": 1.0000001192092896,
+  "timestamp": "2026-07-08 01:06:24"
+}

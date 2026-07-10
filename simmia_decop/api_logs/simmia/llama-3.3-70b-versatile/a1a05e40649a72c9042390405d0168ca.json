@@ -1,0 +1,19 @@
+{
+  "query_id": "a1a05e40649a72c9042390405d0168ca",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0051",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 16,
+  "prefix": "Javier always has a girlfriend. They are always very pretty and none of them last long.",
+  "target_word": "They",
+  "sample_idx": 2,
+  "generated_text": "with",
+  "generated_first_word": "with",
+  "similarity": 0.6912519931793213,
+  "timestamp": "2026-07-03 14:05:55"
+}

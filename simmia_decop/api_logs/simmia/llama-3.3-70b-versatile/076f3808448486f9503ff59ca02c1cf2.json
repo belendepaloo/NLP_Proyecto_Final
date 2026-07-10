@@ -1,0 +1,19 @@
+{
+  "query_id": "076f3808448486f9503ff59ca02c1cf2",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0173",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "But no ship came ever again from the",
+  "target_word": "West",
+  "sample_idx": 2,
+  "generated_text": "west",
+  "generated_first_word": "west",
+  "similarity": 1.0,
+  "timestamp": "2026-07-06 18:04:27"
+}

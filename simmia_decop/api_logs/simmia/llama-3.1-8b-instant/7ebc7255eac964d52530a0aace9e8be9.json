@@ -1,0 +1,19 @@
+{
+  "query_id": "7ebc7255eac964d52530a0aace9e8be9",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0026",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Go",
+  "target_word": "to",
+  "sample_idx": 0,
+  "generated_text": "outside.",
+  "generated_first_word": "outside.",
+  "similarity": 0.6068084836006165,
+  "timestamp": "2026-06-30 07:01:43"
+}

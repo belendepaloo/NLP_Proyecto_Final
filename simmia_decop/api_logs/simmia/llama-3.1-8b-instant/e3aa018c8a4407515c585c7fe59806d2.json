@@ -1,0 +1,19 @@
+{
+  "query_id": "e3aa018c8a4407515c585c7fe59806d2",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0098",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "\"Mother is not an",
+  "target_word": "old",
+  "sample_idx": 2,
+  "generated_text": "emotionally charged",
+  "generated_first_word": "emotionally",
+  "similarity": 0.6600236892700195,
+  "timestamp": "2026-06-30 13:17:42"
+}

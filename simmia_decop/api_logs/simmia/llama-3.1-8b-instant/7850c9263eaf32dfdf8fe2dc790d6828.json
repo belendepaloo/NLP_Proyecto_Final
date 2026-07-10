@@ -1,0 +1,19 @@
+{
+  "query_id": "7850c9263eaf32dfdf8fe2dc790d6828",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0024",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "Side out o' t' gate now, this",
+  "target_word": "minute!\"",
+  "sample_idx": 2,
+  "generated_text": "was the life",
+  "generated_first_word": "was",
+  "similarity": 0.6037570238113403,
+  "timestamp": "2026-06-30 06:53:55"
+}

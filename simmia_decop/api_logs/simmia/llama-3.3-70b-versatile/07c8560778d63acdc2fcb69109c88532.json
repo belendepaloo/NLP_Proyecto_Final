@@ -1,0 +1,19 @@
+{
+  "query_id": "07c8560778d63acdc2fcb69109c88532",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0148",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 14,
+  "prefix": "They did not speak again. She did not actually try to shake him off,",
+  "target_word": "but",
+  "sample_idx": 1,
+  "generated_text": "but",
+  "generated_first_word": "but",
+  "similarity": 1.0,
+  "timestamp": "2026-07-05 22:45:18"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "0487a727db22e9cb48bc04bbd3bf1588",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0057",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 16,
+  "prefix": "There were times when it went on and on until the cruel, wicked, unforgivable thing seemed",
+  "target_word": "to",
+  "sample_idx": 0,
+  "generated_text": "almost too terrible",
+  "generated_first_word": "almost",
+  "similarity": 0.6983829736709595,
+  "timestamp": "2026-06-30 09:49:28"
+}

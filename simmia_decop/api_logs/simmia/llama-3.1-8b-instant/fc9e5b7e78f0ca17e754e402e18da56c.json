@@ -1,0 +1,19 @@
+{
+  "query_id": "fc9e5b7e78f0ca17e754e402e18da56c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0083",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 12,
+  "prefix": "Youre clearly very intelligent. He is, I say, right as he says,",
+  "target_word": "I",
+  "sample_idx": 2,
+  "generated_text": "\"completely",
+  "generated_first_word": "completely",
+  "similarity": 0.6907007098197937,
+  "timestamp": "2026-06-30 12:02:54"
+}

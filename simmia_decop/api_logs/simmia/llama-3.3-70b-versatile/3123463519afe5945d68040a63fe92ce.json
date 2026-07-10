@@ -1,0 +1,19 @@
+{
+  "query_id": "3123463519afe5945d68040a63fe92ce",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0157",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 11,
+  "prefix": "Who knows what the future holds, right? Besides, you have someone",
+  "target_word": "waiting",
+  "sample_idx": 2,
+  "generated_text": "who",
+  "generated_first_word": "who",
+  "similarity": 0.6359750628471375,
+  "timestamp": "2026-07-06 16:49:01"
+}

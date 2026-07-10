@@ -1,0 +1,19 @@
+{
+  "query_id": "f802e5a0c9de27c339062ba2b648fa5d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0199",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "What makes",
+  "target_word": "you",
+  "sample_idx": 2,
+  "generated_text": "a person",
+  "generated_first_word": "a",
+  "similarity": 0.6785044074058533,
+  "timestamp": "2026-07-01 04:44:08"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "030c2608d33d9feaec17fb754350b934",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0152",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Before, I had never",
+  "target_word": "experienced",
+  "sample_idx": 2,
+  "generated_text": "seen",
+  "generated_first_word": "seen",
+  "similarity": 0.7192578315734863,
+  "timestamp": "2026-07-06 16:23:47"
+}

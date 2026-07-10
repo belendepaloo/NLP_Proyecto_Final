@@ -1,0 +1,19 @@
+{
+  "query_id": "7479be66478c1b48381b9aa360b8223d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0156",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "I glance out the",
+  "target_word": "window.",
+  "sample_idx": 2,
+  "generated_text": "window",
+  "generated_first_word": "window",
+  "similarity": 0.9504753351211548,
+  "timestamp": "2026-07-06 16:42:35"
+}

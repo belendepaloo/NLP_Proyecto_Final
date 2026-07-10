@@ -1,0 +1,19 @@
+{
+  "query_id": "d933a78525aadf2d4fde07e55d330dc5",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0076",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "Archer bent down and pressed his lips",
+  "target_word": "on",
+  "sample_idx": 2,
+  "generated_text": "against her forehead",
+  "generated_first_word": "against",
+  "similarity": 0.6952435374259949,
+  "timestamp": "2026-06-30 11:25:41"
+}

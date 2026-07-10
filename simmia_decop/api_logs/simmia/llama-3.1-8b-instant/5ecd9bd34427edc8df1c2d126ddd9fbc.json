@@ -1,0 +1,19 @@
+{
+  "query_id": "5ecd9bd34427edc8df1c2d126ddd9fbc",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0022",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "I can come back tomorrow, she said. Lets",
+  "target_word": "stick",
+  "sample_idx": 0,
+  "generated_text": "wait, I",
+  "generated_first_word": "wait,",
+  "similarity": 0.5930205583572388,
+  "timestamp": "2026-06-30 06:43:02"
+}

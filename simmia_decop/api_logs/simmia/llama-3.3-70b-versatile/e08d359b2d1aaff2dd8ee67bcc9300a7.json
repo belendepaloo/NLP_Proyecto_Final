@@ -1,0 +1,19 @@
+{
+  "query_id": "e08d359b2d1aaff2dd8ee67bcc9300a7",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0026",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 16,
+  "prefix": "Go to the next room, and tell Nippers to come to me. I prefer not to,",
+  "target_word": "he",
+  "sample_idx": 0,
+  "generated_text": "but",
+  "generated_first_word": "but",
+  "similarity": 0.7225317358970642,
+  "timestamp": "2026-07-01 15:41:45"
+}

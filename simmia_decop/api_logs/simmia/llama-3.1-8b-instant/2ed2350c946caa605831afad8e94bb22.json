@@ -1,0 +1,19 @@
+{
+  "query_id": "2ed2350c946caa605831afad8e94bb22",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0069",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 14,
+  "prefix": "But when one of Marions skates slid out from under her and she wobbled,",
+  "target_word": "Judy",
+  "sample_idx": 0,
+  "generated_text": "almost falling onto",
+  "generated_first_word": "almost",
+  "similarity": 0.5811074376106262,
+  "timestamp": "2026-06-30 10:51:51"
+}

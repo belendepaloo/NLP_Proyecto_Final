@@ -1,0 +1,19 @@
+{
+  "query_id": "405f71a7ab5b201cc544cc0191e3ecda",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0157",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Who knows what the future holds,",
+  "target_word": "right?",
+  "sample_idx": 1,
+  "generated_text": "full of mysteries",
+  "generated_first_word": "full",
+  "similarity": 0.613571286201477,
+  "timestamp": "2026-06-30 18:39:13"
+}

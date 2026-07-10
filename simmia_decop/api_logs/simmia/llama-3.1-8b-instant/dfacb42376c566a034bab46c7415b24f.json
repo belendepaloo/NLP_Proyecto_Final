@@ -1,0 +1,19 @@
+{
+  "query_id": "dfacb42376c566a034bab46c7415b24f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0021",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 11,
+  "prefix": "The men of the oasis surrounded the horsemen from the desert",
+  "target_word": "and",
+  "sample_idx": 2,
+  "generated_text": "their dusty robes",
+  "generated_first_word": "their",
+  "similarity": 0.6931040287017822,
+  "timestamp": "2026-06-30 06:38:47"
+}

@@ -1,0 +1,25 @@
+{
+  "query_id": "aa769e30c13ac92ad0a89be91758fe6f",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0015",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "title": "The Wildest Sun A Novel",
+  "author": "Asha Lemmie",
+  "length": "medium",
+  "permutation_index": 0,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Wildest Sun A Novel\" book by Asha Lemmie?\nOptions:\nA. I will require transportation and sufficient money to reserve accommodations for an extended time. I do not speak Spanish, and I doubt anyone will offer employment. I hope to be prepared by summer's end, and I am completely confident I will find a way. I have been here too long; it will be nearly a year by departure. I do not know how I will tell Blue and Delia I am leaving. Will I cowardly sneak away at night again?\nB. I will require transportation and sufficient funds to reserve lodging for an extended period. I am not fluent in Spanish, and I am skeptical that anyone will offer me employment. I hope to be prepared by the conclusion of this summer, and I am completely convinced that I will discover a means to accomplish it. I have resided here for too great a duration; it will have been practically a year by the time I am equipped to depart. I am uncertain of how I will be capable to face Blue and Delia and notify them of my departure. Will I act spinelessly once more and sneak away in the darkness of night?\nC. I will need passage and enough money to book a hotel for quite some time. I don’t speak a word of Spanish, and I doubt anyone will be willing to give me a job. I want to be ready by the end of this summer, and I am absolutely certain that I will find a way to manage it. I’ve been here too long; it will have been nearly a year by the time I’m ready to leave. I don’t know how I will manage to look Blue and Delia in the face and tell them I’m leaving. Will I play the coward again and slip away in the middle of the night? \nD. I'm going to need a way to get there and enough money to book a place to stay for a long time. I don't know any Spanish, and I doubt anyone will want to give me a job. I want to be ready by the end of summer, and I'm totally sure I'll figure out how to make it happen. I've been here too long already; it'll be almost a year by the time I'm ready to go. I don't know how I'll be able to look Blue and Delia in the eye and tell them I'm leaving. Will I be a coward again and slip away in the middle of the night?  \nAnswer:",
+  "options": {
+    "A": "I will require transportation and sufficient money to reserve accommodations for an extended time. I do not speak Spanish, and I doubt anyone will offer employment. I hope to be prepared by summer's end, and I am completely confident I will find a way. I have been here too long; it will be nearly a year by departure. I do not know how I will tell Blue and Delia I am leaving. Will I cowardly sneak away at night again?",
+    "B": "I will require transportation and sufficient funds to reserve lodging for an extended period. I am not fluent in Spanish, and I am skeptical that anyone will offer me employment. I hope to be prepared by the conclusion of this summer, and I am completely convinced that I will discover a means to accomplish it. I have resided here for too great a duration; it will have been practically a year by the time I am equipped to depart. I am uncertain of how I will be capable to face Blue and Delia and notify them of my departure. Will I act spinelessly once more and sneak away in the darkness of night?",
+    "C": "I will need passage and enough money to book a hotel for quite some time. I don’t speak a word of Spanish, and I doubt anyone will be willing to give me a job. I want to be ready by the end of this summer, and I am absolutely certain that I will find a way to manage it. I’ve been here too long; it will have been nearly a year by the time I’m ready to leave. I don’t know how I will manage to look Blue and Delia in the face and tell them I’m leaving. Will I play the coward again and slip away in the middle of the night? ",
+    "D": "I'm going to need a way to get there and enough money to book a place to stay for a long time. I don't know any Spanish, and I doubt anyone will want to give me a job. I want to be ready by the end of summer, and I'm totally sure I'll figure out how to make it happen. I've been here too long already; it'll be almost a year by the time I'm ready to go. I don't know how I'll be able to look Blue and Delia in the eye and tell them I'm leaving. Will I be a coward again and slip away in the middle of the night?  "
+  },
+  "gold_letter": "C",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-06-26 04:49:11"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "2bc3feefbf3b107dde4087da455573dd",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0199",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "What makes you think I would",
+  "target_word": "have",
+  "sample_idx": 2,
+  "generated_text": "even",
+  "generated_first_word": "even",
+  "similarity": 0.6655030846595764,
+  "timestamp": "2026-07-08 02:47:36"
+}

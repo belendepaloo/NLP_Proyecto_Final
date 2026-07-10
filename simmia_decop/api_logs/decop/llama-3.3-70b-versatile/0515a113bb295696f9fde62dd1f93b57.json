@@ -1,0 +1,25 @@
+{
+  "query_id": "0515a113bb295696f9fde62dd1f93b57",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0016",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "title": "The Silmarillion",
+  "author": "J. R. R. Tolkien",
+  "length": "medium",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Silmarillion\" book by J. R. R. Tolkien?\nOptions:\nA. He would often wander long in Valinor, returning late. Though the Sun and Moon now shone, the light of Valinor surpassed Middle-earth's, for the Sun rested there and the lights were nearer. Yet they could not reclaim the lost radiance of the Two Trees before Ungoliant's poison. That light endured solely in the Silmarils. Morgoth despised the new illuminations, stunned by the Valar's unforeseen act. He set shadow spirits against Tilion, causing turmoil in the heavens, but Tilion won.  \nB. Frequently he wandered long in Valinor, coming back late. The light there was still greater and more beautiful than Middle-earth's, despite the Long Night, for the Sun reposed there and the heavenly lights were closer. However, neither could resurrect the old light of the Trees before Ungoliant's taint. That light continued only in the Silmarils. Morgoth loathed the new radiance, confounded by the Valar's sudden maneuver. He attacked Tilion with spirits of darkness, causing conflict in the skies, but Tilion prevailed.\nC. There he would often wander long, and late would return. Still therefore, after the Long Night, the light of Valinor was greater and fairer than upon Middle-earth; for the Sun rested there, and the lights of heaven drew nearer to Earth in that region. But neither the Sun nor the Moon can recall the light that was of old, that came from the Trees before they were touched by the poison of Ungoliant That light lives now in the Silmarils alone. But Morgoth hated the new lights, and was for a while confounded by this unlooked-for stroke of the Valar. Then he assailed Tilion, sending spirits of shadow against him, and there was strife in Ilmen beneath the paths of the stars; but Tilion was victorious.\nD. In Valinor, the light was brighter and more beautiful than in Middle-earth, for the Sun rested there and the heavenly lights were closer. But neither the Sun nor Moon could recreate the original light of the Two Trees before they were poisoned by Ungoliant. That light now only remains in the Silmarils. Morgoth hated the new lights and was confused by the Valar's unexpected move. He attacked Tilion, sending shadow spirits against him, and there was conflict in the heavens, but Tilion prevailed.\nAnswer:",
+  "options": {
+    "A": "He would often wander long in Valinor, returning late. Though the Sun and Moon now shone, the light of Valinor surpassed Middle-earth's, for the Sun rested there and the lights were nearer. Yet they could not reclaim the lost radiance of the Two Trees before Ungoliant's poison. That light endured solely in the Silmarils. Morgoth despised the new illuminations, stunned by the Valar's unforeseen act. He set shadow spirits against Tilion, causing turmoil in the heavens, but Tilion won.  ",
+    "B": "Frequently he wandered long in Valinor, coming back late. The light there was still greater and more beautiful than Middle-earth's, despite the Long Night, for the Sun reposed there and the heavenly lights were closer. However, neither could resurrect the old light of the Trees before Ungoliant's taint. That light continued only in the Silmarils. Morgoth loathed the new radiance, confounded by the Valar's sudden maneuver. He attacked Tilion with spirits of darkness, causing conflict in the skies, but Tilion prevailed.",
+    "C": "There he would often wander long, and late would return. Still therefore, after the Long Night, the light of Valinor was greater and fairer than upon Middle-earth; for the Sun rested there, and the lights of heaven drew nearer to Earth in that region. But neither the Sun nor the Moon can recall the light that was of old, that came from the Trees before they were touched by the poison of Ungoliant That light lives now in the Silmarils alone. But Morgoth hated the new lights, and was for a while confounded by this unlooked-for stroke of the Valar. Then he assailed Tilion, sending spirits of shadow against him, and there was strife in Ilmen beneath the paths of the stars; but Tilion was victorious.",
+    "D": "In Valinor, the light was brighter and more beautiful than in Middle-earth, for the Sun rested there and the heavenly lights were closer. But neither the Sun nor Moon could recreate the original light of the Two Trees before they were poisoned by Ungoliant. That light now only remains in the Silmarils. Morgoth hated the new lights and was confused by the Valar's unexpected move. He attacked Tilion, sending shadow spirits against him, and there was conflict in the heavens, but Tilion prevailed."
+  },
+  "gold_letter": "C",
+  "predicted_letter": "C",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 04:49:38"
+}

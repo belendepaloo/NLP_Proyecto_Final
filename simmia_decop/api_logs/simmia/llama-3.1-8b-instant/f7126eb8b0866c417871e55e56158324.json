@@ -1,0 +1,19 @@
+{
+  "query_id": "f7126eb8b0866c417871e55e56158324",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0016",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "There he would often",
+  "target_word": "wander",
+  "sample_idx": 2,
+  "generated_text": "meet with locals",
+  "generated_first_word": "meet",
+  "similarity": 0.6813788414001465,
+  "timestamp": "2026-06-30 06:11:02"
+}

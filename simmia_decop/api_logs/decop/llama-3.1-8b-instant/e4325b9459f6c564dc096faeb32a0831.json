@@ -1,0 +1,25 @@
+{
+  "query_id": "e4325b9459f6c564dc096faeb32a0831",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0020",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "title": "The Foxglove King",
+  "author": "Hannah Whitten",
+  "length": "medium",
+  "permutation_index": 3,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Foxglove King\" book by Hannah Whitten?\nOptions:\nA. Letting out a sigh, Lore acquiesced to stop the brawl. Shouts rang out from the streets toward the city, accompanied by boot steps on the cobblestones. The crowd's cheers turned to shouts of alarm. Soldiers! Scram! The hay fighting ring was abandoned, spectators and queued fighters running away, disappearing into side streets as bloodcoats marched into the road, bayonets glowing orange in the streetlights, looking like flaming spears. The girl Lore had sparred with cursed and scrambled away on her hurt leg, not glancing back at Lore.\nB. Lore exhaled in resignation, agreeing to end the fight. Yells erupted from the roads leading to the city, along with the sounds of boots on the cobblestones. The crowd's cheers shifted to cries of shock. Soldiers! Get out of here! The hay circle was deserted; onlookers and waiting combatants alike fled, vanishing into alleys as bloodcoats flooded the street. Their bayonets reflected the orange light of the streetlamps, appearing like spears of fire. The girl Lore had fought swore and hobbled away on her injured leg, not looking back at Lore.  \nC. Lore exhaled and agreed to end the match. Yells came from the roads back to the city, with the sounds of boots on cobblestones. The crowd's cheers became cries of shock. Soldiers! Get out! The hay circle was deserted; onlookers and waiting fighters fled, vanishing into alleys as bloodcoats entered the street. Their bayonets caught the orange glow of the streetlights, appearing like spears of fire. The girl Lore had fought with swore and escaped on her injured leg, not looking back at Lore.\nD. Yes, I suppose I will, Lore sighed. Break it up! The shouts came from the streets back toward the city, accompanied by the sounds of boots on cobblestones. The cheers of the crowd turned to shouts of surprise. Bloodcoats! Clear out! The hay ring was abandoned; spectators and waiting fighters alike turned tail and hauled ass, disappearing into alleyways as a group of bloodcoats surged into the street, bayonets catching the orange glow of the streetlights. It made them look like spears of flame. The girl Lore had been fighting cursed, turning to run on her sore leg. She didnt give Lore a second glance.\nAnswer:",
+  "options": {
+    "A": "Letting out a sigh, Lore acquiesced to stop the brawl. Shouts rang out from the streets toward the city, accompanied by boot steps on the cobblestones. The crowd's cheers turned to shouts of alarm. Soldiers! Scram! The hay fighting ring was abandoned, spectators and queued fighters running away, disappearing into side streets as bloodcoats marched into the road, bayonets glowing orange in the streetlights, looking like flaming spears. The girl Lore had sparred with cursed and scrambled away on her hurt leg, not glancing back at Lore.",
+    "B": "Lore exhaled in resignation, agreeing to end the fight. Yells erupted from the roads leading to the city, along with the sounds of boots on the cobblestones. The crowd's cheers shifted to cries of shock. Soldiers! Get out of here! The hay circle was deserted; onlookers and waiting combatants alike fled, vanishing into alleys as bloodcoats flooded the street. Their bayonets reflected the orange light of the streetlamps, appearing like spears of fire. The girl Lore had fought swore and hobbled away on her injured leg, not looking back at Lore.  ",
+    "C": "Lore exhaled and agreed to end the match. Yells came from the roads back to the city, with the sounds of boots on cobblestones. The crowd's cheers became cries of shock. Soldiers! Get out! The hay circle was deserted; onlookers and waiting fighters fled, vanishing into alleys as bloodcoats entered the street. Their bayonets caught the orange glow of the streetlights, appearing like spears of fire. The girl Lore had fought with swore and escaped on her injured leg, not looking back at Lore.",
+    "D": "Yes, I suppose I will, Lore sighed. Break it up! The shouts came from the streets back toward the city, accompanied by the sounds of boots on cobblestones. The cheers of the crowd turned to shouts of surprise. Bloodcoats! Clear out! The hay ring was abandoned; spectators and waiting fighters alike turned tail and hauled ass, disappearing into alleyways as a group of bloodcoats surged into the street, bayonets catching the orange glow of the streetlights. It made them look like spears of flame. The girl Lore had been fighting cursed, turning to run on her sore leg. She didnt give Lore a second glance."
+  },
+  "gold_letter": "D",
+  "predicted_letter": "D",
+  "is_correct": 1,
+  "timestamp": "2026-07-08 03:51:02"
+}

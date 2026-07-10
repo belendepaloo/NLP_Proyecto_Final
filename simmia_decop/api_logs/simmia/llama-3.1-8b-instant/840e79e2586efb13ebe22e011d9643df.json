@@ -1,0 +1,19 @@
+{
+  "query_id": "840e79e2586efb13ebe22e011d9643df",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0023",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 11,
+  "prefix": "He was shoeless; large, dirty toes were sticking out of the",
+  "target_word": "holes",
+  "sample_idx": 2,
+  "generated_text": "torn remnants",
+  "generated_first_word": "torn",
+  "similarity": 0.6618974208831787,
+  "timestamp": "2026-06-30 06:48:58"
+}

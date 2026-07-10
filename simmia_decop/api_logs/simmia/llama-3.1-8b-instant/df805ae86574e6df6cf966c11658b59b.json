@@ -1,0 +1,19 @@
+{
+  "query_id": "df805ae86574e6df6cf966c11658b59b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0188",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 17,
+  "prefix": "At all events, if nothing else could be decided upon, the alms-house must receive him. I then",
+  "target_word": "begged",
+  "sample_idx": 2,
+  "generated_text": "began to",
+  "generated_first_word": "began",
+  "similarity": 0.6500790119171143,
+  "timestamp": "2026-07-01 03:52:03"
+}

@@ -1,0 +1,25 @@
+{
+  "query_id": "3ed7057cb4e49bfb6d14a2d9121f701c",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0098",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "title": "The Age of Innocence",
+  "author": "Edith Wharton",
+  "length": "medium",
+  "permutation_index": 5,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Age of Innocence\" book by Edith Wharton?\nOptions:\nA. \"Mother is not an old maid,\" said his virgin sister with pinched lips. He felt like shouting back: \"Yes, she is, and so are the van der Luydens, and so we all are, when it comes to being so much as brushed by the wing-tip of Reality.\" But he saw her long gentle face puckering into tears, and felt ashamed of the useless pain he was inflicting. \"Hang Countess Olenska! Don't be a goose, Janey-- I'm not her keeper.\" \"No; but you DID ask the Wellands to announce your engagement sooner so that we might all back her up; and if it hadn't been for that cousin Louisa would never have invited her to the dinner for the Duke.\nB. His sister vehemently denied their mother was an old maid. He almost retorted that she was, and so were the van der Luydens when touched by harsh reality. Seeing his sister's kind face crumple into tears though, he felt ashamed at causing needless hurt. He told her not to fret over Countess Olenska, that he wasn't responsible for her.\nC. His virgin sister indignantly stated their mother wasn't an old maid. He nearly yelled that she was, like the van der Luydens when confronted with reality's harshness. However, noticing his sister's gentle face wrinkling with tears, he regretted inflicting useless pain. He told her not to worry about Countess Olenska, that he wasn't her guardian.\nD. His sister angrily retorted that their mother was not an old maid. He almost shouted back that she was, just like the van der Luydens, when faced with the harsh truth of life. But seeing his sister's face crumple in tears, he felt bad for causing pointless hurt. He told her not to fret over Countess Olenska, that it wasn't his job to watch over her. \nAnswer:",
+  "options": {
+    "A": "\"Mother is not an old maid,\" said his virgin sister with pinched lips. He felt like shouting back: \"Yes, she is, and so are the van der Luydens, and so we all are, when it comes to being so much as brushed by the wing-tip of Reality.\" But he saw her long gentle face puckering into tears, and felt ashamed of the useless pain he was inflicting. \"Hang Countess Olenska! Don't be a goose, Janey-- I'm not her keeper.\" \"No; but you DID ask the Wellands to announce your engagement sooner so that we might all back her up; and if it hadn't been for that cousin Louisa would never have invited her to the dinner for the Duke.",
+    "B": "His sister vehemently denied their mother was an old maid. He almost retorted that she was, and so were the van der Luydens when touched by harsh reality. Seeing his sister's kind face crumple into tears though, he felt ashamed at causing needless hurt. He told her not to fret over Countess Olenska, that he wasn't responsible for her.",
+    "C": "His virgin sister indignantly stated their mother wasn't an old maid. He nearly yelled that she was, like the van der Luydens when confronted with reality's harshness. However, noticing his sister's gentle face wrinkling with tears, he regretted inflicting useless pain. He told her not to worry about Countess Olenska, that he wasn't her guardian.",
+    "D": "His sister angrily retorted that their mother was not an old maid. He almost shouted back that she was, just like the van der Luydens, when faced with the harsh truth of life. But seeing his sister's face crumple in tears, he felt bad for causing pointless hurt. He told her not to fret over Countess Olenska, that it wasn't his job to watch over her. "
+  },
+  "gold_letter": "A",
+  "predicted_letter": "C",
+  "is_correct": 0,
+  "timestamp": "2026-07-08 04:37:33"
+}

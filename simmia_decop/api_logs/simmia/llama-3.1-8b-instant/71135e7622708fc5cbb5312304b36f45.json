@@ -1,0 +1,19 @@
+{
+  "query_id": "71135e7622708fc5cbb5312304b36f45",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0142",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 13,
+  "prefix": "I always worry more when Im tired. I frown. Ive been so self-absorbed",
+  "target_word": "(and/or",
+  "sample_idx": 1,
+  "generated_text": "lately that",
+  "generated_first_word": "lately",
+  "similarity": 0.5554287433624268,
+  "timestamp": "2026-06-30 17:27:09"
+}

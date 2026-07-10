@@ -1,0 +1,19 @@
+{
+  "query_id": "10625f2954aa09ed30a3c365280723d4",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0177",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 19,
+  "prefix": "What can I do to serve you?' 'Nothing,' replied Nancy. 'You will not persist in saying that,' rejoined the",
+  "target_word": "gentleman,",
+  "sample_idx": 1,
+  "generated_text": "young man,",
+  "generated_first_word": "young",
+  "similarity": 0.6561565399169922,
+  "timestamp": "2026-07-01 02:57:07"
+}

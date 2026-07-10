@@ -1,0 +1,19 @@
+{
+  "query_id": "6966eb4cfe087e07f047481c801e5f40",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0174",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Her eyes",
+  "target_word": "gleamed.",
+  "sample_idx": 2,
+  "generated_text": "locked onto",
+  "generated_first_word": "locked",
+  "similarity": 0.5607634782791138,
+  "timestamp": "2026-07-01 02:37:35"
+}

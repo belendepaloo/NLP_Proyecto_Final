@@ -1,0 +1,19 @@
+{
+  "query_id": "d29375c3963a80c9b6f0f28f8b4856ce",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0147",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 19,
+  "prefix": "Im certain hes going to kiss me, but instead he says, I read your books. I back up, this",
+  "target_word": "revelation",
+  "sample_idx": 1,
+  "generated_text": "is not what",
+  "generated_first_word": "is",
+  "similarity": 0.5913853645324707,
+  "timestamp": "2026-06-30 17:52:50"
+}

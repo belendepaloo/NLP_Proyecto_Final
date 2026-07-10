@@ -1,0 +1,19 @@
+{
+  "query_id": "91297ba667da06ca02bf20bcad2422a0",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0098",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "\"Mother is",
+  "target_word": "not",
+  "sample_idx": 2,
+  "generated_text": "going out\"",
+  "generated_first_word": "going",
+  "similarity": 0.6253608465194702,
+  "timestamp": "2026-06-30 13:17:11"
+}

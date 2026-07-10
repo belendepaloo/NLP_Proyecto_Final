@@ -1,0 +1,25 @@
+{
+  "query_id": "71c0983df64895d5d89a0b84a8e672ea",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0158",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "title": "The Alchemist",
+  "author": "Paulo Coelho",
+  "length": "medium",
+  "permutation_index": 3,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Alchemist\" book by Paulo Coelho?\nOptions:\nA. Strolling through the market, the boy noticed sellers readying their stalls. He assisted a cheerful candy merchant in assembling his stand. The candy seller's smile made the boy think of the mystical old king. He understood that this candy maker was satisfied doing what he loved. The boy knew he could discern whether people were living their purpose just by looking at them, as the old king had.\nB. As he slowly walked through the market, he saw merchants setting up their stalls. The boy helped a candy seller prepare his stand. The candy seller seemed happy and content, ready to start his day's work. His smile reminded the boy of the old king he had met, who knew his purpose in life. The boy realized he could also sense if someone was pursuing their dreams just by observing them, like the old king had done. \nC. Ambling through the market, the boy saw merchants preparing their kiosks. He helped a candy vendor set up his booth. The candy seller looked joyful, eager to begin his workday. His smile reminded the boy of the wise old king he once met. The boy grasped that this candy maker was content because he was doing what he wanted. He realized he could detect if someone was pursuing their Personal Legend just by observing them, like the old king could.\nD. He walked slowly through the market. The merchants were assembling their stalls, and the boy helped a candy seller to do his. The candy seller had a smile on his face: he was happy, aware of what his life was about, and ready to begin a day’s work. His smile reminded the boy of the old man—the mysterious old king he had met. “This candy merchant isn’t making candy so that later he can travel or marry a shopkeeper’s daughter. He’s doing it because it’s what he wants to do,” thought the boy. He realized that he could do the same thing the old man had done—sense whether a person was near to or far from his Personal Legend. Just by looking at them. It’s easy, and yet I’ve never done it before, he thought. \nAnswer:",
+  "options": {
+    "A": "Strolling through the market, the boy noticed sellers readying their stalls. He assisted a cheerful candy merchant in assembling his stand. The candy seller's smile made the boy think of the mystical old king. He understood that this candy maker was satisfied doing what he loved. The boy knew he could discern whether people were living their purpose just by looking at them, as the old king had.",
+    "B": "As he slowly walked through the market, he saw merchants setting up their stalls. The boy helped a candy seller prepare his stand. The candy seller seemed happy and content, ready to start his day's work. His smile reminded the boy of the old king he had met, who knew his purpose in life. The boy realized he could also sense if someone was pursuing their dreams just by observing them, like the old king had done. ",
+    "C": "Ambling through the market, the boy saw merchants preparing their kiosks. He helped a candy vendor set up his booth. The candy seller looked joyful, eager to begin his workday. His smile reminded the boy of the wise old king he once met. The boy grasped that this candy maker was content because he was doing what he wanted. He realized he could detect if someone was pursuing their Personal Legend just by observing them, like the old king could.",
+    "D": "He walked slowly through the market. The merchants were assembling their stalls, and the boy helped a candy seller to do his. The candy seller had a smile on his face: he was happy, aware of what his life was about, and ready to begin a day’s work. His smile reminded the boy of the old man—the mysterious old king he had met. “This candy merchant isn’t making candy so that later he can travel or marry a shopkeeper’s daughter. He’s doing it because it’s what he wants to do,” thought the boy. He realized that he could do the same thing the old man had done—sense whether a person was near to or far from his Personal Legend. Just by looking at them. It’s easy, and yet I’ve never done it before, he thought. "
+  },
+  "gold_letter": "D",
+  "predicted_letter": "D",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 15:22:16"
+}

@@ -1,0 +1,25 @@
+{
+  "query_id": "1d39883f31be232e43f849be1fe3547a",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0055",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "title": "Matilda",
+  "author": "Roald Dahl",
+  "length": "medium",
+  "permutation_index": 2,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Matilda\" book by Roald Dahl?\nOptions:\nA. Mr Wormwood explained how the speedometer works through a cable attached to the front wheel. He planned to first disconnect the cable at the wheel. Then he would rig up a high-speed drill to the cable's end, so that turning on the drill would spin the cable in reverse. He asked whether this made sense so far and was being followed.\nB. The speedometer, Mr Wormwood clarified, uses a cable linked to one of the front wheels. His plan was to first separate the cable where it's joined to the wheel. After that, he would connect a fast electric drill to the end of the cable so that operating the drill would spin the cable backwards. He wanted to know if this was understandable thus far. \nC. Mr Wormwood explained that the speedometer works through a cable connected to the front wheel. He said he would first detach the cable from the wheel. Then, he would attach a high-speed electric drill to the end of the cable in a way that would make the cable spin in reverse when the drill is on. He asked if this made sense so far and if it was clear.\nD. ‘The speedometer,’ Mr Wormwood said, ‘is run off a cable that is coupled up to one of the front wheels. So first I disconnect the cable where it joins the front wheel. Next, I get one of those high-speed electric drills and I couple that up to the end of the cable in such a way that when the drill turns, it turns the cable  backwards . You got me so far? You following me?’ \nAnswer:",
+  "options": {
+    "A": "Mr Wormwood explained how the speedometer works through a cable attached to the front wheel. He planned to first disconnect the cable at the wheel. Then he would rig up a high-speed drill to the cable's end, so that turning on the drill would spin the cable in reverse. He asked whether this made sense so far and was being followed.",
+    "B": "The speedometer, Mr Wormwood clarified, uses a cable linked to one of the front wheels. His plan was to first separate the cable where it's joined to the wheel. After that, he would connect a fast electric drill to the end of the cable so that operating the drill would spin the cable backwards. He wanted to know if this was understandable thus far. ",
+    "C": "Mr Wormwood explained that the speedometer works through a cable connected to the front wheel. He said he would first detach the cable from the wheel. Then, he would attach a high-speed electric drill to the end of the cable in a way that would make the cable spin in reverse when the drill is on. He asked if this made sense so far and if it was clear.",
+    "D": "‘The speedometer,’ Mr Wormwood said, ‘is run off a cable that is coupled up to one of the front wheels. So first I disconnect the cable where it joins the front wheel. Next, I get one of those high-speed electric drills and I couple that up to the end of the cable in such a way that when the drill turns, it turns the cable  backwards . You got me so far? You following me?’ "
+  },
+  "gold_letter": "D",
+  "predicted_letter": "D",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 05:07:47"
+}

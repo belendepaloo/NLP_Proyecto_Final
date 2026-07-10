@@ -1,0 +1,19 @@
+{
+  "query_id": "492d2d34f1ebc58794f530628fb71895",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0016",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "There he would often wander long, and late would return.",
+  "target_word": "Still",
+  "sample_idx": 1,
+  "generated_text": "home, exhausted",
+  "generated_first_word": "home,",
+  "similarity": 0.6200951933860779,
+  "timestamp": "2026-06-30 06:12:32"
+}

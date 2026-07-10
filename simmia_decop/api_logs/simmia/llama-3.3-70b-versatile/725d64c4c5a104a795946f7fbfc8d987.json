@@ -1,0 +1,19 @@
+{
+  "query_id": "725d64c4c5a104a795946f7fbfc8d987",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0011",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 16,
+  "prefix": "Ill have more time to adjust to the residency, and then we can figure everything else",
+  "target_word": "out.",
+  "sample_idx": 0,
+  "generated_text": "out",
+  "generated_first_word": "out",
+  "similarity": 0.9480787515640259,
+  "timestamp": "2026-07-01 14:31:30"
+}

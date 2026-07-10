@@ -1,0 +1,19 @@
+{
+  "query_id": "5df95a52edee1074e37cd50e2c975ba5",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0015",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 13,
+  "prefix": "I will need passage and enough money to book a hotel for quite",
+  "target_word": "some",
+  "sample_idx": 0,
+  "generated_text": "some",
+  "generated_first_word": "some",
+  "similarity": 1.0,
+  "timestamp": "2026-07-01 14:49:37"
+}

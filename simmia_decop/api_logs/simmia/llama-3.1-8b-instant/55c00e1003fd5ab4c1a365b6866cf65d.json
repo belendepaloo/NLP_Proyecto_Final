@@ -1,0 +1,19 @@
+{
+  "query_id": "55c00e1003fd5ab4c1a365b6866cf65d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0196",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "The boy continued to listen to his heart as",
+  "target_word": "they",
+  "sample_idx": 2,
+  "generated_text": "it beat rapidly",
+  "generated_first_word": "it",
+  "similarity": 0.8096083402633667,
+  "timestamp": "2026-07-01 04:30:53"
+}

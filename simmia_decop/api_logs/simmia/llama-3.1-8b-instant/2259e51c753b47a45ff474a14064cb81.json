@@ -1,0 +1,19 @@
+{
+  "query_id": "2259e51c753b47a45ff474a14064cb81",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0169",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 17,
+  "prefix": "There they fought to the death; but Thingol gave no heed, for he knelt by Beren, seeing",
+  "target_word": "that",
+  "sample_idx": 0,
+  "generated_text": "the mortal wound",
+  "generated_first_word": "the",
+  "similarity": 0.705146312713623,
+  "timestamp": "2026-07-01 02:15:38"
+}

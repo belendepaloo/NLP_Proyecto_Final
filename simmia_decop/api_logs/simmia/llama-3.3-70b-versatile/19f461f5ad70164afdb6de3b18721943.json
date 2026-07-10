@@ -1,0 +1,19 @@
+{
+  "query_id": "19f461f5ad70164afdb6de3b18721943",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0171",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 15,
+  "prefix": "Now what sort of business would you like to engage in? Would you like to",
+  "target_word": "re-engage",
+  "sample_idx": 1,
+  "generated_text": "start",
+  "generated_first_word": "start",
+  "similarity": 0.61042320728302,
+  "timestamp": "2026-07-06 17:55:35"
+}

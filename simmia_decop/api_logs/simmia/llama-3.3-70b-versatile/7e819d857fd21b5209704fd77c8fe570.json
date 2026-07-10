@@ -1,0 +1,19 @@
+{
+  "query_id": "7e819d857fd21b5209704fd77c8fe570",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0000",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "Since he was arrested he had not",
+  "target_word": "been",
+  "sample_idx": 2,
+  "generated_text": "seen",
+  "generated_first_word": "seen",
+  "similarity": 0.6992584466934204,
+  "timestamp": "2026-07-01 13:38:02"
+}

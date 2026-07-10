@@ -1,0 +1,19 @@
+{
+  "query_id": "0d4cfa590c4a25b3b4cab75dc26db659",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0131",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 11,
+  "prefix": "In a chair, at the far side of the room facing",
+  "target_word": "the",
+  "sample_idx": 0,
+  "generated_text": "the large window",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 16:02:51"
+}

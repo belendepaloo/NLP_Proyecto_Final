@@ -1,0 +1,19 @@
+{
+  "query_id": "7e77ba0e4ef1e463a74fdbb2f5bee335",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0038",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "But for all of that, it",
+  "target_word": "was",
+  "sample_idx": 0,
+  "generated_text": "wasn't",
+  "generated_first_word": "wasn't",
+  "similarity": 0.8676972985267639,
+  "timestamp": "2026-06-30 08:06:15"
+}

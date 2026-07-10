@@ -1,0 +1,19 @@
+{
+  "query_id": "1c1bbd315bac11f93676e2f800f35629",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0010",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "Hareton would not open his fingers, so",
+  "target_word": "I",
+  "sample_idx": 1,
+  "generated_text": "they remained clas",
+  "generated_first_word": "they",
+  "similarity": 0.7869743704795837,
+  "timestamp": "2026-06-30 05:39:26"
+}

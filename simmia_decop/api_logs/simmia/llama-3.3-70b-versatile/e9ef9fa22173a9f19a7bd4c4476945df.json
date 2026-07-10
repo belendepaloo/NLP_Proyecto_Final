@@ -1,0 +1,19 @@
+{
+  "query_id": "e9ef9fa22173a9f19a7bd4c4476945df",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0004",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "It creaked, but if the sound",
+  "target_word": "woke",
+  "sample_idx": 2,
+  "generated_text": "was loud enough",
+  "generated_first_word": "was",
+  "similarity": 0.684212327003479,
+  "timestamp": "2026-07-01 13:56:30"
+}

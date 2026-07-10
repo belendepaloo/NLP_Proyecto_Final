@@ -1,0 +1,19 @@
+{
+  "query_id": "81175ce7004ae635d366e1077bd268a3",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0001",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 11,
+  "prefix": "“And I know the Soul of the World, because we have",
+  "target_word": "talked",
+  "sample_idx": 2,
+  "generated_text": "the same roots",
+  "generated_first_word": "the",
+  "similarity": 0.6479207873344421,
+  "timestamp": "2026-06-30 04:53:20"
+}

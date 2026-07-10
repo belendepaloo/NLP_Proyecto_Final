@@ -1,0 +1,19 @@
+{
+  "query_id": "8ef6d874c664a98dea7dd7d0fa5ae35a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0059",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 19,
+  "prefix": "But the physical difficulty of meeting was enormous. It was like trying to make a move at chess when",
+  "target_word": "you",
+  "sample_idx": 2,
+  "generated_text": "every",
+  "generated_first_word": "every",
+  "similarity": 0.6847658753395081,
+  "timestamp": "2026-07-03 14:49:10"
+}

@@ -1,0 +1,25 @@
+{
+  "query_id": "95ed7ddf5291f3dd3cc8338d6fe28d8c",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0061",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "title": "1984",
+  "author": "George Orwell",
+  "length": "medium",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"1984\" book by George Orwell?\nOptions:\nA. Promiscuity went unpunished, divorce was permitted. For that matter, even religious worship would have been permitted if the proles had shown any sign of needing or wanting it. They were beneath suspicion. As the Party slogan put it: 'Proles and animals are free.' Winston reached down and cautiously scratched his varicose ulcer. It had begun itching again. The thing you invariably came back to was the impossibility of knowing what life before the Revolution had really been like. He took out of the drawer a copy of a children's history textbook which he had borrowed from Mrs Parsons, and began copying a passage into the diary: In the old days (it ran), before the glorious Revolution, London was not the beautiful city that we know today.\nB. Promiscuity and divorce were allowed. Religious worship would also have been permitted if the proles wanted it. The proles were not suspected of anything. The Party said \"Proles and animals are free.\" Winston scratched his itchy varicose ulcer. You could never know what life was like before the Revolution. He copied a passage from a children's history book into his diary. It said that before the Revolution, London was not as beautiful as now.\nC. Being promiscuous and getting divorced were not punished. Even religious worship would have been fine if the proles showed interest in it. The proles were above suspicion. The Party slogan was \"Proles and animals are free.\" Winston cautiously scratched his varicose ulcer which had started itching again. You could never really know what life was like before the Revolution. He copied part of a children's history textbook he borrowed into his diary. It said that before the glorious Revolution, London was not the lovely city it is today.\nD. Promiscuity and divorce did not lead to punishment. Religious worship would have even been allowed if the proles wanted it. The proles were not under suspicion. The Party slogan was: \"Proles and animals are free.\" Winston scratched his itchy varicose ulcer. It was impossible to know what life was really like before the Revolution. He copied from a children's history book he borrowed into his diary. It said that before the Revolution, London was not as beautiful as it is now.\nAnswer:",
+  "options": {
+    "A": "Promiscuity went unpunished, divorce was permitted. For that matter, even religious worship would have been permitted if the proles had shown any sign of needing or wanting it. They were beneath suspicion. As the Party slogan put it: 'Proles and animals are free.' Winston reached down and cautiously scratched his varicose ulcer. It had begun itching again. The thing you invariably came back to was the impossibility of knowing what life before the Revolution had really been like. He took out of the drawer a copy of a children's history textbook which he had borrowed from Mrs Parsons, and began copying a passage into the diary: In the old days (it ran), before the glorious Revolution, London was not the beautiful city that we know today.",
+    "B": "Promiscuity and divorce were allowed. Religious worship would also have been permitted if the proles wanted it. The proles were not suspected of anything. The Party said \"Proles and animals are free.\" Winston scratched his itchy varicose ulcer. You could never know what life was like before the Revolution. He copied a passage from a children's history book into his diary. It said that before the Revolution, London was not as beautiful as now.",
+    "C": "Being promiscuous and getting divorced were not punished. Even religious worship would have been fine if the proles showed interest in it. The proles were above suspicion. The Party slogan was \"Proles and animals are free.\" Winston cautiously scratched his varicose ulcer which had started itching again. You could never really know what life was like before the Revolution. He copied part of a children's history textbook he borrowed into his diary. It said that before the glorious Revolution, London was not the lovely city it is today.",
+    "D": "Promiscuity and divorce did not lead to punishment. Religious worship would have even been allowed if the proles wanted it. The proles were not under suspicion. The Party slogan was: \"Proles and animals are free.\" Winston scratched his itchy varicose ulcer. It was impossible to know what life was really like before the Revolution. He copied from a children's history book he borrowed into his diary. It said that before the Revolution, London was not as beautiful as it is now."
+  },
+  "gold_letter": "A",
+  "predicted_letter": "D",
+  "is_correct": 0,
+  "timestamp": "2026-07-08 04:15:38"
+}

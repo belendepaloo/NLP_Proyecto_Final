@@ -1,0 +1,19 @@
+{
+  "query_id": "e65e59db20f233c4e3894885f587cae0",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0001",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "“And I",
+  "target_word": "know",
+  "sample_idx": 0,
+  "generated_text": "was”",
+  "generated_first_word": "was”",
+  "similarity": 0.5963132977485657,
+  "timestamp": "2026-06-30 04:51:01"
+}

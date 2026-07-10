@@ -1,0 +1,19 @@
+{
+  "query_id": "becf7ba96527dc2d372e0ddf78dd4731",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0028",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Theres no need",
+  "target_word": "to",
+  "sample_idx": 2,
+  "generated_text": "to worry.",
+  "generated_first_word": "to",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 07:12:47"
+}

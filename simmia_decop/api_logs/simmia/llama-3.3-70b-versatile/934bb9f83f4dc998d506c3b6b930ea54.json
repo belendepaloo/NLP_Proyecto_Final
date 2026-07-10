@@ -1,0 +1,19 @@
+{
+  "query_id": "934bb9f83f4dc998d506c3b6b930ea54",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0013",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 19,
+  "prefix": "‘You ignorant little slug!’ the Trunchbull bellowed. ‘You witless weed! You empty-headed hamster! You stupid glob of glue!’ She",
+  "target_word": "had",
+  "sample_idx": 0,
+  "generated_text": "sneered",
+  "generated_first_word": "sneered",
+  "similarity": 0.6639783382415771,
+  "timestamp": "2026-07-01 14:41:45"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "2012853ebdfa13136c8e1899ec4ce86e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0129",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Giles.' 'I hope you don't mean",
+  "target_word": "to",
+  "sample_idx": 1,
+  "generated_text": "that",
+  "generated_first_word": "that",
+  "similarity": 0.6608291864395142,
+  "timestamp": "2026-07-05 16:55:21"
+}

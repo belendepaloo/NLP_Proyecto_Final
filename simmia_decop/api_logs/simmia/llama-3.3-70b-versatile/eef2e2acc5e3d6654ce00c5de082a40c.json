@@ -1,0 +1,19 @@
+{
+  "query_id": "eef2e2acc5e3d6654ce00c5de082a40c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0073",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "‘Would it? Would any of you have believed me",
+  "target_word": "till",
+  "sample_idx": 0,
+  "generated_text": "if",
+  "generated_first_word": "if",
+  "similarity": 0.6793985366821289,
+  "timestamp": "2026-07-03 15:58:09"
+}

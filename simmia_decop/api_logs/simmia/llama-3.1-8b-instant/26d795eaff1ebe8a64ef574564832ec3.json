@@ -1,0 +1,19 @@
+{
+  "query_id": "26d795eaff1ebe8a64ef574564832ec3",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0168",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Stop. I cannot handle Cody",
+  "target_word": "Benham",
+  "sample_idx": 2,
+  "generated_text": "his constant jokes",
+  "generated_first_word": "his",
+  "similarity": 0.6311621069908142,
+  "timestamp": "2026-07-01 02:07:33"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "fca76e246a0b546a32b1e2aa74c3c8fd",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0141",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "I am of",
+  "target_word": "average",
+  "sample_idx": 0,
+  "generated_text": "mixed ancestry.",
+  "generated_first_word": "mixed",
+  "similarity": 0.6299365758895874,
+  "timestamp": "2026-06-30 17:19:31"
+}

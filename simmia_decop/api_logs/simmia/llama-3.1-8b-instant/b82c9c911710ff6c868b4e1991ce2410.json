@@ -1,0 +1,19 @@
+{
+  "query_id": "b82c9c911710ff6c868b4e1991ce2410",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0034",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Well,",
+  "target_word": "hes",
+  "sample_idx": 0,
+  "generated_text": "that's",
+  "generated_first_word": "that's",
+  "similarity": 0.7425181865692139,
+  "timestamp": "2026-06-30 07:42:35"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "1becc3e730bf80dd0bfa39c728064f59",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0086",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 1,
+  "prefix": "The",
+  "target_word": "musicians",
+  "sample_idx": 2,
+  "generated_text": "temperature",
+  "generated_first_word": "temperature",
+  "similarity": 0.5451222658157349,
+  "timestamp": "2026-06-30 12:15:12"
+}

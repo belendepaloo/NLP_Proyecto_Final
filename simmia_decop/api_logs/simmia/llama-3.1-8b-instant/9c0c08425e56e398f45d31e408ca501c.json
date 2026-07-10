@@ -1,0 +1,19 @@
+{
+  "query_id": "9c0c08425e56e398f45d31e408ca501c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0066",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "No one answered. The noon-bell rang.",
+  "target_word": "Still",
+  "sample_idx": 1,
+  "generated_text": "The classrooms emptied",
+  "generated_first_word": "The",
+  "similarity": 0.6492637395858765,
+  "timestamp": "2026-06-30 10:34:11"
+}

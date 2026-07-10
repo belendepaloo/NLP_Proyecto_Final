@@ -1,0 +1,19 @@
+{
+  "query_id": "28838a75f2bd7b0fc35789967b6c138f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0150",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "I had only",
+  "target_word": "met",
+  "sample_idx": 2,
+  "generated_text": "just moved",
+  "generated_first_word": "just",
+  "similarity": 0.6100440621376038,
+  "timestamp": "2026-06-30 18:03:06"
+}

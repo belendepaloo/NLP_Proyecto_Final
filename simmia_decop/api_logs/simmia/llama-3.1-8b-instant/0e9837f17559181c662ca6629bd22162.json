@@ -1,0 +1,19 @@
+{
+  "query_id": "0e9837f17559181c662ca6629bd22162",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0121",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "Furtia and I will get her away.",
+  "target_word": "Taugran",
+  "sample_idx": 2,
+  "generated_text": "from the castle",
+  "generated_first_word": "from",
+  "similarity": 0.6434046030044556,
+  "timestamp": "2026-06-30 15:13:04"
+}

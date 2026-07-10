@@ -1,0 +1,19 @@
+{
+  "query_id": "ef95f3714f0859990055488be4ad8e0d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0052",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "When he’d",
+  "target_word": "found",
+  "sample_idx": 0,
+  "generated_text": "finally",
+  "generated_first_word": "finally",
+  "similarity": 0.6606394648551941,
+  "timestamp": "2026-07-03 14:07:01"
+}

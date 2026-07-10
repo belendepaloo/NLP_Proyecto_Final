@@ -1,0 +1,19 @@
+{
+  "query_id": "e6bba50348b70eb4588ba37ecd21418e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0145",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "'Tell yer what?' asked",
+  "target_word": "the",
+  "sample_idx": 2,
+  "generated_text": "the old man",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 17:39:24"
+}

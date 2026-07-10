@@ -1,0 +1,19 @@
+{
+  "query_id": "c9c53fd39203ff9b98d345c3a09d9838",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0014",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 18,
+  "prefix": "And Mom will def get over this, eventually. She got over my bellybutton ring. Really? I say. Well,",
+  "target_word": "she",
+  "sample_idx": 0,
+  "generated_text": "you're",
+  "generated_first_word": "you're",
+  "similarity": 0.7142671942710876,
+  "timestamp": "2026-06-30 06:04:09"
+}

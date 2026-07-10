@@ -1,0 +1,19 @@
+{
+  "query_id": "018524f311b839e6a38ef7c3ad04f970",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0083",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Youre clearly very",
+  "target_word": "intelligent.",
+  "sample_idx": 2,
+  "generated_text": "intelligent",
+  "generated_first_word": "intelligent",
+  "similarity": 0.9544872045516968,
+  "timestamp": "2026-07-04 18:10:38"
+}

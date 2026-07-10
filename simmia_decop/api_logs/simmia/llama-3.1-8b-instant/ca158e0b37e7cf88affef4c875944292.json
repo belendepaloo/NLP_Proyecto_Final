@@ -1,0 +1,19 @@
+{
+  "query_id": "ca158e0b37e7cf88affef4c875944292",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0093",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Bumble.",
+  "target_word": "'Isn't",
+  "sample_idx": 1,
+  "generated_text": "bees.",
+  "generated_first_word": "bees.",
+  "similarity": 0.5347279906272888,
+  "timestamp": "2026-06-30 12:51:05"
+}

@@ -1,0 +1,25 @@
+{
+  "query_id": "25fb57f05d32f86e3f54956651d6461c",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0030",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "title": "Harry Potter and the Chamber of Secrets",
+  "author": "JK Rowling",
+  "length": "medium",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Harry Potter and the Chamber of Secrets\" book by JK Rowling?\nOptions:\nA. In his dream, he was caged in a zoo with a label calling him an underage wizard. Spectators gawked at him lying weak and starving on straw. He spotted Dobby among them and begged for help, but Dobby told him \"Harry Potter is safe there, sir!\" and vanished. The Dursleys then came and Dudley rattled his cage bars, jeering at him.  \nB. He dreamed that he was on show in a zoo, with a card reading  UNDERAGE WIZARD  attached to his cage. People goggled through the bars at him as he lay, starving and weak, on a bed of straw. He saw Dobby’s face in the crowd and shouted out, asking for help, but Dobby called, “Harry Potter is safe there, sir!” and vanished. Then the Dursleys appeared and Dudley rattled the bars of the cage, laughing at him. \nC. He had a nightmare that he was imprisoned in a zoo with a sign that said UNDERAGE WIZARD on his cage. People stared at him as he lay feeble and malnourished on straw. He saw Dobby in the crowd and called out for help, but Dobby said \"Harry Potter is safe there, sir!\" and disappeared. Then the Dursleys showed up and Dudley shook the cage bars, taunting him.\nD. He had a dream where he was imprisoned in a zoo exhibit with a sign labeling him as an underage wizard. People stared at him through the cage as he laid there, malnourished and feeble, on straw bedding. He saw Dobby in the crowd and cried out for help, but Dobby said, \"Harry Potter is safe there, sir!\" and disappeared. Then the Dursleys showed up and Dudley shook the cage bars, mocking him.\nAnswer:",
+  "options": {
+    "A": "In his dream, he was caged in a zoo with a label calling him an underage wizard. Spectators gawked at him lying weak and starving on straw. He spotted Dobby among them and begged for help, but Dobby told him \"Harry Potter is safe there, sir!\" and vanished. The Dursleys then came and Dudley rattled his cage bars, jeering at him.  ",
+    "B": "He dreamed that he was on show in a zoo, with a card reading  UNDERAGE WIZARD  attached to his cage. People goggled through the bars at him as he lay, starving and weak, on a bed of straw. He saw Dobby’s face in the crowd and shouted out, asking for help, but Dobby called, “Harry Potter is safe there, sir!” and vanished. Then the Dursleys appeared and Dudley rattled the bars of the cage, laughing at him. ",
+    "C": "He had a nightmare that he was imprisoned in a zoo with a sign that said UNDERAGE WIZARD on his cage. People stared at him as he lay feeble and malnourished on straw. He saw Dobby in the crowd and called out for help, but Dobby said \"Harry Potter is safe there, sir!\" and disappeared. Then the Dursleys showed up and Dudley shook the cage bars, taunting him.",
+    "D": "He had a dream where he was imprisoned in a zoo exhibit with a sign labeling him as an underage wizard. People stared at him through the cage as he laid there, malnourished and feeble, on straw bedding. He saw Dobby in the crowd and cried out for help, but Dobby said, \"Harry Potter is safe there, sir!\" and disappeared. Then the Dursleys showed up and Dudley shook the cage bars, mocking him."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "B",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 05:01:20"
+}

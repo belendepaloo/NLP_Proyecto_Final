@@ -1,0 +1,19 @@
+{
+  "query_id": "4efd3c4a0f24d36c6002c2013433bafb",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0158",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "He walked slowly through the",
+  "target_word": "market.",
+  "sample_idx": 0,
+  "generated_text": "deserted",
+  "generated_first_word": "deserted",
+  "similarity": 0.6365152597427368,
+  "timestamp": "2026-06-30 18:43:23"
+}

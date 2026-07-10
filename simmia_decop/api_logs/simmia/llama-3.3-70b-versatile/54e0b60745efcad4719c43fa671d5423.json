@@ -1,0 +1,19 @@
+{
+  "query_id": "54e0b60745efcad4719c43fa671d5423",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0009",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "‘You look splendid,’",
+  "target_word": "he",
+  "sample_idx": 0,
+  "generated_text": "said",
+  "generated_first_word": "said",
+  "similarity": 0.7281680107116699,
+  "timestamp": "2026-07-01 14:19:00"
+}

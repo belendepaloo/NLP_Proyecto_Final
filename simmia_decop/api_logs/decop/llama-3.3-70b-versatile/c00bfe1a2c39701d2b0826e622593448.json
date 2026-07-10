@@ -1,0 +1,25 @@
+{
+  "query_id": "c00bfe1a2c39701d2b0826e622593448",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0023",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "title": "1984",
+  "author": "George Orwell",
+  "length": "medium",
+  "permutation_index": 3,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"1984\" book by George Orwell?\nOptions:\nA. Barefoot, with big dirty toes poking out of the holes in his socks, he was unshaven for several days. Scruffy facial hair growing to his cheekbones gave him a rough look that didn't match his large weak body and jittery movements. Winston roused himself from tiredness. He had to talk to Ampleforth, risking shouts from the telescreen. Ampleforth might have the razor blade. 'Ampleforth,' he said. No shout came from the telescreen. Ampleforth stopped, mildly surprised. His eyes gradually focused on Winston.\nB. He had no shoes on; large, filthy toes were protruding from the holes in his socks. He also hadn't shaved in days. Scruffy stubble covered his face to his cheekbones, giving him a rough appearance that oddly contrasted his big weak body and anxious movements. Winston shook off his lethargy a bit. He had to speak to Ampleforth, even if it meant yelling from the telescreen. It was even possible Ampleforth had the razor blade. 'Ampleforth,' he said. No yell came from the telescreen. Ampleforth paused, mildly startled. His eyes slowly focused on Winston.\nC. He was barefoot, with big grimy toes poking out from the holes in his socks. His face was unshaven for days, with scrubby facial hair growing to his cheekbones, lending him a rough look that contrasted with his large feeble body and jittery motions. Winston stirred himself from his sluggishness. He had to talk to Ampleforth, risking a shout from the telescreen. Ampleforth might even be carrying the razor blade. 'Ampleforth,' he said. The telescreen stayed silent. Ampleforth stopped, mildly surprised. His eyes gradually focused on Winston.\nD. He was shoeless; large, dirty toes were sticking out of the holes in his socks. He was also several days away from a shave. A scrubby beard covered his face to the cheekbones, giving him an air of ruffianism that went oddly with his large weak frame and nervous movements. Winston roused hirnself a little from his lethargy. He must speak to Ampleforth, and risk the yell from the telescreen. It was even conceivable that Ampleforth was the bearer of the razor blade. 'Ampleforth,' he said. There was no yell from the telescreen. Ampleforth paused, mildly startled. His eyes focused themselves slowly on Winston.\nAnswer:",
+  "options": {
+    "A": "Barefoot, with big dirty toes poking out of the holes in his socks, he was unshaven for several days. Scruffy facial hair growing to his cheekbones gave him a rough look that didn't match his large weak body and jittery movements. Winston roused himself from tiredness. He had to talk to Ampleforth, risking shouts from the telescreen. Ampleforth might have the razor blade. 'Ampleforth,' he said. No shout came from the telescreen. Ampleforth stopped, mildly surprised. His eyes gradually focused on Winston.",
+    "B": "He had no shoes on; large, filthy toes were protruding from the holes in his socks. He also hadn't shaved in days. Scruffy stubble covered his face to his cheekbones, giving him a rough appearance that oddly contrasted his big weak body and anxious movements. Winston shook off his lethargy a bit. He had to speak to Ampleforth, even if it meant yelling from the telescreen. It was even possible Ampleforth had the razor blade. 'Ampleforth,' he said. No yell came from the telescreen. Ampleforth paused, mildly startled. His eyes slowly focused on Winston.",
+    "C": "He was barefoot, with big grimy toes poking out from the holes in his socks. His face was unshaven for days, with scrubby facial hair growing to his cheekbones, lending him a rough look that contrasted with his large feeble body and jittery motions. Winston stirred himself from his sluggishness. He had to talk to Ampleforth, risking a shout from the telescreen. Ampleforth might even be carrying the razor blade. 'Ampleforth,' he said. The telescreen stayed silent. Ampleforth stopped, mildly surprised. His eyes gradually focused on Winston.",
+    "D": "He was shoeless; large, dirty toes were sticking out of the holes in his socks. He was also several days away from a shave. A scrubby beard covered his face to the cheekbones, giving him an air of ruffianism that went oddly with his large weak frame and nervous movements. Winston roused hirnself a little from his lethargy. He must speak to Ampleforth, and risk the yell from the telescreen. It was even conceivable that Ampleforth was the bearer of the razor blade. 'Ampleforth,' he said. There was no yell from the telescreen. Ampleforth paused, mildly startled. His eyes focused themselves slowly on Winston."
+  },
+  "gold_letter": "D",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-06-26 04:51:18"
+}

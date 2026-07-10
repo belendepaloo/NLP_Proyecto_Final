@@ -1,0 +1,19 @@
+{
+  "query_id": "06f5b09cd513f3885a32d08e4f2b46e3",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0128",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Their fits relieved each other",
+  "target_word": "like",
+  "sample_idx": 2,
+  "generated_text": "in a rhyth",
+  "generated_first_word": "in",
+  "similarity": 0.6795960664749146,
+  "timestamp": "2026-06-30 15:46:50"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "00f9804eee30f2cbd3655942dfea07db",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0187",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "She wears",
+  "target_word": "thin-rimmed",
+  "sample_idx": 2,
+  "generated_text": "a",
+  "generated_first_word": "a",
+  "similarity": 0.6091579794883728,
+  "timestamp": "2026-07-08 01:51:34"
+}

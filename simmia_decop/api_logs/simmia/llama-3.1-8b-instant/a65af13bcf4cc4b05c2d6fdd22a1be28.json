@@ -1,0 +1,19 @@
+{
+  "query_id": "a65af13bcf4cc4b05c2d6fdd22a1be28",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0118",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Ardin Javar was",
+  "target_word": "a",
+  "sample_idx": 0,
+  "generated_text": "a skilled warrior",
+  "generated_first_word": "a",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 14:56:28"
+}

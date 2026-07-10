@@ -1,0 +1,19 @@
+{
+  "query_id": "a29adae63c8ce130a0d62761a059d849",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0073",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "‘Would it? Would any",
+  "target_word": "of",
+  "sample_idx": 2,
+  "generated_text": "of them be",
+  "generated_first_word": "of",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 11:09:20"
+}

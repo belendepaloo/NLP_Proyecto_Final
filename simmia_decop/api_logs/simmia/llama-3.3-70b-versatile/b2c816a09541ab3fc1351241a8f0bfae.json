@@ -1,0 +1,19 @@
+{
+  "query_id": "b2c816a09541ab3fc1351241a8f0bfae",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0170",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "There were many recesses cut in the rock of the walls, and in them were large iron-bound chests",
+  "target_word": "of",
+  "sample_idx": 2,
+  "generated_text": "filled",
+  "generated_first_word": "filled",
+  "similarity": 0.7001595497131348,
+  "timestamp": "2026-07-06 17:51:47"
+}

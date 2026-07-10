@@ -1,0 +1,19 @@
+{
+  "query_id": "e7948a31cd218bfabf8cff6a8f170c6c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0131",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "In a chair, at the far side of the",
+  "target_word": "room",
+  "sample_idx": 0,
+  "generated_text": "room,",
+  "generated_first_word": "room,",
+  "similarity": 0.9598100781440735,
+  "timestamp": "2026-07-05 17:05:08"
+}

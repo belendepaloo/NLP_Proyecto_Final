@@ -1,0 +1,19 @@
+{
+  "query_id": "a92bb5f33bea57a5235f49e25c3ee5f2",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0109",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Part",
+  "target_word": "love",
+  "sample_idx": 0,
+  "generated_text": "of",
+  "generated_first_word": "of",
+  "similarity": 0.6842756271362305,
+  "timestamp": "2026-06-30 14:10:59"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "a499a0e4f7f99e6456795164b68f1601",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0121",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 18,
+  "prefix": "Furtia and I will get her away. Taugran is much stronger than Furtia, Nikeya protested. You know this,",
+  "target_word": "Dumai.",
+  "sample_idx": 2,
+  "generated_text": "Taugran",
+  "generated_first_word": "Taugran",
+  "similarity": 0.6387152671813965,
+  "timestamp": "2026-07-05 16:20:57"
+}

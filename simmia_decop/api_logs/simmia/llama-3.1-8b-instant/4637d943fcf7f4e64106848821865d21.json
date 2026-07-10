@@ -1,0 +1,19 @@
+{
+  "query_id": "4637d943fcf7f4e64106848821865d21",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0101",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Oh,",
+  "target_word": "don't",
+  "sample_idx": 0,
+  "generated_text": "I'm",
+  "generated_first_word": "I'm",
+  "similarity": 0.6537957191467285,
+  "timestamp": "2026-06-30 13:31:19"
+}

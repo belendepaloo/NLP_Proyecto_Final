@@ -1,0 +1,19 @@
+{
+  "query_id": "a612df2c6b16487b36c9f2eddfa39026",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0184",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "As for you? Marrying and employing a",
+  "target_word": "Vos",
+  "sample_idx": 0,
+  "generated_text": "family member was",
+  "generated_first_word": "family",
+  "similarity": 0.635951042175293,
+  "timestamp": "2026-07-01 03:29:08"
+}

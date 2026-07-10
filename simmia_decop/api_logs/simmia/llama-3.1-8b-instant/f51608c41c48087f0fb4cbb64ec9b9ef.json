@@ -1,0 +1,19 @@
+{
+  "query_id": "f51608c41c48087f0fb4cbb64ec9b9ef",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0171",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 13,
+  "prefix": "Now what sort of business would you like to engage in? Would you",
+  "target_word": "like",
+  "sample_idx": 0,
+  "generated_text": "you consider something",
+  "generated_first_word": "you",
+  "similarity": 0.6334800124168396,
+  "timestamp": "2026-07-01 02:24:55"
+}

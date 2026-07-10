@@ -1,0 +1,19 @@
+{
+  "query_id": "8c8553d8dbd64e9bba39b267fe9bdc39",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0004",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "It creaked, but if",
+  "target_word": "the",
+  "sample_idx": 0,
+  "generated_text": "it was just",
+  "generated_first_word": "it",
+  "similarity": 0.7294350862503052,
+  "timestamp": "2026-06-30 05:07:15"
+}

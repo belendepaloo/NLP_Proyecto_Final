@@ -1,0 +1,19 @@
+{
+  "query_id": "42fd61ed57bccc9b4fed12cba186fc33",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0103",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 9,
+  "prefix": "Fell in love. Met his vet. Fell in love.",
+  "target_word": "And",
+  "sample_idx": 1,
+  "generated_text": "With her quirky",
+  "generated_first_word": "With",
+  "similarity": 0.7502042055130005,
+  "timestamp": "2026-06-30 13:43:40"
+}

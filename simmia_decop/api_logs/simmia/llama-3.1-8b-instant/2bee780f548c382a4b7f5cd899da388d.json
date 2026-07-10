@@ -1,0 +1,19 @@
+{
+  "query_id": "2bee780f548c382a4b7f5cd899da388d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0191",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 13,
+  "prefix": "We were smiling. Someone must have told us to, because I couldnt imagine",
+  "target_word": "us",
+  "sample_idx": 2,
+  "generated_text": "why else I",
+  "generated_first_word": "why",
+  "similarity": 0.6645849943161011,
+  "timestamp": "2026-07-01 04:06:24"
+}

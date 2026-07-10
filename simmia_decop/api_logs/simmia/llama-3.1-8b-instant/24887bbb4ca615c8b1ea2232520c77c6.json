@@ -1,0 +1,19 @@
+{
+  "query_id": "24887bbb4ca615c8b1ea2232520c77c6",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0054",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "All that confidence he",
+  "target_word": "had",
+  "sample_idx": 1,
+  "generated_text": "had built up",
+  "generated_first_word": "had",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 09:29:55"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "d1be8d56ecbc0c419563a7362de84579",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0102",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "Maud smiled as she passed the pond",
+  "target_word": "again.",
+  "sample_idx": 2,
+  "generated_text": "where a family",
+  "generated_first_word": "where",
+  "similarity": 0.6033344268798828,
+  "timestamp": "2026-06-30 13:38:12"
+}

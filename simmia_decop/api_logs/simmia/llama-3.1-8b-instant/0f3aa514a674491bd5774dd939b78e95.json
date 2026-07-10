@@ -1,0 +1,19 @@
+{
+  "query_id": "0f3aa514a674491bd5774dd939b78e95",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0060",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Soon only Yennika remained in",
+  "target_word": "the",
+  "sample_idx": 2,
+  "generated_text": "the vast,",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 10:02:29"
+}

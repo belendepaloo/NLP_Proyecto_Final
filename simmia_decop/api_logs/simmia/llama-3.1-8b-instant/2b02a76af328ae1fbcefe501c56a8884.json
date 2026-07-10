@@ -1,0 +1,19 @@
+{
+  "query_id": "2b02a76af328ae1fbcefe501c56a8884",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0020",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Yes, I suppose I",
+  "target_word": "will,",
+  "sample_idx": 0,
+  "generated_text": "could agree with",
+  "generated_first_word": "could",
+  "similarity": 0.7383077144622803,
+  "timestamp": "2026-06-30 06:31:20"
+}

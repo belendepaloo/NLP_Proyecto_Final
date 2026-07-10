@@ -1,0 +1,19 @@
+{
+  "query_id": "8afb22786572dfd495d7bedd6b2793fd",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0050",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 14,
+  "prefix": "At the very least, its enough to get me booted from this assignment. Blacklisted",
+  "target_word": "from",
+  "sample_idx": 1,
+  "generated_text": "from the entire",
+  "generated_first_word": "from",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 09:11:22"
+}

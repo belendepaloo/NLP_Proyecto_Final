@@ -1,0 +1,19 @@
+{
+  "query_id": "15a21b831682c4c44b734ab5fecbf72f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0109",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 12,
+  "prefix": "Part love story, part thriller, this novel kept me entranced until the",
+  "target_word": "very",
+  "sample_idx": 1,
+  "generated_text": "very",
+  "generated_first_word": "very",
+  "similarity": 0.9999999403953552,
+  "timestamp": "2026-07-04 20:11:27"
+}

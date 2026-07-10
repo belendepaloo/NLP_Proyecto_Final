@@ -1,0 +1,19 @@
+{
+  "query_id": "d79a5c9af8bf1c27cecc123d0a31a089",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0148",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "They did not",
+  "target_word": "speak",
+  "sample_idx": 0,
+  "generated_text": "have",
+  "generated_first_word": "have",
+  "similarity": 0.654239296913147,
+  "timestamp": "2026-07-05 22:42:40"
+}

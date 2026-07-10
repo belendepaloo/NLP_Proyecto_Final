@@ -1,0 +1,19 @@
+{
+  "query_id": "c7cec4369f4636c02e6314356a3648cc",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0101",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "Oh, don't tell you are going to",
+  "target_word": "send",
+  "sample_idx": 2,
+  "generated_text": "love my cooking",
+  "generated_first_word": "love",
+  "similarity": 0.6400516629219055,
+  "timestamp": "2026-06-30 13:33:04"
+}

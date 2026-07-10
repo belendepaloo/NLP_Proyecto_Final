@@ -1,0 +1,19 @@
+{
+  "query_id": "4fa423056a424bc6fb78f1e09d172fce",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0132",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Suppose that we quicken the",
+  "target_word": "tempo",
+  "sample_idx": 1,
+  "generated_text": "pace",
+  "generated_first_word": "pace",
+  "similarity": 0.7895822525024414,
+  "timestamp": "2026-07-05 17:08:45"
+}

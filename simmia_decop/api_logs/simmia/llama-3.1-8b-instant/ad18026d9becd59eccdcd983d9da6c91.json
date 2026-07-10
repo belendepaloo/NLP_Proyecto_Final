@@ -1,0 +1,19 @@
+{
+  "query_id": "ad18026d9becd59eccdcd983d9da6c91",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0009",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "‘You",
+  "target_word": "look",
+  "sample_idx": 0,
+  "generated_text": "are’",
+  "generated_first_word": "are’",
+  "similarity": 0.6563845872879028,
+  "timestamp": "2026-06-30 05:32:33"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "a75b1e67fffcdd7ab599b8afe92cde89",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0184",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 17,
+  "prefix": "As for you? Marrying and employing a Vos will help you secure a small business loan. She",
+  "target_word": "threw",
+  "sample_idx": 0,
+  "generated_text": "is a skilled",
+  "generated_first_word": "is",
+  "similarity": 0.665568470954895,
+  "timestamp": "2026-07-01 03:31:31"
+}

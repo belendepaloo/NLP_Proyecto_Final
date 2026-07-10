@@ -1,0 +1,19 @@
+{
+  "query_id": "43b6c7e94c5efee827d1d8368188b0dc",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0183",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 11,
+  "prefix": "Im nineteen and not married. And certainly not getting married anytime",
+  "target_word": "soon,",
+  "sample_idx": 0,
+  "generated_text": "soon.",
+  "generated_first_word": "soon.",
+  "similarity": 0.9361737370491028,
+  "timestamp": "2026-07-01 03:25:36"
+}

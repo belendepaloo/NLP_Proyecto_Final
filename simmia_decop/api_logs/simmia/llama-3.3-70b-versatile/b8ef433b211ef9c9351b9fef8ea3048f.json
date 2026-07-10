@@ -1,0 +1,19 @@
+{
+  "query_id": "b8ef433b211ef9c9351b9fef8ea3048f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0046",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Yet Archer was",
+  "target_word": "convinced",
+  "sample_idx": 2,
+  "generated_text": "not",
+  "generated_first_word": "not",
+  "similarity": 0.6751562356948853,
+  "timestamp": "2026-07-02 03:16:53"
+}

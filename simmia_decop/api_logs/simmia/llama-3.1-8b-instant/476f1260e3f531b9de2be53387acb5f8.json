@@ -1,0 +1,19 @@
+{
+  "query_id": "476f1260e3f531b9de2be53387acb5f8",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0071",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 13,
+  "prefix": "I did once before. You cant this time, Anton said gently. Its hundreds",
+  "target_word": "of",
+  "sample_idx": 1,
+  "generated_text": "of miles",
+  "generated_first_word": "of",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 11:01:58"
+}

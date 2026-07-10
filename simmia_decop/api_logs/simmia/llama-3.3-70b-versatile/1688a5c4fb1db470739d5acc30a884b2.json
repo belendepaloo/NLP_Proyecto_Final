@@ -1,0 +1,19 @@
+{
+  "query_id": "1688a5c4fb1db470739d5acc30a884b2",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0073",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "‘Would it? Would any of you",
+  "target_word": "have",
+  "sample_idx": 1,
+  "generated_text": "like",
+  "generated_first_word": "like",
+  "similarity": 0.6691895723342896,
+  "timestamp": "2026-07-03 15:57:26"
+}

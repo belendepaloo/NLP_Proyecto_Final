@@ -1,0 +1,19 @@
+{
+  "query_id": "e15ecd2fd462ac6d3f29ba072e37ec36",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0100",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "“Careful not to",
+  "target_word": "walk",
+  "sample_idx": 2,
+  "generated_text": "touch anything.”",
+  "generated_first_word": "touch",
+  "similarity": 0.658359706401825,
+  "timestamp": "2026-06-30 13:27:11"
+}

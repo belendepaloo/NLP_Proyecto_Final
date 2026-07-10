@@ -1,0 +1,19 @@
+{
+  "query_id": "2022067129388653feddee3c6808cb54",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0021",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "The men of the oasis surrounded",
+  "target_word": "the",
+  "sample_idx": 2,
+  "generated_text": "the lone traveler",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 06:37:26"
+}

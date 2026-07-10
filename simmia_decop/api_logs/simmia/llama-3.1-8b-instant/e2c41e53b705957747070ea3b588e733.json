@@ -1,0 +1,19 @@
+{
+  "query_id": "e2c41e53b705957747070ea3b588e733",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0044",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 16,
+  "prefix": "Lore scowled at his back, gathering her hem high to avoid the water. Hes just as",
+  "target_word": "caught",
+  "sample_idx": 1,
+  "generated_text": "selfish as",
+  "generated_first_word": "selfish",
+  "similarity": 0.6022858023643494,
+  "timestamp": "2026-06-30 08:40:13"
+}

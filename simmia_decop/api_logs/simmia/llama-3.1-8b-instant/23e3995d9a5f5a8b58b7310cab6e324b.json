@@ -1,0 +1,19 @@
+{
+  "query_id": "23e3995d9a5f5a8b58b7310cab6e324b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0126",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "It makes my heart ache. Not just the",
+  "target_word": "memory",
+  "sample_idx": 2,
+  "generated_text": "pain of losing",
+  "generated_first_word": "pain",
+  "similarity": 0.6518332958221436,
+  "timestamp": "2026-06-30 15:38:15"
+}

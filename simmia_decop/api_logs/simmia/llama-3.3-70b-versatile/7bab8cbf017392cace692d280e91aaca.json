@@ -1,0 +1,19 @@
+{
+  "query_id": "7bab8cbf017392cace692d280e91aaca",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0055",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "‘The speedometer,’ Mr Wormwood said, ‘is",
+  "target_word": "run",
+  "sample_idx": 2,
+  "generated_text": "not",
+  "generated_first_word": "not",
+  "similarity": 0.6172025203704834,
+  "timestamp": "2026-07-03 14:23:54"
+}

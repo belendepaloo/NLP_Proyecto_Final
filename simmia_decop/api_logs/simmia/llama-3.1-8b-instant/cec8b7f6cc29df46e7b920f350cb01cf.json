@@ -1,0 +1,19 @@
+{
+  "query_id": "cec8b7f6cc29df46e7b920f350cb01cf",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0164",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "With a sweep of",
+  "target_word": "his",
+  "sample_idx": 2,
+  "generated_text": "her long,",
+  "generated_first_word": "her",
+  "similarity": 0.8214578628540039,
+  "timestamp": "2026-07-01 01:47:47"
+}

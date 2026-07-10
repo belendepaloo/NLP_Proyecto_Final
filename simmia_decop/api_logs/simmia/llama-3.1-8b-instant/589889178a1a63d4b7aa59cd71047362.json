@@ -1,0 +1,19 @@
+{
+  "query_id": "589889178a1a63d4b7aa59cd71047362",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0067",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Wyn kisses",
+  "target_word": "the",
+  "sample_idx": 2,
+  "generated_text": "Lila's",
+  "generated_first_word": "Lila's",
+  "similarity": 0.6173610687255859,
+  "timestamp": "2026-06-30 10:38:25"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "6e70e4a250e028db41f1017c694cb8ef",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0028",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Theres no need to go",
+  "target_word": "excavating",
+  "sample_idx": 2,
+  "generated_text": "to",
+  "generated_first_word": "to",
+  "similarity": 0.6080803275108337,
+  "timestamp": "2026-07-01 15:48:47"
+}

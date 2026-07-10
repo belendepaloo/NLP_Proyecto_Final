@@ -1,0 +1,19 @@
+{
+  "query_id": "62cd2c3b13841318c4295ea2684fd239",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0182",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 19,
+  "prefix": "He was buttering his bread, not looking up at her. He feels vulnerable with me too, Maud thought. Worse",
+  "target_word": "than",
+  "sample_idx": 1,
+  "generated_text": "than when she",
+  "generated_first_word": "than",
+  "similarity": 1.0,
+  "timestamp": "2026-07-01 03:23:02"
+}

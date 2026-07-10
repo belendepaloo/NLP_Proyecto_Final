@@ -1,0 +1,19 @@
+{
+  "query_id": "e68f1d3bf63b59443502052775c518c9",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0147",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 17,
+  "prefix": "Im certain hes going to kiss me, but instead he says, I read your books. I back",
+  "target_word": "up,",
+  "sample_idx": 0,
+  "generated_text": "away, taken",
+  "generated_first_word": "away,",
+  "similarity": 0.7411314845085144,
+  "timestamp": "2026-06-30 17:52:18"
+}

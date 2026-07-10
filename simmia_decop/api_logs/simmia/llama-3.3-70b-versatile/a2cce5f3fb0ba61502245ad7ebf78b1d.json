@@ -1,0 +1,19 @@
+{
+  "query_id": "a2cce5f3fb0ba61502245ad7ebf78b1d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0019",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 16,
+  "prefix": "Edgar Linton, as mul- titudes have been before, and will be after him, was in- fatuated,",
+  "target_word": "and",
+  "sample_idx": 2,
+  "generated_text": "with",
+  "generated_first_word": "with",
+  "similarity": 0.7502042055130005,
+  "timestamp": "2026-07-01 15:09:16"
+}

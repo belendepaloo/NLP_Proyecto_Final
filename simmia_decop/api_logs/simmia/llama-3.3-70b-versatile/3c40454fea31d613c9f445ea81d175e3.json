@@ -1,0 +1,19 @@
+{
+  "query_id": "3c40454fea31d613c9f445ea81d175e3",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0012",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Bathed in starlight and",
+  "target_word": "dotted",
+  "sample_idx": 0,
+  "generated_text": "moonbeams",
+  "generated_first_word": "moonbeams",
+  "similarity": 0.6154971718788147,
+  "timestamp": "2026-07-01 14:33:15"
+}

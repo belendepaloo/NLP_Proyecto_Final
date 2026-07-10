@@ -1,0 +1,19 @@
+{
+  "query_id": "614d635e861946af56fff691184b976a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0132",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "Suppose that we quicken the tempo of human life",
+  "target_word": "till",
+  "sample_idx": 2,
+  "generated_text": "and compress it",
+  "generated_first_word": "and",
+  "similarity": 0.6805267930030823,
+  "timestamp": "2026-06-30 16:07:37"
+}

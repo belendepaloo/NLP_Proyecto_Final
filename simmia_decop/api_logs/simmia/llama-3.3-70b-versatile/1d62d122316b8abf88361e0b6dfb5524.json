@@ -1,0 +1,19 @@
+{
+  "query_id": "1d62d122316b8abf88361e0b6dfb5524",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0196",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "The boy continued to",
+  "target_word": "listen",
+  "sample_idx": 2,
+  "generated_text": "run",
+  "generated_first_word": "run",
+  "similarity": 0.7106750011444092,
+  "timestamp": "2026-07-08 02:33:31"
+}

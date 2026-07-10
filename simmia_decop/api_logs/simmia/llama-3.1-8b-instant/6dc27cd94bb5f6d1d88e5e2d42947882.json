@@ -1,0 +1,19 @@
+{
+  "query_id": "6dc27cd94bb5f6d1d88e5e2d42947882",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0170",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "There were many recesses cut in the rock of the",
+  "target_word": "walls,",
+  "sample_idx": 1,
+  "generated_text": "ancient cliff",
+  "generated_first_word": "ancient",
+  "similarity": 0.675001859664917,
+  "timestamp": "2026-07-01 02:19:47"
+}

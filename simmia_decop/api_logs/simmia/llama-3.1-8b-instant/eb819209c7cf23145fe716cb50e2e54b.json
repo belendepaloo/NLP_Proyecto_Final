@@ -1,0 +1,19 @@
+{
+  "query_id": "eb819209c7cf23145fe716cb50e2e54b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0181",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "But when he had drawn forth, as",
+  "target_word": "he",
+  "sample_idx": 0,
+  "generated_text": "the sword from",
+  "generated_first_word": "the",
+  "similarity": 0.7436275482177734,
+  "timestamp": "2026-07-01 03:14:05"
+}

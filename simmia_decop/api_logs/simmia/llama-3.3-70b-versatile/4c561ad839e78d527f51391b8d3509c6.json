@@ -1,0 +1,19 @@
+{
+  "query_id": "4c561ad839e78d527f51391b8d3509c6",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0063",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "The boy mumbled an answer that",
+  "target_word": "allowed",
+  "sample_idx": 1,
+  "generated_text": "was",
+  "generated_first_word": "was",
+  "similarity": 0.6654109954833984,
+  "timestamp": "2026-07-03 15:05:18"
+}

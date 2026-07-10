@@ -1,0 +1,19 @@
+{
+  "query_id": "45428189a1fdf8179f7bb58ad12794b7",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0057",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "There",
+  "target_word": "were",
+  "sample_idx": 0,
+  "generated_text": "is",
+  "generated_first_word": "is",
+  "similarity": 0.7369633913040161,
+  "timestamp": "2026-07-03 14:34:09"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "11f9783c0afaf08064d0da2cf2175f4d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0032",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Even as the first shadows were",
+  "target_word": "felt",
+  "sample_idx": 2,
+  "generated_text": "falling",
+  "generated_first_word": "falling",
+  "similarity": 0.639013409614563,
+  "timestamp": "2026-07-01 17:38:42"
+}

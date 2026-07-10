@@ -1,0 +1,19 @@
+{
+  "query_id": "78b1e1278e7877c09305ecb1deb285c1",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0125",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "One of these rooms had been turned into",
+  "target_word": "a",
+  "sample_idx": 0,
+  "generated_text": "a makeshift laboratory",
+  "generated_first_word": "a",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 15:32:57"
+}

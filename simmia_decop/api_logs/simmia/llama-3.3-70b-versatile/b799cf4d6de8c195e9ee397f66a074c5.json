@@ -1,0 +1,19 @@
+{
+  "query_id": "b799cf4d6de8c195e9ee397f66a074c5",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0174",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 13,
+  "prefix": "Her eyes gleamed. “You see? I knew you’d missed me. This is Tanith.”",
+  "target_word": "The",
+  "sample_idx": 0,
+  "generated_text": "She said,",
+  "generated_first_word": "She",
+  "similarity": 0.7600209712982178,
+  "timestamp": "2026-07-06 18:10:14"
+}

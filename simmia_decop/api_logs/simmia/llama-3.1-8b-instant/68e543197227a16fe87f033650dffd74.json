@@ -1,0 +1,19 @@
+{
+  "query_id": "68e543197227a16fe87f033650dffd74",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0099",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 11,
+  "prefix": "And not a hint of rot. The last attack had been",
+  "target_word": "two",
+  "sample_idx": 1,
+  "generated_text": "successful.",
+  "generated_first_word": "successful.",
+  "similarity": 0.6196383833885193,
+  "timestamp": "2026-06-30 13:24:32"
+}

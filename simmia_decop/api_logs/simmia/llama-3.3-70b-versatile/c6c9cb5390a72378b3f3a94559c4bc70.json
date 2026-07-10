@@ -1,0 +1,19 @@
+{
+  "query_id": "c6c9cb5390a72378b3f3a94559c4bc70",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0085",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 11,
+  "prefix": "It was rather weak in me I confess, but his manner",
+  "target_word": "on",
+  "sample_idx": 1,
+  "generated_text": "put",
+  "generated_first_word": "put",
+  "similarity": 0.7618522644042969,
+  "timestamp": "2026-07-04 18:21:27"
+}
