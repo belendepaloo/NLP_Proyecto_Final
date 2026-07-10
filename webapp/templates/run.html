@@ -382,9 +382,8 @@
   {% endif %}
 </section>
 
+{# ── Botón flotante "Siguiente" — siempre en el DOM cuando el run es activo ── #}
 {% if run.status in ("running", "waiting_human") %}
-
-{# ── Botón flotante "Siguiente" para demo mode ────────────────────────── #}
 <div id="demo-next-bar" class="demo-next-bar" style="display:none" aria-live="polite">
   <div class="demo-next-inner">
     <span class="demo-next-label">Pipeline en pausa</span>
@@ -394,7 +393,9 @@
     <span class="demo-next-hint">Hacé clic para avanzar al siguiente paso</span>
   </div>
 </div>
+{% endif %}
 
+{% if run.status in ("running", "waiting_human") %}
   <script>
     var _agentlogEl = document.getElementById("agentlog-entries");
     var _agentlogEmpty = document.getElementById("agentlog-empty");
@@ -453,11 +454,14 @@
 
     es.addEventListener("demopause", function(e) {
       try {
+        if (!_demoPauseBar) return;
         var data = JSON.parse(e.data);
         if (data.paused) {
           _demoPauseBar.style.display = "flex";
-          _demoPauseBtn.disabled = false;
-          _demoPauseBtn.textContent = "▶ Siguiente";
+          if (_demoPauseBtn) {
+            _demoPauseBtn.disabled = false;
+            _demoPauseBtn.textContent = "▶ Siguiente";
+          }
           _demoPauseBar.scrollIntoView({behavior: "smooth", block: "center"});
         } else {
           _demoPauseBar.style.display = "none";
@@ -466,12 +470,15 @@
     });
 
     function demoNext() {
+      if (!_demoPauseBtn) return;
       _demoPauseBtn.disabled = true;
       _demoPauseBtn.textContent = "▶ …";
       fetch("/runs/{{ run.run_id }}/demo-next", {method: "POST"})
         .catch(function() {
-          _demoPauseBtn.disabled = false;
-          _demoPauseBtn.textContent = "▶ Siguiente";
+          if (_demoPauseBtn) {
+            _demoPauseBtn.disabled = false;
+            _demoPauseBtn.textContent = "▶ Siguiente";
+          }
         });
     }
 

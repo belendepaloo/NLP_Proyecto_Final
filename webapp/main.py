@@ -159,6 +159,13 @@ async def stream(run_id: str) -> StreamingResponse:
         baseline_pause_seq = handle._demo_pause_seq
         ticks_since_emit = 0
 
+        # Emitir estado inicial: eventos ya acumulados + pausa activa si ya existe
+        if handle.event_count > 0:
+            for ev in handle.events:
+                yield f"event: agentlog\ndata: {json.dumps(ev, ensure_ascii=False)}\n\n"
+        if handle.demo_paused:
+            yield f"event: demopause\ndata: {json.dumps({'paused': True})}\n\n"
+
         while True:
             handle = get_run(run_id)
             if handle is None:
