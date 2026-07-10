@@ -1,0 +1,19 @@
+{
+  "query_id": "a634b004c725d408a01705efd73136c3",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0047",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "The sun began its",
+  "target_word": "departure,",
+  "sample_idx": 1,
+  "generated_text": "slow descent",
+  "generated_first_word": "slow",
+  "similarity": 0.6759759187698364,
+  "timestamp": "2026-06-30 08:52:46"
+}

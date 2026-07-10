@@ -1,0 +1,19 @@
+{
+  "query_id": "47a5a7d28189911aa7fc3d349cd430eb",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0156",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 9,
+  "prefix": "I glance out the window. I see some new",
+  "target_word": "housing",
+  "sample_idx": 2,
+  "generated_text": "construction",
+  "generated_first_word": "construction",
+  "similarity": 0.7747747302055359,
+  "timestamp": "2026-07-06 16:43:48"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "2e265e6bfdb1d161d5630e702deca4f7",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0173",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "But no ship came ever again",
+  "target_word": "from",
+  "sample_idx": 1,
+  "generated_text": "to rescue",
+  "generated_first_word": "to",
+  "similarity": 0.8001956343650818,
+  "timestamp": "2026-07-01 02:33:22"
+}

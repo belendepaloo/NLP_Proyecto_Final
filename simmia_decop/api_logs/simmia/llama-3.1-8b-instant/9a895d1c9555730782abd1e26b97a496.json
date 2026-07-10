@@ -1,0 +1,19 @@
+{
+  "query_id": "9a895d1c9555730782abd1e26b97a496",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0102",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 16,
+  "prefix": "Maud smiled as she passed the pond again. Neither Frazer nor Chris had said anything about",
+  "target_word": "the",
+  "sample_idx": 0,
+  "generated_text": "the strange marks",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 13:40:25"
+}

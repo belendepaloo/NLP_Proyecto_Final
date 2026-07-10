@@ -1,0 +1,19 @@
+{
+  "query_id": "b5fcf73d98856876cd07373826d2815c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0067",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Wyn kisses the top",
+  "target_word": "of",
+  "sample_idx": 2,
+  "generated_text": "of",
+  "generated_first_word": "of",
+  "similarity": 1.0,
+  "timestamp": "2026-07-03 15:25:48"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "25009586e04fc0b04e097b86676d80d5",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0004",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 19,
+  "prefix": "It creaked, but if the sound woke anyone inside, they didnt protest. Bastian and Gabe settled Milo on the",
+  "target_word": "floor,",
+  "sample_idx": 1,
+  "generated_text": "porch swing",
+  "generated_first_word": "porch",
+  "similarity": 0.7233611345291138,
+  "timestamp": "2026-06-30 05:10:57"
+}

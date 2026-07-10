@@ -1,0 +1,19 @@
+{
+  "query_id": "eb9b1443a8322dfc9d7d6c7bad53c0d9",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0099",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "And not a hint",
+  "target_word": "of",
+  "sample_idx": 1,
+  "generated_text": "of the truth",
+  "generated_first_word": "of",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 13:22:45"
+}

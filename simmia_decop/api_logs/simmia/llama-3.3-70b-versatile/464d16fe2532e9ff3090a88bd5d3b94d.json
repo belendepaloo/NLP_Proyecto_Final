@@ -1,0 +1,19 @@
+{
+  "query_id": "464d16fe2532e9ff3090a88bd5d3b94d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0181",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "But when he had drawn forth, as",
+  "target_word": "he",
+  "sample_idx": 1,
+  "generated_text": "it were,",
+  "generated_first_word": "it",
+  "similarity": 0.7859602570533752,
+  "timestamp": "2026-07-08 01:25:22"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "608507ee85b0c79341b4afac78af1c17",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0006",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "I've seen none",
+  "target_word": "like",
+  "sample_idx": 2,
+  "generated_text": "of them",
+  "generated_first_word": "of",
+  "similarity": 0.7089704275131226,
+  "timestamp": "2026-06-30 05:17:17"
+}

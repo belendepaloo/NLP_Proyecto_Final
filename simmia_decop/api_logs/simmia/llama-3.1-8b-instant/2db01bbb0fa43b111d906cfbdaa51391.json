@@ -1,0 +1,19 @@
+{
+  "query_id": "2db01bbb0fa43b111d906cfbdaa51391",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0081",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "The next",
+  "target_word": "moment",
+  "sample_idx": 2,
+  "generated_text": "day.",
+  "generated_first_word": "day.",
+  "similarity": 0.6617878675460815,
+  "timestamp": "2026-06-30 11:50:02"
+}

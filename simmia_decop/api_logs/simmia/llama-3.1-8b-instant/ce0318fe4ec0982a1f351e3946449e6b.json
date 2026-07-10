@@ -1,0 +1,19 @@
+{
+  "query_id": "ce0318fe4ec0982a1f351e3946449e6b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0148",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "They did",
+  "target_word": "not",
+  "sample_idx": 0,
+  "generated_text": "it.",
+  "generated_first_word": "it.",
+  "similarity": 0.6532195806503296,
+  "timestamp": "2026-06-30 17:53:14"
+}

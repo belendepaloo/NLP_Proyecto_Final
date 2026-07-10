@@ -1,0 +1,19 @@
+{
+  "query_id": "72e3005805487e707e57aaad85683ac8",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0093",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 15,
+  "prefix": "Bumble. 'Isn't natur, natur, Mrs. Bumble?' remonstrated the workhouse master. 'Can't I be supposed to",
+  "target_word": "feel--_I_",
+  "sample_idx": 0,
+  "generated_text": "have",
+  "generated_first_word": "have",
+  "similarity": 0.6243270635604858,
+  "timestamp": "2026-07-04 18:59:14"
+}

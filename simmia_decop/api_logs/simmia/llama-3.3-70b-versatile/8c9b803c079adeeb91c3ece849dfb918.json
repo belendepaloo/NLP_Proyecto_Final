@@ -1,0 +1,19 @@
+{
+  "query_id": "8c9b803c079adeeb91c3ece849dfb918",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0028",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 9,
+  "prefix": "Theres no need to go excavating ancient history. Though",
+  "target_word": "Alies",
+  "sample_idx": 2,
+  "generated_text": "it's",
+  "generated_first_word": "it's",
+  "similarity": 0.6022536158561707,
+  "timestamp": "2026-07-01 15:49:44"
+}

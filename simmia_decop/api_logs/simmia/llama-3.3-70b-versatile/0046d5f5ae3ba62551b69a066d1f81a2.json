@@ -1,0 +1,19 @@
+{
+  "query_id": "0046d5f5ae3ba62551b69a066d1f81a2",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0181",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 15,
+  "prefix": "But when he had drawn forth, as he hoped, the armies of Morgoth in answer,",
+  "target_word": "then",
+  "sample_idx": 2,
+  "generated_text": "he",
+  "generated_first_word": "he",
+  "similarity": 0.7240560054779053,
+  "timestamp": "2026-07-08 01:27:20"
+}

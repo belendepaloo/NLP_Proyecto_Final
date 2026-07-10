@@ -1,0 +1,19 @@
+{
+  "query_id": "1ea2d63715a192a31b1917e44b76a5a1",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0141",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 13,
+  "prefix": "I am of average height, but as gangly as someone much taller, with",
+  "target_word": "skinny",
+  "sample_idx": 2,
+  "generated_text": "long",
+  "generated_first_word": "long",
+  "similarity": 0.6127640008926392,
+  "timestamp": "2026-07-05 22:13:59"
+}

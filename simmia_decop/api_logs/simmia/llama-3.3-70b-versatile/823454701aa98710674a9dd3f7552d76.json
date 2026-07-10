@@ -1,0 +1,19 @@
+{
+  "query_id": "823454701aa98710674a9dd3f7552d76",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0035",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 13,
+  "prefix": "Another silver Noziken. Dumai looked at them all, the whole belfry of courtiers.",
+  "target_word": "Her",
+  "sample_idx": 0,
+  "generated_text": "gathered",
+  "generated_first_word": "gathered",
+  "similarity": 0.6661365628242493,
+  "timestamp": "2026-07-01 18:54:16"
+}

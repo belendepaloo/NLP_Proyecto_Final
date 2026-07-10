@@ -1,0 +1,19 @@
+{
+  "query_id": "6f808b176241b0f50a60906e569d748c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0171",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 19,
+  "prefix": "Now what sort of business would you like to engage in? Would you like to re-engage in copying for",
+  "target_word": "some",
+  "sample_idx": 2,
+  "generated_text": "lawyers?",
+  "generated_first_word": "lawyers?",
+  "similarity": 0.6386425495147705,
+  "timestamp": "2026-07-06 17:56:38"
+}

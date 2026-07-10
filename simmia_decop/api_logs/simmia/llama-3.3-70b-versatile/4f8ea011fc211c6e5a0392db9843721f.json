@@ -1,0 +1,19 @@
+{
+  "query_id": "4f8ea011fc211c6e5a0392db9843721f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0103",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "Fell in love. Met his vet. Fell",
+  "target_word": "in",
+  "sample_idx": 1,
+  "generated_text": "in",
+  "generated_first_word": "in",
+  "similarity": 1.0,
+  "timestamp": "2026-07-04 19:43:21"
+}

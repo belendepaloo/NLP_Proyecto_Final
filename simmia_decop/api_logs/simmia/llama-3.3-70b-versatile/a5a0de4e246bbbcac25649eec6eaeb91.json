@@ -1,0 +1,19 @@
+{
+  "query_id": "a5a0de4e246bbbcac25649eec6eaeb91",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0188",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 11,
+  "prefix": "At all events, if nothing else could be decided upon, the",
+  "target_word": "alms-house",
+  "sample_idx": 1,
+  "generated_text": "question",
+  "generated_first_word": "question",
+  "similarity": 0.6039047241210938,
+  "timestamp": "2026-07-08 01:58:11"
+}

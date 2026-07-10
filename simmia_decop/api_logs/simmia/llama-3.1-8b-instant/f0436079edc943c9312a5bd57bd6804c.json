@@ -1,0 +1,19 @@
+{
+  "query_id": "f0436079edc943c9312a5bd57bd6804c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0170",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "There were",
+  "target_word": "many",
+  "sample_idx": 0,
+  "generated_text": "rumors",
+  "generated_first_word": "rumors",
+  "similarity": 0.6521421670913696,
+  "timestamp": "2026-07-01 02:16:45"
+}

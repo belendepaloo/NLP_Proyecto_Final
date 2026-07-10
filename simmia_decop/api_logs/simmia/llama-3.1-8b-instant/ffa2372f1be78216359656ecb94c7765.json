@@ -1,0 +1,19 @@
+{
+  "query_id": "ffa2372f1be78216359656ecb94c7765",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0032",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 19,
+  "prefix": "Even as the first shadows were felt in Mirkwood there appeared in the west of Middle-earth the Istari, whom",
+  "target_word": "Men",
+  "sample_idx": 1,
+  "generated_text": "the Valar",
+  "generated_first_word": "the",
+  "similarity": 0.6798007488250732,
+  "timestamp": "2026-06-30 07:37:16"
+}

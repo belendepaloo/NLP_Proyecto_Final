@@ -1,0 +1,19 @@
+{
+  "query_id": "7bf0cfc1ef52c7ad8b4f8b1911a565e1",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0080",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "Harry heard from Hogwarts one sunny morning about a",
+  "target_word": "week",
+  "sample_idx": 2,
+  "generated_text": "mysterious disappearance",
+  "generated_first_word": "mysterious",
+  "similarity": 0.6236787438392639,
+  "timestamp": "2026-06-30 11:46:45"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "e25ae7b5ca27a1c558e4a07f50d7f063",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0190",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 11,
+  "prefix": "If Bastian knows who I am, Lore said, then why not",
+  "target_word": "just",
+  "sample_idx": 2,
+  "generated_text": "tell",
+  "generated_first_word": "tell",
+  "similarity": 0.6907949447631836,
+  "timestamp": "2026-07-08 02:07:21"
+}

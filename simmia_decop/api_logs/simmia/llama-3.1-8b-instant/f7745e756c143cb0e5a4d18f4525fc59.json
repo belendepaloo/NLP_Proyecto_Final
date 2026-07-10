@@ -1,0 +1,19 @@
+{
+  "query_id": "f7745e756c143cb0e5a4d18f4525fc59",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0067",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 10,
+  "prefix": "Wyn kisses the top of my head. Michael and Lou",
+  "target_word": "exchange",
+  "sample_idx": 2,
+  "generated_text": "walked into",
+  "generated_first_word": "walked",
+  "similarity": 0.5985931158065796,
+  "timestamp": "2026-06-30 10:40:33"
+}

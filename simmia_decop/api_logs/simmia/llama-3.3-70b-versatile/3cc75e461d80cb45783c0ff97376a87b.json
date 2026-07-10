@@ -1,0 +1,19 @@
+{
+  "query_id": "3cc75e461d80cb45783c0ff97376a87b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0066",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "No one",
+  "target_word": "answered.",
+  "sample_idx": 0,
+  "generated_text": "knew",
+  "generated_first_word": "knew",
+  "similarity": 0.6009765863418579,
+  "timestamp": "2026-07-03 15:18:47"
+}

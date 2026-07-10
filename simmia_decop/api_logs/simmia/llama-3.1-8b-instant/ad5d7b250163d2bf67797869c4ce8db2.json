@@ -1,0 +1,19 @@
+{
+  "query_id": "ad5d7b250163d2bf67797869c4ce8db2",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0161",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "But his personality changed",
+  "target_word": "drastically.",
+  "sample_idx": 0,
+  "generated_text": "completely over",
+  "generated_first_word": "completely",
+  "similarity": 0.7368696331977844,
+  "timestamp": "2026-07-01 01:32:01"
+}

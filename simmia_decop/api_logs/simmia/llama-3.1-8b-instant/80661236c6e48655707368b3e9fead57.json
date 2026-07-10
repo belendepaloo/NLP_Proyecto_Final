@@ -1,0 +1,19 @@
+{
+  "query_id": "80661236c6e48655707368b3e9fead57",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0008",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "I am",
+  "target_word": "starting",
+  "sample_idx": 0,
+  "generated_text": "extremely",
+  "generated_first_word": "extremely",
+  "similarity": 0.6383149027824402,
+  "timestamp": "2026-06-30 05:27:50"
+}

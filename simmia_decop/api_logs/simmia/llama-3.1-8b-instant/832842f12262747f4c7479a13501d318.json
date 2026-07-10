@@ -1,0 +1,19 @@
+{
+  "query_id": "832842f12262747f4c7479a13501d318",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0064",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "As Noah's",
+  "target_word": "red",
+  "sample_idx": 1,
+  "generated_text": "ark sailed",
+  "generated_first_word": "ark",
+  "similarity": 0.6358129978179932,
+  "timestamp": "2026-06-30 10:22:32"
+}

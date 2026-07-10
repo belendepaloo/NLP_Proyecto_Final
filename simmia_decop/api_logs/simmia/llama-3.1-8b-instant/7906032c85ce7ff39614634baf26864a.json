@@ -1,0 +1,19 @@
+{
+  "query_id": "7906032c85ce7ff39614634baf26864a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0139",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 18,
+  "prefix": "Before he knew it, he was the boss of his team, then the boss of the whole repair",
+  "target_word": "division,",
+  "sample_idx": 1,
+  "generated_text": "department, and",
+  "generated_first_word": "department,",
+  "similarity": 0.7244056463241577,
+  "timestamp": "2026-06-30 17:14:11"
+}

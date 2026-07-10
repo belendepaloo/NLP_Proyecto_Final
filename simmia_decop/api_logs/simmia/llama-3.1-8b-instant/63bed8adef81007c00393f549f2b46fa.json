@@ -1,0 +1,19 @@
+{
+  "query_id": "63bed8adef81007c00393f549f2b46fa",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0138",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 11,
+  "prefix": "Here you shall dwell at your pleasure, save only that you",
+  "target_word": "must",
+  "sample_idx": 0,
+  "generated_text": "must not stir",
+  "generated_first_word": "must",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 17:06:59"
+}

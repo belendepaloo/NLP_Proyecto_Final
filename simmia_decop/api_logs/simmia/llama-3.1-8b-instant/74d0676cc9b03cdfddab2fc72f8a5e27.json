@@ -1,0 +1,19 @@
+{
+  "query_id": "74d0676cc9b03cdfddab2fc72f8a5e27",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0094",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "“Rather than",
+  "target_word": "finding",
+  "sample_idx": 2,
+  "generated_text": "focusing",
+  "generated_first_word": "focusing",
+  "similarity": 0.613204836845398,
+  "timestamp": "2026-06-30 12:57:27"
+}

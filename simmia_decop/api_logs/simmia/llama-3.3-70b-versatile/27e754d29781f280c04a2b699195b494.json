@@ -1,0 +1,19 @@
+{
+  "query_id": "27e754d29781f280c04a2b699195b494",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0138",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Here you shall",
+  "target_word": "dwell",
+  "sample_idx": 1,
+  "generated_text": "find",
+  "generated_first_word": "find",
+  "similarity": 0.6464097499847412,
+  "timestamp": "2026-07-05 17:36:00"
+}

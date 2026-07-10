@@ -1,0 +1,19 @@
+{
+  "query_id": "1417e0db0264552f484f6ed51f387e82",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0126",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "It makes",
+  "target_word": "my",
+  "sample_idx": 0,
+  "generated_text": "sense.",
+  "generated_first_word": "sense.",
+  "similarity": 0.61174076795578,
+  "timestamp": "2026-06-30 15:36:44"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "423afe7d34f5c44402796db38ba56190",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0046",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "Yet Archer was convinced that Madame Olenska had not",
+  "target_word": "accepted",
+  "sample_idx": 1,
+  "generated_text": "betrayed",
+  "generated_first_word": "betrayed",
+  "similarity": 0.6475405097007751,
+  "timestamp": "2026-06-30 08:48:57"
+}

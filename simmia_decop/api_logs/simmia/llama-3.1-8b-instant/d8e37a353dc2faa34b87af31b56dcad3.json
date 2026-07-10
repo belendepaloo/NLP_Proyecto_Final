@@ -1,0 +1,19 @@
+{
+  "query_id": "d8e37a353dc2faa34b87af31b56dcad3",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0029",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "And it wouldnt have been easy",
+  "target_word": "to",
+  "sample_idx": 2,
+  "generated_text": "to convince",
+  "generated_first_word": "to",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 07:19:04"
+}

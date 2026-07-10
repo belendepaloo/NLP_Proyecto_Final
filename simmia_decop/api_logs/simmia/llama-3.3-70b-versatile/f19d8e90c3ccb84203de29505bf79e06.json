@@ -1,0 +1,19 @@
+{
+  "query_id": "f19d8e90c3ccb84203de29505bf79e06",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0118",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 14,
+  "prefix": "Ardin Javar was a bear of a man with a bushy greying beard and",
+  "target_word": "a",
+  "sample_idx": 2,
+  "generated_text": "a commanding presence",
+  "generated_first_word": "a",
+  "similarity": 1.0,
+  "timestamp": "2026-07-05 16:06:43"
+}

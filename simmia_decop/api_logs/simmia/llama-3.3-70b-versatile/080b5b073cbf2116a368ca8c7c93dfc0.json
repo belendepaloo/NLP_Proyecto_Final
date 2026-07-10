@@ -1,0 +1,19 @@
+{
+  "query_id": "080b5b073cbf2116a368ca8c7c93dfc0",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0025",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 14,
+  "prefix": "Miss Cathy had been sick, and that made her still. She leant against her",
+  "target_word": "father's",
+  "sample_idx": 0,
+  "generated_text": "pillow",
+  "generated_first_word": "pillow",
+  "similarity": 0.6365823745727539,
+  "timestamp": "2026-07-01 15:36:39"
+}

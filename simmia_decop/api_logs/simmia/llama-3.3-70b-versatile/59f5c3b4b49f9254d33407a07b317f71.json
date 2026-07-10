@@ -1,0 +1,19 @@
+{
+  "query_id": "59f5c3b4b49f9254d33407a07b317f71",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0092",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "As the wound smoked, he watched the",
+  "target_word": "glow",
+  "sample_idx": 0,
+  "generated_text": "skin",
+  "generated_first_word": "skin",
+  "similarity": 0.7081044316291809,
+  "timestamp": "2026-07-04 18:52:59"
+}

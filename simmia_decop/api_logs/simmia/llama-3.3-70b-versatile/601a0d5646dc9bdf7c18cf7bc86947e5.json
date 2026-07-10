@@ -1,0 +1,19 @@
+{
+  "query_id": "601a0d5646dc9bdf7c18cf7bc86947e5",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0105",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "And Peter",
+  "target_word": "was",
+  "sample_idx": 1,
+  "generated_text": "said",
+  "generated_first_word": "said",
+  "similarity": 0.7193111181259155,
+  "timestamp": "2026-07-04 19:51:11"
+}

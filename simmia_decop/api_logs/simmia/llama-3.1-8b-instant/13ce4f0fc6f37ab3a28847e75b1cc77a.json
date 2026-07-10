@@ -1,0 +1,19 @@
+{
+  "query_id": "13ce4f0fc6f37ab3a28847e75b1cc77a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0068",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "In Oldspeak it is called, quite",
+  "target_word": "frankly,",
+  "sample_idx": 2,
+  "generated_text": "literally,",
+  "generated_first_word": "literally,",
+  "similarity": 0.8028925657272339,
+  "timestamp": "2026-06-30 10:44:37"
+}

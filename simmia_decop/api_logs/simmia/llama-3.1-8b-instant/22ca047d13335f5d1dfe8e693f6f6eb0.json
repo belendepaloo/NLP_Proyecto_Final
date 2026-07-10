@@ -1,0 +1,19 @@
+{
+  "query_id": "22ca047d13335f5d1dfe8e693f6f6eb0",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0147",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 13,
+  "prefix": "Im certain hes going to kiss me, but instead he says, I read",
+  "target_word": "your",
+  "sample_idx": 2,
+  "generated_text": "a passage from",
+  "generated_first_word": "a",
+  "similarity": 0.7083026170730591,
+  "timestamp": "2026-06-30 17:51:33"
+}

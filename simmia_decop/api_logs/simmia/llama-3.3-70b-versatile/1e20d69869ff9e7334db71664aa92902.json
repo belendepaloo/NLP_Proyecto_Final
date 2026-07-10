@@ -1,0 +1,19 @@
+{
+  "query_id": "1e20d69869ff9e7334db71664aa92902",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0021",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "The men of the oasis",
+  "target_word": "surrounded",
+  "sample_idx": 1,
+  "generated_text": "were",
+  "generated_first_word": "were",
+  "similarity": 0.6605911254882812,
+  "timestamp": "2026-07-01 15:15:49"
+}

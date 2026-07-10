@@ -1,0 +1,19 @@
+{
+  "query_id": "2108fc86ec6f23776e53ee60202d2821",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0031",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 14,
+  "prefix": "Whenever he could, he sought out a new road to travel. He had never",
+  "target_word": "been",
+  "sample_idx": 2,
+  "generated_text": "been satisfied with",
+  "generated_first_word": "been",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 07:31:00"
+}

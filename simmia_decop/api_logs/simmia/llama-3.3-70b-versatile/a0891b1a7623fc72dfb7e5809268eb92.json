@@ -1,0 +1,19 @@
+{
+  "query_id": "a0891b1a7623fc72dfb7e5809268eb92",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0133",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 18,
+  "prefix": "They might be working together for a greater cause in public. In private, his favorite pastime was scorning",
+  "target_word": "her",
+  "sample_idx": 2,
+  "generated_text": "her",
+  "generated_first_word": "her",
+  "similarity": 1.0,
+  "timestamp": "2026-07-05 17:16:21"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "553381d08176f8df64b5d18146335573",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0021",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "The men of the oasis surrounded the horsemen",
+  "target_word": "from",
+  "sample_idx": 1,
+  "generated_text": "with fierce determination",
+  "generated_first_word": "with",
+  "similarity": 0.7705891132354736,
+  "timestamp": "2026-06-30 06:37:53"
+}

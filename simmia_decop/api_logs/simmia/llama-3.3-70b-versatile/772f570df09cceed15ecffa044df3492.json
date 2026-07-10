@@ -1,0 +1,19 @@
+{
+  "query_id": "772f570df09cceed15ecffa044df3492",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0020",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 15,
+  "prefix": "Yes, I suppose I will, Lore sighed. Break it up! The shouts came from the",
+  "target_word": "streets",
+  "sample_idx": 2,
+  "generated_text": "street",
+  "generated_first_word": "street",
+  "similarity": 0.9483820199966431,
+  "timestamp": "2026-07-01 15:13:40"
+}

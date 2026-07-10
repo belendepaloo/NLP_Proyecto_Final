@@ -1,0 +1,19 @@
+{
+  "query_id": "c5ec844064d729fb9bb8171ce5634368",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0120",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "At first Frodo felt as if he",
+  "target_word": "had",
+  "sample_idx": 0,
+  "generated_text": "he was still",
+  "generated_first_word": "he",
+  "similarity": 0.6830410957336426,
+  "timestamp": "2026-06-30 15:07:44"
+}

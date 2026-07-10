@@ -1,0 +1,19 @@
+{
+  "query_id": "65f91f94a9fefd2133bf263dd05e8a3f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0120",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "At first Frodo felt as if he had indeed been turned into",
+  "target_word": "stone",
+  "sample_idx": 0,
+  "generated_text": "stone",
+  "generated_first_word": "stone",
+  "similarity": 1.0000001192092896,
+  "timestamp": "2026-07-05 16:14:57"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "e7113987dd90b48f1bebfa0379a617aa",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0099",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 17,
+  "prefix": "And not a hint of rot. The last attack had been two days ago. Two days, with",
+  "target_word": "seventy-five",
+  "sample_idx": 1,
+  "generated_text": "no",
+  "generated_first_word": "no",
+  "similarity": 0.5651230812072754,
+  "timestamp": "2026-07-04 19:26:34"
+}

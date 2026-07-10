@@ -1,0 +1,19 @@
+{
+  "query_id": "860818f582383a765a7b9cf85c779a46",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0057",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 11,
+  "prefix": "There were times when it went on and on until the",
+  "target_word": "cruel,",
+  "sample_idx": 2,
+  "generated_text": "endless hours",
+  "generated_first_word": "endless",
+  "similarity": 0.6267353296279907,
+  "timestamp": "2026-06-30 09:48:17"
+}

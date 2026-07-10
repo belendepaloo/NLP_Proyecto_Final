@@ -1,0 +1,19 @@
+{
+  "query_id": "e573f55f98d9ae6d8db5cda9c347888e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0073",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "‘Would it? Would any of you have believed",
+  "target_word": "me",
+  "sample_idx": 2,
+  "generated_text": "that a mere",
+  "generated_first_word": "that",
+  "similarity": 0.6977402567863464,
+  "timestamp": "2026-06-30 11:10:24"
+}

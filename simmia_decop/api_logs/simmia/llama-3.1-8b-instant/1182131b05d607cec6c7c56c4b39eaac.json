@@ -1,0 +1,19 @@
+{
+  "query_id": "1182131b05d607cec6c7c56c4b39eaac",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0033",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "There was a muddy pond at the bottom of",
+  "target_word": "Lavender’s",
+  "sample_idx": 0,
+  "generated_text": "the woods.",
+  "generated_first_word": "the",
+  "similarity": 0.6163456439971924,
+  "timestamp": "2026-06-30 07:39:33"
+}

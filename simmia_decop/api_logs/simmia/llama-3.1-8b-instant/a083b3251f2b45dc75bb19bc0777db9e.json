@@ -1,0 +1,19 @@
+{
+  "query_id": "a083b3251f2b45dc75bb19bc0777db9e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0039",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "She settled herself and began to concentrate, and very quickly",
+  "target_word": "this",
+  "sample_idx": 1,
+  "generated_text": "her eyes grew",
+  "generated_first_word": "her",
+  "similarity": 0.6941907405853271,
+  "timestamp": "2026-06-30 08:12:23"
+}

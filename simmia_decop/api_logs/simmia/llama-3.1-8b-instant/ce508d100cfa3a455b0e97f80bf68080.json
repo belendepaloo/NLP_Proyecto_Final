@@ -1,0 +1,19 @@
+{
+  "query_id": "ce508d100cfa3a455b0e97f80bf68080",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0163",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 19,
+  "prefix": "A happiness so bright and hot you feel like it could incinerate you. That comes later that night, when",
+  "target_word": "Wyn",
+  "sample_idx": 2,
+  "generated_text": "the fireworks light",
+  "generated_first_word": "the",
+  "similarity": 0.652298092842102,
+  "timestamp": "2026-07-01 01:46:12"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "a203f25023fb0e5fc600749165bb4cf5",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0040",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "At that point,",
+  "target_word": "the",
+  "sample_idx": 2,
+  "generated_text": "everything",
+  "generated_first_word": "everything",
+  "similarity": 0.6782841086387634,
+  "timestamp": "2026-07-02 00:18:39"
+}

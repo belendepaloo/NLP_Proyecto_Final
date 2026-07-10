@@ -1,0 +1,25 @@
+{
+  "query_id": "88e7b4c20004fcac71257d94411eabc8",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0184",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "title": "Unfortunately Yours",
+  "author": "Tessa Bailey",
+  "length": "medium",
+  "permutation_index": 2,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Unfortunately Yours\" book by Tessa Bailey?\nOptions:\nA. Regarding you? Getting hitched to and hiring a Vos would assist you in securing a small business loan. She absently gestured toward the general vicinity of his vineyard. You could continue producing wine. Perhaps even wine people can tolerate drinking, with my assistance. Don't you desire the winery to prosper? I did. Her eyebrows knitted together over the gruff note in his voice. I did. But I accepted that this is the one thing I'm bad at.\nB. Regarding you? Getting married to and hiring a Vos will assist you in getting a small business loan. She absentmindedly gestured towards the general area of his vineyard. You could keep producing wine. Perhaps even wine that people can tolerate drinking, with my assistance. Don't you want the winery to thrive? I did. Her eyebrows furrowed at the gruffness in his voice. I did. But I accepted that this is the one thing I'm awful at. \nC. As for you? Marrying and bringing on a Vos would help you get a small business loan. She waved her hand vaguely in the direction of his vineyard. You could go on making wine. Maybe even wine folks can stand to drink, with my help. Don't you want the winery to succeed? I did. Her brows came together over the coarse tone in his voice. I did. However, I resigned myself to the fact that this is the one thing I'm terrible at.\nD. As for you? Marrying and employing a Vos will help you secure a small business loan. She threw an absent gesture in the general direction of his vineyard. You could continue making wine. Maybe even wine people can stand to swallow, with my help. Dont you want the winery to be a success? I did. Her brows drew together over the gruff note in his voice. I did. But I resigned myself to the fact that this is the one thing Im terrible at. Youre forgetting basic human hygiene. I must not smell that bad, he said against the side of her neck, his lips brushing that sensitive patch beneath her ear, warm breath coasting down the collar of her shirtand that arm.\nAnswer:",
+  "options": {
+    "A": "Regarding you? Getting hitched to and hiring a Vos would assist you in securing a small business loan. She absently gestured toward the general vicinity of his vineyard. You could continue producing wine. Perhaps even wine people can tolerate drinking, with my assistance. Don't you desire the winery to prosper? I did. Her eyebrows knitted together over the gruff note in his voice. I did. But I accepted that this is the one thing I'm bad at.",
+    "B": "Regarding you? Getting married to and hiring a Vos will assist you in getting a small business loan. She absentmindedly gestured towards the general area of his vineyard. You could keep producing wine. Perhaps even wine that people can tolerate drinking, with my assistance. Don't you want the winery to thrive? I did. Her eyebrows furrowed at the gruffness in his voice. I did. But I accepted that this is the one thing I'm awful at. ",
+    "C": "As for you? Marrying and bringing on a Vos would help you get a small business loan. She waved her hand vaguely in the direction of his vineyard. You could go on making wine. Maybe even wine folks can stand to drink, with my help. Don't you want the winery to succeed? I did. Her brows came together over the coarse tone in his voice. I did. However, I resigned myself to the fact that this is the one thing I'm terrible at.",
+    "D": "As for you? Marrying and employing a Vos will help you secure a small business loan. She threw an absent gesture in the general direction of his vineyard. You could continue making wine. Maybe even wine people can stand to swallow, with my help. Dont you want the winery to be a success? I did. Her brows drew together over the gruff note in his voice. I did. But I resigned myself to the fact that this is the one thing Im terrible at. Youre forgetting basic human hygiene. I must not smell that bad, he said against the side of her neck, his lips brushing that sensitive patch beneath her ear, warm breath coasting down the collar of her shirtand that arm."
+  },
+  "gold_letter": "D",
+  "predicted_letter": "D",
+  "is_correct": 1,
+  "timestamp": "2026-07-08 05:28:03"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "e4ac36723bee1edfe04a115affaf4546",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0011",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 12,
+  "prefix": "Ill have more time to adjust to the residency, and then we",
+  "target_word": "can",
+  "sample_idx": 2,
+  "generated_text": "can start making",
+  "generated_first_word": "can",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 05:46:12"
+}

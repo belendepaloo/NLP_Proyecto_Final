@@ -1,0 +1,19 @@
+{
+  "query_id": "29d6e1eaaeb9eae172c52dda16644717",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0173",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 14,
+  "prefix": "But no ship came ever again from the West to Nmenor, and Avalln was",
+  "target_word": "veiled",
+  "sample_idx": 1,
+  "generated_text": "forgotten",
+  "generated_first_word": "forgotten",
+  "similarity": 0.6323355436325073,
+  "timestamp": "2026-07-06 18:05:50"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "7f6210d0699bee8c6aecb53d18dd44d8",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0065",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "If were not in",
+  "target_word": "the",
+  "sample_idx": 0,
+  "generated_text": "a remote area",
+  "generated_first_word": "a",
+  "similarity": 0.7954018712043762,
+  "timestamp": "2026-06-30 10:28:11"
+}

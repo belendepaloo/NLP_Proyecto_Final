@@ -1,0 +1,19 @@
+{
+  "query_id": "22de6a2a46de66de0967d1b220282f85",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0044",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Lore",
+  "target_word": "scowled",
+  "sample_idx": 0,
+  "generated_text": "of",
+  "generated_first_word": "of",
+  "similarity": 0.6305731534957886,
+  "timestamp": "2026-06-30 08:35:51"
+}

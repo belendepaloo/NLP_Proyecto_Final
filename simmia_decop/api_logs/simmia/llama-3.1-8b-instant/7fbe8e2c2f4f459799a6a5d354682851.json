@@ -1,0 +1,19 @@
+{
+  "query_id": "7fbe8e2c2f4f459799a6a5d354682851",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0106",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Who knows…maybe it’s",
+  "target_word": "better",
+  "sample_idx": 0,
+  "generated_text": "just a myth",
+  "generated_first_word": "just",
+  "similarity": 0.6953866481781006,
+  "timestamp": "2026-06-30 13:56:15"
+}

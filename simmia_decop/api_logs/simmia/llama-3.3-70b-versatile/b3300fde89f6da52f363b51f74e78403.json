@@ -1,0 +1,19 @@
+{
+  "query_id": "b3300fde89f6da52f363b51f74e78403",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0182",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "He was buttering",
+  "target_word": "his",
+  "sample_idx": 2,
+  "generated_text": "his",
+  "generated_first_word": "his",
+  "similarity": 1.0,
+  "timestamp": "2026-07-08 01:29:01"
+}

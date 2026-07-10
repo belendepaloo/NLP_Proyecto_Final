@@ -1,0 +1,19 @@
+{
+  "query_id": "61ef04d4a402b6cab5fd7e383cb7544c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0114",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "‘The first time,’ Hortensia said, ‘I poured half",
+  "target_word": "a",
+  "sample_idx": 2,
+  "generated_text": "of the bottle",
+  "generated_first_word": "of",
+  "similarity": 0.7423917055130005,
+  "timestamp": "2026-06-30 14:37:35"
+}

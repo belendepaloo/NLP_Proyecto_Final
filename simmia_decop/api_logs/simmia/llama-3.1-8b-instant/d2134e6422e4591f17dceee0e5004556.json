@@ -1,0 +1,19 @@
+{
+  "query_id": "d2134e6422e4591f17dceee0e5004556",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0158",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "He walked slowly",
+  "target_word": "through",
+  "sample_idx": 2,
+  "generated_text": "down the deserted",
+  "generated_first_word": "down",
+  "similarity": 0.7302576303482056,
+  "timestamp": "2026-06-30 18:43:02"
+}

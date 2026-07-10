@@ -1,0 +1,19 @@
+{
+  "query_id": "1024a4a54e6000fcdb2fda60c45c504d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0171",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Now what sort",
+  "target_word": "of",
+  "sample_idx": 2,
+  "generated_text": "of trouble",
+  "generated_first_word": "of",
+  "similarity": 1.0,
+  "timestamp": "2026-07-01 02:22:41"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "b4a098a673c17b05606a8ea07c05f899",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0172",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "But she was brought up in",
+  "target_word": "the",
+  "sample_idx": 0,
+  "generated_text": "London",
+  "generated_first_word": "London",
+  "similarity": 0.638895571231842,
+  "timestamp": "2026-07-06 17:59:01"
+}

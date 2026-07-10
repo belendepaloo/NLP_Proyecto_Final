@@ -1,0 +1,19 @@
+{
+  "query_id": "d7f88eee3d63f33ea935f40f6fe248c5",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0031",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Whenever he",
+  "target_word": "could,",
+  "sample_idx": 0,
+  "generated_text": "went",
+  "generated_first_word": "went",
+  "similarity": 0.6254153251647949,
+  "timestamp": "2026-07-01 16:01:58"
+}

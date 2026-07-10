@@ -1,0 +1,19 @@
+{
+  "query_id": "e3f782843b36c01bb66cd401c81edbe4",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0172",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "But she was",
+  "target_word": "brought",
+  "sample_idx": 1,
+  "generated_text": "not",
+  "generated_first_word": "not",
+  "similarity": 0.6540340185165405,
+  "timestamp": "2026-07-06 17:58:22"
+}

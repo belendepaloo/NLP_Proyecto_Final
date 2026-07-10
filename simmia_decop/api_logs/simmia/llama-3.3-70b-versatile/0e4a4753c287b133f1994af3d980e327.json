@@ -1,0 +1,19 @@
+{
+  "query_id": "0e4a4753c287b133f1994af3d980e327",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0169",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "There they fought to the death; but",
+  "target_word": "Thingol",
+  "sample_idx": 2,
+  "generated_text": "in",
+  "generated_first_word": "in",
+  "similarity": 0.617304265499115,
+  "timestamp": "2026-07-06 17:44:12"
+}

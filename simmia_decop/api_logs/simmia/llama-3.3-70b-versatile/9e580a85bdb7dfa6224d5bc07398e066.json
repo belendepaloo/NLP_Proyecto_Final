@@ -1,0 +1,19 @@
+{
+  "query_id": "9e580a85bdb7dfa6224d5bc07398e066",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0001",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "“And I know the Soul",
+  "target_word": "of",
+  "sample_idx": 1,
+  "generated_text": "selects her",
+  "generated_first_word": "selects",
+  "similarity": 0.619623064994812,
+  "timestamp": "2026-07-01 13:42:02"
+}

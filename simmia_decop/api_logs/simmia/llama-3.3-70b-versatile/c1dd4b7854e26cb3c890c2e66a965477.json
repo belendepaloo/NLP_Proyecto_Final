@@ -1,0 +1,19 @@
+{
+  "query_id": "c1dd4b7854e26cb3c890c2e66a965477",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0102",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Maud smiled as she passed the",
+  "target_word": "pond",
+  "sample_idx": 0,
+  "generated_text": "small café",
+  "generated_first_word": "small",
+  "similarity": 0.6301993131637573,
+  "timestamp": "2026-07-04 19:37:24"
+}

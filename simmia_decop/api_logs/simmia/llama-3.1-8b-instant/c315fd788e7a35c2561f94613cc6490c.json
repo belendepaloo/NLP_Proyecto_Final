@@ -1,0 +1,19 @@
+{
+  "query_id": "c315fd788e7a35c2561f94613cc6490c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0144",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "If hereafter in your new place of",
+  "target_word": "abode",
+  "sample_idx": 0,
+  "generated_text": "abode",
+  "generated_first_word": "abode",
+  "similarity": 1.0000001192092896,
+  "timestamp": "2026-06-30 17:35:04"
+}

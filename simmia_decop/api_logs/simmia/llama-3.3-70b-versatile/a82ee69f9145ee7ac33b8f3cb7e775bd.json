@@ -1,0 +1,19 @@
+{
+  "query_id": "a82ee69f9145ee7ac33b8f3cb7e775bd",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0154",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "The man still",
+  "target_word": "said",
+  "sample_idx": 1,
+  "generated_text": "lived",
+  "generated_first_word": "lived",
+  "similarity": 0.6689674258232117,
+  "timestamp": "2026-07-06 16:32:56"
+}

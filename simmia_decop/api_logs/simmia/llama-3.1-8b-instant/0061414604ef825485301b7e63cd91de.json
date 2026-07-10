@@ -1,0 +1,19 @@
+{
+  "query_id": "0061414604ef825485301b7e63cd91de",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0118",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 14,
+  "prefix": "Ardin Javar was a bear of a man with a bushy greying beard and",
+  "target_word": "a",
+  "sample_idx": 1,
+  "generated_text": "eyes that seemed",
+  "generated_first_word": "eyes",
+  "similarity": 0.6841843128204346,
+  "timestamp": "2026-06-30 14:59:26"
+}

@@ -1,0 +1,25 @@
+{
+  "query_id": "460646c8a8d752c1053e12b04143ed4a",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0088",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "title": "What Lies in the Woods",
+  "author": "Kate Alice Marshall",
+  "length": "medium",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"What Lies in the Woods\" book by Kate Alice Marshall?\nOptions:\nA. The pond was surrounded by trees. Frogs and bugs made noises near the water, which had a certain appeal but lacked the magic of that past summer. Ethan questioned if I was wrong about Stahl assaulting me, wanting me to admit another man did it instead. I refused to accept his theory, telling him to stop asking. \nB. The pond was framed by trees and filled with croaking frogs and buzzing insects. It had some charm but none of the magic of that gone summer. Ethan asked if I could be mistaken that Stahl attacked me, suggesting another man did it. I told him I wouldn't entertain his pet theory and to stop asking.\nC. Trees ringed the pond where frogs croaked and insects danced. The scene had faded appeal unlike the lost magic of that summer. Ethan wondered if I was wrong in accusing Stahl, proposing another man attacked me instead. I rejected his pet theory, demanding he stop questioning me.\nD. There was nothing to know. Nothing that could be proved. The trees opened up at the edge of the pond. Frogs creaked and croaked in the water, and insects danced along the surface. The scene had a bedraggled kind of charm to it, but the magic of that summer was long gone. Is it at all possible that you were mistaken? Ethan asked, his voice keeping me brutishly anchored in the present. I wished he would leaveand I was glad he didnt. Time here was slippery. I didnt want to be alone with the past. Can you see any possibility that the man who attacked you wasnt Stahl, but someone else? Will you just let it go? Im not going to play along with your pet theory, I said.\nAnswer:",
+  "options": {
+    "A": "The pond was surrounded by trees. Frogs and bugs made noises near the water, which had a certain appeal but lacked the magic of that past summer. Ethan questioned if I was wrong about Stahl assaulting me, wanting me to admit another man did it instead. I refused to accept his theory, telling him to stop asking. ",
+    "B": "The pond was framed by trees and filled with croaking frogs and buzzing insects. It had some charm but none of the magic of that gone summer. Ethan asked if I could be mistaken that Stahl attacked me, suggesting another man did it. I told him I wouldn't entertain his pet theory and to stop asking.",
+    "C": "Trees ringed the pond where frogs croaked and insects danced. The scene had faded appeal unlike the lost magic of that summer. Ethan wondered if I was wrong in accusing Stahl, proposing another man attacked me instead. I rejected his pet theory, demanding he stop questioning me.",
+    "D": "There was nothing to know. Nothing that could be proved. The trees opened up at the edge of the pond. Frogs creaked and croaked in the water, and insects danced along the surface. The scene had a bedraggled kind of charm to it, but the magic of that summer was long gone. Is it at all possible that you were mistaken? Ethan asked, his voice keeping me brutishly anchored in the present. I wished he would leaveand I was glad he didnt. Time here was slippery. I didnt want to be alone with the past. Can you see any possibility that the man who attacked you wasnt Stahl, but someone else? Will you just let it go? Im not going to play along with your pet theory, I said."
+  },
+  "gold_letter": "D",
+  "predicted_letter": "D",
+  "is_correct": 1,
+  "timestamp": "2026-07-08 04:31:33"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "f1c6ea6f0bedd7885478f49e9fd3c4ed",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0088",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "There was",
+  "target_word": "nothing",
+  "sample_idx": 2,
+  "generated_text": "a mysterious",
+  "generated_first_word": "a",
+  "similarity": 0.643435001373291,
+  "timestamp": "2026-06-30 12:25:38"
+}

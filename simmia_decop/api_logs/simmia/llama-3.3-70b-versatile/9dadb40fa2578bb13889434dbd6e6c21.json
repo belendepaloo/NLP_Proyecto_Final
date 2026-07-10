@@ -1,0 +1,19 @@
+{
+  "query_id": "9dadb40fa2578bb13889434dbd6e6c21",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0014",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 12,
+  "prefix": "And Mom will def get over this, eventually. She got over my",
+  "target_word": "bellybutton",
+  "sample_idx": 0,
+  "generated_text": "brother's",
+  "generated_first_word": "brother's",
+  "similarity": 0.6082401275634766,
+  "timestamp": "2026-07-01 14:44:44"
+}

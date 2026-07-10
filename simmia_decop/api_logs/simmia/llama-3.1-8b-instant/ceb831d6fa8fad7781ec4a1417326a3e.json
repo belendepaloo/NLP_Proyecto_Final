@@ -1,0 +1,19 @@
+{
+  "query_id": "ceb831d6fa8fad7781ec4a1417326a3e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0103",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Fell in love. Met",
+  "target_word": "his",
+  "sample_idx": 1,
+  "generated_text": "her",
+  "generated_first_word": "her",
+  "similarity": 0.8214578628540039,
+  "timestamp": "2026-06-30 13:42:21"
+}

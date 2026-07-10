@@ -1,0 +1,19 @@
+{
+  "query_id": "8c35928ea571fd65f3c85c0d0201a3f4",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0122",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 16,
+  "prefix": "Still, he couldnt walk away from Natalie if she needed him. Not when shed sucked it",
+  "target_word": "up",
+  "sample_idx": 2,
+  "generated_text": "up to ask",
+  "generated_first_word": "up",
+  "similarity": 1.0,
+  "timestamp": "2026-07-05 16:26:00"
+}

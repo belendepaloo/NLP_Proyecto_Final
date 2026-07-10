@@ -1,0 +1,19 @@
+{
+  "query_id": "9553ceaceffc31c75ae1f141eacee053",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0061",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Promiscuity went unpunished,",
+  "target_word": "divorce",
+  "sample_idx": 1,
+  "generated_text": "and virtue was",
+  "generated_first_word": "and",
+  "similarity": 0.6002620458602905,
+  "timestamp": "2026-06-30 10:07:14"
+}

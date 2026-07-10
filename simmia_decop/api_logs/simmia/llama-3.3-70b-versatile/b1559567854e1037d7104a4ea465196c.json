@@ -1,0 +1,19 @@
+{
+  "query_id": "b1559567854e1037d7104a4ea465196c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0131",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "In a chair, at the far side of the room facing the outer door, sat a woman. Her",
+  "target_word": "long",
+  "sample_idx": 1,
+  "generated_text": "face",
+  "generated_first_word": "face",
+  "similarity": 0.6807771921157837,
+  "timestamp": "2026-07-05 17:07:18"
+}

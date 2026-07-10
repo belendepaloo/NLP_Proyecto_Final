@@ -1,0 +1,19 @@
+{
+  "query_id": "c8424cc7409b56928f3437670283e6d1",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0015",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 1,
+  "prefix": "I",
+  "target_word": "will",
+  "sample_idx": 1,
+  "generated_text": "was",
+  "generated_first_word": "was",
+  "similarity": 0.6900397539138794,
+  "timestamp": "2026-06-30 06:04:46"
+}

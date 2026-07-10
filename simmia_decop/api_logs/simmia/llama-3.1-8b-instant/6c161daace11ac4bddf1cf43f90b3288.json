@@ -1,0 +1,19 @@
+{
+  "query_id": "6c161daace11ac4bddf1cf43f90b3288",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0102",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Maud smiled as she passed the",
+  "target_word": "pond",
+  "sample_idx": 0,
+  "generated_text": "old, worn",
+  "generated_first_word": "old,",
+  "similarity": 0.6043421030044556,
+  "timestamp": "2026-06-30 13:37:47"
+}

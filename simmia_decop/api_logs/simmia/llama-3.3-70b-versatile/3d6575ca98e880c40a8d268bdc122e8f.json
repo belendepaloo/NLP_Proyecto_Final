@@ -1,0 +1,19 @@
+{
+  "query_id": "3d6575ca98e880c40a8d268bdc122e8f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0065",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "If were not in the same",
+  "target_word": "room,",
+  "sample_idx": 2,
+  "generated_text": "room",
+  "generated_first_word": "room",
+  "similarity": 0.9598100781440735,
+  "timestamp": "2026-07-03 15:15:11"
+}

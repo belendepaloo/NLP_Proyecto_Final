@@ -1,0 +1,19 @@
+{
+  "query_id": "bbdb53b71d7ee6d849cda6e1ceb5f143",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0089",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Still I",
+  "target_word": "couldn't",
+  "sample_idx": 0,
+  "generated_text": "haven't",
+  "generated_first_word": "haven't",
+  "similarity": 0.7222382426261902,
+  "timestamp": "2026-06-30 12:31:27"
+}

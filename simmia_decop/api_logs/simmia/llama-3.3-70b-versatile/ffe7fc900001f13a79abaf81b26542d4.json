@@ -1,0 +1,19 @@
+{
+  "query_id": "ffe7fc900001f13a79abaf81b26542d4",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0033",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "There was a",
+  "target_word": "muddy",
+  "sample_idx": 0,
+  "generated_text": "man",
+  "generated_first_word": "man",
+  "similarity": 0.6314712166786194,
+  "timestamp": "2026-07-01 17:42:32"
+}

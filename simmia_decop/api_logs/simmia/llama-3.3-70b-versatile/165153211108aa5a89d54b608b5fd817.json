@@ -1,0 +1,19 @@
+{
+  "query_id": "165153211108aa5a89d54b608b5fd817",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0038",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "But for all of that, it was",
+  "target_word": "a",
+  "sample_idx": 1,
+  "generated_text": "still",
+  "generated_first_word": "still",
+  "similarity": 0.6238480806350708,
+  "timestamp": "2026-07-02 00:10:00"
+}

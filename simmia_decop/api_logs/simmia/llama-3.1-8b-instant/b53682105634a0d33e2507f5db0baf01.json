@@ -1,0 +1,19 @@
+{
+  "query_id": "b53682105634a0d33e2507f5db0baf01",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0009",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "‘You look splendid,’ he said aloud. ‘I will risk",
+  "target_word": "a",
+  "sample_idx": 2,
+  "generated_text": "everything for you",
+  "generated_first_word": "everything",
+  "similarity": 0.6274564862251282,
+  "timestamp": "2026-06-30 05:34:51"
+}

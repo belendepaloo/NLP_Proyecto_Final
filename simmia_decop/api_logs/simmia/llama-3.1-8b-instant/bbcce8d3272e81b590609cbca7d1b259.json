@@ -1,0 +1,19 @@
+{
+  "query_id": "bbcce8d3272e81b590609cbca7d1b259",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0109",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 16,
+  "prefix": "Part love story, part thriller, this novel kept me entranced until the very last page. A",
+  "target_word": "warm,",
+  "sample_idx": 0,
+  "generated_text": "and even then",
+  "generated_first_word": "and",
+  "similarity": 0.6354554891586304,
+  "timestamp": "2026-06-30 14:14:52"
+}

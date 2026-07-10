@@ -1,0 +1,19 @@
+{
+  "query_id": "4de5831a8ad574e1d1e285349285e47a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0036",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "The idea of",
+  "target_word": "playing",
+  "sample_idx": 0,
+  "generated_text": "universal",
+  "generated_first_word": "universal",
+  "similarity": 0.6120008230209351,
+  "timestamp": "2026-07-01 18:57:59"
+}

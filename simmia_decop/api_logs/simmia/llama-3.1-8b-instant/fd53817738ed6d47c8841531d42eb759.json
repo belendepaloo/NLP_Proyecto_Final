@@ -1,0 +1,19 @@
+{
+  "query_id": "fd53817738ed6d47c8841531d42eb759",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0160",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "My room is on",
+  "target_word": "the",
+  "sample_idx": 2,
+  "generated_text": "the second floor",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-07-01 01:27:11"
+}

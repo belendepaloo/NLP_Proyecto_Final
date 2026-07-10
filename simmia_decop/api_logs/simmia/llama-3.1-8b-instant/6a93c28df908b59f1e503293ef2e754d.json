@@ -1,0 +1,19 @@
+{
+  "query_id": "6a93c28df908b59f1e503293ef2e754d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0054",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 14,
+  "prefix": "All that confidence he had at the conin a single conversation, Ive put a",
+  "target_word": "dent",
+  "sample_idx": 1,
+  "generated_text": "lot of pressure",
+  "generated_first_word": "lot",
+  "similarity": 0.633025586605072,
+  "timestamp": "2026-06-30 09:33:53"
+}

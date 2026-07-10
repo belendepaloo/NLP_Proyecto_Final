@@ -1,0 +1,19 @@
+{
+  "query_id": "c0420338afb7bf6b80c67f6e5a3e38df",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0199",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 9,
+  "prefix": "What makes you think I would have you, Lady",
+  "target_word": "Sabran?",
+  "sample_idx": 2,
+  "generated_text": "Whistled",
+  "generated_first_word": "Whistled",
+  "similarity": 0.6131181120872498,
+  "timestamp": "2026-07-08 02:48:21"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "574468784706206434288fe80d05f635",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0000",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 14,
+  "prefix": "Since he was arrested he had not been fed. He sat as still as",
+  "target_word": "he",
+  "sample_idx": 0,
+  "generated_text": "a statue,",
+  "generated_first_word": "a",
+  "similarity": 0.7097499966621399,
+  "timestamp": "2026-06-30 04:49:22"
+}

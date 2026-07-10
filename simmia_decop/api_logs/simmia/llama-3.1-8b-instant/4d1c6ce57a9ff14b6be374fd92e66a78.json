@@ -1,0 +1,19 @@
+{
+  "query_id": "4d1c6ce57a9ff14b6be374fd92e66a78",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0123",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 18,
+  "prefix": "Natalie followed, smiling and thanking people who congratulated her as she passed. When they reached a quiet corner",
+  "target_word": "of",
+  "sample_idx": 1,
+  "generated_text": "of the hotel",
+  "generated_first_word": "of",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 15:25:30"
+}

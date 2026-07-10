@@ -1,0 +1,19 @@
+{
+  "query_id": "4458b003c9f4b7ee0f8b6a8544762ae0",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0145",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 11,
+  "prefix": "'Tell yer what?' asked the sleepy Noah, shaking himself pettishy. 'That",
+  "target_word": "about--NANCY,'",
+  "sample_idx": 1,
+  "generated_text": "I've had",
+  "generated_first_word": "I've",
+  "similarity": 0.6186902523040771,
+  "timestamp": "2026-06-30 17:40:54"
+}

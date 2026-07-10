@@ -1,0 +1,19 @@
+{
+  "query_id": "6ab95a51b876429efd763b6817596455",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0052",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "When he’d found his scarlet team robes and pulled on his cloak",
+  "target_word": "for",
+  "sample_idx": 2,
+  "generated_text": "he",
+  "generated_first_word": "he",
+  "similarity": 0.7207114696502686,
+  "timestamp": "2026-07-03 14:09:49"
+}

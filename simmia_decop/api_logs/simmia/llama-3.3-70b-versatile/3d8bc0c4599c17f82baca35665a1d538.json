@@ -1,0 +1,19 @@
+{
+  "query_id": "3d8bc0c4599c17f82baca35665a1d538",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0081",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 11,
+  "prefix": "The next moment the two of them were running down the",
+  "target_word": "drive",
+  "sample_idx": 0,
+  "generated_text": "street",
+  "generated_first_word": "street",
+  "similarity": 0.6966050863265991,
+  "timestamp": "2026-07-04 18:03:12"
+}

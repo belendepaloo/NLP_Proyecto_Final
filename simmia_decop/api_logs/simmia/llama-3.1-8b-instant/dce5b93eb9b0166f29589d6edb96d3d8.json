@@ -1,0 +1,19 @@
+{
+  "query_id": "dce5b93eb9b0166f29589d6edb96d3d8",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0004",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 15,
+  "prefix": "It creaked, but if the sound woke anyone inside, they didnt protest. Bastian and Gabe",
+  "target_word": "settled",
+  "sample_idx": 0,
+  "generated_text": "were already halfway",
+  "generated_first_word": "were",
+  "similarity": 0.6800515651702881,
+  "timestamp": "2026-06-30 05:09:47"
+}

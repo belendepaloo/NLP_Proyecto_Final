@@ -1,0 +1,19 @@
+{
+  "query_id": "fae287e9726d75e9b2ce5a42e0e8f2e3",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0189",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "‘A girl doesn’t get a",
+  "target_word": "man",
+  "sample_idx": 1,
+  "generated_text": "chance",
+  "generated_first_word": "chance",
+  "similarity": 0.6377806663513184,
+  "timestamp": "2026-07-08 02:01:18"
+}

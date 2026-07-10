@@ -1,0 +1,19 @@
+{
+  "query_id": "0cc259d590b421aca0fc8a1425f903c5",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0139",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Before",
+  "target_word": "he",
+  "sample_idx": 1,
+  "generated_text": "the",
+  "generated_first_word": "the",
+  "similarity": 0.7436275482177734,
+  "timestamp": "2026-06-30 17:09:35"
+}

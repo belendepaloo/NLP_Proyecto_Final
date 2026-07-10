@@ -1,0 +1,19 @@
+{
+  "query_id": "ecb86bd77d76c43cb6bb127da3702116",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0176",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Men in powerful",
+  "target_word": "positions",
+  "sample_idx": 0,
+  "generated_text": "positions",
+  "generated_first_word": "positions",
+  "similarity": 1.0,
+  "timestamp": "2026-07-01 02:47:46"
+}

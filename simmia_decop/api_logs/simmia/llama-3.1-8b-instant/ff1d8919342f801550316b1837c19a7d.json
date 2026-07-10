@@ -1,0 +1,19 @@
+{
+  "query_id": "ff1d8919342f801550316b1837c19a7d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0045",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "A decade younger than I was now.",
+  "target_word": "Had",
+  "sample_idx": 0,
+  "generated_text": "she would have",
+  "generated_first_word": "she",
+  "similarity": 0.6608073711395264,
+  "timestamp": "2026-06-30 08:42:58"
+}

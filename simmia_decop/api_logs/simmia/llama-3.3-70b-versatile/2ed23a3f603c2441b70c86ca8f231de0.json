@@ -1,0 +1,19 @@
+{
+  "query_id": "2ed23a3f603c2441b70c86ca8f231de0",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0047",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "The sun began its departure, as well.",
+  "target_word": "The",
+  "sample_idx": 2,
+  "generated_text": "Slowly",
+  "generated_first_word": "Slowly",
+  "similarity": 0.6405119299888611,
+  "timestamp": "2026-07-02 03:22:24"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "a89b6b39326ef7e5e68b01d4b0280ee0",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0013",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "‘You ignorant little slug!’ the Trunchbull bellowed. ‘You witless",
+  "target_word": "weed!",
+  "sample_idx": 0,
+  "generated_text": "wretch.'",
+  "generated_first_word": "wretch.'",
+  "similarity": 0.6347361207008362,
+  "timestamp": "2026-06-30 05:56:10"
+}

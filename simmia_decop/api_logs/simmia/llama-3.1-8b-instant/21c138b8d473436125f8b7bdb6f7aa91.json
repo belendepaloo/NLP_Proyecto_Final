@@ -1,0 +1,19 @@
+{
+  "query_id": "21c138b8d473436125f8b7bdb6f7aa91",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0182",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 14,
+  "prefix": "He was buttering his bread, not looking up at her. He feels vulnerable with",
+  "target_word": "me",
+  "sample_idx": 2,
+  "generated_text": "his guard down",
+  "generated_first_word": "his",
+  "similarity": 0.7277578115463257,
+  "timestamp": "2026-07-01 03:21:14"
+}

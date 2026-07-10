@@ -1,0 +1,19 @@
+{
+  "query_id": "72570db94d38277ef7271e5e09ef53c3",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0178",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Not worth the sting.",
+  "target_word": "Natalie",
+  "sample_idx": 0,
+  "generated_text": "of the betrayal",
+  "generated_first_word": "of",
+  "similarity": 0.5923097729682922,
+  "timestamp": "2026-07-01 02:58:04"
+}

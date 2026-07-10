@@ -1,0 +1,19 @@
+{
+  "query_id": "9966746e1547037b62ef18453a9c4e0c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0166",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 15,
+  "prefix": "Wulf grabbed whatever he could throw: weapons, two oars, a rack that must once have",
+  "target_word": "held",
+  "sample_idx": 0,
+  "generated_text": "held fishing nets",
+  "generated_first_word": "held",
+  "similarity": 1.0,
+  "timestamp": "2026-07-01 01:59:51"
+}

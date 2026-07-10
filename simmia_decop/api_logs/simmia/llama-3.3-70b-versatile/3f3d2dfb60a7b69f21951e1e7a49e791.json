@@ -1,0 +1,19 @@
+{
+  "query_id": "3f3d2dfb60a7b69f21951e1e7a49e791",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0057",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "There were times when it went on",
+  "target_word": "and",
+  "sample_idx": 1,
+  "generated_text": "for",
+  "generated_first_word": "for",
+  "similarity": 0.75816810131073,
+  "timestamp": "2026-07-03 14:35:43"
+}

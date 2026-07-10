@@ -1,0 +1,19 @@
+{
+  "query_id": "c77c40a360f45e9aa920df20d6741f7d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0014",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 1,
+  "prefix": "And",
+  "target_word": "Mom",
+  "sample_idx": 0,
+  "generated_text": "then",
+  "generated_first_word": "then",
+  "similarity": 0.6628603339195251,
+  "timestamp": "2026-06-30 05:59:18"
+}

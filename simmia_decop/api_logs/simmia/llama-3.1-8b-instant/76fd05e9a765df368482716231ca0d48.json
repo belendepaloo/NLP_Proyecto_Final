@@ -1,0 +1,19 @@
+{
+  "query_id": "76fd05e9a765df368482716231ca0d48",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0193",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 13,
+  "prefix": "No ones forcing you to stay! Sabrina says. If you want to go,",
+  "target_word": "go!",
+  "sample_idx": 0,
+  "generated_text": "I'll drive",
+  "generated_first_word": "I'll",
+  "similarity": 0.6801149249076843,
+  "timestamp": "2026-07-01 04:16:25"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "4d14c6c604f6068bd93e8962c3abfcae",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0134",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Then all listened while Elrond in",
+  "target_word": "his",
+  "sample_idx": 1,
+  "generated_text": "spoke in",
+  "generated_first_word": "spoke",
+  "similarity": 0.6352466344833374,
+  "timestamp": "2026-06-30 16:16:36"
+}

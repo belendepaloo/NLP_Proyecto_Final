@@ -1,0 +1,19 @@
+{
+  "query_id": "391e1283d09d9214174a1ecabf04db0f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0097",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "“Er — Professor Lockhart?”",
+  "target_word": "Hermione",
+  "sample_idx": 1,
+  "generated_text": "\"Ah,",
+  "generated_first_word": "Ah,",
+  "similarity": 0.5673818588256836,
+  "timestamp": "2026-06-30 13:12:24"
+}

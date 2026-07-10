@@ -1,0 +1,19 @@
+{
+  "query_id": "721321c300859c2e50f66882dd8e8f0d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0023",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 11,
+  "prefix": "He was shoeless; large, dirty toes were sticking out of the",
+  "target_word": "holes",
+  "sample_idx": 0,
+  "generated_text": "tattered fabric",
+  "generated_first_word": "tattered",
+  "similarity": 0.6283050775527954,
+  "timestamp": "2026-06-30 06:48:48"
+}

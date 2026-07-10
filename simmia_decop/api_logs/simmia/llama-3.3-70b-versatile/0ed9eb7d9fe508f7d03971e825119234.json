@@ -1,0 +1,19 @@
+{
+  "query_id": "0ed9eb7d9fe508f7d03971e825119234",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0151",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Then I plop it",
+  "target_word": "onto",
+  "sample_idx": 1,
+  "generated_text": "into",
+  "generated_first_word": "into",
+  "similarity": 0.7498764991760254,
+  "timestamp": "2026-07-06 16:18:56"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "b4370b258cb917c466a1d5954a757fc6",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0153",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "“So, Harry,” said Lockhart,",
+  "target_word": "while",
+  "sample_idx": 0,
+  "generated_text": "\"you've",
+  "generated_first_word": "you've",
+  "similarity": 0.6412985324859619,
+  "timestamp": "2026-06-30 18:18:04"
+}

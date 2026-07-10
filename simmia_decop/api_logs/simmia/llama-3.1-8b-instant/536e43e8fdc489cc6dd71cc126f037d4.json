@@ -1,0 +1,19 @@
+{
+  "query_id": "536e43e8fdc489cc6dd71cc126f037d4",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0057",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "There were",
+  "target_word": "times",
+  "sample_idx": 0,
+  "generated_text": "rumors",
+  "generated_first_word": "rumors",
+  "similarity": 0.616722583770752,
+  "timestamp": "2026-06-30 09:45:42"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "387fd7e1d8fd9c9ba6ca0592a3bc5870",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0091",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "It was",
+  "target_word": "only",
+  "sample_idx": 2,
+  "generated_text": "a dark",
+  "generated_first_word": "a",
+  "similarity": 0.6237211227416992,
+  "timestamp": "2026-06-30 12:41:22"
+}

@@ -1,0 +1,25 @@
+{
+  "query_id": "caee290fbb874f90096f27b6b82ba5b4",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0177",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "title": "Oliver Twist",
+  "author": "Charles Dickens",
+  "length": "medium",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Oliver Twist\" book by Charles Dickens?\nOptions:\nA. A kind gentleman offered to help Nancy, but she declined, saying she was past the point of anyone being able to help her. He urged her not to lose hope, even though she had squandered her youth. \nB. What can I do to serve you?' 'Nothing,' replied Nancy. 'You will not persist in saying that,' rejoined the gentleman, with a voice and emphasis of kindness that might have touched a much harder and more obdurate heart. 'Think now. Tell me.' 'Nothing, sir,' rejoined the girl, weeping. 'You can do nothing to help me. I am past all hope, indeed.' 'You put yourself beyond its pale,' said the gentleman. 'The past has been a dreary waste with you, of youthful energies mis-spent, and such priceless treasures lavished, as the Creator bestows but once and never grants again, but, for the future, you may hope.\nC. The man kindly asked Nancy what he could do to help her, but she insisted there was nothing he could do as she felt she was beyond hope. He responded that she shouldn't give up hope for the future, even though she had wasted her youth.\nD. When the man kindly asked Nancy how he could serve her, she replied that there was nothing he could do to help, as she had no hope left. He gently disagreed, saying that while she had wasted her youth, she still had hope for the future.\nAnswer:",
+  "options": {
+    "A": "A kind gentleman offered to help Nancy, but she declined, saying she was past the point of anyone being able to help her. He urged her not to lose hope, even though she had squandered her youth. ",
+    "B": "What can I do to serve you?' 'Nothing,' replied Nancy. 'You will not persist in saying that,' rejoined the gentleman, with a voice and emphasis of kindness that might have touched a much harder and more obdurate heart. 'Think now. Tell me.' 'Nothing, sir,' rejoined the girl, weeping. 'You can do nothing to help me. I am past all hope, indeed.' 'You put yourself beyond its pale,' said the gentleman. 'The past has been a dreary waste with you, of youthful energies mis-spent, and such priceless treasures lavished, as the Creator bestows but once and never grants again, but, for the future, you may hope.",
+    "C": "The man kindly asked Nancy what he could do to help her, but she insisted there was nothing he could do as she felt she was beyond hope. He responded that she shouldn't give up hope for the future, even though she had wasted her youth.",
+    "D": "When the man kindly asked Nancy how he could serve her, she replied that there was nothing he could do to help, as she had no hope left. He gently disagreed, saying that while she had wasted her youth, she still had hope for the future."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "D",
+  "is_correct": 0,
+  "timestamp": "2026-07-08 05:23:59"
+}

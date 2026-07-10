@@ -1,0 +1,19 @@
+{
+  "query_id": "eab4b583ce7ecd825ff132b46f7d6bc1",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0126",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "It makes my",
+  "target_word": "heart",
+  "sample_idx": 0,
+  "generated_text": "heart feel happy",
+  "generated_first_word": "heart",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 15:36:57"
+}

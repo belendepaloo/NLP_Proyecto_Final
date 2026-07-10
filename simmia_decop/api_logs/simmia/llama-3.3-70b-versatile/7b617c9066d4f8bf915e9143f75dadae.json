@@ -1,0 +1,19 @@
+{
+  "query_id": "7b617c9066d4f8bf915e9143f75dadae",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0055",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "‘The speedometer,’ Mr",
+  "target_word": "Wormwood",
+  "sample_idx": 2,
+  "generated_text": "Johnson",
+  "generated_first_word": "Johnson",
+  "similarity": 0.6614702939987183,
+  "timestamp": "2026-07-03 14:23:07"
+}

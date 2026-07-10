@@ -1,0 +1,19 @@
+{
+  "query_id": "9a6d2b9e8537c1f24db38e3a6c5e664b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0041",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "He still",
+  "target_word": "broke",
+  "sample_idx": 1,
+  "generated_text": "remembers",
+  "generated_first_word": "remembers",
+  "similarity": 0.6395641565322876,
+  "timestamp": "2026-06-30 08:20:33"
+}

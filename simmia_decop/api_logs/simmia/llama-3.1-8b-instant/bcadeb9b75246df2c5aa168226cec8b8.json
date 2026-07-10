@@ -1,0 +1,19 @@
+{
+  "query_id": "bcadeb9b75246df2c5aa168226cec8b8",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0069",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "But when one of Marions skates slid",
+  "target_word": "out",
+  "sample_idx": 2,
+  "generated_text": "across the",
+  "generated_first_word": "across",
+  "similarity": 0.6956799030303955,
+  "timestamp": "2026-06-30 10:50:08"
+}

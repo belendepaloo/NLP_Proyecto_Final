@@ -1,0 +1,19 @@
+{
+  "query_id": "ead8ed2cd4429a5695187c8eae266960",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0065",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "If were not in the same room,",
+  "target_word": "then",
+  "sample_idx": 1,
+  "generated_text": "I would have",
+  "generated_first_word": "I",
+  "similarity": 0.7554465532302856,
+  "timestamp": "2026-06-30 10:29:07"
+}

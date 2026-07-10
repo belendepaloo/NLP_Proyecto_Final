@@ -1,0 +1,19 @@
+{
+  "query_id": "ff1ee41810dd39fea0d380fa55597acc",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0077",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Hornsby. He said to be ready",
+  "target_word": "when",
+  "sample_idx": 2,
+  "generated_text": "at all times",
+  "generated_first_word": "at",
+  "similarity": 0.7154302000999451,
+  "timestamp": "2026-06-30 11:30:34"
+}

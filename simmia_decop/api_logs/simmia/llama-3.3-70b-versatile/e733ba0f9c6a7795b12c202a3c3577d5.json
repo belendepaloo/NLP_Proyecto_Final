@@ -1,0 +1,19 @@
+{
+  "query_id": "e733ba0f9c6a7795b12c202a3c3577d5",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0164",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 15,
+  "prefix": "With a sweep of his hand he cleared a vacant space in front among the",
+  "target_word": "breakfast",
+  "sample_idx": 1,
+  "generated_text": "crowd",
+  "generated_first_word": "crowd",
+  "similarity": 0.5936680436134338,
+  "timestamp": "2026-07-06 17:22:31"
+}

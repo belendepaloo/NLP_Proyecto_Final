@@ -1,0 +1,19 @@
+{
+  "query_id": "05dcc91dc0c3c8564b60c8cda7992bfd",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0027",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "I never say to him,",
+  "target_word": "'Let",
+  "sample_idx": 1,
+  "generated_text": "\"because I",
+  "generated_first_word": "because",
+  "similarity": 0.626282811164856,
+  "timestamp": "2026-06-30 07:08:01"
+}

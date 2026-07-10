@@ -1,0 +1,19 @@
+{
+  "query_id": "94ad2418bada11d4d2d26d85ca8bd1a2",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0016",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 19,
+  "prefix": "There he would often wander long, and late would return. Still therefore, after the Long Night, the light of",
+  "target_word": "Valinor",
+  "sample_idx": 0,
+  "generated_text": "the setting sun",
+  "generated_first_word": "the",
+  "similarity": 0.6400368213653564,
+  "timestamp": "2026-06-30 06:14:56"
+}

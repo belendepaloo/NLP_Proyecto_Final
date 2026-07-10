@@ -1,0 +1,19 @@
+{
+  "query_id": "ef6a756a9a1fc5488cb4e91df6e8edf0",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0015",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "I will need passage and",
+  "target_word": "enough",
+  "sample_idx": 2,
+  "generated_text": "a visa",
+  "generated_first_word": "a",
+  "similarity": 0.6483436822891235,
+  "timestamp": "2026-07-01 14:47:51"
+}

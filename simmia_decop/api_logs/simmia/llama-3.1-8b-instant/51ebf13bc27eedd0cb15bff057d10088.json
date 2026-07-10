@@ -1,0 +1,19 @@
+{
+  "query_id": "51ebf13bc27eedd0cb15bff057d10088",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0101",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Oh, don't tell you are going",
+  "target_word": "to",
+  "sample_idx": 2,
+  "generated_text": "to the party",
+  "generated_first_word": "to",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 13:32:48"
+}

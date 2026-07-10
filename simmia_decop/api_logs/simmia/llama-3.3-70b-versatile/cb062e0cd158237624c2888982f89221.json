@@ -1,0 +1,19 @@
+{
+  "query_id": "cb062e0cd158237624c2888982f89221",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0084",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "Big Jim came by his name honestly. He",
+  "target_word": "was",
+  "sample_idx": 1,
+  "generated_text": "was",
+  "generated_first_word": "was",
+  "similarity": 1.0000001192092896,
+  "timestamp": "2026-07-04 18:16:15"
+}

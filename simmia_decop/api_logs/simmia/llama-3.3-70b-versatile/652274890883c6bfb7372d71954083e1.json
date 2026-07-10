@@ -1,0 +1,19 @@
+{
+  "query_id": "652274890883c6bfb7372d71954083e1",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0161",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 11,
+  "prefix": "But his personality changed drastically. Where he once was an even-keeled,",
+  "target_word": "decent",
+  "sample_idx": 2,
+  "generated_text": "calm individual",
+  "generated_first_word": "calm",
+  "similarity": 0.6305605173110962,
+  "timestamp": "2026-07-06 17:07:39"
+}

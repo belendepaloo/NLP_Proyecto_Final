@@ -1,0 +1,19 @@
+{
+  "query_id": "566f3ddde2c6891cd2e56b42b322d014",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0152",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Before, I had never experienced aught",
+  "target_word": "but",
+  "sample_idx": 0,
+  "generated_text": "but",
+  "generated_first_word": "but",
+  "similarity": 1.0,
+  "timestamp": "2026-07-06 16:24:07"
+}

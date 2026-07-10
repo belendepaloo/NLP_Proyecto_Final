@@ -1,0 +1,19 @@
+{
+  "query_id": "e65266c01d476a341a06049bf1818c96",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0070",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "In this way",
+  "target_word": "he",
+  "sample_idx": 0,
+  "generated_text": "the universe",
+  "generated_first_word": "the",
+  "similarity": 0.7436275482177734,
+  "timestamp": "2026-06-30 10:54:04"
+}

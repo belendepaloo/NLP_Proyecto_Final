@@ -1,0 +1,19 @@
+{
+  "query_id": "7ebe8d80c2e46259f9a425c0327d0977",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0124",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 11,
+  "prefix": "She regarded it (once her clothes were ordered) as merely an",
+  "target_word": "enlarged",
+  "sample_idx": 0,
+  "generated_text": "unfortunate necessity",
+  "generated_first_word": "unfortunate",
+  "similarity": 0.6145139932632446,
+  "timestamp": "2026-06-30 15:28:37"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "382d1f6492d79797ba4419ed55919f2c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0138",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Here you shall",
+  "target_word": "dwell",
+  "sample_idx": 0,
+  "generated_text": "find the ancient",
+  "generated_first_word": "find",
+  "similarity": 0.6464097499847412,
+  "timestamp": "2026-06-30 17:04:52"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "0fe8a15123c1a46adc96f272a999723f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0022",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "I can come back tomorrow, she said.",
+  "target_word": "Lets",
+  "sample_idx": 0,
+  "generated_text": "if",
+  "generated_first_word": "if",
+  "similarity": 0.7114292979240417,
+  "timestamp": "2026-07-01 15:20:53"
+}

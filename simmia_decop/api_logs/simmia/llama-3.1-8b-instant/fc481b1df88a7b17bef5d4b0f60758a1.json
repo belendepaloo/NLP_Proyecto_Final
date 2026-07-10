@@ -1,0 +1,19 @@
+{
+  "query_id": "fc481b1df88a7b17bef5d4b0f60758a1",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0050",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "At the very least, its enough to",
+  "target_word": "get",
+  "sample_idx": 0,
+  "generated_text": "keep me going",
+  "generated_first_word": "keep",
+  "similarity": 0.7560481429100037,
+  "timestamp": "2026-06-30 09:09:16"
+}

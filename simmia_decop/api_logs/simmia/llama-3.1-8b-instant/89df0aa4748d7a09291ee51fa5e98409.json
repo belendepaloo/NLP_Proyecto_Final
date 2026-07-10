@@ -1,0 +1,19 @@
+{
+  "query_id": "89df0aa4748d7a09291ee51fa5e98409",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0106",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Who knows…maybe it’s better to be",
+  "target_word": "like",
+  "sample_idx": 1,
+  "generated_text": "left alone with",
+  "generated_first_word": "left",
+  "similarity": 0.5934128165245056,
+  "timestamp": "2026-06-30 13:57:02"
+}

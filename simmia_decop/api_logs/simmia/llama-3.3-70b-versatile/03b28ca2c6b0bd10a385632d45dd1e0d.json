@@ -1,0 +1,19 @@
+{
+  "query_id": "03b28ca2c6b0bd10a385632d45dd1e0d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0184",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 13,
+  "prefix": "As for you? Marrying and employing a Vos will help you secure a",
+  "target_word": "small",
+  "sample_idx": 2,
+  "generated_text": "position",
+  "generated_first_word": "position",
+  "similarity": 0.6465400457382202,
+  "timestamp": "2026-07-08 01:40:32"
+}

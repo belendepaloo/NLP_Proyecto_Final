@@ -1,0 +1,19 @@
+{
+  "query_id": "476a49658ef41827bb12d831b2a83c16",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0094",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "“Rather",
+  "target_word": "than",
+  "sample_idx": 1,
+  "generated_text": "than”",
+  "generated_first_word": "than”",
+  "similarity": 0.9114509224891663,
+  "timestamp": "2026-07-04 19:00:29"
+}

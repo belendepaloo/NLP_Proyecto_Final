@@ -1,0 +1,19 @@
+{
+  "query_id": "36839345c01327ef23ecd30b82590081",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0050",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "At the very",
+  "target_word": "least,",
+  "sample_idx": 0,
+  "generated_text": "edge of town",
+  "generated_first_word": "edge",
+  "similarity": 0.5895534753799438,
+  "timestamp": "2026-06-30 09:08:09"
+}

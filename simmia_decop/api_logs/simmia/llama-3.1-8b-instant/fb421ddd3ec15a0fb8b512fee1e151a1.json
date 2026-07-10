@@ -1,0 +1,19 @@
+{
+  "query_id": "fb421ddd3ec15a0fb8b512fee1e151a1",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0168",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Stop. I cannot handle",
+  "target_word": "Cody",
+  "sample_idx": 1,
+  "generated_text": "the thought of",
+  "generated_first_word": "the",
+  "similarity": 0.6412841081619263,
+  "timestamp": "2026-07-01 02:07:13"
+}

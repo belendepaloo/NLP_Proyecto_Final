@@ -1,0 +1,25 @@
+{
+  "query_id": "ed9d8be34e05d7391ea877981d79040a",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0125",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "title": "The Age of Innocence",
+  "author": "Edith Wharton",
+  "length": "medium",
+  "permutation_index": 3,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Age of Innocence\" book by Edith Wharton?\nOptions:\nA. One room had been made into a bedroom by Mrs. Mingott when she grew large, and she passed her days in the adjoining one, seated in a large armchair between the open door and window, constantly waving a palm-leaf fan that her enormous projecting bosom kept so distant from her body that the air it moved only fluttered the fringe of the antimacassars on the chair arms. Since she had quickened his marriage, old Catherine had shown Archer the goodwill that a favor done creates in the person who did it toward the person it was done for.\nB. One of these rooms had been turned into a bedroom by Mrs. Mingott when the burden of flesh descended on her, and in the adjoining one she spent her days, enthroned in a large armchair between the open door and window, and perpetually waving a palm-leaf fan which the prodigious projection of her bosom kept so far from the rest of her person that the air it set in motion stirred only the fringe of the anti-macassars on the chair-arms. Since she had been the means of hastening his marriage old Catherine had shown to Archer the cordiality which a service rendered excites toward the person served.\nC. One of the rooms had been converted into a bedroom by Mrs. Mingott when she gained weight, and in the adjoining room she spent her days, seated in a large armchair between the open door and window, constantly waving a palm-leaf fan which was kept far from the rest of her body by her enormous bosom protrusion, so that the air it stirred only fluttered the fringe of the antimacassars on the chair arms. Since she had helped speed up his marriage, old Catherine had shown Archer the friendliness that a favor done creates toward the person it was done for.\nD. Mrs. Mingott had turned one of the rooms into a bedroom when she became overweight, and she spent her days in the next room, enthroned in a big armchair between the open door and window, perpetually fanning herself with a palm-leaf fan that her massive protruding bosom kept so far from the rest of her that the air it stirred only fluttered the fringe on the chair's arm covers. Because she had facilitated his marriage, old Catherine had displayed warmth toward Archer that a service performed elicits toward the recipient.  \nAnswer:",
+  "options": {
+    "A": "One room had been made into a bedroom by Mrs. Mingott when she grew large, and she passed her days in the adjoining one, seated in a large armchair between the open door and window, constantly waving a palm-leaf fan that her enormous projecting bosom kept so distant from her body that the air it moved only fluttered the fringe of the antimacassars on the chair arms. Since she had quickened his marriage, old Catherine had shown Archer the goodwill that a favor done creates in the person who did it toward the person it was done for.",
+    "B": "One of these rooms had been turned into a bedroom by Mrs. Mingott when the burden of flesh descended on her, and in the adjoining one she spent her days, enthroned in a large armchair between the open door and window, and perpetually waving a palm-leaf fan which the prodigious projection of her bosom kept so far from the rest of her person that the air it set in motion stirred only the fringe of the anti-macassars on the chair-arms. Since she had been the means of hastening his marriage old Catherine had shown to Archer the cordiality which a service rendered excites toward the person served.",
+    "C": "One of the rooms had been converted into a bedroom by Mrs. Mingott when she gained weight, and in the adjoining room she spent her days, seated in a large armchair between the open door and window, constantly waving a palm-leaf fan which was kept far from the rest of her body by her enormous bosom protrusion, so that the air it stirred only fluttered the fringe of the antimacassars on the chair arms. Since she had helped speed up his marriage, old Catherine had shown Archer the friendliness that a favor done creates toward the person it was done for.",
+    "D": "Mrs. Mingott had turned one of the rooms into a bedroom when she became overweight, and she spent her days in the next room, enthroned in a big armchair between the open door and window, perpetually fanning herself with a palm-leaf fan that her massive protruding bosom kept so far from the rest of her that the air it stirred only fluttered the fringe on the chair's arm covers. Because she had facilitated his marriage, old Catherine had displayed warmth toward Archer that a service performed elicits toward the recipient.  "
+  },
+  "gold_letter": "B",
+  "predicted_letter": "B",
+  "is_correct": 1,
+  "timestamp": "2026-07-08 04:53:56"
+}

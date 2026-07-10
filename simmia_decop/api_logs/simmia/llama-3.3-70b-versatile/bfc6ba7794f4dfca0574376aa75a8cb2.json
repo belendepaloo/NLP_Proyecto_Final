@@ -1,0 +1,19 @@
+{
+  "query_id": "bfc6ba7794f4dfca0574376aa75a8cb2",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0134",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 19,
+  "prefix": "Then all listened while Elrond in his clear voice spoke of Sauron and the Rings of Power, and their",
+  "target_word": "forging",
+  "sample_idx": 0,
+  "generated_text": "history",
+  "generated_first_word": "history",
+  "similarity": 0.6423419117927551,
+  "timestamp": "2026-07-05 17:21:04"
+}

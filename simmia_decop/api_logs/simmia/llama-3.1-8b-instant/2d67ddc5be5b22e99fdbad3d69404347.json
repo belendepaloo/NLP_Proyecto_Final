@@ -1,0 +1,19 @@
+{
+  "query_id": "2d67ddc5be5b22e99fdbad3d69404347",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0191",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "We were smiling. Someone must",
+  "target_word": "have",
+  "sample_idx": 1,
+  "generated_text": "have noticed.",
+  "generated_first_word": "have",
+  "similarity": 1.0,
+  "timestamp": "2026-07-01 04:04:18"
+}

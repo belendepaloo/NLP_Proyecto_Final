@@ -1,0 +1,19 @@
+{
+  "query_id": "d7f5cc624e855ae81b5e5f1de173d329",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0178",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 17,
+  "prefix": "Not worth the sting. Natalie started to back up into the shadows to wait out Augusts departure,",
+  "target_word": "but",
+  "sample_idx": 1,
+  "generated_text": "but",
+  "generated_first_word": "but",
+  "similarity": 1.0,
+  "timestamp": "2026-07-08 01:14:13"
+}

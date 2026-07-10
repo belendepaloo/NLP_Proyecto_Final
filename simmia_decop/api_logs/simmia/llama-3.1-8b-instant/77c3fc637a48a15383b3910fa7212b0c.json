@@ -1,0 +1,19 @@
+{
+  "query_id": "77c3fc637a48a15383b3910fa7212b0c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0139",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 9,
+  "prefix": "Before he knew it, he was the boss of",
+  "target_word": "his",
+  "sample_idx": 1,
+  "generated_text": "a large corporation",
+  "generated_first_word": "a",
+  "similarity": 0.7324447631835938,
+  "timestamp": "2026-06-30 17:11:36"
+}

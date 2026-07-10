@@ -1,0 +1,19 @@
+{
+  "query_id": "bd40227a7c4b0aea48c48dea55e09d3d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0022",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 17,
+  "prefix": "I can come back tomorrow, she said. Lets stick to Wednesdays, Alice said. The following week, Maud",
+  "target_word": "worked",
+  "sample_idx": 0,
+  "generated_text": "walked through",
+  "generated_first_word": "walked",
+  "similarity": 0.6565617918968201,
+  "timestamp": "2026-06-30 06:45:37"
+}

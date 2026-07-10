@@ -1,0 +1,19 @@
+{
+  "query_id": "de2f9777f4c0dcd65d0551fa62b61e82",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0124",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "She regarded it",
+  "target_word": "(once",
+  "sample_idx": 0,
+  "generated_text": "as",
+  "generated_first_word": "as",
+  "similarity": 0.6727389097213745,
+  "timestamp": "2026-07-05 16:31:53"
+}

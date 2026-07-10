@@ -1,0 +1,19 @@
+{
+  "query_id": "80d974869b2402bc49cb7db5fa4e63c3",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0048",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Were going to take you to",
+  "target_word": "the",
+  "sample_idx": 2,
+  "generated_text": "the city",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 08:58:36"
+}

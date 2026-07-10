@@ -1,0 +1,25 @@
+{
+  "query_id": "58c629409be1de06ebd1bb07604d1096",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0013",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "title": "Matilda",
+  "author": "Roald Dahl",
+  "length": "medium",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Matilda\" book by Roald Dahl?\nOptions:\nA. The Trunchbull yelled insults at Rupert, calling him stupid and worthless. She grabbed his long, golden hair and lifted him out of his chair by it, showing her distaste for long hair on boys. \nB. ‘You ignorant little slug!’ the Trunchbull bellowed. ‘You witless weed! You empty-headed hamster! You stupid glob of glue!’ She had now stationed herself directly behind Rupert, and suddenly she extended a hand the size of a tennis racquet and grabbed all the hair on Rupert’s head in her fist. Rupert had a lot of golden-coloured hair. His mother thought it was beautiful to behold and took a delight in allowing it to grow extra long. The Trunchbull had as great a dislike for long hair on boys as she had for plaits and pigtails on girls and she was about to show it. She took a firm grip on Rupert’s long golden tresses with her giant hand and then, by raising her muscular right arm, she lifted the helpless boy clean out of his chair and held him aloft. \nC. The Trunchbull shouted harsh insults at Rupert, including calling him an 'empty-headed hamster'. She then grabbed his long, golden hair in her large hand and lifted him out of his seat by it, demonstrating her dislike of long hair on boys.\nD. Shrieking insults like 'stupid glob of glue', the Trunchbull seized Rupert's long golden locks in her enormous hand. She hoisted the helpless boy right out of his chair by his hair, exhibiting her loathing for long hair on boys.\nAnswer:",
+  "options": {
+    "A": "The Trunchbull yelled insults at Rupert, calling him stupid and worthless. She grabbed his long, golden hair and lifted him out of his chair by it, showing her distaste for long hair on boys. ",
+    "B": "‘You ignorant little slug!’ the Trunchbull bellowed. ‘You witless weed! You empty-headed hamster! You stupid glob of glue!’ She had now stationed herself directly behind Rupert, and suddenly she extended a hand the size of a tennis racquet and grabbed all the hair on Rupert’s head in her fist. Rupert had a lot of golden-coloured hair. His mother thought it was beautiful to behold and took a delight in allowing it to grow extra long. The Trunchbull had as great a dislike for long hair on boys as she had for plaits and pigtails on girls and she was about to show it. She took a firm grip on Rupert’s long golden tresses with her giant hand and then, by raising her muscular right arm, she lifted the helpless boy clean out of his chair and held him aloft. ",
+    "C": "The Trunchbull shouted harsh insults at Rupert, including calling him an 'empty-headed hamster'. She then grabbed his long, golden hair in her large hand and lifted him out of his seat by it, demonstrating her dislike of long hair on boys.",
+    "D": "Shrieking insults like 'stupid glob of glue', the Trunchbull seized Rupert's long golden locks in her enormous hand. She hoisted the helpless boy right out of his chair by his hair, exhibiting her loathing for long hair on boys."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "B",
+  "is_correct": 1,
+  "timestamp": "2026-07-08 03:46:56"
+}

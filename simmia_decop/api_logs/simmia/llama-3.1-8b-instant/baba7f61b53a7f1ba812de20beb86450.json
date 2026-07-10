@@ -1,0 +1,19 @@
+{
+  "query_id": "baba7f61b53a7f1ba812de20beb86450",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0074",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Not exactly, she says. I, um,",
+  "target_word": "took",
+  "sample_idx": 1,
+  "generated_text": "have a different",
+  "generated_first_word": "have",
+  "similarity": 0.6745192408561707,
+  "timestamp": "2026-06-30 11:14:58"
+}

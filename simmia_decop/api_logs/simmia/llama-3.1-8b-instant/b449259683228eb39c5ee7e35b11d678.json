@@ -1,0 +1,19 @@
+{
+  "query_id": "b449259683228eb39c5ee7e35b11d678",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0038",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 10,
+  "prefix": "But for all of that, it was a simple joy",
+  "target_word": "to",
+  "sample_idx": 0,
+  "generated_text": "to watch.",
+  "generated_first_word": "to",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 08:07:10"
+}

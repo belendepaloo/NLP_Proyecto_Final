@@ -1,0 +1,19 @@
+{
+  "query_id": "985851a9b1cbaf028debd45d3519ddb9",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0037",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "After Id moved back home,",
+  "target_word": "Simon",
+  "sample_idx": 0,
+  "generated_text": "I had a",
+  "generated_first_word": "I",
+  "similarity": 0.6070226430892944,
+  "timestamp": "2026-06-30 08:00:06"
+}

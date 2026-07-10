@@ -1,0 +1,19 @@
+{
+  "query_id": "b63f8e78581a9366c0f44cb9a188bfdc",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0169",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "There they fought to the",
+  "target_word": "death;",
+  "sample_idx": 1,
+  "generated_text": "death",
+  "generated_first_word": "death",
+  "similarity": 0.9177199602127075,
+  "timestamp": "2026-07-06 17:43:38"
+}

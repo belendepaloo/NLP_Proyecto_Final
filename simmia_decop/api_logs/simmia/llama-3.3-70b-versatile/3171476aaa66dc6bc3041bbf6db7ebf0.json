@@ -1,0 +1,19 @@
+{
+  "query_id": "3171476aaa66dc6bc3041bbf6db7ebf0",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0129",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "Giles.' 'I hope you don't mean to say, sir,'",
+  "target_word": "said",
+  "sample_idx": 1,
+  "generated_text": "'that'",
+  "generated_first_word": "that'",
+  "similarity": 0.7076696157455444,
+  "timestamp": "2026-07-05 16:56:03"
+}

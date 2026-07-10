@@ -1,0 +1,25 @@
+{
+  "query_id": "1f1161a9922dd77694df01661e8357c7",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0144",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "title": "Bartleby the Scrivener A Story of Wall Street",
+  "author": "Herman Melville",
+  "length": "medium",
+  "permutation_index": 2,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Bartleby the Scrivener A Story of Wall Street\" book by Herman Melville?\nOptions:\nA. If you need anything after you move, write me. Farewell Bartleby, and good luck. However, he didn't respond at all; resembling the last standing column of a ruined temple, he stayed mute and solitary in the middle of the room, now deserted. Walking home absorbed in contemplation, my vanity prevailed over my compassion. I couldn't resist priding myself on my adroit handling of dismissing Bartleby. It was a masterstroke, I declare, and any detached observer would think so too.  \nB. If I can help you in any way once you've moved, let me know by writing. Goodbye Bartleby, and I wish you the best. But he didn't say anything; like the final pillar of a destroyed temple, he continued standing there silently and alone in the otherwise empty room. As I walked home deep in thought, my pride overcame my sympathy. I couldn't help but congratulate myself on how skillfully I had gotten rid of Bartleby. It was masterful, I say, and any impartial person would agree.\nC. If hereafter in your new place of abode I can be of any service to you, do not fail to advise me by letter. Good-bye, Bartleby, and fare you well. But he answered not a word; like the last column of some ruined temple, he remained standing mute and solitary in the middle of the otherwise deserted room. As I walked home in a pensive mood, my vanity got the better of my pity. I could not but highly plume myself on my masterly management in getting rid of Bartleby. Masterly I call it, and such it must appear to any dispassionate thinker.\nD. Should you require assistance after your relocation, inform me by post. Goodbye Bartleby, and may you fare well. Yet he did not utter a word; similar to the final pillar of a demolished sanctuary, he lingered silent and alone amid the otherwise uninhabited chamber. Ambling home engrossed in thought, my hubris overpowered my pity. I could not help but immensely flatter myself for my ingenious maneuvering in dispensing with Bartleby. It was masterful, I profess, and any impartial spectator would deem it so.\nAnswer:",
+  "options": {
+    "A": "If you need anything after you move, write me. Farewell Bartleby, and good luck. However, he didn't respond at all; resembling the last standing column of a ruined temple, he stayed mute and solitary in the middle of the room, now deserted. Walking home absorbed in contemplation, my vanity prevailed over my compassion. I couldn't resist priding myself on my adroit handling of dismissing Bartleby. It was a masterstroke, I declare, and any detached observer would think so too.  ",
+    "B": "If I can help you in any way once you've moved, let me know by writing. Goodbye Bartleby, and I wish you the best. But he didn't say anything; like the final pillar of a destroyed temple, he continued standing there silently and alone in the otherwise empty room. As I walked home deep in thought, my pride overcame my sympathy. I couldn't help but congratulate myself on how skillfully I had gotten rid of Bartleby. It was masterful, I say, and any impartial person would agree.",
+    "C": "If hereafter in your new place of abode I can be of any service to you, do not fail to advise me by letter. Good-bye, Bartleby, and fare you well. But he answered not a word; like the last column of some ruined temple, he remained standing mute and solitary in the middle of the otherwise deserted room. As I walked home in a pensive mood, my vanity got the better of my pity. I could not but highly plume myself on my masterly management in getting rid of Bartleby. Masterly I call it, and such it must appear to any dispassionate thinker.",
+    "D": "Should you require assistance after your relocation, inform me by post. Goodbye Bartleby, and may you fare well. Yet he did not utter a word; similar to the final pillar of a demolished sanctuary, he lingered silent and alone amid the otherwise uninhabited chamber. Ambling home engrossed in thought, my hubris overpowered my pity. I could not help but immensely flatter myself for my ingenious maneuvering in dispensing with Bartleby. It was masterful, I profess, and any impartial spectator would deem it so."
+  },
+  "gold_letter": "C",
+  "predicted_letter": "C",
+  "is_correct": 1,
+  "timestamp": "2026-07-08 05:05:01"
+}

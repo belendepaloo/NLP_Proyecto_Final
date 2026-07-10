@@ -1,0 +1,19 @@
+{
+  "query_id": "d6cf78f0aebcfe77bef3f16635d9ff28",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0174",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 10,
+  "prefix": "Her eyes gleamed. “You see? I knew you’d missed me.",
+  "target_word": "This",
+  "sample_idx": 0,
+  "generated_text": "Her smile was",
+  "generated_first_word": "Her",
+  "similarity": 0.6941907405853271,
+  "timestamp": "2026-07-01 02:39:30"
+}

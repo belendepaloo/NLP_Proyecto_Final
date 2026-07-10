@@ -1,0 +1,19 @@
+{
+  "query_id": "f8f76e72932bd85f850ec562db10dd0d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0063",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "The boy mumbled an answer that allowed him to avoid responding to her question. He was sure the",
+  "target_word": "girl",
+  "sample_idx": 0,
+  "generated_text": "teacher would not",
+  "generated_first_word": "teacher",
+  "similarity": 0.6872543096542358,
+  "timestamp": "2026-06-30 10:21:38"
+}

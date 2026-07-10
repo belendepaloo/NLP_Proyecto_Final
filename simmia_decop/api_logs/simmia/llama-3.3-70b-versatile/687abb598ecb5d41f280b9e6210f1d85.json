@@ -1,0 +1,19 @@
+{
+  "query_id": "687abb598ecb5d41f280b9e6210f1d85",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0114",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "‘The",
+  "target_word": "first",
+  "sample_idx": 0,
+  "generated_text": "man’",
+  "generated_first_word": "man’",
+  "similarity": 0.5774590969085693,
+  "timestamp": "2026-07-05 15:45:37"
+}

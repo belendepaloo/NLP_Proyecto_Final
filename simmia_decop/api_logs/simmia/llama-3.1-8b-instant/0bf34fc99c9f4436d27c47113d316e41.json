@@ -1,0 +1,19 @@
+{
+  "query_id": "0bf34fc99c9f4436d27c47113d316e41",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0174",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Her eyes gleamed.",
+  "target_word": "“You",
+  "sample_idx": 2,
+  "generated_text": "with a fierce",
+  "generated_first_word": "with",
+  "similarity": 0.6811134815216064,
+  "timestamp": "2026-07-01 02:37:50"
+}

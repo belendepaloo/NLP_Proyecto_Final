@@ -1,0 +1,19 @@
+{
+  "query_id": "2a2357f9ffdf4a4998ef4bc6a6190897",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0113",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Back in New York?",
+  "target_word": "Persona",
+  "sample_idx": 1,
+  "generated_text": "City",
+  "generated_first_word": "City",
+  "similarity": 0.6297365427017212,
+  "timestamp": "2026-07-04 20:27:28"
+}

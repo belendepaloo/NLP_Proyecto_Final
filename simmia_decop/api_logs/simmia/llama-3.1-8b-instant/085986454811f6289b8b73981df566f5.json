@@ -1,0 +1,19 @@
+{
+  "query_id": "085986454811f6289b8b73981df566f5",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0078",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 9,
+  "prefix": "Together, they proclaimed that the Lord Protector was in",
+  "target_word": "residence.",
+  "sample_idx": 2,
+  "generated_text": "grave danger.",
+  "generated_first_word": "grave",
+  "similarity": 0.6517789959907532,
+  "timestamp": "2026-06-30 11:36:33"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "329252f76d7cf59e0dbaf00e016177f1",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0118",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "Ardin Javar was a bear of a man",
+  "target_word": "with",
+  "sample_idx": 2,
+  "generated_text": "with a physique",
+  "generated_first_word": "with",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 14:57:56"
+}

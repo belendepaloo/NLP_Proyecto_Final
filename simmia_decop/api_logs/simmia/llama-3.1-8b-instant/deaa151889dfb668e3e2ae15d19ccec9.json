@@ -1,0 +1,19 @@
+{
+  "query_id": "deaa151889dfb668e3e2ae15d19ccec9",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0016",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 16,
+  "prefix": "There he would often wander long, and late would return. Still therefore, after the Long Night,",
+  "target_word": "the",
+  "sample_idx": 2,
+  "generated_text": "the villagers had",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 06:14:17"
+}

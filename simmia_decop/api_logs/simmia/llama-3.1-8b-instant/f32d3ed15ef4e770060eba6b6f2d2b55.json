@@ -1,0 +1,19 @@
+{
+  "query_id": "f32d3ed15ef4e770060eba6b6f2d2b55",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0081",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "The next moment the two of them were running down the drive together and then out on to",
+  "target_word": "the",
+  "sample_idx": 2,
+  "generated_text": "the quiet country",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 11:54:20"
+}

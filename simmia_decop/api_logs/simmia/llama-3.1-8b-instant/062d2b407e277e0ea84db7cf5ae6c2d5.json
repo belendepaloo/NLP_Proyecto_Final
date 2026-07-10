@@ -1,0 +1,19 @@
+{
+  "query_id": "062d2b407e277e0ea84db7cf5ae6c2d5",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0014",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 12,
+  "prefix": "And Mom will def get over this, eventually. She got over my",
+  "target_word": "bellybutton",
+  "sample_idx": 1,
+  "generated_text": "first breakup with",
+  "generated_first_word": "first",
+  "similarity": 0.5787186026573181,
+  "timestamp": "2026-06-30 06:02:30"
+}

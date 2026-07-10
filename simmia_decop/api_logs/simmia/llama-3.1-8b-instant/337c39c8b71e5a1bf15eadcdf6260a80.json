@@ -1,0 +1,19 @@
+{
+  "query_id": "337c39c8b71e5a1bf15eadcdf6260a80",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0124",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "She regarded",
+  "target_word": "it",
+  "sample_idx": 2,
+  "generated_text": "the old clock",
+  "generated_first_word": "the",
+  "similarity": 0.7294350862503052,
+  "timestamp": "2026-06-30 15:26:24"
+}

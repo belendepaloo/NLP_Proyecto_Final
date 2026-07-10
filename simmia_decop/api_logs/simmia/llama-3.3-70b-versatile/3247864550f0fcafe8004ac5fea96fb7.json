@@ -1,0 +1,19 @@
+{
+  "query_id": "3247864550f0fcafe8004ac5fea96fb7",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0165",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 11,
+  "prefix": "And high in the north as a challenge to Melkor she",
+  "target_word": "set",
+  "sample_idx": 1,
+  "generated_text": "made",
+  "generated_first_word": "made",
+  "similarity": 0.6537680625915527,
+  "timestamp": "2026-07-06 17:26:12"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "36d9efa836ba7805b7dd08c0568d49ef",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0167",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 14,
+  "prefix": "Let the Orcs have the realm that is theirs, and we will have ours.",
+  "target_word": "There",
+  "sample_idx": 1,
+  "generated_text": "Peacefully",
+  "generated_first_word": "Peacefully",
+  "similarity": 0.6234813332557678,
+  "timestamp": "2026-07-06 17:36:29"
+}

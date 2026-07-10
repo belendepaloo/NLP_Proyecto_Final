@@ -1,0 +1,19 @@
+{
+  "query_id": "463a8ef0accda3a63dfc3325844749c8",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0066",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 15,
+  "prefix": "No one answered. The noon-bell rang. Still no one spoke. Frodo glanced at all the",
+  "target_word": "faces,",
+  "sample_idx": 1,
+  "generated_text": "faces, searching",
+  "generated_first_word": "faces,",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 10:36:39"
+}

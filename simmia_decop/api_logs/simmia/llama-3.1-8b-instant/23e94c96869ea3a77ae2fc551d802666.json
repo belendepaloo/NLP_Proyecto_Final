@@ -1,0 +1,19 @@
+{
+  "query_id": "23e94c96869ea3a77ae2fc551d802666",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0042",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 15,
+  "prefix": "Never mind how he came there; it's quite enough for my power over him that",
+  "target_word": "he",
+  "sample_idx": 2,
+  "generated_text": "he is here",
+  "generated_first_word": "he",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 08:29:28"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "4f66fb31fac1efb70a9c9163ccafafce",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0016",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "There he would",
+  "target_word": "often",
+  "sample_idx": 0,
+  "generated_text": "find her.",
+  "generated_first_word": "find",
+  "similarity": 0.6100287437438965,
+  "timestamp": "2026-06-30 06:10:36"
+}

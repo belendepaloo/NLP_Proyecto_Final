@@ -1,0 +1,19 @@
+{
+  "query_id": "e3a9513020d66a68fd719c427bea9836",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0042",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Never mind how he came there;",
+  "target_word": "it's",
+  "sample_idx": 2,
+  "generated_text": "it was enough",
+  "generated_first_word": "it",
+  "similarity": 0.8227148056030273,
+  "timestamp": "2026-07-02 00:28:39"
+}

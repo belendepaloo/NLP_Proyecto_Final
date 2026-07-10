@@ -1,0 +1,19 @@
+{
+  "query_id": "41b05ff558d0d1bcbad72cd1cac4e546",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0193",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "No ones forcing you to stay! Sabrina",
+  "target_word": "says.",
+  "sample_idx": 0,
+  "generated_text": "she exclaimed.",
+  "generated_first_word": "she",
+  "similarity": 0.6792391538619995,
+  "timestamp": "2026-07-01 04:14:50"
+}

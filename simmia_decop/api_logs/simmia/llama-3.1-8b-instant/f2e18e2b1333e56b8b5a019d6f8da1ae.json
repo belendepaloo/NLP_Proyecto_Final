@@ -1,0 +1,19 @@
+{
+  "query_id": "f2e18e2b1333e56b8b5a019d6f8da1ae",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0192",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "\"Call it",
+  "target_word": "what",
+  "sample_idx": 1,
+  "generated_text": "a day.\"",
+  "generated_first_word": "a",
+  "similarity": 0.7044281363487244,
+  "timestamp": "2026-07-01 04:08:29"
+}

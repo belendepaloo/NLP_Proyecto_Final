@@ -1,0 +1,19 @@
+{
+  "query_id": "798c2615da1b0e357a79bf4399eaf031",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0182",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "He was buttering",
+  "target_word": "his",
+  "sample_idx": 0,
+  "generated_text": "his toast.",
+  "generated_first_word": "his",
+  "similarity": 1.0,
+  "timestamp": "2026-07-01 03:18:11"
+}

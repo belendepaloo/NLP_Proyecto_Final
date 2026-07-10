@@ -1,0 +1,19 @@
+{
+  "query_id": "247a683a9d09b853683fc9207f267fb8",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0127",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "You cant judge",
+  "target_word": "a",
+  "sample_idx": 0,
+  "generated_text": "a book by",
+  "generated_first_word": "a",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 15:41:23"
+}

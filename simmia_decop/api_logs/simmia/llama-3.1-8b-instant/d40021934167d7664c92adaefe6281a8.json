@@ -1,0 +1,19 @@
+{
+  "query_id": "d40021934167d7664c92adaefe6281a8",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0031",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Whenever he could, he",
+  "target_word": "sought",
+  "sample_idx": 1,
+  "generated_text": "escaped to the",
+  "generated_first_word": "escaped",
+  "similarity": 0.6486077904701233,
+  "timestamp": "2026-06-30 07:28:39"
+}

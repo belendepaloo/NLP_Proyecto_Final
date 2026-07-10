@@ -1,0 +1,19 @@
+{
+  "query_id": "937c88750ccf8cd03219d44944f339af",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0011",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Ill have more time",
+  "target_word": "to",
+  "sample_idx": 1,
+  "generated_text": "to pursue",
+  "generated_first_word": "to",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 05:43:50"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "0aa0034751c32ef3ba0701b63b1e6b0f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0001",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "“And I know the Soul of the",
+  "target_word": "World,",
+  "sample_idx": 1,
+  "generated_text": "Earth is kept",
+  "generated_first_word": "Earth",
+  "similarity": 0.7851778268814087,
+  "timestamp": "2026-06-30 04:52:17"
+}

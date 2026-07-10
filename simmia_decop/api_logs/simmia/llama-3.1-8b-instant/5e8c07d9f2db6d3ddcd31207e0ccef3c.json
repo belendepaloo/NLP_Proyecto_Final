@@ -1,0 +1,19 @@
+{
+  "query_id": "5e8c07d9f2db6d3ddcd31207e0ccef3c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0158",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "He",
+  "target_word": "walked",
+  "sample_idx": 2,
+  "generated_text": "was",
+  "generated_first_word": "was",
+  "similarity": 0.6859528422355652,
+  "timestamp": "2026-06-30 18:42:31"
+}

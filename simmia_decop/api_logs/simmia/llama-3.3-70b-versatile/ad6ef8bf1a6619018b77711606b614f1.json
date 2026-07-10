@@ -1,0 +1,19 @@
+{
+  "query_id": "ad6ef8bf1a6619018b77711606b614f1",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0020",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 14,
+  "prefix": "Yes, I suppose I will, Lore sighed. Break it up! The shouts came from",
+  "target_word": "the",
+  "sample_idx": 2,
+  "generated_text": "outside",
+  "generated_first_word": "outside",
+  "similarity": 0.624404788017273,
+  "timestamp": "2026-07-01 15:13:25"
+}

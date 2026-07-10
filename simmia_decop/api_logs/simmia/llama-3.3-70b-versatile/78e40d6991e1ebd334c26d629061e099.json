@@ -1,0 +1,19 @@
+{
+  "query_id": "78e40d6991e1ebd334c26d629061e099",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0125",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "One of these rooms had been turned into a bedroom by Mrs.",
+  "target_word": "Mingott",
+  "sample_idx": 2,
+  "generated_text": "Jennings",
+  "generated_first_word": "Jennings",
+  "similarity": 0.6424149870872498,
+  "timestamp": "2026-07-05 16:38:45"
+}

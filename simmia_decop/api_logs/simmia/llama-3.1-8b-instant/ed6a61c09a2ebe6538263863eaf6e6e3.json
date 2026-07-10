@@ -1,0 +1,19 @@
+{
+  "query_id": "ed6a61c09a2ebe6538263863eaf6e6e3",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0081",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "The next moment the two of them were running",
+  "target_word": "down",
+  "sample_idx": 1,
+  "generated_text": "down the alley",
+  "generated_first_word": "down",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 11:51:47"
+}

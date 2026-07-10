@@ -1,0 +1,19 @@
+{
+  "query_id": "55947def7cc83bbebd1117fc45b4ec95",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0057",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "There were times",
+  "target_word": "when",
+  "sample_idx": 2,
+  "generated_text": "when I felt",
+  "generated_first_word": "when",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 09:46:08"
+}

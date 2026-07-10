@@ -1,0 +1,25 @@
+{
+  "query_id": "440673205041e94d71f3aaa2b6c6af69",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0081",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "title": "Matilda",
+  "author": "Roald Dahl",
+  "length": "medium",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Matilda\" book by Roald Dahl?\nOptions:\nA. Instantly, Matilda and Miss Honey were sprinting down the drive and out onto the road, with Matilda leading and clutching Miss Honey's wrist. Their mad dash along the rural lane and through the town to Matilda's house was thrilling and liberating. The large black Mercedes still sat there, its doors and trunk flung wide open. Mr. and Mrs. Wormwood and Matilda's brother were scrambling around it like insects, hurriedly packing the suitcases inside, just as Matilda and Miss Honey came barreling up.\nB. The next instant, Matilda and Miss Honey were sprinting down the driveway and onto the road, with Matilda leading the way, grasping Miss Honey's wrist. It was an incredible, thrilling run as they sped along the rural lane and through the town to Matilda's parents' home. The large black Mercedes was still there with its trunk and doors wide open. Mr. and Mrs. Wormwood and Matilda's brother were scampering around it hurriedly packing the suitcases, just as Matilda and Miss Honey came rushing up.\nC. The next moment the two of them were running down the drive together and then out on to the road, and Matilda was ahead, pulling Miss Honey after her by her wrist, and it was a wild and wonderful dash they made along the country lane and through the village to the house where Matilda’s parents lived. The big black Mercedes was still outside and now its boot and all its doors were open and Mr and Mrs Wormwood and the brother were scurrying around it like ants, piling in the suitcases, as Matilda and Miss Honey came dashing up. \nD. In a flash, Matilda and Miss Honey were racing down the driveway and onto the road, Matilda pulling Miss Honey along by her wrist. They made a wild, exhilarating dash along the country road and through the village to the house where Matilda's family lived. The big black Mercedes was still parked outside, its trunk and doors gaping open, and Mr. and Mrs. Wormwood and Matilda's brother were scurrying around it frantically cramming in suitcases, just as Matilda and Miss Honey came running up.  \nAnswer:",
+  "options": {
+    "A": "Instantly, Matilda and Miss Honey were sprinting down the drive and out onto the road, with Matilda leading and clutching Miss Honey's wrist. Their mad dash along the rural lane and through the town to Matilda's house was thrilling and liberating. The large black Mercedes still sat there, its doors and trunk flung wide open. Mr. and Mrs. Wormwood and Matilda's brother were scrambling around it like insects, hurriedly packing the suitcases inside, just as Matilda and Miss Honey came barreling up.",
+    "B": "The next instant, Matilda and Miss Honey were sprinting down the driveway and onto the road, with Matilda leading the way, grasping Miss Honey's wrist. It was an incredible, thrilling run as they sped along the rural lane and through the town to Matilda's parents' home. The large black Mercedes was still there with its trunk and doors wide open. Mr. and Mrs. Wormwood and Matilda's brother were scampering around it hurriedly packing the suitcases, just as Matilda and Miss Honey came rushing up.",
+    "C": "The next moment the two of them were running down the drive together and then out on to the road, and Matilda was ahead, pulling Miss Honey after her by her wrist, and it was a wild and wonderful dash they made along the country lane and through the village to the house where Matilda’s parents lived. The big black Mercedes was still outside and now its boot and all its doors were open and Mr and Mrs Wormwood and the brother were scurrying around it like ants, piling in the suitcases, as Matilda and Miss Honey came dashing up. ",
+    "D": "In a flash, Matilda and Miss Honey were racing down the driveway and onto the road, Matilda pulling Miss Honey along by her wrist. They made a wild, exhilarating dash along the country road and through the village to the house where Matilda's family lived. The big black Mercedes was still parked outside, its trunk and doors gaping open, and Mr. and Mrs. Wormwood and Matilda's brother were scurrying around it frantically cramming in suitcases, just as Matilda and Miss Honey came running up.  "
+  },
+  "gold_letter": "C",
+  "predicted_letter": "D",
+  "is_correct": 0,
+  "timestamp": "2026-07-08 04:27:13"
+}

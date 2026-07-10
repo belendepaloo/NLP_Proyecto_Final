@@ -1,0 +1,19 @@
+{
+  "query_id": "125ef9572ba01cdf788c1416eafb2194",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0122",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 10,
+  "prefix": "Still, he couldnt walk away from Natalie if she needed",
+  "target_word": "him.",
+  "sample_idx": 1,
+  "generated_text": "him.",
+  "generated_first_word": "him.",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 15:18:20"
+}

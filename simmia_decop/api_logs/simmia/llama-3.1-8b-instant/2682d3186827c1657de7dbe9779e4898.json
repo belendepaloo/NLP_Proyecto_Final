@@ -1,0 +1,19 @@
+{
+  "query_id": "2682d3186827c1657de7dbe9779e4898",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0109",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 9,
+  "prefix": "Part love story, part thriller, this novel kept me",
+  "target_word": "entranced",
+  "sample_idx": 2,
+  "generated_text": "on the edge",
+  "generated_first_word": "on",
+  "similarity": 0.6435744762420654,
+  "timestamp": "2026-06-30 14:13:11"
+}

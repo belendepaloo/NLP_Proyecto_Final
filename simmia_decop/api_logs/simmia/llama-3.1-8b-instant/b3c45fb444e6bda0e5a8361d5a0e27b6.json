@@ -1,0 +1,19 @@
+{
+  "query_id": "b3c45fb444e6bda0e5a8361d5a0e27b6",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0194",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 17,
+  "prefix": "‘He’s a crook!’ the Trunchbull shouted. ‘A week ago he sold me a second-hand car that he",
+  "target_word": "said",
+  "sample_idx": 0,
+  "generated_text": "knew had",
+  "generated_first_word": "knew",
+  "similarity": 0.704626202583313,
+  "timestamp": "2026-07-01 04:22:44"
+}

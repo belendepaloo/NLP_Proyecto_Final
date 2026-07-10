@@ -1,0 +1,19 @@
+{
+  "query_id": "1dfaf1f4a4e79187f20f707aafba51e6",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0131",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "In a",
+  "target_word": "chair,",
+  "sample_idx": 1,
+  "generated_text": "ancient civilization",
+  "generated_first_word": "ancient",
+  "similarity": 0.6695652008056641,
+  "timestamp": "2026-06-30 16:00:53"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "a4efaa10fb015ab2beb8484db7d0eb8a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0156",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 11,
+  "prefix": "I glance out the window. I see some new housing developments",
+  "target_word": "halfway",
+  "sample_idx": 2,
+  "generated_text": "sprouting up",
+  "generated_first_word": "sprouting",
+  "similarity": 0.6328181028366089,
+  "timestamp": "2026-06-30 18:35:00"
+}

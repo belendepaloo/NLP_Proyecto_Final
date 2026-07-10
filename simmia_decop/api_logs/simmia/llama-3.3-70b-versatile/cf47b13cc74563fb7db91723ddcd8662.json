@@ -1,0 +1,19 @@
+{
+  "query_id": "cf47b13cc74563fb7db91723ddcd8662",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0140",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 17,
+  "prefix": "Another reason I know this is not a real game: Sabrina clearly does not give one single",
+  "target_word": "shit",
+  "sample_idx": 0,
+  "generated_text": "care",
+  "generated_first_word": "care",
+  "similarity": 0.654222309589386,
+  "timestamp": "2026-07-05 17:50:12"
+}

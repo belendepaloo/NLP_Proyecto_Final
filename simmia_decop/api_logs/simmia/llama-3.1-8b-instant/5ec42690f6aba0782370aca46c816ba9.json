@@ -1,0 +1,19 @@
+{
+  "query_id": "5ec42690f6aba0782370aca46c816ba9",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0124",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 19,
+  "prefix": "She regarded it (once her clothes were ordered) as merely an enlarged opportunity for walking, riding, swimming, and trying",
+  "target_word": "her",
+  "sample_idx": 0,
+  "generated_text": "out new water",
+  "generated_first_word": "out",
+  "similarity": 0.6484771370887756,
+  "timestamp": "2026-06-30 15:30:50"
+}

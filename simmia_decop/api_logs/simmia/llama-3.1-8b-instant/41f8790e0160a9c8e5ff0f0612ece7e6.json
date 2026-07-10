@@ -1,0 +1,19 @@
+{
+  "query_id": "41f8790e0160a9c8e5ff0f0612ece7e6",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0173",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "But no ship came ever again from the West",
+  "target_word": "to",
+  "sample_idx": 1,
+  "generated_text": "and the villagers",
+  "generated_first_word": "and",
+  "similarity": 0.6855215430259705,
+  "timestamp": "2026-07-01 02:34:11"
+}

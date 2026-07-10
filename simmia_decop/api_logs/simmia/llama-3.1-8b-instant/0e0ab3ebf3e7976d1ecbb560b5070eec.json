@@ -1,0 +1,19 @@
+{
+  "query_id": "0e0ab3ebf3e7976d1ecbb560b5070eec",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0070",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "In this way he got",
+  "target_word": "his",
+  "sample_idx": 1,
+  "generated_text": "acquainted",
+  "generated_first_word": "acquainted",
+  "similarity": 0.6550210118293762,
+  "timestamp": "2026-06-30 10:54:41"
+}

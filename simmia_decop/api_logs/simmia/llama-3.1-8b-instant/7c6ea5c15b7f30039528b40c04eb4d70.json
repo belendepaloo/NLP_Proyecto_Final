@@ -1,0 +1,19 @@
+{
+  "query_id": "7c6ea5c15b7f30039528b40c04eb4d70",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0120",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "At first Frodo felt as if",
+  "target_word": "he",
+  "sample_idx": 2,
+  "generated_text": "he was walking",
+  "generated_first_word": "he",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 15:07:40"
+}

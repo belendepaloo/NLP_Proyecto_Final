@@ -1,0 +1,19 @@
+{
+  "query_id": "21c39a556902654e840d6f7170271d3f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0114",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "‘The first",
+  "target_word": "time,’",
+  "sample_idx": 1,
+  "generated_text": "thing’",
+  "generated_first_word": "thing’",
+  "similarity": 0.7148704528808594,
+  "timestamp": "2026-06-30 14:35:53"
+}

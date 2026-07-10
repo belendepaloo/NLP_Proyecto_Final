@@ -1,0 +1,19 @@
+{
+  "query_id": "7da54c13eaeae421f4b3b3c6a6e06e36",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0189",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "‘A girl doesn’t",
+  "target_word": "get",
+  "sample_idx": 2,
+  "generated_text": "need",
+  "generated_first_word": "need",
+  "similarity": 0.6844495534896851,
+  "timestamp": "2026-07-08 02:00:54"
+}

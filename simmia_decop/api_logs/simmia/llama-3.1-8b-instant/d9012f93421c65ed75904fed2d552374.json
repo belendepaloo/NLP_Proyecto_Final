@@ -1,0 +1,19 @@
+{
+  "query_id": "d9012f93421c65ed75904fed2d552374",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0122",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Still, he couldnt walk away",
+  "target_word": "from",
+  "sample_idx": 1,
+  "generated_text": "from the memories",
+  "generated_first_word": "from",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 15:17:02"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "cf458dc3df15d00728c7fb0d6bf9258f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0127",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 1,
+  "prefix": "You",
+  "target_word": "cant",
+  "sample_idx": 0,
+  "generated_text": "are.",
+  "generated_first_word": "are.",
+  "similarity": 0.5948095321655273,
+  "timestamp": "2026-06-30 15:40:54"
+}

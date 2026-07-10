@@ -1,0 +1,19 @@
+{
+  "query_id": "acfed14bedecb13635a016df4b8cdbd6",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0054",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 14,
+  "prefix": "All that confidence he had at the conin a single conversation, Ive put a",
+  "target_word": "dent",
+  "sample_idx": 0,
+  "generated_text": "dent in",
+  "generated_first_word": "dent",
+  "similarity": 1.0,
+  "timestamp": "2026-07-03 14:20:44"
+}

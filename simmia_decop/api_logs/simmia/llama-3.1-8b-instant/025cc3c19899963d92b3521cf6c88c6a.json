@@ -1,0 +1,19 @@
+{
+  "query_id": "025cc3c19899963d92b3521cf6c88c6a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0118",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Ardin Javar was a bear",
+  "target_word": "of",
+  "sample_idx": 1,
+  "generated_text": "who lived",
+  "generated_first_word": "who",
+  "similarity": 0.6797484755516052,
+  "timestamp": "2026-06-30 14:57:03"
+}

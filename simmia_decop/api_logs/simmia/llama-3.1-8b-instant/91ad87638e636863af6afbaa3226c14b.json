@@ -1,0 +1,19 @@
+{
+  "query_id": "91ad87638e636863af6afbaa3226c14b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0056",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 15,
+  "prefix": "That guy is so weird, she said when, out of earshot, they were walking along",
+  "target_word": "the",
+  "sample_idx": 1,
+  "generated_text": "the deserted beach",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 09:44:04"
+}

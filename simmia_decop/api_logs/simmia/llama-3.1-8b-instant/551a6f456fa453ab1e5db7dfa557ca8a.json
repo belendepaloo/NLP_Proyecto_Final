@@ -1,0 +1,19 @@
+{
+  "query_id": "551a6f456fa453ab1e5db7dfa557ca8a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0013",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "‘You ignorant little slug!’ the",
+  "target_word": "Trunchbull",
+  "sample_idx": 2,
+  "generated_text": "old wizard shouted",
+  "generated_first_word": "old",
+  "similarity": 0.5774838924407959,
+  "timestamp": "2026-06-30 05:55:16"
+}

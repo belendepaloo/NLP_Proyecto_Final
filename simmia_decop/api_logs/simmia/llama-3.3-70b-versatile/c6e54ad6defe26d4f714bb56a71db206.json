@@ -1,0 +1,19 @@
+{
+  "query_id": "c6e54ad6defe26d4f714bb56a71db206",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0039",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 14,
+  "prefix": "She settled herself and began to concentrate, and very quickly this time she felt",
+  "target_word": "the",
+  "sample_idx": 1,
+  "generated_text": "herself",
+  "generated_first_word": "herself",
+  "similarity": 0.696992814540863,
+  "timestamp": "2026-07-02 00:16:35"
+}

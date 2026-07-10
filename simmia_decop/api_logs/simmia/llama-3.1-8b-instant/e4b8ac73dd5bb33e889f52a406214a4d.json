@@ -1,0 +1,19 @@
+{
+  "query_id": "e4b8ac73dd5bb33e889f52a406214a4d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0043",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "The",
+  "target_word": "Vicar",
+  "sample_idx": 0,
+  "generated_text": "temperature",
+  "generated_first_word": "temperature",
+  "similarity": 0.5296691060066223,
+  "timestamp": "2026-06-30 08:30:41"
+}

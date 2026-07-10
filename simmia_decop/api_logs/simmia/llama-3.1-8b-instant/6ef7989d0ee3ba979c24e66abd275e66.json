@@ -1,0 +1,19 @@
+{
+  "query_id": "6ef7989d0ee3ba979c24e66abd275e66",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0169",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "There they fought to the death; but Thingol gave",
+  "target_word": "no",
+  "sample_idx": 0,
+  "generated_text": "the victory to",
+  "generated_first_word": "the",
+  "similarity": 0.6624084711074829,
+  "timestamp": "2026-07-01 02:13:25"
+}

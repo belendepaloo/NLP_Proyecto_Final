@@ -1,0 +1,19 @@
+{
+  "query_id": "dd9ff5902686e3d28001f9ba29b9311b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0020",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 9,
+  "prefix": "Yes, I suppose I will, Lore sighed. Break it",
+  "target_word": "up!",
+  "sample_idx": 2,
+  "generated_text": "to",
+  "generated_first_word": "to",
+  "similarity": 0.6696153879165649,
+  "timestamp": "2026-07-01 15:12:13"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "a3da95ceed534db3af670b6872bf4d85",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0043",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "The Vicar soon abandoned the",
+  "target_word": "struggle;",
+  "sample_idx": 0,
+  "generated_text": "idea.",
+  "generated_first_word": "idea.",
+  "similarity": 0.5874860286712646,
+  "timestamp": "2026-06-30 08:31:43"
+}

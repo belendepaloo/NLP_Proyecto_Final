@@ -1,0 +1,19 @@
+{
+  "query_id": "2ca63f2fc5dcb1b8e8968206ec9294cc",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0124",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 14,
+  "prefix": "She regarded it (once her clothes were ordered) as merely an enlarged opportunity for",
+  "target_word": "walking,",
+  "sample_idx": 1,
+  "generated_text": "shopping",
+  "generated_first_word": "shopping",
+  "similarity": 0.7187176942825317,
+  "timestamp": "2026-07-05 16:34:35"
+}

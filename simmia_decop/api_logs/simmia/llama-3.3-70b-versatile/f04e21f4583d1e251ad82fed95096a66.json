@@ -1,0 +1,19 @@
+{
+  "query_id": "f04e21f4583d1e251ad82fed95096a66",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0177",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "What can I do to serve you?' 'Nothing,' replied Nancy.",
+  "target_word": "'You",
+  "sample_idx": 0,
+  "generated_text": "'She'",
+  "generated_first_word": "She'",
+  "similarity": 0.8123431205749512,
+  "timestamp": "2026-07-08 01:07:58"
+}

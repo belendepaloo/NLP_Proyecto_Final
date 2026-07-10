@@ -1,0 +1,25 @@
+{
+  "query_id": "b07a482cbf47f6f55fda410ca7629a7e",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0112",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "title": "What Lies in the Woods",
+  "author": "Kate Alice Marshall",
+  "length": "medium",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"What Lies in the Woods\" book by Kate Alice Marshall?\nOptions:\nA. No problem, that would give me extra time to go back to Chester afterward. I have to answer this. I'll ring you back in just a second, okay? I used my shoulder to open the door and walked into the room. I'm staying put. We'll talk later. I hung up and shut the door behind me with my foot, then typed out a reply as I moved further into the room. The shadow was in the edge of my vision. I didn't notice it until it moved- and in that instant I saw it was a man, lunging at me. A man with brown hair and a cold expression in his eyes.  \nB. No worries, that would provide me more time to return to Chester after. I need to take this call. I'll call you right back, alright? I pushed open the door with my shoulder and entered the room. I'm not leaving. We'll speak later. I ended the call and closed the door behind me with my foot, then typed a response as I went deeper into the room. The shadow was in the periphery of my vision. I didn't see it until it shifted - and in that moment I realized it was a man, jumping towards me. A man with brown hair and an icy look in his eyes.\nC. No problemthat would give me more time to get back to Chester afterward. Ive got to answer this. Ill call you back in just a sec, okay? I shouldered the door open and stepped into the room. Im not going anywhere. Talk to you later. I hung up and shut the door behind me with my foot, then typed out a reply as I moved farther into the room. The shadow was in my peripheral vision. I didnt notice it until it movedand in the same instant I realized it was a man, lunging toward me. A man with brown hair and a cold look in his eyes.\nD. No worries, that would allow me more time to return to Chester later. I need to take this call. I'll phone you back in a moment, alright? I pushed the door open with my shoulder and entered the room. I'm not leaving. We'll chat later. I ended the call and closed the door behind me with my foot, then typed a response as I went deeper into the room. The shadow was in the corner of my eye. I didn't see it until it shifted- and at the same moment I realized it was a man, jumping at me. A man with brown hair and an icy look in his eyes.\nAnswer:",
+  "options": {
+    "A": "No problem, that would give me extra time to go back to Chester afterward. I have to answer this. I'll ring you back in just a second, okay? I used my shoulder to open the door and walked into the room. I'm staying put. We'll talk later. I hung up and shut the door behind me with my foot, then typed out a reply as I moved further into the room. The shadow was in the edge of my vision. I didn't notice it until it moved- and in that instant I saw it was a man, lunging at me. A man with brown hair and a cold expression in his eyes.  ",
+    "B": "No worries, that would provide me more time to return to Chester after. I need to take this call. I'll call you right back, alright? I pushed open the door with my shoulder and entered the room. I'm not leaving. We'll speak later. I ended the call and closed the door behind me with my foot, then typed a response as I went deeper into the room. The shadow was in the periphery of my vision. I didn't see it until it shifted - and in that moment I realized it was a man, jumping towards me. A man with brown hair and an icy look in his eyes.",
+    "C": "No problemthat would give me more time to get back to Chester afterward. Ive got to answer this. Ill call you back in just a sec, okay? I shouldered the door open and stepped into the room. Im not going anywhere. Talk to you later. I hung up and shut the door behind me with my foot, then typed out a reply as I moved farther into the room. The shadow was in my peripheral vision. I didnt notice it until it movedand in the same instant I realized it was a man, lunging toward me. A man with brown hair and a cold look in his eyes.",
+    "D": "No worries, that would allow me more time to return to Chester later. I need to take this call. I'll phone you back in a moment, alright? I pushed the door open with my shoulder and entered the room. I'm not leaving. We'll chat later. I ended the call and closed the door behind me with my foot, then typed a response as I went deeper into the room. The shadow was in the corner of my eye. I didn't see it until it shifted- and at the same moment I realized it was a man, jumping at me. A man with brown hair and an icy look in his eyes."
+  },
+  "gold_letter": "C",
+  "predicted_letter": "B",
+  "is_correct": 0,
+  "timestamp": "2026-07-08 04:46:07"
+}

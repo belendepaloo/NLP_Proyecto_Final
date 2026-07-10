@@ -1,0 +1,19 @@
+{
+  "query_id": "7266465d50955d6be07df96c6650bd29",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0186",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "O'Brien had sat",
+  "target_word": "down",
+  "sample_idx": 1,
+  "generated_text": "down",
+  "generated_first_word": "down",
+  "similarity": 1.0,
+  "timestamp": "2026-07-08 01:47:11"
+}

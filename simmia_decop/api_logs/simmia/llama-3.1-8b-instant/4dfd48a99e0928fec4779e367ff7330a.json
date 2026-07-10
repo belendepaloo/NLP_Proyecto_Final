@@ -1,0 +1,19 @@
+{
+  "query_id": "4dfd48a99e0928fec4779e367ff7330a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0156",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 17,
+  "prefix": "I glance out the window. I see some new housing developments halfway through construction. A candy shop",
+  "target_word": "I",
+  "sample_idx": 2,
+  "generated_text": "across from",
+  "generated_first_word": "across",
+  "similarity": 0.6588669419288635,
+  "timestamp": "2026-06-30 18:37:27"
+}

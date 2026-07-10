@@ -1,0 +1,19 @@
+{
+  "query_id": "9b571a2f120af45bcf0465a6b3a84703",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0139",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 11,
+  "prefix": "Before he knew it, he was the boss of his team,",
+  "target_word": "then",
+  "sample_idx": 1,
+  "generated_text": "and everyone looked",
+  "generated_first_word": "and",
+  "similarity": 0.7514666318893433,
+  "timestamp": "2026-06-30 17:12:36"
+}

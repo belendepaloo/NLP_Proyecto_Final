@@ -1,0 +1,19 @@
+{
+  "query_id": "bce1a15adaf52d2465b1ccbcf3dafe55",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0189",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 17,
+  "prefix": "‘A girl doesn’t get a man by being brainy,’ Mrs Wormwood said. ‘Look at that film-star for",
+  "target_word": "instance,’",
+  "sample_idx": 1,
+  "generated_text": "example, she",
+  "generated_first_word": "example,",
+  "similarity": 0.8403353691101074,
+  "timestamp": "2026-07-01 03:58:09"
+}

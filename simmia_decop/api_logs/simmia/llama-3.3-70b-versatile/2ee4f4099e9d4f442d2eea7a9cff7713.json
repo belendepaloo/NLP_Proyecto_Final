@@ -1,0 +1,19 @@
+{
+  "query_id": "2ee4f4099e9d4f442d2eea7a9cff7713",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0110",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 1,
+  "prefix": "The",
+  "target_word": "Countess",
+  "sample_idx": 1,
+  "generated_text": "man",
+  "generated_first_word": "man",
+  "similarity": 0.620189368724823,
+  "timestamp": "2026-07-04 20:13:25"
+}

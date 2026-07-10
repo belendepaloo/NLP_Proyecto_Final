@@ -1,0 +1,19 @@
+{
+  "query_id": "cc42f1b494af8ac51fefed4c2ecda5eb",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0193",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 14,
+  "prefix": "No ones forcing you to stay! Sabrina says. If you want to go, go!",
+  "target_word": "Cleo",
+  "sample_idx": 1,
+  "generated_text": "Then",
+  "generated_first_word": "Then",
+  "similarity": 0.6047790050506592,
+  "timestamp": "2026-07-08 02:22:17"
+}

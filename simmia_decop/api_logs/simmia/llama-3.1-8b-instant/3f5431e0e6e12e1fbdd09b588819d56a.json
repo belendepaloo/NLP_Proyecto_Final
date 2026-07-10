@@ -1,0 +1,19 @@
+{
+  "query_id": "3f5431e0e6e12e1fbdd09b588819d56a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0166",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "Wulf grabbed whatever he could throw: weapons, two",
+  "target_word": "oars,",
+  "sample_idx": 1,
+  "generated_text": "small knives.",
+  "generated_first_word": "small",
+  "similarity": 0.6069202423095703,
+  "timestamp": "2026-07-01 01:58:04"
+}

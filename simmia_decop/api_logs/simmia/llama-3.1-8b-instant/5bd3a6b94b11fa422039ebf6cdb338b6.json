@@ -1,0 +1,19 @@
+{
+  "query_id": "5bd3a6b94b11fa422039ebf6cdb338b6",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0119",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "\"Safer from",
+  "target_word": "loving",
+  "sample_idx": 2,
+  "generated_text": "the unknown dangers",
+  "generated_first_word": "the",
+  "similarity": 0.6838878393173218,
+  "timestamp": "2026-06-30 15:01:25"
+}

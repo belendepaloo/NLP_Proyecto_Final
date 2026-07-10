@@ -1,0 +1,19 @@
+{
+  "query_id": "b463185b12502528ff35dd9a6b8a3bf3",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0134",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 13,
+  "prefix": "Then all listened while Elrond in his clear voice spoke of Sauron and",
+  "target_word": "the",
+  "sample_idx": 2,
+  "generated_text": "the",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-07-05 17:19:47"
+}

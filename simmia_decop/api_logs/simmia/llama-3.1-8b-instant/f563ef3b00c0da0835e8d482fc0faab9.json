@@ -1,0 +1,19 @@
+{
+  "query_id": "f563ef3b00c0da0835e8d482fc0faab9",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0129",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Giles.' 'I hope you don't",
+  "target_word": "mean",
+  "sample_idx": 2,
+  "generated_text": "mind, but",
+  "generated_first_word": "mind,",
+  "similarity": 0.6283038258552551,
+  "timestamp": "2026-06-30 15:52:02"
+}

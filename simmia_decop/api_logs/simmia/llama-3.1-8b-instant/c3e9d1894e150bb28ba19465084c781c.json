@@ -1,0 +1,19 @@
+{
+  "query_id": "c3e9d1894e150bb28ba19465084c781c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0093",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "Bumble. 'Isn't natur, natur, Mrs. Bumble?' remonstrated",
+  "target_word": "the",
+  "sample_idx": 0,
+  "generated_text": "the little house",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 12:52:35"
+}

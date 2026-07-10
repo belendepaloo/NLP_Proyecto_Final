@@ -1,0 +1,19 @@
+{
+  "query_id": "f441cae7d6d57ba13f6c540226347086",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0095",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 13,
+  "prefix": "Youve really got to stop doing this, one of the EMTs joked, yelling",
+  "target_word": "over",
+  "sample_idx": 0,
+  "generated_text": "over the w",
+  "generated_first_word": "over",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 13:04:34"
+}

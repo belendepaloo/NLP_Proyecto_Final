@@ -1,0 +1,19 @@
+{
+  "query_id": "f6d64d34dc093f60a40a50ad78ec1735",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0093",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "Bumble. 'Isn't natur, natur, Mrs. Bumble?' remonstrated the workhouse",
+  "target_word": "master.",
+  "sample_idx": 1,
+  "generated_text": "beadle.",
+  "generated_first_word": "beadle.",
+  "similarity": 0.6532204151153564,
+  "timestamp": "2026-06-30 12:53:14"
+}

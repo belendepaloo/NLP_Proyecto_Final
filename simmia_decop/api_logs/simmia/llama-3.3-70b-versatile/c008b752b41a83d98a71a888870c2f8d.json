@@ -1,0 +1,19 @@
+{
+  "query_id": "c008b752b41a83d98a71a888870c2f8d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0082",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "The hills",
+  "target_word": "drew",
+  "sample_idx": 2,
+  "generated_text": "were",
+  "generated_first_word": "were",
+  "similarity": 0.6192595362663269,
+  "timestamp": "2026-07-04 18:05:49"
+}

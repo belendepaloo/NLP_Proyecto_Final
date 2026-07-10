@@ -1,0 +1,19 @@
+{
+  "query_id": "5a2fb8e108e5c542388555a039196b35",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0137",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Glorian drew",
+  "target_word": "herself",
+  "sample_idx": 0,
+  "generated_text": "a",
+  "generated_first_word": "a",
+  "similarity": 0.6873109936714172,
+  "timestamp": "2026-07-05 17:30:59"
+}

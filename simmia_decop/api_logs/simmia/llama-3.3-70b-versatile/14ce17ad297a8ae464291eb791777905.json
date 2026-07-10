@@ -1,0 +1,19 @@
+{
+  "query_id": "14ce17ad297a8ae464291eb791777905",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0019",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 15,
+  "prefix": "Edgar Linton, as mul- titudes have been before, and will be after him, was in-",
+  "target_word": "fatuated,",
+  "sample_idx": 1,
+  "generated_text": "love",
+  "generated_first_word": "love",
+  "similarity": 0.6117826104164124,
+  "timestamp": "2026-07-01 15:08:57"
+}

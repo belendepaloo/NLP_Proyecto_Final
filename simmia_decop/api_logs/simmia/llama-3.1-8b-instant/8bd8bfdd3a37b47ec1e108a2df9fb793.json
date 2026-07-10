@@ -1,0 +1,19 @@
+{
+  "query_id": "8bd8bfdd3a37b47ec1e108a2df9fb793",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0149",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "Not only did there seem to lurk in",
+  "target_word": "it",
+  "sample_idx": 0,
+  "generated_text": "the shadows of",
+  "generated_first_word": "the",
+  "similarity": 0.7294350862503052,
+  "timestamp": "2026-06-30 17:59:37"
+}

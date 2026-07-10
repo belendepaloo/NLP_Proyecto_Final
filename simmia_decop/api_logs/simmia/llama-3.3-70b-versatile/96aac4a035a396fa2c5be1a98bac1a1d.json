@@ -1,0 +1,19 @@
+{
+  "query_id": "96aac4a035a396fa2c5be1a98bac1a1d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0197",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 19,
+  "prefix": "He was getting, he judged, three meals in the twenty-four hours; sometimes he wondered dimly whether he was getting",
+  "target_word": "them",
+  "sample_idx": 0,
+  "generated_text": "enough",
+  "generated_first_word": "enough",
+  "similarity": 0.6379448771476746,
+  "timestamp": "2026-07-08 02:41:24"
+}

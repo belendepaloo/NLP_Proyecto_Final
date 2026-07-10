@@ -1,0 +1,19 @@
+{
+  "query_id": "626e4e2cd6a64320c707f80db350f267",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0159",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "The mother’s handbag lay on a chair at the other end of",
+  "target_word": "the",
+  "sample_idx": 1,
+  "generated_text": "the",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-07-06 16:58:30"
+}

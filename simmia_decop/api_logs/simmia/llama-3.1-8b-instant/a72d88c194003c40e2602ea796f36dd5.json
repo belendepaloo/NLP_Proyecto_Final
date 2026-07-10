@@ -1,0 +1,19 @@
+{
+  "query_id": "a72d88c194003c40e2602ea796f36dd5",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0007",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "My mother was",
+  "target_word": "right",
+  "sample_idx": 0,
+  "generated_text": "a wonderful",
+  "generated_first_word": "a",
+  "similarity": 0.6674087643623352,
+  "timestamp": "2026-06-30 05:22:20"
+}

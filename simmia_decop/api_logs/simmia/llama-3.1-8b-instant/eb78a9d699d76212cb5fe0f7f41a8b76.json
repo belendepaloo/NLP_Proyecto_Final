@@ -1,0 +1,19 @@
+{
+  "query_id": "eb78a9d699d76212cb5fe0f7f41a8b76",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0080",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 15,
+  "prefix": "Harry heard from Hogwarts one sunny morning about a week after he had arrived at",
+  "target_word": "the",
+  "sample_idx": 0,
+  "generated_text": "the Durs",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 11:48:13"
+}

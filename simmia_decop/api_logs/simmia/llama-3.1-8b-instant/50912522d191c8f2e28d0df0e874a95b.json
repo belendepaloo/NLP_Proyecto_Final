@@ -1,0 +1,19 @@
+{
+  "query_id": "50912522d191c8f2e28d0df0e874a95b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0013",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "‘You ignorant little slug!’",
+  "target_word": "the",
+  "sample_idx": 2,
+  "generated_text": "the creature hissed",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 05:55:00"
+}

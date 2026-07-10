@@ -1,0 +1,19 @@
+{
+  "query_id": "01dec297f035e4d52bac5203e521c32a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0134",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Then all listened while",
+  "target_word": "Elrond",
+  "sample_idx": 0,
+  "generated_text": "the old man",
+  "generated_first_word": "the",
+  "similarity": 0.6300147771835327,
+  "timestamp": "2026-06-30 16:16:04"
+}

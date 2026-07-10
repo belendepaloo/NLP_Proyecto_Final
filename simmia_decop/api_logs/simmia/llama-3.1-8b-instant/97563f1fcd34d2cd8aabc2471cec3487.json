@@ -1,0 +1,19 @@
+{
+  "query_id": "97563f1fcd34d2cd8aabc2471cec3487",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0042",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Never mind how he came there;",
+  "target_word": "it's",
+  "sample_idx": 2,
+  "generated_text": "he was there",
+  "generated_first_word": "he",
+  "similarity": 0.716623067855835,
+  "timestamp": "2026-06-30 08:27:01"
+}

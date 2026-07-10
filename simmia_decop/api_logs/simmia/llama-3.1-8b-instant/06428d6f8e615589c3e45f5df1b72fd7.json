@@ -1,0 +1,19 @@
+{
+  "query_id": "06428d6f8e615589c3e45f5df1b72fd7",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0115",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "If I were someone",
+  "target_word": "who",
+  "sample_idx": 2,
+  "generated_text": "who had experienced",
+  "generated_first_word": "who",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 14:41:42"
+}

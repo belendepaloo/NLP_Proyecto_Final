@@ -1,0 +1,19 @@
+{
+  "query_id": "83519a748dbc9d5793d1c6b2bf290253",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0112",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 19,
+  "prefix": "No problemthat would give me more time to get back to Chester afterward. Ive got to answer this. Ill",
+  "target_word": "call",
+  "sample_idx": 0,
+  "generated_text": "call you back",
+  "generated_first_word": "call",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 14:30:11"
+}

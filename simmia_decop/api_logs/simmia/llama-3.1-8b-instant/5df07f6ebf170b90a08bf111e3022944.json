@@ -1,0 +1,19 @@
+{
+  "query_id": "5df07f6ebf170b90a08bf111e3022944",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0028",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "Theres no need to go excavating ancient history.",
+  "target_word": "Though",
+  "sample_idx": 1,
+  "generated_text": "It's just",
+  "generated_first_word": "It's",
+  "similarity": 0.6236177086830139,
+  "timestamp": "2026-06-30 07:14:06"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "7e7e186c7b0778366b1f8e4cef46deac",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0082",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "The hills drew nearer. They made",
+  "target_word": "an",
+  "sample_idx": 0,
+  "generated_text": "their",
+  "generated_first_word": "their",
+  "similarity": 0.7213442325592041,
+  "timestamp": "2026-07-04 18:06:37"
+}

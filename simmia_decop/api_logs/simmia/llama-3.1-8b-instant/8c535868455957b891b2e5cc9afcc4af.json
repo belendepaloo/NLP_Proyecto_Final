@@ -1,0 +1,19 @@
+{
+  "query_id": "8c535868455957b891b2e5cc9afcc4af",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0102",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "Maud smiled as she passed the pond again.",
+  "target_word": "Neither",
+  "sample_idx": 2,
+  "generated_text": "The sunlight danced",
+  "generated_first_word": "The",
+  "similarity": 0.6888773441314697,
+  "timestamp": "2026-06-30 13:38:28"
+}

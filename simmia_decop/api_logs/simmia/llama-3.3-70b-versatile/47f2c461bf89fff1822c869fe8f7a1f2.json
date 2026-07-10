@@ -1,0 +1,19 @@
+{
+  "query_id": "47f2c461bf89fff1822c869fe8f7a1f2",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0139",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Before he knew it, he was",
+  "target_word": "the",
+  "sample_idx": 2,
+  "generated_text": "standing",
+  "generated_first_word": "standing",
+  "similarity": 0.6248395442962646,
+  "timestamp": "2026-07-05 17:43:17"
+}

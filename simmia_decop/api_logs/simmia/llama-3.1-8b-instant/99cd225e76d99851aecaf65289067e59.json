@@ -1,0 +1,19 @@
+{
+  "query_id": "99cd225e76d99851aecaf65289067e59",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0097",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "“Er —",
+  "target_word": "Professor",
+  "sample_idx": 2,
+  "generated_text": "I'm afraid",
+  "generated_first_word": "I'm",
+  "similarity": 0.5997963547706604,
+  "timestamp": "2026-06-30 13:11:57"
+}

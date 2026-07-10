@@ -1,0 +1,19 @@
+{
+  "query_id": "d09e54e207fcea04ffd5ff3f6a90e535",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0186",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "O'Brien had sat down beside the bed, so",
+  "target_word": "that",
+  "sample_idx": 2,
+  "generated_text": "his eyes locked",
+  "generated_first_word": "his",
+  "similarity": 0.6817878484725952,
+  "timestamp": "2026-07-01 03:39:23"
+}

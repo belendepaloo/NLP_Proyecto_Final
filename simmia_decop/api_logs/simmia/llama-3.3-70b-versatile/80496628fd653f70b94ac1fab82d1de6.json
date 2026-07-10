@@ -1,0 +1,19 @@
+{
+  "query_id": "80496628fd653f70b94ac1fab82d1de6",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0006",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 16,
+  "prefix": "I've seen none like Edgar.\" \"You may see some. And he won't always be hand- some",
+  "target_word": "and",
+  "sample_idx": 0,
+  "generated_text": "either",
+  "generated_first_word": "either",
+  "similarity": 0.6645245552062988,
+  "timestamp": "2026-07-01 14:08:24"
+}

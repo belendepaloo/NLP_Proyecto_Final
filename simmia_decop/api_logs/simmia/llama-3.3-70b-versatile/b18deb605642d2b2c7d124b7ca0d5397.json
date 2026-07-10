@@ -1,0 +1,19 @@
+{
+  "query_id": "b18deb605642d2b2c7d124b7ca0d5397",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0083",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 17,
+  "prefix": "Youre clearly very intelligent. He is, I say, right as he says, I was a student athlete.",
+  "target_word": "Well,",
+  "sample_idx": 1,
+  "generated_text": "at",
+  "generated_first_word": "at",
+  "similarity": 0.5898364186286926,
+  "timestamp": "2026-07-04 18:13:51"
+}

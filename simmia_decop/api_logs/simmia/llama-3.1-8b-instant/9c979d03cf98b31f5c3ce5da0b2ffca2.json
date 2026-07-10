@@ -1,0 +1,19 @@
+{
+  "query_id": "9c979d03cf98b31f5c3ce5da0b2ffca2",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0069",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "But when one",
+  "target_word": "of",
+  "sample_idx": 0,
+  "generated_text": "considers",
+  "generated_first_word": "considers",
+  "similarity": 0.6723490953445435,
+  "timestamp": "2026-06-30 10:48:54"
+}

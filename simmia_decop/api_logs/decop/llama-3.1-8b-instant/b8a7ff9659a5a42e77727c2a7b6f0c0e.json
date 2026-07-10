@@ -1,0 +1,25 @@
+{
+  "query_id": "b8a7ff9659a5a42e77727c2a7b6f0c0e",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0123",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "title": "Unfortunately Yours",
+  "author": "Tessa Bailey",
+  "length": "medium",
+  "permutation_index": 2,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Unfortunately Yours\" book by Tessa Bailey?\nOptions:\nA. Natalie trailed behind, beaming and thanking individuals who offered congratulations as she went by. When they arrived at a quiet nook of the train car, Corinne maintained a calm smile, but anger shone in her eyes. Don't you think some advance notice before involving your brother and I in this scheme would have been good? You're right, that was my plan. In half an hour, you and this...neanderthal have made us a sideshow. Suddenly, Natalie was livid. He's a former soldier.\nB. Natalie walked behind Corinne, smiling and thanking individuals who congratulated her as she went by. When they arrived at a quiet area of the train car, Corinne maintained a calm smile on her face, but her anger was evident in her eyes. Don't you think it would have been good to give us a little advance notice before involving your brother and I in this scheme? Yes, I really do think that. That was my plan. In the span of thirty minutes, you and this...ape have made us into a show. Suddenly, Natalie became extremely angry. He's a war veteran.\nC. Natalie followed, smiling and thanking people who congratulated her as she passed. When they reached a quiet corner of the train car, Corinne kept a serene smile on her face, but there was no mistaking the temper in her eyes. Dont you think it would have been nice to give us a little prewarning before roping your brother and me into this stunt? Yes, I do, actually. That was my intention In the space of thirty minutes, you and this . . . ape have turned us into a spectacle. All at once, Natalies blood rose to a rollicking boil. Hes a war veteran.\nD. Natalie followed Corinne, grinning and expressing gratitude to people who congratulated her while passing. As they got to a peaceful corner of the train car, Corinne kept a serene smile on her face, but her temper was obvious in her eyes. Wouldn't it have been nice to warn us a bit before bringing your brother and me into this stunt? I actually agree, that was my intention. In thirty minutes, you and this...brute have turned us into a spectacle. All at once, Natalie was furious. He's an ex-soldier.  \nAnswer:",
+  "options": {
+    "A": "Natalie trailed behind, beaming and thanking individuals who offered congratulations as she went by. When they arrived at a quiet nook of the train car, Corinne maintained a calm smile, but anger shone in her eyes. Don't you think some advance notice before involving your brother and I in this scheme would have been good? You're right, that was my plan. In half an hour, you and this...neanderthal have made us a sideshow. Suddenly, Natalie was livid. He's a former soldier.",
+    "B": "Natalie walked behind Corinne, smiling and thanking individuals who congratulated her as she went by. When they arrived at a quiet area of the train car, Corinne maintained a calm smile on her face, but her anger was evident in her eyes. Don't you think it would have been good to give us a little advance notice before involving your brother and I in this scheme? Yes, I really do think that. That was my plan. In the span of thirty minutes, you and this...ape have made us into a show. Suddenly, Natalie became extremely angry. He's a war veteran.",
+    "C": "Natalie followed, smiling and thanking people who congratulated her as she passed. When they reached a quiet corner of the train car, Corinne kept a serene smile on her face, but there was no mistaking the temper in her eyes. Dont you think it would have been nice to give us a little prewarning before roping your brother and me into this stunt? Yes, I do, actually. That was my intention In the space of thirty minutes, you and this . . . ape have turned us into a spectacle. All at once, Natalies blood rose to a rollicking boil. Hes a war veteran.",
+    "D": "Natalie followed Corinne, grinning and expressing gratitude to people who congratulated her while passing. As they got to a peaceful corner of the train car, Corinne kept a serene smile on her face, but her temper was obvious in her eyes. Wouldn't it have been nice to warn us a bit before bringing your brother and me into this stunt? I actually agree, that was my intention. In thirty minutes, you and this...brute have turned us into a spectacle. All at once, Natalie was furious. He's an ex-soldier.  "
+  },
+  "gold_letter": "C",
+  "predicted_letter": "D",
+  "is_correct": 0,
+  "timestamp": "2026-07-08 04:52:30"
+}

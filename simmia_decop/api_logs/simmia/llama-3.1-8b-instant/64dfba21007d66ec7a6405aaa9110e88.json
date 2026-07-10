@@ -1,0 +1,19 @@
+{
+  "query_id": "64dfba21007d66ec7a6405aaa9110e88",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0118",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Ardin Javar was a",
+  "target_word": "bear",
+  "sample_idx": 0,
+  "generated_text": "mysterious figure",
+  "generated_first_word": "mysterious",
+  "similarity": 0.6464742422103882,
+  "timestamp": "2026-06-30 14:56:43"
+}

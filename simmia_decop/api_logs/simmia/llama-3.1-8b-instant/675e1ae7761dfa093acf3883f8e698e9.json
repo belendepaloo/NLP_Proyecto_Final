@@ -1,0 +1,19 @@
+{
+  "query_id": "675e1ae7761dfa093acf3883f8e698e9",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0025",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 13,
+  "prefix": "Miss Cathy had been sick, and that made her still. She leant against",
+  "target_word": "her",
+  "sample_idx": 1,
+  "generated_text": "the old oak",
+  "generated_first_word": "the",
+  "similarity": 0.772352397441864,
+  "timestamp": "2026-06-30 06:59:51"
+}

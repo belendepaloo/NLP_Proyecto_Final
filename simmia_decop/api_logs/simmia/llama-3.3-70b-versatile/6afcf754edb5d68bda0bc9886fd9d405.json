@@ -1,0 +1,19 @@
+{
+  "query_id": "6afcf754edb5d68bda0bc9886fd9d405",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0032",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 16,
+  "prefix": "Even as the first shadows were felt in Mirkwood there appeared in the west of Middle-earth",
+  "target_word": "the",
+  "sample_idx": 2,
+  "generated_text": "a darkness",
+  "generated_first_word": "a",
+  "similarity": 0.7954018712043762,
+  "timestamp": "2026-07-01 17:41:13"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "ec7ae5a993f8a4c37ee57e0ff506275b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0160",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 17,
+  "prefix": "My room is on the top floor overlooking the harbor. The walls are palest blue, like Teddy’s",
+  "target_word": "dead",
+  "sample_idx": 1,
+  "generated_text": "eyes,",
+  "generated_first_word": "eyes,",
+  "similarity": 0.6871610283851624,
+  "timestamp": "2026-07-06 17:04:24"
+}

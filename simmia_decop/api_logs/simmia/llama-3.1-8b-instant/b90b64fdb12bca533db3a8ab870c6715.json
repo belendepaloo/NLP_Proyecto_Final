@@ -1,0 +1,19 @@
+{
+  "query_id": "b90b64fdb12bca533db3a8ab870c6715",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0031",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 17,
+  "prefix": "Whenever he could, he sought out a new road to travel. He had never been to that",
+  "target_word": "ruined",
+  "sample_idx": 2,
+  "generated_text": "particular town",
+  "generated_first_word": "particular",
+  "similarity": 0.6423125267028809,
+  "timestamp": "2026-06-30 07:31:41"
+}

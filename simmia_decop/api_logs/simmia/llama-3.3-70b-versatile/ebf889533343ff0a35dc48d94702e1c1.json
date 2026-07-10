@@ -1,0 +1,19 @@
+{
+  "query_id": "ebf889533343ff0a35dc48d94702e1c1",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0167",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Let",
+  "target_word": "the",
+  "sample_idx": 0,
+  "generated_text": "me",
+  "generated_first_word": "me",
+  "similarity": 0.7481280565261841,
+  "timestamp": "2026-07-06 17:32:58"
+}

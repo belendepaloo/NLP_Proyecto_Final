@@ -1,0 +1,19 @@
+{
+  "query_id": "d7e497fa21376127455d0a60d4beba0e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0100",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "“Careful not to walk through anyone,”",
+  "target_word": "said",
+  "sample_idx": 1,
+  "generated_text": "\"or you",
+  "generated_first_word": "or",
+  "similarity": 0.7290195226669312,
+  "timestamp": "2026-06-30 13:27:48"
+}

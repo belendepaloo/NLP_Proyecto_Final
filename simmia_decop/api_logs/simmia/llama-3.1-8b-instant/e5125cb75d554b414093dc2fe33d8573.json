@@ -1,0 +1,19 @@
+{
+  "query_id": "e5125cb75d554b414093dc2fe33d8573",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0198",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 12,
+  "prefix": "We dance all night, stopping only for me to down my liquor-free",
+  "target_word": "mojito",
+  "sample_idx": 1,
+  "generated_text": "mocktail.",
+  "generated_first_word": "mocktail.",
+  "similarity": 0.5935219526290894,
+  "timestamp": "2026-07-01 04:41:38"
+}

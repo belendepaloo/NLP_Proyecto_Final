@@ -1,0 +1,25 @@
+{
+  "query_id": "aae074d7ff78bca817cd8f41ab6d24b9",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0048",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "title": "Hedge",
+  "author": "Jane Delury",
+  "length": "medium",
+  "permutation_index": 2,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Hedge\" book by Jane Delury?\nOptions:\nA. Were going to take you to the hospital to get you checked out. I dont want to. We need to be sure youre okay. Your mom and dad and sister will go with you. Maud didnt even know where Louise had gone, then saw her, hovering next to Peter. The officer headed toward his squad car. You folks take Ella on to the ER in Rhinebeck. Ill radio ahead. My colleague will meet you. I dont want to, Ella said again from the grass. Gently, Peter picked her up, as if she were a baby. How many times did you go over there? Maud asked Ella as Peter settled her in the car.\nB. We're taking you to the hospital to get examined. I don't want to. We need to confirm you're alright. Your family will join you. Maud was unaware where Louise was, then saw her near Peter. The officer headed to his vehicle. You all take Ella to the emergency room in Rhinebeck. I'll inform them beforehand. My colleague will greet you there. I don't want to, Ella repeated from the grass. Carefully, Peter lifted her up, as if she were an infant. How often did you visit there? Maud asked Ella as Peter settled her in the car.\nC. We are taking you to the hospital to get examined. I do not want to go. We must ensure you are alright. Your family will accompany you. Maud was unaware of Louise's location, then saw her near Peter. The policeman walked to his vehicle. You all bring Ella to the emergency room in Rhinebeck. I will inform them ahead of time. My coworker will greet you there. I do not want to, Ella repeated while on the grass. Carefully, Peter lifted her up, as if she was an infant. How often did you visit there? Maud questioned Ella as Peter placed her in the automobile.  \nD. We need to take you to get checked at the hospital. I don't want to do that. We have to make sure you're okay. Your mom, dad, and sister will go too. Maud didn't know where Louise was, then saw her next to Peter. The officer went to his patrol car. You take Ella to the ER in Rhinebeck. I'll let them know ahead of time. My partner will meet you there. I don't want to, Ella said again while on the grass. Gently, Peter picked her up, like she was a baby. How many times did you go over there? Maud asked Ella as Peter put her in the car.\nAnswer:",
+  "options": {
+    "A": "Were going to take you to the hospital to get you checked out. I dont want to. We need to be sure youre okay. Your mom and dad and sister will go with you. Maud didnt even know where Louise had gone, then saw her, hovering next to Peter. The officer headed toward his squad car. You folks take Ella on to the ER in Rhinebeck. Ill radio ahead. My colleague will meet you. I dont want to, Ella said again from the grass. Gently, Peter picked her up, as if she were a baby. How many times did you go over there? Maud asked Ella as Peter settled her in the car.",
+    "B": "We're taking you to the hospital to get examined. I don't want to. We need to confirm you're alright. Your family will join you. Maud was unaware where Louise was, then saw her near Peter. The officer headed to his vehicle. You all take Ella to the emergency room in Rhinebeck. I'll inform them beforehand. My colleague will greet you there. I don't want to, Ella repeated from the grass. Carefully, Peter lifted her up, as if she were an infant. How often did you visit there? Maud asked Ella as Peter settled her in the car.",
+    "C": "We are taking you to the hospital to get examined. I do not want to go. We must ensure you are alright. Your family will accompany you. Maud was unaware of Louise's location, then saw her near Peter. The policeman walked to his vehicle. You all bring Ella to the emergency room in Rhinebeck. I will inform them ahead of time. My coworker will greet you there. I do not want to, Ella repeated while on the grass. Carefully, Peter lifted her up, as if she was an infant. How often did you visit there? Maud questioned Ella as Peter placed her in the automobile.  ",
+    "D": "We need to take you to get checked at the hospital. I don't want to do that. We have to make sure you're okay. Your mom, dad, and sister will go too. Maud didn't know where Louise was, then saw her next to Peter. The officer went to his patrol car. You take Ella to the ER in Rhinebeck. I'll let them know ahead of time. My partner will meet you there. I don't want to, Ella said again while on the grass. Gently, Peter picked her up, like she was a baby. How many times did you go over there? Maud asked Ella as Peter put her in the car."
+  },
+  "gold_letter": "A",
+  "predicted_letter": "D",
+  "is_correct": 0,
+  "timestamp": "2026-07-08 04:07:53"
+}

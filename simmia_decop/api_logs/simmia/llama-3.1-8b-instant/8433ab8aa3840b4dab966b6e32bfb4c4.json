@@ -1,0 +1,19 @@
+{
+  "query_id": "8433ab8aa3840b4dab966b6e32bfb4c4",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0093",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "Bumble. 'Isn't natur, natur, Mrs. Bumble?' remonstrated the workhouse master. 'Can't I",
+  "target_word": "be",
+  "sample_idx": 1,
+  "generated_text": "even have a",
+  "generated_first_word": "even",
+  "similarity": 0.6115928292274475,
+  "timestamp": "2026-06-30 12:54:06"
+}

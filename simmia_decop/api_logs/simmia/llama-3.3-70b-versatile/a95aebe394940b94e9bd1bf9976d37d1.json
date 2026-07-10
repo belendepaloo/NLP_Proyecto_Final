@@ -1,0 +1,19 @@
+{
+  "query_id": "a95aebe394940b94e9bd1bf9976d37d1",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0022",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 13,
+  "prefix": "I can come back tomorrow, she said. Lets stick to Wednesdays, Alice said.",
+  "target_word": "The",
+  "sample_idx": 2,
+  "generated_text": "firmly",
+  "generated_first_word": "firmly",
+  "similarity": 0.6349604725837708,
+  "timestamp": "2026-07-01 15:22:30"
+}

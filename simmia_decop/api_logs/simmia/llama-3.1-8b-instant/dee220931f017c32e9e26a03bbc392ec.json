@@ -1,0 +1,19 @@
+{
+  "query_id": "dee220931f017c32e9e26a03bbc392ec",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0138",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 14,
+  "prefix": "Here you shall dwell at your pleasure, save only that you must here abide",
+  "target_word": "and",
+  "sample_idx": 0,
+  "generated_text": "by the laws",
+  "generated_first_word": "by",
+  "similarity": 0.7020533680915833,
+  "timestamp": "2026-06-30 17:07:49"
+}

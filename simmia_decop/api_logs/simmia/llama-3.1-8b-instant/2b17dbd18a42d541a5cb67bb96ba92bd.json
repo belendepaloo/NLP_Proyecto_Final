@@ -1,0 +1,19 @@
+{
+  "query_id": "2b17dbd18a42d541a5cb67bb96ba92bd",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0156",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 12,
+  "prefix": "I glance out the window. I see some new housing developments halfway",
+  "target_word": "through",
+  "sample_idx": 0,
+  "generated_text": "down the road",
+  "generated_first_word": "down",
+  "similarity": 0.7302576303482056,
+  "timestamp": "2026-06-30 18:35:05"
+}

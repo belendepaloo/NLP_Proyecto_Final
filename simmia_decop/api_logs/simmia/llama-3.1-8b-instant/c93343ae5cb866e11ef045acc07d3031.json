@@ -1,0 +1,19 @@
+{
+  "query_id": "c93343ae5cb866e11ef045acc07d3031",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0040",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "At that",
+  "target_word": "point,",
+  "sample_idx": 2,
+  "generated_text": "point",
+  "generated_first_word": "point",
+  "similarity": 0.941784679889679,
+  "timestamp": "2026-06-30 08:15:28"
+}

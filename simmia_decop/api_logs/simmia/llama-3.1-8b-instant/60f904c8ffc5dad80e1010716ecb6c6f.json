@@ -1,0 +1,19 @@
+{
+  "query_id": "60f904c8ffc5dad80e1010716ecb6c6f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0002",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Master",
+  "target_word": "Bates",
+  "sample_idx": 2,
+  "generated_text": "Chef",
+  "generated_first_word": "Chef",
+  "similarity": 0.6645870208740234,
+  "timestamp": "2026-06-30 04:55:49"
+}

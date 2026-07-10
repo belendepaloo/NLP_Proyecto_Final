@@ -1,0 +1,19 @@
+{
+  "query_id": "7ddffe9a9c2fc4d9f0c06ccda869746d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0130",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 17,
+  "prefix": "“The Eternity King too requires an explanation,” said the thin, darkly handsome man standing opposite Salenna. The",
+  "target_word": "lopsided",
+  "sample_idx": 0,
+  "generated_text": "man's",
+  "generated_first_word": "man's",
+  "similarity": 0.6198431253433228,
+  "timestamp": "2026-07-05 17:02:28"
+}

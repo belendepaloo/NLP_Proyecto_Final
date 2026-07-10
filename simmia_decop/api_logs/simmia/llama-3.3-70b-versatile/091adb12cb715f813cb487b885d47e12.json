@@ -1,0 +1,19 @@
+{
+  "query_id": "091adb12cb715f813cb487b885d47e12",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0075",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Theres almost a swagger to him,",
+  "target_word": "a",
+  "sample_idx": 1,
+  "generated_text": "as",
+  "generated_first_word": "as",
+  "similarity": 0.6719321012496948,
+  "timestamp": "2026-07-03 16:07:06"
+}

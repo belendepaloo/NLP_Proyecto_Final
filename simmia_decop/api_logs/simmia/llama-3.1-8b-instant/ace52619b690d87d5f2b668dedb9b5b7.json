@@ -1,0 +1,19 @@
+{
+  "query_id": "ace52619b690d87d5f2b668dedb9b5b7",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0147",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 18,
+  "prefix": "Im certain hes going to kiss me, but instead he says, I read your books. I back up,",
+  "target_word": "this",
+  "sample_idx": 1,
+  "generated_text": "my heart sinks",
+  "generated_first_word": "my",
+  "similarity": 0.736229419708252,
+  "timestamp": "2026-06-30 17:52:36"
+}

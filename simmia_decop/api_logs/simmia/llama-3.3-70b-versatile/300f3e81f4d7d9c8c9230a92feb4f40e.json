@@ -1,0 +1,19 @@
+{
+  "query_id": "300f3e81f4d7d9c8c9230a92feb4f40e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0069",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "But when one of Marions skates",
+  "target_word": "slid",
+  "sample_idx": 2,
+  "generated_text": "broke",
+  "generated_first_word": "broke",
+  "similarity": 0.6257377862930298,
+  "timestamp": "2026-07-03 15:36:49"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "1fa4584757ccdd86224ba7a2ecbdf372",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0003",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "But August continues to",
+  "target_word": "try",
+  "sample_idx": 2,
+  "generated_text": "be a pivotal",
+  "generated_first_word": "be",
+  "similarity": 0.6138586401939392,
+  "timestamp": "2026-06-30 05:01:47"
+}

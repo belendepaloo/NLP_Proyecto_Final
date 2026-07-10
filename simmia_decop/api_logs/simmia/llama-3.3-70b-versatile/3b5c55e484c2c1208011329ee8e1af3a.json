@@ -1,0 +1,19 @@
+{
+  "query_id": "3b5c55e484c2c1208011329ee8e1af3a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0046",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Yet Archer was convinced",
+  "target_word": "that",
+  "sample_idx": 1,
+  "generated_text": "that",
+  "generated_first_word": "that",
+  "similarity": 1.0000001192092896,
+  "timestamp": "2026-07-02 03:17:03"
+}

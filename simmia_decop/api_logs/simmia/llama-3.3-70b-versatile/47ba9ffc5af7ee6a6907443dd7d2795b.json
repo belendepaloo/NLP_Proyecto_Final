@@ -1,0 +1,19 @@
+{
+  "query_id": "47ba9ffc5af7ee6a6907443dd7d2795b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0095",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "Youve really got to stop doing this, one",
+  "target_word": "of",
+  "sample_idx": 1,
+  "generated_text": "of",
+  "generated_first_word": "of",
+  "similarity": 1.0,
+  "timestamp": "2026-07-04 19:06:36"
+}

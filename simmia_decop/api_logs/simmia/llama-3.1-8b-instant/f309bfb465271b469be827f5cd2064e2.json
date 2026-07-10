@@ -1,0 +1,19 @@
+{
+  "query_id": "f309bfb465271b469be827f5cd2064e2",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0111",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "The",
+  "target_word": "vaults",
+  "sample_idx": 2,
+  "generated_text": "temperature",
+  "generated_first_word": "temperature",
+  "similarity": 0.5190947651863098,
+  "timestamp": "2026-06-30 14:20:45"
+}

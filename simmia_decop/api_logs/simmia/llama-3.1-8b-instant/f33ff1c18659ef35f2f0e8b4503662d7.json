@@ -1,0 +1,19 @@
+{
+  "query_id": "f33ff1c18659ef35f2f0e8b4503662d7",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0104",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Her first wild thought was that",
+  "target_word": "the",
+  "sample_idx": 1,
+  "generated_text": "she had somehow",
+  "generated_first_word": "she",
+  "similarity": 0.760020911693573,
+  "timestamp": "2026-06-30 13:47:54"
+}

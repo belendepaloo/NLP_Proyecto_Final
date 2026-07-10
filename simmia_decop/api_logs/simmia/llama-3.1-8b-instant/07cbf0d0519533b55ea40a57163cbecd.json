@@ -1,0 +1,19 @@
+{
+  "query_id": "07cbf0d0519533b55ea40a57163cbecd",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0027",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 13,
+  "prefix": "I never say to him, 'Let this or that enemy alone, because it",
+  "target_word": "would",
+  "sample_idx": 0,
+  "generated_text": "is not a",
+  "generated_first_word": "is",
+  "similarity": 0.6765626668930054,
+  "timestamp": "2026-06-30 07:10:05"
+}

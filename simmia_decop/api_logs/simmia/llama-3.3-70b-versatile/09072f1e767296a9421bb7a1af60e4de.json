@@ -1,0 +1,19 @@
+{
+  "query_id": "09072f1e767296a9421bb7a1af60e4de",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0098",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "\"Mother is not",
+  "target_word": "an",
+  "sample_idx": 0,
+  "generated_text": "at",
+  "generated_first_word": "at",
+  "similarity": 0.7271010279655457,
+  "timestamp": "2026-07-04 19:18:43"
+}

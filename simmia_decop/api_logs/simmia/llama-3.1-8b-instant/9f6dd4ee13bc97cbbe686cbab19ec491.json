@@ -1,0 +1,19 @@
+{
+  "query_id": "9f6dd4ee13bc97cbbe686cbab19ec491",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0109",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Part love story, part thriller, this",
+  "target_word": "novel",
+  "sample_idx": 1,
+  "generated_text": "novel combines",
+  "generated_first_word": "novel",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 14:12:18"
+}

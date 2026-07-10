@@ -1,0 +1,19 @@
+{
+  "query_id": "c1c859f809a228319a9e9487a3d41636",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0023",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "He",
+  "target_word": "was",
+  "sample_idx": 0,
+  "generated_text": "was",
+  "generated_first_word": "was",
+  "similarity": 1.0000001192092896,
+  "timestamp": "2026-07-01 15:24:05"
+}

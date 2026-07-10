@@ -1,0 +1,19 @@
+{
+  "query_id": "7616f65ba370efd8f574ec99ed396357",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0120",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "At first Frodo",
+  "target_word": "felt",
+  "sample_idx": 1,
+  "generated_text": "was reluctant.",
+  "generated_first_word": "was",
+  "similarity": 0.7185139060020447,
+  "timestamp": "2026-06-30 15:06:46"
+}

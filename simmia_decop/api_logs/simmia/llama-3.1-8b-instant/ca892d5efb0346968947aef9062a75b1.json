@@ -1,0 +1,19 @@
+{
+  "query_id": "ca892d5efb0346968947aef9062a75b1",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0038",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 11,
+  "prefix": "But for all of that, it was a simple joy to",
+  "target_word": "come",
+  "sample_idx": 1,
+  "generated_text": "watch the stars",
+  "generated_first_word": "watch",
+  "similarity": 0.6774123907089233,
+  "timestamp": "2026-06-30 08:07:29"
+}

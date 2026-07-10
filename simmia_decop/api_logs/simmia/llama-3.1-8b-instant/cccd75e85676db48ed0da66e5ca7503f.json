@@ -1,0 +1,19 @@
+{
+  "query_id": "cccd75e85676db48ed0da66e5ca7503f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0155",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "And this inner land, which was",
+  "target_word": "long",
+  "sample_idx": 2,
+  "generated_text": "once home to",
+  "generated_first_word": "once",
+  "similarity": 0.718682050704956,
+  "timestamp": "2026-06-30 18:29:18"
+}

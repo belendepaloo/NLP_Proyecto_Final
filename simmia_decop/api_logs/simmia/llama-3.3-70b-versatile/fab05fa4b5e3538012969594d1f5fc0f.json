@@ -1,0 +1,19 @@
+{
+  "query_id": "fab05fa4b5e3538012969594d1f5fc0f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0021",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "The",
+  "target_word": "men",
+  "sample_idx": 0,
+  "generated_text": "company",
+  "generated_first_word": "company",
+  "similarity": 0.7242258787155151,
+  "timestamp": "2026-07-01 15:14:45"
+}

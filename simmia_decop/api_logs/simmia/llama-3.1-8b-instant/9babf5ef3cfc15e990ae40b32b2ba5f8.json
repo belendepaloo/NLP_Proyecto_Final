@@ -1,0 +1,19 @@
+{
+  "query_id": "9babf5ef3cfc15e990ae40b32b2ba5f8",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0135",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 19,
+  "prefix": "Not when Im finally finding my way in the world. I miss you. Her eyes burned. I miss you,",
+  "target_word": "too.",
+  "sample_idx": 1,
+  "generated_text": "the ache of",
+  "generated_first_word": "the",
+  "similarity": 0.620362401008606,
+  "timestamp": "2026-06-30 16:24:31"
+}

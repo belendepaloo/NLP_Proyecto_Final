@@ -1,0 +1,19 @@
+{
+  "query_id": "876a6a437a1c2a32543feef860c37eb6",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0109",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 11,
+  "prefix": "Part love story, part thriller, this novel kept me entranced until",
+  "target_word": "the",
+  "sample_idx": 2,
+  "generated_text": "the very last",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 14:13:43"
+}

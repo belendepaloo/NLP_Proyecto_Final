@@ -1,0 +1,19 @@
+{
+  "query_id": "a3ffd259f409c655ef5c117753d23cb8",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0172",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "But she was brought",
+  "target_word": "up",
+  "sample_idx": 2,
+  "generated_text": "back to life",
+  "generated_first_word": "back",
+  "similarity": 0.7380873560905457,
+  "timestamp": "2026-07-01 02:27:49"
+}

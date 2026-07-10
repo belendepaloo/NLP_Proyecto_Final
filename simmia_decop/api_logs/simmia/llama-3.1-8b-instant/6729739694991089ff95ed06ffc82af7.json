@@ -1,0 +1,19 @@
+{
+  "query_id": "6729739694991089ff95ed06ffc82af7",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0115",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "If I were someone who partook in",
+  "target_word": "such",
+  "sample_idx": 0,
+  "generated_text": "extracur",
+  "generated_first_word": "extracur",
+  "similarity": 0.6006580591201782,
+  "timestamp": "2026-06-30 14:42:17"
+}

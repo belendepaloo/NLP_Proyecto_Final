@@ -1,0 +1,19 @@
+{
+  "query_id": "3ea4b5706fa3b1fa83799a4526f00b00",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0145",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 13,
+  "prefix": "'Tell yer what?' asked the sleepy Noah, shaking himself pettishy. 'That about--NANCY,' said",
+  "target_word": "Fagin,",
+  "sample_idx": 1,
+  "generated_text": "'she was",
+  "generated_first_word": "she",
+  "similarity": 0.6731650829315186,
+  "timestamp": "2026-06-30 17:41:21"
+}

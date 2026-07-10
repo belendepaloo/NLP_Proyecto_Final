@@ -1,0 +1,19 @@
+{
+  "query_id": "722b60ec263bd3a5910a78a1050c998a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0194",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "‘He’s a",
+  "target_word": "crook!’",
+  "sample_idx": 2,
+  "generated_text": "very good doctor",
+  "generated_first_word": "very",
+  "similarity": 0.5976803302764893,
+  "timestamp": "2026-07-01 04:18:47"
+}

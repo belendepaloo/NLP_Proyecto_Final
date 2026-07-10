@@ -1,0 +1,19 @@
+{
+  "query_id": "70f34fd08050c35fb81ccad85699fb8d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0127",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 18,
+  "prefix": "You cant judge a book by its cover, Louise singsonged and waved her bouquet. I know that, Ella",
+  "target_word": "said.",
+  "sample_idx": 1,
+  "generated_text": "replied",
+  "generated_first_word": "replied",
+  "similarity": 0.6785746812820435,
+  "timestamp": "2026-07-05 16:49:13"
+}

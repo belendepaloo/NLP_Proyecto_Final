@@ -1,0 +1,19 @@
+{
+  "query_id": "a0d9c2fcc43e7260fe16fe215bd5ddb1",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0177",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "What can",
+  "target_word": "I",
+  "sample_idx": 1,
+  "generated_text": "be learned",
+  "generated_first_word": "be",
+  "similarity": 0.617478609085083,
+  "timestamp": "2026-07-01 02:53:05"
+}

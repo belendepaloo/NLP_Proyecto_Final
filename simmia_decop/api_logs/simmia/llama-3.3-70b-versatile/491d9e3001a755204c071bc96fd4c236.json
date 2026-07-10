@@ -1,0 +1,19 @@
+{
+  "query_id": "491d9e3001a755204c071bc96fd4c236",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0002",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "Master Bates followed, with a thoughtful countenance. The noise",
+  "target_word": "of",
+  "sample_idx": 0,
+  "generated_text": "of",
+  "generated_first_word": "of",
+  "similarity": 1.0,
+  "timestamp": "2026-07-01 13:47:37"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "56da3dc883d5a9ee066f849a5f18b0a2",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0064",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "As",
+  "target_word": "Noah's",
+  "sample_idx": 1,
+  "generated_text": "the",
+  "generated_first_word": "the",
+  "similarity": 0.6228511333465576,
+  "timestamp": "2026-07-03 15:08:50"
+}

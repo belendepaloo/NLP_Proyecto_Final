@@ -1,0 +1,19 @@
+{
+  "query_id": "c3e498749cb6f0356c5a74b329dc462b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0120",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 13,
+  "prefix": "At first Frodo felt as if he had indeed been turned into stone",
+  "target_word": "by",
+  "sample_idx": 1,
+  "generated_text": "his limbs frozen",
+  "generated_first_word": "his",
+  "similarity": 0.6903287768363953,
+  "timestamp": "2026-06-30 15:09:27"
+}

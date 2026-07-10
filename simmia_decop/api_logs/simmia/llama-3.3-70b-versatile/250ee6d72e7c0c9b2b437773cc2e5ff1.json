@@ -1,0 +1,19 @@
+{
+  "query_id": "250ee6d72e7c0c9b2b437773cc2e5ff1",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0023",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "He was",
+  "target_word": "shoeless;",
+  "sample_idx": 0,
+  "generated_text": "a",
+  "generated_first_word": "a",
+  "similarity": 0.6630136370658875,
+  "timestamp": "2026-07-01 15:24:20"
+}

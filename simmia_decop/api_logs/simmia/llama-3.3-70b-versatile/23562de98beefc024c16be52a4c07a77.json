@@ -1,0 +1,19 @@
+{
+  "query_id": "23562de98beefc024c16be52a4c07a77",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0091",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "It was only an",
+  "target_word": "hour,",
+  "sample_idx": 2,
+  "generated_text": "illusion",
+  "generated_first_word": "illusion",
+  "similarity": 0.5852834582328796,
+  "timestamp": "2026-07-04 18:48:03"
+}

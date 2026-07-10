@@ -1,0 +1,19 @@
+{
+  "query_id": "b517c8c81f4c021fd47888941a272c1b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0073",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "‘Would it? Would any of you",
+  "target_word": "have",
+  "sample_idx": 0,
+  "generated_text": "even dare to",
+  "generated_first_word": "even",
+  "similarity": 0.6655030846595764,
+  "timestamp": "2026-06-30 11:09:41"
+}

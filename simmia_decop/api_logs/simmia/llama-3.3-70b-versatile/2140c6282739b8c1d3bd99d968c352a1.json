@@ -1,0 +1,19 @@
+{
+  "query_id": "2140c6282739b8c1d3bd99d968c352a1",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0019",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "Edgar Linton, as mul- titudes have been before,",
+  "target_word": "and",
+  "sample_idx": 2,
+  "generated_text": "was",
+  "generated_first_word": "was",
+  "similarity": 0.7205239534378052,
+  "timestamp": "2026-07-01 15:07:19"
+}

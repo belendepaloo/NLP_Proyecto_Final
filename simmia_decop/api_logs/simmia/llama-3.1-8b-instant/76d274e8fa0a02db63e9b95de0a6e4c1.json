@@ -1,0 +1,19 @@
+{
+  "query_id": "76d274e8fa0a02db63e9b95de0a6e4c1",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0105",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 1,
+  "prefix": "And",
+  "target_word": "Peter",
+  "sample_idx": 0,
+  "generated_text": "then",
+  "generated_first_word": "then",
+  "similarity": 0.5929117202758789,
+  "timestamp": "2026-06-30 13:51:23"
+}

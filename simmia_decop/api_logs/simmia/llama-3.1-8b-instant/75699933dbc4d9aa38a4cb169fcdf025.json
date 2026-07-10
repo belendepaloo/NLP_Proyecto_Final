@@ -1,0 +1,19 @@
+{
+  "query_id": "75699933dbc4d9aa38a4cb169fcdf025",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0108",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Its the first real",
+  "target_word": "acknowledgment",
+  "sample_idx": 1,
+  "generated_text": "day of summer",
+  "generated_first_word": "day",
+  "similarity": 0.6087806224822998,
+  "timestamp": "2026-06-30 14:06:50"
+}

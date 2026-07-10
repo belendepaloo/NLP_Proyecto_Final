@@ -1,0 +1,19 @@
+{
+  "query_id": "e63e8d9ecb925b87b01ae5148b5204f1",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0106",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 19,
+  "prefix": "Who knows…maybe it’s better to be like the crystal merchant: never go to Mecca, and just go through life",
+  "target_word": "wanting",
+  "sample_idx": 0,
+  "generated_text": "doing",
+  "generated_first_word": "doing",
+  "similarity": 0.7727410793304443,
+  "timestamp": "2026-07-04 19:59:36"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "de27fe9886233e04d9dd8273021383cb",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0110",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 12,
+  "prefix": "The Countess rounded on him. “I can’t do this? The custodium is",
+  "target_word": "your",
+  "sample_idx": 2,
+  "generated_text": "broken",
+  "generated_first_word": "broken",
+  "similarity": 0.6545017957687378,
+  "timestamp": "2026-07-04 20:16:04"
+}

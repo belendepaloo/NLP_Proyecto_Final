@@ -1,0 +1,19 @@
+{
+  "query_id": "bb6be8f8629c2ab81a20397e7f73b38f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0173",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "But no ship came ever again",
+  "target_word": "from",
+  "sample_idx": 2,
+  "generated_text": "to",
+  "generated_first_word": "to",
+  "similarity": 0.8001956939697266,
+  "timestamp": "2026-07-06 18:03:58"
+}

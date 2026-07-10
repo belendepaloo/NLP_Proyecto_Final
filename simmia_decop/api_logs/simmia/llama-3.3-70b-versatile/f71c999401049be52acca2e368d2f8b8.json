@@ -1,0 +1,19 @@
+{
+  "query_id": "f71c999401049be52acca2e368d2f8b8",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0035",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Another silver Noziken. Dumai",
+  "target_word": "looked",
+  "sample_idx": 1,
+  "generated_text": "watched",
+  "generated_first_word": "watched",
+  "similarity": 0.7889578342437744,
+  "timestamp": "2026-07-01 17:52:18"
+}

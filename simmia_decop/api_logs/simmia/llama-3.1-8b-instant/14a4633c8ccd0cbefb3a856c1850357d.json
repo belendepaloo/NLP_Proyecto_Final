@@ -1,0 +1,19 @@
+{
+  "query_id": "14a4633c8ccd0cbefb3a856c1850357d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0072",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "As Tatterlain",
+  "target_word": "ambled",
+  "sample_idx": 1,
+  "generated_text": "the village elder",
+  "generated_first_word": "the",
+  "similarity": 0.6047195196151733,
+  "timestamp": "2026-06-30 11:03:49"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "4c8c14cdb7522eefaa5014b8f2cc4c1a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0083",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "Youre clearly very intelligent. He is, I say,",
+  "target_word": "right",
+  "sample_idx": 1,
+  "generated_text": "a man of",
+  "generated_first_word": "a",
+  "similarity": 0.6674087643623352,
+  "timestamp": "2026-06-30 12:01:46"
+}

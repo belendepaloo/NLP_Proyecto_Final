@@ -1,0 +1,19 @@
+{
+  "query_id": "e42dee5344cb3032a60e505b9c64903b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0106",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "Who knows…maybe it’s better to be like the",
+  "target_word": "crystal",
+  "sample_idx": 0,
+  "generated_text": "animals",
+  "generated_first_word": "animals",
+  "similarity": 0.5364320874214172,
+  "timestamp": "2026-07-04 19:57:01"
+}

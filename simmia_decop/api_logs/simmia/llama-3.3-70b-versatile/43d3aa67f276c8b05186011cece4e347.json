@@ -1,0 +1,19 @@
+{
+  "query_id": "43d3aa67f276c8b05186011cece4e347",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0136",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "He missed",
+  "target_word": "Hogwarts",
+  "sample_idx": 1,
+  "generated_text": "her",
+  "generated_first_word": "her",
+  "similarity": 0.6095967292785645,
+  "timestamp": "2026-07-05 17:26:16"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "16a8fc57de2696968409e7c44575c320",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0106",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 13,
+  "prefix": "Who knows…maybe it’s better to be like the crystal merchant: never go to",
+  "target_word": "Mecca,",
+  "sample_idx": 1,
+  "generated_text": "the city again",
+  "generated_first_word": "the",
+  "similarity": 0.6422039866447449,
+  "timestamp": "2026-06-30 13:58:55"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "4147ac4f8b7eb29173602a88dec39205",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0090",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Archer",
+  "target_word": "looked",
+  "sample_idx": 0,
+  "generated_text": "shot",
+  "generated_first_word": "shot",
+  "similarity": 0.6680983304977417,
+  "timestamp": "2026-07-04 18:41:30"
+}

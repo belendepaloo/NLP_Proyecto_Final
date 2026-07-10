@@ -1,0 +1,19 @@
+{
+  "query_id": "16909d8f57cf6fe28b3bc932f705561f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0093",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Bumble. 'Isn't natur, natur,",
+  "target_word": "Mrs.",
+  "sample_idx": 1,
+  "generated_text": "natural?",
+  "generated_first_word": "natural?",
+  "similarity": 0.5997405052185059,
+  "timestamp": "2026-07-04 18:56:46"
+}

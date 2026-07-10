@@ -1,0 +1,19 @@
+{
+  "query_id": "562bf62f812b72ac9ad5519dfbd577ca",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0039",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "She settled herself and began to",
+  "target_word": "concentrate,",
+  "sample_idx": 2,
+  "generated_text": "read the letter",
+  "generated_first_word": "read",
+  "similarity": 0.6453303694725037,
+  "timestamp": "2026-06-30 08:11:23"
+}

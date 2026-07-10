@@ -1,0 +1,19 @@
+{
+  "query_id": "8e10830575837f3098f551db2be0249e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0004",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 1,
+  "prefix": "It",
+  "target_word": "creaked,",
+  "sample_idx": 1,
+  "generated_text": "was",
+  "generated_first_word": "was",
+  "similarity": 0.652661919593811,
+  "timestamp": "2026-07-01 13:55:12"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "018493d9d229d74b9909eb4594550ea7",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0189",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "‘A girl",
+  "target_word": "doesn’t",
+  "sample_idx": 2,
+  "generated_text": "with a curious",
+  "generated_first_word": "with",
+  "similarity": 0.6172261834144592,
+  "timestamp": "2026-07-01 03:53:10"
+}

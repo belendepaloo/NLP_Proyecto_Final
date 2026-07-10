@@ -1,0 +1,19 @@
+{
+  "query_id": "c9591c2fd32ec7a31abf983bb1c76820",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0090",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Archer looked up and met",
+  "target_word": "his",
+  "sample_idx": 2,
+  "generated_text": "her",
+  "generated_first_word": "her",
+  "similarity": 0.8214578628540039,
+  "timestamp": "2026-07-04 18:43:53"
+}

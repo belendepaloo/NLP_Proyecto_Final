@@ -1,0 +1,19 @@
+{
+  "query_id": "924aab5827b403e0327c8e42dbf9d71a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0137",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Glorian drew herself up. Mother",
+  "target_word": "retires",
+  "sample_idx": 0,
+  "generated_text": "would",
+  "generated_first_word": "would",
+  "similarity": 0.5682159662246704,
+  "timestamp": "2026-07-05 17:31:44"
+}

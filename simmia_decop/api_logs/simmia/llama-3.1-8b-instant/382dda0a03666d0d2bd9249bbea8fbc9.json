@@ -1,0 +1,19 @@
+{
+  "query_id": "382dda0a03666d0d2bd9249bbea8fbc9",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0130",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "“The Eternity King too requires an explanation,” said",
+  "target_word": "the",
+  "sample_idx": 0,
+  "generated_text": "\"especially considering",
+  "generated_first_word": "especially",
+  "similarity": 0.6105344891548157,
+  "timestamp": "2026-06-30 15:57:48"
+}

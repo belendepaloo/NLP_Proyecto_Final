@@ -1,0 +1,19 @@
+{
+  "query_id": "261971fbdb6d7bcf13572c979a6ff7e0",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0058",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "I fiddle with the borrowed rosary",
+  "target_word": "in",
+  "sample_idx": 0,
+  "generated_text": "its delicate,",
+  "generated_first_word": "its",
+  "similarity": 0.6634620428085327,
+  "timestamp": "2026-06-30 09:51:59"
+}

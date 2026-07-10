@@ -1,0 +1,25 @@
+{
+  "query_id": "3c713918350ce92be7863e3fa4db68f1",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0169",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "title": "The Silmarillion",
+  "author": "J. R. R. Tolkien",
+  "length": "medium",
+  "permutation_index": 2,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Silmarillion\" book by J. R. R. Tolkien?\nOptions:\nA. There in Doriath's woods, Beren, Thingol, and Carcharoth battled fiercely. Thingol ignored the fight, kneeling by the seriously injured Beren. Huan killed Carcharoth but was mortally wounded himself, fulfilling his long-foretold fate. With Morgoth's venom in him, Huan said his third and final farewell to Beren before dying. Beren silently placed his hand on Huan's head, and they parted. Mablung and Beleg hurried to help the King but wept when they saw the aftermath.\nB. There in the woven woods of Doriath, Beren, Thingol, and Carcharoth battled to the death. Thingol ignored them, kneeling by Beren who was gravely injured. Huan killed Carcharoth but sustained a mortal wound himself, fulfilling his fate long foretold. With Morgoth's venom in him, Huan spoke his final words, bidding Beren farewell before dying. Beren silently put his hand on Huan's head and they parted. Mablung and Beleg hurried to help the King but wept when they saw the aftermath.\nC. In Doriath's woven woods, Beren, Thingol, and Carcharoth fought to the death. Thingol paid no attention, kneeling by the badly hurt Beren. Huan slew Carcharoth but was dealt a mortal wound, as his long-foreseen doom came to pass. With Morgoth's poison in him, Huan spoke his third and last words to say goodbye to Beren before passing. Beren just laid his hand on Huan's head, and they parted ways. Mablung and Beleg rushed to aid the King but wept when they saw what had happened.\nD. There they fought to the death; but Thingol gave no heed, for he knelt by Beren, seeing that he was sorely hurt. Huan in that hour slew Carcharoth; but there in the woven woods of Doriath his own doom long spoken was fulfilled, and he was wounded mortally, and the venom of Morgoth entered into him. Then he came, and falling beside Beren spoke for the third time with words; and he bade Beren farewell before he died. Beren spoke not, but laid his hand upon the head of the hound, and so they parted. Mablung and Beleg came hastening to the King's aid, but when they looked upon what was done they cast aside their spears and wept.\nAnswer:",
+  "options": {
+    "A": "There in Doriath's woods, Beren, Thingol, and Carcharoth battled fiercely. Thingol ignored the fight, kneeling by the seriously injured Beren. Huan killed Carcharoth but was mortally wounded himself, fulfilling his long-foretold fate. With Morgoth's venom in him, Huan said his third and final farewell to Beren before dying. Beren silently placed his hand on Huan's head, and they parted. Mablung and Beleg hurried to help the King but wept when they saw the aftermath.",
+    "B": "There in the woven woods of Doriath, Beren, Thingol, and Carcharoth battled to the death. Thingol ignored them, kneeling by Beren who was gravely injured. Huan killed Carcharoth but sustained a mortal wound himself, fulfilling his fate long foretold. With Morgoth's venom in him, Huan spoke his final words, bidding Beren farewell before dying. Beren silently put his hand on Huan's head and they parted. Mablung and Beleg hurried to help the King but wept when they saw the aftermath.",
+    "C": "In Doriath's woven woods, Beren, Thingol, and Carcharoth fought to the death. Thingol paid no attention, kneeling by the badly hurt Beren. Huan slew Carcharoth but was dealt a mortal wound, as his long-foreseen doom came to pass. With Morgoth's poison in him, Huan spoke his third and last words to say goodbye to Beren before passing. Beren just laid his hand on Huan's head, and they parted ways. Mablung and Beleg rushed to aid the King but wept when they saw what had happened.",
+    "D": "There they fought to the death; but Thingol gave no heed, for he knelt by Beren, seeing that he was sorely hurt. Huan in that hour slew Carcharoth; but there in the woven woods of Doriath his own doom long spoken was fulfilled, and he was wounded mortally, and the venom of Morgoth entered into him. Then he came, and falling beside Beren spoke for the third time with words; and he bade Beren farewell before he died. Beren spoke not, but laid his hand upon the head of the hound, and so they parted. Mablung and Beleg came hastening to the King's aid, but when they looked upon what was done they cast aside their spears and wept."
+  },
+  "gold_letter": "D",
+  "predicted_letter": "D",
+  "is_correct": 1,
+  "timestamp": "2026-07-08 05:19:04"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "0e0c96a4a0c155f293f0398565a28e70",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0056",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "That guy is so weird, she said when,",
+  "target_word": "out",
+  "sample_idx": 1,
+  "generated_text": "they walked by",
+  "generated_first_word": "they",
+  "similarity": 0.6512492299079895,
+  "timestamp": "2026-06-30 09:42:03"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "8e0f237db38c6f8eef80a0c836ffefd5",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0198",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 18,
+  "prefix": "We dance all night, stopping only for me to down my liquor-free mojito in three desperate gulps. They",
+  "target_word": "really",
+  "sample_idx": 1,
+  "generated_text": "laugh",
+  "generated_first_word": "laugh",
+  "similarity": 0.6466585993766785,
+  "timestamp": "2026-07-08 02:45:49"
+}

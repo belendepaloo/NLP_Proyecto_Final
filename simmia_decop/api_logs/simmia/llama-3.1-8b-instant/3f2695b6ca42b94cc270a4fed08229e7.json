@@ -1,0 +1,19 @@
+{
+  "query_id": "3f2695b6ca42b94cc270a4fed08229e7",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0028",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 12,
+  "prefix": "Theres no need to go excavating ancient history. Though Alies blush was",
+  "target_word": "the",
+  "sample_idx": 0,
+  "generated_text": "a dead giveaway",
+  "generated_first_word": "a",
+  "similarity": 0.7954018712043762,
+  "timestamp": "2026-06-30 07:15:09"
+}

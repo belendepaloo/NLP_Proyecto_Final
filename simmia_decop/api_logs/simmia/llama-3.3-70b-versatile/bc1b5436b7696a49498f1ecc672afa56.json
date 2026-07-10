@@ -1,0 +1,19 @@
+{
+  "query_id": "bc1b5436b7696a49498f1ecc672afa56",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0061",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Promiscuity went unpunished, divorce",
+  "target_word": "was",
+  "sample_idx": 2,
+  "generated_text": "was",
+  "generated_first_word": "was",
+  "similarity": 1.0000001192092896,
+  "timestamp": "2026-07-03 14:55:25"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "c73d343b0012ac352aaddb57c0ba4904",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0039",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "She settled herself and",
+  "target_word": "began",
+  "sample_idx": 1,
+  "generated_text": "began to",
+  "generated_first_word": "began",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 08:10:47"
+}

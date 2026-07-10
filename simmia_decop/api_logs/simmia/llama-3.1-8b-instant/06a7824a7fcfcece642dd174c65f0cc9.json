@@ -1,0 +1,19 @@
+{
+  "query_id": "06a7824a7fcfcece642dd174c65f0cc9",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0003",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 12,
+  "prefix": "But August continues to try and fail and try againand eventually hes",
+  "target_word": "going",
+  "sample_idx": 0,
+  "generated_text": "able",
+  "generated_first_word": "able",
+  "similarity": 0.6880561709403992,
+  "timestamp": "2026-06-30 05:03:47"
+}

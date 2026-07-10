@@ -1,0 +1,19 @@
+{
+  "query_id": "c50040bdf5f1f5e67751541da1b2d107",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0041",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "He still broke into",
+  "target_word": "your",
+  "sample_idx": 1,
+  "generated_text": "her",
+  "generated_first_word": "her",
+  "similarity": 0.7444788217544556,
+  "timestamp": "2026-07-02 00:23:28"
+}

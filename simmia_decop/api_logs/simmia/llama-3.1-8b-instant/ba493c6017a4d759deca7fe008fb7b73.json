@@ -1,0 +1,19 @@
+{
+  "query_id": "ba493c6017a4d759deca7fe008fb7b73",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0031",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 13,
+  "prefix": "Whenever he could, he sought out a new road to travel. He had",
+  "target_word": "never",
+  "sample_idx": 0,
+  "generated_text": "grown tired of",
+  "generated_first_word": "grown",
+  "similarity": 0.5596310496330261,
+  "timestamp": "2026-06-30 07:30:37"
+}

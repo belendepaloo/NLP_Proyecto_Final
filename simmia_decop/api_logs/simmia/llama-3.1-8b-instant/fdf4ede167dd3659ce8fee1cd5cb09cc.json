@@ -1,0 +1,19 @@
+{
+  "query_id": "fdf4ede167dd3659ce8fee1cd5cb09cc",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0039",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "She settled",
+  "target_word": "herself",
+  "sample_idx": 2,
+  "generated_text": "into",
+  "generated_first_word": "into",
+  "similarity": 0.6613831520080566,
+  "timestamp": "2026-06-30 08:10:21"
+}

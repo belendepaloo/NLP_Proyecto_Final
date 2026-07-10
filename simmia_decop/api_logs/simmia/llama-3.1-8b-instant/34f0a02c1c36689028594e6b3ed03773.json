@@ -1,0 +1,19 @@
+{
+  "query_id": "34f0a02c1c36689028594e6b3ed03773",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0052",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "When he’d found his",
+  "target_word": "scarlet",
+  "sample_idx": 2,
+  "generated_text": "treasure chest",
+  "generated_first_word": "treasure",
+  "similarity": 0.635185956954956,
+  "timestamp": "2026-06-30 09:19:25"
+}

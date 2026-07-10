@@ -1,0 +1,19 @@
+{
+  "query_id": "d590965075d21c48180304653e4f33af",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0019",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Edgar Linton, as mul-",
+  "target_word": "titudes",
+  "sample_idx": 2,
+  "generated_text": "the heir to",
+  "generated_first_word": "the",
+  "similarity": 0.6498979330062866,
+  "timestamp": "2026-06-30 06:26:14"
+}

@@ -1,0 +1,25 @@
+{
+  "query_id": "52345db71448c8f9b7a98a61f11f28cb",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0181",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "title": "The Silmarillion",
+  "author": "J. R. R. Tolkien",
+  "length": "medium",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Silmarillion\" book by J. R. R. Tolkien?\nOptions:\nA. The plan was that Fingolfin would provoke Morgoth into sending out his armies. Fingon would wait hidden in the Hithlum passes. After Morgoth engaged with Fingolfin, Fingon would attack from the rear. They hoped to crush Morgoth's forces between the two armies like between a hammer and anvil. The signal for Fingon was to be a huge beacon lit in Dorthonion. On Midsummer morning, the chosen day, the Eldar trumpets greeted the sun's rise. In the east flew the banner of Fanor's sons, and in the west the banner of Fingon, High King of the Noldor.\nB. The plan was for Fingon to wait in the passes of Hithlum. When Morgoth sent out his armies in response to Fingolfin's attack, Fingon would then join the battle. They hoped to crush Morgoth's forces between them like a hammer and anvil. The signal for Fingon to attack was to be a great beacon lit in Dorthonion. On the planned day, Midsummer morning, the Eldar trumpeters greeted the sunrise. In the east flew the banner of Fanor's sons, and in the west flew the banner of Fingon, High King of the Noldor.\nC. But when he had drawn forth, as he hoped, the armies of Morgoth in answer, then Fingon should issue forth from the passes of Hithlum; and thus they thought to take the might of Morgoth as between anvil and hammer, and break it to pieces. And the signal for this was to be the firing of a great beacon in Dorthonion. On the appointed day, on the morning of Midsummer, the trumpets of the Eldar greeted the rising of the sun; and in the east was raised the standard of the sons of Fanor, and in the west the standard of Fingon, High King of the Noldor.\nD. The strategy was that Fingolfin would lure out Morgoth's forces. Then once Morgoth's armies were engaged, Fingon would sally forth from Hithlum. In this way they intended to smash Morgoth's might between themselves like between a hammer and anvil. The beacon signaling Fingon to attack was to be lit in Dorthonion. When the appointed day of Midsummer dawned, the Eldar trumpets hailed the rising sun. Fanor's standard flew in the east and Fingon's banner as High King of the Noldor flew in the west. \nAnswer:",
+  "options": {
+    "A": "The plan was that Fingolfin would provoke Morgoth into sending out his armies. Fingon would wait hidden in the Hithlum passes. After Morgoth engaged with Fingolfin, Fingon would attack from the rear. They hoped to crush Morgoth's forces between the two armies like between a hammer and anvil. The signal for Fingon was to be a huge beacon lit in Dorthonion. On Midsummer morning, the chosen day, the Eldar trumpets greeted the sun's rise. In the east flew the banner of Fanor's sons, and in the west the banner of Fingon, High King of the Noldor.",
+    "B": "The plan was for Fingon to wait in the passes of Hithlum. When Morgoth sent out his armies in response to Fingolfin's attack, Fingon would then join the battle. They hoped to crush Morgoth's forces between them like a hammer and anvil. The signal for Fingon to attack was to be a great beacon lit in Dorthonion. On the planned day, Midsummer morning, the Eldar trumpeters greeted the sunrise. In the east flew the banner of Fanor's sons, and in the west flew the banner of Fingon, High King of the Noldor.",
+    "C": "But when he had drawn forth, as he hoped, the armies of Morgoth in answer, then Fingon should issue forth from the passes of Hithlum; and thus they thought to take the might of Morgoth as between anvil and hammer, and break it to pieces. And the signal for this was to be the firing of a great beacon in Dorthonion. On the appointed day, on the morning of Midsummer, the trumpets of the Eldar greeted the rising of the sun; and in the east was raised the standard of the sons of Fanor, and in the west the standard of Fingon, High King of the Noldor.",
+    "D": "The strategy was that Fingolfin would lure out Morgoth's forces. Then once Morgoth's armies were engaged, Fingon would sally forth from Hithlum. In this way they intended to smash Morgoth's might between themselves like between a hammer and anvil. The beacon signaling Fingon to attack was to be lit in Dorthonion. When the appointed day of Midsummer dawned, the Eldar trumpets hailed the rising sun. Fanor's standard flew in the east and Fingon's banner as High King of the Noldor flew in the west. "
+  },
+  "gold_letter": "C",
+  "predicted_letter": "C",
+  "is_correct": 1,
+  "timestamp": "2026-07-08 05:26:24"
+}

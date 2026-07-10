@@ -1,0 +1,19 @@
+{
+  "query_id": "37c4efc938c319817de009efd3a8b3a4",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0045",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "A decade younger than",
+  "target_word": "I",
+  "sample_idx": 1,
+  "generated_text": "him.",
+  "generated_first_word": "him.",
+  "similarity": 0.7189509868621826,
+  "timestamp": "2026-06-30 08:42:14"
+}

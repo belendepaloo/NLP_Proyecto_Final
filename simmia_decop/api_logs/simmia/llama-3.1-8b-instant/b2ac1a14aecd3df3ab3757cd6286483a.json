@@ -1,0 +1,19 @@
+{
+  "query_id": "b2ac1a14aecd3df3ab3757cd6286483a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0023",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "He was shoeless; large, dirty toes were",
+  "target_word": "sticking",
+  "sample_idx": 0,
+  "generated_text": "sticking out",
+  "generated_first_word": "sticking",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 06:47:42"
+}

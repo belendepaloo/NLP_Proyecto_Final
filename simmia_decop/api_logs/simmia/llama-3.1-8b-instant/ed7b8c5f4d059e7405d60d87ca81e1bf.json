@@ -1,0 +1,19 @@
+{
+  "query_id": "ed7b8c5f4d059e7405d60d87ca81e1bf",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0188",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "At all events, if nothing else could be decided upon,",
+  "target_word": "the",
+  "sample_idx": 2,
+  "generated_text": "the question of",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-07-01 03:50:07"
+}

@@ -1,0 +1,25 @@
+{
+  "query_id": "6490dab33a865cc6c0da6d8b94df4284",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0190",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "title": "The Foxglove King",
+  "author": "Hannah Whitten",
+  "length": "medium",
+  "permutation_index": 0,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Foxglove King\" book by Hannah Whitten?\nOptions:\nA. If Bastian's aware I'm Lore, why not expose or eliminate me? Lore asked. That's what a real Kirythean informant would do, right? Gabe adjusted his eye patch. Bastian's no stranger to surveillance. Just because he knows you're a spy doesn't mean he gets why. Trotting out that dead horse hints he suspects something, Lore said. Surely he can connect his father recruiting a necromancer to the villages. And if Kirythea's responsible, it follows the necromancer might implicate him.\nB. If Bastian is aware of my identity, Lore wondered, why not expose or eliminate me? Wouldn't that be expected if he was truly a Kirythean informant? Gabe touched his eye patch. Bastian is frequently under surveillance. Just because he knows you're spying doesn't imply he understands the reason. His dramatic display with the dead horse hints he has suspicions, Lore said. Surely he's clever enough to connect his father recruiting a necromancer to the villages. And if Kirythea is accountable, it's plausible to infer the necromancer could implicate him.  \nC. If Bastian knows who I am, Lore said, then why not just tell me? Or kill me? Isnt that what hed do if he was really a Kirythean informant? Gabe rubbed at his eye patch. Bastian gets spied on quite a lot. Just because he knows youre spying doesnt mean he knows why. His big show of revealing the dead horse makes it seems like he has an idea, Lore said. Surely hes smart enough to make the connection that his father bringing in a necromancer has something to do with the villages. And if its Kirythea thats responsible, its not a leap to deduce that said necromancer is likely to expose him.\nD. Lore questioned why, if Bastian knew who she was, he didn't reveal or kill her. Wouldn't an actual Kirythean informant do that? Gabe fiddled with his eye patch. Bastian's used to being watched. Recognizing you're a spy doesn't mean he grasps why. Showing the dead horse intimates he has ideas, Lore said. He should be smart enough to link his father bringing in a necromancer to the villages. And if Kirythea's behind it, it makes sense the necromancer might expose him.\nAnswer:",
+  "options": {
+    "A": "If Bastian's aware I'm Lore, why not expose or eliminate me? Lore asked. That's what a real Kirythean informant would do, right? Gabe adjusted his eye patch. Bastian's no stranger to surveillance. Just because he knows you're a spy doesn't mean he gets why. Trotting out that dead horse hints he suspects something, Lore said. Surely he can connect his father recruiting a necromancer to the villages. And if Kirythea's responsible, it follows the necromancer might implicate him.",
+    "B": "If Bastian is aware of my identity, Lore wondered, why not expose or eliminate me? Wouldn't that be expected if he was truly a Kirythean informant? Gabe touched his eye patch. Bastian is frequently under surveillance. Just because he knows you're spying doesn't imply he understands the reason. His dramatic display with the dead horse hints he has suspicions, Lore said. Surely he's clever enough to connect his father recruiting a necromancer to the villages. And if Kirythea is accountable, it's plausible to infer the necromancer could implicate him.  ",
+    "C": "If Bastian knows who I am, Lore said, then why not just tell me? Or kill me? Isnt that what hed do if he was really a Kirythean informant? Gabe rubbed at his eye patch. Bastian gets spied on quite a lot. Just because he knows youre spying doesnt mean he knows why. His big show of revealing the dead horse makes it seems like he has an idea, Lore said. Surely hes smart enough to make the connection that his father bringing in a necromancer has something to do with the villages. And if its Kirythea thats responsible, its not a leap to deduce that said necromancer is likely to expose him.",
+    "D": "Lore questioned why, if Bastian knew who she was, he didn't reveal or kill her. Wouldn't an actual Kirythean informant do that? Gabe fiddled with his eye patch. Bastian's used to being watched. Recognizing you're a spy doesn't mean he grasps why. Showing the dead horse intimates he has ideas, Lore said. He should be smart enough to link his father bringing in a necromancer to the villages. And if Kirythea's behind it, it makes sense the necromancer might expose him."
+  },
+  "gold_letter": "C",
+  "predicted_letter": "D",
+  "is_correct": 0,
+  "timestamp": "2026-07-08 05:31:15"
+}

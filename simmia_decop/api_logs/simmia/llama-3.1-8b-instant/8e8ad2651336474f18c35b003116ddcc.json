@@ -1,0 +1,19 @@
+{
+  "query_id": "8e8ad2651336474f18c35b003116ddcc",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0004",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "It creaked, but if the",
+  "target_word": "sound",
+  "sample_idx": 0,
+  "generated_text": "door swung open",
+  "generated_first_word": "door",
+  "similarity": 0.7012358903884888,
+  "timestamp": "2026-06-30 05:07:29"
+}

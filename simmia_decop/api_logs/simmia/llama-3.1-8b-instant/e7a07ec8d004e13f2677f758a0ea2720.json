@@ -1,0 +1,19 @@
+{
+  "query_id": "e7a07ec8d004e13f2677f758a0ea2720",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0037",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 13,
+  "prefix": "After Id moved back home, Simon didnt go out much, as there was",
+  "target_word": "nowhere",
+  "sample_idx": 2,
+  "generated_text": "a lot of",
+  "generated_first_word": "a",
+  "similarity": 0.6255826950073242,
+  "timestamp": "2026-06-30 08:02:33"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "443f28f8424674b7a3f133c0c4dfad8d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0135",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 12,
+  "prefix": "Not when Im finally finding my way in the world. I miss",
+  "target_word": "you.",
+  "sample_idx": 2,
+  "generated_text": "the freedom of",
+  "generated_first_word": "the",
+  "similarity": 0.7261695265769958,
+  "timestamp": "2026-06-30 16:22:44"
+}

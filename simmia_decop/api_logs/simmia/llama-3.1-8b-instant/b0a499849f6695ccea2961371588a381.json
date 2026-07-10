@@ -1,0 +1,19 @@
+{
+  "query_id": "b0a499849f6695ccea2961371588a381",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0000",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Since he was arrested",
+  "target_word": "he",
+  "sample_idx": 0,
+  "generated_text": "for allegedly",
+  "generated_first_word": "for",
+  "similarity": 0.7207114696502686,
+  "timestamp": "2026-06-30 04:47:00"
+}

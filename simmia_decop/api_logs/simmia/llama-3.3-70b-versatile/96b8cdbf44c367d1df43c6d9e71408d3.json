@@ -1,0 +1,19 @@
+{
+  "query_id": "96b8cdbf44c367d1df43c6d9e71408d3",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0134",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "Then all listened while Elrond in his",
+  "target_word": "clear",
+  "sample_idx": 0,
+  "generated_text": "chair began",
+  "generated_first_word": "chair",
+  "similarity": 0.6306910514831543,
+  "timestamp": "2026-07-05 17:18:10"
+}

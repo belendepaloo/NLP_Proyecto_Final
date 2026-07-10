@@ -1,0 +1,19 @@
+{
+  "query_id": "0d1c607b2825601ed72efa0977a24fc7",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0043",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "The Vicar soon abandoned the struggle; but the tutor,",
+  "target_word": "who",
+  "sample_idx": 0,
+  "generated_text": "refused",
+  "generated_first_word": "refused",
+  "similarity": 0.6369321942329407,
+  "timestamp": "2026-07-02 00:33:49"
+}

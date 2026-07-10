@@ -1,0 +1,19 @@
+{
+  "query_id": "5dc2fde9b239c03386e4cc80a16143fa",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0003",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "But August",
+  "target_word": "continues",
+  "sample_idx": 0,
+  "generated_text": "was",
+  "generated_first_word": "was",
+  "similarity": 0.692970871925354,
+  "timestamp": "2026-07-01 13:50:36"
+}

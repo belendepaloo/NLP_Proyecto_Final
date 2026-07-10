@@ -1,0 +1,19 @@
+{
+  "query_id": "39c59bb27b05b8ae5b512050229ab039",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0160",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 15,
+  "prefix": "My room is on the top floor overlooking the harbor. The walls are palest blue,",
+  "target_word": "like",
+  "sample_idx": 2,
+  "generated_text": "and the furniture",
+  "generated_first_word": "and",
+  "similarity": 0.7365446090698242,
+  "timestamp": "2026-07-01 01:30:04"
+}

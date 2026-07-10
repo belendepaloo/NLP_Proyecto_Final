@@ -1,0 +1,19 @@
+{
+  "query_id": "58899dfb1062d065a0c1b339a9b30e2f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0165",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 13,
+  "prefix": "And high in the north as a challenge to Melkor she set the",
+  "target_word": "crown",
+  "sample_idx": 1,
+  "generated_text": "star",
+  "generated_first_word": "star",
+  "similarity": 0.6601082682609558,
+  "timestamp": "2026-07-06 17:26:42"
+}

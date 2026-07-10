@@ -1,0 +1,19 @@
+{
+  "query_id": "76068f346a29f96739a0d6a69b3197a2",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0083",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 9,
+  "prefix": "Youre clearly very intelligent. He is, I say, right",
+  "target_word": "as",
+  "sample_idx": 2,
+  "generated_text": "but his arrogance",
+  "generated_first_word": "but",
+  "similarity": 0.7393742799758911,
+  "timestamp": "2026-06-30 12:02:07"
+}

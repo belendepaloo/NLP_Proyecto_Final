@@ -1,0 +1,25 @@
+{
+  "query_id": "368745d9956ed8cd177a03d9edb9be3c",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0155",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "title": "The Silmarillion",
+  "author": "J. R. R. Tolkien",
+  "length": "medium",
+  "permutation_index": 3,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Silmarillion\" book by J. R. R. Tolkien?\nOptions:\nA. The protected inner land once called Eglador and later named Doriath had a girdle around it. Within its borders there was watchful peace, but outside lurked peril and fear from the servants of Morgoth, although the walled havens of the Falas were safe. Unexpected tidings were coming that nobody in Middle-earth foresaw, not Morgoth in his pits or Melian in Menegroth. Since the death of the Trees, no word came from Aman. Meanwhile, Fanor arrived in the white ships of the Teleri, landing at Drengist and burning the ships at Losgar.\nB. The inner land of Eglador, after called the guarded realm of Doriath with its girdle, had peace inside but outside had danger and dread from Morgoth's servants, except in the walled havens of the Falas. New events neither Morgoth in his pits nor Melian in Menegroth foresaw were coming, with no news from Aman after the death of the Trees. At this time Fanor came in the Teleri's white ships and landed at Drengist, burning the ships at Losgar.\nC. The inner land of Eglador, later called Doriath, was the guarded kingdom with a girdle around it. Inside there was peace, but outside there was danger from Morgoth's servants, except in the havens of the Falas. New events were occurring that no one in Middle-earth expected, not even Morgoth or Melian. After the death of the Trees, there was no news from Aman. During this time, Fanor sailed in the Teleri's white ships and landed at Drengist, where he burned the ships at Losgar.\nD. And this inner land, which was long named Eglador, was after called Doriath, the guarded kingdom, Land of the Girdle. Within it there was yet a watchful peace; but without there was peril and great fear, and the servants of Morgoth roamed at will, save in the walled havens of the Falas. But new tidings were at hand, which none in Middle-earth had foreseen, neither Morgoth in his pits nor Melian in Menegroth; for no news came out of Aman whether by messenger, or by spirit, or by vision in dream, after the death of the Trees. In this same time Fanor came over the Sea in the white ships of the Teleri and landed in the Firth of Drengist, and there burned the ships at Losgar.\nAnswer:",
+  "options": {
+    "A": "The protected inner land once called Eglador and later named Doriath had a girdle around it. Within its borders there was watchful peace, but outside lurked peril and fear from the servants of Morgoth, although the walled havens of the Falas were safe. Unexpected tidings were coming that nobody in Middle-earth foresaw, not Morgoth in his pits or Melian in Menegroth. Since the death of the Trees, no word came from Aman. Meanwhile, Fanor arrived in the white ships of the Teleri, landing at Drengist and burning the ships at Losgar.",
+    "B": "The inner land of Eglador, after called the guarded realm of Doriath with its girdle, had peace inside but outside had danger and dread from Morgoth's servants, except in the walled havens of the Falas. New events neither Morgoth in his pits nor Melian in Menegroth foresaw were coming, with no news from Aman after the death of the Trees. At this time Fanor came in the Teleri's white ships and landed at Drengist, burning the ships at Losgar.",
+    "C": "The inner land of Eglador, later called Doriath, was the guarded kingdom with a girdle around it. Inside there was peace, but outside there was danger from Morgoth's servants, except in the havens of the Falas. New events were occurring that no one in Middle-earth expected, not even Morgoth or Melian. After the death of the Trees, there was no news from Aman. During this time, Fanor sailed in the Teleri's white ships and landed at Drengist, where he burned the ships at Losgar.",
+    "D": "And this inner land, which was long named Eglador, was after called Doriath, the guarded kingdom, Land of the Girdle. Within it there was yet a watchful peace; but without there was peril and great fear, and the servants of Morgoth roamed at will, save in the walled havens of the Falas. But new tidings were at hand, which none in Middle-earth had foreseen, neither Morgoth in his pits nor Melian in Menegroth; for no news came out of Aman whether by messenger, or by spirit, or by vision in dream, after the death of the Trees. In this same time Fanor came over the Sea in the white ships of the Teleri and landed in the Firth of Drengist, and there burned the ships at Losgar."
+  },
+  "gold_letter": "D",
+  "predicted_letter": "D",
+  "is_correct": 1,
+  "timestamp": "2026-07-08 05:11:00"
+}

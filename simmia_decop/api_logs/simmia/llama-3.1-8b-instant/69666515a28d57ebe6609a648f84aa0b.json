@@ -1,0 +1,19 @@
+{
+  "query_id": "69666515a28d57ebe6609a648f84aa0b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0070",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "In this way he",
+  "target_word": "got",
+  "sample_idx": 1,
+  "generated_text": "was able",
+  "generated_first_word": "was",
+  "similarity": 0.6641125679016113,
+  "timestamp": "2026-06-30 10:54:25"
+}

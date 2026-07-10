@@ -1,0 +1,19 @@
+{
+  "query_id": "ff4738b9e97ce84d6e9e6ed3473624e7",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0013",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "‘You ignorant little slug!’ the Trunchbull bellowed.",
+  "target_word": "‘You",
+  "sample_idx": 1,
+  "generated_text": "'How dare",
+  "generated_first_word": "How",
+  "similarity": 0.729038417339325,
+  "timestamp": "2026-06-30 05:55:42"
+}

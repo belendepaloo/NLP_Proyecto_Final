@@ -1,0 +1,19 @@
+{
+  "query_id": "7ba1d881194d7fd79cb40e936672f75c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0148",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "They did not speak again. She did not",
+  "target_word": "actually",
+  "sample_idx": 2,
+  "generated_text": "look",
+  "generated_first_word": "look",
+  "similarity": 0.6717881560325623,
+  "timestamp": "2026-07-05 22:43:59"
+}

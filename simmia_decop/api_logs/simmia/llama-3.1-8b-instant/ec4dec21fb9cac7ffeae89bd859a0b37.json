@@ -1,0 +1,19 @@
+{
+  "query_id": "ec4dec21fb9cac7ffeae89bd859a0b37",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0060",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Soon only Yennika remained",
+  "target_word": "in",
+  "sample_idx": 2,
+  "generated_text": "standing",
+  "generated_first_word": "standing",
+  "similarity": 0.6379865407943726,
+  "timestamp": "2026-06-30 10:02:12"
+}

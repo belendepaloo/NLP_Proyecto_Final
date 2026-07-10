@@ -1,0 +1,19 @@
+{
+  "query_id": "d4b86f0426feafd9b3ed7b7f0329c51d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0061",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Promiscuity went",
+  "target_word": "unpunished,",
+  "sample_idx": 2,
+  "generated_text": "unnoticed",
+  "generated_first_word": "unnoticed",
+  "similarity": 0.6625327467918396,
+  "timestamp": "2026-07-03 14:54:56"
+}

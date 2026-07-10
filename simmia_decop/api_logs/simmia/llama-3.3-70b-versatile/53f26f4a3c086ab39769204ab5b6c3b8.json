@@ -1,0 +1,19 @@
+{
+  "query_id": "53f26f4a3c086ab39769204ab5b6c3b8",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0005",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Oh. Maybe Ive crossed some",
+  "target_word": "sort",
+  "sample_idx": 0,
+  "generated_text": "kind of line",
+  "generated_first_word": "kind",
+  "similarity": 0.6719048023223877,
+  "timestamp": "2026-07-01 14:00:50"
+}

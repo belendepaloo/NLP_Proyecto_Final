@@ -1,0 +1,19 @@
+{
+  "query_id": "b4b8e67958f5910a109090b3da4adb43",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0177",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "What can I do to serve",
+  "target_word": "you?'",
+  "sample_idx": 2,
+  "generated_text": "my community.",
+  "generated_first_word": "my",
+  "similarity": 0.7192328572273254,
+  "timestamp": "2026-07-01 02:54:06"
+}

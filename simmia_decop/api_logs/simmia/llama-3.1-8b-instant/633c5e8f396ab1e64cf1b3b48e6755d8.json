@@ -1,0 +1,19 @@
+{
+  "query_id": "633c5e8f396ab1e64cf1b3b48e6755d8",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0061",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 11,
+  "prefix": "Promiscuity went unpunished, divorce was permitted. For that matter, even religious",
+  "target_word": "worship",
+  "sample_idx": 2,
+  "generated_text": "institutions struggled",
+  "generated_first_word": "institutions",
+  "similarity": 0.6372570991516113,
+  "timestamp": "2026-06-30 10:09:31"
+}

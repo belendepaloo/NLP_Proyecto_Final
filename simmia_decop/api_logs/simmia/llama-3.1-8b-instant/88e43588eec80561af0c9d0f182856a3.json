@@ -1,0 +1,19 @@
+{
+  "query_id": "88e43588eec80561af0c9d0f182856a3",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0134",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Then all",
+  "target_word": "listened",
+  "sample_idx": 2,
+  "generated_text": "of",
+  "generated_first_word": "of",
+  "similarity": 0.6786831617355347,
+  "timestamp": "2026-06-30 16:15:46"
+}

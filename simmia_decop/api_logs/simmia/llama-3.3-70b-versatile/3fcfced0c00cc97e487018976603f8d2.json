@@ -1,0 +1,19 @@
+{
+  "query_id": "3fcfced0c00cc97e487018976603f8d2",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0104",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Her first wild",
+  "target_word": "thought",
+  "sample_idx": 2,
+  "generated_text": "adventure",
+  "generated_first_word": "adventure",
+  "similarity": 0.6247634291648865,
+  "timestamp": "2026-07-04 19:47:01"
+}

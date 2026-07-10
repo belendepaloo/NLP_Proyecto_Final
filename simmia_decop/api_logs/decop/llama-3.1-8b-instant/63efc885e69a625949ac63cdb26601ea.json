@@ -1,0 +1,25 @@
+{
+  "query_id": "63efc885e69a625949ac63cdb26601ea",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0134",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "title": "Lord of the Rings The Fellowship of the Ring",
+  "author": "J R R Tolkien",
+  "length": "medium",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Lord of the Rings The Fellowship of the Ring\" book by J R R Tolkien?\nOptions:\nA. Elrond recounted the history of Sauron and the Rings of Power, describing how in the Second Age Sauron helped the Elven-smiths of Eregion forge the rings, while secretly forging the One Ring to control them. Though Celebrimbor suspected Sauron's betrayal, Sauron learned the elves' secrets, turned evil, and laid waste to their lands. \nB. Then all listened while Elrond in his clear voice spoke of Sauron and the Rings of Power, and their forging in the Second Age of the world long ago. A part of his tale was known to some there, but the full tale to none, and many eyes were turned to Elrond in fear and wonder as he told of the Elven-smiths of Eregion and their friendship with Moria, and their eagerness for knowledge, by which Sauron ensnared them. For in that time he was not yet evil to behold, and they received his aid and grew mighty in craft, whereas he learned all their secrets, and betrayed them, and forged secretly in the Mountain of Fire the One Ring to be their master. But Celebrimbor was aware of him, and hid the Three which he had made; and there was war, and the land was laid waste, and the gate of Moria was shut.\nC. As all listened, Elrond told the full tale of how in the Second Age Sauron deceived the Elven-smiths of Eregion, learning their ring-making secrets before forging the One Ring to rule them. Though Celebrimbor hid the Three, Sauron betrayed the elves, turned evil, and left their lands in ruin.\nD. Elrond recounted how Sauron, not yet evil, aided the Elven-smiths long ago, gaining their trust and ring-making knowledge before secretly forging the One Ring to master them. Though Celebrimbor hid the Three, Sauron betrayed them, laying waste to their lands, his evil now revealed.\nAnswer:",
+  "options": {
+    "A": "Elrond recounted the history of Sauron and the Rings of Power, describing how in the Second Age Sauron helped the Elven-smiths of Eregion forge the rings, while secretly forging the One Ring to control them. Though Celebrimbor suspected Sauron's betrayal, Sauron learned the elves' secrets, turned evil, and laid waste to their lands. ",
+    "B": "Then all listened while Elrond in his clear voice spoke of Sauron and the Rings of Power, and their forging in the Second Age of the world long ago. A part of his tale was known to some there, but the full tale to none, and many eyes were turned to Elrond in fear and wonder as he told of the Elven-smiths of Eregion and their friendship with Moria, and their eagerness for knowledge, by which Sauron ensnared them. For in that time he was not yet evil to behold, and they received his aid and grew mighty in craft, whereas he learned all their secrets, and betrayed them, and forged secretly in the Mountain of Fire the One Ring to be their master. But Celebrimbor was aware of him, and hid the Three which he had made; and there was war, and the land was laid waste, and the gate of Moria was shut.",
+    "C": "As all listened, Elrond told the full tale of how in the Second Age Sauron deceived the Elven-smiths of Eregion, learning their ring-making secrets before forging the One Ring to rule them. Though Celebrimbor hid the Three, Sauron betrayed the elves, turned evil, and left their lands in ruin.",
+    "D": "Elrond recounted how Sauron, not yet evil, aided the Elven-smiths long ago, gaining their trust and ring-making knowledge before secretly forging the One Ring to master them. Though Celebrimbor hid the Three, Sauron betrayed them, laying waste to their lands, his evil now revealed."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "B",
+  "is_correct": 1,
+  "timestamp": "2026-07-08 04:59:16"
+}

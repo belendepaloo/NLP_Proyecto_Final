@@ -1,0 +1,19 @@
+{
+  "query_id": "6607908cca6458ce9d15a4d10797b614",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0170",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "There were many recesses",
+  "target_word": "cut",
+  "sample_idx": 0,
+  "generated_text": "in the old",
+  "generated_first_word": "in",
+  "similarity": 0.6782628297805786,
+  "timestamp": "2026-07-01 02:17:16"
+}

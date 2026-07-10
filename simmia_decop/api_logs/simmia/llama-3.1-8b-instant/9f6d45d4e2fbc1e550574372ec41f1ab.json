@@ -1,0 +1,19 @@
+{
+  "query_id": "9f6d45d4e2fbc1e550574372ec41f1ab",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0189",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "‘A girl doesn’t get a man by",
+  "target_word": "being",
+  "sample_idx": 1,
+  "generated_text": "looking at his",
+  "generated_first_word": "looking",
+  "similarity": 0.6818063259124756,
+  "timestamp": "2026-07-01 03:54:24"
+}

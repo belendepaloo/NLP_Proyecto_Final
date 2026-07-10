@@ -1,0 +1,19 @@
+{
+  "query_id": "1c34660c0470beb714fa32daa925f946",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0138",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Here you shall dwell at",
+  "target_word": "your",
+  "sample_idx": 1,
+  "generated_text": "the foot of",
+  "generated_first_word": "the",
+  "similarity": 0.757782518863678,
+  "timestamp": "2026-06-30 17:05:28"
+}

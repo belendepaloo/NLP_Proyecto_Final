@@ -1,0 +1,19 @@
+{
+  "query_id": "5464725edede124142e359c31af8428f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0116",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 14,
+  "prefix": "I'll read it, for I keep it yet. Any relic of the dead is",
+  "target_word": "precious",
+  "sample_idx": 0,
+  "generated_text": "a solemn reminder",
+  "generated_first_word": "a",
+  "similarity": 0.6027418375015259,
+  "timestamp": "2026-06-30 14:49:16"
+}

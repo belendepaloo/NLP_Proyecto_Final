@@ -1,0 +1,19 @@
+{
+  "query_id": "cd6891c8b22d5c32b82d31e29e5cc3d0",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0044",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 12,
+  "prefix": "Lore scowled at his back, gathering her hem high to avoid the",
+  "target_word": "water.",
+  "sample_idx": 2,
+  "generated_text": "mud.",
+  "generated_first_word": "mud.",
+  "similarity": 0.7870795130729675,
+  "timestamp": "2026-06-30 08:39:09"
+}

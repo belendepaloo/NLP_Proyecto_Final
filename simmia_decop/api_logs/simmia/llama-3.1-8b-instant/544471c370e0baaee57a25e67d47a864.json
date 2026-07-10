@@ -1,0 +1,19 @@
+{
+  "query_id": "544471c370e0baaee57a25e67d47a864",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0154",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "The man still said nothing, and the boy sensed that",
+  "target_word": "he",
+  "sample_idx": 1,
+  "generated_text": "something was off",
+  "generated_first_word": "something",
+  "similarity": 0.68208909034729,
+  "timestamp": "2026-06-30 18:24:48"
+}

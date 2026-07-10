@@ -1,0 +1,19 @@
+{
+  "query_id": "b2f645cd79a8f552c5c8e444e8b96881",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0129",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 13,
+  "prefix": "Giles.' 'I hope you don't mean to say, sir,' said Mr. Giles, trembling,",
+  "target_word": "'that",
+  "sample_idx": 0,
+  "generated_text": "'very seriously",
+  "generated_first_word": "very",
+  "similarity": 0.7254854440689087,
+  "timestamp": "2026-07-05 16:56:55"
+}

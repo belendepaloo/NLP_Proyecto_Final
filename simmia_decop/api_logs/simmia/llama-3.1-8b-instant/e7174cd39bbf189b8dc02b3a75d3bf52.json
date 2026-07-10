@@ -1,0 +1,19 @@
+{
+  "query_id": "e7174cd39bbf189b8dc02b3a75d3bf52",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0121",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 12,
+  "prefix": "Furtia and I will get her away. Taugran is much stronger than",
+  "target_word": "Furtia,",
+  "sample_idx": 1,
+  "generated_text": "us.",
+  "generated_first_word": "us.",
+  "similarity": 0.6458593606948853,
+  "timestamp": "2026-06-30 15:14:07"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "2341735eab8859026d90268c623d7b7e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0132",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "Suppose that we quicken the tempo of human life till men are",
+  "target_word": "senile",
+  "sample_idx": 0,
+  "generated_text": "living",
+  "generated_first_word": "living",
+  "similarity": 0.6279547214508057,
+  "timestamp": "2026-06-30 16:08:15"
+}

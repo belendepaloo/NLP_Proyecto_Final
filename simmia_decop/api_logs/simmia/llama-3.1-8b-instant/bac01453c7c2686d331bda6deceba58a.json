@@ -1,0 +1,19 @@
+{
+  "query_id": "bac01453c7c2686d331bda6deceba58a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0068",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "In Oldspeak it is called,",
+  "target_word": "quite",
+  "sample_idx": 0,
+  "generated_text": "\"Shai",
+  "generated_first_word": "Shai",
+  "similarity": 0.6199813485145569,
+  "timestamp": "2026-06-30 10:44:11"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "6b3794d66648a73db07dd4fdd4729eb9",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0130",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "“The Eternity King",
+  "target_word": "too",
+  "sample_idx": 2,
+  "generated_text": "reigned",
+  "generated_first_word": "reigned",
+  "similarity": 0.6009243726730347,
+  "timestamp": "2026-07-05 16:59:15"
+}

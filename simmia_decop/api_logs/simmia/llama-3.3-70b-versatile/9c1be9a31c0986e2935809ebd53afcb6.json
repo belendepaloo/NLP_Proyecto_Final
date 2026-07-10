@@ -1,0 +1,19 @@
+{
+  "query_id": "9c1be9a31c0986e2935809ebd53afcb6",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0115",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "If I",
+  "target_word": "were",
+  "sample_idx": 0,
+  "generated_text": "had",
+  "generated_first_word": "had",
+  "similarity": 0.7154847979545593,
+  "timestamp": "2026-07-05 15:50:18"
+}

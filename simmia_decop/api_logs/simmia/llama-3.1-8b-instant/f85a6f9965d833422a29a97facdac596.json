@@ -1,0 +1,19 @@
+{
+  "query_id": "f85a6f9965d833422a29a97facdac596",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0100",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 14,
+  "prefix": "“Careful not to walk through anyone,” said Ron nervously, and they set off around",
+  "target_word": "the",
+  "sample_idx": 2,
+  "generated_text": "the edge of",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 13:29:49"
+}

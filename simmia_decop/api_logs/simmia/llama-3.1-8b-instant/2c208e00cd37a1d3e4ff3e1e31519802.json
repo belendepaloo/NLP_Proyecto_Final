@@ -1,0 +1,19 @@
+{
+  "query_id": "2c208e00cd37a1d3e4ff3e1e31519802",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0014",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 10,
+  "prefix": "And Mom will def get over this, eventually. She got",
+  "target_word": "over",
+  "sample_idx": 1,
+  "generated_text": "angry with",
+  "generated_first_word": "angry",
+  "similarity": 0.6092508435249329,
+  "timestamp": "2026-06-30 06:01:55"
+}

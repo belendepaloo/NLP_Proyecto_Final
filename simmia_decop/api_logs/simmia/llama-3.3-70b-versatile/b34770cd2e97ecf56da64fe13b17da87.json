@@ -1,0 +1,19 @@
+{
+  "query_id": "b34770cd2e97ecf56da64fe13b17da87",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0005",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 15,
+  "prefix": "Oh. Maybe Ive crossed some sort of boundary I wasnt aware of? Theyre pretty decent",
+  "target_word": "with",
+  "sample_idx": 0,
+  "generated_text": "people,",
+  "generated_first_word": "people,",
+  "similarity": 0.6292171478271484,
+  "timestamp": "2026-07-01 14:03:28"
+}

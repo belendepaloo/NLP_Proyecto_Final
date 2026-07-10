@@ -1,0 +1,19 @@
+{
+  "query_id": "92a91c1febf4dd86cf40d9a3753150a5",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0024",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Side out o'",
+  "target_word": "t'",
+  "sample_idx": 1,
+  "generated_text": "the corner.",
+  "generated_first_word": "the",
+  "similarity": 0.7166195511817932,
+  "timestamp": "2026-06-30 06:51:54"
+}

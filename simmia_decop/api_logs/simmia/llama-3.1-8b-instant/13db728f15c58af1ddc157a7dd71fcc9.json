@@ -1,0 +1,19 @@
+{
+  "query_id": "13db728f15c58af1ddc157a7dd71fcc9",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0165",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "And high in",
+  "target_word": "the",
+  "sample_idx": 1,
+  "generated_text": "the mountains",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-07-01 01:51:59"
+}

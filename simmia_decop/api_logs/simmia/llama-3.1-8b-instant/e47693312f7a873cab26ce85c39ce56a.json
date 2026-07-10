@@ -1,0 +1,19 @@
+{
+  "query_id": "e47693312f7a873cab26ce85c39ce56a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0040",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "At that point, the",
+  "target_word": "mother",
+  "sample_idx": 0,
+  "generated_text": "investigation into",
+  "generated_first_word": "investigation",
+  "similarity": 0.6597578525543213,
+  "timestamp": "2026-06-30 08:15:50"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "abb19ab9c912d6839b92e38dd02b557c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0076",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "Archer bent down and pressed his lips on the",
+  "target_word": "little",
+  "sample_idx": 2,
+  "generated_text": "wound.",
+  "generated_first_word": "wound.",
+  "similarity": 0.6534069180488586,
+  "timestamp": "2026-06-30 11:26:13"
+}

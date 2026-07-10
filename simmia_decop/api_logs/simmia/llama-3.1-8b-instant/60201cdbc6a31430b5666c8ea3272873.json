@@ -1,0 +1,19 @@
+{
+  "query_id": "60201cdbc6a31430b5666c8ea3272873",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0129",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Giles.' 'I",
+  "target_word": "hope",
+  "sample_idx": 2,
+  "generated_text": "don't",
+  "generated_first_word": "don't",
+  "similarity": 0.6547133922576904,
+  "timestamp": "2026-06-30 15:51:14"
+}

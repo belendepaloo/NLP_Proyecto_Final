@@ -1,0 +1,19 @@
+{
+  "query_id": "56c5f9b599a24f9abd1997834e0bf9e0",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0156",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 10,
+  "prefix": "I glance out the window. I see some new housing",
+  "target_word": "developments",
+  "sample_idx": 2,
+  "generated_text": "being built across",
+  "generated_first_word": "being",
+  "similarity": 0.593850314617157,
+  "timestamp": "2026-06-30 18:34:44"
+}

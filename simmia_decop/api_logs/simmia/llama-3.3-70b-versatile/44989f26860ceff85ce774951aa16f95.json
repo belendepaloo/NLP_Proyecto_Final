@@ -1,0 +1,19 @@
+{
+  "query_id": "44989f26860ceff85ce774951aa16f95",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0130",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "“The Eternity King too",
+  "target_word": "requires",
+  "sample_idx": 1,
+  "generated_text": "had",
+  "generated_first_word": "had",
+  "similarity": 0.6292856931686401,
+  "timestamp": "2026-07-05 16:59:25"
+}

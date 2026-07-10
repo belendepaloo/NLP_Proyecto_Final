@@ -1,0 +1,19 @@
+{
+  "query_id": "72ae22469cc2ff6a7197f2345b906d28",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0118",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 19,
+  "prefix": "Ardin Javar was a bear of a man with a bushy greying beard and a permanent scowl as thunderous",
+  "target_word": "as",
+  "sample_idx": 2,
+  "generated_text": "as",
+  "generated_first_word": "as",
+  "similarity": 1.0,
+  "timestamp": "2026-07-05 16:07:53"
+}

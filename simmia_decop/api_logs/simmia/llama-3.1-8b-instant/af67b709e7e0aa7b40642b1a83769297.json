@@ -1,0 +1,19 @@
+{
+  "query_id": "af67b709e7e0aa7b40642b1a83769297",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0176",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 18,
+  "prefix": "Men in powerful positions were unsettled by popular heirs waiting to take their places. In that regard, the",
+  "target_word": "Court",
+  "sample_idx": 1,
+  "generated_text": "royal court",
+  "generated_first_word": "royal",
+  "similarity": 0.6607437133789062,
+  "timestamp": "2026-07-01 02:52:20"
+}

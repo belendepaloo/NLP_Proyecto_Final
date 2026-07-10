@@ -1,0 +1,19 @@
+{
+  "query_id": "bfc2d8cdc0494028f85d6de54169795d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0060",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 10,
+  "prefix": "Soon only Yennika remained in the circle, her eyes downcast.",
+  "target_word": "“Mirela’s",
+  "sample_idx": 0,
+  "generated_text": "Silently",
+  "generated_first_word": "Silently",
+  "similarity": 0.5792537331581116,
+  "timestamp": "2026-07-03 14:51:36"
+}

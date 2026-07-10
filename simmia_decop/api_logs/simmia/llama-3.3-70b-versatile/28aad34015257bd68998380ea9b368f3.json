@@ -1,0 +1,19 @@
+{
+  "query_id": "28aad34015257bd68998380ea9b368f3",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0140",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 19,
+  "prefix": "Another reason I know this is not a real game: Sabrina clearly does not give one single shit about",
+  "target_word": "winning,",
+  "sample_idx": 0,
+  "generated_text": "winning",
+  "generated_first_word": "winning",
+  "similarity": 0.9411501884460449,
+  "timestamp": "2026-07-05 17:50:40"
+}

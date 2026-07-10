@@ -1,0 +1,25 @@
+{
+  "query_id": "81afa1ea668e446a2c3e5de590375295",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0132",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "title": "1984",
+  "author": "George Orwell",
+  "length": "medium",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"1984\" book by George Orwell?\nOptions:\nA. Even if humans aged quicker and were elderly by 30, the voice argued this would not matter. It said individual death is not true death, the party persists. Winston felt helpless against the voice's arguments as always. He feared more torture from O'Brien if he kept disagreeing. Still Winston had to respond, weakly and without real arguments, just his vague dread of what O'Brien claimed.\nB. Suppose that we quicken the tempo of human life till men are senile at thirty. Still what difference would it make? Can you not understand that the death of the individual is not death? The party is immortal.' As usual, the voice had battered Winston into helplessness. Moreover he was in dread that if he persisted in his disagreement O'Brien would twist the dial again. And yet he could not keep silent. Feebly, without arguments, with nothing to support him except his inarticulate horror of what O'Brien had said, he returned to the attack. 'I don't know--I don't care. Somehow you will fail.\nC. The voice contended that speeding up life so men grew old at 30 would make no difference. It said individual death is not real death since the party continues. Winston felt powerless against the voice as usual. He worried disagreeing would mean more pain from O'Brien's dial. However, Winston had to object, feebly and without reasoning, just his unclear horror at O'Brien's words.\nD. Even if people aged faster and became old at 30, it would not matter, according to the voice. The voice argued that death of a person is not true death, as the party lives on. As usual, Winston felt helpless against the voice's arguments. He feared if he disagreed more, O'Brien would torture him again. Still, Winston had to respond, weakly protesting though without good arguments, only his vague dread of what O'Brien claimed. \nAnswer:",
+  "options": {
+    "A": "Even if humans aged quicker and were elderly by 30, the voice argued this would not matter. It said individual death is not true death, the party persists. Winston felt helpless against the voice's arguments as always. He feared more torture from O'Brien if he kept disagreeing. Still Winston had to respond, weakly and without real arguments, just his vague dread of what O'Brien claimed.",
+    "B": "Suppose that we quicken the tempo of human life till men are senile at thirty. Still what difference would it make? Can you not understand that the death of the individual is not death? The party is immortal.' As usual, the voice had battered Winston into helplessness. Moreover he was in dread that if he persisted in his disagreement O'Brien would twist the dial again. And yet he could not keep silent. Feebly, without arguments, with nothing to support him except his inarticulate horror of what O'Brien had said, he returned to the attack. 'I don't know--I don't care. Somehow you will fail.",
+    "C": "The voice contended that speeding up life so men grew old at 30 would make no difference. It said individual death is not real death since the party continues. Winston felt powerless against the voice as usual. He worried disagreeing would mean more pain from O'Brien's dial. However, Winston had to object, feebly and without reasoning, just his unclear horror at O'Brien's words.",
+    "D": "Even if people aged faster and became old at 30, it would not matter, according to the voice. The voice argued that death of a person is not true death, as the party lives on. As usual, Winston felt helpless against the voice's arguments. He feared if he disagreed more, O'Brien would torture him again. Still, Winston had to respond, weakly protesting though without good arguments, only his vague dread of what O'Brien claimed. "
+  },
+  "gold_letter": "B",
+  "predicted_letter": "B",
+  "is_correct": 1,
+  "timestamp": "2026-07-08 04:58:02"
+}

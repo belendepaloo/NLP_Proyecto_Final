@@ -1,0 +1,19 @@
+{
+  "query_id": "d386245de2dc2badd5db93e7b8d613a1",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0136",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 19,
+  "prefix": "He missed Hogwarts so much it was like having a constant stomachache. He missed the castle, with its secret",
+  "target_word": "passageways",
+  "sample_idx": 1,
+  "generated_text": "passages and",
+  "generated_first_word": "passages",
+  "similarity": 0.7444120049476624,
+  "timestamp": "2026-06-30 16:59:41"
+}

@@ -1,0 +1,25 @@
+{
+  "query_id": "6130f6018a51eadda135875fcc02bda3",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0075",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "title": "Business or Pleasure",
+  "author": "Rachel Lynn Solomon",
+  "length": "medium",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Business or Pleasure\" book by Rachel Lynn Solomon?\nOptions:\nA. He carries himself with confidence, clearly accustomed to the adoration of his fans. As he takes a seat, I note his height and clean-shaven appearance, the stage lights illuminating his auburn hair. Though I've seen some of his work online and on TV, witnessing Finn's talent live is an entirely different experience. \nB. With the swagger of a star used to screaming admirers, he takes the stage. Stretching out his long legs, he sits in a cushy pink chair. Under the harsh lights, his auburn hair and clean-shaven face stand out. Though I've seen his online videos and TV show, witnessing Finn perform live is a different experience. He's talented, commanding the stage with confidence.\nC. Theres almost a swagger to him, a confidence that only hundreds of screaming fans can buy. Is he taller, or am I just farther away? His face is clean-shaven, the bright overhead lights glinting off his auburn hair as he takes a seat in a plush pink chair, stretching out his long legs. I may have watched those Mexley clips and one whole episode of The Nocturnals, but this is Finn performing right in front of me, or at least from a dozen yards away. And hes good. The moderator introduces the other two panelists: Lizzy Woo, who starred as a government agent in a superhero TV adaptation, but who Im more familiar with as a lovelorn barista in an ensemble romantic comedy Noemie and I were obsessed with a few years ago, and Jermaine Simmons, from a mermaid show on HBO we watched a season of before getting frustrated by how sexy it surprisingly wasnt.\nD. He has an air of self-assurance, the kind that comes from the cheers of devoted fans. Sitting in a plush pink chair, he seems even taller than expected, his face smooth and his auburn hair shining under the bright lights. I'm familiar with his work, but seeing Finn perform in person is something else entirely. His talent is undeniable.\nAnswer:",
+  "options": {
+    "A": "He carries himself with confidence, clearly accustomed to the adoration of his fans. As he takes a seat, I note his height and clean-shaven appearance, the stage lights illuminating his auburn hair. Though I've seen some of his work online and on TV, witnessing Finn's talent live is an entirely different experience. ",
+    "B": "With the swagger of a star used to screaming admirers, he takes the stage. Stretching out his long legs, he sits in a cushy pink chair. Under the harsh lights, his auburn hair and clean-shaven face stand out. Though I've seen his online videos and TV show, witnessing Finn perform live is a different experience. He's talented, commanding the stage with confidence.",
+    "C": "Theres almost a swagger to him, a confidence that only hundreds of screaming fans can buy. Is he taller, or am I just farther away? His face is clean-shaven, the bright overhead lights glinting off his auburn hair as he takes a seat in a plush pink chair, stretching out his long legs. I may have watched those Mexley clips and one whole episode of The Nocturnals, but this is Finn performing right in front of me, or at least from a dozen yards away. And hes good. The moderator introduces the other two panelists: Lizzy Woo, who starred as a government agent in a superhero TV adaptation, but who Im more familiar with as a lovelorn barista in an ensemble romantic comedy Noemie and I were obsessed with a few years ago, and Jermaine Simmons, from a mermaid show on HBO we watched a season of before getting frustrated by how sexy it surprisingly wasnt.",
+    "D": "He has an air of self-assurance, the kind that comes from the cheers of devoted fans. Sitting in a plush pink chair, he seems even taller than expected, his face smooth and his auburn hair shining under the bright lights. I'm familiar with his work, but seeing Finn perform in person is something else entirely. His talent is undeniable."
+  },
+  "gold_letter": "C",
+  "predicted_letter": "D",
+  "is_correct": 0,
+  "timestamp": "2026-07-08 04:23:49"
+}

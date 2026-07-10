@@ -1,0 +1,19 @@
+{
+  "query_id": "65bc89174568636e478bdd71407ad530",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0087",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 13,
+  "prefix": "If I thought it, I should never be happy again. I wouldn't cut",
+  "target_word": "a",
+  "sample_idx": 0,
+  "generated_text": "myself.",
+  "generated_first_word": "myself.",
+  "similarity": 0.6303977966308594,
+  "timestamp": "2026-06-30 12:23:16"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "8f218d43f9ff6bc43233a697ba17d88e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0086",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "The musicians had fallen",
+  "target_word": "silent",
+  "sample_idx": 2,
+  "generated_text": "asleep",
+  "generated_first_word": "asleep",
+  "similarity": 0.7023290991783142,
+  "timestamp": "2026-07-04 18:24:21"
+}

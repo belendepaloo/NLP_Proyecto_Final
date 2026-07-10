@@ -1,0 +1,19 @@
+{
+  "query_id": "76ad36c5ee98230f855ec64feba37a42",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0148",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "They did not speak again.",
+  "target_word": "She",
+  "sample_idx": 2,
+  "generated_text": "Until",
+  "generated_first_word": "Until",
+  "similarity": 0.6612652540206909,
+  "timestamp": "2026-07-05 22:43:17"
+}

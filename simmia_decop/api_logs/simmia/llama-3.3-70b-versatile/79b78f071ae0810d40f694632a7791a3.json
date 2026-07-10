@@ -1,0 +1,19 @@
+{
+  "query_id": "79b78f071ae0810d40f694632a7791a3",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0016",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 13,
+  "prefix": "There he would often wander long, and late would return. Still therefore, after",
+  "target_word": "the",
+  "sample_idx": 0,
+  "generated_text": "many",
+  "generated_first_word": "many",
+  "similarity": 0.6933883428573608,
+  "timestamp": "2026-07-01 14:54:13"
+}

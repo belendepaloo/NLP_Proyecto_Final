@@ -1,0 +1,19 @@
+{
+  "query_id": "380522cdaa10df8b941e15c3d78bc405",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0192",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "\"Call it what you like: you",
+  "target_word": "look",
+  "sample_idx": 2,
+  "generated_text": "a pessimist",
+  "generated_first_word": "a",
+  "similarity": 0.6534240245819092,
+  "timestamp": "2026-07-01 04:09:37"
+}

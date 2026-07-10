@@ -1,0 +1,25 @@
+{
+  "query_id": "5e32dccc13999e61d96add62419fbf3d",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0137",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "title": "A Day of Fallen Night",
+  "author": "Samantha Shannon",
+  "length": "medium",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"A Day of Fallen Night\" book by Samantha Shannon?\nOptions:\nA. Glorian prepared herself for the evening. She planned to be at the spyhole after her mother retired. Glorian did not want to worry Jules or Adela with her plans. After dinner, Glorian and Helisent went to the Royal Sanctuary. Helisent gave Glorian a fire pouch and asked if she knew how to use it. Although Glorian lacked some practical skills, she was still a princess who could light a fire.\nB.  Glorian drew herself up. Mother retires after eventide. I will need to be at the spyhole by then. She grimaced. Lets not tell Jules. Shell only worry. They looked at one another. Or Adela, they agreed in unison. **** After the evening meal, she and Helisent changed and walked to the Royal Sanctuary. Sir Bramel and Dame Erda closed the doors behind them, leaving Glorian to her supposed reflection. Take this. Helisent took a fire pouch from under her cloak. Do you know how to use it? Of course. When Helisent canted an eyebrow, Glorian sighed. I am aware I lack certain practical skills as a royal, but do you truly think a princess of the North cant light a fire? I sometimes forget youve a claim to two thrones.\nC. Glorian prepared for the evening's activities. She planned to be at the spyhole after her mother turned in for the night. Glorian chose not to tell Jules or Adela to avoid worrying them. After dinner, Glorian and Helisent went to the Royal Sanctuary. Helisent gave Glorian a fire pouch and asked if she knew how to use it. Though Glorian lacked some practical royal skills, as a princess of two realms she could certainly light a fire.\nD. Glorian got ready for the night ahead. She intended to be at the peephole once her mother went to bed. Glorian decided not to inform Jules or Adela so they wouldn't fret. Following the meal, Glorian and Helisent proceeded to the Royal Sanctuary. There, Helisent handed Glorian a fire pouch and questioned if she could operate it. Despite lacking certain practical abilities as a royal, Glorian was still a princess capable of lighting a fire. \nAnswer:",
+  "options": {
+    "A": "Glorian prepared herself for the evening. She planned to be at the spyhole after her mother retired. Glorian did not want to worry Jules or Adela with her plans. After dinner, Glorian and Helisent went to the Royal Sanctuary. Helisent gave Glorian a fire pouch and asked if she knew how to use it. Although Glorian lacked some practical skills, she was still a princess who could light a fire.",
+    "B": " Glorian drew herself up. Mother retires after eventide. I will need to be at the spyhole by then. She grimaced. Lets not tell Jules. Shell only worry. They looked at one another. Or Adela, they agreed in unison. **** After the evening meal, she and Helisent changed and walked to the Royal Sanctuary. Sir Bramel and Dame Erda closed the doors behind them, leaving Glorian to her supposed reflection. Take this. Helisent took a fire pouch from under her cloak. Do you know how to use it? Of course. When Helisent canted an eyebrow, Glorian sighed. I am aware I lack certain practical skills as a royal, but do you truly think a princess of the North cant light a fire? I sometimes forget youve a claim to two thrones.",
+    "C": "Glorian prepared for the evening's activities. She planned to be at the spyhole after her mother turned in for the night. Glorian chose not to tell Jules or Adela to avoid worrying them. After dinner, Glorian and Helisent went to the Royal Sanctuary. Helisent gave Glorian a fire pouch and asked if she knew how to use it. Though Glorian lacked some practical royal skills, as a princess of two realms she could certainly light a fire.",
+    "D": "Glorian got ready for the night ahead. She intended to be at the peephole once her mother went to bed. Glorian decided not to inform Jules or Adela so they wouldn't fret. Following the meal, Glorian and Helisent proceeded to the Royal Sanctuary. There, Helisent handed Glorian a fire pouch and questioned if she could operate it. Despite lacking certain practical abilities as a royal, Glorian was still a princess capable of lighting a fire. "
+  },
+  "gold_letter": "B",
+  "predicted_letter": "B",
+  "is_correct": 1,
+  "timestamp": "2026-07-08 05:01:01"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "2691737c746847aaa5c21287fae9e7fe",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0068",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "In Oldspeak it is",
+  "target_word": "called,",
+  "sample_idx": 2,
+  "generated_text": "written",
+  "generated_first_word": "written",
+  "similarity": 0.6430249214172363,
+  "timestamp": "2026-06-30 10:44:05"
+}

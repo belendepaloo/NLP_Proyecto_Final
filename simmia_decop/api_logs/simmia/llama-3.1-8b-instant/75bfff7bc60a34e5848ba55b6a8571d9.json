@@ -1,0 +1,19 @@
+{
+  "query_id": "75bfff7bc60a34e5848ba55b6a8571d9",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0111",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "The vaults were reached by means of small,",
+  "target_word": "goblin-driven",
+  "sample_idx": 1,
+  "generated_text": "narrow tunnels",
+  "generated_first_word": "narrow",
+  "similarity": 0.6086266040802002,
+  "timestamp": "2026-06-30 14:22:17"
+}

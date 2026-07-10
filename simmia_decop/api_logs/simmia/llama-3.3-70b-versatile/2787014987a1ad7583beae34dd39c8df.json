@@ -1,0 +1,19 @@
+{
+  "query_id": "2787014987a1ad7583beae34dd39c8df",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0096",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Hallie whooped and held",
+  "target_word": "up",
+  "sample_idx": 0,
+  "generated_text": "up",
+  "generated_first_word": "up",
+  "similarity": 1.0,
+  "timestamp": "2026-07-04 19:10:00"
+}

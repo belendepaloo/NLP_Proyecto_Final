@@ -1,0 +1,19 @@
+{
+  "query_id": "d70d44ee807325e3632b3fe5b1ccd60a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0032",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Even",
+  "target_word": "as",
+  "sample_idx": 0,
+  "generated_text": "though",
+  "generated_first_word": "though",
+  "similarity": 0.6820107698440552,
+  "timestamp": "2026-06-30 07:32:18"
+}

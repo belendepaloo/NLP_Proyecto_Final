@@ -1,0 +1,19 @@
+{
+  "query_id": "45efb2cfa4d89b51aced13562fd5ca70",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0020",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Yes, I suppose I will,",
+  "target_word": "Lore",
+  "sample_idx": 2,
+  "generated_text": "have to,",
+  "generated_first_word": "have",
+  "similarity": 0.6117628812789917,
+  "timestamp": "2026-06-30 06:31:47"
+}

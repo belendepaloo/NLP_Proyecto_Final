@@ -1,0 +1,19 @@
+{
+  "query_id": "03027098bb79ec514aac65b8a374a28d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0164",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "With a sweep of his hand he cleared",
+  "target_word": "a",
+  "sample_idx": 2,
+  "generated_text": "the clutter from",
+  "generated_first_word": "the",
+  "similarity": 0.7954018712043762,
+  "timestamp": "2026-07-01 01:48:43"
+}

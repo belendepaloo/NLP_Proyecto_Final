@@ -1,0 +1,19 @@
+{
+  "query_id": "11b714f348833875cb9c26ae8522a9c9",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0064",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 15,
+  "prefix": "As Noah's red nose grew redder with anger, and as he crossed the road while",
+  "target_word": "speaking,",
+  "sample_idx": 1,
+  "generated_text": "yelling at",
+  "generated_first_word": "yelling",
+  "similarity": 0.6715015172958374,
+  "timestamp": "2026-06-30 10:26:03"
+}

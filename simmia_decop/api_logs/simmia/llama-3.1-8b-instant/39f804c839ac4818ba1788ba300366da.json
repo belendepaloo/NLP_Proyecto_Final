@@ -1,0 +1,19 @@
+{
+  "query_id": "39f804c839ac4818ba1788ba300366da",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0168",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Stop. I cannot",
+  "target_word": "handle",
+  "sample_idx": 2,
+  "generated_text": "continue.",
+  "generated_first_word": "continue.",
+  "similarity": 0.6560965180397034,
+  "timestamp": "2026-07-01 02:07:02"
+}

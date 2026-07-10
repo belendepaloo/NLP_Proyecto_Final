@@ -1,0 +1,19 @@
+{
+  "query_id": "768c95f1cea94241e31c858c545d9bf6",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0097",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "“Er — Professor",
+  "target_word": "Lockhart?”",
+  "sample_idx": 1,
+  "generated_text": "Fleming",
+  "generated_first_word": "Fleming",
+  "similarity": 0.6491743326187134,
+  "timestamp": "2026-06-30 13:12:07"
+}

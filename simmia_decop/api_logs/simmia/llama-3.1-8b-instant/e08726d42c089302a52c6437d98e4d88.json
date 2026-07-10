@@ -1,0 +1,19 @@
+{
+  "query_id": "e08726d42c089302a52c6437d98e4d88",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0092",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 9,
+  "prefix": "As the wound smoked, he watched the glow leave",
+  "target_word": "its",
+  "sample_idx": 0,
+  "generated_text": "the charred",
+  "generated_first_word": "the",
+  "similarity": 0.6960481405258179,
+  "timestamp": "2026-06-30 12:48:02"
+}

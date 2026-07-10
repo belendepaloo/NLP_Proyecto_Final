@@ -1,0 +1,19 @@
+{
+  "query_id": "f81e327e42e7cc2593a7886c8af00613",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0061",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "Promiscuity went unpunished, divorce was permitted. For that matter, even",
+  "target_word": "religious",
+  "sample_idx": 0,
+  "generated_text": "adultery",
+  "generated_first_word": "adultery",
+  "similarity": 0.6789368391036987,
+  "timestamp": "2026-07-03 14:56:44"
+}

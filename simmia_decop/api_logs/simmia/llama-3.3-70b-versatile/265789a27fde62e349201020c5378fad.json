@@ -1,0 +1,19 @@
+{
+  "query_id": "265789a27fde62e349201020c5378fad",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0082",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "The hills drew nearer. They made an",
+  "target_word": "undulating",
+  "sample_idx": 1,
+  "generated_text": "imposing",
+  "generated_first_word": "imposing",
+  "similarity": 0.6309423446655273,
+  "timestamp": "2026-07-04 18:06:56"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "5092be3f71a92586fa92e8ca7059264f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0032",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "Even as the first shadows were felt in",
+  "target_word": "Mirkwood",
+  "sample_idx": 0,
+  "generated_text": "Europe",
+  "generated_first_word": "Europe",
+  "similarity": 0.5772663950920105,
+  "timestamp": "2026-07-01 17:39:03"
+}

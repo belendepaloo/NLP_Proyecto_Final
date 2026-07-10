@@ -1,0 +1,19 @@
+{
+  "query_id": "c26044436e9084ebb687c84677d47e1c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0049",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "Yes: his decision was irreversible. It is",
+  "target_word": "not",
+  "sample_idx": 1,
+  "generated_text": "a fact that",
+  "generated_first_word": "a",
+  "similarity": 0.635844349861145,
+  "timestamp": "2026-06-30 09:04:07"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "1adebc1bbb970a0948e64d5c6bf1d548",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0038",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 1,
+  "prefix": "But",
+  "target_word": "for",
+  "sample_idx": 1,
+  "generated_text": "it",
+  "generated_first_word": "it",
+  "similarity": 0.701736569404602,
+  "timestamp": "2026-07-02 00:08:32"
+}

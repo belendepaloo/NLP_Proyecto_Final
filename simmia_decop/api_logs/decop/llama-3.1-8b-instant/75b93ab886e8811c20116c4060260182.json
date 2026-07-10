@@ -1,0 +1,25 @@
+{
+  "query_id": "75b93ab886e8811c20116c4060260182",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0106",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "title": "The Alchemist",
+  "author": "Paulo Coelho",
+  "length": "medium",
+  "permutation_index": 0,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Alchemist\" book by Paulo Coelho?\nOptions:\nA. Who knows…maybe it’s better to be like the crystal merchant: never go to Mecca, and just go through life wanting to do so, he thought, again trying to convince himself. But as he held Urim and Thummim in his hand, they had transmitted to him the strength and will of the old king. By coincidence—or maybe it was an omen, the boy thought—he came to the bar he had entered on his first day there. The thief wasn’t there, and the owner brought him a cup of tea. \nB. The boy considered that perhaps it was wiser to simply desire your dreams like the crystal merchant wanted to go to Mecca but never did, he thought, attempting to persuade himself once more. However, as he held Urim and Thummim, their power had imparted the determination and perseverance of the old ruler to him. By chance, or was it a sign, the boy wondered, he arrived at the tavern he had entered on his initial day there. The thief was gone, and the tavern owner served him a cup of tea.\nC. Maybe it would be better to just yearn for your dreams but never achieve them, like the crystal merchant longing for Mecca, the boy thought, trying to convince himself again. Yet as he held Urim and Thummim, their energy had transmitted the willpower and tenacity of the former king to him. Coincidentally, or was it an omen, the boy pondered, he came upon the bar he had gone into on his first day there. The thief was not present, and the owner gave him a cup of tea.\nD. The boy pondered if it was wiser to be satisfied with longing for your dreams like the crystal merchant rather than pursuing them, he considered, attempting to persuade himself once more. However, as he grasped Urim and Thummim, their power had imparted to him the resolve and determination of the aged ruler. Perhaps by chance, or was it a sign, the boy wondered, he arrived at the tavern he had entered on his initial day there. The thief was absent, and the tavern keeper offered him a cup of tea.  \nAnswer:",
+  "options": {
+    "A": "Who knows…maybe it’s better to be like the crystal merchant: never go to Mecca, and just go through life wanting to do so, he thought, again trying to convince himself. But as he held Urim and Thummim in his hand, they had transmitted to him the strength and will of the old king. By coincidence—or maybe it was an omen, the boy thought—he came to the bar he had entered on his first day there. The thief wasn’t there, and the owner brought him a cup of tea. ",
+    "B": "The boy considered that perhaps it was wiser to simply desire your dreams like the crystal merchant wanted to go to Mecca but never did, he thought, attempting to persuade himself once more. However, as he held Urim and Thummim, their power had imparted the determination and perseverance of the old ruler to him. By chance, or was it a sign, the boy wondered, he arrived at the tavern he had entered on his initial day there. The thief was gone, and the tavern owner served him a cup of tea.",
+    "C": "Maybe it would be better to just yearn for your dreams but never achieve them, like the crystal merchant longing for Mecca, the boy thought, trying to convince himself again. Yet as he held Urim and Thummim, their energy had transmitted the willpower and tenacity of the former king to him. Coincidentally, or was it an omen, the boy pondered, he came upon the bar he had gone into on his first day there. The thief was not present, and the owner gave him a cup of tea.",
+    "D": "The boy pondered if it was wiser to be satisfied with longing for your dreams like the crystal merchant rather than pursuing them, he considered, attempting to persuade himself once more. However, as he grasped Urim and Thummim, their power had imparted to him the resolve and determination of the aged ruler. Perhaps by chance, or was it a sign, the boy wondered, he arrived at the tavern he had entered on his initial day there. The thief was absent, and the tavern keeper offered him a cup of tea.  "
+  },
+  "gold_letter": "A",
+  "predicted_letter": "C",
+  "is_correct": 0,
+  "timestamp": "2026-07-08 04:42:06"
+}

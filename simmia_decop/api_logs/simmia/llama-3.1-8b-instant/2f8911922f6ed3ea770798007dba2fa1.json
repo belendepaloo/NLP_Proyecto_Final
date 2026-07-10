@@ -1,0 +1,19 @@
+{
+  "query_id": "2f8911922f6ed3ea770798007dba2fa1",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0120",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "At first Frodo felt as if he had",
+  "target_word": "indeed",
+  "sample_idx": 0,
+  "generated_text": "escaped the Sh",
+  "generated_first_word": "escaped",
+  "similarity": 0.5631958842277527,
+  "timestamp": "2026-06-30 15:08:00"
+}

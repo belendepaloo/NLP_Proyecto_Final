@@ -1,0 +1,19 @@
+{
+  "query_id": "7570561cc8ca781d5feb93bad80c98eb",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0167",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "Let the Orcs have the realm that",
+  "target_word": "is",
+  "sample_idx": 0,
+  "generated_text": "they had long",
+  "generated_first_word": "they",
+  "similarity": 0.651160717010498,
+  "timestamp": "2026-07-01 02:02:48"
+}

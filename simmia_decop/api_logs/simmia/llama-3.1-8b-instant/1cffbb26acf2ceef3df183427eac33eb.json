@@ -1,0 +1,19 @@
+{
+  "query_id": "1cffbb26acf2ceef3df183427eac33eb",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0032",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "Even as the first shadows were felt in Mirkwood there appeared in the west of Middle-earth the Istari,",
+  "target_word": "whom",
+  "sample_idx": 1,
+  "generated_text": "five powerful beings",
+  "generated_first_word": "five",
+  "similarity": 0.6047670841217041,
+  "timestamp": "2026-06-30 07:36:59"
+}

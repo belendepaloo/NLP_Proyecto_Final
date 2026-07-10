@@ -1,0 +1,19 @@
+{
+  "query_id": "0d8180363a5ace6d15f6490330344d1f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0078",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Together,",
+  "target_word": "they",
+  "sample_idx": 1,
+  "generated_text": "they",
+  "generated_first_word": "they",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 11:34:21"
+}

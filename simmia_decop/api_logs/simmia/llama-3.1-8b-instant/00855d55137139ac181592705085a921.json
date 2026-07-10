@@ -1,0 +1,19 @@
+{
+  "query_id": "00855d55137139ac181592705085a921",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0055",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "‘The speedometer,’ Mr Wormwood said, ‘is run off",
+  "target_word": "a",
+  "sample_idx": 0,
+  "generated_text": "a small electric",
+  "generated_first_word": "a",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 09:36:50"
+}

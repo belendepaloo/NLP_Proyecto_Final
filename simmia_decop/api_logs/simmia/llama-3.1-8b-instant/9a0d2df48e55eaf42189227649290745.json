@@ -1,0 +1,19 @@
+{
+  "query_id": "9a0d2df48e55eaf42189227649290745",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0108",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Its the first",
+  "target_word": "real",
+  "sample_idx": 0,
+  "generated_text": "day",
+  "generated_first_word": "day",
+  "similarity": 0.6390125155448914,
+  "timestamp": "2026-06-30 14:06:29"
+}

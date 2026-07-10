@@ -1,0 +1,19 @@
+{
+  "query_id": "7be2cc315995ea876e1be893efe891e6",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0048",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Were going to take",
+  "target_word": "you",
+  "sample_idx": 2,
+  "generated_text": "a",
+  "generated_first_word": "a",
+  "similarity": 0.6785044074058533,
+  "timestamp": "2026-07-03 13:47:55"
+}

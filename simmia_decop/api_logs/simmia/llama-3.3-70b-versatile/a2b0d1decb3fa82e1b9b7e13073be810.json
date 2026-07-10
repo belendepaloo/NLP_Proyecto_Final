@@ -1,0 +1,19 @@
+{
+  "query_id": "a2b0d1decb3fa82e1b9b7e13073be810",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0187",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "She wears thin-rimmed",
+  "target_word": "oval",
+  "sample_idx": 1,
+  "generated_text": "glasses",
+  "generated_first_word": "glasses",
+  "similarity": 0.6599273085594177,
+  "timestamp": "2026-07-08 01:51:43"
+}

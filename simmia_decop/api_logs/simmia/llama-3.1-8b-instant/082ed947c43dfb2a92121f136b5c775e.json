@@ -1,0 +1,19 @@
+{
+  "query_id": "082ed947c43dfb2a92121f136b5c775e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0019",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "Edgar Linton, as mul- titudes have been before, and will be after him, was in- fatuated, and believed",
+  "target_word": "himself",
+  "sample_idx": 1,
+  "generated_text": "that he was",
+  "generated_first_word": "that",
+  "similarity": 0.6212508678436279,
+  "timestamp": "2026-06-30 06:30:01"
+}

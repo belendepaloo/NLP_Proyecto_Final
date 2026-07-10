@@ -1,0 +1,19 @@
+{
+  "query_id": "8d602fe9d23c008ca3133ca6f5eb11ba",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0022",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "I can come",
+  "target_word": "back",
+  "sample_idx": 2,
+  "generated_text": "up with",
+  "generated_first_word": "up",
+  "similarity": 0.7380873560905457,
+  "timestamp": "2026-06-30 06:41:49"
+}

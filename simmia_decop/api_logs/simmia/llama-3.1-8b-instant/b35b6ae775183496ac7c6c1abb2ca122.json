@@ -1,0 +1,19 @@
+{
+  "query_id": "b35b6ae775183496ac7c6c1abb2ca122",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0090",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Archer looked",
+  "target_word": "up",
+  "sample_idx": 2,
+  "generated_text": "around cautiously.",
+  "generated_first_word": "around",
+  "similarity": 0.7291852831840515,
+  "timestamp": "2026-06-30 12:36:11"
+}

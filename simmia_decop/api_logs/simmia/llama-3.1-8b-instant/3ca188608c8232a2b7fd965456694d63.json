@@ -1,0 +1,19 @@
+{
+  "query_id": "3ca188608c8232a2b7fd965456694d63",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0089",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Still I couldn't dote",
+  "target_word": "on",
+  "sample_idx": 1,
+  "generated_text": "on my a",
+  "generated_first_word": "on",
+  "similarity": 1.0000001192092896,
+  "timestamp": "2026-06-30 12:31:59"
+}

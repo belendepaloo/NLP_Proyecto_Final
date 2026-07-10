@@ -1,0 +1,19 @@
+{
+  "query_id": "16793fc8a5238768c7bbf16b0d114279",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0181",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 14,
+  "prefix": "But when he had drawn forth, as he hoped, the armies of Morgoth in",
+  "target_word": "answer,",
+  "sample_idx": 0,
+  "generated_text": "the north,",
+  "generated_first_word": "the",
+  "similarity": 0.6870803833007812,
+  "timestamp": "2026-07-01 03:16:00"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "3c40c92ca39685627f5d17e56e8aa0ed",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0196",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "The boy continued to",
+  "target_word": "listen",
+  "sample_idx": 2,
+  "generated_text": "walk down the",
+  "generated_first_word": "walk",
+  "similarity": 0.6296967267990112,
+  "timestamp": "2026-07-01 04:29:32"
+}

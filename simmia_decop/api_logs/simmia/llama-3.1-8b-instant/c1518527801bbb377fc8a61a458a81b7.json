@@ -1,0 +1,19 @@
+{
+  "query_id": "c1518527801bbb377fc8a61a458a81b7",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0056",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "That guy is so",
+  "target_word": "weird,",
+  "sample_idx": 2,
+  "generated_text": "annoying",
+  "generated_first_word": "annoying",
+  "similarity": 0.687420129776001,
+  "timestamp": "2026-06-30 09:41:01"
+}

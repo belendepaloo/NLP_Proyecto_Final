@@ -1,0 +1,19 @@
+{
+  "query_id": "01448487174a1d5cf386f695b3fdc8da",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0028",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Theres no need to go excavating",
+  "target_word": "ancient",
+  "sample_idx": 1,
+  "generated_text": "for",
+  "generated_first_word": "for",
+  "similarity": 0.6194078922271729,
+  "timestamp": "2026-07-01 15:48:56"
+}

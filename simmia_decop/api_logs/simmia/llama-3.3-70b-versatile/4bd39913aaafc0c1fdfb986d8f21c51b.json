@@ -1,0 +1,19 @@
+{
+  "query_id": "4bd39913aaafc0c1fdfb986d8f21c51b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0103",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Fell in",
+  "target_word": "love.",
+  "sample_idx": 1,
+  "generated_text": "love",
+  "generated_first_word": "love",
+  "similarity": 0.9332209229469299,
+  "timestamp": "2026-07-04 19:41:05"
+}

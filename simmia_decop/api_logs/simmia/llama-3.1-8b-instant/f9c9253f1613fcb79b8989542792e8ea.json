@@ -1,0 +1,19 @@
+{
+  "query_id": "f9c9253f1613fcb79b8989542792e8ea",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0164",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 11,
+  "prefix": "With a sweep of his hand he cleared a vacant space",
+  "target_word": "in",
+  "sample_idx": 1,
+  "generated_text": "on the dusty",
+  "generated_first_word": "on",
+  "similarity": 0.7626075148582458,
+  "timestamp": "2026-07-01 01:49:21"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "73fcc75f65bce36c1a626637767db198",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0007",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "My mother was right",
+  "target_word": "about",
+  "sample_idx": 1,
+  "generated_text": "when",
+  "generated_first_word": "when",
+  "similarity": 0.7158883810043335,
+  "timestamp": "2026-07-01 14:10:10"
+}

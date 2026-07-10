@@ -1,0 +1,19 @@
+{
+  "query_id": "ff234f870cded85a9761f472088f8090",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0044",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Lore scowled at his",
+  "target_word": "back,",
+  "sample_idx": 1,
+  "generated_text": "brother",
+  "generated_first_word": "brother",
+  "similarity": 0.6700732707977295,
+  "timestamp": "2026-07-02 03:07:08"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "a4fb977f516896af7618aa6b93b2b926",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0116",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 11,
+  "prefix": "I'll read it, for I keep it yet. Any relic of",
+  "target_word": "the",
+  "sample_idx": 0,
+  "generated_text": "past",
+  "generated_first_word": "past",
+  "similarity": 0.6885895729064941,
+  "timestamp": "2026-07-05 15:56:50"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "42a13eeae8a4de1a42cee397d620c1bf",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0058",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 13,
+  "prefix": "I fiddle with the borrowed rosary in my hands. Maman wanted me to",
+  "target_word": "have",
+  "sample_idx": 2,
+  "generated_text": "keep.",
+  "generated_first_word": "keep.",
+  "similarity": 0.69410240650177,
+  "timestamp": "2026-06-30 09:54:11"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "b3682c859929b7b5d7ac302be874a76c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0150",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 17,
+  "prefix": "I had only met him four or five times before coming to stay here, on his infrequent",
+  "target_word": "trips",
+  "sample_idx": 2,
+  "generated_text": "visits",
+  "generated_first_word": "visits",
+  "similarity": 0.8247817754745483,
+  "timestamp": "2026-07-06 16:17:31"
+}

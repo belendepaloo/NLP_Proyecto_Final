@@ -1,0 +1,19 @@
+{
+  "query_id": "bb3fceb8c010a465b344ecab1ba53c0a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0146",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "Countless times, Harry had been on the",
+  "target_word": "point",
+  "sample_idx": 2,
+  "generated_text": "brink of",
+  "generated_first_word": "brink",
+  "similarity": 0.6145458817481995,
+  "timestamp": "2026-06-30 17:44:48"
+}

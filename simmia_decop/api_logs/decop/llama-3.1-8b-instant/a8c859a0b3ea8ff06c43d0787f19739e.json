@@ -1,0 +1,25 @@
+{
+  "query_id": "a8c859a0b3ea8ff06c43d0787f19739e",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0187",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "title": "Business or Pleasure",
+  "author": "Rachel Lynn Solomon",
+  "length": "medium",
+  "permutation_index": 3,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Business or Pleasure\" book by Rachel Lynn Solomon?\nOptions:\nA. Thin oval spectacles sit over her striking blue eyes, and she has on a patterned jumpsuit with a satin Chanel purse. Her whole look seems to gleam, from her hair to the buckles on her heeled boots. I mention I've been watching her old show The Nocturnals recently, and that she's my favorite character on it. I'm certain she's been told that many times over the years.\nB. She's wearing thin oval glasses, a patterned jumpsuit, and a satin Chanel bag. Everything about her looks shiny and expensive, including her hair and heeled booties. I tell her I've been watching her old show The Nocturnals for the first time and I love it, and that she's my favorite character. I'm sure she's heard compliments like that countless times before.\nC. She has on oval eyeglasses, a patterned jumpsuit, and a Chanel purse. Her whole appearance seems expensive and polished, from her hair to her buckled boots. I mention that I've been watching her old TV show The Nocturnals and that she's my favorite character. I expect she's heard that praise many times before. \nD. She wears thin-rimmed oval glasses over striking blue eyes, and a patterned jumpsuit and satin Chanel bag. That Boise Med money must be pretty great, because everything about her gleams, from her hair to the buckles on her heeled booties. Im sure youve heard this a thousand times, I tell her, but Ive been watching The Nocturnals forwell, for the first time, and I really love it. Youre actually my favorite character. Im certain Hallie will wave this off, a compliment on something she did ten years ago. Thank you. Megs always been my favorite, too. No matter how many scripts I read, I can never fully get her out of my head.\nAnswer:",
+  "options": {
+    "A": "Thin oval spectacles sit over her striking blue eyes, and she has on a patterned jumpsuit with a satin Chanel purse. Her whole look seems to gleam, from her hair to the buckles on her heeled boots. I mention I've been watching her old show The Nocturnals recently, and that she's my favorite character on it. I'm certain she's been told that many times over the years.",
+    "B": "She's wearing thin oval glasses, a patterned jumpsuit, and a satin Chanel bag. Everything about her looks shiny and expensive, including her hair and heeled booties. I tell her I've been watching her old show The Nocturnals for the first time and I love it, and that she's my favorite character. I'm sure she's heard compliments like that countless times before.",
+    "C": "She has on oval eyeglasses, a patterned jumpsuit, and a Chanel purse. Her whole appearance seems expensive and polished, from her hair to her buckled boots. I mention that I've been watching her old TV show The Nocturnals and that she's my favorite character. I expect she's heard that praise many times before. ",
+    "D": "She wears thin-rimmed oval glasses over striking blue eyes, and a patterned jumpsuit and satin Chanel bag. That Boise Med money must be pretty great, because everything about her gleams, from her hair to the buckles on her heeled booties. Im sure youve heard this a thousand times, I tell her, but Ive been watching The Nocturnals forwell, for the first time, and I really love it. Youre actually my favorite character. Im certain Hallie will wave this off, a compliment on something she did ten years ago. Thank you. Megs always been my favorite, too. No matter how many scripts I read, I can never fully get her out of my head."
+  },
+  "gold_letter": "D",
+  "predicted_letter": "B",
+  "is_correct": 0,
+  "timestamp": "2026-07-08 05:29:52"
+}

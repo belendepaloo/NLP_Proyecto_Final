@@ -1,0 +1,19 @@
+{
+  "query_id": "acaaf18eb7116fde307c61345d9a9f67",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0197",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "He was getting, he",
+  "target_word": "judged,",
+  "sample_idx": 2,
+  "generated_text": "tired of",
+  "generated_first_word": "tired",
+  "similarity": 0.6499457359313965,
+  "timestamp": "2026-07-01 04:35:11"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "d0834c8dc42c50645632be4f93982872",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0068",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "In Oldspeak it is called, quite frankly,",
+  "target_word": "'reality",
+  "sample_idx": 1,
+  "generated_text": "a very ugly",
+  "generated_first_word": "a",
+  "similarity": 0.6179239153862,
+  "timestamp": "2026-06-30 10:44:49"
+}

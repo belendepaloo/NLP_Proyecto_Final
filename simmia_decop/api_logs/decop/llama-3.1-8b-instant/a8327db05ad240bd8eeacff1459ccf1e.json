@@ -1,0 +1,25 @@
+{
+  "query_id": "a8327db05ad240bd8eeacff1459ccf1e",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0145",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "title": "Oliver Twist",
+  "author": "Charles Dickens",
+  "length": "medium",
+  "permutation_index": 3,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Oliver Twist\" book by Charles Dickens?\nOptions:\nA. Fagin questioned Noah about following Nancy. He wanted to know if Noah had trailed Nancy to London Bridge, where she met with a gentleman and lady she knew. Fagin asked if Nancy told them about Monks, their gang's hideout, and other details, which she did. \nB. 'Tell yer what?' asked the sleepy Noah, shaking himself pettishy. 'That about--NANCY,' said Fagin, clutching Sikes by the wrist, as if to prevent his leaving the house before he had heard enough. 'You followed her?' 'Yes.' 'To London Bridge?' 'Yes.' 'Where she met two people.' 'So she did.' 'A gentleman and a lady that she had gone to of her own accord before, who asked her to give up all her pals, and Monks first, which she did--and to describe him, which she did--and to tell her what house it was that we meet at, and go to, which she did--and where it could be best watched from, which she did--and what time the people went there, which she did.\nC. Fagin urgently asked Noah if he had tailed Nancy to London Bridge as told. There Nancy encountered a gentleman and lady she was familiar with already. Fagin questioned Noah on whether Nancy had given up details to them about Monks, their gang's hideout location, the times people went there, and other information, which she had done.\nD. Fagin eagerly asked Noah whether he had followed Nancy to London Bridge as instructed. At the bridge, Nancy met with a man and woman she was acquainted with. Fagin asked Noah if Nancy had revealed information to them about Monks, their gang's hideout, the times people went there, and more, which she had.\nAnswer:",
+  "options": {
+    "A": "Fagin questioned Noah about following Nancy. He wanted to know if Noah had trailed Nancy to London Bridge, where she met with a gentleman and lady she knew. Fagin asked if Nancy told them about Monks, their gang's hideout, and other details, which she did. ",
+    "B": "'Tell yer what?' asked the sleepy Noah, shaking himself pettishy. 'That about--NANCY,' said Fagin, clutching Sikes by the wrist, as if to prevent his leaving the house before he had heard enough. 'You followed her?' 'Yes.' 'To London Bridge?' 'Yes.' 'Where she met two people.' 'So she did.' 'A gentleman and a lady that she had gone to of her own accord before, who asked her to give up all her pals, and Monks first, which she did--and to describe him, which she did--and to tell her what house it was that we meet at, and go to, which she did--and where it could be best watched from, which she did--and what time the people went there, which she did.",
+    "C": "Fagin urgently asked Noah if he had tailed Nancy to London Bridge as told. There Nancy encountered a gentleman and lady she was familiar with already. Fagin questioned Noah on whether Nancy had given up details to them about Monks, their gang's hideout location, the times people went there, and other information, which she had done.",
+    "D": "Fagin eagerly asked Noah whether he had followed Nancy to London Bridge as instructed. At the bridge, Nancy met with a man and woman she was acquainted with. Fagin asked Noah if Nancy had revealed information to them about Monks, their gang's hideout, the times people went there, and more, which she had."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "B",
+  "is_correct": 1,
+  "timestamp": "2026-07-08 05:05:37"
+}

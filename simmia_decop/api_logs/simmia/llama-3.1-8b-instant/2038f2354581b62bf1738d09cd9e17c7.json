@@ -1,0 +1,19 @@
+{
+  "query_id": "2038f2354581b62bf1738d09cd9e17c7",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0101",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "Oh, don't tell you are going to send me away,",
+  "target_word": "sir,",
+  "sample_idx": 2,
+  "generated_text": "to the boarding",
+  "generated_first_word": "to",
+  "similarity": 0.6638374328613281,
+  "timestamp": "2026-06-30 13:33:54"
+}

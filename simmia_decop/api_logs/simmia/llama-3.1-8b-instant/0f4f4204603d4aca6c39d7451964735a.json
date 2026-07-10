@@ -1,0 +1,19 @@
+{
+  "query_id": "0f4f4204603d4aca6c39d7451964735a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0054",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "All that confidence",
+  "target_word": "he",
+  "sample_idx": 1,
+  "generated_text": "was a facade",
+  "generated_first_word": "was",
+  "similarity": 0.7201008796691895,
+  "timestamp": "2026-06-30 09:29:37"
+}

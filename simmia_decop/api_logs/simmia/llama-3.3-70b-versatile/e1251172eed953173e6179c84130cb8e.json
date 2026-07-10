@@ -1,0 +1,19 @@
+{
+  "query_id": "e1251172eed953173e6179c84130cb8e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0157",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "Who knows what the future holds, right? Besides,",
+  "target_word": "you",
+  "sample_idx": 2,
+  "generated_text": "life",
+  "generated_first_word": "life",
+  "similarity": 0.6898630857467651,
+  "timestamp": "2026-07-06 16:48:16"
+}

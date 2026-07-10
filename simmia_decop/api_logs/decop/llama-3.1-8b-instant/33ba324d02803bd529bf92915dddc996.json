@@ -1,0 +1,25 @@
+{
+  "query_id": "33ba324d02803bd529bf92915dddc996",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0171",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "title": "Bartleby the Scrivener A Story of Wall Street",
+  "author": "Herman Melville",
+  "length": "medium",
+  "permutation_index": 0,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Bartleby the Scrivener A Story of Wall Street\" book by Herman Melville?\nOptions:\nA. What kind of work are you interested in doing? Would you want to go back to copying documents for someone? No, I'd rather not make any changes. How about working as a clerk in a retail store? That involves too much being cooped up indoors. No, I wouldn't want to be a clerk, but I'm open to suggestions. You're always cooped up indoors yourself! I'd prefer not to take a clerk job, he replied, as if to settle that matter immediately. What do you think about working as a bartender? That doesn't put strain on your eyesight.\nB. What kind of job interests you? Would you want to go back to copying documents for someone? No, I'd rather not make any changes. What about being a retail store clerk? That involves too much confinement indoors. No, I don't want to be a clerk, but I'm open-minded. You confine yourself all the time! I'd prefer not to become a clerk, he replied, as if to definitively settle that suggestion. How about working as a bartender? That doesn't tax your eyesight.\nC. What line of work sounds appealing to you? Would you want to do copying work for someone again? No, I'd rather not switch what I'm doing. Do you want to be a store clerk at a clothing shop? That requires too much being confined indoors. No, I wouldn't like being a clerk, but I'm flexible. You're cooped up all the time yourself! I'd prefer not to become a clerk, he responded, as if to decisively settle that idea. How does a bartender job sound? That doesn't strain your vision.  \nD. Now what sort of business would you like to engage in? Would you like to re-engage in copying for some one? No; I would prefer not to make any change. Would you like a clerkship in a dry-goods store? There is too much confinement about that. No, I would not like a clerkship; but I am not particular. Too much confinement, I cried, why you keep yourself confined all the time! I would prefer not to take a clerkship, he rejoined, as if to settle that little item at once. How would a bar-tenders business suit you? There is no trying of the eyesight in that.\nAnswer:",
+  "options": {
+    "A": "What kind of work are you interested in doing? Would you want to go back to copying documents for someone? No, I'd rather not make any changes. How about working as a clerk in a retail store? That involves too much being cooped up indoors. No, I wouldn't want to be a clerk, but I'm open to suggestions. You're always cooped up indoors yourself! I'd prefer not to take a clerk job, he replied, as if to settle that matter immediately. What do you think about working as a bartender? That doesn't put strain on your eyesight.",
+    "B": "What kind of job interests you? Would you want to go back to copying documents for someone? No, I'd rather not make any changes. What about being a retail store clerk? That involves too much confinement indoors. No, I don't want to be a clerk, but I'm open-minded. You confine yourself all the time! I'd prefer not to become a clerk, he replied, as if to definitively settle that suggestion. How about working as a bartender? That doesn't tax your eyesight.",
+    "C": "What line of work sounds appealing to you? Would you want to do copying work for someone again? No, I'd rather not switch what I'm doing. Do you want to be a store clerk at a clothing shop? That requires too much being confined indoors. No, I wouldn't like being a clerk, but I'm flexible. You're cooped up all the time yourself! I'd prefer not to become a clerk, he responded, as if to decisively settle that idea. How does a bartender job sound? That doesn't strain your vision.  ",
+    "D": "Now what sort of business would you like to engage in? Would you like to re-engage in copying for some one? No; I would prefer not to make any change. Would you like a clerkship in a dry-goods store? There is too much confinement about that. No, I would not like a clerkship; but I am not particular. Too much confinement, I cried, why you keep yourself confined all the time! I would prefer not to take a clerkship, he rejoined, as if to settle that little item at once. How would a bar-tenders business suit you? There is no trying of the eyesight in that."
+  },
+  "gold_letter": "D",
+  "predicted_letter": "D",
+  "is_correct": 1,
+  "timestamp": "2026-07-08 05:20:09"
+}

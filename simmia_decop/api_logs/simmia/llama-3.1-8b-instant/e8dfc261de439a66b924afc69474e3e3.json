@@ -1,0 +1,19 @@
+{
+  "query_id": "e8dfc261de439a66b924afc69474e3e3",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0038",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "But for",
+  "target_word": "all",
+  "sample_idx": 1,
+  "generated_text": "the sake",
+  "generated_first_word": "the",
+  "similarity": 0.6994853019714355,
+  "timestamp": "2026-06-30 08:05:25"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "5fdca864ae380444bddf6a6959448567",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0149",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Not only did",
+  "target_word": "there",
+  "sample_idx": 2,
+  "generated_text": "the discovery",
+  "generated_first_word": "the",
+  "similarity": 0.6942136883735657,
+  "timestamp": "2026-06-30 17:58:28"
+}

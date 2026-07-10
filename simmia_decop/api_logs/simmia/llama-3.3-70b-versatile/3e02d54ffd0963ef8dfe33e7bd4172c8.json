@@ -1,0 +1,19 @@
+{
+  "query_id": "3e02d54ffd0963ef8dfe33e7bd4172c8",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0120",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "At first Frodo",
+  "target_word": "felt",
+  "sample_idx": 2,
+  "generated_text": "was",
+  "generated_first_word": "was",
+  "similarity": 0.7185139060020447,
+  "timestamp": "2026-07-05 16:13:02"
+}

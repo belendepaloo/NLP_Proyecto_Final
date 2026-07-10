@@ -1,0 +1,19 @@
+{
+  "query_id": "1830d01528be01b60c179912f45d9d4e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0087",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "If I thought it, I should",
+  "target_word": "never",
+  "sample_idx": 2,
+  "generated_text": "be able to",
+  "generated_first_word": "be",
+  "similarity": 0.5993703007698059,
+  "timestamp": "2026-06-30 12:21:33"
+}

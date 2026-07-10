@@ -1,0 +1,19 @@
+{
+  "query_id": "7ce14e821e321f8292f33d545458b71a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0172",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "But she was brought up in the country because her mother had",
+  "target_word": "to",
+  "sample_idx": 1,
+  "generated_text": "a large estate",
+  "generated_first_word": "a",
+  "similarity": 0.7135648131370544,
+  "timestamp": "2026-07-01 02:29:52"
+}

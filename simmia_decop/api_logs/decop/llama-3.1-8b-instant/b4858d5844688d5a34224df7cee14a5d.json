@@ -1,0 +1,25 @@
+{
+  "query_id": "b4858d5844688d5a34224df7cee14a5d",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0019",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "title": "Wuthering Heights",
+  "author": "Emily Bronte",
+  "length": "medium",
+  "permutation_index": 2,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Wuthering Heights\" book by Emily Bronte?\nOptions:\nA. Edgar Linton was infatuated like many before and after him. He thought he was the happiest man alive when he married Catherine 3 years after his father died, even though I didn't want to leave Wuthering Heights. Little Hareton was 5 years old and I had just started teaching him to read and write. Catherine cried a lot when I refused to go with her, but her tears convinced me more than my own reluctance. When I still refused she went sadly to her husband and brother.\nB. Edgar Linton thought he was the happiest man ever when he married Catherine 3 years after his dad died, even though I didn't want to go. Little Hareton was 5 and I'd just started teaching him to read. Catherine cried a lot when I wouldn't go with her, but her tears worked better than mine. When I still said no she sadly went to her husband and brother.\nC. Edgar Linton, like so many men before and after him, was besotted and believed he was the most joyful man on earth the day he took her to Gimmerton Chapel, three years after his father passed away. I was convinced against my wishes to leave Wuthering Heights and go with her. Little Hareton was nearly five and I had just started teaching him his ABCs. We had a sad farewell, but Catherine's tears were more powerful than mine. When I refused to go, and when she realized begging would not sway me, she went crying to her husband and brother.  \nD. Edgar Linton, as mul- titudes have been before, and will be after him, was in- fatuated, and believed himself the happiest man alive on the day he led her to Gimmerton Chapel, three years subsequent to his father's death. Much against my inclination, I was persuaded to leave Wuthering Heights and accompany her here. Little Hareton was nearly five years old, and I had just begun to teach him his letters. We made a sad parting, but Catherine's tears were more powerful than ours. When I refused to go, and when she found her entreaties did not move me, she went lamenting to her husband and brother.\nAnswer:",
+  "options": {
+    "A": "Edgar Linton was infatuated like many before and after him. He thought he was the happiest man alive when he married Catherine 3 years after his father died, even though I didn't want to leave Wuthering Heights. Little Hareton was 5 years old and I had just started teaching him to read and write. Catherine cried a lot when I refused to go with her, but her tears convinced me more than my own reluctance. When I still refused she went sadly to her husband and brother.",
+    "B": "Edgar Linton thought he was the happiest man ever when he married Catherine 3 years after his dad died, even though I didn't want to go. Little Hareton was 5 and I'd just started teaching him to read. Catherine cried a lot when I wouldn't go with her, but her tears worked better than mine. When I still said no she sadly went to her husband and brother.",
+    "C": "Edgar Linton, like so many men before and after him, was besotted and believed he was the most joyful man on earth the day he took her to Gimmerton Chapel, three years after his father passed away. I was convinced against my wishes to leave Wuthering Heights and go with her. Little Hareton was nearly five and I had just started teaching him his ABCs. We had a sad farewell, but Catherine's tears were more powerful than mine. When I refused to go, and when she realized begging would not sway me, she went crying to her husband and brother.  ",
+    "D": "Edgar Linton, as mul- titudes have been before, and will be after him, was in- fatuated, and believed himself the happiest man alive on the day he led her to Gimmerton Chapel, three years subsequent to his father's death. Much against my inclination, I was persuaded to leave Wuthering Heights and accompany her here. Little Hareton was nearly five years old, and I had just begun to teach him his letters. We made a sad parting, but Catherine's tears were more powerful than ours. When I refused to go, and when she found her entreaties did not move me, she went lamenting to her husband and brother."
+  },
+  "gold_letter": "D",
+  "predicted_letter": "D",
+  "is_correct": 1,
+  "timestamp": "2026-07-08 03:50:21"
+}

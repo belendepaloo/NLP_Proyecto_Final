@@ -1,0 +1,19 @@
+{
+  "query_id": "815741a30fa93ddb3bbc69aae82ef0b5",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0136",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "He missed Hogwarts",
+  "target_word": "so",
+  "sample_idx": 1,
+  "generated_text": "terribly.",
+  "generated_first_word": "terribly.",
+  "similarity": 0.6677368879318237,
+  "timestamp": "2026-06-30 16:25:19"
+}

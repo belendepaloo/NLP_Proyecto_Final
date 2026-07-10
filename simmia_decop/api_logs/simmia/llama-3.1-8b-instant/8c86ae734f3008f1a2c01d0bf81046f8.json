@@ -1,0 +1,19 @@
+{
+  "query_id": "8c86ae734f3008f1a2c01d0bf81046f8",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0113",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 11,
+  "prefix": "Back in New York? Persona non grata. In St. Helena? Royalty.",
+  "target_word": "Snort.",
+  "sample_idx": 0,
+  "generated_text": "Napoleon",
+  "generated_first_word": "Napoleon",
+  "similarity": 0.6132678985595703,
+  "timestamp": "2026-06-30 14:33:03"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "e699486a95e99e26c8aef55392c39df4",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0023",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 13,
+  "prefix": "He was shoeless; large, dirty toes were sticking out of the holes in",
+  "target_word": "his",
+  "sample_idx": 1,
+  "generated_text": "his tattered",
+  "generated_first_word": "his",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 06:49:25"
+}
