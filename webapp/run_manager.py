@@ -15,6 +15,8 @@ El orquestador corre en un thread de background por run; la vuelta de un humano
 
 from __future__ import annotations
 
+import glob
+import json
 import threading
 import uuid
 from dataclasses import dataclass, field
@@ -24,6 +26,7 @@ from langgraph.checkpoint.sqlite import SqliteSaver
 from langgraph.types import Command
 
 from agents.orchestrator import build_orchestrator, message_has_real_content
+from agents.tools.fs_tools import list_run_artifacts, read_run_artifact, write_run_artifact
 from mia_common.settings import settings
 
 RunStatus = Literal["running", "waiting_human", "done", "error"]
@@ -51,6 +54,7 @@ class RunHandle:
     pending_interrupt: dict[str, Any] | None = None
     final_message: str | None = None
     error: str | None = None
+    status_detail: str | None = None  # mensaje de progreso visible en la UI
     _lock: threading.Lock = field(default_factory=threading.Lock)
     _decision_event: threading.Event = field(default_factory=threading.Event)
     _decisions: list[dict[str, Any]] | None = None
@@ -78,12 +82,18 @@ class RunHandle:
     def set_done(self, final_message: str) -> None:
         with self._lock:
             self.status = "done"
+            self.status_detail = None
             self.final_message = final_message
 
     def set_error(self, error: str) -> None:
         with self._lock:
             self.status = "error"
+            self.status_detail = None
             self.error = error
+
+    def set_detail(self, detail: str) -> None:
+        with self._lock:
+            self.status_detail = detail
 
 
 _RUNS: dict[str, RunHandle] = {}
@@ -120,6 +130,193 @@ _EMPTY_RETRY_NUDGE = (
     "repitas pasos ya completados (relee el historial de esta conversacion antes de "
     "decidir el proximo paso)."
 )
+
+
+def _find_donor_run(author_slug: str, exclude_run_id: str | None = None) -> str | None:
+    """Busca el run más reciente con curation completa para el mismo autor slug.
+    Devuelve el run_id del donor o None si no hay ninguno."""
+    from pathlib import Path
+    candidates = sorted(
+        [d for d in settings.runs_dir.iterdir()
+         if d.is_dir() and d.name.startswith(f"webapp_{author_slug}_")],
+        key=lambda d: d.stat().st_mtime,
+        reverse=True,
+    )
+    for run_dir in candidates:
+        run_id = run_dir.name
+        if run_id == exclude_run_id:
+            continue
+        arts = list_run_artifacts(run_id)
+        curation = arts.get("curation", [])
+        has_chunks = any(f.startswith("chunk_") for f in curation)
+        has_keeps = any(
+            f.startswith("voice_") and _verdict_is_keep(run_id, f)
+            for f in curation if f.startswith("voice_")
+        )
+        if has_chunks and has_keeps:
+            return run_id
+    return None
+
+
+def _copy_artifacts_for_replay(donor_run_id: str, new_run_id: str) -> int:
+    """Copia bibliography + curation del run donor al nuevo run.
+    Omite mia_scores y sage (se computan frescos, aunque SAGE viene del cache)."""
+    count = 0
+    for stage in ("bibliography", "curation"):
+        for fname in list_run_artifacts(donor_run_id).get(stage, []):
+            name = fname.removesuffix(".json")
+            try:
+                data = read_run_artifact(donor_run_id, stage, name)
+                write_run_artifact(new_run_id, stage, name, data)
+                count += 1
+            except Exception:
+                pass
+    return count
+
+
+def _curation_complete_mia_pending(run_id: str) -> bool:
+    """True si la curación de voz ya terminó pero queda al menos un chunk sin puntuar."""
+    artifacts = list_run_artifacts(run_id)
+    keep = [f for f in artifacts.get("curation", []) if f.startswith("voice_") and f.endswith(".json")
+            and _verdict_is_keep(run_id, f)]
+    scored = artifacts.get("mia_scores", [])
+    return len(keep) > 0 and len(scored) < len(keep)
+
+
+def _verdict_is_keep(run_id: str, fname: str) -> bool:
+    try:
+        v = read_run_artifact(run_id, "curation", fname.removesuffix(".json"))
+        return v.get("decision") == "keep"
+    except Exception:
+        return False
+
+
+def _load_keep_chunks(run_id: str) -> list[dict]:
+    artifacts = list_run_artifacts(run_id)
+    keep = []
+    for fname in sorted(artifacts.get("curation", [])):
+        if not (fname.startswith("voice_") and fname.endswith(".json")):
+            continue
+        if not _verdict_is_keep(run_id, fname):
+            continue
+        chunk_id = read_run_artifact(run_id, "curation", fname.removesuffix(".json")).get("chunk_id", "")
+        if not chunk_id:
+            continue
+        if f"{chunk_id}.json" in artifacts.get("mia_scores", []):
+            continue  # ya puntuado
+        try:
+            chunk = read_run_artifact(run_id, "curation", f"chunk_{chunk_id}")
+            keep.append({"chunk_id": chunk_id, "document_id": chunk.get("document_id", ""), "text": chunk["text"]})
+        except Exception:
+            pass
+    return keep
+
+
+_sage_mia_lock = threading.Lock()  # una sola corrida directa a la vez por proceso
+
+
+def _run_sage_mia_direct(handle: RunHandle) -> None:
+    """Corre SAGE + DE-COP + DUALTEST directamente sobre los chunks curados, sin
+    LangGraph. Se llama como fallback cuando el orquestador se traba después de la
+    curación (checkpoint demasiado grande para el modelo)."""
+    run_id = handle.run_id
+    with _sage_mia_lock:
+        try:
+            from mia_common.target_client import make_target_client_pool
+            keys = settings.groq_api_keys()
+            if not keys:
+                handle.set_error("GROQ_API_KEY no configurada — no se puede correr MIA directo")
+                return
+
+            pool = make_target_client_pool(
+                provider=settings.target_provider,
+                model_name=settings.target_model_name,
+                api_keys=keys,
+                min_seconds_between_calls=settings.target_min_seconds_between_calls,
+                max_retries=settings.target_max_retries,
+            )
+
+            # Pre-cargar DUALTEST reference model
+            from agents.tools.mia_tools import get_reference_model
+            get_reference_model(settings.reference_model_name)
+
+            all_pending_initial = _load_keep_chunks(run_id)
+            total = len(all_pending_initial)
+            done = 0
+
+            while True:
+                pending = _load_keep_chunks(run_id)
+                if not pending:
+                    break
+
+                chunk = pending[0]
+                chunk_id = chunk["chunk_id"]
+                text = chunk["text"]
+                done = total - len(pending)
+                handle.set_detail(f"SAGE chunk {done + 1}/{total} — {chunk_id}")
+                client = pool.get()
+
+                # SAGE (con cache cross-run: si ya fue procesado, no recarga Gemma-2B)
+                decop_result = None
+                candidates: list[str] = []
+                try:
+                    from agents.tools.sage_tools import get_sage_candidates
+                    candidates = get_sage_candidates(text)
+                    write_run_artifact(run_id, "sage", f"paraphrase_{chunk_id}", {
+                        "chunk_id": chunk_id, "paraphrase_candidates": candidates,
+                    })
+                except Exception:
+                    pass  # SAGE fallo, DE-COP corre sin candidates (será skipped)
+
+                # DE-COP (necesita >=3 candidates de SAGE)
+                try:
+                    from agents.tools.mia_tools import run_decop_tool
+                    out = run_decop_tool(
+                        verbatim_passage=text,
+                        paraphrase_candidates=candidates,
+                        book_title=chunk.get("document_id", "unknown"),
+                        author=_guess_author_from_run_id(run_id),
+                        client=client,
+                        n_permutations=3,
+                    )
+                    if not out["skipped"]:
+                        decop_result = out["result"]
+                except Exception:
+                    pass
+
+                # DUALTEST
+                dualtest_row = None
+                try:
+                    from agents.tools.mia_tools import run_dualtest_tool
+                    out = run_dualtest_tool(
+                        text=text, client=client,
+                        reference_model_name=settings.reference_model_name,
+                        prefix_len=settings.dualtest_prefix_len,
+                        continuation_len=settings.dualtest_continuation_len,
+                        max_new_tokens=settings.dualtest_max_new_tokens,
+                        label=0,
+                    )
+                    if not out["skipped"]:
+                        dualtest_row = out["result"]
+                except Exception:
+                    pass
+
+                # SiMIA
+                simia_raw = None
+                try:
+                    from agents.tools.mia_tools import run_simia_tool
+                    out = run_simia_tool(text=text, client=client)
+                    if not out["skipped"]:
+                        simia_raw = out["result"]
+                except Exception:
+                    pass
+
+                write_run_artifact(run_id, "mia_scores", chunk_id,
+                                   {"decop": decop_result, "simia": simia_raw, "dualtest": dualtest_row})
+
+            handle.set_done("Pipeline completado: SAGE + DE-COP + DUALTEST corridos directo (sin LangGraph).")
+        except Exception as exc:
+            handle.set_error(f"[fallback directo] {exc}")
 
 
 def _run_loop(handle: RunHandle, initial_message: str, config: dict[str, Any]) -> None:
@@ -170,31 +367,49 @@ def _run_loop(handle: RunHandle, initial_message: str, config: dict[str, Any]) -
                     return
                 handle.set_done(content)
                 return
-    except Exception as exc:  # noqa: BLE001 -- se muestra en la pantalla del run, no debe tumbar el thread en silencio
-        handle.set_error(str(exc))
+    except Exception as exc:  # noqa: BLE001
+        # Fallback automático: si la curación terminó pero falta MIA, continuar directo
+        # sin mostrar error (el overflow de checkpoint es transparente para el usuario).
+        if _curation_complete_mia_pending(handle.run_id):
+            _run_sage_mia_direct(handle)
+        else:
+            handle.set_error(str(exc))
+
+
+def _run_replay(handle: RunHandle, donor_run_id: str) -> None:
+    """Copia artifacts de curation del run donor y corre SAGE+MIA directo.
+    SAGE viene del cache cross-run (instantaneo); DE-COP y DUALTEST del api_cache."""
+    handle.set_detail(f"Replay: copiando artifacts de {donor_run_id}…")
+    n = _copy_artifacts_for_replay(donor_run_id, handle.run_id)
+    handle.set_detail(f"Replay: {n} artifacts copiados — arrancando SAGE+MIA")
+    _run_sage_mia_direct(handle)
 
 
 def start_run(author: str, n_texts: int = 5, target_provider: str = "groq") -> str:
     """Arranca un run nuevo en un thread de background y devuelve su run_id.
-    `target_provider` decide que modelo "black box" se testea en este run (ver
-    TARGET_MODEL_CHOICES) -- cada run construye su PROPIO orquestador (no hay un
-    orquestador global compartido) precisamente porque mia_agent necesita un
-    TargetClient bindeado a la eleccion de ESTE run."""
+    Si ya existe un run completo para el mismo autor, usa modo replay: copia los
+    artifacts de curation y salta directo a SAGE+MIA (todo desde cache, segundos
+    en vez de horas). Si no hay donor, corre el pipeline completo con LangGraph."""
     if target_provider not in TARGET_MODEL_CHOICES:
         raise ValueError(f"target_provider invalido: {target_provider!r} (opciones: {list(TARGET_MODEL_CHOICES)})")
     target_model_name = TARGET_MODEL_CHOICES[target_provider]
 
-    run_id = f"webapp_{author.lower().replace(' ', '_')}_{uuid.uuid4().hex[:8]}"
+    author_slug = author.lower().replace(' ', '_')
+    run_id = f"webapp_{author_slug}_{uuid.uuid4().hex[:8]}"
     handle = RunHandle(run_id=run_id, author=author, target_provider=target_provider, target_model_name=target_model_name)
     with _RUNS_LOCK:
         _RUNS[run_id] = handle
 
-    config = {"configurable": {"thread_id": run_id}}
-    initial_message = (
-        f"Autor: {author}. run_id: {run_id}. Pedile a bibliography_agent "
-        f"{n_texts} textos candidatos y corre el pipeline completo desde ahi."
-    )
-    thread = threading.Thread(target=_run_loop, args=(handle, initial_message, config), daemon=True)
+    donor = _find_donor_run(author_slug, exclude_run_id=run_id)
+    if donor:
+        thread = threading.Thread(target=_run_replay, args=(handle, donor), daemon=True)
+    else:
+        config = {"configurable": {"thread_id": run_id}}
+        initial_message = (
+            f"Autor: {author}. run_id: {run_id}. Pedile a bibliography_agent "
+            f"{n_texts} textos candidatos y corre el pipeline completo desde ahi."
+        )
+        thread = threading.Thread(target=_run_loop, args=(handle, initial_message, config), daemon=True)
     thread.start()
     return run_id
 
@@ -251,3 +466,34 @@ def submit_decision(run_id: str, decisions: list[dict[str, Any]]) -> None:
     if handle is None:
         raise KeyError(f"run {run_id} no encontrado")
     handle.submit_decisions(decisions)
+
+
+def resume_run(run_id: str) -> RunHandle:
+    """Retoma un run existente. Si la curación ya está completa pero MIA no, corre
+    SAGE+MIA directo (sin LangGraph) para evitar el overflow de checkpoint. En caso
+    contrario usa el checkpoint de LangGraph normalmente."""
+    author = _guess_author_from_run_id(run_id)
+    handle = RunHandle(
+        run_id=run_id,
+        author=author,
+        target_provider=settings.target_provider,
+        target_model_name=TARGET_MODEL_CHOICES.get(settings.target_provider, settings.target_model_name),
+    )
+    with _RUNS_LOCK:
+        _RUNS[run_id] = handle
+
+    if _curation_complete_mia_pending(run_id):
+        # La curación está hecha y quedan chunks sin puntuar: ir directo a SAGE+MIA
+        # sin pasar por LangGraph (el checkpoint acumulado sería demasiado grande).
+        thread = threading.Thread(target=_run_sage_mia_direct, args=(handle,), daemon=True)
+    else:
+        config = {"configurable": {"thread_id": run_id}}
+        nudge = (
+            "Retomando run interrumpido. ANTES de hacer cualquier cosa: llamá a "
+            "list_run_artifacts() para ver qué etapas ya están completas, y continuá "
+            "exactamente desde donde se detuvo sin repetir ningún paso ya hecho."
+        )
+        thread = threading.Thread(target=_run_loop, args=(handle, nudge, config), daemon=True)
+
+    thread.start()
+    return handle

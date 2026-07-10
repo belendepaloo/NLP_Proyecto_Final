@@ -59,6 +59,25 @@ def _get_sage(
     return _sage_singleton
 
 
+def get_sage_candidates(text: str, device: str | None = None, min_length_ratio: float = 0.75) -> list[str]:
+    """Devuelve los candidatos de paráfrasis para `text`, usando cache cross-run.
+
+    Si el texto ya fue procesado con los mismos parámetros (n_generated/n_kept de
+    settings), devuelve la lista cacheada en runs/_sage_cache/ sin cargar Gemma-2B.
+    Si hay cache miss, corre SAGE, guarda el resultado y lo devuelve."""
+    from mia_common import sage_cache
+    n_gen = settings.sage_n_candidates_generated
+    n_kept = settings.sage_n_candidates_kept
+    cached = sage_cache.get(text, n_gen, n_kept)
+    if cached is not None:
+        return cached
+    sage_out = run_sage_tool(text, device=device, min_length_ratio=min_length_ratio)
+    candidates = [c["text"] for seg in sage_out.get("segments", [])
+                  for c in seg.get("all_candidates", [])]
+    sage_cache.put(text, n_gen, n_kept, candidates)
+    return candidates
+
+
 def run_sage_tool(text: str, device: str | None = None, min_length_ratio: float = 0.75) -> dict:
     """Paraphrasea `text` con SAGE. Devuelve el dict tal cual lo emite SAGE().paraphrase()
     (original/paraphrase/segments, cada segmento con sps/wordsim/final_score/all_candidates).

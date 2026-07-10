@@ -42,12 +42,13 @@ def normalize_dualtest(row: dict) -> float:
 
 
 def normalize_simia(raw: float | None, k: float = 1.0) -> float | None:
-    """simmia_score devuelve -mean(ratios), sin acotar. sigmoid(k*raw) centrado en 0
-    (ratio=1 -> raw=0 -> 0.5, "sin senal"). `k` es un placeholder razonado, no
-    calibrado contra datos etiquetados -- documentar en SKILL.md (Fase 3) si se ajusta."""
+    """simmia_score devuelve -mean(ratios). ratio=1 (sin señal) → raw=-1, no raw=0.
+    Se desplaza el centro del sigmoid a -1 para que ratio=1 → 0.5 ("sin señal"),
+    ratio<1 (member, perturbación daña predicción) → >0.5, ratio>1 → <0.5.
+    k sin calibrar contra datos etiquetados."""
     if raw is None:
         return None
-    return 1.0 / (1.0 + math.exp(-k * raw))
+    return 1.0 / (1.0 + math.exp(-k * (raw + 1)))
 
 
 def normalize_decop(accuracy: float) -> float:
