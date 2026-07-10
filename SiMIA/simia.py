@@ -1,30 +1,39 @@
 """
-simia.py — implementacion de SimMIA, fiel al paper "Membership Inference on LLMs in
-the Wild" (Yi & Li, CUHK, arXiv:2601.11314, 2026), que lo presenta como nuevo SOTA en
-black-box MIA. Refactor de notebooks/simMIA.ipynb (que ya tenia la formula correcta)
-con dos bugs reales arreglados (encontrados 2026-06-25 al revisar contra el paper):
+simia.py — implementacion de SimMIA portada 1:1 desde el notebook de referencia del
+equipo (simmia_decop/notebooks/simMIA.ipynb, commit a63ec742 "simmia and decop done",
+mergeado a main via PR #2 feature/decop_simmia). Formula, parametros y prompt son los
+que decidio esa version; este modulo solo adapta la interfaz para que sea importable
+desde agents/tools/mia_tools.py (misma firma publica de siempre: simmia_score(text,
+client, non_member_prefix, n_samples, max_words)).
 
-  1. El pipeline llamaba a esto con non_member_prefix="" (default) -- la condicion
-     "perturbada" terminaba siendo casi identica a la normal, dando ratio~1 siempre
-     y por lo tanto una senal CONSTANTE sin importar membership. Ahora carga por
-     default un prefijo non-member FIJO real (ver non_member_calibration.txt /
-     scripts/build_simia_calibration_set.py), tal como pide el paper ("fixed
-     non-member prefixes reduce variance" vs. eleccion aleatoria).
-  2. n_samples=1 en el pipeline -- el paper usa N=10 (reducido desde 100 "to reduce
-     API costs") para estimar s(xi|x<i)=E[sim(xi,x_i_hat)]; con N=1 esa esperanza es
-     en realidad una sola muestra, much{isimo} ruido. Default ahora en
-     mia_common.settings.simia_n_samples (10).
+Formula (idem notebook, celda "SimMIA samples"):
+    sim(a,b)            = (cos(Enc(a),Enc(b)) + 1) / 2                    -- embeddings, [0,1]
+    normal_word_score    = mean_j sim(x_i, gen_j)             bajo prefijo x_<i
+    perturbed_word_score = mean_j sim(x_i, gen_j)             bajo prefijo P + x_<i
+    relative_word_score  = -perturbed_word_score / (normal_word_score + EPS)
+    SimMIA(x)            = mean_i relative_word_score_i
 
-Formula (igual a la del paper, ya estaba bien):
-    sim(a,b)    = (cos(Enc(a),Enc(b)) + 1) / 2                  -- embeddings, [0,1]
-    s(xi|x<i)   = mean_j sim(xi, sample_j)                       -- E sobre N samples
-    SimMIA(x)   = -1/L * sum_i [ s(xi|P (+) x<i) / s(xi|x<i) ]    -- P = prefijo non-member fijo
+Mayor score (menos negativo) = mas evidencia de membership.
 
-Mayor score (menos negativo / mas alto) = mas evidencia de membership, segun el paper.
+Diferencias deliberadas respecto de la version anterior de este archivo (bugfix del
+2026-06-25, ya no aplica porque se reemplazo la formula entera por la del notebook):
+    - N_SAMPLES=3 (no 10): asi lo dejo el notebook, no el default anterior del paper.
+    - temperature=1.0, top_p=1.0 (no 0.7).
+    - prompt: system="Continue the text naturally. Output only the next word or very
+      short continuation.", user=prefix (no "Complete the following text...").
+    - EPS=1e-8 en el denominador en vez de descartar la posicion si normal_score<=1e-8.
+    - non_member_prefix: el notebook lo arma muestreando 3 non-members al azar del
+      dataset de evaluacion completo (build_non_member_prefix), algo que no existe como
+      tal en el pipeline de agentes (que ve un chunk a la vez, no el dataset entero).
+      Aca se preserva el mecanismo de prefijo FIJO pre-armado offline
+      (SiMIA/non_member_calibration.txt, ver scripts/build_simia_calibration_set.py)
+      como equivalente practico -- incluye texto non-member real, solo que elegido una
+      vez de antemano en vez de al azar en cada llamada.
 """
 
 from __future__ import annotations
 
+import re
 import time
 from pathlib import Path
 from typing import Callable
@@ -35,6 +44,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 from mia_common.settings import settings
 from mia_common.target_client import TargetClient
+
+_EPS = 1e-8
 
 _embedder: SentenceTransformer | None = None  # lazy singleton, carga no es gratis
 _CALIBRATION_PATH = Path(__file__).resolve().parent / "non_member_calibration.txt"
@@ -66,13 +77,26 @@ def get_default_non_member_prefix(max_chars: int | None = None) -> str:
 
 
 def _similarity(w1: str, w2: str) -> float:
-    if not w1 or not w2:
+    if not isinstance(w1, str) or not isinstance(w2, str):
+        return 0.0
+    if not w1.strip() or not w2.strip():
         return 0.0
     embedder = _get_embedder()
     e1 = embedder.encode([w1])
     e2 = embedder.encode([w2])
     cos = cosine_similarity(e1, e2)[0][0]
-    return (cos + 1) / 2
+    return float((cos + 1) / 2)
+
+
+def _first_word(text: str | None) -> str:
+    """Idem first_word() del notebook: limpia puntuacion lider antes de tomar el
+    primer token (ej. '"word' -> 'word'), a diferencia de un .split()[0] plano."""
+    if text is None:
+        return ""
+    text = str(text).strip()
+    text = re.sub(r"^[^\w]+", "", text)
+    parts = text.split()
+    return parts[0] if parts else ""
 
 
 def _word_score(target_word: str, sampled_words: list[str]) -> float:
@@ -82,25 +106,28 @@ def _word_score(target_word: str, sampled_words: list[str]) -> float:
     return float(np.mean([_similarity(target_word, w) for w in sampled]))
 
 
-def model_generate_fn_factory(client: TargetClient, max_tokens: int = 5) -> Callable[..., str]:
-    """Misma prompt que el paper/notebook: pide SOLO la siguiente palabra dado un
-    prefijo. `sample_index` se pasa al cliente para que el cache (mia_common.cache)
-    le de un slot propio a cada una de las N muestras independientes -- sin esto, N
-    llamadas con el mismo prompt pegarian todas contra el mismo cache hit."""
+def model_generate_fn_factory(client: TargetClient, max_tokens: int = 3) -> Callable[..., str]:
+    """Mismo prompt que el notebook: pide continuar el texto naturalmente, no un
+    formato de instruccion tipo 'Complete the following text'. `sample_index` se pasa
+    al cliente para que el cache (mia_common.cache) le de un slot propio a cada una de
+    las N muestras independientes -- sin esto, N llamadas con el mismo prompt pegarian
+    todas contra el mismo cache hit."""
 
     def generate(prefix: str, sample_index: int | None = None) -> str:
-        prompt = (
-            "Complete the following text with ONLY the next word.\n\n"
-            f"Text:\n{prefix}\n\nNext word:"
-        )
         out = client.chat(
-            [{"role": "user", "content": prompt}],
+            [
+                {
+                    "role": "system",
+                    "content": "Continue the text naturally. Output only the next word or very short continuation.",
+                },
+                {"role": "user", "content": prefix},
+            ],
             max_new_tokens=max_tokens,
-            temperature=0.7,
+            temperature=1.0,
+            top_p=1.0,
             cache_sample_index=sample_index,
         )
-        out = out.strip()
-        return out.split()[0] if out else ""
+        return _first_word(out)
 
     return generate
 
@@ -113,18 +140,21 @@ def simmia_score(
     max_words: int = 20,
     sleep_between_calls: float = 0.0,
 ) -> float | None:
-    """SimMIA(x) = -1/L * sum_i [s(xi|P+x<i) / s(xi|x<i)], ver docstring del modulo.
+    """SimMIA(x) = mean_i [ -perturbed_word_score_i / (normal_word_score_i + EPS) ],
+    ver docstring del modulo. Formula y parametros identicos a
+    simmia_decop/notebooks/simMIA.ipynb (commit a63ec742).
 
     `non_member_prefix=None` (default) carga el prefijo de calibracion fijo via
     get_default_non_member_prefix() -- pasar "" explicito solo si de verdad se quiere
     desactivar la perturbacion (no deberia hacerse en uso normal, rompe la formula).
-    `n_samples=None` (default) usa mia_common.settings.simia_n_samples.
+    `n_samples=None` (default) usa mia_common.settings.simia_n_samples (3, idem
+    notebook).
 
     Por cada posicion i en las primeras `max_words` palabras del texto: compara la
     similitud promedio (embedding) entre la palabra real y N continuaciones generadas
     por el modelo bajo el prefijo normal vs. bajo el prefijo perturbado. Devuelve
-    -mean(ratios); None si no se pudo calcular ningun ratio (abstencion -- el ensemble
-    debe tratarlo como "sin senal", no como 0)."""
+    mean(relative_word_score); None si el texto no tiene ni 2 palabras (no hay ninguna
+    posicion para evaluar)."""
     if non_member_prefix is None:
         non_member_prefix = get_default_non_member_prefix()
     if n_samples is None:
@@ -132,11 +162,15 @@ def simmia_score(
 
     generate = model_generate_fn_factory(client)
     words = text.split()[:max_words]
-    ratios = []
+    if len(words) < 2:
+        return None
+
+    relative_scores = []
 
     for i in range(1, len(words)):
         prefix = " ".join(words[:i])
         target_word = words[i]
+        perturbed_prefix = (non_member_prefix + " " + prefix).strip()
 
         normal_samples = []
         perturbed_samples = []
@@ -144,13 +178,12 @@ def simmia_score(
             normal_samples.append(generate(prefix, sample_index=s))
             if sleep_between_calls:
                 time.sleep(sleep_between_calls)
-            perturbed_samples.append(generate(f"{non_member_prefix} {prefix}", sample_index=s))
+            perturbed_samples.append(generate(perturbed_prefix, sample_index=s))
             if sleep_between_calls:
                 time.sleep(sleep_between_calls)
 
-        normal_score = _word_score(target_word, normal_samples)
-        if normal_score > 1e-8:
-            perturbed_score = _word_score(target_word, perturbed_samples)
-            ratios.append(perturbed_score / normal_score)
+        normal_word_score = _word_score(target_word, normal_samples)
+        perturbed_word_score = _word_score(target_word, perturbed_samples)
+        relative_scores.append(-perturbed_word_score / (normal_word_score + _EPS))
 
-    return float(-np.mean(ratios)) if ratios else None
+    return float(np.mean(relative_scores)) if relative_scores else None

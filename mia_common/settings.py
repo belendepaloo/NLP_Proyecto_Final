@@ -112,10 +112,11 @@ class Settings(BaseSettings):
     dualtest_continuation_len: int = 24
     dualtest_max_new_tokens: int = 24
 
-    # SiMIA (ver SiMIA/simia.py) -- el paper (arXiv:2601.11314) usa N=10 samples por
-    # posicion "to reduce API costs" (vs. N=100 default) y un prefijo non-member FIJO
-    # (no aleatorio) de varios cientos de caracteres.
-    simia_n_samples: int = 10
+    # SiMIA (ver SiMIA/simia.py) -- parametros portados de
+    # simmia_decop/notebooks/simMIA.ipynb (commit a63ec742, PR #2 feature/decop_simmia):
+    # N=3 samples por posicion y un prefijo non-member FIJO (no aleatorio) de varios
+    # cientos de caracteres.
+    simia_n_samples: int = 3
     simia_calibration_chars: int = 600
 
     # Apagado temporal de SiMIA en el pipeline agentico (Fase 2) -- decision del
