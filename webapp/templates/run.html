@@ -364,17 +364,95 @@
   {% endif %}
 </details>
 
+{# ── Log de agentes en tiempo real ───────────────────────────────────────── #}
+<section class="card card--agentlog" id="card-agentlog">
+  <h3>Actividad de agentes</h3>
+  <div class="agentlog" id="agentlog-entries">
+    {% for ev in run.events %}
+      <div class="alog-entry alog-entry--{{ ev.agent | replace(' ', '-') | replace('[', '') | replace(']', '') | lower }}">
+        <span class="alog-time">{{ ev.t }}</span>
+        <span class="alog-agent">{{ ev.agent }}</span>
+        <span class="alog-action">{{ ev.action }}</span>
+        {% if ev.detail %}<span class="alog-detail">{{ ev.detail }}</span>{% endif %}
+      </div>
+    {% endfor %}
+  </div>
+  {% if not run.events %}
+    <p class="empty-state" id="agentlog-empty">Los eventos aparecerán aquí cuando el pipeline arranque.</p>
+  {% endif %}
+</section>
+
 {% if run.status in ("running", "waiting_human") %}
   <script>
-    // Refresca la página cada vez que el server notifica un cambio
-    // (ya sea cambio de status o nuevo artifact escrito en disco).
+    var _agentlogEl = document.getElementById("agentlog-entries");
+    var _agentlogEmpty = document.getElementById("agentlog-empty");
+
+    // Íconos por agente
+    var _agentIcons = {
+      "bibliography_agent": "📚",
+      "curator_agent": "✂️",
+      "sage_qa_agent": "🔬",
+      "mia_agent-[de-cop]": "🎯",
+      "mia_agent-[dualtest]": "📐",
+      "mia_agent-[simia]": "🧬",
+      "ensemble": "⚖️",
+      "system": "⚙️",
+    };
+
+    function _appendEvent(ev) {
+      if (_agentlogEmpty) { _agentlogEmpty.style.display = "none"; }
+      var slug = ev.agent.replace(/ /g, "-").replace(/[\[\]]/g, "").toLowerCase();
+      var icon = _agentIcons[slug] || "🤖";
+      var div = document.createElement("div");
+      div.className = "alog-entry alog-entry--" + slug + " alog-entry--new";
+      div.innerHTML =
+        '<span class="alog-time">' + ev.t + '</span>' +
+        '<span class="alog-icon">' + icon + '</span>' +
+        '<span class="alog-agent">' + ev.agent + '</span>' +
+        '<span class="alog-action">' + ev.action + '</span>' +
+        (ev.detail ? '<span class="alog-detail">' + ev.detail + '</span>' : '');
+      _agentlogEl.appendChild(div);
+      // Scroll al fondo
+      _agentlogEl.scrollTop = _agentlogEl.scrollHeight;
+      // Quitar clase de animación tras fade-in
+      setTimeout(function() { div.classList.remove("alog-entry--new"); }, 600);
+    }
+
     var es = new EventSource("/runs/{{ run.run_id }}/stream");
-    es.onmessage = function() { location.reload(); };
-    es.onerror = function() { es.close(); setTimeout(function() { location.reload(); }, 5000); };
-    // Fallback: si no llega ningún evento real en 60s, recargar igual
-    // (cubre el caso en que el SSE está vivo pero el servidor no emitió nada)
-    var _reloadTimer = setTimeout(function() { location.reload(); }, 60000);
-    es.addEventListener("message", function() { clearTimeout(_reloadTimer); _reloadTimer = setTimeout(function() { location.reload(); }, 60000); });
+
+    // Evento default: status/artifact cambió → recargar página completa
+    es.onmessage = function(e) {
+      if (e.data === "reload" || e.data === "done" || e.data === "error") {
+        location.reload();
+      }
+    };
+
+    // Evento nombrado: acción de agente → append al log sin recargar
+    es.addEventListener("agentlog", function(e) {
+      try {
+        var ev = JSON.parse(e.data);
+        _appendEvent(ev);
+      } catch(err) {}
+    });
+
+    es.onerror = function() {
+      es.close();
+      setTimeout(function() { location.reload(); }, 5000);
+    };
+
+    // Fallback: recargar si no llega nada en 90s (pipeline muy lento o SSE muerto)
+    var _reloadTimer = setTimeout(function() { location.reload(); }, 90000);
+    es.onmessage = (function(orig) {
+      return function(e) {
+        clearTimeout(_reloadTimer);
+        _reloadTimer = setTimeout(function() { location.reload(); }, 90000);
+        orig(e);
+      };
+    })(es.onmessage);
+    es.addEventListener("agentlog", function() {
+      clearTimeout(_reloadTimer);
+      _reloadTimer = setTimeout(function() { location.reload(); }, 90000);
+    });
   </script>
 {% endif %}
 

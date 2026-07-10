@@ -866,3 +866,133 @@ pre {
   font-size: 0.78rem;
   border-top: 1px solid var(--border);
 }
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   AGENT LOG — log de actividad en tiempo real
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.card--agentlog {
+  padding: 0;
+  overflow: hidden;
+}
+
+.card--agentlog h3 {
+  padding: 1rem 1.25rem 0.75rem;
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--border);
+  color: var(--ink-soft);
+}
+
+.agentlog {
+  max-height: 420px;
+  overflow-y: auto;
+  font-family: ui-monospace, "Cascadia Code", "Fira Mono", monospace;
+  font-size: 0.82rem;
+  scroll-behavior: smooth;
+}
+
+.alog-entry {
+  display: grid;
+  grid-template-columns: 5.5rem 1.4rem minmax(12rem, 1fr) 1fr;
+  align-items: baseline;
+  gap: 0 0.75rem;
+  padding: 0.45rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+  line-height: 1.4;
+  transition: background 0.3s ease;
+}
+
+.alog-entry--new {
+  animation: alog-fadein 0.5s ease;
+}
+
+@keyframes alog-fadein {
+  from { background: var(--highlight-bg, #fff8dc); opacity: 0.6; }
+  to   { background: transparent; opacity: 1; }
+}
+
+@media (prefers-color-scheme: dark) {
+  @keyframes alog-fadein {
+    from { background: rgba(255,255,150,0.12); }
+    to   { background: transparent; }
+  }
+}
+
+.alog-time {
+  color: var(--ink-soft);
+  font-size: 0.75rem;
+  white-space: nowrap;
+  opacity: 0.7;
+}
+
+.alog-icon {
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+.alog-agent {
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.alog-action {
+  color: var(--ink);
+}
+
+.alog-detail {
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ── Colores por agente ──────────────────────────────────────────────────── */
+
+.alog-entry--bibliography_agent .alog-agent { color: #2563eb; }
+.alog-entry--curator_agent      .alog-agent { color: #7c3aed; }
+.alog-entry--sage_qa_agent      .alog-agent { color: #059669; }
+.alog-entry--mia_agent-de-cop   .alog-agent { color: #d97706; }
+.alog-entry--mia_agent-dualtest .alog-agent { color: #dc2626; }
+.alog-entry--mia_agent-simia    .alog-agent { color: #db2777; }
+.alog-entry--ensemble           .alog-agent { color: #0891b2; }
+.alog-entry--system             .alog-agent { color: var(--ink-soft); }
+
+@media (prefers-color-scheme: dark) {
+  .alog-entry--bibliography_agent .alog-agent { color: #60a5fa; }
+  .alog-entry--curator_agent      .alog-agent { color: #a78bfa; }
+  .alog-entry--sage_qa_agent      .alog-agent { color: #34d399; }
+  .alog-entry--mia_agent-de-cop   .alog-agent { color: #fbbf24; }
+  .alog-entry--mia_agent-dualtest .alog-agent { color: #f87171; }
+  .alog-entry--mia_agent-simia    .alog-agent { color: #f472b6; }
+  .alog-entry--ensemble           .alog-agent { color: #22d3ee; }
+}
+
+/* ── Demo mode label en el formulario ───────────────────────────────────── */
+
+.field--inline {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.demo-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.demo-label input[type="checkbox"] {
+  width: 1.1rem;
+  height: 1.1rem;
+  accent-color: var(--maroon);
+  cursor: pointer;
+}

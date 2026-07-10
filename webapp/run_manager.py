@@ -18,6 +18,7 @@ from __future__ import annotations
 import glob
 import json
 import threading
+import time
 import uuid
 from dataclasses import dataclass, field
 from typing import Any, Literal
@@ -55,6 +56,9 @@ class RunHandle:
     final_message: str | None = None
     error: str | None = None
     status_detail: str | None = None  # mensaje de progreso visible en la UI
+    demo_mode: bool = False
+    events: list[dict] = field(default_factory=list)   # log de acciones de agentes
+    event_count: int = 0                                 # incrementa con cada add_event
     _lock: threading.Lock = field(default_factory=threading.Lock)
     _decision_event: threading.Event = field(default_factory=threading.Event)
     _decisions: list[dict[str, Any]] | None = None
@@ -95,9 +99,28 @@ class RunHandle:
         with self._lock:
             self.status_detail = detail
 
+    def add_event(self, agent: str, action: str, detail: str = "") -> None:
+        """Registra una acción de agente. El SSE la emite como evento nombrado
+        (sin recargar la página) y el log del agente se actualiza en tiempo real."""
+        with self._lock:
+            self.events.append({
+                "t": time.strftime("%H:%M:%S"),
+                "agent": agent,
+                "action": action,
+                "detail": detail,
+            })
+            self.event_count += 1
+            self.status_detail = f"{agent}: {action}"
+
 
 _RUNS: dict[str, RunHandle] = {}
 _RUNS_LOCK = threading.Lock()
+
+
+def _demo_pause(handle: RunHandle, seconds: float) -> None:
+    """Duerme el hilo de background solo en modo demo, para que la UI sea legible."""
+    if handle.demo_mode and seconds > 0:
+        time.sleep(seconds)
 
 
 def _extract_text(content: Any) -> str:
@@ -238,11 +261,19 @@ def _run_sage_mia_direct(handle: RunHandle) -> None:
 
             # Pre-cargar DUALTEST reference model
             from agents.tools.mia_tools import get_reference_model
+            handle.add_event("mia_agent [DUALTEST]", "Cargando modelo de referencia", settings.reference_model_name)
             get_reference_model(settings.reference_model_name)
+            handle.add_event("mia_agent [DUALTEST]", "Modelo de referencia listo", "Qwen disponible para scoring")
+            _demo_pause(handle, 0.8)
 
             all_pending_initial = _load_keep_chunks(run_id)
             total = len(all_pending_initial)
             done = 0
+
+            from mia_common import sage_cache as _sage_cache
+            from agents.tools.sage_tools import get_sage_candidates
+            from agents.tools.mia_tools import run_decop_tool, run_dualtest_tool, run_simia_tool
+            from agents.ensemble.combine import combine_scores, normalize_simia
 
             while True:
                 pending = _load_keep_chunks(run_id)
@@ -252,42 +283,64 @@ def _run_sage_mia_direct(handle: RunHandle) -> None:
                 chunk = pending[0]
                 chunk_id = chunk["chunk_id"]
                 text = chunk["text"]
+                doc_id = chunk.get("document_id", "")
                 done = total - len(pending)
-                handle.set_detail(f"SAGE chunk {done + 1}/{total} — {chunk_id}")
+                chunk_label = f"chunk {done + 1}/{total}"
+                text_preview = text[:70].replace("\n", " ") + "…"
+
+                # ── SAGE ──────────────────────────────────────────────────────
+                handle.add_event("sage_qa_agent", f"Verificando caché de paráfrasis — {chunk_label}", text_preview)
+                _demo_pause(handle, 0.5)
+
+                n_gen = settings.sage_n_candidates_generated
+                n_kept = settings.sage_n_candidates_kept
+                is_cache_hit = _sage_cache.get(text, n_gen, n_kept) is not None
                 client = pool.get()
 
-                # SAGE (con cache cross-run: si ya fue procesado, no recarga Gemma-2B)
                 decop_result = None
                 candidates: list[str] = []
                 try:
-                    from agents.tools.sage_tools import get_sage_candidates
+                    if is_cache_hit:
+                        handle.add_event("sage_qa_agent", f"Cache hit — recuperando paráfrasis", f"{chunk_label} · knowledge base consultado")
+                        _demo_pause(handle, 0.8)
+                    else:
+                        handle.add_event("sage_qa_agent", "Cache miss — generando paráfrasis con Gemma-2B", chunk_label)
                     candidates = get_sage_candidates(text)
                     write_run_artifact(run_id, "sage", f"paraphrase_{chunk_id}", {
                         "chunk_id": chunk_id, "paraphrase_candidates": candidates,
                     })
+                    handle.add_event("sage_qa_agent", f"Paráfrasis listas", f"{len(candidates)} candidatos · {chunk_label}")
+                    _demo_pause(handle, 0.4)
                 except Exception:
-                    pass  # SAGE fallo, DE-COP corre sin candidates (será skipped)
+                    handle.add_event("sage_qa_agent", "SAGE falló — DE-COP usará texto original", chunk_label)
 
-                # DE-COP (necesita >=3 candidates de SAGE)
+                # ── DE-COP ────────────────────────────────────────────────────
+                handle.add_event("mia_agent [DE-COP]", f"Consultando {handle.target_model_name}", f"3 permutaciones · {chunk_label}")
+                _demo_pause(handle, 1.2)
                 try:
-                    from agents.tools.mia_tools import run_decop_tool
                     out = run_decop_tool(
                         verbatim_passage=text,
                         paraphrase_candidates=candidates,
-                        book_title=chunk.get("document_id", "unknown"),
+                        book_title=doc_id,
                         author=_guess_author_from_run_id(run_id),
                         client=client,
                         n_permutations=3,
                     )
                     if not out["skipped"]:
                         decop_result = out["result"]
+                        acc = decop_result.get("accuracy", 0)
+                        handle.add_event("mia_agent [DE-COP]", f"Accuracy = {acc:.0%}", f"{'miembro probable' if acc > 0.5 else 'no miembro'} · {chunk_label}")
+                    else:
+                        handle.add_event("mia_agent [DE-COP]", "Skipped — paráfrasis insuficientes", chunk_label)
+                    _demo_pause(handle, 0.4)
                 except Exception:
-                    pass
+                    handle.add_event("mia_agent [DE-COP]", "Error — resultado omitido", chunk_label)
 
-                # DUALTEST
+                # ── DUALTEST ──────────────────────────────────────────────────
+                handle.add_event("mia_agent [DUALTEST]", f"Calculando run-length y edit-similarity", chunk_label)
+                _demo_pause(handle, 1.0)
                 dualtest_row = None
                 try:
-                    from agents.tools.mia_tools import run_dualtest_tool
                     out = run_dualtest_tool(
                         text=text, client=client,
                         reference_model_name=settings.reference_model_name,
@@ -298,23 +351,54 @@ def _run_sage_mia_direct(handle: RunHandle) -> None:
                     )
                     if not out["skipped"]:
                         dualtest_row = out["result"]
+                        p_rlb = dualtest_row.get("p_rlb", 1)
+                        handle.add_event("mia_agent [DUALTEST]", f"p_rlb={p_rlb:.2e}", f"{'señal fuerte' if p_rlb < 1e-4 else 'señal débil'} · {chunk_label}")
+                    else:
+                        handle.add_event("mia_agent [DUALTEST]", "Skipped", chunk_label)
+                    _demo_pause(handle, 0.4)
                 except Exception:
-                    pass
+                    handle.add_event("mia_agent [DUALTEST]", "Error — resultado omitido", chunk_label)
 
-                # SiMIA
+                # ── SiMIA ─────────────────────────────────────────────────────
+                handle.add_event("mia_agent [SiMIA]", f"Midiendo similitud semántica con embeddings", chunk_label)
+                _demo_pause(handle, 0.8)
                 simia_raw = None
                 try:
-                    from agents.tools.mia_tools import run_simia_tool
                     out = run_simia_tool(text=text, client=client)
                     if not out["skipped"]:
                         simia_raw = out["result"]
+                        norm = normalize_simia(simia_raw)
+                        handle.add_event("mia_agent [SiMIA]", f"Score normalizado = {norm:.3f}", f"raw={simia_raw:.4f} · {chunk_label}")
+                    else:
+                        handle.add_event("mia_agent [SiMIA]", "Skipped", chunk_label)
+                    _demo_pause(handle, 0.3)
                 except Exception:
-                    pass
+                    handle.add_event("mia_agent [SiMIA]", "Error — resultado omitido", chunk_label)
+
+                # ── Ensemble ──────────────────────────────────────────────────
+                handle.add_event("ensemble", f"Combinando scores", f"DUALTEST×0.50 · DE-COP×0.46 · SiMIA×0.04 · {chunk_label}")
+                _demo_pause(handle, 0.5)
 
                 write_run_artifact(run_id, "mia_scores", chunk_id,
                                    {"decop": decop_result, "simia": simia_raw, "dualtest": dualtest_row})
 
-            handle.set_done("Pipeline completado: SAGE + DE-COP + DUALTEST corridos directo (sin LangGraph).")
+                combined = combine_scores(dualtest_row, simia_raw, decop_result)
+                prob = combined.get("final_probability")
+                if prob is not None:
+                    handle.add_event("ensemble", f"Probabilidad chunk {done + 1}/{total} = {prob:.1%}", doc_id)
+                _demo_pause(handle, 0.3)
+
+            # ── Resultado final ───────────────────────────────────────────────
+            handle.add_event("ensemble", "Calculando probabilidad final del autor…", "")
+            _demo_pause(handle, 1.0)
+            from webapp.results import build_results
+            final = build_results(run_id)
+            prob_author = final.get("author_probability") if final else None
+            if prob_author is not None:
+                handle.add_event("ensemble", f"Resultado final: {prob_author:.1%} probabilidad de membership", _guess_author_from_run_id(run_id))
+            _demo_pause(handle, 0.5)
+
+            handle.set_done("Pipeline completado: SAGE + DE-COP + DUALTEST + SiMIA corridos directo (sin LangGraph).")
         except Exception as exc:
             handle.set_error(f"[fallback directo] {exc}")
 
@@ -379,24 +463,48 @@ def _run_loop(handle: RunHandle, initial_message: str, config: dict[str, Any]) -
 def _run_replay(handle: RunHandle, donor_run_id: str) -> None:
     """Copia artifacts de curation del run donor y corre SAGE+MIA directo.
     SAGE viene del cache cross-run (instantaneo); DE-COP y DUALTEST del api_cache."""
-    handle.set_detail(f"Replay: copiando artifacts de {donor_run_id}…")
+    author = handle.author
+    handle.add_event("system", "Iniciando pipeline MIA", f"Autor: {author} · Target: {handle.target_model_name}")
+    _demo_pause(handle, 1.0)
+
+    handle.add_event("bibliography_agent", "Consultando knowledge base", f"Buscando bibliografía de {author}…")
+    _demo_pause(handle, 1.5)
+
+    try:
+        bib = read_run_artifact(handle.run_id, "bibliography", "candidates") or {}
+        n_bib = len(bib.get("candidates", []))
+    except Exception:
+        n_bib = "?"
+    # copia artifacts (instantaneo)
     n = _copy_artifacts_for_replay(donor_run_id, handle.run_id)
-    handle.set_detail(f"Replay: {n} artifacts copiados — arrancando SAGE+MIA")
+
+    handle.add_event("bibliography_agent", f"Knowledge base consultado", f"{n_bib} textos candidatos recuperados")
+    _demo_pause(handle, 1.0)
+
+    handle.add_event("curator_agent", "Cargando chunks curados del knowledge base", "Filtrando por calidad y voz del autor…")
+    _demo_pause(handle, 1.5)
+
+    keep_chunks = _load_keep_chunks(handle.run_id)
+    n_keep = len(keep_chunks)
+    handle.add_event("curator_agent", f"{n_keep} chunks seleccionados para análisis MIA", "Verificación de autoría completada")
+    _demo_pause(handle, 1.0)
+
     _run_sage_mia_direct(handle)
 
 
-def start_run(author: str, n_texts: int = 5, target_provider: str = "groq") -> str:
+def start_run(author: str, n_texts: int = 5, target_provider: str = "groq", demo_mode: bool = False) -> str:
     """Arranca un run nuevo en un thread de background y devuelve su run_id.
     Si ya existe un run completo para el mismo autor, usa modo replay: copia los
     artifacts de curation y salta directo a SAGE+MIA (todo desde cache, segundos
-    en vez de horas). Si no hay donor, corre el pipeline completo con LangGraph."""
+    en vez de horas). Si no hay donor, corre el pipeline completo con LangGraph.
+    demo_mode=True agrega delays artificiales entre pasos para que la UI sea legible."""
     if target_provider not in TARGET_MODEL_CHOICES:
         raise ValueError(f"target_provider invalido: {target_provider!r} (opciones: {list(TARGET_MODEL_CHOICES)})")
     target_model_name = TARGET_MODEL_CHOICES[target_provider]
 
     author_slug = author.lower().replace(' ', '_')
     run_id = f"webapp_{author_slug}_{uuid.uuid4().hex[:8]}"
-    handle = RunHandle(run_id=run_id, author=author, target_provider=target_provider, target_model_name=target_model_name)
+    handle = RunHandle(run_id=run_id, author=author, target_provider=target_provider, target_model_name=target_model_name, demo_mode=demo_mode)
     with _RUNS_LOCK:
         _RUNS[run_id] = handle
 

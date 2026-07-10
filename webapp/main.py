@@ -56,8 +56,8 @@ def index(request: Request) -> HTMLResponse:
 
 
 @app.post("/runs")
-def create_run(author: str = Form(...), n_texts: int = Form(5), target_provider: str = Form("groq")) -> RedirectResponse:
-    run_id = start_run(author.strip(), n_texts, target_provider=target_provider)
+def create_run(author: str = Form(...), n_texts: int = Form(5), target_provider: str = Form("groq"), demo_mode: bool = Form(False)) -> RedirectResponse:
+    run_id = start_run(author.strip(), n_texts, target_provider=target_provider, demo_mode=demo_mode)
     return RedirectResponse(url=f"/runs/{run_id}", status_code=303)
 
 
@@ -131,45 +131,56 @@ def decide(
 
 @app.get("/runs/{run_id}/stream")
 async def stream(run_id: str) -> StreamingResponse:
-    """SSE: un evento cada vez que cambia el status del run, para que la pantalla se
-    refresque sola (ver el <script> minimo en run.html) en vez de hacer polling manual."""
+    """SSE dual-channel:
+    - Eventos default (data: reload/done/error) → el frontend recarga la página completa.
+    - Eventos nombrados (event: agentlog) → el frontend los append al log sin recargar."""
 
     async def event_source():
         handle = get_run(run_id)
         if handle is None:
             return
-        # Si el run ya terminó cuando el SSE conecta (ej. replay rápido), emitir
-        # de inmediato para que la página recargue sin esperar el fallback de 60s.
         if handle.status in ("done", "error"):
             yield f"data: {handle.status}\n\n"
             return
+
         baseline_status = handle.status
-        baseline_detail = handle.status_detail
         baseline_artifact_count = sum(len(v) for v in list_run_artifacts(run_id).values())
+        baseline_event_count = handle.event_count
         ticks_since_emit = 0
+
         while True:
             handle = get_run(run_id)
             if handle is None:
                 return
+
+            # ── Nuevos eventos de agentes → SSE nombrado (no recarga) ──────
+            current_event_count = handle.event_count
+            if current_event_count > baseline_event_count:
+                new_events = handle.events[baseline_event_count:current_event_count]
+                for ev in new_events:
+                    yield f"event: agentlog\ndata: {json.dumps(ev, ensure_ascii=False)}\n\n"
+                baseline_event_count = current_event_count
+                ticks_since_emit = 0
+
+            # ── Status o artifact cambió → reload completo ─────────────────
             current_artifact_count = sum(len(v) for v in list_run_artifacts(run_id).values())
             status_changed = handle.status != baseline_status
-            detail_changed = handle.status_detail != baseline_detail
             artifacts_changed = current_artifact_count != baseline_artifact_count
-            if status_changed or detail_changed or artifacts_changed:
-                yield f"data: {handle.status}\n\n"
+            if status_changed or artifacts_changed:
+                yield f"data: reload\n\n"
                 baseline_status = handle.status
-                baseline_detail = handle.status_detail
                 baseline_artifact_count = current_artifact_count
                 ticks_since_emit = 0
                 if handle.status in ("done", "error"):
                     return
             else:
                 ticks_since_emit += 1
-                if ticks_since_emit >= 15:  # 15 × 2s = 30s sin cambios → heartbeat
+                if ticks_since_emit >= 30:  # 30 × 0.5s = 15s sin cambios → heartbeat
                     yield ": heartbeat\n\n"
                     ticks_since_emit = 0
+
             if handle.status in ("done", "error"):
                 return
-            await asyncio.sleep(2.0)
+            await asyncio.sleep(0.5)
 
     return StreamingResponse(event_source(), media_type="text/event-stream")
