@@ -119,13 +119,12 @@ class Settings(BaseSettings):
     simia_n_samples: int = 3
     simia_calibration_chars: int = 600
 
-    # Apagado temporal de SiMIA en el pipeline agentico (Fase 2) -- decision del
-    # usuario: "todavia no esta terminado", validar primero que el resto del pipeline
-    # (orquestador, agentes, webapp) funciona bien de punta a punta con DE-COP +
-    # DUALTEST, sumar SiMIA de vuelta despues. NO afecta a la Fase 1 manual
-    # (scripts/run_pipeline_manual.py sigue corriendo los 3 metodos) -- esto es
+    # SiMIA reactivado en el pipeline agentico (Fase 2): ya tiene la formula del
+    # notebook de referencia integrada (ver SiMIA/simia.py), validado contra Groq real
+    # en scripts/verify_phase0_target_client.py. NO afecta a la Fase 1 manual
+    # (scripts/run_pipeline_manual.py siempre corrio los 3 metodos) -- esto es
     # especifico de agents/subagents/mia_agent.py.
-    simia_enabled: bool = False
+    simia_enabled: bool = True
 
     # Thresholds de curacion (ver agents/tools/curator_tools.py) -- viven aca, no
     # hardcodeados en los prompts, para que la skill persistente pueda ajustarlos.
