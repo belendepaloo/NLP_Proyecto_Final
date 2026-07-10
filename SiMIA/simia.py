@@ -46,6 +46,7 @@ from mia_common.settings import settings
 from mia_common.target_client import TargetClient
 
 _EPS = 1e-8
+_SEED = 2319  # idem SEED del notebook (simmia_decop/notebooks/simMIA.ipynb)
 
 _embedder: SentenceTransformer | None = None  # lazy singleton, carga no es gratis
 _CALIBRATION_PATH = Path(__file__).resolve().parent / "non_member_calibration.txt"
@@ -111,7 +112,9 @@ def model_generate_fn_factory(client: TargetClient, max_tokens: int = 3) -> Call
     formato de instruccion tipo 'Complete the following text'. `sample_index` se pasa
     al cliente para que el cache (mia_common.cache) le de un slot propio a cada una de
     las N muestras independientes -- sin esto, N llamadas con el mismo prompt pegarian
-    todas contra el mismo cache hit."""
+    todas contra el mismo cache hit. Tambien se pasa como seed=_SEED+sample_index
+    (idem notebook: alli variaba seed=SEED+attempt por reintento de rate-limit; aca el
+    rol equivalente de "variar la muestra" lo cumple sample_index)."""
 
     def generate(prefix: str, sample_index: int | None = None) -> str:
         out = client.chat(
@@ -125,6 +128,7 @@ def model_generate_fn_factory(client: TargetClient, max_tokens: int = 3) -> Call
             max_new_tokens=max_tokens,
             temperature=1.0,
             top_p=1.0,
+            seed=_SEED + (sample_index or 0),
             cache_sample_index=sample_index,
         )
         return _first_word(out)
