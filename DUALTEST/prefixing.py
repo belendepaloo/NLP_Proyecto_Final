@@ -1,29 +1,3 @@
-"""
-prefixing.py
-
-Parte un texto fuente en pares (prefijo, continuacion), siguiendo Secciones 3.3/3.4:
-    "From each source document, we take a 64-token prefix and ask the target model for
-    up to 64 completion tokens."
-
-Dos modos:
-    - por tokens (default, fiel a los experimentos principales del paper con
-      Pythia/LLaMA-2): usa un tokenizer para cortar exactamente 64 tokens de prefijo y
-      reservar hasta 64 tokens de continuacion real (ground truth).
-    - por palabras (fallback que el propio paper usa en el Apendice de GPT-4,
-      "Standard" = prefijo de 50 palabras, porque las APIs cerradas no exponen
-      tokenizer).
-
-OJO con un desajuste importante: si el tokenizer del modelo de referencia es distinto
-al del target (ej. target = API cerrada, referencia = Qwen2.5), lo que tiene que
-mantenerse constante es EL TEXTO en lenguaje natural del prefijo, no el conteo exacto
-de tokens bajo cada tokenizer distinto -- re-tokenizar el mismo string con cada modelo
-por separado. Un prefijo de exactamente 64 tokens solo tiene sentido pleno cuando un
-unico tokenizer gobierna tanto la construccion del prefijo como el conteo de run-length
-(es decir, target open-weight de la misma familia/tokenizer que la referencia). Si el
-target es una API cerrada, acepten la pequena discrepancia de longitud entre tokenizers,
-tal como efectivamente hace el paper en su propio apendice con GPT-4.
-"""
-
 from dataclasses import dataclass
 from typing import Optional, List
 

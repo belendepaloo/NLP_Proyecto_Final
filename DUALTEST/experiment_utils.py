@@ -1,4 +1,3 @@
-import os
 import pandas as pd
 from pathlib import Path
 
@@ -46,9 +45,6 @@ def load_metadata(dataset_name: str) -> pd.DataFrame:
 
 
 def normalize_file_path(file_path: str) -> Path:
-    """
-    Convierte rutas relativas tipo dataset/raw/... a rutas absolutas dentro de TP_NLP.
-    """
     path = Path(file_path)
 
     if path.is_absolute():
@@ -58,9 +54,6 @@ def normalize_file_path(file_path: str) -> Path:
 
 
 def load_text(file_path: str) -> str:
-    """
-    Abre el .txt asociado a una fila de metadata.
-    """
     path = normalize_file_path(file_path)
 
     if not path.exists():
@@ -69,10 +62,15 @@ def load_text(file_path: str) -> str:
     return path.read_text(encoding="utf-8").strip()
 
 
-def filter_dataset(df: pd.DataFrame, dataset_name: str) -> pd.DataFrame:
+def filter_dataset(
+    df: pd.DataFrame,
+    dataset_name: str,
+    wikimia_length: int | None = None,
+) -> pd.DataFrame:
     """
     Aplica filtros específicos por dataset.
-    Para BookTection, nos quedamos solo con el texto original, no con las opciones distractoras.
+    Para BookTection, nos quedamos solo con el texto original.
+    Para WikiMIA, opcionalmente filtramos por length: 32, 64, 128 o 256.
     """
     df = df.copy()
 
@@ -80,6 +78,14 @@ def filter_dataset(df: pd.DataFrame, dataset_name: str) -> pd.DataFrame:
         if "is_original" not in df.columns:
             raise ValueError("BookTection debería tener columna is_original.")
         df = df[df["is_original"] == True].copy()
+
+    if dataset_name == "wikimia" and wikimia_length is not None:
+        expected_split = f"WikiMIA_length{wikimia_length}"
+
+        if "split" not in df.columns:
+            raise ValueError("WikiMIA debería tener columna split.")
+
+        df = df[df["split"] == expected_split].copy()
 
     return df.reset_index(drop=True)
 
@@ -131,12 +137,18 @@ def prepare_records(
     n: int | None = None,
     random_state: int = 7,
     balance_labels: bool = False,
+    wikimia_length: int | None = None,
 ) -> list[dict]:
     """
-    Carga metadata + abre textos + devuelve registros listos para DUALTEST.
+    Carga metadata, abre textos y devuelve registros listos para DUALTEST.
     """
     df = load_metadata(dataset_name)
-    df = filter_dataset(df, dataset_name)
+    df = filter_dataset(
+        df,
+        dataset_name,
+        wikimia_length=wikimia_length,
+    )
+
     df = sample_records(
         df,
         n=n,
@@ -151,7 +163,7 @@ def prepare_records(
 
         records.append({
             "id": row.get("file_name", f"{dataset_name}_{idx}"),
-            "dataset": dataset_name,
+            "dataset": row.get("split", dataset_name),
             "dataset_family": row.get("dataset_family", dataset_name),
             "source_dataset": row.get("source_dataset", None),
             "file_path": row["file_path"],
@@ -162,7 +174,6 @@ def prepare_records(
         })
 
     return records
-
 
 def load_all_dataset_names() -> list[str]:
     return list(DATASET_METADATA.keys())

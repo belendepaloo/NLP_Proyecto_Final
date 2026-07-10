@@ -1,38 +1,9 @@
-"""
-generalization_sets.py
-
-Construye los Generalization Sets A y B (Seccion 4.1, "adversarial setting"): textos que
-CUALQUIER modelo de lenguaje razonable puede continuar correctamente por pattern-matching,
-SIN haberlos visto nunca, porque los estamos inventando ahora mismo.
-
-  - Set A: repeticion corta y obvia (periodo ~2-4), ~100 ejemplos por dominio de texto.
-    Ejemplo del propio paper: "Part I -- Part II -- Part III -- Part IV -- ..."
-  - Set B: repeticion mas larga y menos obvia (periodo ~15-30), ~10 ejemplos por
-    dominio, disenada para enganar tambien a heuristicas naive de compresibilidad Zlib
-    (Seccion 4.2.1 / Tabla 5: esto es justo lo que rompe al baseline de Kaneko et al.
-    con Zlib).
-
-*** PASO MANUAL OBLIGATORIO que el codigo NO puede hacer por ustedes ***
-El paper verifica a mano que ninguno de estos strings ya exista en la web publica (para
-que un match positivo SOLO pueda ser generalizacion, nunca memorizacion, por
-construccion -- Seccion 4.1, "Generalization Sets"). Este script solo garantiza
-COMBINACIONES NUEVAS a partir de un banco de vocabulario, no que el string exacto nunca
-haya aparecido en ningun lado online. Antes de usar estos numeros para resultados reales,
-hagan una busqueda de frase exacta sobre una muestra de los strings generados, igual que
-hace el paper. Yo puedo ayudarles a verificar una muestra via busqueda web en el chat si
-quieren, antes de cerrar el dataset final.
-"""
-
 import itertools
 import random
 from typing import List, Dict
 
-random.seed(7)  # reproducibilidad
+random.seed(7) 
 
-
-# ---------- Vocabularios por dominio (espanol) ----------
-# NOTA: estas listas son un punto de partida (suficientes para >100 combinaciones unicas
-# por producto cartesiano). Para mas diversidad linguistica real, conviene ampliarlas.
 
 WIKI_SUBJECTS = [
     "el rio Parana", "la cordillera de los Andes", "el lago Nahuel Huapi",
@@ -75,8 +46,6 @@ BOOK_PHRASES = [
     "la memoria es el unico mapa que no se rompe", "quien siembra silencio cosecha dudas",
 ]
 
-
-# ---------- Set A: periodo corto y obvio ----------
 
 def _gen_a(subjects, attributes, n, template, repeats=(3, 4, 5)):
     out = []
@@ -128,13 +97,6 @@ def _gen_book_a(n: int) -> List[str]:
             out.append(text)
     return out[:n]
 
-
-# ---------- Set B: periodo largo y disfrazado ----------
-# Idea: en vez de repetir UN solo par cada 2-3 tokens, se recorren TODOS los items en un
-# orden fijo (shuffleado una vez) y se repite el ciclo completo varias veces, variando
-# el atributo/evento/frase asociado en cada pasada. El periodo real es
-# len(subjects)*algo, mucho mas largo que en el Set A, y no es visualmente obvio a
-# simple vista (a diferencia de "Parte I -- Parte II -- Parte III").
 
 def _gen_wiki_b(n: int) -> List[str]:
     out = []

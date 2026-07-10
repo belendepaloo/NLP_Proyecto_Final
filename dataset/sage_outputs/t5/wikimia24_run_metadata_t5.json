@@ -1,13 +1,13 @@
 {
-  "date": "2026-06-23T18:54:09.812581",
+  "date": "2026-06-30T18:15:33.928520",
   "dataset": "wikimia24",
   "n_samples": 200,
   "paraphraser": "humarin/chatgpt_paraphraser_on_T5_base",
   "sps_model": "gemma-2b",
   "sae_release": "gemma-2b-res-jb",
   "sae_hook": "blocks.12.hook_resid_post",
-  "avg_sps_members": 0.9061146025754967,
-  "avg_sps_non_members": 0.9065214204145413,
+  "avg_sps_members": 0.9028893638439853,
+  "avg_sps_non_members": 0.9195542699098587,
   "paraphraser_provider": "t5",
   "paraphraser_model": "humarin/chatgpt_paraphraser_on_T5_base"
 }

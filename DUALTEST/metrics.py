@@ -2,11 +2,9 @@
 metrics.py
 
 Funciones de scoring centrales de DUALTEST. Implementa:
-    - Run-Length-Based (RLB)               -- Seccion 3.3
-    - Edit-Similarity-Based (ESB)           -- Seccion 3.4
-    - ESB + largo comprimido con Zlib       -- Seccion 4.2.3 / Tabla 7 (el paper NO da
-      una formula exacta para esta; ver el docstring de `esb_zlib_score` para nuestra
-      reconstruccion, claramente marcada como tal).
+    - Run-Length-Based (RLB)               
+    - Edit-Similarity-Based (ESB)          
+    - ESB + largo comprimido con Zlib 
 
 Las tres producen SCORES escalares que despues calibration.py convierte en decisiones
 binarias via umbrales. Ninguna de estas funciones decide "memorizado o no" por si
@@ -21,7 +19,7 @@ from typing import List, Tuple
 
 def run_length(target_tokens: List[int], source_tokens: List[int]) -> int:
     """
-    Seccion 3.3: "The run length is the number of consecutive completion tokens that
+    "The run length is the number of consecutive completion tokens that
     exactly match the source continuation, stopping at the first mismatch."
     """
     r = 0
@@ -53,10 +51,7 @@ def _levenshtein(a: str, b: str) -> int:
 
 def edit_similarity(a: str, b: str) -> float:
     """
-    Seccion 3.4, basado en Ippolito et al. (2022). NOTA SOBRE LA CONVENCION: Ippolito
-    et al. definen literalmente
-
-        EditSim(x,y) = EditDistance(x,y) / max(|x|,|y|)
+    EditSim(x,y) = EditDistance(x,y) / max(|x|,|y|)
 
     que en realidad es una DISTANCIA normalizada (0 = identicos, 1 = completamente
     distintos). La regla de decision de DUALTEST necesita la direccion opuesta ("alta
@@ -88,7 +83,7 @@ def rlb_score(target_tokens: List[int], source_tokens: List[int], reference_mode
     """
     r = run_length(target_tokens, source_tokens)
     if r == 0:
-        return 0, 1.0  # sin match alguno -> nada que explicar, p es trivial/irrelevante
+        return 0, 1.0  
     p = reference_model.sequence_probability(prefix_token_ids, source_tokens, up_to=r)
     return r, p
 
@@ -108,6 +103,14 @@ def esb_score(target_text: str, target_tokens: List[int], source_text: str,
     p = reference_model.sequence_probability(prefix_token_ids, target_tokens)
     return s, p
 
+def esb_score_log(target_text: str, target_tokens: List[int], source_text: str,
+                  reference_model, prefix_token_ids: List[int]) -> Tuple[float, float]:
+    """
+    Igual que esb_score, pero devuelve log_p_ESB para evitar underflow.
+    """
+    s = edit_similarity(target_text, source_text)
+    log_p = reference_model.sequence_log_probability(prefix_token_ids, target_tokens)
+    return s, log_p
 
 def esb_zlib_score(target_text: str, target_tokens: List[int], source_text: str,
                     reference_model, prefix_token_ids: List[int]) -> Tuple[float, float]:
@@ -116,18 +119,13 @@ def esb_zlib_score(target_text: str, target_tokens: List[int], source_text: str,
     length of Zlib-compressed text. This modification improves robustness against
     repetitive non-members that would yield a too conservative similarity threshold."
 
-    *** El paper NO publica la formula exacta de combinacion. *** Esta es nuestra
-    reconstruccion, basada en la misma logica del baseline de Kaneko et al. (2024) con
+    El paper NO publica la formula exacta de combinacion. Esta es nuestra
+    reconstruccion, basada en la misma logica del baseline de Kaneko con
     Zlib (que divide un score derivado de probabilidad por el largo comprimido con Zlib
     para penalizar completions muy compresibles/repetitivas): reemplazamos el p_ESB
     crudo por
 
         p_ESB_corregido = p_ESB / len(zlib.compress(target_text))
-
-    es decir, exigimos ADEMAS que la completion no sea trivialmente compresible (un
-    proxy de "esto no es solo un patron repetitivo facil") antes de tratar un p_ESB
-    bajo como evidencia de memorizacion. Tratar esta funcion como una reconstruccion
-    razonada y claramente marcada, no como una transcripcion literal del paper.
     """
     s = edit_similarity(target_text, source_text)
     p = reference_model.sequence_probability(prefix_token_ids, target_tokens)
