@@ -20,8 +20,9 @@ from fastapi.templating import Jinja2Templates
 
 from agents.tools.fs_tools import list_run_artifacts
 from mia_common.settings import settings
+from webapp.progress import build_pipeline_nodes, compute_pipeline_progress, detect_active_stage
 from webapp.results import build_results
-from webapp.run_manager import TARGET_MODEL_CHOICES, get_run, reconstruct_handle_from_disk, start_run, submit_decision
+from webapp.run_manager import TARGET_MODEL_CHOICES, get_run, reconstruct_handle_from_disk, resume_run, start_run, submit_decision
 
 BASE_DIR = Path(__file__).resolve().parent
 
@@ -74,6 +75,9 @@ def run_page(request: Request, run_id: str) -> HTMLResponse:
         handle = reconstruct_handle_from_disk(run_id)
     results = build_results(run_id)
     action_requests = (handle.pending_interrupt or {}).get("action_requests", [])
+    progress = compute_pipeline_progress(run_id)
+    pipeline_nodes = build_pipeline_nodes(handle.status, progress)
+    active_stage = detect_active_stage(handle.status, progress)
     return templates.TemplateResponse(
         request,
         "run.html",
@@ -82,8 +86,20 @@ def run_page(request: Request, run_id: str) -> HTMLResponse:
             "artifacts": artifacts,
             "action_requests": action_requests,
             "results": results,
+            "progress": progress,
+            "pipeline_nodes": pipeline_nodes,
+            "active_stage": active_stage,
         },
     )
+
+
+@app.post("/runs/{run_id}/resume")
+def resume_run_endpoint(run_id: str) -> RedirectResponse:
+    """Retoma un run desde el checkpoint de LangGraph sin perder el trabajo ya hecho."""
+    if not list_run_artifacts(run_id):
+        raise HTTPException(404, f"No hay artifacts para '{run_id}' — no hay nada que retomar")
+    resume_run(run_id)
+    return RedirectResponse(url=f"/runs/{run_id}", status_code=303)
 
 
 @app.post("/runs/{run_id}/decide")
@@ -122,16 +138,38 @@ async def stream(run_id: str) -> StreamingResponse:
         handle = get_run(run_id)
         if handle is None:
             return
-        baseline_status = handle.status  # no emitir nada por el estado que ya tenia la pagina al cargar
+        # Si el run ya terminó cuando el SSE conecta (ej. replay rápido), emitir
+        # de inmediato para que la página recargue sin esperar el fallback de 60s.
+        if handle.status in ("done", "error"):
+            yield f"data: {handle.status}\n\n"
+            return
+        baseline_status = handle.status
+        baseline_detail = handle.status_detail
+        baseline_artifact_count = sum(len(v) for v in list_run_artifacts(run_id).values())
+        ticks_since_emit = 0
         while True:
             handle = get_run(run_id)
             if handle is None:
                 return
-            if handle.status != baseline_status:
+            current_artifact_count = sum(len(v) for v in list_run_artifacts(run_id).values())
+            status_changed = handle.status != baseline_status
+            detail_changed = handle.status_detail != baseline_detail
+            artifacts_changed = current_artifact_count != baseline_artifact_count
+            if status_changed or detail_changed or artifacts_changed:
                 yield f"data: {handle.status}\n\n"
-                return
+                baseline_status = handle.status
+                baseline_detail = handle.status_detail
+                baseline_artifact_count = current_artifact_count
+                ticks_since_emit = 0
+                if handle.status in ("done", "error"):
+                    return
+            else:
+                ticks_since_emit += 1
+                if ticks_since_emit >= 15:  # 15 × 2s = 30s sin cambios → heartbeat
+                    yield ": heartbeat\n\n"
+                    ticks_since_emit = 0
             if handle.status in ("done", "error"):
                 return
-            await asyncio.sleep(1.5)
+            await asyncio.sleep(2.0)
 
     return StreamingResponse(event_source(), media_type="text/event-stream")

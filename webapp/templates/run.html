@@ -1,142 +1,381 @@
 {% extends "base.html" %}
 {% block title %} — {{ run.author }}{% endblock %}
 {% block content %}
-  <section class="run-head">
-    <div>
-      <span class="run-head__kicker">📚 Run en curso</span>
-      <h2>{{ run.author }}</h2>
-      <code class="run-id">{{ run.run_id }}</code>
-      <p class="run-head__target">Target: <strong>{{ run.target_provider }}</strong> · <code>{{ run.target_model_name }}</code></p>
-    </div>
+
+{# ── Run header ──────────────────────────────────────────────────────────── #}
+<section class="run-head">
+  <div>
+    <span class="run-head__kicker">📚 Run en curso</span>
+    <h2>{{ run.author }}</h2>
+    <code class="run-id">{{ run.run_id }}</code>
+    <p class="run-head__target">Target: <strong>{{ run.target_provider }}</strong> · <code>{{ run.target_model_name }}</code></p>
+  </div>
+  <div class="run-head__actions">
     <span class="status-badge status-{{ run.status }}">
-      {% if run.status == "running" %}⏳{% elif run.status == "waiting_human" %}🕊️{% elif run.status == "done" %}✅{% else %}⚠️{% endif %}
+      {% if run.status == "running" %}⏳{% elif run.status == "waiting_human" %}✋{% elif run.status == "done" %}✅{% else %}⚠️{% endif %}
       {{ run.status }}
     </span>
-  </section>
-
-  {% if run.status == "waiting_human" %}
-    <section class="card card--review">
-      <h3>🕊️ Revisión humana requerida</h3>
-      <p class="card__lede">El agente de bibliografía propone lo siguiente. Aprobá, editá los argumentos o rechazá para que busque de nuevo.</p>
-      {% for req in action_requests %}
-        <div class="tool-call">
-          <div class="tool-call__bar">
-            <span>Tool call</span>
-            <code>{{ req.name }}</code>
-          </div>
-          {% if req.name == "propose_candidate_texts" and req.args.candidates %}
-            <div class="candidate-list">
-              {% for c in req.args.candidates %}
-                <div class="candidate-card">
-                  <div class="candidate-card__meta">
-                    <strong>{{ c.title or c.document_id }}</strong>
-                    <code>{{ c.document_id }}</code>
-                    <a href="{{ c.source_url }}" target="_blank" rel="noopener">{{ c.source_url }}</a>
-                  </div>
-                  {% if c.preview %}
-                    <blockquote class="candidate-card__preview">{{ c.preview }}</blockquote>
-                  {% else %}
-                    <p class="candidate-card__no-preview">Sin preview disponible — aprobá solo si conocés esta fuente.</p>
-                  {% endif %}
-                </div>
-              {% endfor %}
-            </div>
-          {% endif %}
-          <pre>{{ req.args | tojson(indent=2) }}</pre>
-        </div>
-      {% endfor %}
-      <form action="/runs/{{ run.run_id }}/decide" method="post">
-        <div class="field">
-          <label for="edited_args">Args editados (JSON)</label>
-          <textarea id="edited_args" name="edited_args" rows="8">{{ action_requests[0].args | tojson(indent=2) if action_requests else "" }}</textarea>
-          <p class="field__hint">Solo se usa si tocás "Editar y aprobar".</p>
-        </div>
-
-        <div class="field">
-          <label for="reject_message">Mensaje de rechazo</label>
-          <input type="text" id="reject_message" name="reject_message" placeholder="Por qué se rechaza">
-          <p class="field__hint">Solo se usa si tocás "Rechazar".</p>
-        </div>
-
-        <div class="actions">
-          <button type="submit" name="decision_type" value="approve" class="btn btn--primary">✓ Aprobar tal cual</button>
-          <button type="submit" name="decision_type" value="edit" class="btn btn--secondary">✎ Editar y aprobar</button>
-          <button type="submit" name="decision_type" value="reject" class="btn btn--danger">✗ Rechazar</button>
-        </div>
+    {% if run.status in ("running", "error") %}
+      <form action="/runs/{{ run.run_id }}/resume" method="post" style="display:inline">
+        <button type="submit" class="btn btn--secondary btn--small" title="Retoma desde el checkpoint de LangGraph sin perder nada">↺ Retomar</button>
       </form>
-    </section>
-  {% elif run.status == "done" %}
-    <section class="card card--done">
-      <h3>✅ Resultado final</h3>
-      <pre>{{ run.final_message }}</pre>
-    </section>
-  {% elif run.status == "error" %}
-    <section class="card card--error">
-      <h3>⚠️ Error</h3>
-      <pre>{{ run.error }}</pre>
-    </section>
-  {% else %}
-    <section class="card card--running">
-      <span class="spinner" aria-hidden="true"></span>
-      <p>Corriendo... esta pantalla se refresca sola cuando cambia de estado.</p>
-    </section>
+    {% endif %}
+  </div>
+</section>
+
+{# ── Diagrama de pipeline ─────────────────────────────────────────────────── #}
+<div class="pipeline-wrap">
+  <div class="pipeline">
+    {% for node in pipeline_nodes %}
+      <div class="pnode pnode--{{ node.status }}" title="{{ node.sublabel }}">
+        {% if node.status == "active" %}
+          <div class="pnode__pulse"></div>
+        {% endif %}
+        <div class="pnode__icon">{{ node.icon }}</div>
+        <div class="pnode__name">{{ node.label }}</div>
+        <div class="pnode__sub">{{ node.sublabel }}</div>
+        {% if node.stat %}
+          <div class="pnode__stat">{{ node.stat }}</div>
+        {% endif %}
+        {% if node.status == "done" %}
+          <div class="pnode__check">✓</div>
+        {% endif %}
+      </div>
+      {% if not loop.last %}
+        <div class="pipeline__arrow {% if loop.index0 < (pipeline_nodes | length - 1) and pipeline_nodes[loop.index0 + 1].status != 'pending' %}pipeline__arrow--lit{% endif %}">▶</div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+{# ── Anomalías ────────────────────────────────────────────────────────────── #}
+{% if progress.anomalies %}
+  <div class="anomaly-bar">
+    {% for a in progress.anomalies %}
+      <div class="anomaly anomaly--{{ a.severity }}">
+        <strong>{{ a.stage }}</strong> — {{ a.message }}
+        <span class="anomaly__action">→ {{ a.recommended_action }}</span>
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}
+
+{# ── Revisión humana ──────────────────────────────────────────────────────── #}
+{% if run.status == "waiting_human" %}
+  <section class="card card--review">
+    <h3>✋ Revisión humana requerida</h3>
+    <p class="card__lede">El agente de bibliografía propone los siguientes textos. Aprobá, editá los argumentos o rechazá para que busque de nuevo.</p>
+    {% for req in action_requests %}
+      <div class="tool-call">
+        <div class="tool-call__bar">
+          <span>Tool call</span>
+          <code>{{ req.name }}</code>
+        </div>
+        {% if req.name == "propose_candidate_texts" and req.args.candidates %}
+          <div class="candidate-list">
+            {% for c in req.args.candidates %}
+              <div class="candidate-card">
+                <div class="candidate-card__meta">
+                  <strong>{{ c.title or c.document_id }}</strong>
+                  <code>{{ c.document_id }}</code>
+                  <a href="{{ c.source_url }}" target="_blank" rel="noopener">{{ c.source_url }}</a>
+                </div>
+                {% if c.preview %}
+                  <blockquote class="candidate-card__preview">{{ c.preview }}</blockquote>
+                {% else %}
+                  <p class="candidate-card__no-preview">Sin preview — aprobá solo si conocés esta fuente.</p>
+                {% endif %}
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
+        <pre>{{ req.args | tojson(indent=2) }}</pre>
+      </div>
+    {% endfor %}
+    <form action="/runs/{{ run.run_id }}/decide" method="post">
+      <div class="field">
+        <label for="edited_args">Args editados (JSON)</label>
+        <textarea id="edited_args" name="edited_args" rows="8">{{ action_requests[0].args | tojson(indent=2) if action_requests else "" }}</textarea>
+        <p class="field__hint">Solo se usa si tocás "Editar y aprobar".</p>
+      </div>
+      <div class="field">
+        <label for="reject_message">Mensaje de rechazo</label>
+        <input type="text" id="reject_message" name="reject_message" placeholder="Por qué se rechaza">
+        <p class="field__hint">Solo se usa si tocás "Rechazar".</p>
+      </div>
+      <div class="actions">
+        <button type="submit" name="decision_type" value="approve" class="btn btn--primary">✓ Aprobar tal cual</button>
+        <button type="submit" name="decision_type" value="edit" class="btn btn--secondary">✎ Editar y aprobar</button>
+        <button type="submit" name="decision_type" value="reject" class="btn btn--danger">✗ Rechazar</button>
+      </div>
+    </form>
+  </section>
+{% elif run.status == "done" %}
+  <section class="card card--done">
+    <h3>✅ Pipeline completado</h3>
+    <pre>{{ run.final_message }}</pre>
+  </section>
+{% elif run.status == "error" %}
+  <section class="card card--error">
+    <h3>⚠️ Error</h3>
+    <pre>{{ run.error }}</pre>
+  </section>
+{% else %}
+  <section class="card card--running">
+    <span class="spinner" aria-hidden="true"></span>
+    {% if run.status_detail %}
+      <p class="running-detail">{{ run.status_detail }}</p>
+    {% else %}
+      <p>Pipeline corriendo… la página se actualiza sola cada vez que un agente escribe un artifact.</p>
+    {% endif %}
+  </section>
+{% endif %}
+
+{# ── Stage detail cards ───────────────────────────────────────────────────── #}
+<div class="stage-details">
+
+  {# Bibliografía #}
+  {% if progress.bibliography.done %}
+  <div class="stage-card stage-card--done">
+    <h3 class="stage-card__title">
+      <span class="stage-card__icon">🔎</span> Búsqueda — bibliography_agent
+      <span class="stage-chip stage-chip--done">✓ {{ progress.bibliography.n_candidates }} textos</span>
+    </h3>
+    <ul class="candidate-summary">
+      {% for c in progress.bibliography.candidates %}
+        <li class="candidate-summary__item">
+          <strong>{{ c.title or c.document_id }}</strong>
+          <code class="candidate-summary__id">{{ c.document_id }}</code>
+          <a href="{{ c.source_url }}" target="_blank" rel="noopener" class="candidate-summary__url">{{ c.source_url }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
   {% endif %}
 
-  {% if results %}
-    <section class="card card--results">
-      <h3>🎯 Resultado de MIA (recalculado desde los artifacts en disco)</h3>
-      <p class="results-summary">
-        Probabilidad de membership del autor:
-        <strong>{{ "%.3f" | format(results.author_probability) if results.author_probability is not none else "—" }}</strong>
-        <span class="results-summary__n">({{ results.n_texts_scored }}/{{ results.n_texts_total }} textos puntuados)</span>
-      </p>
-      {% for text in results.texts %}
-        <div class="results-text">
-          <h4>
-            <code>{{ text.document_id }}</code> —
-            {{ "%.3f" | format(text.text_probability) if text.text_probability is not none else "—" }}
-            <span class="results-summary__n">({{ text.n_chunks_scored }}/{{ text.n_chunks_total }} chunks)</span>
-          </h4>
+  {# Curación: Autoría #}
+  {% if progress.authorship.total > 0 %}
+  <div class="stage-card {% if active_stage == 'authorship' %}stage-card--active{% else %}stage-card--done{% endif %}">
+    <h3 class="stage-card__title">
+      <span class="stage-card__icon">👤</span> Autoría — curator_agent
+      <span class="stage-chip {% if active_stage == 'authorship' %}stage-chip--active{% else %}stage-chip--done{% endif %}">
+        {{ progress.authorship.keep }} keep · {{ progress.authorship.drop }} drop
+        {% if progress.authorship.review %} · {{ progress.authorship.review }} revisar{% endif %}
+      </span>
+    </h3>
+    <p class="stage-card__desc">El agente lee una muestra de chunks (hasta 5, saltando boilerplate) y juzga si el texto es prosa original del autor.</p>
+    <div class="verdict-list">
+      {% for v in progress.authorship.verdicts %}
+        <div class="verdict verdict--{{ v.decision }}">
+          <div class="verdict__header">
+            <span class="verdict__doc">{{ v.document_id }}</span>
+            <span class="verdict__badge verdict__badge--{{ v.decision }}">
+              {% if v.decision == "keep" %}✅ keep
+              {% elif v.decision == "needs_human_review" %}⚠️ revisar
+              {% else %}❌ drop{% endif %}
+              · conf {{ "%.0f"|format(v.confidence * 100) }}%
+            </span>
+            {% if v.text_type %}
+              <span class="verdict__type">{{ v.text_type }}</span>
+            {% endif %}
+          </div>
+          {% if v.reasoning %}
+            <p class="verdict__reason">{{ v.reasoning }}</p>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  {# Curación: Voz #}
+  {% if progress.voice.total > 0 %}
+  <div class="stage-card {% if active_stage == 'voice' %}stage-card--active{% else %}stage-card--done{% endif %}">
+    <h3 class="stage-card__title">
+      <span class="stage-card__icon">🎭</span> Voz característica — curator_agent
+      <span class="stage-chip {% if active_stage == 'voice' %}stage-chip--active{% else %}stage-chip--done{% endif %}">
+        {{ progress.voice.keep }}/{{ progress.voice.target }} chunks objetivo
+      </span>
+    </h3>
+    <p class="stage-card__desc">Cada chunk recibe un score de distintividad (0–1). Solo pasan los que superan {{ "%.0f"|format(0.55 * 100) }}% y no son boilerplate.</p>
+    {% for doc_id, verdicts in progress.voice.by_doc.items() %}
+      {% set kept = verdicts | selectattr("decision", "equalto", "keep") | list | length %}
+      {% set total_v = verdicts | length %}
+      <div class="doc-voice">
+        <div class="doc-voice__header">
+          <span class="doc-voice__name">{{ doc_id }}</span>
+          <span class="doc-voice__count">{{ kept }}/{{ total_v }} keep</span>
+        </div>
+        <div class="chunk-grid">
+          {% for v in verdicts %}
+            {% set dist = v.distinctiveness if v.distinctiveness is defined else 0 %}
+            <div class="cdot cdot--{{ v.decision }}"
+                 title="{{ v.chunk_id }}&#10;{{ 'distinctiveness: %.2f' | format(dist) }}&#10;{{ v.reasoning[:120] if v.reasoning else '' }}">
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {# SAGE #}
+  {% if progress.sage.done > 0 %}
+  {% set sage_pct = (progress.sage.done / progress.sage.target * 100) | int if progress.sage.target else 0 %}
+  <div class="stage-card {% if active_stage == 'sage' %}stage-card--active{% else %}stage-card--done{% endif %}">
+    <h3 class="stage-card__title">
+      <span class="stage-card__icon">✂️</span> SAGE — parafraseo + QA
+      <span class="stage-chip {% if active_stage == 'sage' %}stage-chip--active{% else %}stage-chip--done{% endif %}">
+        {{ progress.sage.done }}/{{ progress.sage.target }}
+      </span>
+    </h3>
+    <p class="stage-card__desc">SAGE genera {{ 4 }} paráfrasis por chunk (T5 + Gemma-2B/SPS) y descarta las que no pasan el umbral de calidad (SPS ≥ 0.7, length_ratio ≥ 0.75). DE-COP necesita ≥ 3 candidatos por chunk.</p>
+    <div class="method-progress">
+      <div class="prog-bar">
+        <div class="prog-bar__fill" style="width: {{ sage_pct }}%"></div>
+      </div>
+      <div class="method-stats">
+        {% if progress.sage.passed %}<span class="stat--good">✅ {{ progress.sage.passed }} pasaron QA</span>{% endif %}
+        {% if progress.sage.failed %}<span class="stat--warn">⚠️ {{ progress.sage.failed }} descartados</span>{% endif %}
+        {% if progress.sage.target and progress.sage.done < progress.sage.target %}
+          <span class="stat--soft">{{ progress.sage.target - progress.sage.done }} pendientes</span>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  {# MIA Scoring #}
+  {% if progress.mia.n_scored > 0 %}
+  {% set mia_total = progress.mia.target if progress.mia.target else 1 %}
+  <div class="stage-card {% if active_stage == 'mia' %}stage-card--active{% else %}stage-card--done{% endif %}">
+    <h3 class="stage-card__title">
+      <span class="stage-card__icon">📊</span> Scoring MIA — mia_agent
+      <span class="stage-chip {% if active_stage == 'mia' %}stage-chip--active{% else %}stage-chip--done{% endif %}">
+        {{ progress.mia.n_scored }}/{{ progress.mia.target }} chunks
+      </span>
+    </h3>
+    <p class="stage-card__desc">Cada método compara el chunk original con sus paráfrasis (DE-COP) o con la continuación del modelo target (DUALTEST) para inferir membership.</p>
+    <div class="method-list">
+      <div class="method-row">
+        <div class="method-row__info">
+          <span class="method-name">DE-COP</span>
+          <span class="method-desc">permutation-based · necesita ≥ 3 paráfrasis</span>
+        </div>
+        <div class="prog-bar">
+          <div class="prog-bar__fill" style="width: {{ (progress.mia.decop_scored / mia_total * 100) | int }}%"></div>
+        </div>
+        <span class="method-count">
+          {{ progress.mia.decop_scored }}/{{ progress.mia.target }}
+          {% if progress.mia.decop_skipped %}
+            <span class="stat--soft">({{ progress.mia.decop_skipped }} skip)</span>
+          {% endif %}
+        </span>
+      </div>
+      <div class="method-row">
+        <div class="method-row__info">
+          <span class="method-name">DUALTEST</span>
+          <span class="method-desc">run-length + edit-similarity</span>
+        </div>
+        <div class="prog-bar">
+          <div class="prog-bar__fill" style="width: {{ (progress.mia.dualtest_scored / mia_total * 100) | int }}%"></div>
+        </div>
+        <span class="method-count">
+          {{ progress.mia.dualtest_scored }}/{{ progress.mia.target }}
+          {% if progress.mia.dualtest_skipped %}
+            <span class="stat--soft">({{ progress.mia.dualtest_skipped }} skip)</span>
+          {% endif %}
+        </span>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+</div>{# /stage-details #}
+
+{# ── Resultado MIA ────────────────────────────────────────────────────────── #}
+{% if results %}
+  <section class="card card--results">
+    <h3>🎯 Resultado del ensemble</h3>
+    <div class="results-hero">
+      <div class="results-prob">
+        <span class="results-prob__label">Probabilidad de membership</span>
+        <span class="results-prob__value">{{ "%.1f"|format(results.author_probability * 100) if results.author_probability is not none else "—" }}%</span>
+        <span class="results-prob__sub">{{ results.n_texts_scored }}/{{ results.n_texts_total }} textos puntuados</span>
+      </div>
+    </div>
+    {% for text in results.texts %}
+      <div class="results-text">
+        <h4>
+          <code>{{ text.document_id }}</code>
+          <span class="results-text__prob">{{ "%.3f"|format(text.text_probability) if text.text_probability is not none else "—" }}</span>
+          <span class="results-summary__n">{{ text.n_chunks_scored }}/{{ text.n_chunks_total }} chunks</span>
+        </h4>
+        <div class="table-wrap">
           <table class="results-table">
             <thead>
-              <tr>
-                <th>chunk</th><th>final</th><th>DE-COP</th><th>SiMIA</th><th>DUALTEST</th><th>motivo</th>
-              </tr>
+              <tr><th>chunk</th><th>final</th><th>DE-COP</th><th>SiMIA</th><th>DUALTEST</th><th>motivo</th></tr>
             </thead>
             <tbody>
               {% for chunk in text.chunks %}
                 <tr>
                   <td><code>{{ chunk.chunk_id }}</code></td>
-                  <td>{{ "%.3f" | format(chunk.final_probability) if chunk.final_probability is not none else "—" }}</td>
-                  <td>{{ "%.3f" | format(chunk.per_method.decop.normalized) if "decop" in chunk.per_method else "—" }}</td>
-                  <td>{{ "%.3f" | format(chunk.per_method.simia.normalized) if "simia" in chunk.per_method else "—" }}</td>
-                  <td>{{ "%.3f" | format(chunk.per_method.dualtest.normalized) if "dualtest" in chunk.per_method else "—" }}</td>
+                  <td><strong>{{ "%.3f"|format(chunk.final_probability) if chunk.final_probability is not none else "—" }}</strong></td>
+                  <td>{{ "%.3f"|format(chunk.per_method.decop.normalized) if "decop" in chunk.per_method else "—" }}</td>
+                  <td>{{ "%.3f"|format(chunk.per_method.simia.normalized) if "simia" in chunk.per_method else "—" }}</td>
+                  <td>{{ "%.3f"|format(chunk.per_method.dualtest.normalized) if "dualtest" in chunk.per_method else "—" }}</td>
                   <td class="results-table__reason">{{ chunk.reason or "" }}</td>
                 </tr>
               {% endfor %}
             </tbody>
           </table>
         </div>
-      {% endfor %}
-    </section>
-  {% endif %}
-
-  <section class="card card--artifacts">
-    <h3>🗂️ Artifacts en <code>runs/{{ run.run_id }}/</code></h3>
-    {% if artifacts %}
-      <ul class="artifact-list">
-        {% for stage, files in artifacts.items() %}
-          <li><strong>{{ stage }}</strong><span class="artifact-list__files">{{ files | join(", ") }}</span></li>
-        {% endfor %}
-      </ul>
-    {% else %}
-      <p class="empty-state">Todavía no se escribió nada.</p>
-    {% endif %}
+      </div>
+    {% endfor %}
   </section>
+{% endif %}
 
-  {% if run.status in ("running", "waiting_human") %}
-    <script>
-      new EventSource("/runs/{{ run.run_id }}/stream").onmessage = () => location.reload();
-    </script>
+{# ── Timeline de actividad ────────────────────────────────────────────────── #}
+{% if progress.timeline %}
+  <section class="card card--timeline">
+    <h3>📋 Actividad reciente del pipeline</h3>
+    <ul class="timeline">
+      {% for entry in progress.timeline %}
+        <li class="timeline-entry tl--{{ entry.stage }}">
+          <span class="tl__stage">{{ entry.stage }}</span>
+          <span class="tl__label">{{ entry.label }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endif %}
+
+{# ── Artifacts (colapsable) ───────────────────────────────────────────────── #}
+<details class="card card--artifacts">
+  <summary>🗂️ Artifacts en disco — <code>runs/{{ run.run_id }}/</code></summary>
+  {% if artifacts %}
+    <ul class="artifact-list">
+      {% for stage, files in artifacts.items() %}
+        <li><strong>{{ stage }}</strong><span class="artifact-list__files">{{ files | join(", ") }}</span></li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p class="empty-state">Todavía no se escribió nada.</p>
   {% endif %}
+</details>
+
+{% if run.status in ("running", "waiting_human") %}
+  <script>
+    // Refresca la página cada vez que el server notifica un cambio
+    // (ya sea cambio de status o nuevo artifact escrito en disco).
+    var es = new EventSource("/runs/{{ run.run_id }}/stream");
+    es.onmessage = function() { location.reload(); };
+    es.onerror = function() { es.close(); setTimeout(function() { location.reload(); }, 5000); };
+    // Fallback: si no llega ningún evento real en 60s, recargar igual
+    // (cubre el caso en que el SSE está vivo pero el servidor no emitió nada)
+    var _reloadTimer = setTimeout(function() { location.reload(); }, 60000);
+    es.addEventListener("message", function() { clearTimeout(_reloadTimer); _reloadTimer = setTimeout(function() { location.reload(); }, 60000); });
+  </script>
+{% endif %}
+
 {% endblock %}

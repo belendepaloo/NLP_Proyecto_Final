@@ -49,7 +49,7 @@ class Settings(BaseSettings):
     # llamada es una estimacion (no se sabe cuanto va a generar el modelo todavia).
     # Tope en $15.00 (usuario agrego $15 de credito nuevo y pidio el tope exacto en
     # ese valor, sin margen adicional esta vez).
-    agent_model_spend_cap_usd: float = 40.0
+    agent_model_spend_cap_usd: float = 60.0
 
     # Lista de keys de Groq separadas por coma (GROQ_API_KEYS=key1,key2,key3), para
     # paralelizar con un pool de clientes (mia_common.target_client.TargetClientPool)
@@ -99,8 +99,8 @@ class Settings(BaseSettings):
     # (5) -- vigilar agent_model_spend_cap_usd. curator_agent sigue pidiendo de a poco
     # (un batch chico, despues de a uno mas si algo se descarta) hasta llegar a este
     # numero, no juzga el documento entero de una.
-    curator_target_chunks_per_text: int = 20
-    curator_initial_batch_size: int = 21  # target + margen chico, para no tener que pedir de a uno desde el principio
+    curator_target_chunks_per_text: int = 10
+    curator_initial_batch_size: int = 11  # target + margen chico, para no tener que pedir de a uno desde el principio
 
     # DUALTEST contra un target sin tokenizer (API): split_by_words necesita
     # prefijo+continuacion en PALABRAS que entren dentro de un chunk de ~128 tokens
