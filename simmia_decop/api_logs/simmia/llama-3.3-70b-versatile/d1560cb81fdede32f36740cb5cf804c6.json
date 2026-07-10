@@ -1,0 +1,18 @@
+{
+  "query_id": "d1560cb81fdede32f36740cb5cf804c6",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0064",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 13,
+  "prefix": "As Noah's red nose grew redder with anger, and as he crossed the",
+  "target_word": "road",
+  "sample_idx": 0,
+  "generated_text": "room",
+  "generated_first_word": "room",
+  "similarity": 0.6889500617980957,
+  "timestamp": "2026-06-27 02:15:51"
+}

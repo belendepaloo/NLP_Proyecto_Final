@@ -1,0 +1,18 @@
+{
+  "query_id": "ad83212161383e436cd7b2915e3c705a",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0123",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 17,
+  "prefix": "Natalie followed, smiling and thanking people who congratulated her as she passed. When they reached a quiet",
+  "target_word": "corner",
+  "sample_idx": 1,
+  "generated_text": "spot",
+  "generated_first_word": "spot",
+  "similarity": 0.7495084404945374,
+  "timestamp": "2026-06-27 17:15:35"
+}

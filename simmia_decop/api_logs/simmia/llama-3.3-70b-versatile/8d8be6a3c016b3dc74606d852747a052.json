@@ -1,0 +1,18 @@
+{
+  "query_id": "8d8be6a3c016b3dc74606d852747a052",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0181",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 11,
+  "prefix": "But when he had drawn forth, as he hoped, the armies",
+  "target_word": "of",
+  "sample_idx": 2,
+  "generated_text": "of",
+  "generated_first_word": "of",
+  "similarity": 1.0,
+  "timestamp": "2026-06-27 19:23:10"
+}

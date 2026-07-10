@@ -1,0 +1,18 @@
+{
+  "query_id": "a4ada3b7cd761dc0f556b3306d1c647a",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0040",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "At that point, the mother came",
+  "target_word": "in",
+  "sample_idx": 2,
+  "generated_text": "into",
+  "generated_first_word": "into",
+  "similarity": 0.8804168701171875,
+  "timestamp": "2026-06-27 00:22:43"
+}

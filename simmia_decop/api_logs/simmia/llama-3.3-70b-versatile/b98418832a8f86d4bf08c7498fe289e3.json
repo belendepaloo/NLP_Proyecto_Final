@@ -1,0 +1,18 @@
+{
+  "query_id": "b98418832a8f86d4bf08c7498fe289e3",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0149",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Not only did there seem",
+  "target_word": "to",
+  "sample_idx": 2,
+  "generated_text": "to",
+  "generated_first_word": "to",
+  "similarity": 1.0,
+  "timestamp": "2026-06-27 18:12:03"
+}

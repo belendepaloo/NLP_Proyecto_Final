@@ -1,0 +1,18 @@
+{
+  "query_id": "e10300ef35b0b730bd982c379c8c1369",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0149",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "Not only did there seem to lurk in",
+  "target_word": "it",
+  "sample_idx": 0,
+  "generated_text": "every",
+  "generated_first_word": "every",
+  "similarity": 0.6764901280403137,
+  "timestamp": "2026-06-27 18:12:20"
+}

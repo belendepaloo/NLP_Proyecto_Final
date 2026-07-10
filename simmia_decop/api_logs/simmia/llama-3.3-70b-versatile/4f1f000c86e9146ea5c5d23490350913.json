@@ -1,0 +1,18 @@
+{
+  "query_id": "4f1f000c86e9146ea5c5d23490350913",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0109",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 19,
+  "prefix": "Part love story, part thriller, this novel kept me entranced until the very last page. A warm, glorious, and",
+  "target_word": "exciting",
+  "sample_idx": 2,
+  "generated_text": "sunny summer",
+  "generated_first_word": "sunny",
+  "similarity": 0.6428745985031128,
+  "timestamp": "2026-06-27 16:44:50"
+}

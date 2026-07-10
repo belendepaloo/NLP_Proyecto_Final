@@ -1,0 +1,18 @@
+{
+  "query_id": "cd68bd9cdfc031abdb8e811cfb66076d",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0032",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "Even as the first shadows were felt in Mirkwood there appeared in the west of Middle-earth the Istari,",
+  "target_word": "whom",
+  "sample_idx": 1,
+  "generated_text": "powerful",
+  "generated_first_word": "powerful",
+  "similarity": 0.6181977987289429,
+  "timestamp": "2026-06-27 00:05:56"
+}

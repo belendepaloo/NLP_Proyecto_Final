@@ -1,0 +1,18 @@
+{
+  "query_id": "1866244e8577bcd359ac8198ab2a7f4f",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0107",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Still it became in a manner",
+  "target_word": "necessary.",
+  "sample_idx": 1,
+  "generated_text": "of speaking",
+  "generated_first_word": "of",
+  "similarity": 0.6732860803604126,
+  "timestamp": "2026-06-27 16:38:51"
+}

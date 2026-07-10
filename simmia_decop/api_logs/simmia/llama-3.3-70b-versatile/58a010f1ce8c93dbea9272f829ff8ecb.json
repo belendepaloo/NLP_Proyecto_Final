@@ -1,0 +1,18 @@
+{
+  "query_id": "58a010f1ce8c93dbea9272f829ff8ecb",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0105",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "And Peter was",
+  "target_word": "nothing",
+  "sample_idx": 0,
+  "generated_text": "very",
+  "generated_first_word": "very",
+  "similarity": 0.643898606300354,
+  "timestamp": "2026-06-27 16:34:03"
+}

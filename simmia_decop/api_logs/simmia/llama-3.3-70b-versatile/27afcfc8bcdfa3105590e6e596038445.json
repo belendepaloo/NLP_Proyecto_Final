@@ -1,0 +1,18 @@
+{
+  "query_id": "27afcfc8bcdfa3105590e6e596038445",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0084",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Big Jim came by",
+  "target_word": "his",
+  "sample_idx": 1,
+  "generated_text": "yesterday",
+  "generated_first_word": "yesterday",
+  "similarity": 0.6264979839324951,
+  "timestamp": "2026-06-27 15:47:36"
+}

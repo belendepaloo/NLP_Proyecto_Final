@@ -1,0 +1,18 @@
+{
+  "query_id": "d704e7f47f467ba5445c18b01dd684fc",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0098",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 15,
+  "prefix": "\"Mother is not an old maid,\" said his virgin sister with pinched lips. He felt",
+  "target_word": "like",
+  "sample_idx": 1,
+  "generated_text": "a pang",
+  "generated_first_word": "a",
+  "similarity": 0.624438464641571,
+  "timestamp": "2026-06-27 16:19:58"
+}

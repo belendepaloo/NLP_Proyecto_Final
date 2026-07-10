@@ -1,0 +1,18 @@
+{
+  "query_id": "77e78a06a58fdb3395fe1029de62db24",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0080",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Harry heard from Hogwarts one",
+  "target_word": "sunny",
+  "sample_idx": 1,
+  "generated_text": "day",
+  "generated_first_word": "day",
+  "similarity": 0.6949752569198608,
+  "timestamp": "2026-06-27 15:38:55"
+}

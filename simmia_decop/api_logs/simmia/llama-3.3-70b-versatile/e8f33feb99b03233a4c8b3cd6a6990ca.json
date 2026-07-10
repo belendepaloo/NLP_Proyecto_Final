@@ -1,0 +1,18 @@
+{
+  "query_id": "e8f33feb99b03233a4c8b3cd6a6990ca",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0014",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "And Mom will def get over this,",
+  "target_word": "eventually.",
+  "sample_idx": 1,
+  "generated_text": "eventually,",
+  "generated_first_word": "eventually,",
+  "similarity": 0.9567834734916687,
+  "timestamp": "2026-06-26 23:22:56"
+}

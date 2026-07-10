@@ -1,0 +1,18 @@
+{
+  "query_id": "25d0f16b6d2bf22aa5af40c9b41a1830",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0103",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Fell",
+  "target_word": "in",
+  "sample_idx": 0,
+  "generated_text": "asleep",
+  "generated_first_word": "asleep",
+  "similarity": 0.6673200726509094,
+  "timestamp": "2026-06-27 16:29:24"
+}

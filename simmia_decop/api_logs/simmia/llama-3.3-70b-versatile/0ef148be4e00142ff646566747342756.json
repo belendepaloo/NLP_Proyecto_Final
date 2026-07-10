@@ -1,0 +1,18 @@
+{
+  "query_id": "0ef148be4e00142ff646566747342756",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0068",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "In Oldspeak it is called, quite frankly,",
+  "target_word": "'reality",
+  "sample_idx": 2,
+  "generated_text": "warfare",
+  "generated_first_word": "warfare",
+  "similarity": 0.6460849046707153,
+  "timestamp": "2026-06-27 02:27:14"
+}

@@ -1,0 +1,18 @@
+{
+  "query_id": "3b2e9e1ef6aa0fed0d6f33734225b04c",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0027",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "I never say",
+  "target_word": "to",
+  "sample_idx": 2,
+  "generated_text": "no",
+  "generated_first_word": "no",
+  "similarity": 0.6622028350830078,
+  "timestamp": "2026-06-26 23:52:29"
+}

@@ -1,0 +1,18 @@
+{
+  "query_id": "27ec5fabaea3efe369ea2b416495cf29",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0078",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Together, they proclaimed that",
+  "target_word": "the",
+  "sample_idx": 0,
+  "generated_text": "their",
+  "generated_first_word": "their",
+  "similarity": 0.8074193000793457,
+  "timestamp": "2026-06-27 02:49:19"
+}

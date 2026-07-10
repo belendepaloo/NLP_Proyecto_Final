@@ -1,0 +1,18 @@
+{
+  "query_id": "86b1b3367b47cfff8419482e6a7ef519",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0153",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 16,
+  "prefix": "“So, Harry,” said Lockhart, while Hermione folded the note with fumbling fingers and slipped it into",
+  "target_word": "her",
+  "sample_idx": 1,
+  "generated_text": "her",
+  "generated_first_word": "her",
+  "similarity": 1.0,
+  "timestamp": "2026-06-27 18:22:11"
+}

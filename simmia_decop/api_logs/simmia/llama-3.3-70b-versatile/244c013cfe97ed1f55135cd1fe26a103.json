@@ -1,0 +1,18 @@
+{
+  "query_id": "244c013cfe97ed1f55135cd1fe26a103",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0024",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Side out o' t'",
+  "target_word": "gate",
+  "sample_idx": 1,
+  "generated_text": "road",
+  "generated_first_word": "road",
+  "similarity": 0.715640664100647,
+  "timestamp": "2026-06-26 23:45:47"
+}

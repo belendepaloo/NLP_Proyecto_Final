@@ -1,0 +1,18 @@
+{
+  "query_id": "ee2b6a38e85ff9be23e347afd900dbfe",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0061",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Promiscuity",
+  "target_word": "went",
+  "sample_idx": 0,
+  "generated_text": "is",
+  "generated_first_word": "is",
+  "similarity": 0.6680368185043335,
+  "timestamp": "2026-06-27 02:07:41"
+}

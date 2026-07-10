@@ -1,0 +1,18 @@
+{
+  "query_id": "f6ac26c69b2bbe9d6dfaf0a2b2bfabb2",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0183",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 14,
+  "prefix": "Im nineteen and not married. And certainly not getting married anytime soon, after her",
+  "target_word": "last",
+  "sample_idx": 0,
+  "generated_text": "death,",
+  "generated_first_word": "death,",
+  "similarity": 0.7055837512016296,
+  "timestamp": "2026-06-27 19:27:50"
+}

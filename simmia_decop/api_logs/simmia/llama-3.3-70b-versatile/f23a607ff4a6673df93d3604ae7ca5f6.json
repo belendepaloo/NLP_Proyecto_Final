@@ -1,0 +1,18 @@
+{
+  "query_id": "f23a607ff4a6673df93d3604ae7ca5f6",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0079",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "This version of myselfI dont",
+  "target_word": "hate",
+  "sample_idx": 1,
+  "generated_text": "really",
+  "generated_first_word": "really",
+  "similarity": 0.6255282163619995,
+  "timestamp": "2026-06-27 02:51:44"
+}

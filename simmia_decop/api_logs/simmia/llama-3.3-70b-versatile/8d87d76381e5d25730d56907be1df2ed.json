@@ -1,0 +1,18 @@
+{
+  "query_id": "8d87d76381e5d25730d56907be1df2ed",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0134",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "Then all listened while Elrond in his clear voice",
+  "target_word": "spoke",
+  "sample_idx": 0,
+  "generated_text": "began",
+  "generated_first_word": "began",
+  "similarity": 0.6907082200050354,
+  "timestamp": "2026-06-27 17:39:03"
+}

@@ -1,0 +1,18 @@
+{
+  "query_id": "90b3e9ccb8792c9177717e0631b32766",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0056",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "That guy is so weird, she said",
+  "target_word": "when,",
+  "sample_idx": 0,
+  "generated_text": "to",
+  "generated_first_word": "to",
+  "similarity": 0.6713437438011169,
+  "timestamp": "2026-06-27 01:57:05"
+}

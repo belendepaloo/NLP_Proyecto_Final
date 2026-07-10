@@ -1,0 +1,25 @@
+{
+  "query_id": "0f301543b54b0a403288420536f7b5d0",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0161",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "title": "The Spectacular",
+  "author": "Fiona Davis",
+  "length": "medium",
+  "permutation_index": 2,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Spectacular\" book by Fiona Davis?\nOptions:\nA. However, his personality was transformed after he healed. The once composed, good man became foul-mouthed, irritable, and impetuous following his recovery. This was due to the damage to that specific brain region. It's remarkable he survived at all. \nB. But his character profoundly changed after he recuperated. The previously even-tempered, decent man turned prone to cursing, easily angered, and impulsive subsequent to his recovery. Because that particular brain area was impaired. It's amazing he lived through it.  \nC. But his personality changed drastically. Where he once was an even-keeled, decent man, after his recovery he was prone to swearing, quick to anger, and impulsive. Because that particular part of his brain was damaged? Exactly. Its amazing he lived at all. Peter added pasta to the water once it was boiling, and when it was ready, he spooned it into two bowls, followed by tomato sauce and a sprinkle of basil. Marion carried the bowls over to the dining room table. She had to move some papers to make room, and a familiar grid caught her eye. You do crosswords? she asked.\nD. Though, his disposition altered radically once he convalesced. Where he was once measured, upright, he became given to swearing, irritable, and impulsive after he healed. Since that exact brain part was damaged. It's incredible he endured at all.\nAnswer:",
+  "options": {
+    "A": "However, his personality was transformed after he healed. The once composed, good man became foul-mouthed, irritable, and impetuous following his recovery. This was due to the damage to that specific brain region. It's remarkable he survived at all. ",
+    "B": "But his character profoundly changed after he recuperated. The previously even-tempered, decent man turned prone to cursing, easily angered, and impulsive subsequent to his recovery. Because that particular brain area was impaired. It's amazing he lived through it.  ",
+    "C": "But his personality changed drastically. Where he once was an even-keeled, decent man, after his recovery he was prone to swearing, quick to anger, and impulsive. Because that particular part of his brain was damaged? Exactly. Its amazing he lived at all. Peter added pasta to the water once it was boiling, and when it was ready, he spooned it into two bowls, followed by tomato sauce and a sprinkle of basil. Marion carried the bowls over to the dining room table. She had to move some papers to make room, and a familiar grid caught her eye. You do crosswords? she asked.",
+    "D": "Though, his disposition altered radically once he convalesced. Where he was once measured, upright, he became given to swearing, irritable, and impulsive after he healed. Since that exact brain part was damaged. It's incredible he endured at all."
+  },
+  "gold_letter": "C",
+  "predicted_letter": "C",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 15:22:57"
+}

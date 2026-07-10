@@ -1,0 +1,18 @@
+{
+  "query_id": "f57fa309785fc7fa12f4a3bc54da9663",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0118",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Ardin Javar was a bear of",
+  "target_word": "a",
+  "sample_idx": 2,
+  "generated_text": "very",
+  "generated_first_word": "very",
+  "similarity": 0.6761415600776672,
+  "timestamp": "2026-06-27 17:03:14"
+}

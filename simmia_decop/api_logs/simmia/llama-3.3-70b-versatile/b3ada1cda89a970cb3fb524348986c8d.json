@@ -1,0 +1,18 @@
+{
+  "query_id": "b3ada1cda89a970cb3fb524348986c8d",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0073",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 16,
+  "prefix": "‘Would it? Would any of you have believed me till now?’ said Strider. ‘I knew nothing",
+  "target_word": "of",
+  "sample_idx": 1,
+  "generated_text": "of",
+  "generated_first_word": "of",
+  "similarity": 1.0,
+  "timestamp": "2026-06-27 02:39:33"
+}

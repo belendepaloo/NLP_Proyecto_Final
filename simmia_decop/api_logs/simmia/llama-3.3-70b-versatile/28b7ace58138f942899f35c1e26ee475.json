@@ -1,0 +1,18 @@
+{
+  "query_id": "28b7ace58138f942899f35c1e26ee475",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0029",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 10,
+  "prefix": "And it wouldnt have been easy to get another. The",
+  "target_word": "corporate",
+  "sample_idx": 0,
+  "generated_text": "job",
+  "generated_first_word": "job",
+  "similarity": 0.7255598306655884,
+  "timestamp": "2026-06-26 23:57:42"
+}

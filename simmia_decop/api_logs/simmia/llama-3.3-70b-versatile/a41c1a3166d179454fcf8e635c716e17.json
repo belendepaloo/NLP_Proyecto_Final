@@ -1,0 +1,18 @@
+{
+  "query_id": "a41c1a3166d179454fcf8e635c716e17",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0135",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Not when Im",
+  "target_word": "finally",
+  "sample_idx": 2,
+  "generated_text": "drinking",
+  "generated_first_word": "drinking",
+  "similarity": 0.6143350005149841,
+  "timestamp": "2026-06-27 17:40:38"
+}

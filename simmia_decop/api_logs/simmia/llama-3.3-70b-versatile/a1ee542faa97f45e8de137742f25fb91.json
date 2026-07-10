@@ -1,0 +1,18 @@
+{
+  "query_id": "a1ee542faa97f45e8de137742f25fb91",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0041",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 11,
+  "prefix": "He still broke into your room, Ethan pointed out. If he",
+  "target_word": "wasnt",
+  "sample_idx": 2,
+  "generated_text": "could do that",
+  "generated_first_word": "could",
+  "similarity": 0.6647148132324219,
+  "timestamp": "2026-06-27 00:49:55"
+}

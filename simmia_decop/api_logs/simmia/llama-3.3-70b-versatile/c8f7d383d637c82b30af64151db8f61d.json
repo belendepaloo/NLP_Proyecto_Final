@@ -1,0 +1,18 @@
+{
+  "query_id": "c8f7d383d637c82b30af64151db8f61d",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0165",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "And high in",
+  "target_word": "the",
+  "sample_idx": 2,
+  "generated_text": "the",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-06-27 18:47:09"
+}

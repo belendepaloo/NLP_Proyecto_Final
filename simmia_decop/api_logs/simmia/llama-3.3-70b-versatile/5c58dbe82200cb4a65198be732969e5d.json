@@ -1,0 +1,18 @@
+{
+  "query_id": "5c58dbe82200cb4a65198be732969e5d",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0113",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 10,
+  "prefix": "Back in New York? Persona non grata. In St. Helena?",
+  "target_word": "Royalty.",
+  "sample_idx": 2,
+  "generated_text": "Hero.",
+  "generated_first_word": "Hero.",
+  "similarity": 0.6475578546524048,
+  "timestamp": "2026-06-27 16:52:36"
+}

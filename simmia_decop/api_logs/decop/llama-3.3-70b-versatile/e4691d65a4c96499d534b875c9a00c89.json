@@ -1,0 +1,25 @@
+{
+  "query_id": "e4691d65a4c96499d534b875c9a00c89",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0153",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "title": "Harry Potter and the Chamber of Secrets",
+  "author": "JK Rowling",
+  "length": "medium",
+  "permutation_index": 5,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Harry Potter and the Chamber of Secrets\" book by JK Rowling?\nOptions:\nA. So, Harry, said Lockhart, while Hermione nervously put the note in her bag. Tomorrow is the first Quidditch match this year, right? Gryffindor versus Slytherin, yes? I hear you're a good player. I was a Seeker too. I was asked to try out for the National Team, but I chose to devote my life to defeating Dark Magic instead. But if you ever want some private lessons, just ask. I'm always glad to share my skills with less talented players...\nB. \"Harry,\" Lockhart said, while Hermione nervously put the note in her bag, \"Tomorrow's the first Quidditch match this season, right? Gryffindor versus Slytherin, yes? I hear you're a good player. I was a Seeker too. They asked me to try out for the National Team, but I chose to devote my life to fighting Dark Magic instead. But if you ever want some private training, just ask. I'm always happy to share my skills with less skilled players...\"\nC. Lockhart said to Harry, as Hermione anxiously stuffed the note into her bag, \"Tomorrow's the start of the Quidditch season, isn't it, Harry? Gryffindor against Slytherin, correct? I understand you're a strong player. I was a Seeker as well. I was requested to try for the National Team, but I preferred to focus my life on eliminating the Dark Forces. However, if you ever desire a bit of private coaching, don't be shy. I'm always pleased to impart my expertise to players with less ability...\"  \nD. “So, Harry,” said Lockhart, while Hermione folded the note with fumbling fingers and slipped it into her bag. “Tomorrow’s the first Quidditch match of the season, I believe? Gryffindor against Slytherin, is it not? I hear you’re a useful player. I was a Seeker, too. I was asked to try for the National Squad, but preferred to dedicate my life to the eradication of the Dark Forces. Still, if ever you feel the need for a little private training, don’t hesitate to ask. Always happy to pass on my expertise to less able players. . . .” \nAnswer:",
+  "options": {
+    "A": "So, Harry, said Lockhart, while Hermione nervously put the note in her bag. Tomorrow is the first Quidditch match this year, right? Gryffindor versus Slytherin, yes? I hear you're a good player. I was a Seeker too. I was asked to try out for the National Team, but I chose to devote my life to defeating Dark Magic instead. But if you ever want some private lessons, just ask. I'm always glad to share my skills with less talented players...",
+    "B": "\"Harry,\" Lockhart said, while Hermione nervously put the note in her bag, \"Tomorrow's the first Quidditch match this season, right? Gryffindor versus Slytherin, yes? I hear you're a good player. I was a Seeker too. They asked me to try out for the National Team, but I chose to devote my life to fighting Dark Magic instead. But if you ever want some private training, just ask. I'm always happy to share my skills with less skilled players...\"",
+    "C": "Lockhart said to Harry, as Hermione anxiously stuffed the note into her bag, \"Tomorrow's the start of the Quidditch season, isn't it, Harry? Gryffindor against Slytherin, correct? I understand you're a strong player. I was a Seeker as well. I was requested to try for the National Team, but I preferred to focus my life on eliminating the Dark Forces. However, if you ever desire a bit of private coaching, don't be shy. I'm always pleased to impart my expertise to players with less ability...\"  ",
+    "D": "“So, Harry,” said Lockhart, while Hermione folded the note with fumbling fingers and slipped it into her bag. “Tomorrow’s the first Quidditch match of the season, I believe? Gryffindor against Slytherin, is it not? I hear you’re a useful player. I was a Seeker, too. I was asked to try for the National Squad, but preferred to dedicate my life to the eradication of the Dark Forces. Still, if ever you feel the need for a little private training, don’t hesitate to ask. Always happy to pass on my expertise to less able players. . . .” "
+  },
+  "gold_letter": "D",
+  "predicted_letter": "B",
+  "is_correct": 0,
+  "timestamp": "2026-06-26 15:21:10"
+}

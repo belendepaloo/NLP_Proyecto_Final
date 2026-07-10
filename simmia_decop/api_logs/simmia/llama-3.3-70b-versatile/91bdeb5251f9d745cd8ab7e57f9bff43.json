@@ -1,0 +1,18 @@
+{
+  "query_id": "91bdeb5251f9d745cd8ab7e57f9bff43",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0034",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Well, hes a lot more",
+  "target_word": "selfless",
+  "sample_idx": 2,
+  "generated_text": "confident",
+  "generated_first_word": "confident",
+  "similarity": 0.6512560248374939,
+  "timestamp": "2026-06-27 00:08:57"
+}

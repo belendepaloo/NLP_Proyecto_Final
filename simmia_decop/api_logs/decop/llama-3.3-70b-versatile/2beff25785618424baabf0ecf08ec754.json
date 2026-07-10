@@ -1,0 +1,25 @@
+{
+  "query_id": "2beff25785618424baabf0ecf08ec754",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0157",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "title": "The Spectacular",
+  "author": "Fiona Davis",
+  "length": "medium",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Spectacular\" book by Fiona Davis?\nOptions:\nA. After Marion shared she broke up with her boyfriend with the flashy car, Peter seemed surprised. She couldn't read his emotions - was it jealousy or relief? Over dessert, which they skipped, the future remained unclear. Marion stopped Peter from getting a taxi, hinting she wanted to spend more time together.\nB. Marion had ended things with the man who owned a flashy car. When Peter asked if she was seeing someone, perhaps with a tinge of jealousy or relief that she was taken, she confirmed she was single. As they declined dessert and left the restaurant, Marion stood in front of Peter before he could hail a taxi, leaving the future uncertain.  \nC. Who knows what the future holds, right? Besides, you have someone waiting for you back home, right? The guy with the flashy car? Was that a touch of jealousy in Peters question? Or was he relieved that it appeared she was already taken? She couldnt tell what he was thinking. No. I broke it off with him. You did? He looked at her with wide eyes. Marion nodded, trying to add a cheery, breezy note to her voice. Of course, like you said, who knows whats ahead, right? Thats true. The waiter came by, asking about dessert. They both declined. Later, outside, Marion stepped in front of him as he tried to hail a cab.\nD. Marion told Peter she was no longer dating the guy with the nice car, though she couldn't decipher his reaction - was it jealous or relieved? When the waiter offered dessert, they said no. Outside, Marion blocked Peter from hailing a cab, implying she wanted to continue their night, not knowing where things may lead.\nAnswer:",
+  "options": {
+    "A": "After Marion shared she broke up with her boyfriend with the flashy car, Peter seemed surprised. She couldn't read his emotions - was it jealousy or relief? Over dessert, which they skipped, the future remained unclear. Marion stopped Peter from getting a taxi, hinting she wanted to spend more time together.",
+    "B": "Marion had ended things with the man who owned a flashy car. When Peter asked if she was seeing someone, perhaps with a tinge of jealousy or relief that she was taken, she confirmed she was single. As they declined dessert and left the restaurant, Marion stood in front of Peter before he could hail a taxi, leaving the future uncertain.  ",
+    "C": "Who knows what the future holds, right? Besides, you have someone waiting for you back home, right? The guy with the flashy car? Was that a touch of jealousy in Peters question? Or was he relieved that it appeared she was already taken? She couldnt tell what he was thinking. No. I broke it off with him. You did? He looked at her with wide eyes. Marion nodded, trying to add a cheery, breezy note to her voice. Of course, like you said, who knows whats ahead, right? Thats true. The waiter came by, asking about dessert. They both declined. Later, outside, Marion stepped in front of him as he tried to hail a cab.",
+    "D": "Marion told Peter she was no longer dating the guy with the nice car, though she couldn't decipher his reaction - was it jealous or relieved? When the waiter offered dessert, they said no. Outside, Marion blocked Peter from hailing a cab, implying she wanted to continue their night, not knowing where things may lead."
+  },
+  "gold_letter": "C",
+  "predicted_letter": "C",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 15:21:57"
+}

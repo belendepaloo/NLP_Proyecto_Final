@@ -1,0 +1,18 @@
+{
+  "query_id": "577c308e8aed26a6d3f2a50ad9522d39",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0047",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "The sun began",
+  "target_word": "its",
+  "sample_idx": 1,
+  "generated_text": "to",
+  "generated_first_word": "to",
+  "similarity": 0.6464604139328003,
+  "timestamp": "2026-06-27 01:02:25"
+}

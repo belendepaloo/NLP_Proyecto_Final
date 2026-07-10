@@ -1,0 +1,18 @@
+{
+  "query_id": "edbb4e7ee684d07568813ebcca7bef16",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0121",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Furtia and I will get her",
+  "target_word": "away.",
+  "sample_idx": 2,
+  "generated_text": "together",
+  "generated_first_word": "together",
+  "similarity": 0.6710600852966309,
+  "timestamp": "2026-06-27 17:09:54"
+}

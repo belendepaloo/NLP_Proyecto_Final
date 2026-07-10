@@ -1,0 +1,18 @@
+{
+  "query_id": "556b24a6b81f99817d33a22631e1e2ef",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0117",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "Frodo looked round. It did look like home. Many of his own favourite things – or Bilbo’s things",
+  "target_word": "(they",
+  "sample_idx": 2,
+  "generated_text": "rather,",
+  "generated_first_word": "rather,",
+  "similarity": 0.6457391381263733,
+  "timestamp": "2026-06-27 17:02:25"
+}

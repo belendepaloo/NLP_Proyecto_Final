@@ -1,0 +1,18 @@
+{
+  "query_id": "f9676848845a4b353ab454c2d7a86efb",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0131",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "In a",
+  "target_word": "chair,",
+  "sample_idx": 2,
+  "generated_text": "moment",
+  "generated_first_word": "moment",
+  "similarity": 0.6542991995811462,
+  "timestamp": "2026-06-27 17:31:38"
+}

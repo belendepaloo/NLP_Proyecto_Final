@@ -1,0 +1,18 @@
+{
+  "query_id": "997628a2a1031a4db06c7f8d2ad1ba52",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0036",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 12,
+  "prefix": "The idea of playing nursemaid didnt appeal, and on top of that,",
+  "target_word": "working",
+  "sample_idx": 1,
+  "generated_text": "there",
+  "generated_first_word": "there",
+  "similarity": 0.662791907787323,
+  "timestamp": "2026-06-27 00:14:19"
+}

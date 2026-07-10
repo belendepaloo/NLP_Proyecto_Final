@@ -1,0 +1,18 @@
+{
+  "query_id": "2b2961c2d1872dbbc82ef0125b72159f",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0075",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Theres",
+  "target_word": "almost",
+  "sample_idx": 1,
+  "generated_text": "a",
+  "generated_first_word": "a",
+  "similarity": 0.6388893127441406,
+  "timestamp": "2026-06-27 02:42:16"
+}

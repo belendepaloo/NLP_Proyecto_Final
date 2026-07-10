@@ -1,0 +1,25 @@
+{
+  "query_id": "f70979295b72d00c97062d6eef9b162b",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0107",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "title": "Wuthering Heights",
+  "author": "Emily Bronte",
+  "length": "medium",
+  "permutation_index": 2,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Wuthering Heights\" book by Emily Bronte?\nOptions:\nA. Again and again Hindley scorned his father while he was nearby, inciting the old man's fury though he could not strike his son. Our curate recommended sending Hindley to college, since he was useless roaming at home. Mr. Earnshaw agreed halfheartedly, saying Hindley was worthless and would never thrive, whether he stayed or left.\nB. Though Hindley repeatedly showed contempt when his father was present, provoking his father's anger, the old man could not bring himself to strike his son. Eventually the curate suggested sending Hindley away to college since he was idle and aimless at home. Mr. Earnshaw agreed reluctantly, believing Hindley would fare no better elsewhere.\nC. Hindley frequently disrespected his father in his presence, enraging the old man though he could not bear to hit his son. The curate proposed sending Hindley to college, as he was wasting his time wandering at home. Mr. Earnshaw consented with a heavy heart, convinced Hindley would fail no matter where he went.\nD. Still it became in a manner necessary. Twice or thrice Hindley's manifestation of scorn, while his father was near, roused the old man to a fury. He seized his stick to strike him, and shook with rage that he could not do it. At last our curate (we had a curate then, who made the living answer by teaching the little Lintons and Earnshaws and farming his bit of land himself) advised that the young man should be sent to college; and Mr. Earnshaw agreed, though with a heavy spirit, for he said, \"Hindley was nought, and would never thrive as where he wandered.\nAnswer:",
+  "options": {
+    "A": "Again and again Hindley scorned his father while he was nearby, inciting the old man's fury though he could not strike his son. Our curate recommended sending Hindley to college, since he was useless roaming at home. Mr. Earnshaw agreed halfheartedly, saying Hindley was worthless and would never thrive, whether he stayed or left.",
+    "B": "Though Hindley repeatedly showed contempt when his father was present, provoking his father's anger, the old man could not bring himself to strike his son. Eventually the curate suggested sending Hindley away to college since he was idle and aimless at home. Mr. Earnshaw agreed reluctantly, believing Hindley would fare no better elsewhere.",
+    "C": "Hindley frequently disrespected his father in his presence, enraging the old man though he could not bear to hit his son. The curate proposed sending Hindley to college, as he was wasting his time wandering at home. Mr. Earnshaw consented with a heavy heart, convinced Hindley would fail no matter where he went.",
+    "D": "Still it became in a manner necessary. Twice or thrice Hindley's manifestation of scorn, while his father was near, roused the old man to a fury. He seized his stick to strike him, and shook with rage that he could not do it. At last our curate (we had a curate then, who made the living answer by teaching the little Lintons and Earnshaws and farming his bit of land himself) advised that the young man should be sent to college; and Mr. Earnshaw agreed, though with a heavy spirit, for he said, \"Hindley was nought, and would never thrive as where he wandered."
+  },
+  "gold_letter": "D",
+  "predicted_letter": "D",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 15:03:01"
+}

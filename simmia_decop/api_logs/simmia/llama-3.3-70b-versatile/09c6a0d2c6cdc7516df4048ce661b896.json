@@ -1,0 +1,18 @@
+{
+  "query_id": "09c6a0d2c6cdc7516df4048ce661b896",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0080",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Harry heard from",
+  "target_word": "Hogwarts",
+  "sample_idx": 2,
+  "generated_text": "his",
+  "generated_first_word": "his",
+  "similarity": 0.5872954726219177,
+  "timestamp": "2026-06-27 15:38:43"
+}

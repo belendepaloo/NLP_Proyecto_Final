@@ -1,0 +1,18 @@
+{
+  "query_id": "277c5553c1209d25ece936a68f8d5df3",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0066",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "No one answered. The noon-bell rang. Still",
+  "target_word": "no",
+  "sample_idx": 1,
+  "generated_text": "no",
+  "generated_first_word": "no",
+  "similarity": 1.0,
+  "timestamp": "2026-06-27 02:22:42"
+}

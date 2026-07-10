@@ -1,0 +1,18 @@
+{
+  "query_id": "3f0c5e146c5c39e58f011ea377bb6935",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0068",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "In Oldspeak it is called, quite frankly, 'reality control'. In Newspeak it is called DOUBLETHINK, though DOUBLETHINK comprises",
+  "target_word": "much",
+  "sample_idx": 0,
+  "generated_text": "many",
+  "generated_first_word": "many",
+  "similarity": 0.7798663377761841,
+  "timestamp": "2026-06-27 02:28:27"
+}

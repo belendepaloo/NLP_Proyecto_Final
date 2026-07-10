@@ -1,0 +1,18 @@
+{
+  "query_id": "05bfa0c08bc0a6f950c7e264ce526fc7",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0052",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "When he’d found his scarlet",
+  "target_word": "team",
+  "sample_idx": 2,
+  "generated_text": "feathered",
+  "generated_first_word": "feathered",
+  "similarity": 0.6373438239097595,
+  "timestamp": "2026-06-27 01:20:42"
+}

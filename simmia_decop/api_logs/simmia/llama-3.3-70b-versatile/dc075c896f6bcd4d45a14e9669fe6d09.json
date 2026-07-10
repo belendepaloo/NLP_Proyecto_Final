@@ -1,0 +1,18 @@
+{
+  "query_id": "dc075c896f6bcd4d45a14e9669fe6d09",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0120",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "At first",
+  "target_word": "Frodo",
+  "sample_idx": 0,
+  "generated_text": "glance,",
+  "generated_first_word": "glance,",
+  "similarity": 0.6319898366928101,
+  "timestamp": "2026-06-27 17:07:09"
+}

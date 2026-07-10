@@ -1,0 +1,18 @@
+{
+  "query_id": "7b287eeb6dbd0bfe9dcb95f2fee4b5a5",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0016",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 17,
+  "prefix": "There he would often wander long, and late would return. Still therefore, after the Long Night, the",
+  "target_word": "light",
+  "sample_idx": 1,
+  "generated_text": "Shadows",
+  "generated_first_word": "Shadows",
+  "similarity": 0.7726213932037354,
+  "timestamp": "2026-06-26 23:28:35"
+}

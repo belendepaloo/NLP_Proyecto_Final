@@ -1,0 +1,18 @@
+{
+  "query_id": "3895eecd1cda5a1b68f4cacf0edfd58c",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0071",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "I did once",
+  "target_word": "before.",
+  "sample_idx": 0,
+  "generated_text": "meet",
+  "generated_first_word": "meet",
+  "similarity": 0.5901925563812256,
+  "timestamp": "2026-06-27 02:33:27"
+}

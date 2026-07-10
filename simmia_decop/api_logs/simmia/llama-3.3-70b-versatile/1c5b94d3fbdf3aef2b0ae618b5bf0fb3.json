@@ -1,0 +1,18 @@
+{
+  "query_id": "1c5b94d3fbdf3aef2b0ae618b5bf0fb3",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0021",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "The men",
+  "target_word": "of",
+  "sample_idx": 1,
+  "generated_text": "were",
+  "generated_first_word": "were",
+  "similarity": 0.7379240989685059,
+  "timestamp": "2026-06-26 23:38:50"
+}

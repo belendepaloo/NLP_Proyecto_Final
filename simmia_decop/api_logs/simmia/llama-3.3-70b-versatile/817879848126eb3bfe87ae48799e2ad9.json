@@ -1,0 +1,18 @@
+{
+  "query_id": "817879848126eb3bfe87ae48799e2ad9",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0070",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "In this way he got his name,",
+  "target_word": "Bor,",
+  "sample_idx": 2,
+  "generated_text": "\"Blackjack",
+  "generated_first_word": "Blackjack",
+  "similarity": 0.6160823702812195,
+  "timestamp": "2026-06-27 02:31:44"
+}

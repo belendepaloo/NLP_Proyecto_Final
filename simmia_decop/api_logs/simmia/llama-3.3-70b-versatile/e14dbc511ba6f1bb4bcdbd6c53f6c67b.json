@@ -1,0 +1,18 @@
+{
+  "query_id": "e14dbc511ba6f1bb4bcdbd6c53f6c67b",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0194",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "‘He’s a crook!’ the",
+  "target_word": "Trunchbull",
+  "sample_idx": 0,
+  "generated_text": "man",
+  "generated_first_word": "man",
+  "similarity": 0.5567088723182678,
+  "timestamp": "2026-06-27 19:50:53"
+}

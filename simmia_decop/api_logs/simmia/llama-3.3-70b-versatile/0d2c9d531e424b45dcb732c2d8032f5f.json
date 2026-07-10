@@ -1,0 +1,18 @@
+{
+  "query_id": "0d2c9d531e424b45dcb732c2d8032f5f",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0158",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "He walked slowly through the market. The merchants were",
+  "target_word": "assembling",
+  "sample_idx": 0,
+  "generated_text": "selling",
+  "generated_first_word": "selling",
+  "similarity": 0.600287914276123,
+  "timestamp": "2026-06-27 18:32:23"
+}

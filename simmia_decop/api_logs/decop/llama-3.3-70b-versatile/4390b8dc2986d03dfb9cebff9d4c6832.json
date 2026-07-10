@@ -1,0 +1,25 @@
+{
+  "query_id": "4390b8dc2986d03dfb9cebff9d4c6832",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0076",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "title": "The Age of Innocence",
+  "author": "Edith Wharton",
+  "length": "medium",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Age of Innocence\" book by Edith Wharton?\nOptions:\nA. Archer bent down and pressed his lips on the little hand that still lay on his. \"Eh--eh--eh! Whose hand did you think you were kissing, young man--your wife's, I hope?\" the old lady snapped out with her mocking cackle; and as he rose to go she called out after him: \"Give her her Granny's love; but you'd better not say anything about our talk.\" XXXI. Archer had been stunned by old Catherine's news. It was only natural that Madame Olenska should have hastened from Washington in response to her grandmother's summons; but that she should have decided to remain under her roof--especially now that Mrs.\nB. Archer was shocked when old Catherine told him the news. It made sense that Madame Olenska had quickly come from Washington when her grandmother called her; but it was surprising that she chose to stay with her, particularly now that Mrs. Mingott was ill. \nC. Archer was astonished to hear old Catherine's announcement. Of course Madame Olenska would rush back from Washington when her grandmother beckoned her; however, he was taken aback that she had opted to reside in her house, especially with Mrs. Mingott being unwell.\nD. Archer was stunned to learn from old Catherine about Madame Olenska's return. Naturally, Madame Olenska would hurry back from Washington when summoned by her grandmother; nevertheless, he was caught off guard that she had decided to remain in her grandmother's home, especially considering Mrs. Mingott's sickness.\nAnswer:",
+  "options": {
+    "A": "Archer bent down and pressed his lips on the little hand that still lay on his. \"Eh--eh--eh! Whose hand did you think you were kissing, young man--your wife's, I hope?\" the old lady snapped out with her mocking cackle; and as he rose to go she called out after him: \"Give her her Granny's love; but you'd better not say anything about our talk.\" XXXI. Archer had been stunned by old Catherine's news. It was only natural that Madame Olenska should have hastened from Washington in response to her grandmother's summons; but that she should have decided to remain under her roof--especially now that Mrs.",
+    "B": "Archer was shocked when old Catherine told him the news. It made sense that Madame Olenska had quickly come from Washington when her grandmother called her; but it was surprising that she chose to stay with her, particularly now that Mrs. Mingott was ill. ",
+    "C": "Archer was astonished to hear old Catherine's announcement. Of course Madame Olenska would rush back from Washington when her grandmother beckoned her; however, he was taken aback that she had opted to reside in her house, especially with Mrs. Mingott being unwell.",
+    "D": "Archer was stunned to learn from old Catherine about Madame Olenska's return. Naturally, Madame Olenska would hurry back from Washington when summoned by her grandmother; nevertheless, he was caught off guard that she had decided to remain in her grandmother's home, especially considering Mrs. Mingott's sickness."
+  },
+  "gold_letter": "A",
+  "predicted_letter": "A",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 14:47:15"
+}

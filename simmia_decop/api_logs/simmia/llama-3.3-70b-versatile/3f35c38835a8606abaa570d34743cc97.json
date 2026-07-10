@@ -1,0 +1,18 @@
+{
+  "query_id": "3f35c38835a8606abaa570d34743cc97",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0153",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "“So, Harry,” said Lockhart, while",
+  "target_word": "Hermione",
+  "sample_idx": 0,
+  "generated_text": "smiling",
+  "generated_first_word": "smiling",
+  "similarity": 0.5988608598709106,
+  "timestamp": "2026-06-27 18:20:51"
+}

@@ -1,0 +1,18 @@
+{
+  "query_id": "50aa61364ccb6267e6e025bf147ac030",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0114",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "‘The first time,’",
+  "target_word": "Hortensia",
+  "sample_idx": 1,
+  "generated_text": "I",
+  "generated_first_word": "I",
+  "similarity": 0.57874995470047,
+  "timestamp": "2026-06-27 16:53:58"
+}

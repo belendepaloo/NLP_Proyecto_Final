@@ -1,0 +1,25 @@
+{
+  "query_id": "7f3e5e3f024ed0baa44c1c76b1be1579",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0140",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "title": "Happy Place",
+  "author": "Emily Henry",
+  "length": "medium",
+  "permutation_index": 5,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Happy Place\" book by Emily Henry?\nOptions:\nA. Sabrina is exhibiting uncharacteristic behavior by not caring about winning, even though she is normally extremely competitive. Cleo grabs 3 coconut waters from the fridge aisle, giving 2 to me and keeping 1, noticing that I look unwell. I recoil when Sabrina describes my sickly appearance as \"chartreuse\", recalling when Parth used to hand me green tropical drinks at parties, which makes me uncomfortable. I tell Sabrina not to use that word, but she laughs and suggests \"puce\" instead, which Cleo points out is more of a dark red color.\nB. Another reason I know this is not a real game: Sabrina clearly does not give one single shit about winning, and she is always hypercompetitive. Hold on a sec. Cleo ducks down the row of fridges and returns with three large coconut waters. She drops two into our cart and pushes the other at me. Youre green. Sabrina examines me. More like chartreuse. A flash of memory: Parth shoving green drinks with paper umbrellas into our sweaty hands as we danced around the patio. I wince. Dont say that word. Sabrina cackles. What about puce? Puce is more like a dark red, Cleo puts in helpfully.\nC. Sabrina strangely doesn't seem to care about winning right now, which is odd since she's usually so competitive. Cleo runs to get 3 big coconut waters, putting 2 in our cart and handing me 1, saying I look ill. Sabrina examines me and calls me \"chartreuse\", making me cringe as I remember Parth giving me green drinks at parties. I tell her not to say that word, but she just laughs and suggests \"puce\" instead, which Cleo says is more like a dark red. \nD. It's weird that Sabrina isn't trying to win because she's normally so hypercompetitive. Cleo grabs 3 large coconut waters, dropping 2 in the cart and giving me 1, saying I look unwell. Sabrina inspects me and describes my appearance as \"chartreuse\", triggering a memory of Parth handing me green tropical drinks at parties that makes me uncomfortable. I tell her not to use that word, but she cackles and suggests \"puce\" instead, which Cleo points out is actually more of a dark red color.\nAnswer:",
+  "options": {
+    "A": "Sabrina is exhibiting uncharacteristic behavior by not caring about winning, even though she is normally extremely competitive. Cleo grabs 3 coconut waters from the fridge aisle, giving 2 to me and keeping 1, noticing that I look unwell. I recoil when Sabrina describes my sickly appearance as \"chartreuse\", recalling when Parth used to hand me green tropical drinks at parties, which makes me uncomfortable. I tell Sabrina not to use that word, but she laughs and suggests \"puce\" instead, which Cleo points out is more of a dark red color.",
+    "B": "Another reason I know this is not a real game: Sabrina clearly does not give one single shit about winning, and she is always hypercompetitive. Hold on a sec. Cleo ducks down the row of fridges and returns with three large coconut waters. She drops two into our cart and pushes the other at me. Youre green. Sabrina examines me. More like chartreuse. A flash of memory: Parth shoving green drinks with paper umbrellas into our sweaty hands as we danced around the patio. I wince. Dont say that word. Sabrina cackles. What about puce? Puce is more like a dark red, Cleo puts in helpfully.",
+    "C": "Sabrina strangely doesn't seem to care about winning right now, which is odd since she's usually so competitive. Cleo runs to get 3 big coconut waters, putting 2 in our cart and handing me 1, saying I look ill. Sabrina examines me and calls me \"chartreuse\", making me cringe as I remember Parth giving me green drinks at parties. I tell her not to say that word, but she just laughs and suggests \"puce\" instead, which Cleo says is more like a dark red. ",
+    "D": "It's weird that Sabrina isn't trying to win because she's normally so hypercompetitive. Cleo grabs 3 large coconut waters, dropping 2 in the cart and giving me 1, saying I look unwell. Sabrina inspects me and describes my appearance as \"chartreuse\", triggering a memory of Parth handing me green tropical drinks at parties that makes me uncomfortable. I tell her not to use that word, but she cackles and suggests \"puce\" instead, which Cleo points out is actually more of a dark red color."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "B",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 15:16:30"
+}

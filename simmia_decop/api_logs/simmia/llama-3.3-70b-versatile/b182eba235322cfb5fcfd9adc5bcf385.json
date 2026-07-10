@@ -1,0 +1,18 @@
+{
+  "query_id": "b182eba235322cfb5fcfd9adc5bcf385",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0046",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Yet Archer was convinced that Madame",
+  "target_word": "Olenska",
+  "sample_idx": 1,
+  "generated_text": "Butler was",
+  "generated_first_word": "Butler",
+  "similarity": 0.5430868864059448,
+  "timestamp": "2026-06-27 01:00:31"
+}

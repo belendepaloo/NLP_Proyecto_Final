@@ -1,0 +1,18 @@
+{
+  "query_id": "9fc38f5da51b96a65f3adb84b895d195",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0182",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 18,
+  "prefix": "He was buttering his bread, not looking up at her. He feels vulnerable with me too, Maud thought.",
+  "target_word": "Worse",
+  "sample_idx": 2,
+  "generated_text": "Perhaps",
+  "generated_first_word": "Perhaps",
+  "similarity": 0.6702375411987305,
+  "timestamp": "2026-06-27 19:26:11"
+}

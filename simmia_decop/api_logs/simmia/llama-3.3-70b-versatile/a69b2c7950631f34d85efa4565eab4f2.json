@@ -1,0 +1,18 @@
+{
+  "query_id": "a69b2c7950631f34d85efa4565eab4f2",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0097",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "“Er — Professor",
+  "target_word": "Lockhart?”",
+  "sample_idx": 0,
+  "generated_text": "Farnsworth",
+  "generated_first_word": "Farnsworth",
+  "similarity": 0.658399224281311,
+  "timestamp": "2026-06-27 16:16:18"
+}

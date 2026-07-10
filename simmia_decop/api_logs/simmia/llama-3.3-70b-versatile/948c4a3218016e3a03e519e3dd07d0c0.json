@@ -1,0 +1,18 @@
+{
+  "query_id": "948c4a3218016e3a03e519e3dd07d0c0",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0069",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 1,
+  "prefix": "But",
+  "target_word": "when",
+  "sample_idx": 2,
+  "generated_text": "it",
+  "generated_first_word": "it",
+  "similarity": 0.6192256808280945,
+  "timestamp": "2026-06-27 02:28:46"
+}

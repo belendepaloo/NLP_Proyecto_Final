@@ -1,0 +1,18 @@
+{
+  "query_id": "615c1507a6035eb06309fe2e9b0e4dfb",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0167",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Let the Orcs have",
+  "target_word": "the",
+  "sample_idx": 2,
+  "generated_text": "their",
+  "generated_first_word": "their",
+  "similarity": 0.8074192404747009,
+  "timestamp": "2026-06-27 18:51:41"
+}

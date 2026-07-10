@@ -1,0 +1,18 @@
+{
+  "query_id": "8c4eea0a92417960e2e0fbcfae175950",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0049",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 17,
+  "prefix": "Yes: his decision was irreversible. It is not seldom the case that when a man is browbeaten",
+  "target_word": "in",
+  "sample_idx": 0,
+  "generated_text": "by",
+  "generated_first_word": "by",
+  "similarity": 0.7521718740463257,
+  "timestamp": "2026-06-27 01:08:31"
+}

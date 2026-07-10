@@ -1,0 +1,18 @@
+{
+  "query_id": "430c4cfe8ce4324862d6e42ac164248b",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0130",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 1,
+  "prefix": "“The",
+  "target_word": "Eternity",
+  "sample_idx": 0,
+  "generated_text": "man”",
+  "generated_first_word": "man”",
+  "similarity": 0.6231585741043091,
+  "timestamp": "2026-06-27 17:29:13"
+}

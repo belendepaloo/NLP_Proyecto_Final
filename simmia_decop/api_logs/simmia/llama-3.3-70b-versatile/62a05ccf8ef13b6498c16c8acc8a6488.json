@@ -1,0 +1,18 @@
+{
+  "query_id": "62a05ccf8ef13b6498c16c8acc8a6488",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0143",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Frodo opened his mouth",
+  "target_word": "and",
+  "sample_idx": 0,
+  "generated_text": "to",
+  "generated_first_word": "to",
+  "similarity": 0.6855215430259705,
+  "timestamp": "2026-06-27 17:58:25"
+}

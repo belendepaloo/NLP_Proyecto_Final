@@ -1,0 +1,18 @@
+{
+  "query_id": "d045ba3b430af15975e533b0fabfd3fb",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0017",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "How polite of",
+  "target_word": "him.",
+  "sample_idx": 2,
+  "generated_text": "you",
+  "generated_first_word": "you",
+  "similarity": 0.7226072549819946,
+  "timestamp": "2026-06-26 23:29:13"
+}

@@ -1,0 +1,18 @@
+{
+  "query_id": "410870e68e41bb1dbbdb09d9331c8103",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0078",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 9,
+  "prefix": "Together, they proclaimed that the Lord Protector was in",
+  "target_word": "residence.",
+  "sample_idx": 0,
+  "generated_text": "fact",
+  "generated_first_word": "fact",
+  "similarity": 0.5776583552360535,
+  "timestamp": "2026-06-27 02:49:55"
+}

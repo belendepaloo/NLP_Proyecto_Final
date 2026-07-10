@@ -1,0 +1,18 @@
+{
+  "query_id": "66f3af61473edacae02884d2a9f82247",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0042",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "Never mind how he came there; it's quite enough for my power",
+  "target_word": "over",
+  "sample_idx": 2,
+  "generated_text": "of imagination",
+  "generated_first_word": "of",
+  "similarity": 0.7153778076171875,
+  "timestamp": "2026-06-27 00:52:17"
+}

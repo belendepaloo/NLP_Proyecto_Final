@@ -1,0 +1,18 @@
+{
+  "query_id": "8e0ddbae0de0eb834c9ec6a65e5c2f1f",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0195",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "His need for power has grown in",
+  "target_word": "this",
+  "sample_idx": 0,
+  "generated_text": "recent",
+  "generated_first_word": "recent",
+  "similarity": 0.6633017063140869,
+  "timestamp": "2026-06-27 19:53:27"
+}

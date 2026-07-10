@@ -1,0 +1,18 @@
+{
+  "query_id": "35234849a3c060ac0ae71608dc5d5bca",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0032",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "Even as the first shadows were felt in Mirkwood there",
+  "target_word": "appeared",
+  "sample_idx": 2,
+  "generated_text": "was",
+  "generated_first_word": "was",
+  "similarity": 0.7041684985160828,
+  "timestamp": "2026-06-27 00:05:00"
+}

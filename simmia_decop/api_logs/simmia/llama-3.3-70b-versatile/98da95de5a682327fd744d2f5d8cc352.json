@@ -1,0 +1,18 @@
+{
+  "query_id": "98da95de5a682327fd744d2f5d8cc352",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0102",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 11,
+  "prefix": "Maud smiled as she passed the pond again. Neither Frazer nor",
+  "target_word": "Chris",
+  "sample_idx": 2,
+  "generated_text": "anyone",
+  "generated_first_word": "anyone",
+  "similarity": 0.6845457553863525,
+  "timestamp": "2026-06-27 16:28:25"
+}

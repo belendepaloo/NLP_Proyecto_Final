@@ -1,0 +1,18 @@
+{
+  "query_id": "f2a8223eddb5e68de45e28b00a121818",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0059",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "But the physical difficulty of meeting was enormous. It was like trying to make a move at chess",
+  "target_word": "when",
+  "sample_idx": 2,
+  "generated_text": "without knowing",
+  "generated_first_word": "without",
+  "similarity": 0.667044997215271,
+  "timestamp": "2026-06-27 02:05:15"
+}

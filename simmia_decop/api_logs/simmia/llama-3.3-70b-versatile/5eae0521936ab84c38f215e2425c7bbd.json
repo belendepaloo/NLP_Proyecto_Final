@@ -1,0 +1,18 @@
+{
+  "query_id": "5eae0521936ab84c38f215e2425c7bbd",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0104",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 16,
+  "prefix": "Her first wild thought was that the gallery must have been walled up. Then the hanging",
+  "target_word": "was",
+  "sample_idx": 1,
+  "generated_text": "arrangements",
+  "generated_first_word": "arrangements",
+  "similarity": 0.5711674690246582,
+  "timestamp": "2026-06-27 16:33:23"
+}

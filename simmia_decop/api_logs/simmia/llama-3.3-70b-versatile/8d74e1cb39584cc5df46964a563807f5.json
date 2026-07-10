@@ -1,0 +1,18 @@
+{
+  "query_id": "8d74e1cb39584cc5df46964a563807f5",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0162",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Kat",
+  "target_word": "bunched",
+  "sample_idx": 1,
+  "generated_text": "rina",
+  "generated_first_word": "rina",
+  "similarity": 0.5851722955703735,
+  "timestamp": "2026-06-27 18:40:17"
+}

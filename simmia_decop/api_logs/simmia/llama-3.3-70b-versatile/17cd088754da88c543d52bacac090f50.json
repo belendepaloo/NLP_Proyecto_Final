@@ -1,0 +1,18 @@
+{
+  "query_id": "17cd088754da88c543d52bacac090f50",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0173",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 19,
+  "prefix": "But no ship came ever again from the West to Nmenor, and Avalln was veiled in cloud. Now Gimilkhd",
+  "target_word": "died",
+  "sample_idx": 2,
+  "generated_text": "son",
+  "generated_first_word": "son",
+  "similarity": 0.6905578374862671,
+  "timestamp": "2026-06-27 19:06:33"
+}

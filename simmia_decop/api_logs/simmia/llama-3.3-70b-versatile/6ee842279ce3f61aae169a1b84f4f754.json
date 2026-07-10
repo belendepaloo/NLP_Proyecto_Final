@@ -1,0 +1,18 @@
+{
+  "query_id": "6ee842279ce3f61aae169a1b84f4f754",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0036",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "The idea of playing",
+  "target_word": "nursemaid",
+  "sample_idx": 1,
+  "generated_text": "a",
+  "generated_first_word": "a",
+  "similarity": 0.6226237416267395,
+  "timestamp": "2026-06-27 00:13:22"
+}

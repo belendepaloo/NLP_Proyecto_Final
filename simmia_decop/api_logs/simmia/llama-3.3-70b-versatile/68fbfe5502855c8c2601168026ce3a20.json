@@ -1,0 +1,18 @@
+{
+  "query_id": "68fbfe5502855c8c2601168026ce3a20",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0198",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "We dance",
+  "target_word": "all",
+  "sample_idx": 2,
+  "generated_text": "under",
+  "generated_first_word": "under",
+  "similarity": 0.5993708372116089,
+  "timestamp": "2026-06-27 19:59:30"
+}

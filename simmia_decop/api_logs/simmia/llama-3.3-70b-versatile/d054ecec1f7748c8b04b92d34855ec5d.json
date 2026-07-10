@@ -1,0 +1,18 @@
+{
+  "query_id": "d054ecec1f7748c8b04b92d34855ec5d",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0186",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 19,
+  "prefix": "O'Brien had sat down beside the bed, so that his face was almost on a level with Winston's. 'Three",
+  "target_word": "thousand,'",
+  "sample_idx": 2,
+  "generated_text": "years'",
+  "generated_first_word": "years'",
+  "similarity": 0.6840121746063232,
+  "timestamp": "2026-06-27 19:35:05"
+}

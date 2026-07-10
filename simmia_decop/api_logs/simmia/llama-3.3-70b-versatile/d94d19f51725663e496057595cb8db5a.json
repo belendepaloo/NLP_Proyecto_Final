@@ -1,0 +1,18 @@
+{
+  "query_id": "d94d19f51725663e496057595cb8db5a",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0027",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 16,
+  "prefix": "I never say to him, 'Let this or that enemy alone, because it would be ungener-",
+  "target_word": "ous",
+  "sample_idx": 0,
+  "generated_text": "ous",
+  "generated_first_word": "ous",
+  "similarity": 1.0000001192092896,
+  "timestamp": "2026-06-26 23:53:56"
+}

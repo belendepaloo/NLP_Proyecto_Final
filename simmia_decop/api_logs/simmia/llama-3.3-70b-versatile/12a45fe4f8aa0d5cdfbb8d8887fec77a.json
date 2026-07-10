@@ -1,0 +1,18 @@
+{
+  "query_id": "12a45fe4f8aa0d5cdfbb8d8887fec77a",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0025",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 15,
+  "prefix": "Miss Cathy had been sick, and that made her still. She leant against her father's",
+  "target_word": "knee,",
+  "sample_idx": 0,
+  "generated_text": "shoulder",
+  "generated_first_word": "shoulder",
+  "similarity": 0.7334237098693848,
+  "timestamp": "2026-06-26 23:49:17"
+}

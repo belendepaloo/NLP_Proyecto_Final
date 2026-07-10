@@ -1,0 +1,18 @@
+{
+  "query_id": "3b203a3c42ed635950d8f4257ee3f6e2",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0060",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 11,
+  "prefix": "Soon only Yennika remained in the circle, her eyes downcast. “Mirela’s",
+  "target_word": "wrong,",
+  "sample_idx": 0,
+  "generated_text": "spell”",
+  "generated_first_word": "spell”",
+  "similarity": 0.6293033957481384,
+  "timestamp": "2026-06-27 02:06:37"
+}

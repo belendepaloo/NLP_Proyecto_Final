@@ -1,0 +1,18 @@
+{
+  "query_id": "d00392f71a1c970be7d913a1dbfe93c3",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0059",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "But the physical difficulty",
+  "target_word": "of",
+  "sample_idx": 1,
+  "generated_text": "of",
+  "generated_first_word": "of",
+  "similarity": 1.0,
+  "timestamp": "2026-06-27 02:03:34"
+}

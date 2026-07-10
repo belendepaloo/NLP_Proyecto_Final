@@ -1,0 +1,18 @@
+{
+  "query_id": "52a395d9f485e31d5b4a7bd04e972f2a",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0174",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Her",
+  "target_word": "eyes",
+  "sample_idx": 2,
+  "generated_text": "name",
+  "generated_first_word": "name",
+  "similarity": 0.653795599937439,
+  "timestamp": "2026-06-27 19:06:40"
+}

@@ -1,0 +1,18 @@
+{
+  "query_id": "515311eda7fa13f2f9dc27f183c66424",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0149",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 15,
+  "prefix": "Not only did there seem to lurk in it a certain calm disdain, but his",
+  "target_word": "perverseness",
+  "sample_idx": 1,
+  "generated_text": "eyes",
+  "generated_first_word": "eyes",
+  "similarity": 0.5797897577285767,
+  "timestamp": "2026-06-27 18:13:11"
+}

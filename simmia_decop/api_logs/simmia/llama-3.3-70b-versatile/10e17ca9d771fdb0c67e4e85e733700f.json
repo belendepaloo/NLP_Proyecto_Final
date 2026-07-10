@@ -1,0 +1,18 @@
+{
+  "query_id": "10e17ca9d771fdb0c67e4e85e733700f",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0081",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "The next moment the",
+  "target_word": "two",
+  "sample_idx": 0,
+  "generated_text": "door",
+  "generated_first_word": "door",
+  "similarity": 0.6730180978775024,
+  "timestamp": "2026-06-27 15:40:58"
+}

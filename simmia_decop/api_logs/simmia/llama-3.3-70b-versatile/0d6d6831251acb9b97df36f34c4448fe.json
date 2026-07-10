@@ -1,0 +1,18 @@
+{
+  "query_id": "0d6d6831251acb9b97df36f34c4448fe",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0025",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Miss",
+  "target_word": "Cathy",
+  "sample_idx": 1,
+  "generated_text": "Marple",
+  "generated_first_word": "Marple",
+  "similarity": 0.6425409913063049,
+  "timestamp": "2026-06-26 23:47:41"
+}

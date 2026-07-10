@@ -1,0 +1,25 @@
+{
+  "query_id": "4245b7b9ae021a225f04887648b7c703",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0042",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "title": "Oliver Twist",
+  "author": "Charles Dickens",
+  "length": "medium",
+  "permutation_index": 0,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Oliver Twist\" book by Charles Dickens?\nOptions:\nA. Fagin tells Sikes to forget how he found the boy, saying it's enough that the boy was involved in a robbery, which gives Fagin power over him. Fagin says this is better than having to kill the boy, which would be risky and unprofitable. Nancy asks when they will act, stopping Sikes from angrily rejecting Fagin's fake humanitarianism. Fagin eagerly asks when the plan will happen. Sikes grumpily replies he arranged it with Toby for the night after tomorrow, unless told otherwise.\nB. Fagin tells Sikes the details of how he found the boy don't matter. All that matters is the boy did a robbery, giving Fagin power over him. Fagin says this is much better than having to kill the boy, which would be risky and unprofitable. Nancy asks when it will happen, stopping Sikes from angrily rejecting Fagin's false humanitarianism. Fagin eagerly asks when the plan is set for. Sikes grumpily replies he arranged with Toby for two nights from now, unless told otherwise.\nC. Never mind how he came there; it's quite enough for my power over him that he was in a robbery; that's all I want. Now, how much better this is, than being obliged to put the poor leetle boy out of the way--which would be dangerous, and we should lose by it besides.' 'When is it to be done?' asked Nancy, stopping some turbulent exclamation on the part of Mr. Sikes, expressive of the disgust with which he received Fagin's affectation of humanity. 'Ah, to be sure,' said the Jew; 'when is it to be done, Bill?' 'I planned with Toby, the night arter to-morrow,' rejoined Sikes in a surly voice, 'if he heerd nothing from me to the contrairy.\nD. Fagin tells Sikes not to worry about how he found the boy. He just cares that the boy did a robbery, which gives Fagin control over him. Fagin says this is way better than having to get rid of the boy, which would be dangerous and they'd lose money. Nancy asks when it'll happen, interrupting Sikes who was angrily complaining about Fagin's fake humanitarianism. Fagin eagerly asks when the plan is. Sikes grumpily says he planned with Toby for two nights from now, unless told not to.  \nAnswer:",
+  "options": {
+    "A": "Fagin tells Sikes to forget how he found the boy, saying it's enough that the boy was involved in a robbery, which gives Fagin power over him. Fagin says this is better than having to kill the boy, which would be risky and unprofitable. Nancy asks when they will act, stopping Sikes from angrily rejecting Fagin's fake humanitarianism. Fagin eagerly asks when the plan will happen. Sikes grumpily replies he arranged it with Toby for the night after tomorrow, unless told otherwise.",
+    "B": "Fagin tells Sikes the details of how he found the boy don't matter. All that matters is the boy did a robbery, giving Fagin power over him. Fagin says this is much better than having to kill the boy, which would be risky and unprofitable. Nancy asks when it will happen, stopping Sikes from angrily rejecting Fagin's false humanitarianism. Fagin eagerly asks when the plan is set for. Sikes grumpily replies he arranged with Toby for two nights from now, unless told otherwise.",
+    "C": "Never mind how he came there; it's quite enough for my power over him that he was in a robbery; that's all I want. Now, how much better this is, than being obliged to put the poor leetle boy out of the way--which would be dangerous, and we should lose by it besides.' 'When is it to be done?' asked Nancy, stopping some turbulent exclamation on the part of Mr. Sikes, expressive of the disgust with which he received Fagin's affectation of humanity. 'Ah, to be sure,' said the Jew; 'when is it to be done, Bill?' 'I planned with Toby, the night arter to-morrow,' rejoined Sikes in a surly voice, 'if he heerd nothing from me to the contrairy.",
+    "D": "Fagin tells Sikes not to worry about how he found the boy. He just cares that the boy did a robbery, which gives Fagin control over him. Fagin says this is way better than having to get rid of the boy, which would be dangerous and they'd lose money. Nancy asks when it'll happen, interrupting Sikes who was angrily complaining about Fagin's fake humanitarianism. Fagin eagerly asks when the plan is. Sikes grumpily says he planned with Toby for two nights from now, unless told not to.  "
+  },
+  "gold_letter": "C",
+  "predicted_letter": "C",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 05:04:13"
+}

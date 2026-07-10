@@ -1,0 +1,25 @@
+{
+  "query_id": "363ef275755f68611ab50109e344be8b",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0004",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "title": "The Foxglove King",
+  "author": "Hannah Whitten",
+  "length": "medium",
+  "permutation_index": 3,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Foxglove King\" book by Hannah Whitten?\nOptions:\nA. The door made noise when opened, but no one inside seemed to notice. Bastian and Gabe carefully put Milo down without waking him up, then swiftly and silently left. Once outside, Val joked that they were sneaky. Gabe was upset by the suggestion they poison someone, but Bastian didn't rule it out, though he was too busy currently. Mari lamented that their group was shrinking. Lore asked if it was due to arrests, since even though Val's activities were legal now, bloodcoats still detained people arbitrarily.\nB. The door squeaked open but didn't appear to wake anyone inside. Bastian and Gabe silently placed Milo on the floor without stirring him, then left stealthily. Val joked they were sneaky after they got outside. Gabe seemed upset at the suggestion of poisoning someone, but Bastian didn't rule it out, just said he was too busy at present. Mari lamented their shrinking group. Lore asked if arrests were responsible, since bloodcoats still randomly apprehended people even though Val's activities were now legal.\nC. It creaked, but if the sound woke anyone inside, they didnt protest. Bastian and Gabe settled Milo on the floor, then left quickly, soundlessly. He didnt stir. Youre a sneaky lot, Val commented once they were all outside. Have either of you considered poison running? Gabe looked stricken, but Bastian shrugged. Not as such, no, but never say never. Although my current schedule wouldnt allow for it. Thats a shame. Mari shook her head. Our crew is dwindling rapidly these days. Arrests? Lore asked quietly. Vals operation might be newly legal, but bloodcoats had been known to arrest anyone they didnt like the look of.\nD. The door creaked open, but didn't seem to disturb any occupants. Bastian and Gabe quietly laid Milo on the floor without rousing him, before noiselessly slipping out. Val teased that they were stealthy once outside. Gabe looked horrified at the implication they poison someone, though Bastian didn't dismiss it outright, just said he was too busy right now. Mari bemoaned their dwindling numbers. Lore wondered if arrests were to blame, since bloodcoats still randomly detained people, even if Val's work was legal now.\nAnswer:",
+  "options": {
+    "A": "The door made noise when opened, but no one inside seemed to notice. Bastian and Gabe carefully put Milo down without waking him up, then swiftly and silently left. Once outside, Val joked that they were sneaky. Gabe was upset by the suggestion they poison someone, but Bastian didn't rule it out, though he was too busy currently. Mari lamented that their group was shrinking. Lore asked if it was due to arrests, since even though Val's activities were legal now, bloodcoats still detained people arbitrarily.",
+    "B": "The door squeaked open but didn't appear to wake anyone inside. Bastian and Gabe silently placed Milo on the floor without stirring him, then left stealthily. Val joked they were sneaky after they got outside. Gabe seemed upset at the suggestion of poisoning someone, but Bastian didn't rule it out, just said he was too busy at present. Mari lamented their shrinking group. Lore asked if arrests were responsible, since bloodcoats still randomly apprehended people even though Val's activities were now legal.",
+    "C": "It creaked, but if the sound woke anyone inside, they didnt protest. Bastian and Gabe settled Milo on the floor, then left quickly, soundlessly. He didnt stir. Youre a sneaky lot, Val commented once they were all outside. Have either of you considered poison running? Gabe looked stricken, but Bastian shrugged. Not as such, no, but never say never. Although my current schedule wouldnt allow for it. Thats a shame. Mari shook her head. Our crew is dwindling rapidly these days. Arrests? Lore asked quietly. Vals operation might be newly legal, but bloodcoats had been known to arrest anyone they didnt like the look of.",
+    "D": "The door creaked open, but didn't seem to disturb any occupants. Bastian and Gabe quietly laid Milo on the floor without rousing him, before noiselessly slipping out. Val teased that they were stealthy once outside. Gabe looked horrified at the implication they poison someone, though Bastian didn't dismiss it outright, just said he was too busy right now. Mari bemoaned their dwindling numbers. Lore wondered if arrests were to blame, since bloodcoats still randomly detained people, even if Val's work was legal now."
+  },
+  "gold_letter": "C",
+  "predicted_letter": "C",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 04:46:34"
+}

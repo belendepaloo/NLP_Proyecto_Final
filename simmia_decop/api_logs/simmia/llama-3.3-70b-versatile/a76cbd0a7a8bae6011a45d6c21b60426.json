@@ -1,0 +1,18 @@
+{
+  "query_id": "a76cbd0a7a8bae6011a45d6c21b60426",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0090",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 19,
+  "prefix": "Archer looked up and met his visitor's anxious gaze. \"Don't you know, Monsieur--is it possible you don't know--that the",
+  "target_word": "family",
+  "sample_idx": 1,
+  "generated_text": "Duval's",
+  "generated_first_word": "Duval's",
+  "similarity": 0.6294862031936646,
+  "timestamp": "2026-06-27 16:02:42"
+}

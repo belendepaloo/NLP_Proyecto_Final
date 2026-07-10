@@ -1,0 +1,18 @@
+{
+  "query_id": "c57783e8b91e56eebcd461ed6c8af8b7",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0109",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Part love",
+  "target_word": "story,",
+  "sample_idx": 0,
+  "generated_text": "story",
+  "generated_first_word": "story",
+  "similarity": 0.9287673234939575,
+  "timestamp": "2026-06-27 16:42:47"
+}

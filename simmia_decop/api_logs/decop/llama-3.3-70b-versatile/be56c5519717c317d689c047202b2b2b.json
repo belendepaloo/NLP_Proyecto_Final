@@ -1,0 +1,25 @@
+{
+  "query_id": "be56c5519717c317d689c047202b2b2b",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0119",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "title": "The Age of Innocence",
+  "author": "Edith Wharton",
+  "length": "medium",
+  "permutation_index": 2,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Age of Innocence\" book by Edith Wharton?\nOptions:\nA. She wondered if staying apart would keep him out of harm's way. A tear rolled down her veiled face as she begged him not to ruin things forever as others had done. He said he didn't claim to be unlike other men in his needs and wants. Nervously, she proposed visiting him once and then returning home, making him flush red at the idea.\nB. \"Safer from loving me?\" Her profile did not stir, but he saw a tear overflow on her lashes and hang in a mesh of her veil. \"Safer from doing irreparable harm. Don't let us be like all the others!\" she protested. \"What others? I don't profess to be different from my kind. I'm consumed by the same wants and the same longings.\" She glanced at him with a kind of terror, and he saw a faint colour steal into her cheeks. \"Shall I--once come to you; and then go home?\" she suddenly hazarded in a low clear voice. The blood rushed to the young man's forehead.\nC. Was avoiding her the safer option, she asked. A teardrop slipped down her cheek as she insisted they not wreak permanent havoc as so many before. He argued he was no different than the rest in his cravings. Anxiously she offered to come to him once and go back; the suggestion reddened his face.\nD. She asked if keeping away from her would make him safer. A tear fell down her cheek as she pleaded for them not to cause irreversible damage like others had. He responded that he was no different than other men in his desires and longings. She fearfully suggested coming to him once and then going home, causing him to blush at the proposal.  \nAnswer:",
+  "options": {
+    "A": "She wondered if staying apart would keep him out of harm's way. A tear rolled down her veiled face as she begged him not to ruin things forever as others had done. He said he didn't claim to be unlike other men in his needs and wants. Nervously, she proposed visiting him once and then returning home, making him flush red at the idea.",
+    "B": "\"Safer from loving me?\" Her profile did not stir, but he saw a tear overflow on her lashes and hang in a mesh of her veil. \"Safer from doing irreparable harm. Don't let us be like all the others!\" she protested. \"What others? I don't profess to be different from my kind. I'm consumed by the same wants and the same longings.\" She glanced at him with a kind of terror, and he saw a faint colour steal into her cheeks. \"Shall I--once come to you; and then go home?\" she suddenly hazarded in a low clear voice. The blood rushed to the young man's forehead.",
+    "C": "Was avoiding her the safer option, she asked. A teardrop slipped down her cheek as she insisted they not wreak permanent havoc as so many before. He argued he was no different than the rest in his cravings. Anxiously she offered to come to him once and go back; the suggestion reddened his face.",
+    "D": "She asked if keeping away from her would make him safer. A tear fell down her cheek as she pleaded for them not to cause irreversible damage like others had. He responded that he was no different than other men in his desires and longings. She fearfully suggested coming to him once and then going home, causing him to blush at the proposal.  "
+  },
+  "gold_letter": "B",
+  "predicted_letter": "B",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 15:11:01"
+}

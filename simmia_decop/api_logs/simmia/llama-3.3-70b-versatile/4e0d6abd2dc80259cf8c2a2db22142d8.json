@@ -1,0 +1,18 @@
+{
+  "query_id": "4e0d6abd2dc80259cf8c2a2db22142d8",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0146",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Countless times, Harry had been on",
+  "target_word": "the",
+  "sample_idx": 1,
+  "generated_text": "the Hogwarts Express",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-06-27 18:05:25"
+}

@@ -1,0 +1,18 @@
+{
+  "query_id": "73323e0a869869d0d751a70c87caef80",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0196",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "The boy continued to listen to his heart as they crossed the desert. He came to understand its",
+  "target_word": "dodges",
+  "sample_idx": 0,
+  "generated_text": "rhythm",
+  "generated_first_word": "rhythm",
+  "similarity": 0.6318029165267944,
+  "timestamp": "2026-06-27 19:56:53"
+}

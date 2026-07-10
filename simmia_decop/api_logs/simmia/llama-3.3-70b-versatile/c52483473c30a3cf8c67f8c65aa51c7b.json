@@ -1,0 +1,18 @@
+{
+  "query_id": "c52483473c30a3cf8c67f8c65aa51c7b",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0167",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Let the",
+  "target_word": "Orcs",
+  "sample_idx": 0,
+  "generated_text": "games",
+  "generated_first_word": "games",
+  "similarity": 0.6241122484207153,
+  "timestamp": "2026-06-27 18:51:22"
+}

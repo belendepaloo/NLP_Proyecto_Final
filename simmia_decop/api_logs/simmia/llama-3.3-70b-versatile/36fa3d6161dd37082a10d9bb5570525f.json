@@ -1,0 +1,18 @@
+{
+  "query_id": "36fa3d6161dd37082a10d9bb5570525f",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0055",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "‘The speedometer,’ Mr Wormwood said, ‘is run off a cable that is coupled up to one of the",
+  "target_word": "front",
+  "sample_idx": 2,
+  "generated_text": "front",
+  "generated_first_word": "front",
+  "similarity": 1.0,
+  "timestamp": "2026-06-27 01:56:13"
+}

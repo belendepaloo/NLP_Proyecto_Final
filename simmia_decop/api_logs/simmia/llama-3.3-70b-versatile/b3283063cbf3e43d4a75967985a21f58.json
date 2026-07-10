@@ -1,0 +1,18 @@
+{
+  "query_id": "b3283063cbf3e43d4a75967985a21f58",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0131",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "In",
+  "target_word": "a",
+  "sample_idx": 1,
+  "generated_text": "order",
+  "generated_first_word": "order",
+  "similarity": 0.6642845869064331,
+  "timestamp": "2026-06-27 17:31:29"
+}

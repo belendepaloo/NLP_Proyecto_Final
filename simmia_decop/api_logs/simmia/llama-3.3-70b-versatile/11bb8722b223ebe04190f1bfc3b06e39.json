@@ -1,0 +1,18 @@
+{
+  "query_id": "11bb8722b223ebe04190f1bfc3b06e39",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0149",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "Not only did there seem to lurk in it a certain calm disdain, but his perverseness seemed ungrateful,",
+  "target_word": "considering",
+  "sample_idx": 2,
+  "generated_text": "almost",
+  "generated_first_word": "almost",
+  "similarity": 0.6868269443511963,
+  "timestamp": "2026-06-27 18:13:34"
+}

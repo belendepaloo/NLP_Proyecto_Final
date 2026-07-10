@@ -1,0 +1,18 @@
+{
+  "query_id": "917b49d725b68b6aa592c6add8434d7a",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0133",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 11,
+  "prefix": "They might be working together for a greater cause in public.",
+  "target_word": "In",
+  "sample_idx": 1,
+  "generated_text": "but",
+  "generated_first_word": "but",
+  "similarity": 0.6785408854484558,
+  "timestamp": "2026-06-27 17:37:06"
+}

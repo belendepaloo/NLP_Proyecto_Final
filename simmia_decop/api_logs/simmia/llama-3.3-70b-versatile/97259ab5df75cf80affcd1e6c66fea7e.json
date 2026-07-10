@@ -1,0 +1,18 @@
+{
+  "query_id": "97259ab5df75cf80affcd1e6c66fea7e",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0000",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Since",
+  "target_word": "he",
+  "sample_idx": 2,
+  "generated_text": "then",
+  "generated_first_word": "then",
+  "similarity": 0.7240560054779053,
+  "timestamp": "2026-06-26 22:41:15"
+}

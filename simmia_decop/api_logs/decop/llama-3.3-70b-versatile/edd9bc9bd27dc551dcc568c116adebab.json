@@ -1,0 +1,25 @@
+{
+  "query_id": "edd9bc9bd27dc551dcc568c116adebab",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0093",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "title": "Oliver Twist",
+  "author": "Charles Dickens",
+  "length": "medium",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Oliver Twist\" book by Charles Dickens?\nOptions:\nA. Bumble. 'Isn't natur, natur, Mrs. Bumble?' remonstrated the workhouse master. 'Can't I be supposed to feel--_I_ as brought him up porochially--when I see him a-setting here among ladies and gentlemen of the very affablest description! I always loved that boy as if he'd been my--my--my own grandfather,' said Mr. Bumble, halting for an appropriate comparison. 'Master Oliver, my dear, you remember the blessed gentleman in the white waistcoat? Ah! he went to heaven last week, in a oak coffin with plated handles, Oliver.' 'Come, sir,' said Mr. Grimwig, tartly; 'suppress your feelings.' 'I will do my endeavours, sir,' replied Mr. Bumble.\nB. Mr. Bumble was astounded that Oliver was mingling with elegant ladies and gentlemen, given his upbringing in the poorhouse. He insisted he had always loved the boy like his own grandfather. He reminded Oliver of the kindly man in the white waistcoat who had passed away last week and been interred in a classy oak coffin. Mr. Grimwig then admonished Mr. Bumble to control his feelings.\nC. Mr. Bumble expressed disbelief that Oliver was sitting with elegant ladies and gentlemen, given his upbringing in the workhouse. He claimed to have always loved Oliver like his own grandfather. He reminded Oliver of the kind gentleman who recently passed away and was buried in an oak coffin with plated handles. Mr. Grimwig then told Mr. Bumble to suppress his feelings. \nD. The workhouse master, Mr. Bumble, was shocked to see Oliver among genteel company, considering he had raised the boy in the workhouse. He professed to have always loved Oliver as if he were his own grandfather. He mentioned to Oliver the nice gentleman in the white waistcoat who had recently died and been buried in a fancy oak coffin. Mr. Grimwig then told Mr. Bumble to restrain his emotions.\nAnswer:",
+  "options": {
+    "A": "Bumble. 'Isn't natur, natur, Mrs. Bumble?' remonstrated the workhouse master. 'Can't I be supposed to feel--_I_ as brought him up porochially--when I see him a-setting here among ladies and gentlemen of the very affablest description! I always loved that boy as if he'd been my--my--my own grandfather,' said Mr. Bumble, halting for an appropriate comparison. 'Master Oliver, my dear, you remember the blessed gentleman in the white waistcoat? Ah! he went to heaven last week, in a oak coffin with plated handles, Oliver.' 'Come, sir,' said Mr. Grimwig, tartly; 'suppress your feelings.' 'I will do my endeavours, sir,' replied Mr. Bumble.",
+    "B": "Mr. Bumble was astounded that Oliver was mingling with elegant ladies and gentlemen, given his upbringing in the poorhouse. He insisted he had always loved the boy like his own grandfather. He reminded Oliver of the kindly man in the white waistcoat who had passed away last week and been interred in a classy oak coffin. Mr. Grimwig then admonished Mr. Bumble to control his feelings.",
+    "C": "Mr. Bumble expressed disbelief that Oliver was sitting with elegant ladies and gentlemen, given his upbringing in the workhouse. He claimed to have always loved Oliver like his own grandfather. He reminded Oliver of the kind gentleman who recently passed away and was buried in an oak coffin with plated handles. Mr. Grimwig then told Mr. Bumble to suppress his feelings. ",
+    "D": "The workhouse master, Mr. Bumble, was shocked to see Oliver among genteel company, considering he had raised the boy in the workhouse. He professed to have always loved Oliver as if he were his own grandfather. He mentioned to Oliver the nice gentleman in the white waistcoat who had recently died and been buried in a fancy oak coffin. Mr. Grimwig then told Mr. Bumble to restrain his emotions."
+  },
+  "gold_letter": "A",
+  "predicted_letter": "A",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 14:59:38"
+}

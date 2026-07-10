@@ -1,0 +1,18 @@
+{
+  "query_id": "ac73417bcba8595a178da0db14d8c834",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0081",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 16,
+  "prefix": "The next moment the two of them were running down the drive together and then out",
+  "target_word": "on",
+  "sample_idx": 1,
+  "generated_text": "into",
+  "generated_first_word": "into",
+  "similarity": 0.6641238927841187,
+  "timestamp": "2026-06-27 15:42:24"
+}

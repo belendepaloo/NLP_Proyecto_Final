@@ -1,0 +1,18 @@
+{
+  "query_id": "e1c73e59925b33817786e93b7098a90c",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0079",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 12,
+  "prefix": "This version of myselfI dont hate her. Shes carefree and laid-back, two",
+  "target_word": "adjectives",
+  "sample_idx": 0,
+  "generated_text": "qualities",
+  "generated_first_word": "qualities",
+  "similarity": 0.7122712731361389,
+  "timestamp": "2026-06-27 02:52:32"
+}

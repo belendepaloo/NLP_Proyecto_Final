@@ -1,0 +1,18 @@
+{
+  "query_id": "4779379a70d4786f405055c51ecd8f83",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0123",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "Natalie followed, smiling and thanking people who",
+  "target_word": "congratulated",
+  "sample_idx": 2,
+  "generated_text": "stopped",
+  "generated_first_word": "stopped",
+  "similarity": 0.6393581628799438,
+  "timestamp": "2026-06-27 17:14:27"
+}

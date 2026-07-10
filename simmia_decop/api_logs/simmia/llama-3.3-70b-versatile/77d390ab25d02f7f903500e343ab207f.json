@@ -1,0 +1,18 @@
+{
+  "query_id": "77d390ab25d02f7f903500e343ab207f",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0095",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 18,
+  "prefix": "Youve really got to stop doing this, one of the EMTs joked, yelling over the sound of the",
+  "target_word": "blades.",
+  "sample_idx": 2,
+  "generated_text": "sirens",
+  "generated_first_word": "sirens",
+  "similarity": 0.6371579766273499,
+  "timestamp": "2026-06-27 16:13:42"
+}

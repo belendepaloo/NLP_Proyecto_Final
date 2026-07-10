@@ -1,0 +1,18 @@
+{
+  "query_id": "fa9c7487320e4a4a357575333d39d9ba",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0061",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 13,
+  "prefix": "Promiscuity went unpunished, divorce was permitted. For that matter, even religious worship would",
+  "target_word": "have",
+  "sample_idx": 2,
+  "generated_text": "not",
+  "generated_first_word": "not",
+  "similarity": 0.6857256889343262,
+  "timestamp": "2026-06-27 02:09:11"
+}

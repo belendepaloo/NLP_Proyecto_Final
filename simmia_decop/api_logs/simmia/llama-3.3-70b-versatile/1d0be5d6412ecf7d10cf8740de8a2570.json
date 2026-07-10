@@ -1,0 +1,18 @@
+{
+  "query_id": "1d0be5d6412ecf7d10cf8740de8a2570",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0178",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Not worth the sting.",
+  "target_word": "Natalie",
+  "sample_idx": 2,
+  "generated_text": "of",
+  "generated_first_word": "of",
+  "similarity": 0.5923097729682922,
+  "timestamp": "2026-06-27 19:15:46"
+}

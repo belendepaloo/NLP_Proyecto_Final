@@ -1,0 +1,18 @@
+{
+  "query_id": "748efa30c079fd7a7e40e1876addb0ff",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0033",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "There was a muddy pond at the",
+  "target_word": "bottom",
+  "sample_idx": 2,
+  "generated_text": "edge",
+  "generated_first_word": "edge",
+  "similarity": 0.6818192601203918,
+  "timestamp": "2026-06-27 00:06:56"
+}

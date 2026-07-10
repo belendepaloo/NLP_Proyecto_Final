@@ -1,0 +1,18 @@
+{
+  "query_id": "bbfc53b98fec0d828aece27e8bb3b7cc",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0113",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 9,
+  "prefix": "Back in New York? Persona non grata. In St.",
+  "target_word": "Helena?",
+  "sample_idx": 1,
+  "generated_text": "Petersburg",
+  "generated_first_word": "Petersburg",
+  "similarity": 0.6061934232711792,
+  "timestamp": "2026-06-27 16:52:27"
+}

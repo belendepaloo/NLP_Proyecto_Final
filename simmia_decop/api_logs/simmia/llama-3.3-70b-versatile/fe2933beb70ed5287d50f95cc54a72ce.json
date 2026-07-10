@@ -1,0 +1,18 @@
+{
+  "query_id": "fe2933beb70ed5287d50f95cc54a72ce",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0010",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Hareton would",
+  "target_word": "not",
+  "sample_idx": 0,
+  "generated_text": "not",
+  "generated_first_word": "not",
+  "similarity": 1.0,
+  "timestamp": "2026-06-26 23:13:20"
+}

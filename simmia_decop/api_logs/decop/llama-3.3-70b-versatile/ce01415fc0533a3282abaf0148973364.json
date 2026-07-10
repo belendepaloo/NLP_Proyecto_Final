@@ -1,0 +1,25 @@
+{
+  "query_id": "ce01415fc0533a3282abaf0148973364",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0049",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "title": "Bartleby the Scrivener A Story of Wall Street",
+  "author": "Herman Melville",
+  "length": "medium",
+  "permutation_index": 0,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Bartleby the Scrivener A Story of Wall Street\" book by Herman Melville?\nOptions:\nA. His choice could not be changed. Frequently when a person is intimidated in an extreme and illogical fashion, they begin questioning their own plain convictions. They dimly suspect that, incredibly, all fairness and reasonableness is on the other side. Thus, they request support from any detached people present, for their own uncertain mind. Turkey, I asked, what do you make of this? Am I right? With deference, sir, Turkey replied in a polite manner, I believe you are.\nB. Yes: his decision was irreversible. It is not seldom the case that when a man is browbeaten in some unprecedented and violently unreasonable way, he begins to stagger in his own plainest faith. He begins, as it were, vaguely to surmise that, wonderful as it may be, all the justice and all the reason is on the other side. Accordingly, if any disinterested persons are present, he turns to them for some reinforcement for his own faltering mind. Turkey, said I, what do you think of this? Am I not right? With submission, sir, said Turkey, with his blandest tone, I think that you are.\nC. He wouldn't alter his decision. It's common when someone's bullied in an unprecedented and absurdly unfair way that they start doubting their own clear beliefs. They vaguely guess, amazingly, that justice and logic lie with their opponent. So they ask any impartial people around to back up their wavering mindset. Turkey, I said, what's your opinion on this? Aren't I correct? With respect, sir, Turkey responded smoothly, I think you are.\nD. His decision was final. Often when someone is bullied in a shocking and absurd way, they start to doubt their own clear beliefs. They vaguely guess that, remarkably, righteousness and logic lie with their opponent. So they turn to impartial people nearby, wanting backup for their wavering mindset. Turkey, I said, what's your take? Aren't I correct? Sir, Turkey said in a smooth tone, I think you are.  \nAnswer:",
+  "options": {
+    "A": "His choice could not be changed. Frequently when a person is intimidated in an extreme and illogical fashion, they begin questioning their own plain convictions. They dimly suspect that, incredibly, all fairness and reasonableness is on the other side. Thus, they request support from any detached people present, for their own uncertain mind. Turkey, I asked, what do you make of this? Am I right? With deference, sir, Turkey replied in a polite manner, I believe you are.",
+    "B": "Yes: his decision was irreversible. It is not seldom the case that when a man is browbeaten in some unprecedented and violently unreasonable way, he begins to stagger in his own plainest faith. He begins, as it were, vaguely to surmise that, wonderful as it may be, all the justice and all the reason is on the other side. Accordingly, if any disinterested persons are present, he turns to them for some reinforcement for his own faltering mind. Turkey, said I, what do you think of this? Am I not right? With submission, sir, said Turkey, with his blandest tone, I think that you are.",
+    "C": "He wouldn't alter his decision. It's common when someone's bullied in an unprecedented and absurdly unfair way that they start doubting their own clear beliefs. They vaguely guess, amazingly, that justice and logic lie with their opponent. So they ask any impartial people around to back up their wavering mindset. Turkey, I said, what's your opinion on this? Aren't I correct? With respect, sir, Turkey responded smoothly, I think you are.",
+    "D": "His decision was final. Often when someone is bullied in a shocking and absurd way, they start to doubt their own clear beliefs. They vaguely guess that, remarkably, righteousness and logic lie with their opponent. So they turn to impartial people nearby, wanting backup for their wavering mindset. Turkey, I said, what's your take? Aren't I correct? Sir, Turkey said in a smooth tone, I think you are.  "
+  },
+  "gold_letter": "B",
+  "predicted_letter": "B",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 05:06:01"
+}

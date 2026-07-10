@@ -1,0 +1,18 @@
+{
+  "query_id": "3a88a5760534842d728c58fb7596239d",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0071",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "I did once before. You",
+  "target_word": "cant",
+  "sample_idx": 0,
+  "generated_text": "told",
+  "generated_first_word": "told",
+  "similarity": 0.6394028067588806,
+  "timestamp": "2026-06-27 02:33:41"
+}

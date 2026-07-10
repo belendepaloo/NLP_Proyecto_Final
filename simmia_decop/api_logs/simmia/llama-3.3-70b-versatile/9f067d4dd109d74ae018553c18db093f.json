@@ -1,0 +1,18 @@
+{
+  "query_id": "9f067d4dd109d74ae018553c18db093f",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0001",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "“And I know the",
+  "target_word": "Soul",
+  "sample_idx": 0,
+  "generated_text": "answer",
+  "generated_first_word": "answer",
+  "similarity": 0.7014070749282837,
+  "timestamp": "2026-06-26 22:43:46"
+}

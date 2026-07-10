@@ -1,0 +1,18 @@
+{
+  "query_id": "c4a5d4236d4aadeafd4eb9d3034f19c4",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0143",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Frodo opened",
+  "target_word": "his",
+  "sample_idx": 2,
+  "generated_text": "the",
+  "generated_first_word": "the",
+  "similarity": 0.780502200126648,
+  "timestamp": "2026-06-27 17:58:16"
+}

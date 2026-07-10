@@ -1,0 +1,18 @@
+{
+  "query_id": "761b018f72e590b14c3d40aca9bb5e56",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0158",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "He walked slowly",
+  "target_word": "through",
+  "sample_idx": 0,
+  "generated_text": "through",
+  "generated_first_word": "through",
+  "similarity": 1.0,
+  "timestamp": "2026-06-27 18:31:41"
+}

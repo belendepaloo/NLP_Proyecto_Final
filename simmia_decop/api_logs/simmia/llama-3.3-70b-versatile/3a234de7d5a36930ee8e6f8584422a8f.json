@@ -1,0 +1,18 @@
+{
+  "query_id": "3a234de7d5a36930ee8e6f8584422a8f",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0145",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "'Tell yer what?' asked the sleepy Noah, shaking himself pettishy.",
+  "target_word": "'That",
+  "sample_idx": 2,
+  "generated_text": "'Come",
+  "generated_first_word": "Come",
+  "similarity": 0.7083747386932373,
+  "timestamp": "2026-06-27 18:03:41"
+}

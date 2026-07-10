@@ -1,0 +1,18 @@
+{
+  "query_id": "4db1345912498882712dfdfb9e6d9935",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0023",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "He was shoeless; large, dirty toes were sticking out of the holes",
+  "target_word": "in",
+  "sample_idx": 0,
+  "generated_text": "in",
+  "generated_first_word": "in",
+  "similarity": 1.0,
+  "timestamp": "2026-06-26 23:44:27"
+}

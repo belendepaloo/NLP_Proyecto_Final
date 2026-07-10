@@ -1,0 +1,18 @@
+{
+  "query_id": "2457a7f769020c53fe05502bade93649",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0018",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Mere self-interest, then, if no",
+  "target_word": "better",
+  "sample_idx": 1,
+  "generated_text": "other",
+  "generated_first_word": "other",
+  "similarity": 0.7062819004058838,
+  "timestamp": "2026-06-26 23:31:39"
+}

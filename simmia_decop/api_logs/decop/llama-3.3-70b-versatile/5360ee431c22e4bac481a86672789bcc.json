@@ -1,0 +1,25 @@
+{
+  "query_id": "5360ee431c22e4bac481a86672789bcc",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0168",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "title": "What Lies in the Woods",
+  "author": "Kate Alice Marshall",
+  "length": "medium",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"What Lies in the Woods\" book by Kate Alice Marshall?\nOptions:\nA. I told Cody to cut it out with the wisdom, holding my hand up to stop him. He said everything changes, except Chester. But that wasn't true, was it? Man. This town. I promise, every time I come back it feels like the earth starts crumbling beneath me. And what's under there is everything I want to keep buried. Cody told me he heard about my dad and the house. I groaned. I don't know what to do. I know I should help, but how can I if my dad won't let me touch anything? I could get a team to take care of it.\nB. I told Cody to stop with his words of wisdom, holding my hand up to keep him away. He said everything changes, except for Chester. But that wasn't true, right? Good lord. This town. I promise, whenever I come back it's like the floor starts collapsing under me. And what's below is everything I'd rather keep hidden. Cody told me he heard about my father and the house. I moaned. I don't know what to do. I know I should help, but how can I do that if my dad refuses to let me touch anything? I could hire a team to handle it.\nC. Stop. I cannot handle Cody Benham with words of wisdom, I told him, fending him off with an upheld hand. Everything changes, he said. Except Chester. But that wasnt true, was it? Jesus. This place. I swear, every time I come back its like the ground starts crumbling under my feet. And whats underneath is all the shit Id rather leave buried. I heard about your dad and the house, Cody said. I groaned. I dont know what to do. I know I should help, but how am I supposed to do that if he wont let me touch a damn thing? You could get a crew out.\nD. I told Cody Benham to stop with the wise words, holding up my hand to ward him off. He said everything changes, except Chester. But that wasn't accurate, correct? Jeez. This place. I swear, whenever I return it feels like the ground starts sinking below me. And what's under there is stuff I'd rather keep buried. Cody mentioned he found out about my father and the house. I groaned in response. I'm unsure what to do. I realize I should assist, but how can I if my father won't allow me to handle anything? I could bring in a crew.  \nAnswer:",
+  "options": {
+    "A": "I told Cody to cut it out with the wisdom, holding my hand up to stop him. He said everything changes, except Chester. But that wasn't true, was it? Man. This town. I promise, every time I come back it feels like the earth starts crumbling beneath me. And what's under there is everything I want to keep buried. Cody told me he heard about my dad and the house. I groaned. I don't know what to do. I know I should help, but how can I if my dad won't let me touch anything? I could get a team to take care of it.",
+    "B": "I told Cody to stop with his words of wisdom, holding my hand up to keep him away. He said everything changes, except for Chester. But that wasn't true, right? Good lord. This town. I promise, whenever I come back it's like the floor starts collapsing under me. And what's below is everything I'd rather keep hidden. Cody told me he heard about my father and the house. I moaned. I don't know what to do. I know I should help, but how can I do that if my dad refuses to let me touch anything? I could hire a team to handle it.",
+    "C": "Stop. I cannot handle Cody Benham with words of wisdom, I told him, fending him off with an upheld hand. Everything changes, he said. Except Chester. But that wasnt true, was it? Jesus. This place. I swear, every time I come back its like the ground starts crumbling under my feet. And whats underneath is all the shit Id rather leave buried. I heard about your dad and the house, Cody said. I groaned. I dont know what to do. I know I should help, but how am I supposed to do that if he wont let me touch a damn thing? You could get a crew out.",
+    "D": "I told Cody Benham to stop with the wise words, holding up my hand to ward him off. He said everything changes, except Chester. But that wasn't accurate, correct? Jeez. This place. I swear, whenever I return it feels like the ground starts sinking below me. And what's under there is stuff I'd rather keep buried. Cody mentioned he found out about my father and the house. I groaned in response. I'm unsure what to do. I realize I should assist, but how can I if my father won't allow me to handle anything? I could bring in a crew.  "
+  },
+  "gold_letter": "C",
+  "predicted_letter": "C",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 15:24:46"
+}

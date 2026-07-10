@@ -1,0 +1,18 @@
+{
+  "query_id": "bae9ae8fe1977d8f030b0c617dc963f3",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0077",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 9,
+  "prefix": "Hornsby. He said to be ready when the car",
+  "target_word": "comes",
+  "sample_idx": 1,
+  "generated_text": "arrived",
+  "generated_first_word": "arrived",
+  "similarity": 0.7386711835861206,
+  "timestamp": "2026-06-27 02:47:42"
+}

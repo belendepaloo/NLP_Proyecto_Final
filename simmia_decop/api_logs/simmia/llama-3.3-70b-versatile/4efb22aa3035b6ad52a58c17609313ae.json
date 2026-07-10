@@ -1,0 +1,18 @@
+{
+  "query_id": "4efb22aa3035b6ad52a58c17609313ae",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0087",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "If I",
+  "target_word": "thought",
+  "sample_idx": 2,
+  "generated_text": "were",
+  "generated_first_word": "were",
+  "similarity": 0.7009755969047546,
+  "timestamp": "2026-06-27 15:54:07"
+}

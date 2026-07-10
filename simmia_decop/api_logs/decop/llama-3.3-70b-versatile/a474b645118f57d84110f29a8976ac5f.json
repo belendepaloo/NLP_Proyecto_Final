@@ -1,0 +1,25 @@
+{
+  "query_id": "a474b645118f57d84110f29a8976ac5f",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0040",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "title": "Matilda",
+  "author": "Roald Dahl",
+  "length": "medium",
+  "permutation_index": 2,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Matilda\" book by Roald Dahl?\nOptions:\nA. At that moment, Harry's mom came into the room carrying a large tray with the four suppers on it. This time it was fish and chips that Mrs. Wormwood had gotten from the fish and chip shop on her way home after bingo. It seemed like going to bingo in the afternoons left her so worn out physically and emotionally that she never had enough energy left to cook dinner. So if it wasn't a frozen TV dinner, it had to be fish and chips. 'Why do you look so red in the face, Harry?' she said as she set the tray down on the coffee table.  \nB. Just then, Harry's mother entered with a big tray holding the four dinners. On this occasion it was fish and chips that Mrs. Wormwood had bought from the fish and chip shop after leaving bingo. It appeared that bingo afternoons made her so tired mentally and physically that she didn't have the energy to make an evening meal. So if it wasn't a TV dinner, it was fish and chips. 'Why does your face look so flushed, Harry?' she questioned as she put the tray on the coffee table.\nC. At that point, the mother came in carrying a large tray on which were the four suppers. This time it was fish and chips which Mrs Wormwood had picked up in the fish and chip shop on her way home from bingo. It seemed that bingo afternoons left her so exhausted both physically and emotionally that she never had enough energy left to cook an evening meal. So if it wasn’t TV dinners it had to be fish and chips. ‘What are you looking so red in the face about, Harry?’ she said as she put the tray down on the coffee-table. \nD. Just then, Harry's mother entered holding a big tray with the four dinners on it. On this night it was fish and chips that Mrs. Wormwood had purchased at the fish and chip shop after she left bingo. It appeared bingo afternoons exhausted her so much physically and emotionally that she didn't have the energy to make an evening meal. So if it wasn't a pre-made TV dinner, it was fish and chips. 'Why does your face look so flushed, Harry?' she asked as she placed the tray on the coffee table.\nAnswer:",
+  "options": {
+    "A": "At that moment, Harry's mom came into the room carrying a large tray with the four suppers on it. This time it was fish and chips that Mrs. Wormwood had gotten from the fish and chip shop on her way home after bingo. It seemed like going to bingo in the afternoons left her so worn out physically and emotionally that she never had enough energy left to cook dinner. So if it wasn't a frozen TV dinner, it had to be fish and chips. 'Why do you look so red in the face, Harry?' she said as she set the tray down on the coffee table.  ",
+    "B": "Just then, Harry's mother entered with a big tray holding the four dinners. On this occasion it was fish and chips that Mrs. Wormwood had bought from the fish and chip shop after leaving bingo. It appeared that bingo afternoons made her so tired mentally and physically that she didn't have the energy to make an evening meal. So if it wasn't a TV dinner, it was fish and chips. 'Why does your face look so flushed, Harry?' she questioned as she put the tray on the coffee table.",
+    "C": "At that point, the mother came in carrying a large tray on which were the four suppers. This time it was fish and chips which Mrs Wormwood had picked up in the fish and chip shop on her way home from bingo. It seemed that bingo afternoons left her so exhausted both physically and emotionally that she never had enough energy left to cook an evening meal. So if it wasn’t TV dinners it had to be fish and chips. ‘What are you looking so red in the face about, Harry?’ she said as she put the tray down on the coffee-table. ",
+    "D": "Just then, Harry's mother entered holding a big tray with the four dinners on it. On this night it was fish and chips that Mrs. Wormwood had purchased at the fish and chip shop after she left bingo. It appeared bingo afternoons exhausted her so much physically and emotionally that she didn't have the energy to make an evening meal. So if it wasn't a pre-made TV dinner, it was fish and chips. 'Why does your face look so flushed, Harry?' she asked as she placed the tray on the coffee table."
+  },
+  "gold_letter": "C",
+  "predicted_letter": "C",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 05:03:47"
+}

@@ -1,0 +1,18 @@
+{
+  "query_id": "866d5ceab1a46e218bdae8c255e992c9",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0125",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "One of these rooms had been turned into a",
+  "target_word": "bedroom",
+  "sample_idx": 0,
+  "generated_text": "study",
+  "generated_first_word": "study",
+  "similarity": 0.6368319988250732,
+  "timestamp": "2026-06-27 17:19:03"
+}

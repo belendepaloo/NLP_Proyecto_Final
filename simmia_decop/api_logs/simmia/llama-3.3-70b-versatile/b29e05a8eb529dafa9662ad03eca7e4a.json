@@ -1,0 +1,18 @@
+{
+  "query_id": "b29e05a8eb529dafa9662ad03eca7e4a",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0071",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 18,
+  "prefix": "I did once before. You cant this time, Anton said gently. Its hundreds of bodies. Lore even for",
+  "target_word": "you,",
+  "sample_idx": 0,
+  "generated_text": "a",
+  "generated_first_word": "a",
+  "similarity": 0.6568585634231567,
+  "timestamp": "2026-06-27 02:35:14"
+}

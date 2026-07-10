@@ -1,0 +1,25 @@
+{
+  "query_id": "1ce6919d3d0f1bd5258a9e1df82610fa",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0115",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "title": "The Foxglove King",
+  "author": "Hannah Whitten",
+  "length": "medium",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Foxglove King\" book by Hannah Whitten?\nOptions:\nA. If I participated in such acts, it would make things easier for him, but I've always disdained it. The edge of his mouth lifted, flashing his teeth illuminated by his torch's light. And if he tries a more blatant homicide, who could censure me for returning in kind? Disquiet throbbed in her temples. Let's hope he behaves himself, then. Bastian's eyes betrayed part of him didn't hope for that at all. Part of him longed for bloodshed. Up ahead, the catacombs branched again, a T junction of tunnels leaving no choice but left or right.  \nB. If I were someone who partook in such things, it would make his job easier, but Ive always had a distaste for it. The corner of his mouth lifted, his bared teeth gleaming in the light of his torch. And if he tries to kill me in a less subtle way, who can blame me for returning the favor? Disquiet thrummed in her temples. Lets hope he behaves, then. The look in Bastians eyes said part of him didnt hope for that at all. Part of him wanted a bloodbath. Up ahead, the catacombs branched again, a T of tunnels leaving no option other than left or right.\nC. If I engaged in those activities, it would assist him, however I've never liked it. His mouth corner raised, baring his teeth which shone in the torchlight. And if he attempts a more overt murder, who could fault me for reciprocating? Anxiety pulsed in her head. Hopefully he acts properly, then. Bastian's gaze showed part of him didn't hope for that. Part of him craved violence. Ahead, the catacombs forked again, tunnels in a T shape leaving only left or right as options.\nD. Were I someone who engaged in those things, it would facilitate his work, however I've always detested it. The corner of his mouth raised, baring his gleaming teeth in the torchlight. And if he attempts a more overt murder, who could blame me for reciprocating? Anxiety pulsed in her head. Hopefully he acts appropriately, then. Bastian's gaze showed part of him didn't hope for that. Part of him thirsted for violence. Ahead, the catacombs forked again, tunnels in a T leaving only left or right as options.\nAnswer:",
+  "options": {
+    "A": "If I participated in such acts, it would make things easier for him, but I've always disdained it. The edge of his mouth lifted, flashing his teeth illuminated by his torch's light. And if he tries a more blatant homicide, who could censure me for returning in kind? Disquiet throbbed in her temples. Let's hope he behaves himself, then. Bastian's eyes betrayed part of him didn't hope for that at all. Part of him longed for bloodshed. Up ahead, the catacombs branched again, a T junction of tunnels leaving no choice but left or right.  ",
+    "B": "If I were someone who partook in such things, it would make his job easier, but Ive always had a distaste for it. The corner of his mouth lifted, his bared teeth gleaming in the light of his torch. And if he tries to kill me in a less subtle way, who can blame me for returning the favor? Disquiet thrummed in her temples. Lets hope he behaves, then. The look in Bastians eyes said part of him didnt hope for that at all. Part of him wanted a bloodbath. Up ahead, the catacombs branched again, a T of tunnels leaving no option other than left or right.",
+    "C": "If I engaged in those activities, it would assist him, however I've never liked it. His mouth corner raised, baring his teeth which shone in the torchlight. And if he attempts a more overt murder, who could fault me for reciprocating? Anxiety pulsed in her head. Hopefully he acts properly, then. Bastian's gaze showed part of him didn't hope for that. Part of him craved violence. Ahead, the catacombs forked again, tunnels in a T shape leaving only left or right as options.",
+    "D": "Were I someone who engaged in those things, it would facilitate his work, however I've always detested it. The corner of his mouth raised, baring his gleaming teeth in the torchlight. And if he attempts a more overt murder, who could blame me for reciprocating? Anxiety pulsed in her head. Hopefully he acts appropriately, then. Bastian's gaze showed part of him didn't hope for that. Part of him thirsted for violence. Ahead, the catacombs forked again, tunnels in a T leaving only left or right as options."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-06-26 15:05:16"
+}

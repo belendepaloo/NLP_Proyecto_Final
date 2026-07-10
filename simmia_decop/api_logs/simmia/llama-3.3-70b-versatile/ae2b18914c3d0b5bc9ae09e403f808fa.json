@@ -1,0 +1,18 @@
+{
+  "query_id": "ae2b18914c3d0b5bc9ae09e403f808fa",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0032",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "Even as the first shadows were felt in Mirkwood there appeared in",
+  "target_word": "the",
+  "sample_idx": 1,
+  "generated_text": "the western lands",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-06-27 00:05:12"
+}

@@ -1,0 +1,18 @@
+{
+  "query_id": "3446e5cc3cde5bc4a03a2d9bf820b713",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0099",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "And not a hint of rot.",
+  "target_word": "The",
+  "sample_idx": 2,
+  "generated_text": "anywhere",
+  "generated_first_word": "anywhere",
+  "similarity": 0.6338929533958435,
+  "timestamp": "2026-06-27 16:21:11"
+}

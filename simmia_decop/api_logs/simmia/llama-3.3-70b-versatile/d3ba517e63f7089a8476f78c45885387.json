@@ -1,0 +1,18 @@
+{
+  "query_id": "d3ba517e63f7089a8476f78c45885387",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0125",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "One of these rooms",
+  "target_word": "had",
+  "sample_idx": 2,
+  "generated_text": "was",
+  "generated_first_word": "was",
+  "similarity": 0.7475413680076599,
+  "timestamp": "2026-06-27 17:18:33"
+}

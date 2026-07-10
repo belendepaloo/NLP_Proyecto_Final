@@ -1,0 +1,18 @@
+{
+  "query_id": "ea0384504384112a13db969eeee075c5",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0188",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "At all events, if nothing else",
+  "target_word": "could",
+  "sample_idx": 2,
+  "generated_text": "works",
+  "generated_first_word": "works",
+  "similarity": 0.6841111779212952,
+  "timestamp": "2026-06-27 19:37:58"
+}

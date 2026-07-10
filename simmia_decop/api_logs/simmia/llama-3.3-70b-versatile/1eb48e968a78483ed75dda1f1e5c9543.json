@@ -1,0 +1,18 @@
+{
+  "query_id": "1eb48e968a78483ed75dda1f1e5c9543",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0199",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "What makes you",
+  "target_word": "think",
+  "sample_idx": 2,
+  "generated_text": "think",
+  "generated_first_word": "think",
+  "similarity": 1.0,
+  "timestamp": "2026-06-27 20:01:50"
+}

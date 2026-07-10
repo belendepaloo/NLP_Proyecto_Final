@@ -1,0 +1,25 @@
+{
+  "query_id": "490618f3a8c28f15a82a3d4739f5fd61",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0073",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "title": "Lord of the Rings The Fellowship of the Ring",
+  "author": "J R R Tolkien",
+  "length": "medium",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Lord of the Rings The Fellowship of the Ring\" book by J R R Tolkien?\nOptions:\nA. Strider did not know of the letter before, he told them. He wanted the hobbits to put their faith in him without proof so that he could help. He needed to make certain of their trustworthiness before revealing everything about his own past. Though he peculiarly laughed and admitted his appearance probably made it difficult, he had hoped they would accept him for himself and become friends.\nB. ‘Would it? Would any of you have believed me till now?’ said Strider. ‘I knew nothing of this letter. For all I knew I had to persuade you to trust me without proofs, if I was to help you. In any case, I did not intend to tell you all about myself at once. I had to study you first, and make sure of you. The Enemy has set traps for me before now. As soon as I had made up my mind, I was ready to tell you whatever you asked. But I must admit,’ he added with a queer laugh, ‘that I hoped you would take to me for my own sake. A hunted man sometimes wearies of distrust and longs for friendship. But there, I believe my looks are against me.’\nC. Strider explained that he did not know about the letter earlier. He wanted the hobbits to trust him without proof so he could help them. He first had to be sure he could trust them before revealing everything about himself. Though he hoped they would like him for himself, he admitted his appearance made that difficult. \nD. Strider said he was unaware of the letter previously. He needed the hobbits to believe in him without evidence so he could assist them. He had to learn about them first and ensure they were trustworthy before telling them all about himself. He strangely laughed and acknowledged his looks likely made it hard for them to like him for who he was, though he had hoped for their friendship.\nAnswer:",
+  "options": {
+    "A": "Strider did not know of the letter before, he told them. He wanted the hobbits to put their faith in him without proof so that he could help. He needed to make certain of their trustworthiness before revealing everything about his own past. Though he peculiarly laughed and admitted his appearance probably made it difficult, he had hoped they would accept him for himself and become friends.",
+    "B": "‘Would it? Would any of you have believed me till now?’ said Strider. ‘I knew nothing of this letter. For all I knew I had to persuade you to trust me without proofs, if I was to help you. In any case, I did not intend to tell you all about myself at once. I had to study you first, and make sure of you. The Enemy has set traps for me before now. As soon as I had made up my mind, I was ready to tell you whatever you asked. But I must admit,’ he added with a queer laugh, ‘that I hoped you would take to me for my own sake. A hunted man sometimes wearies of distrust and longs for friendship. But there, I believe my looks are against me.’",
+    "C": "Strider explained that he did not know about the letter earlier. He wanted the hobbits to trust him without proof so he could help them. He first had to be sure he could trust them before revealing everything about himself. Though he hoped they would like him for himself, he admitted his appearance made that difficult. ",
+    "D": "Strider said he was unaware of the letter previously. He needed the hobbits to believe in him without evidence so he could assist them. He had to learn about them first and ensure they were trustworthy before telling them all about himself. He strangely laughed and acknowledged his looks likely made it hard for them to like him for who he was, though he had hoped for their friendship."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "B",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 14:46:40"
+}

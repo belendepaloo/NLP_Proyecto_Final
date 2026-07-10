@@ -1,0 +1,18 @@
+{
+  "query_id": "f597b01e16e142349750dd1709044764",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0152",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "Before, I had never experienced aught but a not-unpleasing",
+  "target_word": "sadness.",
+  "sample_idx": 0,
+  "generated_text": "sense",
+  "generated_first_word": "sense",
+  "similarity": 0.6636767983436584,
+  "timestamp": "2026-06-27 18:19:07"
+}

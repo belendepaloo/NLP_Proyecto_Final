@@ -1,0 +1,18 @@
+{
+  "query_id": "5de86554c5743bc9c17ab6d807e50b81",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0198",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 10,
+  "prefix": "We dance all night, stopping only for me to down",
+  "target_word": "my",
+  "sample_idx": 2,
+  "generated_text": "a shot",
+  "generated_first_word": "a",
+  "similarity": 0.7496962547302246,
+  "timestamp": "2026-06-27 20:00:26"
+}

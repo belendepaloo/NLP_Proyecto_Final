@@ -1,0 +1,18 @@
+{
+  "query_id": "c27f980fa685b04600e85aef6ed5c240",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0024",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Side out o'",
+  "target_word": "t'",
+  "sample_idx": 0,
+  "generated_text": "town",
+  "generated_first_word": "town",
+  "similarity": 0.6220870018005371,
+  "timestamp": "2026-06-26 23:45:38"
+}

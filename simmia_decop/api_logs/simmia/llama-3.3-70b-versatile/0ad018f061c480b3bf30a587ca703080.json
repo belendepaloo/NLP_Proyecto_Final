@@ -1,0 +1,18 @@
+{
+  "query_id": "0ad018f061c480b3bf30a587ca703080",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0019",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Edgar",
+  "target_word": "Linton,",
+  "sample_idx": 0,
+  "generated_text": "Allan",
+  "generated_first_word": "Allan",
+  "similarity": 0.6458978652954102,
+  "timestamp": "2026-06-26 23:33:23"
+}

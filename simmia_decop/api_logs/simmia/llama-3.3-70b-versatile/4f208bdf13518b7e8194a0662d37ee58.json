@@ -1,0 +1,18 @@
+{
+  "query_id": "4f208bdf13518b7e8194a0662d37ee58",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0042",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Never",
+  "target_word": "mind",
+  "sample_idx": 0,
+  "generated_text": "give",
+  "generated_first_word": "give",
+  "similarity": 0.6729428768157959,
+  "timestamp": "2026-06-27 00:50:55"
+}

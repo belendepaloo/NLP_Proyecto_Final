@@ -1,0 +1,25 @@
+{
+  "query_id": "653100f9094f8eec7f5a5b16ba89c094",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0166",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "title": "A Day of Fallen Night",
+  "author": "Samantha Shannon",
+  "length": "medium",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"A Day of Fallen Night\" book by Samantha Shannon?\nOptions:\nA. Wulf frantically gathered anything he could hurl at the creatures, including weapons, oars, meat racks, and broken furniture. Many people working together quickly made a large barricade that impeded the creatures. Archers came and lit the pile on fire. Someone shouted that the wyvern had returned, trapping them like fish in a net. Wulf looked up, his legs weakening as he recalled Fredel. A harpoon speared the wyvern, making it screech and crash into houses, its blood spurting out.\nB. Wulf seized any objects he could find to hurl at the creatures, including arms, paddles, a rack that had once held meat, and a table missing a leg. With many hands cooperating, the heap quickly grew high enough to obstruct the creatures. Archers wielding fire came to ignite the pile. A voice exclaimed the wyvern had returned, trapping them all like fish in a net. Wulf looked upward, his knees turning weak as he remembered Fredel. A harpoon speared the wyvern, making it screech and crash down onto houses, its blood spurting out from under its wing.\nC. Wulf desperately grabbed everything around to throw at the attacking creatures, such as weapons, oars, meat racks, and damaged tables. With so many people helping, they soon had a big enough barrier to hinder the creatures. Fire archers arrived to ignite the pile. Someone yelled that the wyvern was back, enclosing them like fish caught in a net. Wulf glanced up, his knees giving out as he thought of Fredel. A harpoon impaled the wyvern, causing it to shriek and tumble into houses, blood gushing from its wound.  \nD. Wulf grabbed whatever he could throw: weapons, two oars, a rack that must once have held meat, a table with a broken leg. With so many hands working together, the pile was soon high enough to give the creatures trouble breaking through. Fire archers came to set it ablaze. Its coming, a voice cried. The wyvern was back, and it had them all caught like fish in a net. Wulf looked up, his knees turning to slurry as he remembered Fredel. A harpoon ripped into it. The sound of its screech jolted him free. He stared as it rolled, like a foundering ship, and crashed down on a line of houses, blood spraying from under its wing.\nAnswer:",
+  "options": {
+    "A": "Wulf frantically gathered anything he could hurl at the creatures, including weapons, oars, meat racks, and broken furniture. Many people working together quickly made a large barricade that impeded the creatures. Archers came and lit the pile on fire. Someone shouted that the wyvern had returned, trapping them like fish in a net. Wulf looked up, his legs weakening as he recalled Fredel. A harpoon speared the wyvern, making it screech and crash into houses, its blood spurting out.",
+    "B": "Wulf seized any objects he could find to hurl at the creatures, including arms, paddles, a rack that had once held meat, and a table missing a leg. With many hands cooperating, the heap quickly grew high enough to obstruct the creatures. Archers wielding fire came to ignite the pile. A voice exclaimed the wyvern had returned, trapping them all like fish in a net. Wulf looked upward, his knees turning weak as he remembered Fredel. A harpoon speared the wyvern, making it screech and crash down onto houses, its blood spurting out from under its wing.",
+    "C": "Wulf desperately grabbed everything around to throw at the attacking creatures, such as weapons, oars, meat racks, and damaged tables. With so many people helping, they soon had a big enough barrier to hinder the creatures. Fire archers arrived to ignite the pile. Someone yelled that the wyvern was back, enclosing them like fish caught in a net. Wulf glanced up, his knees giving out as he thought of Fredel. A harpoon impaled the wyvern, causing it to shriek and tumble into houses, blood gushing from its wound.  ",
+    "D": "Wulf grabbed whatever he could throw: weapons, two oars, a rack that must once have held meat, a table with a broken leg. With so many hands working together, the pile was soon high enough to give the creatures trouble breaking through. Fire archers came to set it ablaze. Its coming, a voice cried. The wyvern was back, and it had them all caught like fish in a net. Wulf looked up, his knees turning to slurry as he remembered Fredel. A harpoon ripped into it. The sound of its screech jolted him free. He stared as it rolled, like a foundering ship, and crashed down on a line of houses, blood spraying from under its wing."
+  },
+  "gold_letter": "D",
+  "predicted_letter": "D",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 15:24:08"
+}

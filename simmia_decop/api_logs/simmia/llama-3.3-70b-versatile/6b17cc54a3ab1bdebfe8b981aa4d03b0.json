@@ -1,0 +1,18 @@
+{
+  "query_id": "6b17cc54a3ab1bdebfe8b981aa4d03b0",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0117",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Frodo looked round. It did look",
+  "target_word": "like",
+  "sample_idx": 0,
+  "generated_text": "very",
+  "generated_first_word": "very",
+  "similarity": 0.6730186343193054,
+  "timestamp": "2026-06-27 17:00:55"
+}

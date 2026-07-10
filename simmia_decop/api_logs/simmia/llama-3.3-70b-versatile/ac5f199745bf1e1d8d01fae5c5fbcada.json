@@ -1,0 +1,18 @@
+{
+  "query_id": "ac5f199745bf1e1d8d01fae5c5fbcada",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0159",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 17,
+  "prefix": "The mother’s handbag lay on a chair at the other end of the table. She opened the",
+  "target_word": "bag",
+  "sample_idx": 2,
+  "generated_text": "zipper",
+  "generated_first_word": "zipper",
+  "similarity": 0.8078280687332153,
+  "timestamp": "2026-06-27 18:35:35"
+}

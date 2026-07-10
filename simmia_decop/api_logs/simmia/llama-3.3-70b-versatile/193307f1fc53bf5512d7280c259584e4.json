@@ -1,0 +1,18 @@
+{
+  "query_id": "193307f1fc53bf5512d7280c259584e4",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0124",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "She regarded it (once her clothes were",
+  "target_word": "ordered)",
+  "sample_idx": 0,
+  "generated_text": "dry)",
+  "generated_first_word": "dry)",
+  "similarity": 0.7707196474075317,
+  "timestamp": "2026-06-27 17:16:36"
+}

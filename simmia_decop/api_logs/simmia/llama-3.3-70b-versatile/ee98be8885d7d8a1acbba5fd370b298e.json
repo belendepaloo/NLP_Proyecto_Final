@@ -1,0 +1,18 @@
+{
+  "query_id": "ee98be8885d7d8a1acbba5fd370b298e",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0135",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 19,
+  "prefix": "Not when Im finally finding my way in the world. I miss you. Her eyes burned. I miss you,",
+  "target_word": "too.",
+  "sample_idx": 2,
+  "generated_text": "too.",
+  "generated_first_word": "too.",
+  "similarity": 1.0,
+  "timestamp": "2026-06-27 17:42:31"
+}

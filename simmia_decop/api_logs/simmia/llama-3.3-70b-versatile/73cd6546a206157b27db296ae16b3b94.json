@@ -1,0 +1,18 @@
+{
+  "query_id": "73cd6546a206157b27db296ae16b3b94",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0010",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 16,
+  "prefix": "Hareton would not open his fingers, so I laid it on his knee. He did not",
+  "target_word": "strike",
+  "sample_idx": 2,
+  "generated_text": "notice",
+  "generated_first_word": "notice",
+  "similarity": 0.6497551202774048,
+  "timestamp": "2026-06-26 23:15:03"
+}

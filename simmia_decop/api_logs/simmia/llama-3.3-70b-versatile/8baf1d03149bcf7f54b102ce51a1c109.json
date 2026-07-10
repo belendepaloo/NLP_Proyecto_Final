@@ -1,0 +1,18 @@
+{
+  "query_id": "8baf1d03149bcf7f54b102ce51a1c109",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0005",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Oh. Maybe Ive",
+  "target_word": "crossed",
+  "sample_idx": 1,
+  "generated_text": "been",
+  "generated_first_word": "been",
+  "similarity": 0.680201530456543,
+  "timestamp": "2026-06-26 23:01:49"
+}

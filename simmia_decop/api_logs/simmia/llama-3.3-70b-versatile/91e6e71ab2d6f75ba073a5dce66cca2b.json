@@ -1,0 +1,18 @@
+{
+  "query_id": "91e6e71ab2d6f75ba073a5dce66cca2b",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0155",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "And this inner land, which was long named Eglador, was after called",
+  "target_word": "Doriath,",
+  "sample_idx": 1,
+  "generated_text": "Númen",
+  "generated_first_word": "Númen",
+  "similarity": 0.6546403169631958,
+  "timestamp": "2026-06-27 18:26:08"
+}

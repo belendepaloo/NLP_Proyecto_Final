@@ -1,0 +1,18 @@
+{
+  "query_id": "f5063e335bbc8ab6af100ca102592223",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0046",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 11,
+  "prefix": "Yet Archer was convinced that Madame Olenska had not accepted her",
+  "target_word": "grandmother's",
+  "sample_idx": 2,
+  "generated_text": "fate",
+  "generated_first_word": "fate",
+  "similarity": 0.6177704930305481,
+  "timestamp": "2026-06-27 01:01:09"
+}

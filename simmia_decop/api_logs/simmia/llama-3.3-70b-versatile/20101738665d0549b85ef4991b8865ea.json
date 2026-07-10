@@ -1,0 +1,18 @@
+{
+  "query_id": "20101738665d0549b85ef4991b8865ea",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0149",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Not only did there",
+  "target_word": "seem",
+  "sample_idx": 0,
+  "generated_text": "exist",
+  "generated_first_word": "exist",
+  "similarity": 0.7444676756858826,
+  "timestamp": "2026-06-27 18:11:52"
+}

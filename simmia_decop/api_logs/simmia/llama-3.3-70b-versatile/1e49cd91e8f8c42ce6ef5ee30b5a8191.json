@@ -1,0 +1,18 @@
+{
+  "query_id": "1e49cd91e8f8c42ce6ef5ee30b5a8191",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0132",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Suppose that we quicken the tempo",
+  "target_word": "of",
+  "sample_idx": 1,
+  "generated_text": "of",
+  "generated_first_word": "of",
+  "similarity": 1.0,
+  "timestamp": "2026-06-27 17:34:17"
+}

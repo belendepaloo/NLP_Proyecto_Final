@@ -1,0 +1,18 @@
+{
+  "query_id": "f72cfd88453bb5ba21ff49b1765cff37",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0087",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "If I thought it, I should never",
+  "target_word": "be",
+  "sample_idx": 1,
+  "generated_text": "have",
+  "generated_first_word": "have",
+  "similarity": 0.6341136693954468,
+  "timestamp": "2026-06-27 15:54:40"
+}

@@ -1,0 +1,18 @@
+{
+  "query_id": "9713951f680eb7c36f7b2c8ec60a0c7b",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0023",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "He was shoeless; large,",
+  "target_word": "dirty",
+  "sample_idx": 0,
+  "generated_text": "scars",
+  "generated_first_word": "scars",
+  "similarity": 0.6173478364944458,
+  "timestamp": "2026-06-26 23:43:31"
+}

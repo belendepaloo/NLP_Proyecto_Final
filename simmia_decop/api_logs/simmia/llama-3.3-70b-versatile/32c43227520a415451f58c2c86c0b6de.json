@@ -1,0 +1,18 @@
+{
+  "query_id": "32c43227520a415451f58c2c86c0b6de",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0068",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "In Oldspeak",
+  "target_word": "it",
+  "sample_idx": 1,
+  "generated_text": "it",
+  "generated_first_word": "it",
+  "similarity": 1.0,
+  "timestamp": "2026-06-27 02:26:36"
+}

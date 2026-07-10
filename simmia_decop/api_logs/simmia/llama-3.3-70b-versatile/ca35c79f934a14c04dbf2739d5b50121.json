@@ -1,0 +1,18 @@
+{
+  "query_id": "ca35c79f934a14c04dbf2739d5b50121",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0170",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "There were many recesses cut in",
+  "target_word": "the",
+  "sample_idx": 1,
+  "generated_text": "the",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-06-27 18:58:28"
+}

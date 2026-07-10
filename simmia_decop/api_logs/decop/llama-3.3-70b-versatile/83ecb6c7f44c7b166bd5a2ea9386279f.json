@@ -1,0 +1,25 @@
+{
+  "query_id": "83ecb6c7f44c7b166bd5a2ea9386279f",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0159",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "title": "Matilda",
+  "author": "Roald Dahl",
+  "length": "medium",
+  "permutation_index": 2,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Matilda\" book by Roald Dahl?\nOptions:\nA. The mother’s handbag lay on a chair at the other end of the table. She opened the bag and got out a powder compact that had a small round mirror on the inside of the lid. She opened the compact and handed it to her husband. He grabbed it and held it before his face and in doing so spilled most of the powder all over the front of his fancy tweed jacket. \nB. The mother's handbag was resting on a chair far away on the table. She searched through her bag and took out a makeup powder case that had a little circular mirror on the underside of the top. She flipped open the case and passed it to her husband. He snatched it and positioned it in front of his face, causing a majority of the powder to spill all over the front of his expensive tweed coat.\nC. The mother's handbag was placed on a chair far down the table. She searched inside her bag and retrieved a powder case containing a miniature circular mirror on the backside of the cover. She flipped open the case and passed it along to her husband. He seized it quickly and positioned it before his face, causing much of the powder to spill onto the front of his expensive tweed jacket.\nD. The mother's purse was sitting on a chair at the distant end of the table. She dug through her purse and removed a powder compact which had a small round mirror on the interior of the lid. She popped open the compact and handed it over to her husband. He grabbed it hastily and held it up to his face, resulting in most of the powder spilling across the front of his fancy tweed jacket. \nAnswer:",
+  "options": {
+    "A": "The mother’s handbag lay on a chair at the other end of the table. She opened the bag and got out a powder compact that had a small round mirror on the inside of the lid. She opened the compact and handed it to her husband. He grabbed it and held it before his face and in doing so spilled most of the powder all over the front of his fancy tweed jacket. ",
+    "B": "The mother's handbag was resting on a chair far away on the table. She searched through her bag and took out a makeup powder case that had a little circular mirror on the underside of the top. She flipped open the case and passed it to her husband. He snatched it and positioned it in front of his face, causing a majority of the powder to spill all over the front of his expensive tweed coat.",
+    "C": "The mother's handbag was placed on a chair far down the table. She searched inside her bag and retrieved a powder case containing a miniature circular mirror on the backside of the cover. She flipped open the case and passed it along to her husband. He seized it quickly and positioned it before his face, causing much of the powder to spill onto the front of his expensive tweed jacket.",
+    "D": "The mother's purse was sitting on a chair at the distant end of the table. She dug through her purse and removed a powder compact which had a small round mirror on the interior of the lid. She popped open the compact and handed it over to her husband. He grabbed it hastily and held it up to his face, resulting in most of the powder spilling across the front of his fancy tweed jacket. "
+  },
+  "gold_letter": "A",
+  "predicted_letter": "A",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 15:22:29"
+}

@@ -1,0 +1,18 @@
+{
+  "query_id": "0d86909afac8a0af3e574a9ac9f4f824",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0145",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "'Tell yer what?' asked the",
+  "target_word": "sleepy",
+  "sample_idx": 1,
+  "generated_text": "barman",
+  "generated_first_word": "barman",
+  "similarity": 0.6240260601043701,
+  "timestamp": "2026-06-27 18:03:03"
+}

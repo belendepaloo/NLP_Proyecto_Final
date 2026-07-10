@@ -1,0 +1,18 @@
+{
+  "query_id": "829bd5a1d0905c1e25e03e51ba3dcffa",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0148",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "They did not speak again. She did not actually try to shake",
+  "target_word": "him",
+  "sample_idx": 2,
+  "generated_text": "his hand,",
+  "generated_first_word": "his",
+  "similarity": 0.9067898988723755,
+  "timestamp": "2026-06-27 18:10:39"
+}

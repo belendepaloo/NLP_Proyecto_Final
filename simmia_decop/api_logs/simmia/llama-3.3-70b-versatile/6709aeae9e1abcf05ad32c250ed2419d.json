@@ -1,0 +1,18 @@
+{
+  "query_id": "6709aeae9e1abcf05ad32c250ed2419d",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0142",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 11,
+  "prefix": "I always worry more when Im tired. I frown. Ive been",
+  "target_word": "so",
+  "sample_idx": 1,
+  "generated_text": "having",
+  "generated_first_word": "having",
+  "similarity": 0.661056399345398,
+  "timestamp": "2026-06-27 17:57:04"
+}

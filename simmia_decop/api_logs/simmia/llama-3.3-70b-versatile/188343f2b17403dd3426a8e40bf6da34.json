@@ -1,0 +1,18 @@
+{
+  "query_id": "188343f2b17403dd3426a8e40bf6da34",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0051",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Javier always has a",
+  "target_word": "girlfriend.",
+  "sample_idx": 1,
+  "generated_text": "smile",
+  "generated_first_word": "smile",
+  "similarity": 0.6382243633270264,
+  "timestamp": "2026-06-27 01:11:31"
+}

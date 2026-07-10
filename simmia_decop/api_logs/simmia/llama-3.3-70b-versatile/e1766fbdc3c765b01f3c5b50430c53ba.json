@@ -1,0 +1,18 @@
+{
+  "query_id": "e1766fbdc3c765b01f3c5b50430c53ba",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0051",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Javier",
+  "target_word": "always",
+  "sample_idx": 2,
+  "generated_text": "was",
+  "generated_first_word": "was",
+  "similarity": 0.677253007888794,
+  "timestamp": "2026-06-27 01:11:12"
+}

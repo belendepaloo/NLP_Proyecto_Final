@@ -1,0 +1,18 @@
+{
+  "query_id": "e5a3f5825a251cbddc9c07bf72c95f05",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0064",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "As Noah's red nose",
+  "target_word": "grew",
+  "sample_idx": 0,
+  "generated_text": "glowed",
+  "generated_first_word": "glowed",
+  "similarity": 0.6581265926361084,
+  "timestamp": "2026-06-27 02:14:47"
+}

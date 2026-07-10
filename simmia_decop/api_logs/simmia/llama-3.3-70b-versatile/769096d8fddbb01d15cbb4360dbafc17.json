@@ -1,0 +1,18 @@
+{
+  "query_id": "769096d8fddbb01d15cbb4360dbafc17",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0101",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Oh, don't tell you are",
+  "target_word": "going",
+  "sample_idx": 0,
+  "generated_text": "going",
+  "generated_first_word": "going",
+  "similarity": 1.0,
+  "timestamp": "2026-06-27 16:25:25"
+}

@@ -1,0 +1,18 @@
+{
+  "query_id": "08574e528ea89b5b5f727d83f3969c65",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0002",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Master Bates followed, with",
+  "target_word": "a",
+  "sample_idx": 0,
+  "generated_text": "Oliver",
+  "generated_first_word": "Oliver",
+  "similarity": 0.6581234931945801,
+  "timestamp": "2026-06-26 22:46:01"
+}

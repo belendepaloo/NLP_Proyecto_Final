@@ -1,0 +1,2 @@
+method,model,backend,length,n_samples,max_words,n_samples_per_prefix,mean_absolute_error,mean_error_members,mean_error_non_members,auc,auc_inverted
+simmia,llama-3.3-70b-versatile,groq,medium,199,20,3,0.49353987500853164,0.23749058870892775,0.7521755177354045,0.5732323232323232,0.42676767676767674

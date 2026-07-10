@@ -1,0 +1,18 @@
+{
+  "query_id": "4337e08d31fd96db18b54610b951cb75",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0069",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 15,
+  "prefix": "But when one of Marions skates slid out from under her and she wobbled, Judy",
+  "target_word": "grasped",
+  "sample_idx": 2,
+  "generated_text": "rushed",
+  "generated_first_word": "rushed",
+  "similarity": 0.5984812378883362,
+  "timestamp": "2026-06-27 02:30:26"
+}

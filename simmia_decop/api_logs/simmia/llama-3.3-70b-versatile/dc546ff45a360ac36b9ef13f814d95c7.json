@@ -1,0 +1,18 @@
+{
+  "query_id": "dc546ff45a360ac36b9ef13f814d95c7",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0012",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 11,
+  "prefix": "Bathed in starlight and dotted by leaping watch-flames from torch house",
+  "target_word": "minarets,",
+  "sample_idx": 2,
+  "generated_text": "roofs,",
+  "generated_first_word": "roofs,",
+  "similarity": 0.7171287536621094,
+  "timestamp": "2026-06-26 23:18:57"
+}

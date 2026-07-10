@@ -1,0 +1,18 @@
+{
+  "query_id": "479df69a8f7f766e33c13f153c29b760",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0135",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Not when Im finally",
+  "target_word": "finding",
+  "sample_idx": 0,
+  "generated_text": "starting",
+  "generated_first_word": "starting",
+  "similarity": 0.6758055090904236,
+  "timestamp": "2026-06-27 17:40:41"
+}

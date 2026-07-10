@@ -1,0 +1,18 @@
+{
+  "query_id": "ba015efb6d353543adb9ffa62a7b23f5",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0111",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "The vaults were reached",
+  "target_word": "by",
+  "sample_idx": 0,
+  "generated_text": "by",
+  "generated_first_word": "by",
+  "similarity": 1.0,
+  "timestamp": "2026-06-27 16:47:27"
+}

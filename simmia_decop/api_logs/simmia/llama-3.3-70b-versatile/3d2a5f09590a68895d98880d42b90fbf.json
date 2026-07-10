@@ -1,0 +1,18 @@
+{
+  "query_id": "3d2a5f09590a68895d98880d42b90fbf",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0059",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "But",
+  "target_word": "the",
+  "sample_idx": 1,
+  "generated_text": "it",
+  "generated_first_word": "it",
+  "similarity": 0.7294350862503052,
+  "timestamp": "2026-06-27 02:03:12"
+}

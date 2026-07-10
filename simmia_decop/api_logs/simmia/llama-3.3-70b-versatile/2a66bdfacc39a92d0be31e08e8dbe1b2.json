@@ -1,0 +1,18 @@
+{
+  "query_id": "2a66bdfacc39a92d0be31e08e8dbe1b2",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0180",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 13,
+  "prefix": "The horses galloped into the middle of the dance floor and halted, rearing",
+  "target_word": "and",
+  "sample_idx": 1,
+  "generated_text": "upright",
+  "generated_first_word": "upright",
+  "similarity": 0.5967059135437012,
+  "timestamp": "2026-06-27 19:21:09"
+}

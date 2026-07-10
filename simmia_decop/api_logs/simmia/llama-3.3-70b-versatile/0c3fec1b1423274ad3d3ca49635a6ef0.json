@@ -1,0 +1,18 @@
+{
+  "query_id": "0c3fec1b1423274ad3d3ca49635a6ef0",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0132",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Suppose that we quicken",
+  "target_word": "the",
+  "sample_idx": 1,
+  "generated_text": "the",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-06-27 17:34:03"
+}

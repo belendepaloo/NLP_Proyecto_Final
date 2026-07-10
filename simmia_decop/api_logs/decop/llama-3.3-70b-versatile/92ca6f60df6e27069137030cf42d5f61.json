@@ -1,0 +1,25 @@
+{
+  "query_id": "92ca6f60df6e27069137030cf42d5f61",
+  "method": "decop",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0054",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "title": "Business or Pleasure",
+  "author": "Rachel Lynn Solomon",
+  "length": "medium",
+  "permutation_index": 3,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Business or Pleasure\" book by Rachel Lynn Solomon?\nOptions:\nA. All that confidence he had at the conin a single conversation, Ive put a dent in it. Because I think he might be embarrassed. Im beat, he says when the server swings by with the check. Think Im going to head back to the hotel, rest up for tomorrow. You want to share an Uber, or do you have other plans? Oh I break off, trying to process this sudden tone shift. Uh, no. I can go back. I really couldnt have just laughed it off and continued forgetting about it, the way we decided to do in Seattle. Maybe hes putting on a brave face, but hes a white man whos had a modest level of famehis ego is probably irrevocably shattered.\nB. The assurance he had before is lessened after our chat. I might have embarrassed him. He's worn out and wishes to return to the hotel to rest, not sharing a ride. I'm taken aback by his sudden change in attitude. I ought to have disregarded the past occurrence like we decided, rather than denting his self-image. His pride is probably damaged.\nC. The poise he had previously has diminished following our conversation. I suspect I've made him feel awkward. He's drained and desires to go back to the hotel solo. I'm startled by his abrupt shift in mood. I should've just glossed over the old incident per our agreement instead of injuring his dignity. His ego is now probably wounded.\nD. All the confidence he displayed earlier has diminished after our talk. I think I've made him self-conscious. He seems tired and wants to go back to the hotel alone. I'm surprised by his change in mood. I should have just laughed off the incident from Seattle like we agreed to do. But I had to bring it up again, and now his ego is likely very bruised. \nAnswer:",
+  "options": {
+    "A": "All that confidence he had at the conin a single conversation, Ive put a dent in it. Because I think he might be embarrassed. Im beat, he says when the server swings by with the check. Think Im going to head back to the hotel, rest up for tomorrow. You want to share an Uber, or do you have other plans? Oh I break off, trying to process this sudden tone shift. Uh, no. I can go back. I really couldnt have just laughed it off and continued forgetting about it, the way we decided to do in Seattle. Maybe hes putting on a brave face, but hes a white man whos had a modest level of famehis ego is probably irrevocably shattered.",
+    "B": "The assurance he had before is lessened after our chat. I might have embarrassed him. He's worn out and wishes to return to the hotel to rest, not sharing a ride. I'm taken aback by his sudden change in attitude. I ought to have disregarded the past occurrence like we decided, rather than denting his self-image. His pride is probably damaged.",
+    "C": "The poise he had previously has diminished following our conversation. I suspect I've made him feel awkward. He's drained and desires to go back to the hotel solo. I'm startled by his abrupt shift in mood. I should've just glossed over the old incident per our agreement instead of injuring his dignity. His ego is now probably wounded.",
+    "D": "All the confidence he displayed earlier has diminished after our talk. I think I've made him self-conscious. He seems tired and wants to go back to the hotel alone. I'm surprised by his change in mood. I should have just laughed off the incident from Seattle like we agreed to do. But I had to bring it up again, and now his ego is likely very bruised. "
+  },
+  "gold_letter": "A",
+  "predicted_letter": "A",
+  "is_correct": 1,
+  "timestamp": "2026-06-26 05:07:35"
+}

@@ -1,0 +1,18 @@
+{
+  "query_id": "c2b896abaaae14cefe1147b17ebbeb3b",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0124",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "She",
+  "target_word": "regarded",
+  "sample_idx": 2,
+  "generated_text": "was",
+  "generated_first_word": "was",
+  "similarity": 0.6630653142929077,
+  "timestamp": "2026-06-27 17:15:58"
+}
