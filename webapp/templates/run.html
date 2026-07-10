@@ -383,6 +383,18 @@
 </section>
 
 {% if run.status in ("running", "waiting_human") %}
+
+{# ── Botón flotante "Siguiente" para demo mode ────────────────────────── #}
+<div id="demo-next-bar" class="demo-next-bar" style="display:none" aria-live="polite">
+  <div class="demo-next-inner">
+    <span class="demo-next-label">Pipeline en pausa</span>
+    <button id="demo-next-btn" class="btn btn--primary demo-next-btn" onclick="demoNext()">
+      ▶ Siguiente
+    </button>
+    <span class="demo-next-hint">Hacé clic para avanzar al siguiente paso</span>
+  </div>
+</div>
+
   <script>
     var _agentlogEl = document.getElementById("agentlog-entries");
     var _agentlogEmpty = document.getElementById("agentlog-empty");
@@ -435,24 +447,48 @@
       } catch(err) {}
     });
 
+    // Botón "Siguiente" para demo mode
+    var _demoPauseBar = document.getElementById("demo-next-bar");
+    var _demoPauseBtn = document.getElementById("demo-next-btn");
+
+    es.addEventListener("demopause", function(e) {
+      try {
+        var data = JSON.parse(e.data);
+        if (data.paused) {
+          _demoPauseBar.style.display = "flex";
+          _demoPauseBtn.disabled = false;
+          _demoPauseBtn.textContent = "▶ Siguiente";
+          _demoPauseBar.scrollIntoView({behavior: "smooth", block: "center"});
+        } else {
+          _demoPauseBar.style.display = "none";
+        }
+      } catch(err) {}
+    });
+
+    function demoNext() {
+      _demoPauseBtn.disabled = true;
+      _demoPauseBtn.textContent = "▶ …";
+      fetch("/runs/{{ run.run_id }}/demo-next", {method: "POST"})
+        .catch(function() {
+          _demoPauseBtn.disabled = false;
+          _demoPauseBtn.textContent = "▶ Siguiente";
+        });
+    }
+
     es.onerror = function() {
       es.close();
       setTimeout(function() { location.reload(); }, 5000);
     };
 
-    // Fallback: recargar si no llega nada en 90s (pipeline muy lento o SSE muerto)
-    var _reloadTimer = setTimeout(function() { location.reload(); }, 90000);
-    es.onmessage = (function(orig) {
-      return function(e) {
-        clearTimeout(_reloadTimer);
-        _reloadTimer = setTimeout(function() { location.reload(); }, 90000);
-        orig(e);
-      };
-    })(es.onmessage);
-    es.addEventListener("agentlog", function() {
+    // Fallback: recargar si no llega nada en 5 min (pipeline muy lento o SSE muerto)
+    var _reloadTimer = setTimeout(function() { location.reload(); }, 300000);
+    function _resetTimer() {
       clearTimeout(_reloadTimer);
-      _reloadTimer = setTimeout(function() { location.reload(); }, 90000);
-    });
+      _reloadTimer = setTimeout(function() { location.reload(); }, 300000);
+    }
+    es.onmessage = (function(orig) { return function(e) { _resetTimer(); orig(e); }; })(es.onmessage);
+    es.addEventListener("agentlog", _resetTimer);
+    es.addEventListener("demopause", _resetTimer);
   </script>
 {% endif %}
 

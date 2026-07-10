@@ -996,3 +996,69 @@ pre {
   accent-color: var(--maroon);
   cursor: pointer;
 }
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   DEMO MODE — botón flotante "Siguiente"
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.demo-next-bar {
+  position: sticky;
+  bottom: 1.5rem;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  margin: 1rem 0;
+}
+
+.demo-next-inner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--surface, #fff);
+  border: 2px solid var(--maroon, #6b1a2e);
+  border-radius: 3rem;
+  padding: 0.65rem 1.5rem 0.65rem 1.25rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  pointer-events: all;
+  animation: demo-bar-in 0.3s ease;
+}
+
+@keyframes demo-bar-in {
+  from { transform: translateY(1rem); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+.demo-next-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--maroon, #6b1a2e);
+  white-space: nowrap;
+}
+
+.demo-next-btn {
+  font-size: 1rem;
+  padding: 0.55rem 1.5rem;
+  border-radius: 2rem;
+  white-space: nowrap;
+}
+
+.demo-next-hint {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .demo-next-hint { display: none; }
+  .demo-next-label { display: none; }
+}
+
+@media (prefers-color-scheme: dark) {
+  .demo-next-inner {
+    background: var(--surface-dark, #1e1e1e);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.5);
+  }
+}

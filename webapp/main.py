@@ -129,6 +129,16 @@ def decide(
     return RedirectResponse(url=f"/runs/{run_id}", status_code=303)
 
 
+@app.post("/runs/{run_id}/demo-next")
+async def demo_next(run_id: str) -> dict:
+    """Desbloquea la pausa demo actual — equivale a hacer clic en 'Siguiente'."""
+    handle = get_run(run_id)
+    if handle is None:
+        raise HTTPException(404, "run no encontrado")
+    handle.demo_advance()
+    return {"ok": True}
+
+
 @app.get("/runs/{run_id}/stream")
 async def stream(run_id: str) -> StreamingResponse:
     """SSE dual-channel:
@@ -146,6 +156,7 @@ async def stream(run_id: str) -> StreamingResponse:
         baseline_status = handle.status
         baseline_artifact_count = sum(len(v) for v in list_run_artifacts(run_id).values())
         baseline_event_count = handle.event_count
+        baseline_pause_seq = handle._demo_pause_seq
         ticks_since_emit = 0
 
         while True:
@@ -160,6 +171,14 @@ async def stream(run_id: str) -> StreamingResponse:
                 for ev in new_events:
                     yield f"event: agentlog\ndata: {json.dumps(ev, ensure_ascii=False)}\n\n"
                 baseline_event_count = current_event_count
+                ticks_since_emit = 0
+
+            # ── Demo pausa cambió → emitir evento para mostrar/ocultar botón ─
+            current_pause_seq = handle._demo_pause_seq
+            if current_pause_seq != baseline_pause_seq:
+                baseline_pause_seq = current_pause_seq
+                paused = handle.demo_paused
+                yield f"event: demopause\ndata: {json.dumps({'paused': paused})}\n\n"
                 ticks_since_emit = 0
 
             # ── Status o artifact cambió → reload completo ─────────────────

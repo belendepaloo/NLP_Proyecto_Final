@@ -59,9 +59,16 @@ class RunHandle:
     demo_mode: bool = False
     events: list[dict] = field(default_factory=list)   # log de acciones de agentes
     event_count: int = 0                                 # incrementa con cada add_event
+    demo_paused: bool = False                            # True mientras espera click "Siguiente"
+    _demo_pause_seq: int = 0                             # incrementa en cada pausa/resume → SSE lo detecta
+    _demo_next: threading.Event = field(default_factory=threading.Event)
     _lock: threading.Lock = field(default_factory=threading.Lock)
     _decision_event: threading.Event = field(default_factory=threading.Event)
     _decisions: list[dict[str, Any]] | None = None
+
+    def demo_advance(self) -> None:
+        """Desbloquea la pausa demo actual. Llamado desde el endpoint POST /demo-next."""
+        self._demo_next.set()
 
     def set_waiting(self, interrupt_value: dict[str, Any]) -> None:
         with self._lock:
@@ -117,10 +124,19 @@ _RUNS: dict[str, RunHandle] = {}
 _RUNS_LOCK = threading.Lock()
 
 
-def _demo_pause(handle: RunHandle, seconds: float) -> None:
-    """Duerme el hilo de background solo en modo demo, para que la UI sea legible."""
-    if handle.demo_mode and seconds > 0:
-        time.sleep(seconds)
+def _demo_pause(handle: RunHandle, _seconds: float = 0) -> None:
+    """En demo mode, pausa el pipeline hasta que el usuario haga clic en 'Siguiente'.
+    El SSE detecta el cambio de _demo_pause_seq y muestra/oculta el botón en la UI."""
+    if not handle.demo_mode:
+        return
+    with handle._lock:
+        handle.demo_paused = True
+        handle._demo_pause_seq += 1
+    handle._demo_next.wait()   # bloquea este thread hasta demo_advance()
+    handle._demo_next.clear()
+    with handle._lock:
+        handle.demo_paused = False
+        handle._demo_pause_seq += 1
 
 
 def _extract_text(content: Any) -> str:
