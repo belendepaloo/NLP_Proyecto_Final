@@ -1,0 +1,19 @@
+{
+  "query_id": "ae8084c0b89df19d4cb51ff602ad0849",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0146",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Countless times, Harry had been",
+  "target_word": "on",
+  "sample_idx": 0,
+  "generated_text": "warned",
+  "generated_first_word": "warned",
+  "similarity": 0.6291767358779907,
+  "timestamp": "2026-07-05 22:34:11"
+}

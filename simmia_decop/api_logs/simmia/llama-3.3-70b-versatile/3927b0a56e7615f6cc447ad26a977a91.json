@@ -1,0 +1,19 @@
+{
+  "query_id": "3927b0a56e7615f6cc447ad26a977a91",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0015",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "I will need passage and enough",
+  "target_word": "money",
+  "sample_idx": 0,
+  "generated_text": "time",
+  "generated_first_word": "time",
+  "similarity": 0.7242627739906311,
+  "timestamp": "2026-07-01 14:47:56"
+}

@@ -1,0 +1,25 @@
+{
+  "query_id": "14ef99b0155a077392ad68b561b8c5aa",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0151",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "title": "Happy Place",
+  "author": "Emily Henry",
+  "length": "medium",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Happy Place\" book by Emily Henry?\nOptions:\nA. I place the clay on the wheel and use my hands to flatten it out. As soon as I dip my fingers in the water to shape the clay into a cone while it spins, I feel a sense of calm wash over me. My thoughts drift away. I use the foot pedal to control the spinning as I form the lump of clay into a cone, centering it on the wheel. I get lost in the repetitive motions. Shaping it into a cone. Then smoothing it back down. I know I won't have time to glaze it before leaving Knotts Harbor, and won't have room in my luggage for the fired piece. But I don't think about any of that.\nB. I place the clay on the spinning wheel, using my hands to flatten it. Dipping my fingers in water to shape the clay into a cone as it turns brings an instant feeling of calm. My thoughts drift off. I work the foot pedal to control the wheel, centering the lump as I form it into a cone. I lose myself in the repetitive motions of coning up and coning down. I know there's no time to glaze before leaving town, and no room to pack the fired piece. But in this moment, I let go of those practical concerns.\nC. When I put the clay on the pottery wheel and flatten it with my palms, tranquility comes over me as soon as I wet my fingers to cone the spinning clay upward. My mind empties as I work the foot pedal, lifting the messy lump into a centered cone shape. I'm absorbed in the cycle of coning up and coning down. I'm aware there's no time to glaze before I go, and no room to take the finished piece in my bags. But those practical thoughts fade away. \nD. Then I plop it onto the wheel and flatten it with the heels of my hands. The moment I slip my fingers into the water to start coning the clay up, calm floods me. My thoughts fritter away. I press the foot pedal, maneuvering the lump of muck upward as it centers on the spinning wheel. I lose myself in the rhythm of it. Coning it up. Coning down. I wont have time to glaze it before I leave Knotts Harbor, wont have room to take it home in my luggage once its fired. I dont think about any of that.\nAnswer:",
+  "options": {
+    "A": "I place the clay on the wheel and use my hands to flatten it out. As soon as I dip my fingers in the water to shape the clay into a cone while it spins, I feel a sense of calm wash over me. My thoughts drift away. I use the foot pedal to control the spinning as I form the lump of clay into a cone, centering it on the wheel. I get lost in the repetitive motions. Shaping it into a cone. Then smoothing it back down. I know I won't have time to glaze it before leaving Knotts Harbor, and won't have room in my luggage for the fired piece. But I don't think about any of that.",
+    "B": "I place the clay on the spinning wheel, using my hands to flatten it. Dipping my fingers in water to shape the clay into a cone as it turns brings an instant feeling of calm. My thoughts drift off. I work the foot pedal to control the wheel, centering the lump as I form it into a cone. I lose myself in the repetitive motions of coning up and coning down. I know there's no time to glaze before leaving town, and no room to pack the fired piece. But in this moment, I let go of those practical concerns.",
+    "C": "When I put the clay on the pottery wheel and flatten it with my palms, tranquility comes over me as soon as I wet my fingers to cone the spinning clay upward. My mind empties as I work the foot pedal, lifting the messy lump into a centered cone shape. I'm absorbed in the cycle of coning up and coning down. I'm aware there's no time to glaze before I go, and no room to take the finished piece in my bags. But those practical thoughts fade away. ",
+    "D": "Then I plop it onto the wheel and flatten it with the heels of my hands. The moment I slip my fingers into the water to start coning the clay up, calm floods me. My thoughts fritter away. I press the foot pedal, maneuvering the lump of muck upward as it centers on the spinning wheel. I lose myself in the rhythm of it. Coning it up. Coning down. I wont have time to glaze it before I leave Knotts Harbor, wont have room to take it home in my luggage once its fired. I dont think about any of that."
+  },
+  "gold_letter": "D",
+  "predicted_letter": "B",
+  "is_correct": 0,
+  "timestamp": "2026-07-08 05:08:30"
+}

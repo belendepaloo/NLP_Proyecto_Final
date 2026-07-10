@@ -1,0 +1,19 @@
+{
+  "query_id": "2a57befa36fc61b03bdbae7184bd29dd",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0039",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "She settled herself and began to concentrate,",
+  "target_word": "and",
+  "sample_idx": 1,
+  "generated_text": "her eyes fixed",
+  "generated_first_word": "her",
+  "similarity": 0.6833254098892212,
+  "timestamp": "2026-06-30 08:11:34"
+}

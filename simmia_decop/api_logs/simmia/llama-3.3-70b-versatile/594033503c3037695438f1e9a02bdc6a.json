@@ -1,0 +1,19 @@
+{
+  "query_id": "594033503c3037695438f1e9a02bdc6a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0146",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 15,
+  "prefix": "Countless times, Harry had been on the point of unlocking Hedwig’s cage by magic and",
+  "target_word": "sending",
+  "sample_idx": 2,
+  "generated_text": "simply",
+  "generated_first_word": "simply",
+  "similarity": 0.5853694677352905,
+  "timestamp": "2026-07-05 22:36:42"
+}

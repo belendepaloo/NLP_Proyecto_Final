@@ -1,0 +1,19 @@
+{
+  "query_id": "cbab993f34a41852f80309be35b52143",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0145",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "'Tell yer what?'",
+  "target_word": "asked",
+  "sample_idx": 2,
+  "generated_text": "mate,",
+  "generated_first_word": "mate,",
+  "similarity": 0.6281592845916748,
+  "timestamp": "2026-07-05 22:29:25"
+}

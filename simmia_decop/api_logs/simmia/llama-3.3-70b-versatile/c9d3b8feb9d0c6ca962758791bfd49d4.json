@@ -1,0 +1,19 @@
+{
+  "query_id": "c9d3b8feb9d0c6ca962758791bfd49d4",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0194",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "‘He’s a crook!’ the Trunchbull shouted. ‘A week",
+  "target_word": "ago",
+  "sample_idx": 0,
+  "generated_text": "in detention!",
+  "generated_first_word": "in",
+  "similarity": 0.6639986038208008,
+  "timestamp": "2026-07-08 02:25:18"
+}

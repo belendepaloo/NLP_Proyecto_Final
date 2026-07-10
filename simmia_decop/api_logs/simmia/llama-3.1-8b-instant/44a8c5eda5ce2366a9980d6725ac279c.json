@@ -1,0 +1,19 @@
+{
+  "query_id": "44a8c5eda5ce2366a9980d6725ac279c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0185",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "By the light of the low-burning fires, they",
+  "target_word": "shared",
+  "sample_idx": 0,
+  "generated_text": "huddled together",
+  "generated_first_word": "huddled",
+  "similarity": 0.5890129804611206,
+  "timestamp": "2026-07-01 03:34:08"
+}

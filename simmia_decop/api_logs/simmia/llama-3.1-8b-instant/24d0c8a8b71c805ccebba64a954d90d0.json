@@ -1,0 +1,19 @@
+{
+  "query_id": "24d0c8a8b71c805ccebba64a954d90d0",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0154",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "The",
+  "target_word": "man",
+  "sample_idx": 0,
+  "generated_text": "temperature",
+  "generated_first_word": "temperature",
+  "similarity": 0.5470442771911621,
+  "timestamp": "2026-06-30 18:22:40"
+}

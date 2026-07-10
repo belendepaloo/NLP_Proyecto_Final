@@ -1,0 +1,19 @@
+{
+  "query_id": "690dcbb986ed9d99bdc5fe0803209ac9",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0127",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 9,
+  "prefix": "You cant judge a book by its cover, Louise",
+  "target_word": "singsonged",
+  "sample_idx": 0,
+  "generated_text": "said her grandmother",
+  "generated_first_word": "said",
+  "similarity": 0.6606854796409607,
+  "timestamp": "2026-06-30 15:42:46"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "a04cf4ca361d047f428bb5ffa49a51cc",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0108",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Its the first real acknowledgment of",
+  "target_word": "our",
+  "sample_idx": 0,
+  "generated_text": "the severity of",
+  "generated_first_word": "the",
+  "similarity": 0.7964223623275757,
+  "timestamp": "2026-06-30 14:07:15"
+}

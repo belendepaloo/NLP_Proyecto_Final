@@ -1,0 +1,19 @@
+{
+  "query_id": "69a1cf1a91a90961161e15f8c38f2b28",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0106",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Who knows…maybe it’s better",
+  "target_word": "to",
+  "sample_idx": 2,
+  "generated_text": "to just let",
+  "generated_first_word": "to",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 13:56:39"
+}

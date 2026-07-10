@@ -1,0 +1,19 @@
+{
+  "query_id": "0e0637ff7c3f76aba3178176fa888dca",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0032",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "Even as the first shadows were felt in",
+  "target_word": "Mirkwood",
+  "sample_idx": 2,
+  "generated_text": "the fading light",
+  "generated_first_word": "the",
+  "similarity": 0.6373445987701416,
+  "timestamp": "2026-06-30 07:34:19"
+}

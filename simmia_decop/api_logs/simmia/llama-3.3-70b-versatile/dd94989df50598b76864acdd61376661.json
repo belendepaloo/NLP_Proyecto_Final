@@ -1,0 +1,19 @@
+{
+  "query_id": "dd94989df50598b76864acdd61376661",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0171",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Now what sort of",
+  "target_word": "business",
+  "sample_idx": 2,
+  "generated_text": "thing",
+  "generated_first_word": "thing",
+  "similarity": 0.658467173576355,
+  "timestamp": "2026-07-06 17:53:00"
+}

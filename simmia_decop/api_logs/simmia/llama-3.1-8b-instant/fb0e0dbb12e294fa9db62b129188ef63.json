@@ -1,0 +1,19 @@
+{
+  "query_id": "fb0e0dbb12e294fa9db62b129188ef63",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0169",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "There they fought to the death; but Thingol",
+  "target_word": "gave",
+  "sample_idx": 2,
+  "generated_text": "had not fallen",
+  "generated_first_word": "had",
+  "similarity": 0.7166121006011963,
+  "timestamp": "2026-07-01 02:13:21"
+}

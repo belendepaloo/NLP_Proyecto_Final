@@ -1,0 +1,19 @@
+{
+  "query_id": "9d3595833b411fab1504d623853ae6f5",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0156",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 14,
+  "prefix": "I glance out the window. I see some new housing developments halfway through construction.",
+  "target_word": "A",
+  "sample_idx": 2,
+  "generated_text": "They seem to",
+  "generated_first_word": "They",
+  "similarity": 0.6996042132377625,
+  "timestamp": "2026-06-30 18:36:46"
+}

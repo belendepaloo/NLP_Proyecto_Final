@@ -1,0 +1,19 @@
+{
+  "query_id": "520d12f1c8a98e57a535506e08f33f5c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0017",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "How polite of him. And he momentarily",
+  "target_word": "softened,",
+  "sample_idx": 2,
+  "generated_text": "paused",
+  "generated_first_word": "paused",
+  "similarity": 0.5871142148971558,
+  "timestamp": "2026-07-01 14:57:29"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "59bf44c4d5be6f212d3c68f8acec306a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0059",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "But the physical difficulty of meeting was",
+  "target_word": "enormous.",
+  "sample_idx": 1,
+  "generated_text": "a major hurdle",
+  "generated_first_word": "a",
+  "similarity": 0.6774819493293762,
+  "timestamp": "2026-06-30 09:57:42"
+}

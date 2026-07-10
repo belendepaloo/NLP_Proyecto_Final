@@ -1,0 +1,19 @@
+{
+  "query_id": "cbea9cebe711dc08b217c0e092b87f73",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0052",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "When he’d found his",
+  "target_word": "scarlet",
+  "sample_idx": 1,
+  "generated_text": "way",
+  "generated_first_word": "way",
+  "similarity": 0.5697922110557556,
+  "timestamp": "2026-07-03 14:07:38"
+}

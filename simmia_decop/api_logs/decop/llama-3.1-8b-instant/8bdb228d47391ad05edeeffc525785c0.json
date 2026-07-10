@@ -1,0 +1,25 @@
+{
+  "query_id": "8bdb228d47391ad05edeeffc525785c0",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0083",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "title": "Happy Place",
+  "author": "Emily Henry",
+  "length": "medium",
+  "permutation_index": 5,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Happy Place\" book by Emily Henry?\nOptions:\nA. You're very smart, as my dad would say. I was an athlete in college to get into medical school, but I'm actually in law school, not med school. This is Wyn, my fiancé, who works at a bookstore and does furniture repair. No worries that you don't recall him.  \nB. You're clearly very bright, as my dad would point out. I was a student athlete to try to get into med school, but actually I'm in law school, not medical school. This is Wyn, my fiance who works at a bookstore and repairs furniture. No big deal that you don't remember my soulmate at all.\nC. You have a lot of intelligence, as my father would tell me. I played sports in university to get into med school, but I'm really in law school, not medical studies. Meet Wyn, my future husband, who has jobs at a bookshop and repairing furniture. Don't stress that you don't know anything about the love of my life.\nD. Youre clearly very intelligent. He is, I say, right as he says, I was a student athlete. Well, to get into medical school, anyway, Dad says. I full-body wince, but Wyn squeezes my knee reassuringly. Im actually not a med student, he says. Hes in law school, Phil, Mom says, irritable. Thats Sabrina and Parth, I say. Wyn works at the bookstore and does furniture repair. You know, I think, the one Im engaged to. But I think it with a smile that hopefully says, No big deal that you dont remember the slightest thing about the love of my life.\nAnswer:",
+  "options": {
+    "A": "You're very smart, as my dad would say. I was an athlete in college to get into medical school, but I'm actually in law school, not med school. This is Wyn, my fiancé, who works at a bookstore and does furniture repair. No worries that you don't recall him.  ",
+    "B": "You're clearly very bright, as my dad would point out. I was a student athlete to try to get into med school, but actually I'm in law school, not medical school. This is Wyn, my fiance who works at a bookstore and repairs furniture. No big deal that you don't remember my soulmate at all.",
+    "C": "You have a lot of intelligence, as my father would tell me. I played sports in university to get into med school, but I'm really in law school, not medical studies. Meet Wyn, my future husband, who has jobs at a bookshop and repairing furniture. Don't stress that you don't know anything about the love of my life.",
+    "D": "Youre clearly very intelligent. He is, I say, right as he says, I was a student athlete. Well, to get into medical school, anyway, Dad says. I full-body wince, but Wyn squeezes my knee reassuringly. Im actually not a med student, he says. Hes in law school, Phil, Mom says, irritable. Thats Sabrina and Parth, I say. Wyn works at the bookstore and does furniture repair. You know, I think, the one Im engaged to. But I think it with a smile that hopefully says, No big deal that you dont remember the slightest thing about the love of my life."
+  },
+  "gold_letter": "D",
+  "predicted_letter": "D",
+  "is_correct": 1,
+  "timestamp": "2026-07-08 04:28:39"
+}

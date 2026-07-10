@@ -1,0 +1,19 @@
+{
+  "query_id": "b0855dc1eed30de6fb430853b5af61e0",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0119",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 14,
+  "prefix": "\"Safer from loving me?\" Her profile did not stir, but he saw a tear",
+  "target_word": "overflow",
+  "sample_idx": 0,
+  "generated_text": "glisten in",
+  "generated_first_word": "glisten",
+  "similarity": 0.6011161804199219,
+  "timestamp": "2026-06-30 15:04:29"
+}

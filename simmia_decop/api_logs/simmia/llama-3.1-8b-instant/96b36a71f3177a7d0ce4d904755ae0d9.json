@@ -1,0 +1,19 @@
+{
+  "query_id": "96b36a71f3177a7d0ce4d904755ae0d9",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0063",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "The boy mumbled an answer that allowed him",
+  "target_word": "to",
+  "sample_idx": 0,
+  "generated_text": "to slip away",
+  "generated_first_word": "to",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 10:18:54"
+}

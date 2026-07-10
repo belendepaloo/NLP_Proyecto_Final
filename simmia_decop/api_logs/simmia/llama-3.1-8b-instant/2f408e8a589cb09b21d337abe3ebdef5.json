@@ -1,0 +1,19 @@
+{
+  "query_id": "2f408e8a589cb09b21d337abe3ebdef5",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0110",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 13,
+  "prefix": "The Countess rounded on him. “I can’t do this? The custodium is your",
+  "target_word": "responsibility,",
+  "sample_idx": 1,
+  "generated_text": "responsibility.\"",
+  "generated_first_word": "responsibility.\"",
+  "similarity": 0.9029185771942139,
+  "timestamp": "2026-06-30 14:19:04"
+}

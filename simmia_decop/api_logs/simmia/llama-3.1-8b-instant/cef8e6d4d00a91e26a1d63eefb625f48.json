@@ -1,0 +1,19 @@
+{
+  "query_id": "cef8e6d4d00a91e26a1d63eefb625f48",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0075",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Theres almost a",
+  "target_word": "swagger",
+  "sample_idx": 0,
+  "generated_text": "million reasons",
+  "generated_first_word": "million",
+  "similarity": 0.5966562628746033,
+  "timestamp": "2026-06-30 11:19:17"
+}

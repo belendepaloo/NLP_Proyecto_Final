@@ -1,0 +1,19 @@
+{
+  "query_id": "98b8a2186f8d282ebd6ee5426b687f4b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0132",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "Suppose that we quicken the tempo of human",
+  "target_word": "life",
+  "sample_idx": 0,
+  "generated_text": "evolution",
+  "generated_first_word": "evolution",
+  "similarity": 0.7199909090995789,
+  "timestamp": "2026-07-05 17:09:22"
+}

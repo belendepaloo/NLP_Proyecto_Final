@@ -1,0 +1,19 @@
+{
+  "query_id": "d8c7173e7d6278600834995f76e91573",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0182",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 15,
+  "prefix": "He was buttering his bread, not looking up at her. He feels vulnerable with me",
+  "target_word": "too,",
+  "sample_idx": 2,
+  "generated_text": "around",
+  "generated_first_word": "around",
+  "similarity": 0.5442380309104919,
+  "timestamp": "2026-07-08 01:31:54"
+}

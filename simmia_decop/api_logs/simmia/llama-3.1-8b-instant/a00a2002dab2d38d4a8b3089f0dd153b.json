@@ -1,0 +1,19 @@
+{
+  "query_id": "a00a2002dab2d38d4a8b3089f0dd153b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0052",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "When he’d found his scarlet team robes and",
+  "target_word": "pulled",
+  "sample_idx": 0,
+  "generated_text": "slipped them",
+  "generated_first_word": "slipped",
+  "similarity": 0.735160768032074,
+  "timestamp": "2026-06-30 09:20:19"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "82eafc53ee613f538c06e3e981be6de7",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0173",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "But no ship came",
+  "target_word": "ever",
+  "sample_idx": 0,
+  "generated_text": "that",
+  "generated_first_word": "that",
+  "similarity": 0.693558931350708,
+  "timestamp": "2026-07-06 18:03:19"
+}

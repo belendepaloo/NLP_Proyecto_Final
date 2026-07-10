@@ -1,0 +1,19 @@
+{
+  "query_id": "0f770fb963f54ac93df62e39416062ad",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0089",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Still I couldn't dote on",
+  "target_word": "Heath-",
+  "sample_idx": 0,
+  "generated_text": "my sister's",
+  "generated_first_word": "my",
+  "similarity": 0.6649712324142456,
+  "timestamp": "2026-06-30 12:32:08"
+}

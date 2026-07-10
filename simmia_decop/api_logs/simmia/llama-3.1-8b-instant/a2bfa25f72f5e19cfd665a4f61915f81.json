@@ -1,0 +1,19 @@
+{
+  "query_id": "a2bfa25f72f5e19cfd665a4f61915f81",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0095",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Youve really got to",
+  "target_word": "stop",
+  "sample_idx": 2,
+  "generated_text": "be careful what",
+  "generated_first_word": "be",
+  "similarity": 0.6303654909133911,
+  "timestamp": "2026-06-30 13:02:23"
+}

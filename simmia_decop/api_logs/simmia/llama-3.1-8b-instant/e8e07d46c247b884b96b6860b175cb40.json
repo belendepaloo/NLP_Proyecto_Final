@@ -1,0 +1,19 @@
+{
+  "query_id": "e8e07d46c247b884b96b6860b175cb40",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0005",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 18,
+  "prefix": "Oh. Maybe Ive crossed some sort of boundary I wasnt aware of? Theyre pretty decent with technology, given",
+  "target_word": "their",
+  "sample_idx": 1,
+  "generated_text": "their age.",
+  "generated_first_word": "their",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 05:16:06"
+}

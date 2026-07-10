@@ -1,0 +1,19 @@
+{
+  "query_id": "315607111765e08f6b0d1174d2626844",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0192",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "\"Call it what you like: you look at things",
+  "target_word": "as",
+  "sample_idx": 2,
+  "generated_text": "differently",
+  "generated_first_word": "differently",
+  "similarity": 0.699280858039856,
+  "timestamp": "2026-07-08 02:16:42"
+}

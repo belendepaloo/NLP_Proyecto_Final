@@ -1,0 +1,19 @@
+{
+  "query_id": "0fdd4c96ddc95aa2fff2456e6666f531",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0024",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 14,
+  "prefix": "Side out o' t' gate now, this minute!\" Catherine frowned and retreated to the",
+  "target_word": "window-seat",
+  "sample_idx": 1,
+  "generated_text": "corner of the",
+  "generated_first_word": "corner",
+  "similarity": 0.6600300073623657,
+  "timestamp": "2026-06-30 06:55:27"
+}

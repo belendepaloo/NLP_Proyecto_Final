@@ -1,0 +1,25 @@
+{
+  "query_id": "b403f75b2ed1158fe445cc10c2efa995",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0114",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "title": "Matilda",
+  "author": "Roald Dahl",
+  "length": "medium",
+  "permutation_index": 3,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Matilda\" book by Roald Dahl?\nOptions:\nA. Hortensia told a story about putting syrup on the headmistress's chair one time before prayers. When the headmistress sat down, it made a loud, funny squishing noise, like a hippopotamus stepping in mud. But then Hortensia made fun of the person she was talking to, saying they were too stupid and young to have read the book Just So Stories.\nB. ‘The first time,’ Hortensia said, ‘I poured half a tin of Golden Syrup on to the seat of the chair the Trunchbull was going to sit on at prayers. It was wonderful. When she lowered herself into the chair, there was a loud squelching noise similar to that made by a hippopotamus when lowering its foot into the mud on the banks of the Limpopo River. But you’re too small and stupid to have read the  Just So Stories , aren’t you?’ \nC. Hortensia recalled doing something mischievous in school - she had poured syrup on the chair where the headmistress would sit, so when the headmistress sat down there was a funny squishing noise similar to a hippo stepping in mud. But Hortensia insulted the listener, saying they were too little and dumb to have read the Just So Stories.\nD. Hortensia described a prank she pulled by pouring syrup on the headmistress's chair before prayers. When the headmistress sat down, there was a loud, funny squelching sound like a hippo stepping in mud. Then Hortensia insulted the listener, suggesting they were too unintelligent and young to have read the Just So Stories.\nAnswer:",
+  "options": {
+    "A": "Hortensia told a story about putting syrup on the headmistress's chair one time before prayers. When the headmistress sat down, it made a loud, funny squishing noise, like a hippopotamus stepping in mud. But then Hortensia made fun of the person she was talking to, saying they were too stupid and young to have read the book Just So Stories.",
+    "B": "‘The first time,’ Hortensia said, ‘I poured half a tin of Golden Syrup on to the seat of the chair the Trunchbull was going to sit on at prayers. It was wonderful. When she lowered herself into the chair, there was a loud squelching noise similar to that made by a hippopotamus when lowering its foot into the mud on the banks of the Limpopo River. But you’re too small and stupid to have read the  Just So Stories , aren’t you?’ ",
+    "C": "Hortensia recalled doing something mischievous in school - she had poured syrup on the chair where the headmistress would sit, so when the headmistress sat down there was a funny squishing noise similar to a hippo stepping in mud. But Hortensia insulted the listener, saying they were too little and dumb to have read the Just So Stories.",
+    "D": "Hortensia described a prank she pulled by pouring syrup on the headmistress's chair before prayers. When the headmistress sat down, there was a loud, funny squelching sound like a hippo stepping in mud. Then Hortensia insulted the listener, suggesting they were too unintelligent and young to have read the Just So Stories."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "B",
+  "is_correct": 1,
+  "timestamp": "2026-07-08 04:47:13"
+}

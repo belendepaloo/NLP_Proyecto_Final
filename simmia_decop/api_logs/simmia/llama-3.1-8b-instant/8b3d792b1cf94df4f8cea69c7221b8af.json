@@ -1,0 +1,19 @@
+{
+  "query_id": "8b3d792b1cf94df4f8cea69c7221b8af",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0072",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "As Tatterlain ambled",
+  "target_word": "towards",
+  "sample_idx": 2,
+  "generated_text": "through the dark",
+  "generated_first_word": "through",
+  "similarity": 0.68910813331604,
+  "timestamp": "2026-06-30 11:04:07"
+}

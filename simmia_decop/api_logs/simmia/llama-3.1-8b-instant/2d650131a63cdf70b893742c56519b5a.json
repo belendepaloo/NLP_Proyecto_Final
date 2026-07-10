@@ -1,0 +1,19 @@
+{
+  "query_id": "2d650131a63cdf70b893742c56519b5a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0082",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "The hills drew",
+  "target_word": "nearer.",
+  "sample_idx": 1,
+  "generated_text": "closer to",
+  "generated_first_word": "closer",
+  "similarity": 0.8355687856674194,
+  "timestamp": "2026-06-30 11:55:19"
+}

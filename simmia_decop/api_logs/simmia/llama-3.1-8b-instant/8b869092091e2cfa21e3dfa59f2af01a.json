@@ -1,0 +1,19 @@
+{
+  "query_id": "8b869092091e2cfa21e3dfa59f2af01a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0054",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 13,
+  "prefix": "All that confidence he had at the conin a single conversation, Ive put",
+  "target_word": "a",
+  "sample_idx": 2,
+  "generated_text": "him in his",
+  "generated_first_word": "him",
+  "similarity": 0.6846390962600708,
+  "timestamp": "2026-06-30 09:33:44"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "3cf0e6b3825171839d6754685c2d71c9",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0181",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "But when",
+  "target_word": "he",
+  "sample_idx": 1,
+  "generated_text": "I saw",
+  "generated_first_word": "I",
+  "similarity": 0.8218769431114197,
+  "timestamp": "2026-07-01 03:12:52"
+}

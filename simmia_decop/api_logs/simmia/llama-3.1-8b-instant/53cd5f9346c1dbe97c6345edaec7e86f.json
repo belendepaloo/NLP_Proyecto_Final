@@ -1,0 +1,19 @@
+{
+  "query_id": "53cd5f9346c1dbe97c6345edaec7e86f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0087",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "If I thought it, I should never be",
+  "target_word": "happy",
+  "sample_idx": 2,
+  "generated_text": "allowed to do",
+  "generated_first_word": "allowed",
+  "similarity": 0.6600496768951416,
+  "timestamp": "2026-06-30 12:22:05"
+}

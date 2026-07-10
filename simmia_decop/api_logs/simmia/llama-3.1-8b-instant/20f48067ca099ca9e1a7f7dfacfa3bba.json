@@ -1,0 +1,19 @@
+{
+  "query_id": "20f48067ca099ca9e1a7f7dfacfa3bba",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0080",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "Harry heard from Hogwarts one sunny morning",
+  "target_word": "about",
+  "sample_idx": 2,
+  "generated_text": "that his aunt",
+  "generated_first_word": "that",
+  "similarity": 0.675054669380188,
+  "timestamp": "2026-06-30 11:46:13"
+}

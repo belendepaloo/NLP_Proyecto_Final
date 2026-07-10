@@ -1,0 +1,19 @@
+{
+  "query_id": "6298655c8182b1c3f41101aaec787236",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0134",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "Then all listened while Elrond in his clear voice spoke",
+  "target_word": "of",
+  "sample_idx": 1,
+  "generated_text": "of the great",
+  "generated_first_word": "of",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 16:17:30"
+}

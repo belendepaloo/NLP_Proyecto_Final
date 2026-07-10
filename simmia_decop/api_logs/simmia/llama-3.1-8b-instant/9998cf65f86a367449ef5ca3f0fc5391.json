@@ -1,0 +1,19 @@
+{
+  "query_id": "9998cf65f86a367449ef5ca3f0fc5391",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0173",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "But no ship came ever again from the West to Nmenor, and",
+  "target_word": "Avalln",
+  "sample_idx": 1,
+  "generated_text": "the island was",
+  "generated_first_word": "the",
+  "similarity": 0.6285676956176758,
+  "timestamp": "2026-07-01 02:35:00"
+}

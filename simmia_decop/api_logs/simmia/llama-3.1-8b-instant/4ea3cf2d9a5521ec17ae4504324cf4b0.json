@@ -1,0 +1,19 @@
+{
+  "query_id": "4ea3cf2d9a5521ec17ae4504324cf4b0",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0189",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "‘A girl doesn’t get",
+  "target_word": "a",
+  "sample_idx": 0,
+  "generated_text": "married by the",
+  "generated_first_word": "married",
+  "similarity": 0.6799798607826233,
+  "timestamp": "2026-07-01 03:53:31"
+}

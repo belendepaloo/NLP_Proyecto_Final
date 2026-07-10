@@ -1,0 +1,19 @@
+{
+  "query_id": "63639e4370577a88aa728b9a44b73345",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0036",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 18,
+  "prefix": "The idea of playing nursemaid didnt appeal, and on top of that, working in the theater is an",
+  "target_word": "all-consuming",
+  "sample_idx": 1,
+  "generated_text": "artistic world",
+  "generated_first_word": "artistic",
+  "similarity": 0.6617860794067383,
+  "timestamp": "2026-06-30 07:58:29"
+}

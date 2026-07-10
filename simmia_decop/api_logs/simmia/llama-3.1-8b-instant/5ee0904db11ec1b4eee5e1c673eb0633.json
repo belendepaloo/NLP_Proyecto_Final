@@ -1,0 +1,19 @@
+{
+  "query_id": "5ee0904db11ec1b4eee5e1c673eb0633",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0107",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Still",
+  "target_word": "it",
+  "sample_idx": 2,
+  "generated_text": "relying",
+  "generated_first_word": "relying",
+  "similarity": 0.6014680862426758,
+  "timestamp": "2026-06-30 14:00:59"
+}

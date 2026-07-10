@@ -1,0 +1,19 @@
+{
+  "query_id": "3eb891a85421f670fa2ec5a0b5ebb0db",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0191",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 11,
+  "prefix": "We were smiling. Someone must have told us to, because I",
+  "target_word": "couldnt",
+  "sample_idx": 2,
+  "generated_text": "remembered it",
+  "generated_first_word": "remembered",
+  "similarity": 0.6275343894958496,
+  "timestamp": "2026-07-01 04:05:52"
+}

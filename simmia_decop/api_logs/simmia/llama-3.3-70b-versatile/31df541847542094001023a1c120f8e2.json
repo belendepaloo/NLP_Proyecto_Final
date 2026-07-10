@@ -1,0 +1,19 @@
+{
+  "query_id": "31df541847542094001023a1c120f8e2",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0192",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "\"Call it what",
+  "target_word": "you",
+  "sample_idx": 2,
+  "generated_text": "you",
+  "generated_first_word": "you",
+  "similarity": 1.0,
+  "timestamp": "2026-07-08 02:15:17"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "d50c624b9e6e110f42adc5c1eae6a15c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0117",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Frodo looked round.",
+  "target_word": "It",
+  "sample_idx": 2,
+  "generated_text": "The trees seemed",
+  "generated_first_word": "The",
+  "similarity": 0.7294350862503052,
+  "timestamp": "2026-06-30 14:51:28"
+}

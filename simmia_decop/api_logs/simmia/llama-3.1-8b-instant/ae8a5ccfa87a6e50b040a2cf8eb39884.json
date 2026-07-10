@@ -1,0 +1,19 @@
+{
+  "query_id": "ae8a5ccfa87a6e50b040a2cf8eb39884",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0129",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Giles.' 'I hope",
+  "target_word": "you",
+  "sample_idx": 1,
+  "generated_text": "you're not",
+  "generated_first_word": "you're",
+  "similarity": 0.8076314926147461,
+  "timestamp": "2026-06-30 15:51:25"
+}

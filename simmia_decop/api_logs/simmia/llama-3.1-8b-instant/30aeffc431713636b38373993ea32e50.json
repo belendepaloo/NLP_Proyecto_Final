@@ -1,0 +1,19 @@
+{
+  "query_id": "30aeffc431713636b38373993ea32e50",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0067",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 18,
+  "prefix": "Wyn kisses the top of my head. Michael and Lou exchange a look I cant read. Maybe theyve",
+  "target_word": "seen",
+  "sample_idx": 0,
+  "generated_text": "never seen Wyn",
+  "generated_first_word": "never",
+  "similarity": 0.5838038921356201,
+  "timestamp": "2026-06-30 10:42:34"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "c79eed59c4f672ec75fe5c230f15c99f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0191",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "We were smiling. Someone",
+  "target_word": "must",
+  "sample_idx": 2,
+  "generated_text": "walked",
+  "generated_first_word": "walked",
+  "similarity": 0.6118531227111816,
+  "timestamp": "2026-07-01 04:04:08"
+}

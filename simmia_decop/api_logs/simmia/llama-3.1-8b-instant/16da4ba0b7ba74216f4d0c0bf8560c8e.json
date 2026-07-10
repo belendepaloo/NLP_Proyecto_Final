@@ -1,0 +1,19 @@
+{
+  "query_id": "16da4ba0b7ba74216f4d0c0bf8560c8e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0001",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 19,
+  "prefix": "“And I know the Soul of the World, because we have talked at great length to each other during",
+  "target_word": "this",
+  "sample_idx": 2,
+  "generated_text": "my countless lif",
+  "generated_first_word": "my",
+  "similarity": 0.736229419708252,
+  "timestamp": "2026-06-30 04:55:32"
+}

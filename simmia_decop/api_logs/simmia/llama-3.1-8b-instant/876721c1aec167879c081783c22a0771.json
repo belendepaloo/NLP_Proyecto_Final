@@ -1,0 +1,19 @@
+{
+  "query_id": "876721c1aec167879c081783c22a0771",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0101",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 13,
+  "prefix": "Oh, don't tell you are going to send me away, sir, pray!' exclaimed",
+  "target_word": "Oliver,",
+  "sample_idx": 2,
+  "generated_text": "the young woman",
+  "generated_first_word": "the",
+  "similarity": 0.6612687110900879,
+  "timestamp": "2026-06-30 13:34:43"
+}

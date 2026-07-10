@@ -1,0 +1,19 @@
+{
+  "query_id": "cd753ada4a364156ccf458881532090d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0146",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Countless times, Harry had been on",
+  "target_word": "the",
+  "sample_idx": 1,
+  "generated_text": "adventures",
+  "generated_first_word": "adventures",
+  "similarity": 0.6398069858551025,
+  "timestamp": "2026-06-30 17:44:26"
+}

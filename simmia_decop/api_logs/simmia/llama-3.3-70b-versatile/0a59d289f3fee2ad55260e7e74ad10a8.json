@@ -1,0 +1,19 @@
+{
+  "query_id": "0a59d289f3fee2ad55260e7e74ad10a8",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0105",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 14,
+  "prefix": "And Peter was nothing like Leonard. When she arrived at the house, he came",
+  "target_word": "down",
+  "sample_idx": 0,
+  "generated_text": "out",
+  "generated_first_word": "out",
+  "similarity": 0.7687804102897644,
+  "timestamp": "2026-07-04 19:53:56"
+}

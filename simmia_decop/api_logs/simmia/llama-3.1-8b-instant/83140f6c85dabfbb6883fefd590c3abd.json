@@ -1,0 +1,19 @@
+{
+  "query_id": "83140f6c85dabfbb6883fefd590c3abd",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0000",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Since he was",
+  "target_word": "arrested",
+  "sample_idx": 2,
+  "generated_text": "a quiet person",
+  "generated_first_word": "a",
+  "similarity": 0.7169161438941956,
+  "timestamp": "2026-06-30 04:46:56"
+}

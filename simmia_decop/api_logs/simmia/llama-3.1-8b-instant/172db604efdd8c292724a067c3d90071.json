@@ -1,0 +1,19 @@
+{
+  "query_id": "172db604efdd8c292724a067c3d90071",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0161",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "But his personality changed drastically. Where",
+  "target_word": "he",
+  "sample_idx": 1,
+  "generated_text": "he became withdrawn",
+  "generated_first_word": "he",
+  "similarity": 1.0,
+  "timestamp": "2026-07-01 01:32:37"
+}

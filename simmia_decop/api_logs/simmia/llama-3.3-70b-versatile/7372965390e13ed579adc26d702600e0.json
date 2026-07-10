@@ -1,0 +1,19 @@
+{
+  "query_id": "7372965390e13ed579adc26d702600e0",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0053",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 12,
+  "prefix": "We talked about this. You talked about this. Bastian was doing something",
+  "target_word": "strange",
+  "sample_idx": 2,
+  "generated_text": "similar",
+  "generated_first_word": "similar",
+  "similarity": 0.6728020906448364,
+  "timestamp": "2026-07-03 14:14:45"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "aae3a0eda6c1dde3a10acbf2083e9d10",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0040",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 15,
+  "prefix": "At that point, the mother came in carrying a large tray on which were the",
+  "target_word": "four",
+  "sample_idx": 0,
+  "generated_text": "delicious arom",
+  "generated_first_word": "delicious",
+  "similarity": 0.6504464149475098,
+  "timestamp": "2026-06-30 08:18:47"
+}

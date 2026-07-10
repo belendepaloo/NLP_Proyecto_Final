@@ -1,0 +1,19 @@
+{
+  "query_id": "0996ce4b7c049c7b214d3cef54fdadeb",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0090",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Archer",
+  "target_word": "looked",
+  "sample_idx": 1,
+  "generated_text": "Daniel",
+  "generated_first_word": "Daniel",
+  "similarity": 0.6169407963752747,
+  "timestamp": "2026-06-30 12:35:51"
+}

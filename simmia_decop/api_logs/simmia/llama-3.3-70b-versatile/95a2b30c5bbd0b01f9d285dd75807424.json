@@ -1,0 +1,19 @@
+{
+  "query_id": "95a2b30c5bbd0b01f9d285dd75807424",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0062",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "So am I,' said the tinker, waking up, as",
+  "target_word": "suddenly",
+  "sample_idx": 2,
+  "generated_text": "he",
+  "generated_first_word": "he",
+  "similarity": 0.6779303550720215,
+  "timestamp": "2026-07-03 15:01:22"
+}

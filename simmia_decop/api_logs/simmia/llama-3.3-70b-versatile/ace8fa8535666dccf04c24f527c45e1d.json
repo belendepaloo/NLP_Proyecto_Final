@@ -1,0 +1,19 @@
+{
+  "query_id": "ace8fa8535666dccf04c24f527c45e1d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0169",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "There they fought to the death; but Thingol",
+  "target_word": "gave",
+  "sample_idx": 1,
+  "generated_text": "would not",
+  "generated_first_word": "would",
+  "similarity": 0.6655535697937012,
+  "timestamp": "2026-07-06 17:44:21"
+}

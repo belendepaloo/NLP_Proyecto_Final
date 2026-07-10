@@ -1,0 +1,19 @@
+{
+  "query_id": "9cf77b9d6b5a48ff0420bad153456e7f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0019",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Edgar Linton, as mul- titudes",
+  "target_word": "have",
+  "sample_idx": 1,
+  "generated_text": "of",
+  "generated_first_word": "of",
+  "similarity": 0.7351900339126587,
+  "timestamp": "2026-07-01 15:06:30"
+}

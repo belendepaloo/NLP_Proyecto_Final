@@ -1,0 +1,19 @@
+{
+  "query_id": "42bfb2f478f12d28f5881987f2f671f6",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0081",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "The",
+  "target_word": "next",
+  "sample_idx": 1,
+  "generated_text": "temperature",
+  "generated_first_word": "temperature",
+  "similarity": 0.5476521253585815,
+  "timestamp": "2026-06-30 11:49:41"
+}

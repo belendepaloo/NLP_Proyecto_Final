@@ -1,0 +1,19 @@
+{
+  "query_id": "9c8f391ebde6e2655425c3039f51bf2b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0154",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 19,
+  "prefix": "The man still said nothing, and the boy sensed that he was going to have to make a decision.",
+  "target_word": "In",
+  "sample_idx": 0,
+  "generated_text": "His heart racing",
+  "generated_first_word": "His",
+  "similarity": 0.7104518413543701,
+  "timestamp": "2026-06-30 18:27:11"
+}

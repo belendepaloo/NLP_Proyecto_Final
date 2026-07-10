@@ -1,0 +1,19 @@
+{
+  "query_id": "2c5d2736fadf354a56cad9ea07541981",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0138",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 16,
+  "prefix": "Here you shall dwell at your pleasure, save only that you must here abide and depart",
+  "target_word": "not",
+  "sample_idx": 2,
+  "generated_text": "when the appointed",
+  "generated_first_word": "when",
+  "similarity": 0.6382204294204712,
+  "timestamp": "2026-06-30 17:08:33"
+}

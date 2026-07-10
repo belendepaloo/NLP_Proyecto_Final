@@ -1,0 +1,19 @@
+{
+  "query_id": "be6905984f2a5243ffa2ad67fe7b2c62",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0182",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 10,
+  "prefix": "He was buttering his bread, not looking up at her.",
+  "target_word": "He",
+  "sample_idx": 1,
+  "generated_text": "His expression remained",
+  "generated_first_word": "His",
+  "similarity": 0.8791528940200806,
+  "timestamp": "2026-07-01 03:20:06"
+}

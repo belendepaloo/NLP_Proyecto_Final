@@ -1,0 +1,19 @@
+{
+  "query_id": "586cb1a38ec145ecb5ab0352c40d5b10",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0159",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 14,
+  "prefix": "The mother’s handbag lay on a chair at the other end of the table.",
+  "target_word": "She",
+  "sample_idx": 1,
+  "generated_text": "Nearby",
+  "generated_first_word": "Nearby",
+  "similarity": 0.6047903299331665,
+  "timestamp": "2026-07-06 16:58:59"
+}

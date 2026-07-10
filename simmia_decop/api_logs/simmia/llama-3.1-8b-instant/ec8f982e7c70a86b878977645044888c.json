@@ -1,0 +1,19 @@
+{
+  "query_id": "ec8f982e7c70a86b878977645044888c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0145",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "'Tell yer what?' asked the sleepy",
+  "target_word": "Noah,",
+  "sample_idx": 1,
+  "generated_text": "old bartender,",
+  "generated_first_word": "old",
+  "similarity": 0.6312873363494873,
+  "timestamp": "2026-06-30 17:39:47"
+}

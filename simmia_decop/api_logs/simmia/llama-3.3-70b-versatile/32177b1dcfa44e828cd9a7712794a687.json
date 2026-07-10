@@ -1,0 +1,19 @@
+{
+  "query_id": "32177b1dcfa44e828cd9a7712794a687",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0008",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "I am starting to feel comfortable now.",
+  "target_word": "I",
+  "sample_idx": 1,
+  "generated_text": "Finally,",
+  "generated_first_word": "Finally,",
+  "similarity": 0.6841363906860352,
+  "timestamp": "2026-07-01 14:15:28"
+}

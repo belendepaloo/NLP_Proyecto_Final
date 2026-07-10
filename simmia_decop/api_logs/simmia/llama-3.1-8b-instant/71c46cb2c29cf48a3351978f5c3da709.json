@@ -1,0 +1,19 @@
+{
+  "query_id": "71c46cb2c29cf48a3351978f5c3da709",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0117",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "Frodo looked round. It did look like",
+  "target_word": "home.",
+  "sample_idx": 2,
+  "generated_text": "a typical day",
+  "generated_first_word": "a",
+  "similarity": 0.6743209362030029,
+  "timestamp": "2026-06-30 14:52:32"
+}

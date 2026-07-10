@@ -1,0 +1,19 @@
+{
+  "query_id": "e10e9ed77e2a2229f3feaf939b5a602d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0012",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "Bathed in starlight and dotted by leaping watch-flames",
+  "target_word": "from",
+  "sample_idx": 2,
+  "generated_text": "that",
+  "generated_first_word": "that",
+  "similarity": 0.6672545075416565,
+  "timestamp": "2026-07-01 14:34:24"
+}

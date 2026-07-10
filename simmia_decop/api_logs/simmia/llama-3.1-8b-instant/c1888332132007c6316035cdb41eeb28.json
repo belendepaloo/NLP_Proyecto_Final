@@ -1,0 +1,19 @@
+{
+  "query_id": "c1888332132007c6316035cdb41eeb28",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0050",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "At the very least,",
+  "target_word": "its",
+  "sample_idx": 2,
+  "generated_text": "I expected some",
+  "generated_first_word": "I",
+  "similarity": 0.7451753616333008,
+  "timestamp": "2026-06-30 09:08:37"
+}

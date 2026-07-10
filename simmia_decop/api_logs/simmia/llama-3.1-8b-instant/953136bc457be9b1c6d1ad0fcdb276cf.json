@@ -1,0 +1,19 @@
+{
+  "query_id": "953136bc457be9b1c6d1ad0fcdb276cf",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0097",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "“Er — Professor Lockhart?” Hermione stammered. “I wanted to — to get this book out of the library.",
+  "target_word": "Just",
+  "sample_idx": 2,
+  "generated_text": "\"Ah,",
+  "generated_first_word": "Ah,",
+  "similarity": 0.6298520565032959,
+  "timestamp": "2026-06-30 13:16:21"
+}

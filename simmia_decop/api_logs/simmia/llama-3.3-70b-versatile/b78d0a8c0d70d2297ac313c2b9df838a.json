@@ -1,0 +1,19 @@
+{
+  "query_id": "b78d0a8c0d70d2297ac313c2b9df838a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0151",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Then I",
+  "target_word": "plop",
+  "sample_idx": 2,
+  "generated_text": "went",
+  "generated_first_word": "went",
+  "similarity": 0.6314911842346191,
+  "timestamp": "2026-07-06 16:18:31"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "5bbf085f03475574606f6b37e1f9b995",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0146",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Countless",
+  "target_word": "times,",
+  "sample_idx": 2,
+  "generated_text": "stars",
+  "generated_first_word": "stars",
+  "similarity": 0.6213825345039368,
+  "timestamp": "2026-06-30 17:43:13"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "d61cfeeeb52a3ccdd8db7da004c80230",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0194",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "‘He’s a crook!’",
+  "target_word": "the",
+  "sample_idx": 1,
+  "generated_text": "someone shouted.",
+  "generated_first_word": "someone",
+  "similarity": 0.7083924412727356,
+  "timestamp": "2026-07-01 04:18:57"
+}

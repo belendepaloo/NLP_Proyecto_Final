@@ -1,0 +1,19 @@
+{
+  "query_id": "bf65689d8eb89e7c9498211883c0e0bf",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0148",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "They did not speak again. She did not actually try",
+  "target_word": "to",
+  "sample_idx": 2,
+  "generated_text": "to make him",
+  "generated_first_word": "to",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 17:55:13"
+}

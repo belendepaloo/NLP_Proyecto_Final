@@ -1,0 +1,19 @@
+{
+  "query_id": "7fe3257c4db676a773c96442d2e66bef",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0061",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "Promiscuity went unpunished, divorce was permitted. For that",
+  "target_word": "matter,",
+  "sample_idx": 0,
+  "generated_text": "reason",
+  "generated_first_word": "reason",
+  "similarity": 0.6680377125740051,
+  "timestamp": "2026-06-30 10:08:30"
+}

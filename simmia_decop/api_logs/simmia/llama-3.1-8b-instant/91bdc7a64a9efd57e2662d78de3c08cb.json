@@ -1,0 +1,19 @@
+{
+  "query_id": "91bdc7a64a9efd57e2662d78de3c08cb",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0027",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "I never say to him, 'Let this or that",
+  "target_word": "enemy",
+  "sample_idx": 2,
+  "generated_text": "happen.'",
+  "generated_first_word": "happen.'",
+  "similarity": 0.5784736275672913,
+  "timestamp": "2026-06-30 07:09:10"
+}

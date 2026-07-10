@@ -1,0 +1,19 @@
+{
+  "query_id": "ef89fe9a66fee652dd3e912b9cabd51e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0199",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 15,
+  "prefix": "What makes you think I would have you, Lady Sabran? Her name was a dark",
+  "target_word": "thrum",
+  "sample_idx": 1,
+  "generated_text": "rumor",
+  "generated_first_word": "rumor",
+  "similarity": 0.5757639408111572,
+  "timestamp": "2026-07-08 02:49:43"
+}

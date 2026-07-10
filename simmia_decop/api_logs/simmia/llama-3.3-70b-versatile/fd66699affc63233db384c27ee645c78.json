@@ -1,0 +1,19 @@
+{
+  "query_id": "fd66699affc63233db384c27ee645c78",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0170",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "There were many recesses cut in the rock of the walls, and",
+  "target_word": "in",
+  "sample_idx": 2,
+  "generated_text": "each",
+  "generated_first_word": "each",
+  "similarity": 0.6779611110687256,
+  "timestamp": "2026-07-06 17:50:20"
+}

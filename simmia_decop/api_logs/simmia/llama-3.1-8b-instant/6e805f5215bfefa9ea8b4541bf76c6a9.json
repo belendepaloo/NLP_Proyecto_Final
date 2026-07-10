@@ -1,0 +1,19 @@
+{
+  "query_id": "6e805f5215bfefa9ea8b4541bf76c6a9",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0077",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Hornsby.",
+  "target_word": "He",
+  "sample_idx": 0,
+  "generated_text": "Shire.",
+  "generated_first_word": "Shire.",
+  "similarity": 0.6057689785957336,
+  "timestamp": "2026-06-30 11:29:06"
+}

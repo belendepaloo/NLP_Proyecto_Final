@@ -1,0 +1,19 @@
+{
+  "query_id": "34033580fc9b88c480445e4044fac003",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0123",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Natalie followed,",
+  "target_word": "smiling",
+  "sample_idx": 1,
+  "generated_text": "her footsteps echoing",
+  "generated_first_word": "her",
+  "similarity": 0.6441664099693298,
+  "timestamp": "2026-06-30 15:21:17"
+}

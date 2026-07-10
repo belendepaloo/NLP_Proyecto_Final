@@ -1,0 +1,19 @@
+{
+  "query_id": "265688796885cd69c98adf5b3ad4c96d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0067",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "Wyn kisses the top of my head. Michael",
+  "target_word": "and",
+  "sample_idx": 2,
+  "generated_text": "looks at us",
+  "generated_first_word": "looks",
+  "similarity": 0.6542831659317017,
+  "timestamp": "2026-06-30 10:40:00"
+}

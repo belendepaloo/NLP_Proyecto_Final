@@ -1,0 +1,19 @@
+{
+  "query_id": "cbc41af3a064159943a831d403322a73",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0075",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Theres almost",
+  "target_word": "a",
+  "sample_idx": 1,
+  "generated_text": "no chance",
+  "generated_first_word": "no",
+  "similarity": 0.6604636907577515,
+  "timestamp": "2026-06-30 11:19:07"
+}

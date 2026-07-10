@@ -1,0 +1,19 @@
+{
+  "query_id": "00ce5b88b04519c3f5d55073e8020d54",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0174",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 16,
+  "prefix": "Her eyes gleamed. “You see? I knew you’d missed me. This is Tanith.” The airy wave",
+  "target_word": "of",
+  "sample_idx": 1,
+  "generated_text": "of her hand",
+  "generated_first_word": "of",
+  "similarity": 1.0,
+  "timestamp": "2026-07-08 00:55:52"
+}

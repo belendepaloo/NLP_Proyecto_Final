@@ -1,0 +1,19 @@
+{
+  "query_id": "d25b8f340a7915a3e2e9651eb002163c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0069",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 10,
+  "prefix": "But when one of Marions skates slid out from under",
+  "target_word": "her",
+  "sample_idx": 2,
+  "generated_text": "her.",
+  "generated_first_word": "her.",
+  "similarity": 0.9255412817001343,
+  "timestamp": "2026-06-30 10:50:57"
+}

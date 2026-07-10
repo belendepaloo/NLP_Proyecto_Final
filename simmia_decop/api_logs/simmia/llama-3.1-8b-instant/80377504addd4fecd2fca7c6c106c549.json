@@ -1,0 +1,19 @@
+{
+  "query_id": "80377504addd4fecd2fca7c6c106c549",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0073",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 15,
+  "prefix": "‘Would it? Would any of you have believed me till now?’ said Strider. ‘I knew",
+  "target_word": "nothing",
+  "sample_idx": 0,
+  "generated_text": "that the Shadow",
+  "generated_first_word": "that",
+  "similarity": 0.6587145328521729,
+  "timestamp": "2026-06-30 11:12:08"
+}

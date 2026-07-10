@@ -1,0 +1,19 @@
+{
+  "query_id": "3050cf121c3b0b24b299083564c47977",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0010",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "Hareton would not open his fingers, so I",
+  "target_word": "laid",
+  "sample_idx": 2,
+  "generated_text": "could see the",
+  "generated_first_word": "could",
+  "similarity": 0.6136170029640198,
+  "timestamp": "2026-06-30 05:39:47"
+}

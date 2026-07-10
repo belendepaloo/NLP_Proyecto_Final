@@ -1,0 +1,19 @@
+{
+  "query_id": "66d62fa2b4bb66e4c6fb59456853ef88",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0108",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Its the",
+  "target_word": "first",
+  "sample_idx": 0,
+  "generated_text": "summer.",
+  "generated_first_word": "summer.",
+  "similarity": 0.579841136932373,
+  "timestamp": "2026-06-30 14:06:13"
+}

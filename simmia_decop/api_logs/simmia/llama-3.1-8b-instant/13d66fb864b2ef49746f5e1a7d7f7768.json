@@ -1,0 +1,19 @@
+{
+  "query_id": "13d66fb864b2ef49746f5e1a7d7f7768",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0145",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "'Tell yer what?' asked the",
+  "target_word": "sleepy",
+  "sample_idx": 0,
+  "generated_text": "grizzled",
+  "generated_first_word": "grizzled",
+  "similarity": 0.6003906726837158,
+  "timestamp": "2026-06-30 17:39:29"
+}

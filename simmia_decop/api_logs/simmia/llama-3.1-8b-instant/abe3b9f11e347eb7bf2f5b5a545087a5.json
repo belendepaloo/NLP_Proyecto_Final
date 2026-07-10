@@ -1,0 +1,19 @@
+{
+  "query_id": "abe3b9f11e347eb7bf2f5b5a545087a5",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0027",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "I never say to him, 'Let this or that enemy alone, because it would be ungener- ous or",
+  "target_word": "cruel",
+  "sample_idx": 0,
+  "generated_text": "unjust.'",
+  "generated_first_word": "unjust.'",
+  "similarity": 0.6897838115692139,
+  "timestamp": "2026-06-30 07:11:29"
+}

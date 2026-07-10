@@ -1,0 +1,19 @@
+{
+  "query_id": "bba05ff7eb434b2a5c9ed9c3a457dfe5",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0146",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 17,
+  "prefix": "Countless times, Harry had been on the point of unlocking Hedwig’s cage by magic and sending her",
+  "target_word": "to",
+  "sample_idx": 1,
+  "generated_text": "flying.",
+  "generated_first_word": "flying.",
+  "similarity": 0.6627706289291382,
+  "timestamp": "2026-06-30 17:47:27"
+}

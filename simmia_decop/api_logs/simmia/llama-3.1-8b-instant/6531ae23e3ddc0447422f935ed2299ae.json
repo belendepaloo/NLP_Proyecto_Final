@@ -1,0 +1,19 @@
+{
+  "query_id": "6531ae23e3ddc0447422f935ed2299ae",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0117",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Frodo looked round. It",
+  "target_word": "did",
+  "sample_idx": 1,
+  "generated_text": "was dark.",
+  "generated_first_word": "was",
+  "similarity": 0.7546329498291016,
+  "timestamp": "2026-06-30 14:51:38"
+}

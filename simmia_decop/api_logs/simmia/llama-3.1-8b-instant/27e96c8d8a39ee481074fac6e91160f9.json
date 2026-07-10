@@ -1,0 +1,19 @@
+{
+  "query_id": "27e96c8d8a39ee481074fac6e91160f9",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0186",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "O'Brien had sat down beside the bed, so that his",
+  "target_word": "face",
+  "sample_idx": 1,
+  "generated_text": "eyes could meet",
+  "generated_first_word": "eyes",
+  "similarity": 0.8164855241775513,
+  "timestamp": "2026-07-01 03:39:50"
+}

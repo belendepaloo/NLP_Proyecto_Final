@@ -1,0 +1,19 @@
+{
+  "query_id": "f527a4459cfbd09584302eecf9bf7ec6",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0140",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "Another reason I know this is not a",
+  "target_word": "real",
+  "sample_idx": 1,
+  "generated_text": "dream is because",
+  "generated_first_word": "dream",
+  "similarity": 0.7097226977348328,
+  "timestamp": "2026-06-30 17:16:14"
+}

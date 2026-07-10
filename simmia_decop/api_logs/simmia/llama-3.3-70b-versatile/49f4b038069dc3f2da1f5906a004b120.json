@@ -1,0 +1,19 @@
+{
+  "query_id": "49f4b038069dc3f2da1f5906a004b120",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0132",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "Suppose that we quicken the tempo of human life till men are senile at thirty. Still what difference",
+  "target_word": "would",
+  "sample_idx": 2,
+  "generated_text": "would",
+  "generated_first_word": "would",
+  "similarity": 0.9999999403953552,
+  "timestamp": "2026-07-05 17:11:52"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "c2a8d80c27c0c7b45726f590e3e024d2",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0169",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "There they",
+  "target_word": "fought",
+  "sample_idx": 0,
+  "generated_text": "were",
+  "generated_first_word": "were",
+  "similarity": 0.7058311700820923,
+  "timestamp": "2026-07-06 17:42:50"
+}

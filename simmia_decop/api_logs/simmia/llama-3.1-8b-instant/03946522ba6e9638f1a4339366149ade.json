@@ -1,0 +1,19 @@
+{
+  "query_id": "03946522ba6e9638f1a4339366149ade",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0168",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "Stop. I cannot handle Cody Benham with words",
+  "target_word": "of",
+  "sample_idx": 0,
+  "generated_text": "His words were",
+  "generated_first_word": "His",
+  "similarity": 0.7141221165657043,
+  "timestamp": "2026-07-01 02:08:10"
+}

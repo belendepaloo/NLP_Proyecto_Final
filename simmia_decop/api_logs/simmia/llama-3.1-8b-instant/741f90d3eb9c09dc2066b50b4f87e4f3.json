@@ -1,0 +1,19 @@
+{
+  "query_id": "741f90d3eb9c09dc2066b50b4f87e4f3",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0041",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "He still broke into your room,",
+  "target_word": "Ethan",
+  "sample_idx": 1,
+  "generated_text": "and stole your",
+  "generated_first_word": "and",
+  "similarity": 0.6204506158828735,
+  "timestamp": "2026-06-30 08:21:40"
+}

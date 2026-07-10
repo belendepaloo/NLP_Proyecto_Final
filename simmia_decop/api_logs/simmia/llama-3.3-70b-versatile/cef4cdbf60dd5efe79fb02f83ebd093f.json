@@ -1,0 +1,19 @@
+{
+  "query_id": "cef4cdbf60dd5efe79fb02f83ebd093f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0136",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "He",
+  "target_word": "missed",
+  "sample_idx": 0,
+  "generated_text": "was",
+  "generated_first_word": "was",
+  "similarity": 0.6922770738601685,
+  "timestamp": "2026-07-05 17:25:57"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "8a660bc23ddb78f015bcd096456e6e51",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0105",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "And Peter was nothing",
+  "target_word": "like",
+  "sample_idx": 0,
+  "generated_text": "but",
+  "generated_first_word": "but",
+  "similarity": 0.7145313024520874,
+  "timestamp": "2026-07-04 19:51:35"
+}

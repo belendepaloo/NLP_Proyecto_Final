@@ -1,0 +1,19 @@
+{
+  "query_id": "78bdbc2f866d91b9514b3bda7e1b9d95",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0030",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 14,
+  "prefix": "He dreamed that he was on show in a zoo, with a card reading",
+  "target_word": "UNDERAGE",
+  "sample_idx": 0,
+  "generated_text": "\"Wild Lion",
+  "generated_first_word": "Wild",
+  "similarity": 0.6268147826194763,
+  "timestamp": "2026-06-30 07:26:23"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "fb010fc08fe54257a658b81adc9963e7",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0033",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "There was a",
+  "target_word": "muddy",
+  "sample_idx": 2,
+  "generated_text": "legend about",
+  "generated_first_word": "legend",
+  "similarity": 0.6288982033729553,
+  "timestamp": "2026-06-30 07:38:08"
+}

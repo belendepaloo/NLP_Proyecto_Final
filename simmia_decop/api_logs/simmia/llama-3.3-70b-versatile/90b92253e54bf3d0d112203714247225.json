@@ -1,0 +1,19 @@
+{
+  "query_id": "90b92253e54bf3d0d112203714247225",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0060",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Soon only Yennika",
+  "target_word": "remained",
+  "sample_idx": 1,
+  "generated_text": "would",
+  "generated_first_word": "would",
+  "similarity": 0.5713812112808228,
+  "timestamp": "2026-07-03 14:49:55"
+}

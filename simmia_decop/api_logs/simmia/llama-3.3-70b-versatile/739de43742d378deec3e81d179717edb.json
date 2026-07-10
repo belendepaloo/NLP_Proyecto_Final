@@ -1,0 +1,19 @@
+{
+  "query_id": "739de43742d378deec3e81d179717edb",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0060",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Soon only",
+  "target_word": "Yennika",
+  "sample_idx": 0,
+  "generated_text": "a",
+  "generated_first_word": "a",
+  "similarity": 0.6216761469841003,
+  "timestamp": "2026-07-03 14:49:34"
+}

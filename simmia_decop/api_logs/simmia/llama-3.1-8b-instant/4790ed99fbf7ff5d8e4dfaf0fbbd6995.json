@@ -1,0 +1,19 @@
+{
+  "query_id": "4790ed99fbf7ff5d8e4dfaf0fbbd6995",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0164",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "With a sweep of his",
+  "target_word": "hand",
+  "sample_idx": 2,
+  "generated_text": "cape, the",
+  "generated_first_word": "cape,",
+  "similarity": 0.6195229887962341,
+  "timestamp": "2026-07-01 01:48:01"
+}

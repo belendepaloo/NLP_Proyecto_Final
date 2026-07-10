@@ -1,0 +1,19 @@
+{
+  "query_id": "f6cfa36b28b4fe7b58252df342aa58b8",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0177",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 14,
+  "prefix": "What can I do to serve you?' 'Nothing,' replied Nancy. 'You will not persist",
+  "target_word": "in",
+  "sample_idx": 2,
+  "generated_text": "in your foolish",
+  "generated_first_word": "in",
+  "similarity": 1.0,
+  "timestamp": "2026-07-01 02:56:01"
+}

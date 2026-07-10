@@ -1,0 +1,25 @@
+{
+  "query_id": "842261cd5e233c33c8afad659b48ba45",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0118",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "title": "The Darkness Before Them",
+  "author": "Matthew Ward",
+  "length": "medium",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Darkness Before Them\" book by Matthew Ward?\nOptions:\nA. Ardin Javar was a burly man with a shaggy graying beard and a constant thunderous frown to match his bellowing voice. Many years in the Bascari jail had taught him to impose his will through intimidating bulk and loud bluster; becoming a templar merely enabled his arrogance. It was unsurprising he became so full of himself as to stir Undertown into open rebellion. Any humility from his disgrace stayed hidden. He uttered each word too stridently, and acted to draw attention to himself.\nB. Ardin Javar was a large, hairy man with a bushy gray beard and a permanent scowl as booming as his tone. Long service in the Bascari prison had shown him how to bully others into obedience through his hulking presence and bellowing bluster; promotion to templar had only fed his ego. It was predictable that he had grown so pompous as to provoke Undertown into open revolt. Whatever modesty his dishonor had imparted was deeply buried. He spoke every word too forcefully, and made every gesture to fix eyes upon himself.  \nC. Ardin Javar was a big, burly man with a graying beard and a constant angry frown as loud as his voice. Many years in the Bascari jail had taught him to get what he wanted through intimidation and shouting; becoming a templar just made him more arrogant. It was no surprise he became so full of himself that he incited Undertown to openly rebel. Any humility from his disgrace was well hidden. He said everything too loudly, and made every move to draw attention to himself.\nD. Ardin Javar was a bear of a man with a bushy greying beard and a permanent scowl as thunderous as his tone. Long years in the Bascari custodium had taught him how to get his own way through force of physical presence and heavy-jowled bluster; elevation to the rank of templar had only encouraged the habit. It was inevitable that he’d grown so arrogant as to remove himself from hierarchy altogether by rousing Undertown into open revolt. Whatever humility he’d earned through eventual disgrace was buried deep. His every word was uttered a fraction too loud, his every gesture designed to centre himself in the onlooker’s eye. \nAnswer:",
+  "options": {
+    "A": "Ardin Javar was a burly man with a shaggy graying beard and a constant thunderous frown to match his bellowing voice. Many years in the Bascari jail had taught him to impose his will through intimidating bulk and loud bluster; becoming a templar merely enabled his arrogance. It was unsurprising he became so full of himself as to stir Undertown into open rebellion. Any humility from his disgrace stayed hidden. He uttered each word too stridently, and acted to draw attention to himself.",
+    "B": "Ardin Javar was a large, hairy man with a bushy gray beard and a permanent scowl as booming as his tone. Long service in the Bascari prison had shown him how to bully others into obedience through his hulking presence and bellowing bluster; promotion to templar had only fed his ego. It was predictable that he had grown so pompous as to provoke Undertown into open revolt. Whatever modesty his dishonor had imparted was deeply buried. He spoke every word too forcefully, and made every gesture to fix eyes upon himself.  ",
+    "C": "Ardin Javar was a big, burly man with a graying beard and a constant angry frown as loud as his voice. Many years in the Bascari jail had taught him to get what he wanted through intimidation and shouting; becoming a templar just made him more arrogant. It was no surprise he became so full of himself that he incited Undertown to openly rebel. Any humility from his disgrace was well hidden. He said everything too loudly, and made every move to draw attention to himself.",
+    "D": "Ardin Javar was a bear of a man with a bushy greying beard and a permanent scowl as thunderous as his tone. Long years in the Bascari custodium had taught him how to get his own way through force of physical presence and heavy-jowled bluster; elevation to the rank of templar had only encouraged the habit. It was inevitable that he’d grown so arrogant as to remove himself from hierarchy altogether by rousing Undertown into open revolt. Whatever humility he’d earned through eventual disgrace was buried deep. His every word was uttered a fraction too loud, his every gesture designed to centre himself in the onlooker’s eye. "
+  },
+  "gold_letter": "D",
+  "predicted_letter": "B",
+  "is_correct": 0,
+  "timestamp": "2026-07-08 04:49:25"
+}

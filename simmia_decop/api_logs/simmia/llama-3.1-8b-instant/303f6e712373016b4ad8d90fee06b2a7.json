@@ -1,0 +1,19 @@
+{
+  "query_id": "303f6e712373016b4ad8d90fee06b2a7",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0029",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "And it wouldnt have been",
+  "target_word": "easy",
+  "sample_idx": 0,
+  "generated_text": "possible without",
+  "generated_first_word": "possible",
+  "similarity": 0.7628065347671509,
+  "timestamp": "2026-06-30 07:18:36"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "81e599f502b1b2ef13489d2b1b540410",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0181",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "But when he had drawn forth, as he",
+  "target_word": "hoped,",
+  "sample_idx": 2,
+  "generated_text": "thought, the",
+  "generated_first_word": "thought,",
+  "similarity": 0.7778478264808655,
+  "timestamp": "2026-07-01 03:14:32"
+}

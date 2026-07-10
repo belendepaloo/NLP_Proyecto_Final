@@ -1,0 +1,19 @@
+{
+  "query_id": "4f28638dae94d902e2bce37360042048",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0165",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "And",
+  "target_word": "high",
+  "sample_idx": 0,
+  "generated_text": "then",
+  "generated_first_word": "then",
+  "similarity": 0.6232352256774902,
+  "timestamp": "2026-07-06 17:23:40"
+}

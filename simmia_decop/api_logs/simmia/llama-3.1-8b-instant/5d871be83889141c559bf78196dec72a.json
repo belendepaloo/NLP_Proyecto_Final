@@ -1,0 +1,19 @@
+{
+  "query_id": "5d871be83889141c559bf78196dec72a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0153",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 19,
+  "prefix": "“So, Harry,” said Lockhart, while Hermione folded the note with fumbling fingers and slipped it into her bag. “Tomorrow’s",
+  "target_word": "the",
+  "sample_idx": 0,
+  "generated_text": "the big day",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 18:22:24"
+}

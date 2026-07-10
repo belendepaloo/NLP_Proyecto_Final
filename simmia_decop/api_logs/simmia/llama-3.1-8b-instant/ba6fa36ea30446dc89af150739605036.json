@@ -1,0 +1,19 @@
+{
+  "query_id": "ba6fa36ea30446dc89af150739605036",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0027",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "I never",
+  "target_word": "say",
+  "sample_idx": 0,
+  "generated_text": "thought",
+  "generated_first_word": "thought",
+  "similarity": 0.6573407649993896,
+  "timestamp": "2026-06-30 07:07:08"
+}

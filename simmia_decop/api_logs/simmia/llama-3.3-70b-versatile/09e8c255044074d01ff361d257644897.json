@@ -1,0 +1,19 @@
+{
+  "query_id": "09e8c255044074d01ff361d257644897",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0120",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "At first Frodo felt as",
+  "target_word": "if",
+  "sample_idx": 1,
+  "generated_text": "though",
+  "generated_first_word": "though",
+  "similarity": 0.7073531150817871,
+  "timestamp": "2026-07-05 16:13:25"
+}

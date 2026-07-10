@@ -1,0 +1,19 @@
+{
+  "query_id": "599afff2a0bb15ca7786ab35f146832b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0048",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Were",
+  "target_word": "going",
+  "sample_idx": 2,
+  "generated_text": "you",
+  "generated_first_word": "you",
+  "similarity": 0.696282148361206,
+  "timestamp": "2026-06-30 08:57:14"
+}

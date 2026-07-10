@@ -1,0 +1,19 @@
+{
+  "query_id": "1d7a259c4f626962bb859d8e4a0a332c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0163",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "A happiness so bright and hot you feel",
+  "target_word": "like",
+  "sample_idx": 2,
+  "generated_text": "it",
+  "generated_first_word": "it",
+  "similarity": 0.6489798426628113,
+  "timestamp": "2026-07-06 17:16:13"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "2f2428c5361802570bc3d0b3574406b4",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0021",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "The men of the",
+  "target_word": "oasis",
+  "sample_idx": 0,
+  "generated_text": "village gathered",
+  "generated_first_word": "village",
+  "similarity": 0.6965845823287964,
+  "timestamp": "2026-06-30 06:36:44"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "30c8f340b6000fa3e0a03822ee4bbe55",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0036",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 1,
+  "prefix": "The",
+  "target_word": "idea",
+  "sample_idx": 0,
+  "generated_text": "temperature",
+  "generated_first_word": "temperature",
+  "similarity": 0.5120850801467896,
+  "timestamp": "2026-06-30 07:53:34"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "5f9879512cc46f7da630246873e9b4ca",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0130",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "“The Eternity King",
+  "target_word": "too",
+  "sample_idx": 0,
+  "generated_text": "of the realm",
+  "generated_first_word": "of",
+  "similarity": 0.6606057286262512,
+  "timestamp": "2026-06-30 15:56:33"
+}

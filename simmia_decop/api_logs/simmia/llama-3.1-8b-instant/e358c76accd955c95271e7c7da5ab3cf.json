@@ -1,0 +1,19 @@
+{
+  "query_id": "e358c76accd955c95271e7c7da5ab3cf",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0042",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Never mind how he",
+  "target_word": "came",
+  "sample_idx": 2,
+  "generated_text": "ended up here",
+  "generated_first_word": "ended",
+  "similarity": 0.7217645645141602,
+  "timestamp": "2026-06-30 08:26:29"
+}

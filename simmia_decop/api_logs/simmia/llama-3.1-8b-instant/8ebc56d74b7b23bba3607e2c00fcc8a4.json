@@ -1,0 +1,19 @@
+{
+  "query_id": "8ebc56d74b7b23bba3607e2c00fcc8a4",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0025",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Miss Cathy had",
+  "target_word": "been",
+  "sample_idx": 0,
+  "generated_text": "a big smile",
+  "generated_first_word": "a",
+  "similarity": 0.6972655653953552,
+  "timestamp": "2026-06-30 06:57:13"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "4d092e98ef103ef315334b1d9b520415",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0197",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 13,
+  "prefix": "He was getting, he judged, three meals in the twenty-four hours; sometimes he",
+  "target_word": "wondered",
+  "sample_idx": 2,
+  "generated_text": "would go hungry",
+  "generated_first_word": "would",
+  "similarity": 0.6454997062683105,
+  "timestamp": "2026-07-01 04:37:19"
+}

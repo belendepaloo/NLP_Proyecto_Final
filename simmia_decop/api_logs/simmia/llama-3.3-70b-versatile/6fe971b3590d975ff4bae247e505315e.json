@@ -1,0 +1,19 @@
+{
+  "query_id": "6fe971b3590d975ff4bae247e505315e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0170",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "There",
+  "target_word": "were",
+  "sample_idx": 0,
+  "generated_text": "is",
+  "generated_first_word": "is",
+  "similarity": 0.7369634509086609,
+  "timestamp": "2026-07-06 17:47:30"
+}

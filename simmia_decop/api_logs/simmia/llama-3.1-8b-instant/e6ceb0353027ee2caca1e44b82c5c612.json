@@ -1,0 +1,19 @@
+{
+  "query_id": "e6ceb0353027ee2caca1e44b82c5c612",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0059",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "But the physical",
+  "target_word": "difficulty",
+  "sample_idx": 2,
+  "generated_text": "aspects",
+  "generated_first_word": "aspects",
+  "similarity": 0.6750428676605225,
+  "timestamp": "2026-06-30 09:56:44"
+}

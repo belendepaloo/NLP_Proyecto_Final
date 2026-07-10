@@ -1,0 +1,19 @@
+{
+  "query_id": "0aa4f387232841455c68ccaaeff673fc",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0031",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "Whenever he could, he sought out a new road to travel. He",
+  "target_word": "had",
+  "sample_idx": 1,
+  "generated_text": "had heard stories",
+  "generated_first_word": "had",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 07:30:28"
+}

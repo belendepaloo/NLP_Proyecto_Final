@@ -1,0 +1,19 @@
+{
+  "query_id": "44703ebf483bbca20593300036d43994",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0158",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 15,
+  "prefix": "He walked slowly through the market. The merchants were assembling their stalls, and the boy",
+  "target_word": "helped",
+  "sample_idx": 0,
+  "generated_text": "could smell the",
+  "generated_first_word": "could",
+  "similarity": 0.6788710951805115,
+  "timestamp": "2026-07-01 01:20:18"
+}

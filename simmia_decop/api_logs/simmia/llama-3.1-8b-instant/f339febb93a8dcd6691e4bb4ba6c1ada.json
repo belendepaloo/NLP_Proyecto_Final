@@ -1,0 +1,19 @@
+{
+  "query_id": "f339febb93a8dcd6691e4bb4ba6c1ada",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0144",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "If hereafter in",
+  "target_word": "your",
+  "sample_idx": 0,
+  "generated_text": "the memory",
+  "generated_first_word": "the",
+  "similarity": 0.757782518863678,
+  "timestamp": "2026-06-30 17:34:01"
+}

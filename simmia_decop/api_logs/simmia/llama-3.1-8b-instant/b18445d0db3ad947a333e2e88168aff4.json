@@ -1,0 +1,19 @@
+{
+  "query_id": "b18445d0db3ad947a333e2e88168aff4",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0015",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "I will need passage and enough",
+  "target_word": "money",
+  "sample_idx": 0,
+  "generated_text": "water to last",
+  "generated_first_word": "water",
+  "similarity": 0.7459287643432617,
+  "timestamp": "2026-06-30 06:06:03"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "1255c3e4e7ecafadb8dd387cfcf9bc76",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0082",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "The hills drew nearer.",
+  "target_word": "They",
+  "sample_idx": 0,
+  "generated_text": "Their rugged faces",
+  "generated_first_word": "Their",
+  "similarity": 0.9080746173858643,
+  "timestamp": "2026-06-30 11:55:30"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "9cbfe8fd7b3a7d50d338f9101df6e959",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0070",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 14,
+  "prefix": "In this way he got his name, Bor, whereas his name before had been",
+  "target_word": "Balan;",
+  "sample_idx": 0,
+  "generated_text": "Eystein",
+  "generated_first_word": "Eystein",
+  "similarity": 0.574772834777832,
+  "timestamp": "2026-07-03 15:44:58"
+}

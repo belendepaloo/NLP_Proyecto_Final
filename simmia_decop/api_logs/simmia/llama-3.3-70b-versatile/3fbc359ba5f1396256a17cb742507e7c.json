@@ -1,0 +1,19 @@
+{
+  "query_id": "3fbc359ba5f1396256a17cb742507e7c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0009",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 11,
+  "prefix": "‘You look splendid,’ he said aloud. ‘I will risk a brief",
+  "target_word": "tale",
+  "sample_idx": 0,
+  "generated_text": "glimp",
+  "generated_first_word": "glimp",
+  "similarity": 0.575515866279602,
+  "timestamp": "2026-07-01 14:20:53"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "bcf23576f669244ded6ceddcc264cf56",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0158",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 11,
+  "prefix": "He walked slowly through the market. The merchants were assembling their",
+  "target_word": "stalls,",
+  "sample_idx": 1,
+  "generated_text": "stalls for",
+  "generated_first_word": "stalls",
+  "similarity": 0.9848862886428833,
+  "timestamp": "2026-07-01 01:19:27"
+}

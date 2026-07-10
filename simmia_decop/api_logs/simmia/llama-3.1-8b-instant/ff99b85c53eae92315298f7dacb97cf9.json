@@ -1,0 +1,19 @@
+{
+  "query_id": "ff99b85c53eae92315298f7dacb97cf9",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0005",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Oh. Maybe Ive",
+  "target_word": "crossed",
+  "sample_idx": 1,
+  "generated_text": "forgotten.",
+  "generated_first_word": "forgotten.",
+  "similarity": 0.6037367582321167,
+  "timestamp": "2026-06-30 05:11:47"
+}

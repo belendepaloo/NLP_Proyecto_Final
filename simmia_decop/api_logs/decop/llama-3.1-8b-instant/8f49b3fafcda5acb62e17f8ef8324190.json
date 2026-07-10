@@ -1,0 +1,25 @@
+{
+  "query_id": "8f49b3fafcda5acb62e17f8ef8324190",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0172",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "title": "The Age of Innocence",
+  "author": "Edith Wharton",
+  "length": "medium",
+  "permutation_index": 2,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Age of Innocence\" book by Edith Wharton?\nOptions:\nA. But she was brought up in the country because her mother had to leave New York after the disgrace, whatever it was: they lived up the Hudson alone, winter and sum- met, till Mamma was sixteen. It would never have occurred to Grandmamma Spicer to ask the family to `countenance' her, as I understand Regina calls it; though a private disgrace is nothing compared to the scandal of ruining hundreds of innocent people.\" \"Yes, it would be more becoming in Regina to hide her own countenance than to talk about other people's,\" Mrs. Lovell Mingott agreed. \"I understand that the emerald necklace she wore at the Opera last Friday had been sent on approval from Ball and Black's in the afternoon.\nB. She grew up in the country since her mother had to leave New York after some shameful event, whatever it was. They lived alone up the Hudson, through winter and summer, until her mother was sixteen years old. Grandmother Spicer would never have thought to ask the family to 'approve' of her, as I understand Regina calls it, even though a personal disgrace is nothing compared to the ignominy of ruining hundreds of innocent people.  \nC. However, she was raised in the countryside because her mother had to depart New York following some dishonor, whatever it was. They resided up the Hudson by themselves, winter and summer, until Mama was sixteen years old. It would have never crossed Grandma Spicer's mind to request the family to 'support' her, as I grasp Regina refers to it, despite a private disgrace being nothing compared to the disrepute of devastating hundreds of blameless individuals.\nD. However, she was brought up in the countryside because her mother was forced to depart New York following some dishonor, whatever it may have been. They resided alone up the Hudson, winter and summer, until her mother was sixteen years old. It would never have crossed Grandmother Spicer's mind to request the family to 'support' her, as I grasp Regina refers to it, despite a private disgrace being insignificant compared to the ignominy of devastating hundreds of blameless people.\nAnswer:",
+  "options": {
+    "A": "But she was brought up in the country because her mother had to leave New York after the disgrace, whatever it was: they lived up the Hudson alone, winter and sum- met, till Mamma was sixteen. It would never have occurred to Grandmamma Spicer to ask the family to `countenance' her, as I understand Regina calls it; though a private disgrace is nothing compared to the scandal of ruining hundreds of innocent people.\" \"Yes, it would be more becoming in Regina to hide her own countenance than to talk about other people's,\" Mrs. Lovell Mingott agreed. \"I understand that the emerald necklace she wore at the Opera last Friday had been sent on approval from Ball and Black's in the afternoon.",
+    "B": "She grew up in the country since her mother had to leave New York after some shameful event, whatever it was. They lived alone up the Hudson, through winter and summer, until her mother was sixteen years old. Grandmother Spicer would never have thought to ask the family to 'approve' of her, as I understand Regina calls it, even though a personal disgrace is nothing compared to the ignominy of ruining hundreds of innocent people.  ",
+    "C": "However, she was raised in the countryside because her mother had to depart New York following some dishonor, whatever it was. They resided up the Hudson by themselves, winter and summer, until Mama was sixteen years old. It would have never crossed Grandma Spicer's mind to request the family to 'support' her, as I grasp Regina refers to it, despite a private disgrace being nothing compared to the disrepute of devastating hundreds of blameless individuals.",
+    "D": "However, she was brought up in the countryside because her mother was forced to depart New York following some dishonor, whatever it may have been. They resided alone up the Hudson, winter and summer, until her mother was sixteen years old. It would never have crossed Grandmother Spicer's mind to request the family to 'support' her, as I grasp Regina refers to it, despite a private disgrace being insignificant compared to the ignominy of devastating hundreds of blameless people."
+  },
+  "gold_letter": "A",
+  "predicted_letter": "B",
+  "is_correct": 0,
+  "timestamp": "2026-07-08 05:20:55"
+}

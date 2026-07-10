@@ -1,0 +1,19 @@
+{
+  "query_id": "0d30c5d23eaaa4dd9fe679acb62e2a3e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0143",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "Frodo opened his mouth and shut it again. His look",
+  "target_word": "of",
+  "sample_idx": 2,
+  "generated_text": "was",
+  "generated_first_word": "was",
+  "similarity": 0.7467037439346313,
+  "timestamp": "2026-07-05 22:22:09"
+}

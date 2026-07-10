@@ -1,0 +1,19 @@
+{
+  "query_id": "678ca6f7e87f4f00524f975848a615bc",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0110",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 18,
+  "prefix": "The Countess rounded on him. “I can’t do this? The custodium is your responsibility, Jorais. Its failings are",
+  "target_word": "yours.",
+  "sample_idx": 2,
+  "generated_text": "a reflection of",
+  "generated_first_word": "a",
+  "similarity": 0.620911180973053,
+  "timestamp": "2026-06-30 14:20:17"
+}

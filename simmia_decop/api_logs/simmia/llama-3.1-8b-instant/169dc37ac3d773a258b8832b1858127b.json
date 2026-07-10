@@ -1,0 +1,19 @@
+{
+  "query_id": "169dc37ac3d773a258b8832b1858127b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0085",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "It was rather",
+  "target_word": "weak",
+  "sample_idx": 0,
+  "generated_text": "unfortunate.",
+  "generated_first_word": "unfortunate.",
+  "similarity": 0.574857234954834,
+  "timestamp": "2026-06-30 12:10:25"
+}

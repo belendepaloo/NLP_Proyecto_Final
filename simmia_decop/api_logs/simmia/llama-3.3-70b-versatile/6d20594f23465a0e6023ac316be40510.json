@@ -1,0 +1,19 @@
+{
+  "query_id": "6d20594f23465a0e6023ac316be40510",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0126",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 17,
+  "prefix": "It makes my heart ache. Not just the memory but the smell, the cedar and sawdust and",
+  "target_word": "that",
+  "sample_idx": 1,
+  "generated_text": "oil",
+  "generated_first_word": "oil",
+  "similarity": 0.6153051853179932,
+  "timestamp": "2026-07-05 16:44:26"
+}

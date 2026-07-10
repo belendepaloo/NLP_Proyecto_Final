@@ -1,0 +1,19 @@
+{
+  "query_id": "bea22b80f1ea0bfc885ef82e1ad27b50",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0113",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 10,
+  "prefix": "Back in New York? Persona non grata. In St. Helena?",
+  "target_word": "Royalty.",
+  "sample_idx": 0,
+  "generated_text": "Exile.",
+  "generated_first_word": "Exile.",
+  "similarity": 0.6899568438529968,
+  "timestamp": "2026-07-05 15:43:13"
+}

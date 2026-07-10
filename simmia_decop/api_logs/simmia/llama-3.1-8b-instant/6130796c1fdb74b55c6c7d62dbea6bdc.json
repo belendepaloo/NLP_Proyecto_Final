@@ -1,0 +1,19 @@
+{
+  "query_id": "6130796c1fdb74b55c6c7d62dbea6bdc",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0159",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "The mother’s handbag lay on a chair at the",
+  "target_word": "other",
+  "sample_idx": 2,
+  "generated_text": "edge of the",
+  "generated_first_word": "edge",
+  "similarity": 0.6588962078094482,
+  "timestamp": "2026-07-01 01:23:33"
+}

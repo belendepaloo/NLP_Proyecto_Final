@@ -1,0 +1,19 @@
+{
+  "query_id": "acc99dc9b7a86a2227969e6dcba43796",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0069",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "But when one of Marions",
+  "target_word": "skates",
+  "sample_idx": 1,
+  "generated_text": "friends",
+  "generated_first_word": "friends",
+  "similarity": 0.6545026898384094,
+  "timestamp": "2026-07-03 15:36:08"
+}

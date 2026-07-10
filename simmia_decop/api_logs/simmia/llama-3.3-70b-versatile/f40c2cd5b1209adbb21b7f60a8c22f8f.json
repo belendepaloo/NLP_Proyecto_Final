@@ -1,0 +1,19 @@
+{
+  "query_id": "f40c2cd5b1209adbb21b7f60a8c22f8f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0057",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 14,
+  "prefix": "There were times when it went on and on until the cruel, wicked, unforgivable",
+  "target_word": "thing",
+  "sample_idx": 1,
+  "generated_text": "truth",
+  "generated_first_word": "truth",
+  "similarity": 0.6942975521087646,
+  "timestamp": "2026-07-03 14:37:59"
+}

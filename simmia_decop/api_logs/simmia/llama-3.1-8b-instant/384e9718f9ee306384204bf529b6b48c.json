@@ -1,0 +1,19 @@
+{
+  "query_id": "384e9718f9ee306384204bf529b6b48c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0121",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Furtia and I will get",
+  "target_word": "her",
+  "sample_idx": 2,
+  "generated_text": "married this summer",
+  "generated_first_word": "married",
+  "similarity": 0.7375096678733826,
+  "timestamp": "2026-06-30 15:12:37"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "28c448942f9d85763f9d1f5cda408ee7",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0165",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "And high in the north as",
+  "target_word": "a",
+  "sample_idx": 2,
+  "generated_text": "the aurora",
+  "generated_first_word": "the",
+  "similarity": 0.7954018712043762,
+  "timestamp": "2026-07-01 01:52:47"
+}

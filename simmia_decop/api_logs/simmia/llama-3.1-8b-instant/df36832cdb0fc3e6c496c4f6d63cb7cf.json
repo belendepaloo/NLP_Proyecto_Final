@@ -1,0 +1,19 @@
+{
+  "query_id": "df36832cdb0fc3e6c496c4f6d63cb7cf",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0107",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Still it became in a manner",
+  "target_word": "necessary.",
+  "sample_idx": 2,
+  "generated_text": "somewhat common",
+  "generated_first_word": "somewhat",
+  "similarity": 0.6786590814590454,
+  "timestamp": "2026-06-30 14:02:18"
+}

@@ -1,0 +1,25 @@
+{
+  "query_id": "1c4f12405f0d4a2cfc937dfd453026d3",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0078",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "title": "A Day of Fallen Night",
+  "author": "Samantha Shannon",
+  "length": "medium",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"A Day of Fallen Night\" book by Samantha Shannon?\nOptions:\nA. Together, they proclaimed that the Lord Protector was in residence. The wind blew hard. Wulf coughed into a gloved hand. Inys might not be half as icy as Hrth in late winter, but their hideaway was damp and cold, and they dared not risk a fire. As the sun rose, Mara returned from her scouting, coming on foot from the hills. Wulf stared when he saw who was with her. While Thrit slept on, he stood aside to let them in. Lord Mansell folded him straight into his arms. Wulf, he breathed. Saint, I cant believe it. You dont even look hurt.\nB. Mara came back from scouting the hills on foot as the sun was rising. She brought Lord Mansell with her, much to Wulf's surprise. Mansell hugged Wulf tightly and said he couldn't believe that Wulf didn't even appear injured. \nC. Mara returned on foot from scouting the hills around sunrise, accompanied by Lord Mansell. Seeing Mansell with her made Wulf stare in surprise. While Thrit continued sleeping, Wulf stepped aside to allow them entry into the chilly, damp hideaway. Mansell immediately folded Wulf into a tight hug, saying he couldn't believe that Wulf didn't seem hurt at all.\nD. When Mara got back from scouting the hills by foot at sunrise, she had Lord Mansell with her. This shocked Wulf, who moved aside to let them into the damp, cold hideaway where he and Thrit were staying. Mansell embraced Wulf and expressed disbelief that Wulf looked unharmed.\nAnswer:",
+  "options": {
+    "A": "Together, they proclaimed that the Lord Protector was in residence. The wind blew hard. Wulf coughed into a gloved hand. Inys might not be half as icy as Hrth in late winter, but their hideaway was damp and cold, and they dared not risk a fire. As the sun rose, Mara returned from her scouting, coming on foot from the hills. Wulf stared when he saw who was with her. While Thrit slept on, he stood aside to let them in. Lord Mansell folded him straight into his arms. Wulf, he breathed. Saint, I cant believe it. You dont even look hurt.",
+    "B": "Mara came back from scouting the hills on foot as the sun was rising. She brought Lord Mansell with her, much to Wulf's surprise. Mansell hugged Wulf tightly and said he couldn't believe that Wulf didn't even appear injured. ",
+    "C": "Mara returned on foot from scouting the hills around sunrise, accompanied by Lord Mansell. Seeing Mansell with her made Wulf stare in surprise. While Thrit continued sleeping, Wulf stepped aside to allow them entry into the chilly, damp hideaway. Mansell immediately folded Wulf into a tight hug, saying he couldn't believe that Wulf didn't seem hurt at all.",
+    "D": "When Mara got back from scouting the hills by foot at sunrise, she had Lord Mansell with her. This shocked Wulf, who moved aside to let them into the damp, cold hideaway where he and Thrit were staying. Mansell embraced Wulf and expressed disbelief that Wulf looked unharmed."
+  },
+  "gold_letter": "A",
+  "predicted_letter": "C",
+  "is_correct": 0,
+  "timestamp": "2026-07-08 04:25:25"
+}

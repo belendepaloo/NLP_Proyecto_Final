@@ -1,0 +1,19 @@
+{
+  "query_id": "214992dfc55d493f400e2a0ecd7c1592",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0065",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 17,
+  "prefix": "If were not in the same room, then Im usually working on his book. Whether hes next",
+  "target_word": "to",
+  "sample_idx": 2,
+  "generated_text": "to me or",
+  "generated_first_word": "to",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 10:32:06"
+}

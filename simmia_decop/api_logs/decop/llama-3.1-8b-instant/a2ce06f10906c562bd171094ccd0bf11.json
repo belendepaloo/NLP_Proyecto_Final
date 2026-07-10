@@ -1,0 +1,25 @@
+{
+  "query_id": "a2ce06f10906c562bd171094ccd0bf11",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0164",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "title": "Wuthering Heights",
+  "author": "Emily Bronte",
+  "length": "medium",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Wuthering Heights\" book by Emily Bronte?\nOptions:\nA. He cleared a space on the table among the breakfast dishes with a sweep of his arm, and leaned forward to see more easily. I now understood that he was not looking at the wall, because when I observed only him it seemed he was staring at something within two yards. And whatever it was, it seemed to provide both exquisite pleasure and anguish - his tormented yet enthralled expression implied that notion. The imagined thing was not fixed; his eyes chased it indefatigably, and even while talking to me, never stopped watching it.  \nB. With a sweep of his hand he cleared a vacant space in front among the breakfast things, and leant forward to gaze more at his ease. Now I perceived he was not looking at the wall, for when I regarded him alone it seemed exactly that he gazed at something within two yards' distance. And whatever it was, it communicated apparently both pleasure and pain in exquisite extremes---at least the anguished yet raptured expression of his countenance suggested that idea. The fancied object was not fixed either; his eyes pursued it with unwearied diligence, and, even in speaking to me, were never weaned away.\nC. With one move he made a clear area on the table amidst the breakfast things, and bent forward to look more comfortably. Now I realized he was not gazing at the wall, because when I watched just him it appeared he was staring at something within two yards away. And whatever it was, it seemed to give both extreme delight and torment - his agonized yet enraptured face suggested that idea. The imagined object was not still; his eyes followed it tirelessly, and even while speaking to me, remained fixed on it.\nD. With one movement he made an empty area on the table among the breakfast items, and leaned forward to look more comfortably. Now I realized he was not looking at the wall, because when I watched just him it seemed he was gazing at something within two yards away. And whatever it was, it appeared to give both extreme pleasure and pain - at least the agonized yet enraptured expression on his face suggested that idea. The imagined object was not stationary; his eyes followed it tirelessly, and even when speaking to me, never looked away.\nAnswer:",
+  "options": {
+    "A": "He cleared a space on the table among the breakfast dishes with a sweep of his arm, and leaned forward to see more easily. I now understood that he was not looking at the wall, because when I observed only him it seemed he was staring at something within two yards. And whatever it was, it seemed to provide both exquisite pleasure and anguish - his tormented yet enthralled expression implied that notion. The imagined thing was not fixed; his eyes chased it indefatigably, and even while talking to me, never stopped watching it.  ",
+    "B": "With a sweep of his hand he cleared a vacant space in front among the breakfast things, and leant forward to gaze more at his ease. Now I perceived he was not looking at the wall, for when I regarded him alone it seemed exactly that he gazed at something within two yards' distance. And whatever it was, it communicated apparently both pleasure and pain in exquisite extremes---at least the anguished yet raptured expression of his countenance suggested that idea. The fancied object was not fixed either; his eyes pursued it with unwearied diligence, and, even in speaking to me, were never weaned away.",
+    "C": "With one move he made a clear area on the table amidst the breakfast things, and bent forward to look more comfortably. Now I realized he was not gazing at the wall, because when I watched just him it appeared he was staring at something within two yards away. And whatever it was, it seemed to give both extreme delight and torment - his agonized yet enraptured face suggested that idea. The imagined object was not still; his eyes followed it tirelessly, and even while speaking to me, remained fixed on it.",
+    "D": "With one movement he made an empty area on the table among the breakfast items, and leaned forward to look more comfortably. Now I realized he was not looking at the wall, because when I watched just him it seemed he was gazing at something within two yards away. And whatever it was, it appeared to give both extreme pleasure and pain - at least the agonized yet enraptured expression on his face suggested that idea. The imagined object was not stationary; his eyes followed it tirelessly, and even when speaking to me, never looked away."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "B",
+  "is_correct": 1,
+  "timestamp": "2026-07-08 05:16:02"
+}

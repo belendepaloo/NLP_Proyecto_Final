@@ -1,0 +1,19 @@
+{
+  "query_id": "a85fd150d82afe9f350573ceaa866b8a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0129",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Giles.'",
+  "target_word": "'I",
+  "sample_idx": 2,
+  "generated_text": "He",
+  "generated_first_word": "He",
+  "similarity": 0.7775357961654663,
+  "timestamp": "2026-06-30 15:50:59"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "43b12fba5cf932eb32fbb2394502c4e8",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0023",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "He was shoeless;",
+  "target_word": "large,",
+  "sample_idx": 2,
+  "generated_text": "his feet were",
+  "generated_first_word": "his",
+  "similarity": 0.6669939160346985,
+  "timestamp": "2026-06-30 06:46:56"
+}

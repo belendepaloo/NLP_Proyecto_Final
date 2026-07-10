@@ -1,0 +1,19 @@
+{
+  "query_id": "ef7bb413a9086417aab62aaf674ecd9f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0014",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 11,
+  "prefix": "And Mom will def get over this, eventually. She got over",
+  "target_word": "my",
+  "sample_idx": 1,
+  "generated_text": "Dad's",
+  "generated_first_word": "Dad's",
+  "similarity": 0.6869637966156006,
+  "timestamp": "2026-07-01 14:44:34"
+}

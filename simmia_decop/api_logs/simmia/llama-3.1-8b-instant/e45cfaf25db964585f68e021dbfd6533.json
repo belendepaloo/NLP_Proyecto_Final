@@ -1,0 +1,19 @@
+{
+  "query_id": "e45cfaf25db964585f68e021dbfd6533",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0138",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Here you shall dwell",
+  "target_word": "at",
+  "sample_idx": 1,
+  "generated_text": "in the land",
+  "generated_first_word": "in",
+  "similarity": 0.7786067128181458,
+  "timestamp": "2026-06-30 17:05:13"
+}

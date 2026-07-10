@@ -1,0 +1,19 @@
+{
+  "query_id": "abbbb54e9d5292efe2593bc4e3d9aa0a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0118",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 9,
+  "prefix": "Ardin Javar was a bear of a man with",
+  "target_word": "a",
+  "sample_idx": 1,
+  "generated_text": "muscles that",
+  "generated_first_word": "muscles",
+  "similarity": 0.6655455827713013,
+  "timestamp": "2026-06-30 14:58:06"
+}

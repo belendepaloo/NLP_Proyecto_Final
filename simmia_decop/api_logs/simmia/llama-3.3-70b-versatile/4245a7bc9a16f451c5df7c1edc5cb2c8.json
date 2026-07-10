@@ -1,0 +1,19 @@
+{
+  "query_id": "4245a7bc9a16f451c5df7c1edc5cb2c8",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0121",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Furtia and",
+  "target_word": "I",
+  "sample_idx": 0,
+  "generated_text": "her",
+  "generated_first_word": "her",
+  "similarity": 0.7059030532836914,
+  "timestamp": "2026-07-05 16:17:05"
+}

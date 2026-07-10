@@ -1,0 +1,25 @@
+{
+  "query_id": "4c325e53d45fe24f7f444180ab5e89b4",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0156",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "title": "The Wildest Sun A Novel",
+  "author": "Asha Lemmie",
+  "length": "medium",
+  "permutation_index": 3,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Wildest Sun A Novel\" book by Asha Lemmie?\nOptions:\nA. I glance out the window. I see some new housing developments halfway through construction. A candy shop I remember from when I was a little girl is boarded up. I spot a group of women pass by in short, sleeveless floral dresses and tall white boots, and I smile at the realization that there are young people here too who will not bow down to social conventions. Maybe I will find my own artistic crowd to run with; maybe my parties will be the talk of the town. Maybe this time next year I’ll be having lunch with Simone de Beauvoir. Maman would adore that. It’s a nice distraction to think this way. \nB. Staring out the window, I notice construction on new houses. The candy shop from my childhood is abandoned. Some women in short, sleeveless floral dresses and tall white boots pass by, and their bold style makes me realize there are young nonconformists here. Perhaps I'll find my creative crowd and throw talked-about parties. In a year, I could be lunching with Simone de Beauvoir, which would thrill my mother. These thoughts are a pleasant distraction.  \nC. I look out the window. There are some new houses being built. An old candy store I used to go to as a kid is closed down. I see some women walk by wearing short floral dresses and tall white boots, and it makes me happy to know there are young people here who don't follow the rules. I might find my own artistic friends; my parties could be famous. Maybe in a year I'll be having lunch with Simone de Beauvoir. My mom would love that. Thinking this way is a nice escape.\nD. Looking outside, new housing developments are being built. A candy store I loved as a little girl is all boarded up now. I see some women in short floral dresses with tall white boots walk by, and it makes me happy to know there are young free-spirited people here too. I might find my own artsy friends to hang out with; my parties could become famous around town. In a year I may even have lunch with Simone de Beauvoir, which would make my mom so proud. Daydreaming this way is an enjoyable escape.\nAnswer:",
+  "options": {
+    "A": "I glance out the window. I see some new housing developments halfway through construction. A candy shop I remember from when I was a little girl is boarded up. I spot a group of women pass by in short, sleeveless floral dresses and tall white boots, and I smile at the realization that there are young people here too who will not bow down to social conventions. Maybe I will find my own artistic crowd to run with; maybe my parties will be the talk of the town. Maybe this time next year I’ll be having lunch with Simone de Beauvoir. Maman would adore that. It’s a nice distraction to think this way. ",
+    "B": "Staring out the window, I notice construction on new houses. The candy shop from my childhood is abandoned. Some women in short, sleeveless floral dresses and tall white boots pass by, and their bold style makes me realize there are young nonconformists here. Perhaps I'll find my creative crowd and throw talked-about parties. In a year, I could be lunching with Simone de Beauvoir, which would thrill my mother. These thoughts are a pleasant distraction.  ",
+    "C": "I look out the window. There are some new houses being built. An old candy store I used to go to as a kid is closed down. I see some women walk by wearing short floral dresses and tall white boots, and it makes me happy to know there are young people here who don't follow the rules. I might find my own artistic friends; my parties could be famous. Maybe in a year I'll be having lunch with Simone de Beauvoir. My mom would love that. Thinking this way is a nice escape.",
+    "D": "Looking outside, new housing developments are being built. A candy store I loved as a little girl is all boarded up now. I see some women in short floral dresses with tall white boots walk by, and it makes me happy to know there are young free-spirited people here too. I might find my own artsy friends to hang out with; my parties could become famous around town. In a year I may even have lunch with Simone de Beauvoir, which would make my mom so proud. Daydreaming this way is an enjoyable escape."
+  },
+  "gold_letter": "A",
+  "predicted_letter": "B",
+  "is_correct": 0,
+  "timestamp": "2026-07-08 05:11:36"
+}

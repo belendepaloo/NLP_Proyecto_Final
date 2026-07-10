@@ -1,0 +1,19 @@
+{
+  "query_id": "5d18b7c8093e0792454b9a2c7491f5b3",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0098",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "\"Mother is not an old",
+  "target_word": "maid,\"",
+  "sample_idx": 1,
+  "generated_text": "woman.\"",
+  "generated_first_word": "woman.\"",
+  "similarity": 0.7874853610992432,
+  "timestamp": "2026-06-30 13:17:53"
+}

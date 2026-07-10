@@ -1,0 +1,19 @@
+{
+  "query_id": "6a52f301722bdd528ee05e3f4ef9ba40",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0139",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Before he",
+  "target_word": "knew",
+  "sample_idx": 0,
+  "generated_text": "left",
+  "generated_first_word": "left",
+  "similarity": 0.610843300819397,
+  "timestamp": "2026-06-30 17:09:44"
+}

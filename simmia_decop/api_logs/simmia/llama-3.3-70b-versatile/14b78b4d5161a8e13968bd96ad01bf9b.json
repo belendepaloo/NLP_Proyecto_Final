@@ -1,0 +1,19 @@
+{
+  "query_id": "14b78b4d5161a8e13968bd96ad01bf9b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0153",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 17,
+  "prefix": "“So, Harry,” said Lockhart, while Hermione folded the note with fumbling fingers and slipped it into her",
+  "target_word": "bag.",
+  "sample_idx": 2,
+  "generated_text": "pocket.",
+  "generated_first_word": "pocket.",
+  "similarity": 0.8117268085479736,
+  "timestamp": "2026-07-06 16:31:47"
+}

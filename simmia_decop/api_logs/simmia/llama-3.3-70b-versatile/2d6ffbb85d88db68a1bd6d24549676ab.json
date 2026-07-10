@@ -1,0 +1,19 @@
+{
+  "query_id": "2d6ffbb85d88db68a1bd6d24549676ab",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0072",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 13,
+  "prefix": "As Tatterlain ambled towards the sentry, Kat spared a glance for Yali, a",
+  "target_word": "pace",
+  "sample_idx": 0,
+  "generated_text": "young",
+  "generated_first_word": "young",
+  "similarity": 0.6466220021247864,
+  "timestamp": "2026-07-03 15:54:20"
+}

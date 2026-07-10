@@ -1,0 +1,25 @@
+{
+  "query_id": "cf71d476755451d15c5e0760d1737ba2",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0117",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "title": "Lord of the Rings The Fellowship of the Ring",
+  "author": "J R R Tolkien",
+  "length": "medium",
+  "permutation_index": 3,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Lord of the Rings The Fellowship of the Ring\" book by J R R Tolkien?\nOptions:\nA. Frodo surveyed his surroundings. The place resembled his home. Many of his and Bilbo's beloved belongings were organized similarly to how they were in Bag End. It was a pleasant, cozy, inviting place; and he wished he was actually coming here to retire in peace. He felt bad that his friends had gone through such effort; and he pondered again how he would inform them that he had to depart immediately. However, he would need to do that tonight, before everyone went to sleep.\nB. Frodo looked round. It did look like home. Many of his own favourite things – or Bilbo’s things (they reminded him sharply of him in their new setting) – were arranged as nearly as possible as they had been at Bag End. It was a pleasant, comfortable, welcoming place; and he found himself wishing that he was really coming here to settle down in quiet retirement. It seemed unfair to have put his friends to all this trouble; and he wondered again how he was going to break the news to them that he must leave them so soon, indeed at once. Yet that would have to be done that very night, before they all went to bed.\nC. Frodo looked around. The place looked like home. Many of his and Bilbo's favorite things were set up almost identically to how they were in Bag End. It was a nice, comfortable, welcoming place; and he found himself wanting to really come here and settle down quietly. He felt it was unfair that his friends had gone through all this work; and he wondered again how he would break the news to them that he had to leave right away. But he would have to do that tonight, before they all went to bed.\nD. Frodo gazed around. The surroundings resembled his home. Numerous beloved possessions of his and Bilbo's were organized similar to Bag End. It was a pleasant, cozy, inviting place; and he wished he was truly arriving to retire in tranquility. He felt bad his friends had made such an effort; and he pondered again how he would inform them he must depart immediately. However he would need to do so that night, before everyone retired for bed.\nAnswer:",
+  "options": {
+    "A": "Frodo surveyed his surroundings. The place resembled his home. Many of his and Bilbo's beloved belongings were organized similarly to how they were in Bag End. It was a pleasant, cozy, inviting place; and he wished he was actually coming here to retire in peace. He felt bad that his friends had gone through such effort; and he pondered again how he would inform them that he had to depart immediately. However, he would need to do that tonight, before everyone went to sleep.",
+    "B": "Frodo looked round. It did look like home. Many of his own favourite things – or Bilbo’s things (they reminded him sharply of him in their new setting) – were arranged as nearly as possible as they had been at Bag End. It was a pleasant, comfortable, welcoming place; and he found himself wishing that he was really coming here to settle down in quiet retirement. It seemed unfair to have put his friends to all this trouble; and he wondered again how he was going to break the news to them that he must leave them so soon, indeed at once. Yet that would have to be done that very night, before they all went to bed.",
+    "C": "Frodo looked around. The place looked like home. Many of his and Bilbo's favorite things were set up almost identically to how they were in Bag End. It was a nice, comfortable, welcoming place; and he found himself wanting to really come here and settle down quietly. He felt it was unfair that his friends had gone through all this work; and he wondered again how he would break the news to them that he had to leave right away. But he would have to do that tonight, before they all went to bed.",
+    "D": "Frodo gazed around. The surroundings resembled his home. Numerous beloved possessions of his and Bilbo's were organized similar to Bag End. It was a pleasant, cozy, inviting place; and he wished he was truly arriving to retire in tranquility. He felt bad his friends had made such an effort; and he pondered again how he would inform them he must depart immediately. However he would need to do so that night, before everyone retired for bed."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "B",
+  "is_correct": 1,
+  "timestamp": "2026-07-08 04:49:03"
+}

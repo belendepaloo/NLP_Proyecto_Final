@@ -1,0 +1,19 @@
+{
+  "query_id": "a9d40551a74d5ad6488bb7ff7c2d4ff8",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0012",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Bathed in",
+  "target_word": "starlight",
+  "sample_idx": 0,
+  "generated_text": "soft, moon",
+  "generated_first_word": "soft,",
+  "similarity": 0.6392865777015686,
+  "timestamp": "2026-06-30 05:49:29"
+}

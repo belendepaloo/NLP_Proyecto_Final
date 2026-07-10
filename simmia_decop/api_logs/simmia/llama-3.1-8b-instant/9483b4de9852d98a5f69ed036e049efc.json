@@ -1,0 +1,19 @@
+{
+  "query_id": "9483b4de9852d98a5f69ed036e049efc",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0126",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "It makes my heart ache.",
+  "target_word": "Not",
+  "sample_idx": 0,
+  "generated_text": "Every time.",
+  "generated_first_word": "Every",
+  "similarity": 0.6516091823577881,
+  "timestamp": "2026-06-30 15:37:25"
+}

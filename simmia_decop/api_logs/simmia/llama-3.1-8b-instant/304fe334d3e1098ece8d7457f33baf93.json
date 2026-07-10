@@ -1,0 +1,19 @@
+{
+  "query_id": "304fe334d3e1098ece8d7457f33baf93",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0054",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "All that confidence he had at the conin",
+  "target_word": "a",
+  "sample_idx": 0,
+  "generated_text": "vention was suddenly",
+  "generated_first_word": "vention",
+  "similarity": 0.6415989398956299,
+  "timestamp": "2026-06-30 09:30:56"
+}

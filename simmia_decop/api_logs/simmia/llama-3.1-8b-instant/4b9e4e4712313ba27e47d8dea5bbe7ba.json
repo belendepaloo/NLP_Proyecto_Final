@@ -1,0 +1,19 @@
+{
+  "query_id": "4b9e4e4712313ba27e47d8dea5bbe7ba",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0003",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "But August continues to try",
+  "target_word": "and",
+  "sample_idx": 0,
+  "generated_text": "to convince",
+  "generated_first_word": "to",
+  "similarity": 0.6855215430259705,
+  "timestamp": "2026-06-30 05:01:53"
+}

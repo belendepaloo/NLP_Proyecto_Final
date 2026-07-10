@@ -1,0 +1,19 @@
+{
+  "query_id": "3c6a21462bb0d0ae5da636dd5bb15265",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0106",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "Who knows…maybe it’s better to be like the crystal",
+  "target_word": "merchant:",
+  "sample_idx": 2,
+  "generated_text": "clear",
+  "generated_first_word": "clear",
+  "similarity": 0.6221992373466492,
+  "timestamp": "2026-07-04 19:57:24"
+}

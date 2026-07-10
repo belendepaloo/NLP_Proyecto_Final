@@ -1,0 +1,19 @@
+{
+  "query_id": "d25e56b53dfc095c99153b88443d28ff",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0189",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "‘A girl",
+  "target_word": "doesn’t",
+  "sample_idx": 2,
+  "generated_text": "named",
+  "generated_first_word": "named",
+  "similarity": 0.5994253158569336,
+  "timestamp": "2026-07-08 02:00:40"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "f7c2e3d22a11913a0adfa25e3a461f09",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0157",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 16,
+  "prefix": "Who knows what the future holds, right? Besides, you have someone waiting for you back home,",
+  "target_word": "right?",
+  "sample_idx": 1,
+  "generated_text": "don't",
+  "generated_first_word": "don't",
+  "similarity": 0.6154467463493347,
+  "timestamp": "2026-07-06 16:50:09"
+}

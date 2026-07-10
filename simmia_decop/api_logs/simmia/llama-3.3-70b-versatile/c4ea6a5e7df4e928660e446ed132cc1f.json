@@ -1,0 +1,19 @@
+{
+  "query_id": "c4ea6a5e7df4e928660e446ed132cc1f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0031",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "Whenever he could, he sought out a new road to travel. He had never been to that ruined",
+  "target_word": "church",
+  "sample_idx": 0,
+  "generated_text": "castle",
+  "generated_first_word": "castle",
+  "similarity": 0.6621277332305908,
+  "timestamp": "2026-07-01 17:36:48"
+}

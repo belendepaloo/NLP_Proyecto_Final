@@ -1,0 +1,19 @@
+{
+  "query_id": "448ddeeea10fa1a922a4b231d39af3d3",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0135",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "Not when Im finally finding my way in",
+  "target_word": "the",
+  "sample_idx": 0,
+  "generated_text": "life",
+  "generated_first_word": "life",
+  "similarity": 0.655890941619873,
+  "timestamp": "2026-07-05 17:23:01"
+}

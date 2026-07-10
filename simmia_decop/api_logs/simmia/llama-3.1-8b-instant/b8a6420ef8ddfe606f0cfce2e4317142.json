@@ -1,0 +1,19 @@
+{
+  "query_id": "b8a6420ef8ddfe606f0cfce2e4317142",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0141",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 15,
+  "prefix": "I am of average height, but as gangly as someone much taller, with skinny arms",
+  "target_word": "and",
+  "sample_idx": 0,
+  "generated_text": "and long fingers",
+  "generated_first_word": "and",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 17:22:39"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "599913d056dbf50eb0f9a271e58b1ce8",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0179",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 10,
+  "prefix": "A shadowed shot of Liv, looking upward, her surroundings indistinct,",
+  "target_word": "seemed",
+  "sample_idx": 2,
+  "generated_text": "except",
+  "generated_first_word": "except",
+  "similarity": 0.7058424949645996,
+  "timestamp": "2026-07-08 01:17:09"
+}

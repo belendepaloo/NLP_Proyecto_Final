@@ -1,0 +1,19 @@
+{
+  "query_id": "c64c8daa2d4a1fa294e4390fb799873c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0159",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "The mother’s",
+  "target_word": "handbag",
+  "sample_idx": 2,
+  "generated_text": "love",
+  "generated_first_word": "love",
+  "similarity": 0.6213574409484863,
+  "timestamp": "2026-07-06 16:56:09"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "0e209c884cb9a46cd2dd9c6088dfecf2",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0087",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 11,
+  "prefix": "If I thought it, I should never be happy again. I",
+  "target_word": "wouldn't",
+  "sample_idx": 2,
+  "generated_text": "should have",
+  "generated_first_word": "should",
+  "similarity": 0.7068371176719666,
+  "timestamp": "2026-06-30 12:22:54"
+}

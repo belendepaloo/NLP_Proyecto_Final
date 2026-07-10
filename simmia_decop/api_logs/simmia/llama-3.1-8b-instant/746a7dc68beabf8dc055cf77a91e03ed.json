@@ -1,0 +1,19 @@
+{
+  "query_id": "746a7dc68beabf8dc055cf77a91e03ed",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0031",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 19,
+  "prefix": "Whenever he could, he sought out a new road to travel. He had never been to that ruined church",
+  "target_word": "before,",
+  "sample_idx": 2,
+  "generated_text": "before, its",
+  "generated_first_word": "before,",
+  "similarity": 1.0000001192092896,
+  "timestamp": "2026-06-30 07:32:12"
+}

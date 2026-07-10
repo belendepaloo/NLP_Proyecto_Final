@@ -1,0 +1,19 @@
+{
+  "query_id": "f11884d0698e14a839a76fc7a9dc53e1",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0173",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "But no",
+  "target_word": "ship",
+  "sample_idx": 0,
+  "generated_text": "matter",
+  "generated_first_word": "matter",
+  "similarity": 0.6826068162918091,
+  "timestamp": "2026-07-06 18:02:48"
+}

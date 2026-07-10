@@ -1,0 +1,19 @@
+{
+  "query_id": "28e3c4de49f063681189709d02cda91d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0181",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 13,
+  "prefix": "But when he had drawn forth, as he hoped, the armies of Morgoth",
+  "target_word": "in",
+  "sample_idx": 1,
+  "generated_text": "from the shadows",
+  "generated_first_word": "from",
+  "similarity": 0.7697204351425171,
+  "timestamp": "2026-07-01 03:15:49"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "58dd4550f99620365d54a9ebacf1b6d0",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0191",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 14,
+  "prefix": "We were smiling. Someone must have told us to, because I couldnt imagine us",
+  "target_word": "doing",
+  "sample_idx": 1,
+  "generated_text": "doing",
+  "generated_first_word": "doing",
+  "similarity": 1.0,
+  "timestamp": "2026-07-08 02:13:17"
+}

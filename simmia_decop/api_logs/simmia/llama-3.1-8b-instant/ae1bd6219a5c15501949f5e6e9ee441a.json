@@ -1,0 +1,19 @@
+{
+  "query_id": "ae1bd6219a5c15501949f5e6e9ee441a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0197",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "He was",
+  "target_word": "getting,",
+  "sample_idx": 0,
+  "generated_text": "a man.",
+  "generated_first_word": "a",
+  "similarity": 0.6639387607574463,
+  "timestamp": "2026-07-01 04:34:34"
+}

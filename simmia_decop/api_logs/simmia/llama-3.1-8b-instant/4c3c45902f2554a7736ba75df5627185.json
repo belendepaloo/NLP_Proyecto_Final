@@ -1,0 +1,19 @@
+{
+  "query_id": "4c3c45902f2554a7736ba75df5627185",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0145",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "'Tell yer",
+  "target_word": "what?'",
+  "sample_idx": 2,
+  "generated_text": "ma, I",
+  "generated_first_word": "ma,",
+  "similarity": 0.5899855494499207,
+  "timestamp": "2026-06-30 17:38:58"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "18d3ad29b53502e183e03c3bfb56907c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0183",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Im nineteen and not married.",
+  "target_word": "And",
+  "sample_idx": 1,
+  "generated_text": "I'm still",
+  "generated_first_word": "I'm",
+  "similarity": 0.6301113367080688,
+  "timestamp": "2026-07-01 03:24:15"
+}

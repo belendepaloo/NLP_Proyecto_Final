@@ -1,0 +1,19 @@
+{
+  "query_id": "c70545e855b2b32cef10b3397bcd6e0a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0112",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "No problemthat would",
+  "target_word": "give",
+  "sample_idx": 2,
+  "generated_text": "be fine.",
+  "generated_first_word": "be",
+  "similarity": 0.6730548143386841,
+  "timestamp": "2026-06-30 14:26:08"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "6054189d3bfcf440bc37bb638bd4fbc5",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0057",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 13,
+  "prefix": "There were times when it went on and on until the cruel, wicked,",
+  "target_word": "unforgivable",
+  "sample_idx": 1,
+  "generated_text": "hands of the",
+  "generated_first_word": "hands",
+  "similarity": 0.571475625038147,
+  "timestamp": "2026-06-30 09:48:44"
+}

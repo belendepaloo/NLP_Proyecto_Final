@@ -1,0 +1,19 @@
+{
+  "query_id": "ce2064ee73ba08468594a91cd8309040",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0000",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Since he was arrested he had",
+  "target_word": "not",
+  "sample_idx": 1,
+  "generated_text": "been held in",
+  "generated_first_word": "been",
+  "similarity": 0.6630556583404541,
+  "timestamp": "2026-06-30 04:47:34"
+}

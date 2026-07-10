@@ -1,0 +1,19 @@
+{
+  "query_id": "dcf68a4adeb153ca2f516ddeb42e4909",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0094",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "“Rather than finding a saintly",
+  "target_word": "man,",
+  "sample_idx": 2,
+  "generated_text": "figure, she",
+  "generated_first_word": "figure,",
+  "similarity": 0.7154854536056519,
+  "timestamp": "2026-06-30 12:58:09"
+}

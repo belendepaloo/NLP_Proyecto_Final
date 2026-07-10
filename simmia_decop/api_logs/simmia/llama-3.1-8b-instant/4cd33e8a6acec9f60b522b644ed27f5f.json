@@ -1,0 +1,19 @@
+{
+  "query_id": "4cd33e8a6acec9f60b522b644ed27f5f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0111",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "The vaults were reached by means of small, goblin-driven carts that sped along miniature train tracks through the",
+  "target_word": "bank’s",
+  "sample_idx": 0,
+  "generated_text": "tunnelled",
+  "generated_first_word": "tunnelled",
+  "similarity": 0.5726824402809143,
+  "timestamp": "2026-06-30 14:24:53"
+}

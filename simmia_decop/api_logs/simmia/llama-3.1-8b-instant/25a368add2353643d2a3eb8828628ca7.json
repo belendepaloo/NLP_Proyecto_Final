@@ -1,0 +1,19 @@
+{
+  "query_id": "25a368add2353643d2a3eb8828628ca7",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0032",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Even as the first",
+  "target_word": "shadows",
+  "sample_idx": 2,
+  "generated_text": "sunlight broke",
+  "generated_first_word": "sunlight",
+  "similarity": 0.7713743448257446,
+  "timestamp": "2026-06-30 07:33:16"
+}

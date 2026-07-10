@@ -1,0 +1,25 @@
+{
+  "query_id": "8530cbff4f82b2d81b49e56c0a52f780",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0005",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "title": "Business or Pleasure",
+  "author": "Rachel Lynn Solomon",
+  "length": "medium",
+  "permutation_index": 2,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Business or Pleasure\" book by Rachel Lynn Solomon?\nOptions:\nA. I might have overstepped here. They're pretty tech-savvy for their age, but it couldn't hurt for me to help more now that I'm back. My parents say we've been wanting to discuss this. I know we're not young, my dad says. But we don't need you to go overboard assisting us. We managed fine the past few months while you were away, my mom adds.\nB. Perhaps I've overreached in some way unknowingly. They're decent with tech for their age, but more help from me now that I'm back wouldn't hurt. My dad says they've been wanting to have this discussion. I know we're aging, he says, but we don't need you to go over the top to assist us. We were okay the past few months while you were away, my mom adds.\nC. I may have crossed a line without realizing. They can handle technology alright given their years, but extra involvement from me now that I've returned wouldn't be bad. We've been wanting to talk to you, my father says. We know we're older, but we don't require you to go above and beyond to help us out. We got on fine the last couple months while you were gone, my mother chimes in.  \nD. Oh. Maybe Ive crossed some sort of boundary I wasnt aware of? Theyre pretty decent with technology, given their age, but surely it wouldnt hurt for me to get more involved. Especially now that Im back. Weve been meaning to talk to you about this, my dad says. Your mom and I . . . well, we know were no spring chickens. My mom gives her hair a toss. Speak for yourself, she says. What we want to say is that we dont need you to bend over backward to help us. We got by just fine the past couple months when you were out of town.\nAnswer:",
+  "options": {
+    "A": "I might have overstepped here. They're pretty tech-savvy for their age, but it couldn't hurt for me to help more now that I'm back. My parents say we've been wanting to discuss this. I know we're not young, my dad says. But we don't need you to go overboard assisting us. We managed fine the past few months while you were away, my mom adds.",
+    "B": "Perhaps I've overreached in some way unknowingly. They're decent with tech for their age, but more help from me now that I'm back wouldn't hurt. My dad says they've been wanting to have this discussion. I know we're aging, he says, but we don't need you to go over the top to assist us. We were okay the past few months while you were away, my mom adds.",
+    "C": "I may have crossed a line without realizing. They can handle technology alright given their years, but extra involvement from me now that I've returned wouldn't be bad. We've been wanting to talk to you, my father says. We know we're older, but we don't require you to go above and beyond to help us out. We got on fine the last couple months while you were gone, my mother chimes in.  ",
+    "D": "Oh. Maybe Ive crossed some sort of boundary I wasnt aware of? Theyre pretty decent with technology, given their age, but surely it wouldnt hurt for me to get more involved. Especially now that Im back. Weve been meaning to talk to you about this, my dad says. Your mom and I . . . well, we know were no spring chickens. My mom gives her hair a toss. Speak for yourself, she says. What we want to say is that we dont need you to bend over backward to help us. We got by just fine the past couple months when you were out of town."
+  },
+  "gold_letter": "D",
+  "predicted_letter": "D",
+  "is_correct": 1,
+  "timestamp": "2026-07-08 03:42:07"
+}

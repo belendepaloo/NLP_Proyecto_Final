@@ -1,0 +1,19 @@
+{
+  "query_id": "d9b317e95520963f999d819484e7aec0",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0165",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 19,
+  "prefix": "And high in the north as a challenge to Melkor she set the crown of seven mighty stars to",
+  "target_word": "swing,",
+  "sample_idx": 2,
+  "generated_text": "shine.",
+  "generated_first_word": "shine.",
+  "similarity": 0.6211029887199402,
+  "timestamp": "2026-07-01 01:56:05"
+}

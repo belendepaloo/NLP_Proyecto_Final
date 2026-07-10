@@ -1,0 +1,19 @@
+{
+  "query_id": "d795e5b7262748b9802384921b815b6d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0002",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Master",
+  "target_word": "Bates",
+  "sample_idx": 0,
+  "generated_text": "of",
+  "generated_first_word": "of",
+  "similarity": 0.6286399960517883,
+  "timestamp": "2026-07-01 13:45:40"
+}

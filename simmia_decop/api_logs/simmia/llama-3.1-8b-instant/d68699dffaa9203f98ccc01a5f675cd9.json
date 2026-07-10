@@ -1,0 +1,19 @@
+{
+  "query_id": "d68699dffaa9203f98ccc01a5f675cd9",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0013",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "‘You ignorant little",
+  "target_word": "slug!’",
+  "sample_idx": 1,
+  "generated_text": "fool'",
+  "generated_first_word": "fool'",
+  "similarity": 0.6299229264259338,
+  "timestamp": "2026-06-30 05:54:38"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "ec1d777290752bf0ae22d180bb8f7b4b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0132",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Suppose that",
+  "target_word": "we",
+  "sample_idx": 0,
+  "generated_text": "we",
+  "generated_first_word": "we",
+  "similarity": 1.0,
+  "timestamp": "2026-07-05 17:07:57"
+}

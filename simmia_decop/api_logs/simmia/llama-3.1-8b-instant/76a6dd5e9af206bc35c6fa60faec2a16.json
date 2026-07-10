@@ -1,0 +1,19 @@
+{
+  "query_id": "76a6dd5e9af206bc35c6fa60faec2a16",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0133",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "They might be",
+  "target_word": "working",
+  "sample_idx": 1,
+  "generated_text": "watching us",
+  "generated_first_word": "watching",
+  "similarity": 0.7474995851516724,
+  "timestamp": "2026-06-30 16:11:04"
+}

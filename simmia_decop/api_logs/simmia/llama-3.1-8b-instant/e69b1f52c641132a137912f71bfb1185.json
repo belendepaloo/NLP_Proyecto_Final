@@ -1,0 +1,19 @@
+{
+  "query_id": "e69b1f52c641132a137912f71bfb1185",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0146",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Countless times,",
+  "target_word": "Harry",
+  "sample_idx": 0,
+  "generated_text": "I've heard",
+  "generated_first_word": "I've",
+  "similarity": 0.5633658170700073,
+  "timestamp": "2026-06-30 17:43:18"
+}

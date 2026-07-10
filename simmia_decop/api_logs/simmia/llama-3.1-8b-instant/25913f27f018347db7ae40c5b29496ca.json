@@ -1,0 +1,19 @@
+{
+  "query_id": "25913f27f018347db7ae40c5b29496ca",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0124",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "She regarded it (once her clothes were ordered) as merely",
+  "target_word": "an",
+  "sample_idx": 0,
+  "generated_text": "a minor setback",
+  "generated_first_word": "a",
+  "similarity": 0.9952608346939087,
+  "timestamp": "2026-06-30 15:28:21"
+}

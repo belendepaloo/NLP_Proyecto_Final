@@ -1,0 +1,19 @@
+{
+  "query_id": "da99a1f14ecfb303d4f1fbef20a9c8fd",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0155",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "And this inner land, which was",
+  "target_word": "long",
+  "sample_idx": 2,
+  "generated_text": "largely",
+  "generated_first_word": "largely",
+  "similarity": 0.6620593667030334,
+  "timestamp": "2026-07-06 16:38:26"
+}

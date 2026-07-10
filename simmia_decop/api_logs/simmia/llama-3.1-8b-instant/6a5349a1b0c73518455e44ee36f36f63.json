@@ -1,0 +1,19 @@
+{
+  "query_id": "6a5349a1b0c73518455e44ee36f36f63",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0147",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Im certain hes",
+  "target_word": "going",
+  "sample_idx": 0,
+  "generated_text": "going to find",
+  "generated_first_word": "going",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 17:48:42"
+}

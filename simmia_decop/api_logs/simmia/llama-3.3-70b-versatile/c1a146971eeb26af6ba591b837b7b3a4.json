@@ -1,0 +1,19 @@
+{
+  "query_id": "c1a146971eeb26af6ba591b837b7b3a4",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0127",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "You cant judge a book by its",
+  "target_word": "cover,",
+  "sample_idx": 1,
+  "generated_text": "cover.",
+  "generated_first_word": "cover.",
+  "similarity": 0.955744206905365,
+  "timestamp": "2026-07-05 16:46:35"
+}

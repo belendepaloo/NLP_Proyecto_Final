@@ -1,0 +1,19 @@
+{
+  "query_id": "f6864fdddd8a9f3dbca2dce1c8bc2858",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0052",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "When he’d found his scarlet team robes and pulled",
+  "target_word": "on",
+  "sample_idx": 1,
+  "generated_text": "them on over",
+  "generated_first_word": "them",
+  "similarity": 0.6550275683403015,
+  "timestamp": "2026-06-30 09:20:40"
+}

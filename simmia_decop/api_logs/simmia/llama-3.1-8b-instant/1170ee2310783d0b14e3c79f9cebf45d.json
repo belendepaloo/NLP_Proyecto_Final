@@ -1,0 +1,19 @@
+{
+  "query_id": "1170ee2310783d0b14e3c79f9cebf45d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0107",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 11,
+  "prefix": "Still it became in a manner necessary. Twice or thrice Hindley's",
+  "target_word": "manifestation",
+  "sample_idx": 0,
+  "generated_text": "savage temper",
+  "generated_first_word": "savage",
+  "similarity": 0.5909505486488342,
+  "timestamp": "2026-06-30 14:03:27"
+}

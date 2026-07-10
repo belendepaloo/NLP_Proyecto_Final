@@ -1,0 +1,19 @@
+{
+  "query_id": "df8cbcbc941a074d59e77ea8d6b144c4",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0129",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "Giles.' 'I hope you don't mean to say, sir,' said Mr. Giles, trembling, 'that he's going to die.",
+  "target_word": "If",
+  "sample_idx": 0,
+  "generated_text": "'Indeed,",
+  "generated_first_word": "Indeed,",
+  "similarity": 0.5545516610145569,
+  "timestamp": "2026-06-30 15:55:28"
+}

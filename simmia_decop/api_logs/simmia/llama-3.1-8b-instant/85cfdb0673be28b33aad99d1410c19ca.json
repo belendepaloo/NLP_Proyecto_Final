@@ -1,0 +1,19 @@
+{
+  "query_id": "85cfdb0673be28b33aad99d1410c19ca",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0090",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "Archer looked up and met his visitor's anxious gaze.",
+  "target_word": "\"Don't",
+  "sample_idx": 2,
+  "generated_text": "His visitor's",
+  "generated_first_word": "His",
+  "similarity": 0.5760568380355835,
+  "timestamp": "2026-06-30 12:38:03"
+}

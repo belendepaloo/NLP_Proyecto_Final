@@ -1,0 +1,19 @@
+{
+  "query_id": "41c0699591ea590386f1d252d42d0b25",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0185",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "By the light",
+  "target_word": "of",
+  "sample_idx": 2,
+  "generated_text": "of the full",
+  "generated_first_word": "of",
+  "similarity": 1.0,
+  "timestamp": "2026-07-01 03:33:01"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "a6c0e01e7ecedd8031540aefbbc5415e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0076",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "Archer bent down and pressed his lips on the little hand that",
+  "target_word": "still",
+  "sample_idx": 0,
+  "generated_text": "lay so still",
+  "generated_first_word": "lay",
+  "similarity": 0.6079130172729492,
+  "timestamp": "2026-06-30 11:26:50"
+}

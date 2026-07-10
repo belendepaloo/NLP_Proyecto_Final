@@ -1,0 +1,19 @@
+{
+  "query_id": "d11f0c864d3a60e9c42d2d080f99b0fa",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0114",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "‘The first time,’ Hortensia",
+  "target_word": "said,",
+  "sample_idx": 1,
+  "generated_text": "I saw you",
+  "generated_first_word": "I",
+  "similarity": 0.6798499822616577,
+  "timestamp": "2026-06-30 14:36:24"
+}

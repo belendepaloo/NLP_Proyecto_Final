@@ -1,0 +1,19 @@
+{
+  "query_id": "3c475ce605ff0db900e2dbf8a940d5dc",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0086",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 19,
+  "prefix": "The musicians had fallen silent with Jocozah’s departure from the stage. Most patrons were finally drifting to the gate,",
+  "target_word": "accepting",
+  "sample_idx": 1,
+  "generated_text": "their faces filled",
+  "generated_first_word": "their",
+  "similarity": 0.6699322462081909,
+  "timestamp": "2026-06-30 12:19:53"
+}

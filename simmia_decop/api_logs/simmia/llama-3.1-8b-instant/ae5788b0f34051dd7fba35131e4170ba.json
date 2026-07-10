@@ -1,0 +1,19 @@
+{
+  "query_id": "ae5788b0f34051dd7fba35131e4170ba",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0052",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "When he’d found his scarlet team robes",
+  "target_word": "and",
+  "sample_idx": 1,
+  "generated_text": "torn and",
+  "generated_first_word": "torn",
+  "similarity": 0.6193819046020508,
+  "timestamp": "2026-06-30 09:20:09"
+}

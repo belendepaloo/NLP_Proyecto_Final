@@ -1,0 +1,19 @@
+{
+  "query_id": "a2d7497d0f34025dd378ab1ab31f92ec",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0077",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Hornsby. He said to be",
+  "target_word": "ready",
+  "sample_idx": 2,
+  "generated_text": "a distant relative",
+  "generated_first_word": "a",
+  "similarity": 0.574278712272644,
+  "timestamp": "2026-06-30 11:30:18"
+}

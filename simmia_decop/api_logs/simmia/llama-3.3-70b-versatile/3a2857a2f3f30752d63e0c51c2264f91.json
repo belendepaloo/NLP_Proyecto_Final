@@ -1,0 +1,19 @@
+{
+  "query_id": "3a2857a2f3f30752d63e0c51c2264f91",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0058",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "I fiddle with the borrowed",
+  "target_word": "rosary",
+  "sample_idx": 2,
+  "generated_text": "watch",
+  "generated_first_word": "watch",
+  "similarity": 0.5566058158874512,
+  "timestamp": "2026-07-03 14:40:43"
+}

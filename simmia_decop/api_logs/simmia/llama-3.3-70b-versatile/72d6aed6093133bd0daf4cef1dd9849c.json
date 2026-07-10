@@ -1,0 +1,19 @@
+{
+  "query_id": "72d6aed6093133bd0daf4cef1dd9849c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0084",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 17,
+  "prefix": "Big Jim came by his name honestly. He was where Oscar had gotten his massive frame and",
+  "target_word": "squared-off",
+  "sample_idx": 2,
+  "generated_text": "broad",
+  "generated_first_word": "broad",
+  "similarity": 0.6179588437080383,
+  "timestamp": "2026-07-04 18:18:27"
+}

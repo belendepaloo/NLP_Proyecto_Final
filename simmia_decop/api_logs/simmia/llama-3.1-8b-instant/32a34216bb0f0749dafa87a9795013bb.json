@@ -1,0 +1,19 @@
+{
+  "query_id": "32a34216bb0f0749dafa87a9795013bb",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0070",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "In this way he got his name,",
+  "target_word": "Bor,",
+  "sample_idx": 1,
+  "generated_text": "which became synonymous",
+  "generated_first_word": "which",
+  "similarity": 0.6214592456817627,
+  "timestamp": "2026-06-30 10:55:13"
+}

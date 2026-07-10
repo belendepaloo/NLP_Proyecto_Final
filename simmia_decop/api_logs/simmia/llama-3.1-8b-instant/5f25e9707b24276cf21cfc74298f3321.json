@@ -1,0 +1,19 @@
+{
+  "query_id": "5f25e9707b24276cf21cfc74298f3321",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0096",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Hallie whooped and held up",
+  "target_word": "a",
+  "sample_idx": 1,
+  "generated_text": "her hands in",
+  "generated_first_word": "her",
+  "similarity": 0.7175296545028687,
+  "timestamp": "2026-06-30 13:07:35"
+}

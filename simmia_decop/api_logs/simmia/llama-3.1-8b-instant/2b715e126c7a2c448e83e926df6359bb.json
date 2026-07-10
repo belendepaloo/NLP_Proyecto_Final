@@ -1,0 +1,19 @@
+{
+  "query_id": "2b715e126c7a2c448e83e926df6359bb",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0099",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "And not a hint of rot. The",
+  "target_word": "last",
+  "sample_idx": 2,
+  "generated_text": "wood remained surprisingly",
+  "generated_first_word": "wood",
+  "similarity": 0.6302918195724487,
+  "timestamp": "2026-06-30 13:23:42"
+}

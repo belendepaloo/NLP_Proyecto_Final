@@ -1,0 +1,19 @@
+{
+  "query_id": "72a13e40b6947402705f90333510c75d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0177",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "What can I do to serve you?'",
+  "target_word": "'Nothing,'",
+  "sample_idx": 2,
+  "generated_text": "Sir?",
+  "generated_first_word": "Sir?",
+  "similarity": 0.6020087599754333,
+  "timestamp": "2026-07-08 01:07:25"
+}

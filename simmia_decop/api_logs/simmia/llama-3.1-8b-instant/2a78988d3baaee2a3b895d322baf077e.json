@@ -1,0 +1,19 @@
+{
+  "query_id": "2a78988d3baaee2a3b895d322baf077e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0077",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 10,
+  "prefix": "Hornsby. He said to be ready when the car comes",
+  "target_word": "at",
+  "sample_idx": 1,
+  "generated_text": "around",
+  "generated_first_word": "around",
+  "similarity": 0.7418009042739868,
+  "timestamp": "2026-06-30 11:31:34"
+}

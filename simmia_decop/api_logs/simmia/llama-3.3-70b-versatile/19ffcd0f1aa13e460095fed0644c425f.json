@@ -1,0 +1,19 @@
+{
+  "query_id": "19ffcd0f1aa13e460095fed0644c425f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0040",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "At that point, the mother came in carrying a large tray on which were the four suppers. This",
+  "target_word": "time",
+  "sample_idx": 1,
+  "generated_text": "was",
+  "generated_first_word": "was",
+  "similarity": 0.6387631893157959,
+  "timestamp": "2026-07-02 00:22:16"
+}

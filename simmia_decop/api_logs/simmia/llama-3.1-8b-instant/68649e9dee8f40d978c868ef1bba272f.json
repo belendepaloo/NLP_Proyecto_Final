@@ -1,0 +1,19 @@
+{
+  "query_id": "68649e9dee8f40d978c868ef1bba272f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0145",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "'Tell yer what?'",
+  "target_word": "asked",
+  "sample_idx": 1,
+  "generated_text": "'I'll give",
+  "generated_first_word": "I'll",
+  "similarity": 0.6133758425712585,
+  "timestamp": "2026-06-30 17:39:07"
+}

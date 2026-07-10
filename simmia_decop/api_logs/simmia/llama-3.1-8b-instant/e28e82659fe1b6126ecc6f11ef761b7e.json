@@ -1,0 +1,19 @@
+{
+  "query_id": "e28e82659fe1b6126ecc6f11ef761b7e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0133",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "They might be working together for a",
+  "target_word": "greater",
+  "sample_idx": 2,
+  "generated_text": "common goal.",
+  "generated_first_word": "common",
+  "similarity": 0.5708860158920288,
+  "timestamp": "2026-06-30 16:12:11"
+}

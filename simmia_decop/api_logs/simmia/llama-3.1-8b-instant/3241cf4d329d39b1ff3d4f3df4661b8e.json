@@ -1,0 +1,19 @@
+{
+  "query_id": "3241cf4d329d39b1ff3d4f3df4661b8e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0198",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 14,
+  "prefix": "We dance all night, stopping only for me to down my liquor-free mojito in",
+  "target_word": "three",
+  "sample_idx": 2,
+  "generated_text": "the crowded outdoor",
+  "generated_first_word": "the",
+  "similarity": 0.6965484619140625,
+  "timestamp": "2026-07-01 04:42:15"
+}

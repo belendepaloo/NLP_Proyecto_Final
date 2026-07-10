@@ -1,0 +1,19 @@
+{
+  "query_id": "a8657fc59c03389b6c06ab6be7036c33",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0183",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Im nineteen and not",
+  "target_word": "married.",
+  "sample_idx": 2,
+  "generated_text": "in college yet",
+  "generated_first_word": "in",
+  "similarity": 0.6379693150520325,
+  "timestamp": "2026-07-01 03:24:06"
+}

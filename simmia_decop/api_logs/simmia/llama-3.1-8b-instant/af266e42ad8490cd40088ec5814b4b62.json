@@ -1,0 +1,19 @@
+{
+  "query_id": "af266e42ad8490cd40088ec5814b4b62",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0006",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "I've seen none like",
+  "target_word": "Edgar.\"",
+  "sample_idx": 2,
+  "generated_text": "before in my",
+  "generated_first_word": "before",
+  "similarity": 0.5876160860061646,
+  "timestamp": "2026-06-30 05:17:33"
+}

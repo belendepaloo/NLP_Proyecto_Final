@@ -1,0 +1,21 @@
+{
+  "query_id": "fb3224be7347618b7335efe2b3e29381",
+  "query_type": "perturbed",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0193",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "It creaked, but if the sound woke anyone inside, they didnt protest. Bastian and Gabe settled Milo on the floor, then left quickly, soundlessly. He didnt stir. Youre a sneaky lot, Val commented once they were all outside. Have either of you considered poison running? Gabe looked stricken, but Bastian shrugged. Not as such, no, but never say never. Although my current schedule wouldnt allow for it. Thats a shame. Mari shook her head. Our crew is dwindling rapidly these days. Arrests? Lore asked quietly. Vals operation might be newly legal, but bloodcoats had been known to arrest anyone they didnt like the look of. If were not in the same room, then Im usually working on his book. Whether hes next to me or not, hes always in my head. That has to be the explanation for why Im feeling this odd attachment to him. I simply havent talked to another single guy in weeks. When he doesnt join me and doesnt send any texts, I head back, picking up two mugs of hot cocoa in the lobby before going up to our room. I knock once, just to make sure he knows Im coming in. And nothing in the world could prepare me for what I see next. Together, they proclaimed that the Lord Protector was in residence. The wind blew hard. Wulf coughed into a gloved hand. Inys might not be half as icy as Hrth in late winter, but their hideaway was damp and cold, and they dared not risk a fire. As the sun rose, Mara returned from her scouting, coming on foot from the hills. Wulf stared when he saw who was with her. While Thrit slept on, he stood aside to let them in. Lord Mansell folded him straight into his arms. Wulf, he breathed. Saint, I cant believe it. You dont even look hurt. No ones forcing",
+  "original_prefix": "No ones forcing",
+  "non_member_prefix": "It creaked, but if the sound woke anyone inside, they didnt protest. Bastian and Gabe settled Milo on the floor, then left quickly, soundlessly. He didnt stir. Youre a sneaky lot, Val commented once they were all outside. Have either of you considered poison running? Gabe looked stricken, but Bastian shrugged. Not as such, no, but never say never. Although my current schedule wouldnt allow for it. Thats a shame. Mari shook her head. Our crew is dwindling rapidly these days. Arrests? Lore asked quietly. Vals operation might be newly legal, but bloodcoats had been known to arrest anyone they didnt like the look of. If were not in the same room, then Im usually working on his book. Whether hes next to me or not, hes always in my head. That has to be the explanation for why Im feeling this odd attachment to him. I simply havent talked to another single guy in weeks. When he doesnt join me and doesnt send any texts, I head back, picking up two mugs of hot cocoa in the lobby before going up to our room. I knock once, just to make sure he knows Im coming in. And nothing in the world could prepare me for what I see next. Together, they proclaimed that the Lord Protector was in residence. The wind blew hard. Wulf coughed into a gloved hand. Inys might not be half as icy as Hrth in late winter, but their hideaway was damp and cold, and they dared not risk a fire. As the sun rose, Mara returned from her scouting, coming on foot from the hills. Wulf stared when he saw who was with her. While Thrit slept on, he stood aside to let them in. Lord Mansell folded him straight into his arms. Wulf, he breathed. Saint, I cant believe it. You dont even look hurt.",
+  "target_word": "you",
+  "sample_idx": 0,
+  "generated_text": "you",
+  "generated_first_word": "you",
+  "similarity": 1.0,
+  "timestamp": "2026-07-08 02:19:40"
+}

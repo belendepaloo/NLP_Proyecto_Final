@@ -1,0 +1,19 @@
+{
+  "query_id": "801ab1b4da85d0806e9cd3930ee11722",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0100",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "“Careful not",
+  "target_word": "to",
+  "sample_idx": 0,
+  "generated_text": "to get too",
+  "generated_first_word": "to",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 13:26:48"
+}

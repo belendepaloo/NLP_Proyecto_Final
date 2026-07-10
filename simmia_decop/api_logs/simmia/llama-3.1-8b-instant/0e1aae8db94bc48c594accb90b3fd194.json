@@ -1,0 +1,19 @@
+{
+  "query_id": "0e1aae8db94bc48c594accb90b3fd194",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0065",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "If were not in",
+  "target_word": "the",
+  "sample_idx": 1,
+  "generated_text": "a remote village",
+  "generated_first_word": "a",
+  "similarity": 0.7954018712043762,
+  "timestamp": "2026-06-30 10:28:17"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "e106b2e35ca243bc7cc63286c64d8303",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0110",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 1,
+  "prefix": "The",
+  "target_word": "Countess",
+  "sample_idx": 1,
+  "generated_text": "temperature",
+  "generated_first_word": "temperature",
+  "similarity": 0.5495092868804932,
+  "timestamp": "2026-06-30 14:16:04"
+}

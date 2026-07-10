@@ -1,0 +1,19 @@
+{
+  "query_id": "22e91e1b4abcdb4f13b2365065f568b2",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0114",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 11,
+  "prefix": "‘The first time,’ Hortensia said, ‘I poured half a tin of",
+  "target_word": "Golden",
+  "sample_idx": 2,
+  "generated_text": "sardines",
+  "generated_first_word": "sardines",
+  "similarity": 0.6191509962081909,
+  "timestamp": "2026-06-30 14:38:24"
+}

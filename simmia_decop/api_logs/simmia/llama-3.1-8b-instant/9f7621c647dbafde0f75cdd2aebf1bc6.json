@@ -1,0 +1,19 @@
+{
+  "query_id": "9f7621c647dbafde0f75cdd2aebf1bc6",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0040",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "At that point, the mother came in",
+  "target_word": "carrying",
+  "sample_idx": 0,
+  "generated_text": "and saw",
+  "generated_first_word": "and",
+  "similarity": 0.5972374081611633,
+  "timestamp": "2026-06-30 08:16:37"
+}

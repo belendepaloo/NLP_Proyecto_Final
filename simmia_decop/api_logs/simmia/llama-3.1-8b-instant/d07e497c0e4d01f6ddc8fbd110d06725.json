@@ -1,0 +1,19 @@
+{
+  "query_id": "d07e497c0e4d01f6ddc8fbd110d06725",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0144",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "If hereafter in your new place of abode",
+  "target_word": "I",
+  "sample_idx": 1,
+  "generated_text": "you find yourself",
+  "generated_first_word": "you",
+  "similarity": 0.853844940662384,
+  "timestamp": "2026-06-30 17:35:25"
+}

@@ -1,0 +1,25 @@
+{
+  "query_id": "5f6991763242f1bae04864346fa1a0e8",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0027",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "title": "Wuthering Heights",
+  "author": "Emily Bronte",
+  "length": "medium",
+  "permutation_index": 3,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Wuthering Heights\" book by Emily Bronte?\nOptions:\nA. I don't say to leave an enemy be out of generosity, but because I wouldn't want them hurt. He'd crush you like an egg, Isabella, if he saw you as difficult. I understand he couldn't care for a Linton, but he'd happily wed you for your prospects. Avarice is an increasing vice for him. That's how I see him, and I'm his friend - so close that if he meant to catch you, I might have kept quiet and let you fall into his trap.\nB. I never advise him to spare an enemy due to kindness, only because I don't want them injured. He would destroy you if you were troublesome, Isabella. I know he couldn't cherish a Linton, yet he'd willingly marry you for money. Greed is becoming his sin. That's my impression of him, and I'm his friend - so much so that had he intended to ensnare you, I may have stayed silent and allowed you to be trapped.\nC. I never say to him, 'Let this or that enemy alone, because it would be ungener- ous or cruel to harm them.' I say, 'Let them alone, be- cause I should hate them to be wronged.' And he'd crush you like a sparrow's egg, Isabella, if he found you a troublesome charge. I know he couldn't love a Linton; and yet he'd be quite capable of marrying your fortune and expectations. Avarice is growing with him a be- setting sin. There's my picture; and I'm his friend---so much so, that had he thought seriously to catch you, I should perhaps have held my tongue, and let you fall into his trap.\nD. I never tell him to spare an enemy out of kindness, only because I don't want them harmed. He would destroy you if he found you troublesome, Isabella. I know he couldn't love a Linton, yet he'd readily marry you for money. Greed is becoming his sin. That's my view of him, and I'm his friend - so much that if he intended to entrap you, I might have stayed silent. \nAnswer:",
+  "options": {
+    "A": "I don't say to leave an enemy be out of generosity, but because I wouldn't want them hurt. He'd crush you like an egg, Isabella, if he saw you as difficult. I understand he couldn't care for a Linton, but he'd happily wed you for your prospects. Avarice is an increasing vice for him. That's how I see him, and I'm his friend - so close that if he meant to catch you, I might have kept quiet and let you fall into his trap.",
+    "B": "I never advise him to spare an enemy due to kindness, only because I don't want them injured. He would destroy you if you were troublesome, Isabella. I know he couldn't cherish a Linton, yet he'd willingly marry you for money. Greed is becoming his sin. That's my impression of him, and I'm his friend - so much so that had he intended to ensnare you, I may have stayed silent and allowed you to be trapped.",
+    "C": "I never say to him, 'Let this or that enemy alone, because it would be ungener- ous or cruel to harm them.' I say, 'Let them alone, be- cause I should hate them to be wronged.' And he'd crush you like a sparrow's egg, Isabella, if he found you a troublesome charge. I know he couldn't love a Linton; and yet he'd be quite capable of marrying your fortune and expectations. Avarice is growing with him a be- setting sin. There's my picture; and I'm his friend---so much so, that had he thought seriously to catch you, I should perhaps have held my tongue, and let you fall into his trap.",
+    "D": "I never tell him to spare an enemy out of kindness, only because I don't want them harmed. He would destroy you if he found you troublesome, Isabella. I know he couldn't love a Linton, yet he'd readily marry you for money. Greed is becoming his sin. That's my view of him, and I'm his friend - so much that if he intended to entrap you, I might have stayed silent. "
+  },
+  "gold_letter": "C",
+  "predicted_letter": "C",
+  "is_correct": 1,
+  "timestamp": "2026-07-08 03:55:27"
+}

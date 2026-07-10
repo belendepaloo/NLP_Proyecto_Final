@@ -1,0 +1,19 @@
+{
+  "query_id": "6543c468f2cb63c38e76db4eb67ea32c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0023",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "He was shoeless; large, dirty",
+  "target_word": "toes",
+  "sample_idx": 2,
+  "generated_text": "feet stretched",
+  "generated_first_word": "feet",
+  "similarity": 0.8803510069847107,
+  "timestamp": "2026-06-30 06:47:23"
+}

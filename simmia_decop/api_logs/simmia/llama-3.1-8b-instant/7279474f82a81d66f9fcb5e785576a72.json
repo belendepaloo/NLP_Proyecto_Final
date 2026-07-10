@@ -1,0 +1,19 @@
+{
+  "query_id": "7279474f82a81d66f9fcb5e785576a72",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0107",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "Still it became in a manner necessary.",
+  "target_word": "Twice",
+  "sample_idx": 2,
+  "generated_text": "to make drastic",
+  "generated_first_word": "to",
+  "similarity": 0.6552349925041199,
+  "timestamp": "2026-06-30 14:02:34"
+}

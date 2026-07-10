@@ -1,0 +1,19 @@
+{
+  "query_id": "71607f159633c32fe51609c92ad0d6dc",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0137",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Glorian drew herself",
+  "target_word": "up.",
+  "sample_idx": 1,
+  "generated_text": "up",
+  "generated_first_word": "up",
+  "similarity": 0.9477052092552185,
+  "timestamp": "2026-07-05 17:31:20"
+}

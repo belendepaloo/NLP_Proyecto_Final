@@ -1,0 +1,19 @@
+{
+  "query_id": "8670e33b35bdc73feb2521ba9c8b0aa3",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0178",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "Not worth the sting. Natalie started to",
+  "target_word": "back",
+  "sample_idx": 1,
+  "generated_text": "walk",
+  "generated_first_word": "walk",
+  "similarity": 0.6504174470901489,
+  "timestamp": "2026-07-08 01:11:53"
+}

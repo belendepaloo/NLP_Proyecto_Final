@@ -1,0 +1,19 @@
+{
+  "query_id": "27e333077e1b987f9832571d357f66bb",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0075",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 17,
+  "prefix": "Theres almost a swagger to him, a confidence that only hundreds of screaming fans can buy. Is",
+  "target_word": "he",
+  "sample_idx": 2,
+  "generated_text": "he",
+  "generated_first_word": "he",
+  "similarity": 1.0,
+  "timestamp": "2026-07-03 16:09:49"
+}

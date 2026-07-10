@@ -1,0 +1,25 @@
+{
+  "query_id": "0886ab78e6dc469b9c7b71984654275c",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0035",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "title": "A Day of Fallen Night",
+  "author": "Samantha Shannon",
+  "length": "medium",
+  "permutation_index": 5,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"A Day of Fallen Night\" book by Samantha Shannon?\nOptions:\nA. Dumai had no allegiances yet was summoned by her father before the flattering court. She saw the courtiers were loyal to none but themselves. Feeling detached, she thought herself alone, tangled in a net. But she had an external dragon and an inner stone. An internal voice asked what she was doing. With that query, weights fell away.\nB. Another silver Noziken. Dumai looked at them all, the whole belfry of courtiers. Her father had summoned her because she owed allegiance to no one. Now she saw that no one owed allegiance to her, either. I am alone. She stood at a great distance from herself. I am alone, with my foot in the fishnet. No, not alone. Outside, a dragon waited for her. The stone was tucked between her breasts. And when she heard the words in her head, they did not belong to a god, or a woman in a dream. It was her own voice. What are you doing? As that question filled her mind, a weight lifted.\nC. Dumai was called before the court though she was independent. She realized the courtiers were loyal only to themselves, not her. Feeling isolated, she was distant from herself. But she wasn't alone - a dragon was outside and she had the stone. A voice in her mind asked what she was doing. As this question entered her thoughts, she felt unburdened.\nD. Though beholden to none, Dumai's father called her to his sycophantic court. She discerned their fealty was to themselves, not her. Feeling estranged, she was far from herself, snared in a web. However, a dragon lurked outside and she clasped a stone. A voice inside asked her intent. As it echoed, oppressive loads were cast off.\nAnswer:",
+  "options": {
+    "A": "Dumai had no allegiances yet was summoned by her father before the flattering court. She saw the courtiers were loyal to none but themselves. Feeling detached, she thought herself alone, tangled in a net. But she had an external dragon and an inner stone. An internal voice asked what she was doing. With that query, weights fell away.",
+    "B": "Another silver Noziken. Dumai looked at them all, the whole belfry of courtiers. Her father had summoned her because she owed allegiance to no one. Now she saw that no one owed allegiance to her, either. I am alone. She stood at a great distance from herself. I am alone, with my foot in the fishnet. No, not alone. Outside, a dragon waited for her. The stone was tucked between her breasts. And when she heard the words in her head, they did not belong to a god, or a woman in a dream. It was her own voice. What are you doing? As that question filled her mind, a weight lifted.",
+    "C": "Dumai was called before the court though she was independent. She realized the courtiers were loyal only to themselves, not her. Feeling isolated, she was distant from herself. But she wasn't alone - a dragon was outside and she had the stone. A voice in her mind asked what she was doing. As this question entered her thoughts, she felt unburdened.",
+    "D": "Though beholden to none, Dumai's father called her to his sycophantic court. She discerned their fealty was to themselves, not her. Feeling estranged, she was far from herself, snared in a web. However, a dragon lurked outside and she clasped a stone. A voice inside asked her intent. As it echoed, oppressive loads were cast off."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "B",
+  "is_correct": 1,
+  "timestamp": "2026-07-08 04:00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "f7406e767cbc548ba2fd733e2bc74e59",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0062",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "So am I,'",
+  "target_word": "said",
+  "sample_idx": 1,
+  "generated_text": "she",
+  "generated_first_word": "she",
+  "similarity": 0.6993048787117004,
+  "timestamp": "2026-07-03 14:59:45"
+}

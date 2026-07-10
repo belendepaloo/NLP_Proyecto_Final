@@ -1,0 +1,19 @@
+{
+  "query_id": "262db434ef0e406e21793ab0549bd3ed",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0176",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 16,
+  "prefix": "Men in powerful positions were unsettled by popular heirs waiting to take their places. In that",
+  "target_word": "regard,",
+  "sample_idx": 1,
+  "generated_text": "climate",
+  "generated_first_word": "climate",
+  "similarity": 0.6178605556488037,
+  "timestamp": "2026-07-01 02:51:52"
+}

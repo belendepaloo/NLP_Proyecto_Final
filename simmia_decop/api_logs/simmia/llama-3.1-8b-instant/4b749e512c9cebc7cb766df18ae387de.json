@@ -1,0 +1,19 @@
+{
+  "query_id": "4b749e512c9cebc7cb766df18ae387de",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0151",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 17,
+  "prefix": "Then I plop it onto the wheel and flatten it with the heels of my hands. The",
+  "target_word": "moment",
+  "sample_idx": 2,
+  "generated_text": "metal begins to",
+  "generated_first_word": "metal",
+  "similarity": 0.6481024622917175,
+  "timestamp": "2026-06-30 18:12:07"
+}

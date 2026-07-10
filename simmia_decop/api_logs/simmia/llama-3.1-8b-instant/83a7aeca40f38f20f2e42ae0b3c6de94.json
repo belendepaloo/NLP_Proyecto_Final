@@ -1,0 +1,19 @@
+{
+  "query_id": "83a7aeca40f38f20f2e42ae0b3c6de94",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0000",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Since he",
+  "target_word": "was",
+  "sample_idx": 2,
+  "generated_text": "had",
+  "generated_first_word": "had",
+  "similarity": 0.7475413680076599,
+  "timestamp": "2026-06-30 04:46:42"
+}

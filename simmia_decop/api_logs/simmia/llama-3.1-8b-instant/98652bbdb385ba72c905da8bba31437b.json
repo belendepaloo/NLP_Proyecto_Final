@@ -1,0 +1,19 @@
+{
+  "query_id": "98652bbdb385ba72c905da8bba31437b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0152",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "Before, I had never experienced aught but a",
+  "target_word": "not-unpleasing",
+  "sample_idx": 1,
+  "generated_text": "life of hardship",
+  "generated_first_word": "life",
+  "similarity": 0.5800768733024597,
+  "timestamp": "2026-06-30 18:14:19"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "ee7cc68ac2e05cf72875399514c9dcbd",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0174",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 19,
+  "prefix": "Her eyes gleamed. “You see? I knew you’d missed me. This is Tanith.” The airy wave of her hand",
+  "target_word": "encompassed",
+  "sample_idx": 0,
+  "generated_text": "brought Tan",
+  "generated_first_word": "brought",
+  "similarity": 0.6732456088066101,
+  "timestamp": "2026-07-01 02:41:57"
+}

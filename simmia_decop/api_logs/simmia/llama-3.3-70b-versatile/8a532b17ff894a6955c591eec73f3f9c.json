@@ -1,0 +1,19 @@
+{
+  "query_id": "8a532b17ff894a6955c591eec73f3f9c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0040",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "At that point, the",
+  "target_word": "mother",
+  "sample_idx": 1,
+  "generated_text": "company",
+  "generated_first_word": "company",
+  "similarity": 0.6994549036026001,
+  "timestamp": "2026-07-02 00:18:48"
+}

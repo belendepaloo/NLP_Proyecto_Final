@@ -1,0 +1,19 @@
+{
+  "query_id": "94ab194071bcd1c84ffd1aa9bde4ef5e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0165",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "And high",
+  "target_word": "in",
+  "sample_idx": 1,
+  "generated_text": "school",
+  "generated_first_word": "school",
+  "similarity": 0.7126198410987854,
+  "timestamp": "2026-07-06 17:23:59"
+}

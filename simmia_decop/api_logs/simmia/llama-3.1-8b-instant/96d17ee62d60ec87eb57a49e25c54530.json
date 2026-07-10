@@ -1,0 +1,19 @@
+{
+  "query_id": "96d17ee62d60ec87eb57a49e25c54530",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0059",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 13,
+  "prefix": "But the physical difficulty of meeting was enormous. It was like trying to",
+  "target_word": "make",
+  "sample_idx": 0,
+  "generated_text": "find a needle",
+  "generated_first_word": "find",
+  "similarity": 0.6974728107452393,
+  "timestamp": "2026-06-30 09:59:15"
+}

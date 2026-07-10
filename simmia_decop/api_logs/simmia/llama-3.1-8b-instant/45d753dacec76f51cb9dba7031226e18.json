@@ -1,0 +1,19 @@
+{
+  "query_id": "45d753dacec76f51cb9dba7031226e18",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0019",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Edgar Linton,",
+  "target_word": "as",
+  "sample_idx": 2,
+  "generated_text": "the wealthy son",
+  "generated_first_word": "the",
+  "similarity": 0.6920714974403381,
+  "timestamp": "2026-06-30 06:25:42"
+}

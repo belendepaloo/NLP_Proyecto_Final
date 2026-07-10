@@ -1,0 +1,19 @@
+{
+  "query_id": "fc99200304900c5dd56c5e8168bbcadd",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0016",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "There he would often wander long, and",
+  "target_word": "late",
+  "sample_idx": 0,
+  "generated_text": "through the deserted",
+  "generated_first_word": "through",
+  "similarity": 0.6864311695098877,
+  "timestamp": "2026-06-30 06:11:38"
+}

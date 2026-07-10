@@ -1,0 +1,19 @@
+{
+  "query_id": "ef797fc459218ec1788424cd05622fc3",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0135",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 13,
+  "prefix": "Not when Im finally finding my way in the world. I miss you.",
+  "target_word": "Her",
+  "sample_idx": 1,
+  "generated_text": "Every day,",
+  "generated_first_word": "Every",
+  "similarity": 0.6803420186042786,
+  "timestamp": "2026-06-30 16:22:54"
+}

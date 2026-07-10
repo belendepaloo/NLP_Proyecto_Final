@@ -1,0 +1,19 @@
+{
+  "query_id": "9379d7c78a4ec32f4e602f972b7e6ae5",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0096",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 14,
+  "prefix": "Hallie whooped and held up a glass of wine. I know thats right. Your",
+  "target_word": "turn,",
+  "sample_idx": 1,
+  "generated_text": "turn",
+  "generated_first_word": "turn",
+  "similarity": 0.9556409120559692,
+  "timestamp": "2026-07-04 19:12:25"
+}

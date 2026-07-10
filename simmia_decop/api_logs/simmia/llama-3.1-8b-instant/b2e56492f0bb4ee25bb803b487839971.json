@@ -1,0 +1,19 @@
+{
+  "query_id": "b2e56492f0bb4ee25bb803b487839971",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0146",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "Countless times, Harry had been on the point of unlocking",
+  "target_word": "Hedwig’s",
+  "sample_idx": 0,
+  "generated_text": "the mysterious door",
+  "generated_first_word": "the",
+  "similarity": 0.6218426823616028,
+  "timestamp": "2026-06-30 17:45:26"
+}

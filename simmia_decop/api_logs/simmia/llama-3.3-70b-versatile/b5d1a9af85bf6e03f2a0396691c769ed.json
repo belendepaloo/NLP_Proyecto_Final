@@ -1,0 +1,19 @@
+{
+  "query_id": "b5d1a9af85bf6e03f2a0396691c769ed",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0109",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 17,
+  "prefix": "Part love story, part thriller, this novel kept me entranced until the very last page. A warm,",
+  "target_word": "glorious,",
+  "sample_idx": 1,
+  "generated_text": "summer evening found",
+  "generated_first_word": "summer",
+  "similarity": 0.6071878671646118,
+  "timestamp": "2026-07-04 20:12:42"
+}

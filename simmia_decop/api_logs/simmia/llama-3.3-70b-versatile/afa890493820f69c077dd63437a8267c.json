@@ -1,0 +1,19 @@
+{
+  "query_id": "afa890493820f69c077dd63437a8267c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0168",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 10,
+  "prefix": "Stop. I cannot handle Cody Benham with words of wisdom,",
+  "target_word": "I",
+  "sample_idx": 2,
+  "generated_text": "spewing",
+  "generated_first_word": "spewing",
+  "similarity": 0.6356226205825806,
+  "timestamp": "2026-07-06 17:40:19"
+}

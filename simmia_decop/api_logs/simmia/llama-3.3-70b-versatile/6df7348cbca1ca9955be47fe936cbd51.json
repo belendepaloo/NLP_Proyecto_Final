@@ -1,0 +1,19 @@
+{
+  "query_id": "6df7348cbca1ca9955be47fe936cbd51",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0133",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "They might",
+  "target_word": "be",
+  "sample_idx": 0,
+  "generated_text": "have",
+  "generated_first_word": "have",
+  "similarity": 0.6341136693954468,
+  "timestamp": "2026-07-05 17:12:27"
+}

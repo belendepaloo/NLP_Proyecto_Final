@@ -1,0 +1,19 @@
+{
+  "query_id": "3ae2cec9a6889ea247909022555306a3",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0054",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "All that confidence he had",
+  "target_word": "at",
+  "sample_idx": 0,
+  "generated_text": "was slowly fading",
+  "generated_first_word": "was",
+  "similarity": 0.6617039442062378,
+  "timestamp": "2026-06-30 09:30:06"
+}

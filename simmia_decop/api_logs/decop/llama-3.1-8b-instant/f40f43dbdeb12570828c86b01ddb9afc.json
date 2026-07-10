@@ -1,0 +1,25 @@
+{
+  "query_id": "f40f43dbdeb12570828c86b01ddb9afc",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0136",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "title": "Harry Potter and the Chamber of Secrets",
+  "author": "JK Rowling",
+  "length": "medium",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Harry Potter and the Chamber of Secrets\" book by JK Rowling?\nOptions:\nA. He missed Hogwarts terribly, with a constant ache of longing. He missed the whole castle, its secret tunnels and ghosts, his lessons (minus Snape's Potions), getting mail by owl, eating in the Great Hall, sleeping in his four-poster dorm room, visiting gamekeeper Hagrid's cabin by the Forbidden Forest, and especially Quidditch, the beloved Wizarding sport with six high goalposts, four flying balls, and fourteen players on brooms.\nB. Hogwarts meant everything to him, and being away felt like having a never-ending stomachache. He missed the entire castle, the secret passages and ghosts, his classes (except for the Potions master Snape's), getting post by owl, eating in the Great Hall, sleeping in his four-poster tower bedroom, going to gamekeeper Hagrid's cabin by the Forbidden Forest, and most of all, playing Quidditch, the most popular Wizard sport with its six tall goalposts, four flying balls, and fourteen broomstick-riding players.\nC. He longed for Hogwarts greatly, feeling a constant ache of homesickness. He missed everything about the castle, from its secret tunnels and ghostly inhabitants, to his lessons (aside from Potions with Professor Snape), getting mail delivered by owls, feasting in the Great Hall, sleeping in his four-poster dormitory bed, visiting gamekeeper Hagrid's cabin by the Forbidden Forest, and most of all, playing Quidditch, the most beloved Wizarding sport, with its tall goalposts, flying balls, and players on broomsticks.  \nD. He missed Hogwarts so much it was like having a constant stomachache. He missed the castle, with its secret passageways and ghosts, his classes (though perhaps not Snape, the Potions master), the mail arriving by owl, eating banquets in the Great Hall, sleeping in his four-poster bed in the tower dormitory, visiting the gamekeeper, Hagrid, in his cabin next to the Forbidden Forest in the grounds, and, especially, Quidditch, the most popular sport in the Wizarding world (six tall goalposts, four flying balls, and fourteen players on broomsticks). \nAnswer:",
+  "options": {
+    "A": "He missed Hogwarts terribly, with a constant ache of longing. He missed the whole castle, its secret tunnels and ghosts, his lessons (minus Snape's Potions), getting mail by owl, eating in the Great Hall, sleeping in his four-poster dorm room, visiting gamekeeper Hagrid's cabin by the Forbidden Forest, and especially Quidditch, the beloved Wizarding sport with six high goalposts, four flying balls, and fourteen players on brooms.",
+    "B": "Hogwarts meant everything to him, and being away felt like having a never-ending stomachache. He missed the entire castle, the secret passages and ghosts, his classes (except for the Potions master Snape's), getting post by owl, eating in the Great Hall, sleeping in his four-poster tower bedroom, going to gamekeeper Hagrid's cabin by the Forbidden Forest, and most of all, playing Quidditch, the most popular Wizard sport with its six tall goalposts, four flying balls, and fourteen broomstick-riding players.",
+    "C": "He longed for Hogwarts greatly, feeling a constant ache of homesickness. He missed everything about the castle, from its secret tunnels and ghostly inhabitants, to his lessons (aside from Potions with Professor Snape), getting mail delivered by owls, feasting in the Great Hall, sleeping in his four-poster dormitory bed, visiting gamekeeper Hagrid's cabin by the Forbidden Forest, and most of all, playing Quidditch, the most beloved Wizarding sport, with its tall goalposts, flying balls, and players on broomsticks.  ",
+    "D": "He missed Hogwarts so much it was like having a constant stomachache. He missed the castle, with its secret passageways and ghosts, his classes (though perhaps not Snape, the Potions master), the mail arriving by owl, eating banquets in the Great Hall, sleeping in his four-poster bed in the tower dormitory, visiting the gamekeeper, Hagrid, in his cabin next to the Forbidden Forest in the grounds, and, especially, Quidditch, the most popular sport in the Wizarding world (six tall goalposts, four flying balls, and fourteen players on broomsticks). "
+  },
+  "gold_letter": "D",
+  "predicted_letter": "B",
+  "is_correct": 0,
+  "timestamp": "2026-07-08 05:00:10"
+}

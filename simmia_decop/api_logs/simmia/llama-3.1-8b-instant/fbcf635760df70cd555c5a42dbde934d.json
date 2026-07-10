@@ -1,0 +1,19 @@
+{
+  "query_id": "fbcf635760df70cd555c5a42dbde934d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0074",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 10,
+  "prefix": "Not exactly, she says. I, um, took on two new",
+  "target_word": "clients?",
+  "sample_idx": 0,
+  "generated_text": "projects at work",
+  "generated_first_word": "projects",
+  "similarity": 0.6704062223434448,
+  "timestamp": "2026-06-30 11:15:57"
+}

@@ -1,0 +1,25 @@
+{
+  "query_id": "a63ba8e4f5897a14952d1453bd0d095b",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0074",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "title": "Business or Pleasure",
+  "author": "Rachel Lynn Solomon",
+  "length": "medium",
+  "permutation_index": 2,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Business or Pleasure\" book by Rachel Lynn Solomon?\nOptions:\nA. She says no, that she started working with two new customers including Noemie. Her sad look takes me back to when she decided not to keep studying journalism and switched to public relations instead, even though the journalism job market scared her. I promise her I'm going to do it after I finish this project. She sips her margarita and tells me to spill the real reason I asked her to come out here, since it wasn't just because I missed her. I wait a moment, picking at my towel, before dropping it on the sand and telling her.\nB. She responds that she has taken on two new clients, one named Noemie. Her sad expression is reminiscent of when she revealed she would not continue studying journalism, thinking public relations was more suitable despite her fear of the journalism job market. I assure her I intend to pursue it after finishing this project. She drinks her margarita and urges me to reveal the real reason I requested her visit, knowing it was not solely because I missed her company. I hesitate briefly, fidgeting with my towel, before discarding it in the sand and confessing.\nC. Not exactly, she says. I, um, took on two new clients? Noemie. Her sad smile reminds me of how she looked when she told me she wasnt going to study journalism anymore. That public relations was a better fit for her, and the journalism job market terrified her. I know. Im going to do it. After this project. I swear. She takes a sip of her margarita. So. Spill it. I know you didnt ask me to fly out here just because you miss me. I wait a moment, worrying the frayed edge of my towel before dropping it in the sand beneath us.\nD. She replies that she has not, but instead took on two new clients including Noemie. Her melancholy expression is similar to when she revealed she would no longer study journalism, thinking public relations was a better path despite her fear of the journalism job market. I assure her I plan to pursue it after completing this current project. As she sips her margarita, she urges me to reveal the true reason for requesting her visit, aware it was not motivated solely by missing her. I hesitate briefly, fiddling with my towel, before discarding it in the sand and confessing.\nAnswer:",
+  "options": {
+    "A": "She says no, that she started working with two new customers including Noemie. Her sad look takes me back to when she decided not to keep studying journalism and switched to public relations instead, even though the journalism job market scared her. I promise her I'm going to do it after I finish this project. She sips her margarita and tells me to spill the real reason I asked her to come out here, since it wasn't just because I missed her. I wait a moment, picking at my towel, before dropping it on the sand and telling her.",
+    "B": "She responds that she has taken on two new clients, one named Noemie. Her sad expression is reminiscent of when she revealed she would not continue studying journalism, thinking public relations was more suitable despite her fear of the journalism job market. I assure her I intend to pursue it after finishing this project. She drinks her margarita and urges me to reveal the real reason I requested her visit, knowing it was not solely because I missed her company. I hesitate briefly, fidgeting with my towel, before discarding it in the sand and confessing.",
+    "C": "Not exactly, she says. I, um, took on two new clients? Noemie. Her sad smile reminds me of how she looked when she told me she wasnt going to study journalism anymore. That public relations was a better fit for her, and the journalism job market terrified her. I know. Im going to do it. After this project. I swear. She takes a sip of her margarita. So. Spill it. I know you didnt ask me to fly out here just because you miss me. I wait a moment, worrying the frayed edge of my towel before dropping it in the sand beneath us.",
+    "D": "She replies that she has not, but instead took on two new clients including Noemie. Her melancholy expression is similar to when she revealed she would no longer study journalism, thinking public relations was a better path despite her fear of the journalism job market. I assure her I plan to pursue it after completing this current project. As she sips her margarita, she urges me to reveal the true reason for requesting her visit, aware it was not motivated solely by missing her. I hesitate briefly, fiddling with my towel, before discarding it in the sand and confessing."
+  },
+  "gold_letter": "C",
+  "predicted_letter": "C",
+  "is_correct": 1,
+  "timestamp": "2026-07-08 04:23:20"
+}

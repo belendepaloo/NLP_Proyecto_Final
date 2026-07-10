@@ -1,0 +1,19 @@
+{
+  "query_id": "d6324e1b7c2d1b6e0a01aa80d53d16c7",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0084",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 13,
+  "prefix": "Big Jim came by his name honestly. He was where Oscar had gotten",
+  "target_word": "his",
+  "sample_idx": 1,
+  "generated_text": "his size from",
+  "generated_first_word": "his",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 12:08:06"
+}

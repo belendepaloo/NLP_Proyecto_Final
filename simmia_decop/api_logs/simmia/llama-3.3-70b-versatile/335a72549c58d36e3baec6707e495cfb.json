@@ -1,0 +1,19 @@
+{
+  "query_id": "335a72549c58d36e3baec6707e495cfb",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0136",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "He missed Hogwarts so much it",
+  "target_word": "was",
+  "sample_idx": 0,
+  "generated_text": "hurt",
+  "generated_first_word": "hurt",
+  "similarity": 0.7033662796020508,
+  "timestamp": "2026-07-05 17:27:09"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "f5c635ceb56b8bce133d751a9f09a3b6",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0154",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "The man still said nothing, and the boy",
+  "target_word": "sensed",
+  "sample_idx": 1,
+  "generated_text": "kept staring.",
+  "generated_first_word": "kept",
+  "similarity": 0.6134538650512695,
+  "timestamp": "2026-06-30 18:24:18"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "4284dea5abd4bde794a1a893e099c419",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0181",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "But when he",
+  "target_word": "had",
+  "sample_idx": 2,
+  "generated_text": "saw",
+  "generated_first_word": "saw",
+  "similarity": 0.6674646139144897,
+  "timestamp": "2026-07-08 01:24:30"
+}

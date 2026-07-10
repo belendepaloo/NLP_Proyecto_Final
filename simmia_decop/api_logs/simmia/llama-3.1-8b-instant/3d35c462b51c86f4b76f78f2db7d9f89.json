@@ -1,0 +1,19 @@
+{
+  "query_id": "3d35c462b51c86f4b76f78f2db7d9f89",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0177",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "What can I do to serve you?' 'Nothing,'",
+  "target_word": "replied",
+  "sample_idx": 2,
+  "generated_text": "he said with",
+  "generated_first_word": "he",
+  "similarity": 0.6407727003097534,
+  "timestamp": "2026-07-01 02:54:35"
+}

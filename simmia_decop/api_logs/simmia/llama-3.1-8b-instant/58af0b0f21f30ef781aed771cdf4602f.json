@@ -1,0 +1,19 @@
+{
+  "query_id": "58af0b0f21f30ef781aed771cdf4602f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0131",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "In a chair,",
+  "target_word": "at",
+  "sample_idx": 1,
+  "generated_text": "sitting.",
+  "generated_first_word": "sitting.",
+  "similarity": 0.6671446561813354,
+  "timestamp": "2026-06-30 16:01:06"
+}

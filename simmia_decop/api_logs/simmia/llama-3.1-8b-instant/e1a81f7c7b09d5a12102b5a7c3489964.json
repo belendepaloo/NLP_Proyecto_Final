@@ -1,0 +1,19 @@
+{
+  "query_id": "e1a81f7c7b09d5a12102b5a7c3489964",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0128",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "Their fits relieved each other like guards.",
+  "target_word": "When",
+  "sample_idx": 0,
+  "generated_text": "swapping weary",
+  "generated_first_word": "swapping",
+  "similarity": 0.5989911556243896,
+  "timestamp": "2026-06-30 15:47:12"
+}

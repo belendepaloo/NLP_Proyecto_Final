@@ -1,0 +1,19 @@
+{
+  "query_id": "a6a2da6500f3bdb781fcbf5d8ec97c76",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0041",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 15,
+  "prefix": "He still broke into your room, Ethan pointed out. If he wasnt after you, what",
+  "target_word": "was",
+  "sample_idx": 0,
+  "generated_text": "did",
+  "generated_first_word": "did",
+  "similarity": 0.7546329498291016,
+  "timestamp": "2026-07-02 00:26:04"
+}

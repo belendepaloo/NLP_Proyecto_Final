@@ -1,0 +1,19 @@
+{
+  "query_id": "7b15238cc1fc758a091cceb4c227bf23",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0059",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 16,
+  "prefix": "But the physical difficulty of meeting was enormous. It was like trying to make a move",
+  "target_word": "at",
+  "sample_idx": 0,
+  "generated_text": "without being noticed",
+  "generated_first_word": "without",
+  "similarity": 0.6620467901229858,
+  "timestamp": "2026-06-30 10:00:04"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "1fe5f3cf84ba93de109c2577ef1fb480",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0085",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "It was rather weak in me I confess, but his",
+  "target_word": "manner",
+  "sample_idx": 1,
+  "generated_text": "eyes sparkled",
+  "generated_first_word": "eyes",
+  "similarity": 0.6577801704406738,
+  "timestamp": "2026-06-30 12:12:22"
+}

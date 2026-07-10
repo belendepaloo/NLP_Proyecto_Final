@@ -1,0 +1,19 @@
+{
+  "query_id": "704624b5399a1d90de2e27716e14f985",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0000",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 16,
+  "prefix": "Since he was arrested he had not been fed. He sat as still as he could",
+  "target_word": "on",
+  "sample_idx": 1,
+  "generated_text": "in the damp",
+  "generated_first_word": "in",
+  "similarity": 0.7626075148582458,
+  "timestamp": "2026-06-30 04:49:55"
+}

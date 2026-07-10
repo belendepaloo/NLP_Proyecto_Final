@@ -1,0 +1,19 @@
+{
+  "query_id": "4c4d7949e4df2fad7a70f479ee714b7a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0120",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "At first Frodo felt as if he had indeed",
+  "target_word": "been",
+  "sample_idx": 0,
+  "generated_text": "lost his mind",
+  "generated_first_word": "lost",
+  "similarity": 0.6558291912078857,
+  "timestamp": "2026-06-30 15:08:17"
+}

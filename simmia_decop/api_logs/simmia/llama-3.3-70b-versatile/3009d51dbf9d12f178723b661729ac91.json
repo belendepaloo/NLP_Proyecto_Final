@@ -1,0 +1,21 @@
+{
+  "query_id": "3009d51dbf9d12f178723b661729ac91",
+  "query_type": "perturbed",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0074",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 14,
+  "prefix": "It creaked, but if the sound woke anyone inside, they didnt protest. Bastian and Gabe settled Milo on the floor, then left quickly, soundlessly. He didnt stir. Youre a sneaky lot, Val commented once they were all outside. Have either of you considered poison running? Gabe looked stricken, but Bastian shrugged. Not as such, no, but never say never. Although my current schedule wouldnt allow for it. Thats a shame. Mari shook her head. Our crew is dwindling rapidly these days. Arrests? Lore asked quietly. Vals operation might be newly legal, but bloodcoats had been known to arrest anyone they didnt like the look of. If were not in the same room, then Im usually working on his book. Whether hes next to me or not, hes always in my head. That has to be the explanation for why Im feeling this odd attachment to him. I simply havent talked to another single guy in weeks. When he doesnt join me and doesnt send any texts, I head back, picking up two mugs of hot cocoa in the lobby before going up to our room. I knock once, just to make sure he knows Im coming in. And nothing in the world could prepare me for what I see next. This version of myselfI dont hate her. Shes carefree and laid-back, two adjectives Ive never associated with myself. Shes fun. He glances down. Its probably been that way for hours, huh? Ill fix it for you. I lean in as he gamely holds out his arms, and now my knee is pressed against his, too. Do you want them both up or both down? I ask the question hoping for a specific answer. Up would give me more reasons to touch him. Up, please, he says, blushing again. His skin is warm, his breath even. I take my time, making sure his sleeves are the same length, each roll of fabric revealing more freckles. Not exactly, she says. I, um, took on two new clients? Noemie. Her sad",
+  "original_prefix": "Not exactly, she says. I, um, took on two new clients? Noemie. Her sad",
+  "non_member_prefix": "It creaked, but if the sound woke anyone inside, they didnt protest. Bastian and Gabe settled Milo on the floor, then left quickly, soundlessly. He didnt stir. Youre a sneaky lot, Val commented once they were all outside. Have either of you considered poison running? Gabe looked stricken, but Bastian shrugged. Not as such, no, but never say never. Although my current schedule wouldnt allow for it. Thats a shame. Mari shook her head. Our crew is dwindling rapidly these days. Arrests? Lore asked quietly. Vals operation might be newly legal, but bloodcoats had been known to arrest anyone they didnt like the look of. If were not in the same room, then Im usually working on his book. Whether hes next to me or not, hes always in my head. That has to be the explanation for why Im feeling this odd attachment to him. I simply havent talked to another single guy in weeks. When he doesnt join me and doesnt send any texts, I head back, picking up two mugs of hot cocoa in the lobby before going up to our room. I knock once, just to make sure he knows Im coming in. And nothing in the world could prepare me for what I see next. This version of myselfI dont hate her. Shes carefree and laid-back, two adjectives Ive never associated with myself. Shes fun. He glances down. Its probably been that way for hours, huh? Ill fix it for you. I lean in as he gamely holds out his arms, and now my knee is pressed against his, too. Do you want them both up or both down? I ask the question hoping for a specific answer. Up would give me more reasons to touch him. Up, please, he says, blushing again. His skin is warm, his breath even. I take my time, making sure his sleeves are the same length, each roll of fabric revealing more freckles.",
+  "target_word": "smile",
+  "sample_idx": 2,
+  "generated_text": "eyes",
+  "generated_first_word": "eyes",
+  "similarity": 0.6717566847801208,
+  "timestamp": "2026-07-03 16:04:27"
+}

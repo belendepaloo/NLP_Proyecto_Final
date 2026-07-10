@@ -1,0 +1,19 @@
+{
+  "query_id": "92ed505a34e8897d7dad6d256fb74b28",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0186",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "O'Brien had sat down beside the bed, so that",
+  "target_word": "his",
+  "sample_idx": 2,
+  "generated_text": "he",
+  "generated_first_word": "he",
+  "similarity": 0.8791528940200806,
+  "timestamp": "2026-07-08 01:48:40"
+}

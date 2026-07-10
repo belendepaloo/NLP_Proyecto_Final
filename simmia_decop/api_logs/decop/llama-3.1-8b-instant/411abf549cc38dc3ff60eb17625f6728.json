@@ -1,0 +1,25 @@
+{
+  "query_id": "411abf549cc38dc3ff60eb17625f6728",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0094",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "title": "The Alchemist",
+  "author": "Paulo Coelho",
+  "length": "medium",
+  "permutation_index": 2,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Alchemist\" book by Paulo Coelho?\nOptions:\nA. When he entered the main room of the castle, instead of meeting a holy person, our protagonist discovered a busy scene: merchants were coming and going, people were talking in the corners, a small musical group was playing gentle tunes, and there was a table laden with the most scrumptious food in that region. The sage spoke with all the visitors, so the young man had to wait two hours before he could get the wise man's attention.\nB. Rather than encountering a virtuous individual, our hero saw a hive of commotion upon entering the castle's great hall: tradesmen arrived and departed, folks conversed in the corners, a tiny orchestra performed mellow music, and there was a table covered in the most delectable cuisine in that part of the world. The wise man talked with everybody present, forcing the boy to bide his time for two hours before finally being regarded by the sage.  \nC. “Rather than finding a saintly man, though, our hero, on entering the main room of the castle, saw a hive of activity: tradesmen came and went, people were conversing in the corners, a small orchestra was playing soft music, and there was a table covered with platters of the most delicious food in that part of the world. The wise man conversed with everyone, and the boy had to wait for two hours before it was his turn to be given the man’s attention. \nD. Instead of meeting a saintly person, when he entered the main chamber of the castle, our protagonist found it bustling with activity: merchants were coming and going, people were chatting in the corners, a small musical ensemble was playing gentle tunes, and there was a table laden with the most delicious fare in that region. The sage spoke with all the visitors, so the boy had to wait patiently for two hours before he could finally gain the wise man's attention.\nAnswer:",
+  "options": {
+    "A": "When he entered the main room of the castle, instead of meeting a holy person, our protagonist discovered a busy scene: merchants were coming and going, people were talking in the corners, a small musical group was playing gentle tunes, and there was a table laden with the most scrumptious food in that region. The sage spoke with all the visitors, so the young man had to wait two hours before he could get the wise man's attention.",
+    "B": "Rather than encountering a virtuous individual, our hero saw a hive of commotion upon entering the castle's great hall: tradesmen arrived and departed, folks conversed in the corners, a tiny orchestra performed mellow music, and there was a table covered in the most delectable cuisine in that part of the world. The wise man talked with everybody present, forcing the boy to bide his time for two hours before finally being regarded by the sage.  ",
+    "C": "“Rather than finding a saintly man, though, our hero, on entering the main room of the castle, saw a hive of activity: tradesmen came and went, people were conversing in the corners, a small orchestra was playing soft music, and there was a table covered with platters of the most delicious food in that part of the world. The wise man conversed with everyone, and the boy had to wait for two hours before it was his turn to be given the man’s attention. ",
+    "D": "Instead of meeting a saintly person, when he entered the main chamber of the castle, our protagonist found it bustling with activity: merchants were coming and going, people were chatting in the corners, a small musical ensemble was playing gentle tunes, and there was a table laden with the most delicious fare in that region. The sage spoke with all the visitors, so the boy had to wait patiently for two hours before he could finally gain the wise man's attention."
+  },
+  "gold_letter": "C",
+  "predicted_letter": "C",
+  "is_correct": 1,
+  "timestamp": "2026-07-08 04:35:04"
+}

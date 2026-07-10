@@ -1,0 +1,19 @@
+{
+  "query_id": "30903682c4c1bfc975efc8686c6d2496",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0084",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Big Jim came by his",
+  "target_word": "name",
+  "sample_idx": 1,
+  "generated_text": "wealth through a",
+  "generated_first_word": "wealth",
+  "similarity": 0.6573622822761536,
+  "timestamp": "2026-06-30 12:06:00"
+}

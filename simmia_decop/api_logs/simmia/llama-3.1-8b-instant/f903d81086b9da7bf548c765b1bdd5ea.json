@@ -1,0 +1,19 @@
+{
+  "query_id": "f903d81086b9da7bf548c765b1bdd5ea",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0087",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 15,
+  "prefix": "If I thought it, I should never be happy again. I wouldn't cut a boy",
+  "target_word": "off:",
+  "sample_idx": 1,
+  "generated_text": "loose for",
+  "generated_first_word": "loose",
+  "similarity": 0.6481191515922546,
+  "timestamp": "2026-06-30 12:23:55"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "bc146f87545059ae2f1014b39a483c24",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0008",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 18,
+  "prefix": "I am starting to feel comfortable now. I can approach a vendor and know when he is offering",
+  "target_word": "me",
+  "sample_idx": 1,
+  "generated_text": "a good deal",
+  "generated_first_word": "a",
+  "similarity": 0.6721607446670532,
+  "timestamp": "2026-06-30 05:32:03"
+}

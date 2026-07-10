@@ -1,0 +1,19 @@
+{
+  "query_id": "a0782f32fdef95aa9b374e8ff85f3b79",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0115",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 9,
+  "prefix": "If I were someone who partook in such things,",
+  "target_word": "it",
+  "sample_idx": 1,
+  "generated_text": "I'd probably",
+  "generated_first_word": "I'd",
+  "similarity": 0.6535647511482239,
+  "timestamp": "2026-06-30 14:42:53"
+}

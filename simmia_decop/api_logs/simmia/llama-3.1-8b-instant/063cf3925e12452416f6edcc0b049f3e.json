@@ -1,0 +1,19 @@
+{
+  "query_id": "063cf3925e12452416f6edcc0b049f3e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0157",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 10,
+  "prefix": "Who knows what the future holds, right? Besides, you have",
+  "target_word": "someone",
+  "sample_idx": 0,
+  "generated_text": "to be optimistic",
+  "generated_first_word": "to",
+  "similarity": 0.6789637804031372,
+  "timestamp": "2026-06-30 18:40:03"
+}

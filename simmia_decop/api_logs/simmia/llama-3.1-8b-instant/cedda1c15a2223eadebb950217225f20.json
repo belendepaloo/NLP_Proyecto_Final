@@ -1,0 +1,19 @@
+{
+  "query_id": "cedda1c15a2223eadebb950217225f20",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0175",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 10,
+  "prefix": "When was this? Ethan asked. I dont know, I said,",
+  "target_word": "but",
+  "sample_idx": 1,
+  "generated_text": "looking through the",
+  "generated_first_word": "looking",
+  "similarity": 0.58946692943573,
+  "timestamp": "2026-07-01 02:44:38"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "4d852d60e4de6f0eedf6c1bcfb2fe735",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0070",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 16,
+  "prefix": "In this way he got his name, Bor, whereas his name before had been Balan; for",
+  "target_word": "Bor",
+  "sample_idx": 2,
+  "generated_text": "it",
+  "generated_first_word": "it",
+  "similarity": 0.6701567769050598,
+  "timestamp": "2026-07-03 15:45:39"
+}

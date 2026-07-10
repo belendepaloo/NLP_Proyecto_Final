@@ -1,0 +1,19 @@
+{
+  "query_id": "7191bcc8ec3f861e40ea0d9379505d4b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0000",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 19,
+  "prefix": "Since he was arrested he had not been fed. He sat as still as he could on the narrow",
+  "target_word": "bench,",
+  "sample_idx": 1,
+  "generated_text": "bench",
+  "generated_first_word": "bench",
+  "similarity": 0.9746567010879517,
+  "timestamp": "2026-07-01 13:40:50"
+}

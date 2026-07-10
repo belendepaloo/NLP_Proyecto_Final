@@ -1,0 +1,19 @@
+{
+  "query_id": "aea8b2b79ddbe9463f55e5cb626ffcec",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0040",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "At that point, the mother",
+  "target_word": "came",
+  "sample_idx": 0,
+  "generated_text": "was extremely",
+  "generated_first_word": "was",
+  "similarity": 0.7343315482139587,
+  "timestamp": "2026-06-30 08:16:05"
+}

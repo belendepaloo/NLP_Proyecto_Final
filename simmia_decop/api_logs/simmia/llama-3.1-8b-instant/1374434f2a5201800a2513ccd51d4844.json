@@ -1,0 +1,19 @@
+{
+  "query_id": "1374434f2a5201800a2513ccd51d4844",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0164",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "With a sweep of his hand he cleared a vacant space in",
+  "target_word": "front",
+  "sample_idx": 2,
+  "generated_text": "the dusty room",
+  "generated_first_word": "the",
+  "similarity": 0.6988525390625,
+  "timestamp": "2026-07-01 01:49:40"
+}

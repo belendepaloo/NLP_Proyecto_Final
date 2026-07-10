@@ -1,0 +1,19 @@
+{
+  "query_id": "5b35a22c3c4d1ba6f04ac96ee7917ab5",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0104",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 13,
+  "prefix": "Her first wild thought was that the gallery must have been walled up.",
+  "target_word": "Then",
+  "sample_idx": 0,
+  "generated_text": "but as she",
+  "generated_first_word": "but",
+  "similarity": 0.8453332185745239,
+  "timestamp": "2026-06-30 13:49:39"
+}

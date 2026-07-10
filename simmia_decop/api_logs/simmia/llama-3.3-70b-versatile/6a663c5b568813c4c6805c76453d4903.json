@@ -1,0 +1,19 @@
+{
+  "query_id": "6a663c5b568813c4c6805c76453d4903",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0080",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Harry",
+  "target_word": "heard",
+  "sample_idx": 0,
+  "generated_text": "Potter",
+  "generated_first_word": "Potter",
+  "similarity": 0.6043999195098877,
+  "timestamp": "2026-07-03 16:29:58"
+}

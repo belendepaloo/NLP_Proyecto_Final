@@ -1,0 +1,19 @@
+{
+  "query_id": "56ed17504722e2c5de1fa23f2bbdb0ac",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0095",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Youve really got to",
+  "target_word": "stop",
+  "sample_idx": 0,
+  "generated_text": "try",
+  "generated_first_word": "try",
+  "similarity": 0.7085695266723633,
+  "timestamp": "2026-07-04 19:05:36"
+}

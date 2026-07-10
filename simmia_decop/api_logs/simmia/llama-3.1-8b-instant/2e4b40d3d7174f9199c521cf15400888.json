@@ -1,0 +1,19 @@
+{
+  "query_id": "2e4b40d3d7174f9199c521cf15400888",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0138",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Here you",
+  "target_word": "shall",
+  "sample_idx": 0,
+  "generated_text": "are",
+  "generated_first_word": "are",
+  "similarity": 0.6752976179122925,
+  "timestamp": "2026-06-30 17:04:36"
+}

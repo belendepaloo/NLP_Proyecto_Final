@@ -1,0 +1,19 @@
+{
+  "query_id": "d0cf27a2302b5529e62f4e478180226b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0066",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "No one answered. The noon-bell",
+  "target_word": "rang.",
+  "sample_idx": 2,
+  "generated_text": "rang loudly",
+  "generated_first_word": "rang",
+  "similarity": 0.9704908728599548,
+  "timestamp": "2026-06-30 10:34:00"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "bfdc5b38a8beb8571e3c198e591aea83",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0068",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "In",
+  "target_word": "Oldspeak",
+  "sample_idx": 1,
+  "generated_text": "the",
+  "generated_first_word": "the",
+  "similarity": 0.6577558517456055,
+  "timestamp": "2026-06-30 10:43:13"
+}

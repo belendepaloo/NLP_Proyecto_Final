@@ -1,0 +1,19 @@
+{
+  "query_id": "410212df8fb5d3f847fc43a34e5c95d1",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0169",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "There they fought to",
+  "target_word": "the",
+  "sample_idx": 2,
+  "generated_text": "regain their",
+  "generated_first_word": "regain",
+  "similarity": 0.613874077796936,
+  "timestamp": "2026-07-01 02:12:16"
+}

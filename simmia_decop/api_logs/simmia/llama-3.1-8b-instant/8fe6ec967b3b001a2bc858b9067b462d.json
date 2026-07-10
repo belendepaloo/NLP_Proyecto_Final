@@ -1,0 +1,19 @@
+{
+  "query_id": "8fe6ec967b3b001a2bc858b9067b462d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0158",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "He walked slowly through the market.",
+  "target_word": "The",
+  "sample_idx": 1,
+  "generated_text": "his eyes scanning",
+  "generated_first_word": "his",
+  "similarity": 0.780502200126648,
+  "timestamp": "2026-07-01 01:18:16"
+}

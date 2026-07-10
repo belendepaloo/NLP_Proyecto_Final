@@ -1,0 +1,19 @@
+{
+  "query_id": "a556849a23722f7734025aab18fe2f1a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0141",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 9,
+  "prefix": "I am of average height, but as gangly as",
+  "target_word": "someone",
+  "sample_idx": 1,
+  "generated_text": "a teenager.",
+  "generated_first_word": "a",
+  "similarity": 0.7878233194351196,
+  "timestamp": "2026-06-30 17:21:09"
+}

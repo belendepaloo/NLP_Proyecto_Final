@@ -1,0 +1,19 @@
+{
+  "query_id": "39ab40dca7be2546a731aa54ac78470c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0071",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "I did once",
+  "target_word": "before.",
+  "sample_idx": 0,
+  "generated_text": "see a ghost",
+  "generated_first_word": "see",
+  "similarity": 0.627180278301239,
+  "timestamp": "2026-06-30 10:59:14"
+}

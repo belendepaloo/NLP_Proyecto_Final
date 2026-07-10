@@ -1,0 +1,19 @@
+{
+  "query_id": "c2340976e3a81385268df99caf482589",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0091",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 10,
+  "prefix": "It was only an hour, Maud said. It turned out",
+  "target_word": "okay,",
+  "sample_idx": 1,
+  "generated_text": "to",
+  "generated_first_word": "to",
+  "similarity": 0.6507593989372253,
+  "timestamp": "2026-07-04 18:49:21"
+}

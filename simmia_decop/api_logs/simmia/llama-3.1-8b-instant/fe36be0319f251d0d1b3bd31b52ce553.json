@@ -1,0 +1,19 @@
+{
+  "query_id": "fe36be0319f251d0d1b3bd31b52ce553",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0103",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Fell in love. Met his",
+  "target_word": "vet.",
+  "sample_idx": 0,
+  "generated_text": "family.",
+  "generated_first_word": "family.",
+  "similarity": 0.6709157228469849,
+  "timestamp": "2026-06-30 13:42:32"
+}

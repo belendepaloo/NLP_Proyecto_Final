@@ -1,0 +1,19 @@
+{
+  "query_id": "bd8bd42b185d2d900bfe80f12ed22e09",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0010",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "Hareton would not open his fingers, so I laid it",
+  "target_word": "on",
+  "sample_idx": 1,
+  "generated_text": "on his palm",
+  "generated_first_word": "on",
+  "similarity": 1.0000001192092896,
+  "timestamp": "2026-06-30 05:40:14"
+}

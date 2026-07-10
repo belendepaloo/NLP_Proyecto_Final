@@ -1,0 +1,19 @@
+{
+  "query_id": "12e031083e9117cd8169dd1802f39945",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0070",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "In this way he got his name, Bor, whereas his name before had been Balan; for Bor signified",
+  "target_word": "'Vassal'",
+  "sample_idx": 0,
+  "generated_text": "\"Destroyer",
+  "generated_first_word": "Destroyer",
+  "similarity": 0.6199877858161926,
+  "timestamp": "2026-06-30 10:58:08"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "6490d39923e0727e762ab5fb88e81b2e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0088",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 13,
+  "prefix": "There was nothing to know. Nothing that could be proved. The trees opened",
+  "target_word": "up",
+  "sample_idx": 0,
+  "generated_text": "their branches to",
+  "generated_first_word": "their",
+  "similarity": 0.6552877426147461,
+  "timestamp": "2026-06-30 12:29:34"
+}

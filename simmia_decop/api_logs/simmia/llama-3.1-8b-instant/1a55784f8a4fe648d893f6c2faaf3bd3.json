@@ -1,0 +1,19 @@
+{
+  "query_id": "1a55784f8a4fe648d893f6c2faaf3bd3",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0193",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "No ones forcing",
+  "target_word": "you",
+  "sample_idx": 2,
+  "generated_text": "you to do",
+  "generated_first_word": "you",
+  "similarity": 1.0,
+  "timestamp": "2026-07-01 04:13:59"
+}

@@ -1,0 +1,25 @@
+{
+  "query_id": "427f2ed28769584fdb7502c6ed1c8574",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0120",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "title": "Lord of the Rings The Fellowship of the Ring",
+  "author": "J R R Tolkien",
+  "length": "medium",
+  "permutation_index": 0,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Lord of the Rings The Fellowship of the Ring\" book by J R R Tolkien?\nOptions:\nA. At first Frodo felt as if he had indeed been turned into stone by the incantation. Then a wild thought of escape came to him. He wondered if he put on the Ring, whether the Barrow-wight would miss him, and he might find some way out. He thought of himself running free over the grass, grieving for Merry, and Sam, and Pippin, but free and alive himself. Gandalf would admit that there had been nothing else he could do.\nB. At first Frodo sensed as if he was really turned to stone by the magic words. Then a thought of getting away wildly entered his mind. He wondered if he used the Ring, would the Barrow-wight not see him, and he might find a way to escape. He imagined running unrestrained over the grass, grieving for Merry, Sam, and Pippin, but himself free and living. Gandalf would admit Frodo had no other choice.  \nC. Initially Frodo felt like he had truly been transformed into stone by the spell. Then an idea of escaping wildly came to him. He considered if he put on the Ring, would the Barrow-wight not notice him, and he may find some way out. He pictured himself sprinting freely over the grass, mourning for Merry, Sam, and Pippin, but himself free and alive. Gandalf would acknowledge that there had been nothing else Frodo could have done.\nD. Initially Frodo felt like he was truly petrified by the spell. Then an idea of fleeing frantically came to him. He considered if he wore the Ring, would the Barrow-wight not detect him, and he may find some method to get out. He envisioned himself sprinting unconstrained over the grass, sorrowing for Merry, Sam, and Pippin, but himself liberated and alive. Gandalf would recognize there was nothing else Frodo could have done.\nAnswer:",
+  "options": {
+    "A": "At first Frodo felt as if he had indeed been turned into stone by the incantation. Then a wild thought of escape came to him. He wondered if he put on the Ring, whether the Barrow-wight would miss him, and he might find some way out. He thought of himself running free over the grass, grieving for Merry, and Sam, and Pippin, but free and alive himself. Gandalf would admit that there had been nothing else he could do.",
+    "B": "At first Frodo sensed as if he was really turned to stone by the magic words. Then a thought of getting away wildly entered his mind. He wondered if he used the Ring, would the Barrow-wight not see him, and he might find a way to escape. He imagined running unrestrained over the grass, grieving for Merry, Sam, and Pippin, but himself free and living. Gandalf would admit Frodo had no other choice.  ",
+    "C": "Initially Frodo felt like he had truly been transformed into stone by the spell. Then an idea of escaping wildly came to him. He considered if he put on the Ring, would the Barrow-wight not notice him, and he may find some way out. He pictured himself sprinting freely over the grass, mourning for Merry, Sam, and Pippin, but himself free and alive. Gandalf would acknowledge that there had been nothing else Frodo could have done.",
+    "D": "Initially Frodo felt like he was truly petrified by the spell. Then an idea of fleeing frantically came to him. He considered if he wore the Ring, would the Barrow-wight not detect him, and he may find some method to get out. He envisioned himself sprinting unconstrained over the grass, sorrowing for Merry, Sam, and Pippin, but himself liberated and alive. Gandalf would recognize there was nothing else Frodo could have done."
+  },
+  "gold_letter": "A",
+  "predicted_letter": "C",
+  "is_correct": 0,
+  "timestamp": "2026-07-08 04:50:22"
+}

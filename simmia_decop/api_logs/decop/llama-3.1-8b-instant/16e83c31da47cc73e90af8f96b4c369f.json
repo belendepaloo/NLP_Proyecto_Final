@@ -1,0 +1,25 @@
+{
+  "query_id": "16e83c31da47cc73e90af8f96b4c369f",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0007",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "title": "The Wildest Sun A Novel",
+  "author": "Asha Lemmie",
+  "length": "medium",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Wildest Sun A Novel\" book by Asha Lemmie?\nOptions:\nA. My mother was accurate about many matters—heaven knows I long to tell her that—but she too was the designer of her own misery. I'm not scared of Paris because of her. I comprehend that I don't have to be similar to her. I have started something here in Havana and I know deep down that it's not over. I think that maybe Paris was supposed to be the home of my childhood, but not the home to whatever I am becoming. We are not all destined to grow where we were born, you told me that yourself. So now I am blooming under a different sun.  \nB. My mother was right about many things—God knows I wish I could tell her that—but she was also the architect of her own misery. I’m not afraid of Paris because of her. I know that I don’t have to be like her. I have started something here in Havana and I know in my bones that it isn’t finished. I think that perhaps Paris was intended to be the home of my childhood, but not the home to whatever it is that I am becoming. We are not all destined to grow in our native soil, you told me that yourself. So now I am blooming under a different sun. \nC. My mother was right regarding numerous things—God understands I desire to inform her of that—but she also built her own unhappiness. I do not fear Paris due to her. I know that I need not emulate her. I have initiated something here in Havana and I know intrinsically that it is not concluded. I believe that perhaps Paris was meant to be the house of my childhood, however not the house to whatever I am developing into. We are not all predestined to mature in our native soil, you told me that yourself. Thus now I am flourishing under an alternative sunlight.\nD. My mother was correct regarding numerous things—the Lord knows I desire to inform her of that—but she also constructed her own unhappiness. I do not fear Paris due to her. I understand that I need not imitate her. I have commenced something here in Havana and I know intrinsically that it is incomplete. I believe that perhaps Paris was meant to be the residence of my childhood, however not the residence to whatever I am transforming into. We are not all fated to mature in our native land, you informed me of that yourself. Thus now I am flourishing under an alternate sunlight.\nAnswer:",
+  "options": {
+    "A": "My mother was accurate about many matters—heaven knows I long to tell her that—but she too was the designer of her own misery. I'm not scared of Paris because of her. I comprehend that I don't have to be similar to her. I have started something here in Havana and I know deep down that it's not over. I think that maybe Paris was supposed to be the home of my childhood, but not the home to whatever I am becoming. We are not all destined to grow where we were born, you told me that yourself. So now I am blooming under a different sun.  ",
+    "B": "My mother was right about many things—God knows I wish I could tell her that—but she was also the architect of her own misery. I’m not afraid of Paris because of her. I know that I don’t have to be like her. I have started something here in Havana and I know in my bones that it isn’t finished. I think that perhaps Paris was intended to be the home of my childhood, but not the home to whatever it is that I am becoming. We are not all destined to grow in our native soil, you told me that yourself. So now I am blooming under a different sun. ",
+    "C": "My mother was right regarding numerous things—God understands I desire to inform her of that—but she also built her own unhappiness. I do not fear Paris due to her. I know that I need not emulate her. I have initiated something here in Havana and I know intrinsically that it is not concluded. I believe that perhaps Paris was meant to be the house of my childhood, however not the house to whatever I am developing into. We are not all predestined to mature in our native soil, you told me that yourself. Thus now I am flourishing under an alternative sunlight.",
+    "D": "My mother was correct regarding numerous things—the Lord knows I desire to inform her of that—but she also constructed her own unhappiness. I do not fear Paris due to her. I understand that I need not imitate her. I have commenced something here in Havana and I know intrinsically that it is incomplete. I believe that perhaps Paris was meant to be the residence of my childhood, however not the residence to whatever I am transforming into. We are not all fated to mature in our native land, you informed me of that yourself. Thus now I am flourishing under an alternate sunlight."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "B",
+  "is_correct": 1,
+  "timestamp": "2026-07-08 03:43:03"
+}

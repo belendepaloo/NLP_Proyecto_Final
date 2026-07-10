@@ -1,0 +1,19 @@
+{
+  "query_id": "5a913247c2810a4ad4deb431ab304ca0",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0054",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "All that confidence he had at the conin",
+  "target_word": "a",
+  "sample_idx": 1,
+  "generated_text": "vention",
+  "generated_first_word": "vention",
+  "similarity": 0.6415989398956299,
+  "timestamp": "2026-07-03 14:18:55"
+}

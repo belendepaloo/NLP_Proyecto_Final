@@ -1,0 +1,19 @@
+{
+  "query_id": "56550751edfcbef34e8cc5fbb2d19c83",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0188",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "At all",
+  "target_word": "events,",
+  "sample_idx": 0,
+  "generated_text": "times",
+  "generated_first_word": "times",
+  "similarity": 0.7057952880859375,
+  "timestamp": "2026-07-08 01:55:58"
+}

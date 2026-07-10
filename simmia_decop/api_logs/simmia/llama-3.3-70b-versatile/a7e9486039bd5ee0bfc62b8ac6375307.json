@@ -1,0 +1,19 @@
+{
+  "query_id": "a7e9486039bd5ee0bfc62b8ac6375307",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0057",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "There were times when it went on and on until the cruel,",
+  "target_word": "wicked,",
+  "sample_idx": 2,
+  "generated_text": "harsh",
+  "generated_first_word": "harsh",
+  "similarity": 0.604398250579834,
+  "timestamp": "2026-07-03 14:37:34"
+}

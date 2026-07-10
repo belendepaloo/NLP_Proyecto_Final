@@ -1,0 +1,19 @@
+{
+  "query_id": "401019ff23d3595686ae8ef1d519b754",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0026",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Go to the next",
+  "target_word": "room,",
+  "sample_idx": 1,
+  "generated_text": "step",
+  "generated_first_word": "step",
+  "similarity": 0.6411876678466797,
+  "timestamp": "2026-07-01 15:38:57"
+}

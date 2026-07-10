@@ -1,0 +1,19 @@
+{
+  "query_id": "b226d99e2fea04f077f4089540ca2ecf",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0069",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "But when one of",
+  "target_word": "Marions",
+  "sample_idx": 2,
+  "generated_text": "the",
+  "generated_first_word": "the",
+  "similarity": 0.6705967783927917,
+  "timestamp": "2026-07-03 15:35:58"
+}

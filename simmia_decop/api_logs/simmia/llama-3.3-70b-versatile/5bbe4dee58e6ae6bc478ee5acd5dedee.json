@@ -1,0 +1,19 @@
+{
+  "query_id": "5bbe4dee58e6ae6bc478ee5acd5dedee",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0097",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 14,
+  "prefix": "“Er — Professor Lockhart?” Hermione stammered. “I wanted to — to get this book",
+  "target_word": "out",
+  "sample_idx": 1,
+  "generated_text": "on",
+  "generated_first_word": "on",
+  "similarity": 0.6850400567054749,
+  "timestamp": "2026-07-04 19:16:54"
+}

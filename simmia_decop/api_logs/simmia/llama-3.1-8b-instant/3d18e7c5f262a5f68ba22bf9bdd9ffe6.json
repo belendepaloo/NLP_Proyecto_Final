@@ -1,0 +1,19 @@
+{
+  "query_id": "3d18e7c5f262a5f68ba22bf9bdd9ffe6",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0052",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "When",
+  "target_word": "he’d",
+  "sample_idx": 2,
+  "generated_text": "I",
+  "generated_first_word": "I",
+  "similarity": 0.6282112002372742,
+  "timestamp": "2026-06-30 09:18:39"
+}

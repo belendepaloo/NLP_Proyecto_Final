@@ -1,0 +1,19 @@
+{
+  "query_id": "6d18f7161d00dec39cc4880c19b94575",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0072",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "As Tatterlain ambled towards the",
+  "target_word": "sentry,",
+  "sample_idx": 1,
+  "generated_text": "mysterious,",
+  "generated_first_word": "mysterious,",
+  "similarity": 0.6240914463996887,
+  "timestamp": "2026-06-30 11:04:30"
+}

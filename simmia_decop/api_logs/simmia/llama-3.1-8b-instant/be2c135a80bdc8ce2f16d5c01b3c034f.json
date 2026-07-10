@@ -1,0 +1,19 @@
+{
+  "query_id": "be2c135a80bdc8ce2f16d5c01b3c034f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0036",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "The idea of playing nursemaid didnt",
+  "target_word": "appeal,",
+  "sample_idx": 1,
+  "generated_text": "appeal",
+  "generated_first_word": "appeal",
+  "similarity": 0.9664381146430969,
+  "timestamp": "2026-06-30 07:55:03"
+}

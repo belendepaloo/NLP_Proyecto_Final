@@ -1,0 +1,19 @@
+{
+  "query_id": "264a27728fc12ca433442b501b00e24e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0142",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "I always worry more when",
+  "target_word": "Im",
+  "sample_idx": 1,
+  "generated_text": "I'm",
+  "generated_first_word": "I'm",
+  "similarity": 0.8675561547279358,
+  "timestamp": "2026-07-05 22:16:28"
+}

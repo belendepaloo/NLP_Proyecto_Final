@@ -1,0 +1,19 @@
+{
+  "query_id": "0a7d78adf53d40f74aa0d0413b7678aa",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0198",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "We dance all night,",
+  "target_word": "stopping",
+  "sample_idx": 0,
+  "generated_text": "underneath the",
+  "generated_first_word": "underneath",
+  "similarity": 0.5879918336868286,
+  "timestamp": "2026-07-01 04:39:33"
+}

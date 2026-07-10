@@ -1,0 +1,19 @@
+{
+  "query_id": "7d9b15495c57146927d5f5c4826ab13f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0119",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "\"Safer from loving me?\" Her profile",
+  "target_word": "did",
+  "sample_idx": 1,
+  "generated_text": "was turned away",
+  "generated_first_word": "was",
+  "similarity": 0.7546329498291016,
+  "timestamp": "2026-07-05 16:09:14"
+}

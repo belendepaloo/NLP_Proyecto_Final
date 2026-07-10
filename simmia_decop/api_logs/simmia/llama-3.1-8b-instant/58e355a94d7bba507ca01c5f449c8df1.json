@@ -1,0 +1,19 @@
+{
+  "query_id": "58e355a94d7bba507ca01c5f449c8df1",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0085",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "It was rather weak in",
+  "target_word": "me",
+  "sample_idx": 2,
+  "generated_text": "its overall performance",
+  "generated_first_word": "its",
+  "similarity": 0.6800446510314941,
+  "timestamp": "2026-06-30 12:11:07"
+}

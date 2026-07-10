@@ -1,0 +1,19 @@
+{
+  "query_id": "b5f5318d921755bf44ceb05e938417e6",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0116",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "I'll read it, for I keep it yet. Any relic of the dead is precious if they were",
+  "target_word": "valued",
+  "sample_idx": 2,
+  "generated_text": "dear to",
+  "generated_first_word": "dear",
+  "similarity": 0.6271236538887024,
+  "timestamp": "2026-06-30 14:50:23"
+}

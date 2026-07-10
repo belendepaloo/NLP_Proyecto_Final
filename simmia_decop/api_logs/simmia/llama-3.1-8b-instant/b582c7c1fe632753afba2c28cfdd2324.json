@@ -1,0 +1,19 @@
+{
+  "query_id": "b582c7c1fe632753afba2c28cfdd2324",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0028",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Theres no",
+  "target_word": "need",
+  "sample_idx": 2,
+  "generated_text": "such",
+  "generated_first_word": "such",
+  "similarity": 0.6530858278274536,
+  "timestamp": "2026-06-30 07:12:30"
+}

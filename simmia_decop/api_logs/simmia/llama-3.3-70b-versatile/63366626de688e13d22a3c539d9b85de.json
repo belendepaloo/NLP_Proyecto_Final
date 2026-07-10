@@ -1,0 +1,19 @@
+{
+  "query_id": "63366626de688e13d22a3c539d9b85de",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0107",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "Still it became in a manner necessary. Twice or thrice",
+  "target_word": "Hindley's",
+  "sample_idx": 0,
+  "generated_text": "he had",
+  "generated_first_word": "he",
+  "similarity": 0.5698704123497009,
+  "timestamp": "2026-07-04 20:02:00"
+}

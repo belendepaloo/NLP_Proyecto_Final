@@ -1,0 +1,25 @@
+{
+  "query_id": "39e6435dd1ec6cc48b7e759e45092a6d",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0036",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "title": "The Spectacular",
+  "author": "Fiona Davis",
+  "length": "medium",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Spectacular\" book by Fiona Davis?\nOptions:\nA. The prospect of being a homemaker wasn't appealing, plus theater requires complete devotion to your small group. After a show opens, you shift to a new group. I imagine Peters work as an investigator is similar - totally absorbed in each case, ignoring everything else. We were doomed to fail, I see that now. However - and there's always an \"however\" lurking in my thoughts - I would have enjoyed being with him on the adventure.\nB. The notion of being a caretaker was unappealing, and moreover, working in theater requires total commitment to the small group you're with. After a show opens, you proceed to the next group. I imagine Peters work as an investigator is similar - completely engrossed in each case, neglecting everything else. We couldn't have made it, I see that now. Though - and there's always a lingering \"though\" in my mind - I would've enjoyed accompanying him on the adventure. \nC. The idea of playing nursemaid didnt appeal, and on top of that, working in the theater is an all-consuming task, where every ounce of your being is devoted to connecting with the close circle of people around you. Then, once that show is up and running, you move on to the next circle. My guess is Peters work is like that as well. Throwing yourself into an investigation at the cost of everything else. We couldnt have made it work, I understand that now. Althoughand theres always an although lurking in the recesses of my mindI would have loved to share the journey with him.\nD. I didn't like the thought of being a homemaker, and theater work means devoting your whole self to the tight circle around you. When a production launches, you move to the next circle. Peters investigative work probably demands the same total focus, to the exclusion of all else. We couldn't have lasted, I know that now. But some part of me - there's always a \"but\" in the back of my mind - wishes we could have shared the journey.\nAnswer:",
+  "options": {
+    "A": "The prospect of being a homemaker wasn't appealing, plus theater requires complete devotion to your small group. After a show opens, you shift to a new group. I imagine Peters work as an investigator is similar - totally absorbed in each case, ignoring everything else. We were doomed to fail, I see that now. However - and there's always an \"however\" lurking in my thoughts - I would have enjoyed being with him on the adventure.",
+    "B": "The notion of being a caretaker was unappealing, and moreover, working in theater requires total commitment to the small group you're with. After a show opens, you proceed to the next group. I imagine Peters work as an investigator is similar - completely engrossed in each case, neglecting everything else. We couldn't have made it, I see that now. Though - and there's always a lingering \"though\" in my mind - I would've enjoyed accompanying him on the adventure. ",
+    "C": "The idea of playing nursemaid didnt appeal, and on top of that, working in the theater is an all-consuming task, where every ounce of your being is devoted to connecting with the close circle of people around you. Then, once that show is up and running, you move on to the next circle. My guess is Peters work is like that as well. Throwing yourself into an investigation at the cost of everything else. We couldnt have made it work, I understand that now. Althoughand theres always an although lurking in the recesses of my mindI would have loved to share the journey with him.",
+    "D": "I didn't like the thought of being a homemaker, and theater work means devoting your whole self to the tight circle around you. When a production launches, you move to the next circle. Peters investigative work probably demands the same total focus, to the exclusion of all else. We couldn't have lasted, I know that now. But some part of me - there's always a \"but\" in the back of my mind - wishes we could have shared the journey."
+  },
+  "gold_letter": "C",
+  "predicted_letter": "D",
+  "is_correct": 0,
+  "timestamp": "2026-07-08 04:00:27"
+}

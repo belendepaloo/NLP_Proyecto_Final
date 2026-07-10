@@ -1,0 +1,19 @@
+{
+  "query_id": "1343627ca5925c565d27e07b87ce8466",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0190",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 1,
+  "prefix": "If",
+  "target_word": "Bastian",
+  "sample_idx": 1,
+  "generated_text": "you",
+  "generated_first_word": "you",
+  "similarity": 0.6088917255401611,
+  "timestamp": "2026-07-01 03:58:53"
+}

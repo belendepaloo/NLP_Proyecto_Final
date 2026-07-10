@@ -1,0 +1,19 @@
+{
+  "query_id": "75511420f3aab6cca818eb8b4d7d359f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0036",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "The idea of playing",
+  "target_word": "nursemaid",
+  "sample_idx": 0,
+  "generated_text": "a musical instrument",
+  "generated_first_word": "a",
+  "similarity": 0.6226238012313843,
+  "timestamp": "2026-06-30 07:54:24"
+}

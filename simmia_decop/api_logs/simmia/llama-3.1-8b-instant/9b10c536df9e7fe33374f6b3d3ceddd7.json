@@ -1,0 +1,19 @@
+{
+  "query_id": "9b10c536df9e7fe33374f6b3d3ceddd7",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0106",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "Who knows…maybe it’s better to be like the crystal merchant:",
+  "target_word": "never",
+  "sample_idx": 2,
+  "generated_text": "a man who",
+  "generated_first_word": "a",
+  "similarity": 0.5820603370666504,
+  "timestamp": "2026-06-30 13:58:12"
+}

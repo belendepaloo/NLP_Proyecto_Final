@@ -1,0 +1,19 @@
+{
+  "query_id": "101d6ba6514e302e9a6707a991ffb7fa",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0013",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "‘You",
+  "target_word": "ignorant",
+  "sample_idx": 2,
+  "generated_text": "are’",
+  "generated_first_word": "are’",
+  "similarity": 0.6580604910850525,
+  "timestamp": "2026-06-30 05:54:12"
+}

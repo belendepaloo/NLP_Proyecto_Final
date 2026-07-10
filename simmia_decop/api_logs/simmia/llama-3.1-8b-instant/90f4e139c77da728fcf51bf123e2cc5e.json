@@ -1,0 +1,19 @@
+{
+  "query_id": "90f4e139c77da728fcf51bf123e2cc5e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0074",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Not exactly, she says. I,",
+  "target_word": "um,",
+  "sample_idx": 2,
+  "generated_text": "don't understand",
+  "generated_first_word": "don't",
+  "similarity": 0.6419147253036499,
+  "timestamp": "2026-06-30 11:14:47"
+}

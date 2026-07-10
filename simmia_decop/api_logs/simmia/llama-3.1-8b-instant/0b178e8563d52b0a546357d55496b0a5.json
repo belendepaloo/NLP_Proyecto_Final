@@ -1,0 +1,19 @@
+{
+  "query_id": "0b178e8563d52b0a546357d55496b0a5",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0039",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "She settled herself",
+  "target_word": "and",
+  "sample_idx": 2,
+  "generated_text": "into the worn",
+  "generated_first_word": "into",
+  "similarity": 0.6567401885986328,
+  "timestamp": "2026-06-30 08:10:36"
+}

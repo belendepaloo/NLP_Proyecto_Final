@@ -1,0 +1,19 @@
+{
+  "query_id": "032d54539e13d06ce9de94a74edfd12e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0156",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "I glance out the window. I see",
+  "target_word": "some",
+  "sample_idx": 2,
+  "generated_text": "my neighbor walking",
+  "generated_first_word": "my",
+  "similarity": 0.7518618702888489,
+  "timestamp": "2026-06-30 18:33:57"
+}

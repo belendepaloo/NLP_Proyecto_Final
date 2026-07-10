@@ -1,0 +1,19 @@
+{
+  "query_id": "76fde269e6cf9cef6369f25e365e0339",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0180",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "The horses galloped into the middle of the dance floor",
+  "target_word": "and",
+  "sample_idx": 2,
+  "generated_text": "causing",
+  "generated_first_word": "causing",
+  "similarity": 0.6369889378547668,
+  "timestamp": "2026-07-08 01:21:39"
+}

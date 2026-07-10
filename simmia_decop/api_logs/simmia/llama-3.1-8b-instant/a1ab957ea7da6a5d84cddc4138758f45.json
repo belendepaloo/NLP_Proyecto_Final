@@ -1,0 +1,19 @@
+{
+  "query_id": "a1ab957ea7da6a5d84cddc4138758f45",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0171",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Now what",
+  "target_word": "sort",
+  "sample_idx": 0,
+  "generated_text": "happened",
+  "generated_first_word": "happened",
+  "similarity": 0.6361508369445801,
+  "timestamp": "2026-07-01 02:22:18"
+}

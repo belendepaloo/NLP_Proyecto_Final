@@ -1,0 +1,19 @@
+{
+  "query_id": "f3dbb24874a403d9c5ef5233b57751b1",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0151",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Then I plop it onto",
+  "target_word": "the",
+  "sample_idx": 1,
+  "generated_text": "the kitchen counter",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 18:08:09"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "7152d02dbbc5ff96f75eb1da34e69411",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0006",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "I've seen none like Edgar.\" \"You may see some. And he won't always be hand- some and young,",
+  "target_word": "and",
+  "sample_idx": 1,
+  "generated_text": "but his heart",
+  "generated_first_word": "but",
+  "similarity": 0.8295847773551941,
+  "timestamp": "2026-06-30 05:21:19"
+}

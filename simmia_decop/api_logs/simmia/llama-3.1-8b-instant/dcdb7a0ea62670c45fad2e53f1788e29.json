@@ -1,0 +1,19 @@
+{
+  "query_id": "dcdb7a0ea62670c45fad2e53f1788e29",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0068",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 13,
+  "prefix": "In Oldspeak it is called, quite frankly, 'reality control'. In Newspeak it is",
+  "target_word": "called",
+  "sample_idx": 1,
+  "generated_text": "called 'double",
+  "generated_first_word": "called",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 10:46:28"
+}

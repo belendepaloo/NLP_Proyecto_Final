@@ -1,0 +1,19 @@
+{
+  "query_id": "59249427e9cbe15d92dc3a9103e88013",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0056",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 11,
+  "prefix": "That guy is so weird, she said when, out of earshot,",
+  "target_word": "they",
+  "sample_idx": 2,
+  "generated_text": "they",
+  "generated_first_word": "they",
+  "similarity": 1.0,
+  "timestamp": "2026-07-03 14:30:25"
+}

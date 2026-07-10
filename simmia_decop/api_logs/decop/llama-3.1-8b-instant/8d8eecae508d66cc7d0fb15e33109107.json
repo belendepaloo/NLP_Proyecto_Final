@@ -1,0 +1,25 @@
+{
+  "query_id": "8d8eecae508d66cc7d0fb15e33109107",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0133",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "title": "Unfortunately Yours",
+  "author": "Tessa Bailey",
+  "length": "medium",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Unfortunately Yours\" book by Tessa Bailey?\nOptions:\nA. Publicly they gave the impression of collaborating for an important end. But privately his hobby was deriding her for her affluent origins while he'd had a hard life. Nevertheless she knew little of his journey. It could be prudent to discover, should it arise. She might need to grasp the essentials concerning her make-believe groom-to-be.\nB. They might be working together for a greater cause in public. In private, his favorite pastime was scorning her for being born into privilege while hed done life the hard way. Although . . . she didnt know a lot about the path hed taken. Maybe she should find out. Just in case anyone asked. She should probably know at least the basics about her fake fianc. Psst, came a hiss from the darkness. Natalie lurched for the knife block, pausing only when Hallie stepped into the dim kitchen wearing a Stanford shirt that went well past her knees. Jesus, Natalie breathed, slapping a hand to the middle of her chest, positive her heart was about to explode straight out of her rib cage.\nC. Outwardly they seemed to be working together for a noble cause. However, behind closed doors his favorite thing was mocking her for being born into wealth unlike him who had struggled. Still she was ignorant about his background. It might be wise to learn, for if questioned. She should be familiar with the basics regarding her sham betrothed.\nD. They appeared to be cooperating in public for a greater purpose. But in private, he enjoyed ridiculing her for her privileged upbringing while he had lived a tough life. Though she didn't know much about his past. Perhaps she should find out, just in case it came up. She ought to know at least the fundamentals about her pretend fiancé. \nAnswer:",
+  "options": {
+    "A": "Publicly they gave the impression of collaborating for an important end. But privately his hobby was deriding her for her affluent origins while he'd had a hard life. Nevertheless she knew little of his journey. It could be prudent to discover, should it arise. She might need to grasp the essentials concerning her make-believe groom-to-be.",
+    "B": "They might be working together for a greater cause in public. In private, his favorite pastime was scorning her for being born into privilege while hed done life the hard way. Although . . . she didnt know a lot about the path hed taken. Maybe she should find out. Just in case anyone asked. She should probably know at least the basics about her fake fianc. Psst, came a hiss from the darkness. Natalie lurched for the knife block, pausing only when Hallie stepped into the dim kitchen wearing a Stanford shirt that went well past her knees. Jesus, Natalie breathed, slapping a hand to the middle of her chest, positive her heart was about to explode straight out of her rib cage.",
+    "C": "Outwardly they seemed to be working together for a noble cause. However, behind closed doors his favorite thing was mocking her for being born into wealth unlike him who had struggled. Still she was ignorant about his background. It might be wise to learn, for if questioned. She should be familiar with the basics regarding her sham betrothed.",
+    "D": "They appeared to be cooperating in public for a greater purpose. But in private, he enjoyed ridiculing her for her privileged upbringing while he had lived a tough life. Though she didn't know much about his past. Perhaps she should find out, just in case it came up. She ought to know at least the fundamentals about her pretend fiancé. "
+  },
+  "gold_letter": "B",
+  "predicted_letter": "D",
+  "is_correct": 0,
+  "timestamp": "2026-07-08 04:58:31"
+}

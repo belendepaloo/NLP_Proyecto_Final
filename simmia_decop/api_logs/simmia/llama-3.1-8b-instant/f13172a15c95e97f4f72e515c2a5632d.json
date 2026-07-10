@@ -1,0 +1,19 @@
+{
+  "query_id": "f13172a15c95e97f4f72e515c2a5632d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0194",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "‘He’s a crook!’ the Trunchbull shouted. ‘A week ago he",
+  "target_word": "sold",
+  "sample_idx": 1,
+  "generated_text": "stole five",
+  "generated_first_word": "stole",
+  "similarity": 0.6173138618469238,
+  "timestamp": "2026-07-01 04:20:51"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "10dae1daa546fa376622401e7be5be6d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0123",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Natalie followed, smiling and thanking",
+  "target_word": "people",
+  "sample_idx": 2,
+  "generated_text": "the stranger,",
+  "generated_first_word": "the",
+  "similarity": 0.7416059374809265,
+  "timestamp": "2026-06-30 15:22:08"
+}

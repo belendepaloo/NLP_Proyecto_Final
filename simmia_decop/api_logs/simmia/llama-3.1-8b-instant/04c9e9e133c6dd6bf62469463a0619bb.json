@@ -1,0 +1,19 @@
+{
+  "query_id": "04c9e9e133c6dd6bf62469463a0619bb",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0179",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 17,
+  "prefix": "A shadowed shot of Liv, looking upward, her surroundings indistinct, seemed as if she were emerging from",
+  "target_word": "a",
+  "sample_idx": 0,
+  "generated_text": "a dream.",
+  "generated_first_word": "a",
+  "similarity": 1.0,
+  "timestamp": "2026-07-01 03:06:31"
+}

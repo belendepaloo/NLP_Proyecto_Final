@@ -1,0 +1,19 @@
+{
+  "query_id": "336c0eec81fe714cab4b554c83700580",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0058",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 17,
+  "prefix": "I fiddle with the borrowed rosary in my hands. Maman wanted me to have a good education,",
+  "target_word": "and",
+  "sample_idx": 0,
+  "generated_text": "but Papa thought",
+  "generated_first_word": "but",
+  "similarity": 0.8295847773551941,
+  "timestamp": "2026-06-30 09:55:09"
+}

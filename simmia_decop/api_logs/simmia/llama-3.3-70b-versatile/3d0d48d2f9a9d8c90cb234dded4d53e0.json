@@ -1,0 +1,19 @@
+{
+  "query_id": "3d0d48d2f9a9d8c90cb234dded4d53e0",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0189",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "‘A girl doesn’t get a man by being",
+  "target_word": "brainy,’",
+  "sample_idx": 0,
+  "generated_text": "passive",
+  "generated_first_word": "passive",
+  "similarity": 0.5926263928413391,
+  "timestamp": "2026-07-08 02:01:56"
+}

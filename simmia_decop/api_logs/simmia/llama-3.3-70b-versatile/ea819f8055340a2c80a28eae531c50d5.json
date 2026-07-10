@@ -1,0 +1,19 @@
+{
+  "query_id": "ea819f8055340a2c80a28eae531c50d5",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0115",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 17,
+  "prefix": "If I were someone who partook in such things, it would make his job easier, but Ive",
+  "target_word": "always",
+  "sample_idx": 1,
+  "generated_text": "never",
+  "generated_first_word": "never",
+  "similarity": 0.803366482257843,
+  "timestamp": "2026-07-05 15:53:51"
+}

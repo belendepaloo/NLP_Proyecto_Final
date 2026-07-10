@@ -1,0 +1,19 @@
+{
+  "query_id": "6c665d7e0e0590991053623a86f92f12",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0153",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "“So, Harry,” said Lockhart, while",
+  "target_word": "Hermione",
+  "sample_idx": 1,
+  "generated_text": "adjusting his",
+  "generated_first_word": "adjusting",
+  "similarity": 0.6238524913787842,
+  "timestamp": "2026-06-30 18:18:26"
+}

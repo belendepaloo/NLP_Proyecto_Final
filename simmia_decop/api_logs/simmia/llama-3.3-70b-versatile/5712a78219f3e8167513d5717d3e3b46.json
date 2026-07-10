@@ -1,0 +1,19 @@
+{
+  "query_id": "5712a78219f3e8167513d5717d3e3b46",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0026",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Go to the next room, and",
+  "target_word": "tell",
+  "sample_idx": 2,
+  "generated_text": "look",
+  "generated_first_word": "look",
+  "similarity": 0.6988819241523743,
+  "timestamp": "2026-07-01 15:39:31"
+}

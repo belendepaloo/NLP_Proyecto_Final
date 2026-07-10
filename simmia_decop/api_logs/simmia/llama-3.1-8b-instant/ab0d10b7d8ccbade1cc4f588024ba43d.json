@@ -1,0 +1,19 @@
+{
+  "query_id": "ab0d10b7d8ccbade1cc4f588024ba43d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0137",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 12,
+  "prefix": "Glorian drew herself up. Mother retires after eventide. I will need to",
+  "target_word": "be",
+  "sample_idx": 0,
+  "generated_text": "take her place",
+  "generated_first_word": "take",
+  "similarity": 0.6846138834953308,
+  "timestamp": "2026-06-30 17:02:23"
+}

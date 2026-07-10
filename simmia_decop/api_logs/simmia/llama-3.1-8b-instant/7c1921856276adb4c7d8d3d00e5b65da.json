@@ -1,0 +1,19 @@
+{
+  "query_id": "7c1921856276adb4c7d8d3d00e5b65da",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0033",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "There was a muddy",
+  "target_word": "pond",
+  "sample_idx": 1,
+  "generated_text": "path leading",
+  "generated_first_word": "path",
+  "similarity": 0.629643440246582,
+  "timestamp": "2026-06-30 07:38:19"
+}

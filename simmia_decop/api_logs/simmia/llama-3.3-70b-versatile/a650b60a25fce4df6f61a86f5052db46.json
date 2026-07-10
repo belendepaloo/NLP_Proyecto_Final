@@ -1,0 +1,19 @@
+{
+  "query_id": "a650b60a25fce4df6f61a86f5052db46",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0010",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "Hareton would not open his fingers, so",
+  "target_word": "I",
+  "sample_idx": 0,
+  "generated_text": "I",
+  "generated_first_word": "I",
+  "similarity": 1.0,
+  "timestamp": "2026-07-01 14:24:33"
+}

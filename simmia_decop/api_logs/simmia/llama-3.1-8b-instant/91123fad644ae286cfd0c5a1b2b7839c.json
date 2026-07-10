@@ -1,0 +1,19 @@
+{
+  "query_id": "91123fad644ae286cfd0c5a1b2b7839c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0154",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "The man still said nothing, and the boy sensed that he was",
+  "target_word": "going",
+  "sample_idx": 2,
+  "generated_text": "trying.",
+  "generated_first_word": "trying.",
+  "similarity": 0.6703689098358154,
+  "timestamp": "2026-06-30 18:25:26"
+}

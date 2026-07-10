@@ -1,0 +1,19 @@
+{
+  "query_id": "5852cbcd775c1a6a1174a68ac2de21ad",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0102",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Maud smiled as she",
+  "target_word": "passed",
+  "sample_idx": 1,
+  "generated_text": "walked",
+  "generated_first_word": "walked",
+  "similarity": 0.675865113735199,
+  "timestamp": "2026-07-04 19:37:01"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "ec8b19fb998b5ded6c33b4f5c29b53b3",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0081",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "The next moment the two of them were",
+  "target_word": "running",
+  "sample_idx": 0,
+  "generated_text": "standing",
+  "generated_first_word": "standing",
+  "similarity": 0.6513468027114868,
+  "timestamp": "2026-07-04 18:02:29"
+}

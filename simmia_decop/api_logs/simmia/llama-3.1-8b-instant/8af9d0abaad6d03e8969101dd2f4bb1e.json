@@ -1,0 +1,19 @@
+{
+  "query_id": "8af9d0abaad6d03e8969101dd2f4bb1e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0085",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 8,
+  "prefix": "It was rather weak in me I confess,",
+  "target_word": "but",
+  "sample_idx": 1,
+  "generated_text": "but the thought",
+  "generated_first_word": "but",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 12:11:50"
+}

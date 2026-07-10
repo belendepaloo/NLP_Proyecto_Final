@@ -1,0 +1,19 @@
+{
+  "query_id": "bb105ff6d4255f3f34fe790264af9324",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0194",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "‘He’s a crook!’ the Trunchbull",
+  "target_word": "shouted.",
+  "sample_idx": 2,
+  "generated_text": "screamed",
+  "generated_first_word": "screamed",
+  "similarity": 0.8272755742073059,
+  "timestamp": "2026-07-01 04:19:35"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "019e9e57f33b159f0451349638012106",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0018",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 13,
+  "prefix": "Mere self-interest, then, if no better motive can be enlisted, should, especially with",
+  "target_word": "high-tempered",
+  "sample_idx": 2,
+  "generated_text": "regard to",
+  "generated_first_word": "regard",
+  "similarity": 0.6701967716217041,
+  "timestamp": "2026-06-30 06:23:40"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "b25eabfc2878b1ebf1666637479c04f9",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0197",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "He was getting, he judged, three meals",
+  "target_word": "in",
+  "sample_idx": 2,
+  "generated_text": "a",
+  "generated_first_word": "a",
+  "similarity": 0.7091572880744934,
+  "timestamp": "2026-07-08 02:38:43"
+}

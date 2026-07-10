@@ -1,0 +1,19 @@
+{
+  "query_id": "ea155e2bc9e8aa76842c7400f8dec4fb",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0085",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 16,
+  "prefix": "It was rather weak in me I confess, but his manner on this occasion nettled me.",
+  "target_word": "Not",
+  "sample_idx": 2,
+  "generated_text": "I felt a",
+  "generated_first_word": "I",
+  "similarity": 0.7420623302459717,
+  "timestamp": "2026-06-30 12:14:06"
+}

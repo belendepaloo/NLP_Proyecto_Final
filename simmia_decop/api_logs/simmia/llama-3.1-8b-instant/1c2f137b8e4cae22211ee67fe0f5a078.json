@@ -1,0 +1,19 @@
+{
+  "query_id": "1c2f137b8e4cae22211ee67fe0f5a078",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0110",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "The Countess rounded",
+  "target_word": "on",
+  "sample_idx": 1,
+  "generated_text": "the corner",
+  "generated_first_word": "the",
+  "similarity": 0.6654490232467651,
+  "timestamp": "2026-06-30 14:16:33"
+}

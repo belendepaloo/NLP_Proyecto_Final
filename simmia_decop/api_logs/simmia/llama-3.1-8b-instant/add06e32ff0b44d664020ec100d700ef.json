@@ -1,0 +1,19 @@
+{
+  "query_id": "add06e32ff0b44d664020ec100d700ef",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0166",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Wulf grabbed",
+  "target_word": "whatever",
+  "sample_idx": 2,
+  "generated_text": "the nearest torch",
+  "generated_first_word": "the",
+  "similarity": 0.6414529085159302,
+  "timestamp": "2026-07-01 01:56:36"
+}

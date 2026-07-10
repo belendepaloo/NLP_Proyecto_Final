@@ -1,0 +1,19 @@
+{
+  "query_id": "47b715a881758755291d31fb5e65dd0e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0198",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 9,
+  "prefix": "We dance all night, stopping only for me to",
+  "target_word": "down",
+  "sample_idx": 2,
+  "generated_text": "grab",
+  "generated_first_word": "grab",
+  "similarity": 0.6820822954177856,
+  "timestamp": "2026-07-08 02:43:43"
+}

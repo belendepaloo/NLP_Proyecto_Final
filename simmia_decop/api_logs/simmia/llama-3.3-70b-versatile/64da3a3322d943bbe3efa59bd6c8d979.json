@@ -1,0 +1,19 @@
+{
+  "query_id": "64da3a3322d943bbe3efa59bd6c8d979",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0111",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "The vaults were",
+  "target_word": "reached",
+  "sample_idx": 2,
+  "generated_text": "filled",
+  "generated_first_word": "filled",
+  "similarity": 0.7265881896018982,
+  "timestamp": "2026-07-04 20:18:25"
+}

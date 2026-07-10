@@ -1,0 +1,19 @@
+{
+  "query_id": "b91d131b05d2d2a258b402e1a749ef59",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0120",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "At first Frodo felt as if he had indeed",
+  "target_word": "been",
+  "sample_idx": 0,
+  "generated_text": "entered",
+  "generated_first_word": "entered",
+  "similarity": 0.6754068732261658,
+  "timestamp": "2026-07-05 16:14:16"
+}

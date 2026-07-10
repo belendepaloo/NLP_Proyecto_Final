@@ -1,0 +1,19 @@
+{
+  "query_id": "ffdb2376cce5a55a39d30c4c59ec433a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0148",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 19,
+  "prefix": "They did not speak again. She did not actually try to shake him off, but walked at just such",
+  "target_word": "a",
+  "sample_idx": 0,
+  "generated_text": "a pace",
+  "generated_first_word": "a",
+  "similarity": 1.0,
+  "timestamp": "2026-07-05 22:46:23"
+}

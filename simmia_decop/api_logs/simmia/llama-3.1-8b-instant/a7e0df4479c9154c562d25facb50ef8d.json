@@ -1,0 +1,19 @@
+{
+  "query_id": "a7e0df4479c9154c562d25facb50ef8d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0151",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 18,
+  "prefix": "Then I plop it onto the wheel and flatten it with the heels of my hands. The moment",
+  "target_word": "I",
+  "sample_idx": 1,
+  "generated_text": "the dough begins",
+  "generated_first_word": "the",
+  "similarity": 0.7449607253074646,
+  "timestamp": "2026-06-30 18:12:16"
+}

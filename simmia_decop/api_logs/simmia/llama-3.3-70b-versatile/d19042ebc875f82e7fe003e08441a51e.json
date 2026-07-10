@@ -1,0 +1,19 @@
+{
+  "query_id": "d19042ebc875f82e7fe003e08441a51e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0070",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "In this",
+  "target_word": "way",
+  "sample_idx": 2,
+  "generated_text": "case",
+  "generated_first_word": "case",
+  "similarity": 0.6780127286911011,
+  "timestamp": "2026-07-03 15:42:07"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "867d1a68452c3abe8f4425187c51faa7",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0002",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "Master Bates followed, with a thoughtful countenance. The noise of",
+  "target_word": "footsteps",
+  "sample_idx": 1,
+  "generated_text": "shattering glass",
+  "generated_first_word": "shattering",
+  "similarity": 0.6269790530204773,
+  "timestamp": "2026-06-30 04:58:07"
+}

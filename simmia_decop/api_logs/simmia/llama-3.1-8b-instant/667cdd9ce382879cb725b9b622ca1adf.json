@@ -1,0 +1,19 @@
+{
+  "query_id": "667cdd9ce382879cb725b9b622ca1adf",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0185",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 19,
+  "prefix": "By the light of the low-burning fires, they shared tales of their deeds, raising their cups to those who",
+  "target_word": "had",
+  "sample_idx": 1,
+  "generated_text": "had fallen in",
+  "generated_first_word": "had",
+  "similarity": 1.0,
+  "timestamp": "2026-07-01 03:37:10"
+}

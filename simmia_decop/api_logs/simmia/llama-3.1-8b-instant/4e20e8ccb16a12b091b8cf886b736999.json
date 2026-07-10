@@ -1,0 +1,19 @@
+{
+  "query_id": "4e20e8ccb16a12b091b8cf886b736999",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0090",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "Archer looked up and met his visitor's",
+  "target_word": "anxious",
+  "sample_idx": 0,
+  "generated_text": "piercing",
+  "generated_first_word": "piercing",
+  "similarity": 0.6050796508789062,
+  "timestamp": "2026-06-30 12:37:19"
+}

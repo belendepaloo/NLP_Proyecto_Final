@@ -1,0 +1,19 @@
+{
+  "query_id": "c66a50b79438b633992c4e177f592590",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0169",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 16,
+  "prefix": "There they fought to the death; but Thingol gave no heed, for he knelt by Beren,",
+  "target_word": "seeing",
+  "sample_idx": 2,
+  "generated_text": "his son,",
+  "generated_first_word": "his",
+  "similarity": 0.6797794699668884,
+  "timestamp": "2026-07-01 02:15:33"
+}

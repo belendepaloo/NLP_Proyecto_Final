@@ -1,0 +1,19 @@
+{
+  "query_id": "3906d77f04b65aa4dd30ae2ff7bd8081",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0064",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "As Noah's red",
+  "target_word": "nose",
+  "sample_idx": 0,
+  "generated_text": "apple floated",
+  "generated_first_word": "apple",
+  "similarity": 0.6571917533874512,
+  "timestamp": "2026-06-30 10:22:43"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "65c262349bb8180d1a8b255e78d52d2b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0160",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "My room is on the top",
+  "target_word": "floor",
+  "sample_idx": 2,
+  "generated_text": "floor",
+  "generated_first_word": "floor",
+  "similarity": 1.0,
+  "timestamp": "2026-07-06 17:01:49"
+}

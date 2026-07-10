@@ -1,0 +1,19 @@
+{
+  "query_id": "242be937106e451dcda9858d4e44299e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0128",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 9,
+  "prefix": "Their fits relieved each other like guards. When Nippers",
+  "target_word": "was",
+  "sample_idx": 2,
+  "generated_text": "arrived",
+  "generated_first_word": "arrived",
+  "similarity": 0.6424474716186523,
+  "timestamp": "2026-07-05 16:51:41"
+}

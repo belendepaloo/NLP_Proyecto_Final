@@ -1,0 +1,19 @@
+{
+  "query_id": "f75b8c9871b2219ba6bb4a51341377b6",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0085",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "It was",
+  "target_word": "rather",
+  "sample_idx": 2,
+  "generated_text": "a",
+  "generated_first_word": "a",
+  "similarity": 0.6611945629119873,
+  "timestamp": "2026-07-04 18:19:25"
+}

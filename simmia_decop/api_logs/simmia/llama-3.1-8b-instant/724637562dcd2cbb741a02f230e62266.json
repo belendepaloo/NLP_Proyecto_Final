@@ -1,0 +1,19 @@
+{
+  "query_id": "724637562dcd2cbb741a02f230e62266",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0106",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Who knows…maybe",
+  "target_word": "it’s",
+  "sample_idx": 2,
+  "generated_text": "I'll win",
+  "generated_first_word": "I'll",
+  "similarity": 0.66977459192276,
+  "timestamp": "2026-06-30 13:56:11"
+}

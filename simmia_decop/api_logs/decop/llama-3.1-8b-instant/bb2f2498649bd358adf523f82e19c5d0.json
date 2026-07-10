@@ -1,0 +1,25 @@
+{
+  "query_id": "bb2f2498649bd358adf523f82e19c5d0",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0199",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "title": "A Day of Fallen Night",
+  "author": "Samantha Shannon",
+  "length": "medium",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"A Day of Fallen Night\" book by Samantha Shannon?\nOptions:\nA. What makes you think I would have you, Lady Sabran? Her name was a dark thrum in his throat. How do you know I dont already have a consort in my own kingdom? Because I saw how you looked at me in the throne room. (He had not said no.) And how often. King Bardholt offered no reply. Sabran stood tall before him, for she was not her mother. I think, she said, that you are a man familiar with having what you want. This time, you need not seize it with blood and force. I offer it all to you.\nB. You believe I desire you, Lady Sabran? She spoke his name lowly. What makes you presume I lack a partner in my domain? You noticed my gaze in the hall. (He did not deny it.) And how frequently. King Bardholt was silent. Sabran stood proudly, as she was unlike her mother. I believe, she stated, you are accustomed to obtaining your wishes. Now, you need not take it by violence. I freely give myself to you.\nC. Do you think I want you, Lady Sabran? She uttered his name softly. Why assume I have no lover in my kingdom? You saw how I looked in the throne room. (He did not refute it.) And how often. King Bardholt gave no reply. Sabran stood tall, for she was not her mother. I reckon, she said, you are a man used to having your desires met. This time, no need for bloodshed to seize it. I offer you everything.  \nD. You believe I long for you, Lady Sabran? His name a hushed tone from her lips. What makes you think I lack a partner in my realm? You noticed my eyes in the hall. (He did not deny it.) And how frequently. King Bardholt kept silent. Sabran stood proudly, as she was not her mother. I gather, she stated, you are accustomed to having your wants fulfilled. Now, no need for violence to take it. I give you all of me.\nAnswer:",
+  "options": {
+    "A": "What makes you think I would have you, Lady Sabran? Her name was a dark thrum in his throat. How do you know I dont already have a consort in my own kingdom? Because I saw how you looked at me in the throne room. (He had not said no.) And how often. King Bardholt offered no reply. Sabran stood tall before him, for she was not her mother. I think, she said, that you are a man familiar with having what you want. This time, you need not seize it with blood and force. I offer it all to you.",
+    "B": "You believe I desire you, Lady Sabran? She spoke his name lowly. What makes you presume I lack a partner in my domain? You noticed my gaze in the hall. (He did not deny it.) And how frequently. King Bardholt was silent. Sabran stood proudly, as she was unlike her mother. I believe, she stated, you are accustomed to obtaining your wishes. Now, you need not take it by violence. I freely give myself to you.",
+    "C": "Do you think I want you, Lady Sabran? She uttered his name softly. Why assume I have no lover in my kingdom? You saw how I looked in the throne room. (He did not refute it.) And how often. King Bardholt gave no reply. Sabran stood tall, for she was not her mother. I reckon, she said, you are a man used to having your desires met. This time, no need for bloodshed to seize it. I offer you everything.  ",
+    "D": "You believe I long for you, Lady Sabran? His name a hushed tone from her lips. What makes you think I lack a partner in my realm? You noticed my eyes in the hall. (He did not deny it.) And how frequently. King Bardholt kept silent. Sabran stood proudly, as she was not her mother. I gather, she stated, you are accustomed to having your wants fulfilled. Now, no need for violence to take it. I give you all of me."
+  },
+  "gold_letter": "A",
+  "predicted_letter": "A",
+  "is_correct": 1,
+  "timestamp": "2026-07-08 05:36:42"
+}

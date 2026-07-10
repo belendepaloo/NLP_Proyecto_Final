@@ -1,0 +1,19 @@
+{
+  "query_id": "4bd912432f460f3b1f79f96620c3107f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0060",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 9,
+  "prefix": "Soon only Yennika remained in the circle, her eyes",
+  "target_word": "downcast.",
+  "sample_idx": 2,
+  "generated_text": "locked intensely on",
+  "generated_first_word": "locked",
+  "similarity": 0.5821821689605713,
+  "timestamp": "2026-06-30 10:03:36"
+}

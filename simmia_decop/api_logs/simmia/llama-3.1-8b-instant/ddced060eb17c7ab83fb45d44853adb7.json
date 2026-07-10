@@ -1,0 +1,19 @@
+{
+  "query_id": "ddced060eb17c7ab83fb45d44853adb7",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0132",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Suppose that we",
+  "target_word": "quicken",
+  "sample_idx": 1,
+  "generated_text": "are considering",
+  "generated_first_word": "are",
+  "similarity": 0.6273394227027893,
+  "timestamp": "2026-06-30 16:05:56"
+}

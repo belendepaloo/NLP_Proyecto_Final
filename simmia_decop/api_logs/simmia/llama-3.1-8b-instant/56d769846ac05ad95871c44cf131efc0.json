@@ -1,0 +1,19 @@
+{
+  "query_id": "56d769846ac05ad95871c44cf131efc0",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0075",
+  "book_id": "Business_or_Pleasure_-_Rachel_Lynn_Solomon",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Theres almost a swagger",
+  "target_word": "to",
+  "sample_idx": 0,
+  "generated_text": "to the way",
+  "generated_first_word": "to",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 11:19:33"
+}

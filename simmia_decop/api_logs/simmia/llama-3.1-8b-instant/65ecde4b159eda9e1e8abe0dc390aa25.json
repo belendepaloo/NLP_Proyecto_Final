@@ -1,0 +1,19 @@
+{
+  "query_id": "65ecde4b159eda9e1e8abe0dc390aa25",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0182",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "He was",
+  "target_word": "buttering",
+  "sample_idx": 1,
+  "generated_text": "a man.",
+  "generated_first_word": "a",
+  "similarity": 0.6326760053634644,
+  "timestamp": "2026-07-01 03:18:02"
+}

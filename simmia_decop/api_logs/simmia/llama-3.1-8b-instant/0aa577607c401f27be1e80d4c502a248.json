@@ -1,0 +1,19 @@
+{
+  "query_id": "0aa577607c401f27be1e80d4c502a248",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0101",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "Oh, don't tell you are going to send me away, sir, pray!' exclaimed Oliver, alarmed at the serious",
+  "target_word": "tone",
+  "sample_idx": 0,
+  "generated_text": "expression on the",
+  "generated_first_word": "expression",
+  "similarity": 0.5940342545509338,
+  "timestamp": "2026-06-30 13:35:56"
+}

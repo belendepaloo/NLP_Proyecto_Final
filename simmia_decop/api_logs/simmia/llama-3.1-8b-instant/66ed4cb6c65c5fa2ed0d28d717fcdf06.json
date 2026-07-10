@@ -1,0 +1,19 @@
+{
+  "query_id": "66ed4cb6c65c5fa2ed0d28d717fcdf06",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0184",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "As for you?",
+  "target_word": "Marrying",
+  "sample_idx": 2,
+  "generated_text": "I'm doing",
+  "generated_first_word": "I'm",
+  "similarity": 0.5969520807266235,
+  "timestamp": "2026-07-01 03:28:22"
+}

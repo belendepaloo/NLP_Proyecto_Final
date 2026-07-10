@@ -1,0 +1,19 @@
+{
+  "query_id": "63b6f8cde075158b346c6b5549ec69aa",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0165",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "And high in the north",
+  "target_word": "as",
+  "sample_idx": 1,
+  "generated_text": "lived the",
+  "generated_first_word": "lived",
+  "similarity": 0.6355446577072144,
+  "timestamp": "2026-07-01 01:52:28"
+}

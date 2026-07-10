@@ -1,0 +1,19 @@
+{
+  "query_id": "36ae2e6e27c100614595ec4ce7e4fa68",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0173",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 1,
+  "prefix": "But",
+  "target_word": "no",
+  "sample_idx": 2,
+  "generated_text": "it's",
+  "generated_first_word": "it's",
+  "similarity": 0.6755703687667847,
+  "timestamp": "2026-07-01 02:32:11"
+}

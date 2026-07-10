@@ -1,0 +1,19 @@
+{
+  "query_id": "2b67abca595780cd3f64d14dcdd399cc",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0129",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "Giles.' 'I hope you don't mean to",
+  "target_word": "say,",
+  "sample_idx": 1,
+  "generated_text": "actually start a",
+  "generated_first_word": "actually",
+  "similarity": 0.6356490850448608,
+  "timestamp": "2026-06-30 15:52:29"
+}

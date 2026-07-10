@@ -1,0 +1,19 @@
+{
+  "query_id": "214ad2ef3ec83c5a1cfe9db6dc4c28a6",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0129",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Giles.' 'I hope you don't mean",
+  "target_word": "to",
+  "sample_idx": 1,
+  "generated_text": "to upset her",
+  "generated_first_word": "to",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 15:52:12"
+}

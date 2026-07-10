@@ -1,0 +1,19 @@
+{
+  "query_id": "ffaf3a02947ef566ec88bae9252949aa",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0196",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "The boy continued to listen",
+  "target_word": "to",
+  "sample_idx": 0,
+  "generated_text": "to the old",
+  "generated_first_word": "to",
+  "similarity": 1.0,
+  "timestamp": "2026-07-01 04:29:38"
+}

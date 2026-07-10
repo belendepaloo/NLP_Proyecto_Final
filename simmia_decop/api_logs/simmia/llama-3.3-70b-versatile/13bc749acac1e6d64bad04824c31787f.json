@@ -1,0 +1,19 @@
+{
+  "query_id": "13bc749acac1e6d64bad04824c31787f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0014",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "And Mom will",
+  "target_word": "def",
+  "sample_idx": 0,
+  "generated_text": "always",
+  "generated_first_word": "always",
+  "similarity": 0.6325666904449463,
+  "timestamp": "2026-07-01 14:42:30"
+}

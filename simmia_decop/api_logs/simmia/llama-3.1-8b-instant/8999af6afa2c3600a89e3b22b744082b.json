@@ -1,0 +1,19 @@
+{
+  "query_id": "8999af6afa2c3600a89e3b22b744082b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0034",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 15,
+  "prefix": "Well, hes a lot more selfless than I am. No. Hallie shook her head. Hes",
+  "target_word": "just",
+  "sample_idx": 2,
+  "generated_text": "actually",
+  "generated_first_word": "actually",
+  "similarity": 0.7067918181419373,
+  "timestamp": "2026-06-30 07:46:46"
+}

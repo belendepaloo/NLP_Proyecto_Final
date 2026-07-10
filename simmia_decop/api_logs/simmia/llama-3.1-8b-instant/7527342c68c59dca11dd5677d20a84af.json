@@ -1,0 +1,19 @@
+{
+  "query_id": "7527342c68c59dca11dd5677d20a84af",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0004",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 12,
+  "prefix": "It creaked, but if the sound woke anyone inside, they didnt protest.",
+  "target_word": "Bastian",
+  "sample_idx": 2,
+  "generated_text": "The door swung",
+  "generated_first_word": "The",
+  "similarity": 0.6187031865119934,
+  "timestamp": "2026-06-30 05:09:15"
+}

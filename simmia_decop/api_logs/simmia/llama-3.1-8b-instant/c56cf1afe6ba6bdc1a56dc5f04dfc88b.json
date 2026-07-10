@@ -1,0 +1,19 @@
+{
+  "query_id": "c56cf1afe6ba6bdc1a56dc5f04dfc88b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0125",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "One of these",
+  "target_word": "rooms",
+  "sample_idx": 0,
+  "generated_text": "days, she",
+  "generated_first_word": "days,",
+  "similarity": 0.6052672863006592,
+  "timestamp": "2026-06-30 15:31:38"
+}

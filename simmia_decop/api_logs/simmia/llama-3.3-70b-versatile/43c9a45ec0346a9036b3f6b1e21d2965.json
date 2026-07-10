@@ -1,0 +1,19 @@
+{
+  "query_id": "43c9a45ec0346a9036b3f6b1e21d2965",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0020",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 2,
+  "prefix": "Yes, I",
+  "target_word": "suppose",
+  "sample_idx": 1,
+  "generated_text": "think",
+  "generated_first_word": "think",
+  "similarity": 0.7606694102287292,
+  "timestamp": "2026-07-01 15:10:26"
+}

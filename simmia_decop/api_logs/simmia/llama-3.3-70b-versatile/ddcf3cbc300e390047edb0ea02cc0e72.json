@@ -1,0 +1,19 @@
+{
+  "query_id": "ddcf3cbc300e390047edb0ea02cc0e72",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0158",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "He walked slowly through the",
+  "target_word": "market.",
+  "sample_idx": 2,
+  "generated_text": "doorway",
+  "generated_first_word": "doorway",
+  "similarity": 0.6086827516555786,
+  "timestamp": "2026-07-06 16:52:13"
+}

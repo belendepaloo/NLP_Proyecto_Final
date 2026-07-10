@@ -1,0 +1,19 @@
+{
+  "query_id": "883417ede4222b536e794a0c56ae70e0",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0132",
+  "book_id": "1984_-_George_Orwell",
+  "label": 1,
+  "length": "medium",
+  "position": 11,
+  "prefix": "Suppose that we quicken the tempo of human life till men",
+  "target_word": "are",
+  "sample_idx": 2,
+  "generated_text": "and women lived",
+  "generated_first_word": "and",
+  "similarity": 0.6976203322410583,
+  "timestamp": "2026-07-05 17:10:13"
+}

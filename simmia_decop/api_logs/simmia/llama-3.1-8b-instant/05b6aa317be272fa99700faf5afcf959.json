@@ -1,0 +1,19 @@
+{
+  "query_id": "05b6aa317be272fa99700faf5afcf959",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0162",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Kat bunched her fists and fought",
+  "target_word": "the",
+  "sample_idx": 1,
+  "generated_text": "back against the",
+  "generated_first_word": "back",
+  "similarity": 0.6999921798706055,
+  "timestamp": "2026-07-01 01:37:39"
+}

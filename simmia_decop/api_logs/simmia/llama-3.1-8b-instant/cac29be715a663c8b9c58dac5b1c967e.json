@@ -1,0 +1,19 @@
+{
+  "query_id": "cac29be715a663c8b9c58dac5b1c967e",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0033",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 19,
+  "prefix": "There was a muddy pond at the bottom of Lavender’s garden and this was the home of a colony",
+  "target_word": "of",
+  "sample_idx": 1,
+  "generated_text": "of tiny frogs",
+  "generated_first_word": "of",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 07:42:24"
+}

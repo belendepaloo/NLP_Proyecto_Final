@@ -1,0 +1,19 @@
+{
+  "query_id": "7951b128ee44637b661cb58dba0992a1",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0033",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 15,
+  "prefix": "There was a muddy pond at the bottom of Lavender’s garden and this was the",
+  "target_word": "home",
+  "sample_idx": 0,
+  "generated_text": "reason why Lav",
+  "generated_first_word": "reason",
+  "similarity": 0.6609481573104858,
+  "timestamp": "2026-06-30 07:41:12"
+}

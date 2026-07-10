@@ -1,0 +1,19 @@
+{
+  "query_id": "21d4a566b57f764eae1f51233a88d595",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0013",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "‘You ignorant little slug!’ the Trunchbull bellowed. ‘You witless weed! You empty-headed hamster! You stupid glob of glue!’",
+  "target_word": "She",
+  "sample_idx": 0,
+  "generated_text": "'How dare",
+  "generated_first_word": "How",
+  "similarity": 0.6880241632461548,
+  "timestamp": "2026-06-30 05:58:43"
+}

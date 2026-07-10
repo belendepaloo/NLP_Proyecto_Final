@@ -1,0 +1,19 @@
+{
+  "query_id": "59a9831946dbb9a939d2b10c8a81c0bf",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0184",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "As for you? Marrying and",
+  "target_word": "employing",
+  "sample_idx": 0,
+  "generated_text": "having children.",
+  "generated_first_word": "having",
+  "similarity": 0.6408330798149109,
+  "timestamp": "2026-07-01 03:28:40"
+}

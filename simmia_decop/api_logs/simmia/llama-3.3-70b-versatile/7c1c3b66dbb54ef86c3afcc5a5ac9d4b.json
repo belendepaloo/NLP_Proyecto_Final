@@ -1,0 +1,19 @@
+{
+  "query_id": "7c1c3b66dbb54ef86c3afcc5a5ac9d4b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0024",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "Side out o' t' gate now, this minute!\" Catherine frowned",
+  "target_word": "and",
+  "sample_idx": 2,
+  "generated_text": "at",
+  "generated_first_word": "at",
+  "similarity": 0.6690179109573364,
+  "timestamp": "2026-07-01 15:31:09"
+}

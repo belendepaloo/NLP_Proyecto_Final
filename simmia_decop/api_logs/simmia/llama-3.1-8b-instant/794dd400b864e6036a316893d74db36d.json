@@ -1,0 +1,19 @@
+{
+  "query_id": "794dd400b864e6036a316893d74db36d",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0176",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 11,
+  "prefix": "Men in powerful positions were unsettled by popular heirs waiting to",
+  "target_word": "take",
+  "sample_idx": 1,
+  "generated_text": "ascend to",
+  "generated_first_word": "ascend",
+  "similarity": 0.6175404787063599,
+  "timestamp": "2026-07-01 02:50:40"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "f7f92df02ded9cb0dcd0c35974b1e4a7",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0031",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "Whenever he could,",
+  "target_word": "he",
+  "sample_idx": 0,
+  "generated_text": "he would sneak",
+  "generated_first_word": "he",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 07:28:21"
+}

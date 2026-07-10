@@ -1,0 +1,19 @@
+{
+  "query_id": "0cd2b78287b8ee641f94785ec3cdf293",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0030",
+  "book_id": "Harry_Potter_and_the_Chamber_of_Secrets_-_JK_Rowling",
+  "label": 1,
+  "length": "medium",
+  "position": 3,
+  "prefix": "He dreamed that",
+  "target_word": "he",
+  "sample_idx": 2,
+  "generated_text": "he was flying",
+  "generated_first_word": "he",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 07:23:38"
+}

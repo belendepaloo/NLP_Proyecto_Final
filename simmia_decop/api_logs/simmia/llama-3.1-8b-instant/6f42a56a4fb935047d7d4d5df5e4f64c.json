@@ -1,0 +1,19 @@
+{
+  "query_id": "6f42a56a4fb935047d7d4d5df5e4f64c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0155",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 10,
+  "prefix": "And this inner land, which was long named Eglador, was",
+  "target_word": "after",
+  "sample_idx": 2,
+  "generated_text": "home.",
+  "generated_first_word": "home.",
+  "similarity": 0.6603530049324036,
+  "timestamp": "2026-06-30 18:30:13"
+}

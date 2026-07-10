@@ -1,0 +1,19 @@
+{
+  "query_id": "175ebbf9522829e2cc25221760ceaaef",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0161",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "But his personality changed drastically. Where he once",
+  "target_word": "was",
+  "sample_idx": 1,
+  "generated_text": "was a happy",
+  "generated_first_word": "was",
+  "similarity": 1.0000001192092896,
+  "timestamp": "2026-07-01 01:33:08"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "76601105a740fe53e760612269098f05",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0155",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "And this inner land, which was long named Eglador, was after called Doriath, the guarded kingdom, Land of",
+  "target_word": "the",
+  "sample_idx": 0,
+  "generated_text": "Light, and",
+  "generated_first_word": "Light,",
+  "similarity": 0.6781167387962341,
+  "timestamp": "2026-06-30 18:31:52"
+}

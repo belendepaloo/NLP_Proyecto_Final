@@ -1,0 +1,25 @@
+{
+  "query_id": "5f7a64d342359f66dfd0b2c093e8b0fc",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0063",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "title": "The Alchemist",
+  "author": "Paulo Coelho",
+  "length": "medium",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"The Alchemist\" book by Paulo Coelho?\nOptions:\nA. The boy muttered an evasive response to sidestep her question. He believed the girl would be unable to grasp his meaning. He persisted relating accounts of his journeys, and her shining, foreign eyes expanded with alarm and wonder. As the hours passed, the boy realized he was hoping the day would never conclude, that her father would remain occupied and delay him for three days. He acknowledged he was experiencing a novel sensation: the urge to abide in one location permanently. Accompanied by the ebony-haired girl, his days would be transformed.\nB. The boy muttered an incoherent response to dodge her query. He believed the girl would be unable to comprehend. He continued recounting tales of his journeys, and her shining, Moorish eyes expanded with dread and astonishment. As time elapsed, the boy realized he was longing for the day to never conclude, for her father to remain occupied and make him wait for three days. He acknowledged he was experiencing an unfamiliar sensation: the urge to reside in one location indefinitely. With the raven-haired girl, his days would be transformed. \nC. The boy mumbled an answer that allowed him to avoid responding to her question. He was sure the girl would never understand. He went on telling stories about his travels, and her bright, Moorish eyes went wide with fear and surprise. As the time passed, the boy found himself wishing that the day would never end, that her father would stay busy and keep him waiting for three days. He recognized that he was feeling something he had never experienced before: the desire to live in one place forever. With the girl with the raven hair, his days would never be the same again. \nD. The boy mumbled a vague reply to avoid answering her question directly. He felt sure that she would not understand him. He went on telling stories of his travels, and her bright, exotic eyes grew wide with fear and amazement. As time went by, the boy found himself wishing the day would never end, and that her father would stay busy and keep him waiting for three whole days. He recognized he was feeling something new: the desire to stay in one place forever. If he was with this dark-haired girl, his days would never be the same.\nAnswer:",
+  "options": {
+    "A": "The boy muttered an evasive response to sidestep her question. He believed the girl would be unable to grasp his meaning. He persisted relating accounts of his journeys, and her shining, foreign eyes expanded with alarm and wonder. As the hours passed, the boy realized he was hoping the day would never conclude, that her father would remain occupied and delay him for three days. He acknowledged he was experiencing a novel sensation: the urge to abide in one location permanently. Accompanied by the ebony-haired girl, his days would be transformed.",
+    "B": "The boy muttered an incoherent response to dodge her query. He believed the girl would be unable to comprehend. He continued recounting tales of his journeys, and her shining, Moorish eyes expanded with dread and astonishment. As time elapsed, the boy realized he was longing for the day to never conclude, for her father to remain occupied and make him wait for three days. He acknowledged he was experiencing an unfamiliar sensation: the urge to reside in one location indefinitely. With the raven-haired girl, his days would be transformed. ",
+    "C": "The boy mumbled an answer that allowed him to avoid responding to her question. He was sure the girl would never understand. He went on telling stories about his travels, and her bright, Moorish eyes went wide with fear and surprise. As the time passed, the boy found himself wishing that the day would never end, that her father would stay busy and keep him waiting for three days. He recognized that he was feeling something he had never experienced before: the desire to live in one place forever. With the girl with the raven hair, his days would never be the same again. ",
+    "D": "The boy mumbled a vague reply to avoid answering her question directly. He felt sure that she would not understand him. He went on telling stories of his travels, and her bright, exotic eyes grew wide with fear and amazement. As time went by, the boy found himself wishing the day would never end, and that her father would stay busy and keep him waiting for three whole days. He recognized he was feeling something new: the desire to stay in one place forever. If he was with this dark-haired girl, his days would never be the same."
+  },
+  "gold_letter": "C",
+  "predicted_letter": "B",
+  "is_correct": 0,
+  "timestamp": "2026-07-08 04:16:50"
+}

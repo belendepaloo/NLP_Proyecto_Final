@@ -1,0 +1,19 @@
+{
+  "query_id": "c689ba8192a2422c873e1fc5b45611a6",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0067",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "Wyn kisses the top of my head.",
+  "target_word": "Michael",
+  "sample_idx": 2,
+  "generated_text": "Gently",
+  "generated_first_word": "Gently",
+  "similarity": 0.6020539999008179,
+  "timestamp": "2026-07-03 15:26:30"
+}

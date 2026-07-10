@@ -1,0 +1,19 @@
+{
+  "query_id": "374fa7950767befb688f2a613da1cd51",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0173",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 13,
+  "prefix": "But no ship came ever again from the West to Nmenor, and Avalln",
+  "target_word": "was",
+  "sample_idx": 0,
+  "generated_text": "was lost",
+  "generated_first_word": "was",
+  "similarity": 1.0,
+  "timestamp": "2026-07-06 18:05:30"
+}

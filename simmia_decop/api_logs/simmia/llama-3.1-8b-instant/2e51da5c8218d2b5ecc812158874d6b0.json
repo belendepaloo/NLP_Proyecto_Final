@@ -1,0 +1,19 @@
+{
+  "query_id": "2e51da5c8218d2b5ecc812158874d6b0",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0175",
+  "book_id": "What_Lies_in_the_Woods_-_Kate_Alice_Marshall",
+  "label": 0,
+  "length": "medium",
+  "position": 3,
+  "prefix": "When was this?",
+  "target_word": "Ethan",
+  "sample_idx": 0,
+  "generated_text": "exactly.",
+  "generated_first_word": "exactly.",
+  "similarity": 0.5548810362815857,
+  "timestamp": "2026-07-01 02:42:44"
+}

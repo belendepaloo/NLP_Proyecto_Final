@@ -1,0 +1,19 @@
+{
+  "query_id": "4d33d786d01ee2dd931f49f1ce31f2f5",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0133",
+  "book_id": "Unfortunately_Yours_-_Tessa_Bailey",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "They might be working",
+  "target_word": "together",
+  "sample_idx": 1,
+  "generated_text": "on a new",
+  "generated_first_word": "on",
+  "similarity": 0.6590709686279297,
+  "timestamp": "2026-06-30 16:11:20"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "d2a3390d3e2a41eb6672d3779b99a13f",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0009",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 2,
+  "prefix": "‘You look",
+  "target_word": "splendid,’",
+  "sample_idx": 0,
+  "generated_text": "beautiful’",
+  "generated_first_word": "beautiful’",
+  "similarity": 0.787503182888031,
+  "timestamp": "2026-07-01 14:18:46"
+}

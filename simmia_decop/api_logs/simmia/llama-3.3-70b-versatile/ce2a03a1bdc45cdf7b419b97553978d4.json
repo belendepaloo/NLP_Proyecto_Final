@@ -1,0 +1,19 @@
+{
+  "query_id": "ce2a03a1bdc45cdf7b419b97553978d4",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0185",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 17,
+  "prefix": "By the light of the low-burning fires, they shared tales of their deeds, raising their cups to",
+  "target_word": "those",
+  "sample_idx": 2,
+  "generated_text": "toast",
+  "generated_first_word": "toast",
+  "similarity": 0.5889328718185425,
+  "timestamp": "2026-07-08 01:46:02"
+}

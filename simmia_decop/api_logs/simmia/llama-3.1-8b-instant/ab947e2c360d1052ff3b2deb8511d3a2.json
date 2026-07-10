@@ -1,0 +1,19 @@
+{
+  "query_id": "ab947e2c360d1052ff3b2deb8511d3a2",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0158",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "He walked slowly through",
+  "target_word": "the",
+  "sample_idx": 2,
+  "generated_text": "the deserted streets",
+  "generated_first_word": "the",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 18:43:17"
+}

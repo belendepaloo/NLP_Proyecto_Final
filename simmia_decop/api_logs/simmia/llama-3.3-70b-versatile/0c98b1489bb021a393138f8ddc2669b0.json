@@ -1,0 +1,19 @@
+{
+  "query_id": "0c98b1489bb021a393138f8ddc2669b0",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0173",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 16,
+  "prefix": "But no ship came ever again from the West to Nmenor, and Avalln was veiled in",
+  "target_word": "cloud.",
+  "sample_idx": 2,
+  "generated_text": "clouds",
+  "generated_first_word": "clouds",
+  "similarity": 0.9109482169151306,
+  "timestamp": "2026-07-06 18:06:24"
+}

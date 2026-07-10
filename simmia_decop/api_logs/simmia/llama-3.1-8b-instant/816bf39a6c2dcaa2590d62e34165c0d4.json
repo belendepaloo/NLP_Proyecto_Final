@@ -1,0 +1,19 @@
+{
+  "query_id": "816bf39a6c2dcaa2590d62e34165c0d4",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0129",
+  "book_id": "Oliver_Twist_-_Charles_Dickens",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "Giles.' 'I hope you",
+  "target_word": "don't",
+  "sample_idx": 1,
+  "generated_text": "can find the",
+  "generated_first_word": "can",
+  "similarity": 0.6692152619361877,
+  "timestamp": "2026-06-30 15:51:40"
+}

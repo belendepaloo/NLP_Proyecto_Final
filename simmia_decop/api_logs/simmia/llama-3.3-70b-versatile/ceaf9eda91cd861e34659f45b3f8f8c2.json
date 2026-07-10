@@ -1,0 +1,19 @@
+{
+  "query_id": "ceaf9eda91cd861e34659f45b3f8f8c2",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0119",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "\"Safer from loving me?\" Her profile did not stir, but he saw",
+  "target_word": "a",
+  "sample_idx": 0,
+  "generated_text": "the slightest tension",
+  "generated_first_word": "the",
+  "similarity": 0.7954018712043762,
+  "timestamp": "2026-07-05 16:10:33"
+}

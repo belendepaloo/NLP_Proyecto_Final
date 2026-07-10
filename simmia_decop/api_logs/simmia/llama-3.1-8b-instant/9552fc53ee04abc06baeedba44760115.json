@@ -1,0 +1,19 @@
+{
+  "query_id": "9552fc53ee04abc06baeedba44760115",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0169",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 15,
+  "prefix": "There they fought to the death; but Thingol gave no heed, for he knelt by",
+  "target_word": "Beren,",
+  "sample_idx": 2,
+  "generated_text": "the dying form",
+  "generated_first_word": "the",
+  "similarity": 0.6002840399742126,
+  "timestamp": "2026-07-01 02:15:15"
+}

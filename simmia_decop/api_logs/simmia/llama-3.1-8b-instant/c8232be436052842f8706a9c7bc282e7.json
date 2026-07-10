@@ -1,0 +1,19 @@
+{
+  "query_id": "c8232be436052842f8706a9c7bc282e7",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0015",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 8,
+  "prefix": "I will need passage and enough money to",
+  "target_word": "book",
+  "sample_idx": 2,
+  "generated_text": "travel back home",
+  "generated_first_word": "travel",
+  "similarity": 0.6764004230499268,
+  "timestamp": "2026-06-30 06:06:48"
+}

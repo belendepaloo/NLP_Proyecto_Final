@@ -1,0 +1,19 @@
+{
+  "query_id": "3d244747a88b5381bdf1e02fcbde471a",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0092",
+  "book_id": "A_Day_of_Fallen_Night_-_Samantha_Shannon",
+  "label": 0,
+  "length": "medium",
+  "position": 17,
+  "prefix": "As the wound smoked, he watched the glow leave its eye, an ember turning cold in its",
+  "target_word": "socket.",
+  "sample_idx": 2,
+  "generated_text": "socket.",
+  "generated_first_word": "socket.",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 12:50:20"
+}

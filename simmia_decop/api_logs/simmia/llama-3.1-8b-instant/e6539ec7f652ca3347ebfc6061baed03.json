@@ -1,0 +1,19 @@
+{
+  "query_id": "e6539ec7f652ca3347ebfc6061baed03",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0109",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 5,
+  "prefix": "Part love story, part thriller,",
+  "target_word": "this",
+  "sample_idx": 0,
+  "generated_text": "it revolves around",
+  "generated_first_word": "it",
+  "similarity": 0.7954843044281006,
+  "timestamp": "2026-06-30 14:11:58"
+}

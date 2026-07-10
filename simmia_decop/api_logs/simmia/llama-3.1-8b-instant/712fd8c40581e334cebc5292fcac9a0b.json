@@ -1,0 +1,19 @@
+{
+  "query_id": "712fd8c40581e334cebc5292fcac9a0b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0043",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 18,
+  "prefix": "The Vicar soon abandoned the struggle; but the tutor, who spoke the most fluent and accomplished English, gallantly",
+  "target_word": "continued",
+  "sample_idx": 0,
+  "generated_text": "rose",
+  "generated_first_word": "rose",
+  "similarity": 0.6323950886726379,
+  "timestamp": "2026-06-30 08:35:17"
+}

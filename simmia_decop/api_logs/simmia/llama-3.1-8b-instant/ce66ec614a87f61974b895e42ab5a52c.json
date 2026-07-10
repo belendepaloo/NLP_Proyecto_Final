@@ -1,0 +1,19 @@
+{
+  "query_id": "ce66ec614a87f61974b895e42ab5a52c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0076",
+  "book_id": "The_Age_of_Innocence_-_Edith_Wharton",
+  "label": 1,
+  "length": "medium",
+  "position": 6,
+  "prefix": "Archer bent down and pressed his",
+  "target_word": "lips",
+  "sample_idx": 1,
+  "generated_text": "fingers against",
+  "generated_first_word": "fingers",
+  "similarity": 0.697310209274292,
+  "timestamp": "2026-06-30 11:25:19"
+}

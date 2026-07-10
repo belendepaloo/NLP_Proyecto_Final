@@ -1,0 +1,25 @@
+{
+  "query_id": "ac69e2ccd45047393b7067c79d5d0f91",
+  "method": "decop",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0014",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "title": "Happy Place",
+  "author": "Emily Henry",
+  "length": "medium",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "prompt": "Question: Which of the following passages is verbatim from the \"Happy Place\" book by Emily Henry?\nOptions:\nA. Mom will move past this, the way she ultimately accepted my navel ring. She never said it was fine, but she stopped staring woefully at my midsection. This will be easier for her to handle. I support you fully. I rest against the counter, comforted by her words. I appreciate it, I say to her. I regret not backing you more. I wish I had. Don't dwell on the past, she says. We had no control as kids, but now we decide our paths. You're following your heart.\nB. Mom will get over this eventually, just like she did with my belly button ring. She never said it was okay, but she stopped looking at my stomach sadly. This will go better than that did. I've got your back. I lean on the counter, soothed by what she said. Thank you, I tell her. I'm sorry I wasn't more supportive of you. I wish I had been. Don't worry about the past, she says. We were young and powerless then, but now we make our own choices. You're doing what's right for you.\nC. And Mom will def get over this, eventually. She got over my bellybutton ring. Really? I say. Well, she never acknowledged it outright, Eloise replies, but she DID stop looking at my stomach and sighing. This will go better than that. Ive got UR back. I lean back against the counter as that washes over me. Thanks, I tell her. Im sorry I didnt have yours more. I wish I had. Dont worry about it, she says. U were just a kid. Neither of us had much say over our lives but now we do. UR doing whats right for U.\nD. Mom will move past this in time, just as she did with my navel piercing. She never directly accepted it, but she stopped staring at my stomach and exhaling loudly. This will be easier for her than that was. I support you fully. I relax against the counter as her words comfort me. I appreciate it, I tell her. I regret not being more supportive of you. I wish I had been. Don't dwell on it, she says. We were just children. Neither of us controlled our lives but now we do. You're following your heart. \nAnswer:",
+  "options": {
+    "A": "Mom will move past this, the way she ultimately accepted my navel ring. She never said it was fine, but she stopped staring woefully at my midsection. This will be easier for her to handle. I support you fully. I rest against the counter, comforted by her words. I appreciate it, I say to her. I regret not backing you more. I wish I had. Don't dwell on the past, she says. We had no control as kids, but now we decide our paths. You're following your heart.",
+    "B": "Mom will get over this eventually, just like she did with my belly button ring. She never said it was okay, but she stopped looking at my stomach sadly. This will go better than that did. I've got your back. I lean on the counter, soothed by what she said. Thank you, I tell her. I'm sorry I wasn't more supportive of you. I wish I had been. Don't worry about the past, she says. We were young and powerless then, but now we make our own choices. You're doing what's right for you.",
+    "C": "And Mom will def get over this, eventually. She got over my bellybutton ring. Really? I say. Well, she never acknowledged it outright, Eloise replies, but she DID stop looking at my stomach and sighing. This will go better than that. Ive got UR back. I lean back against the counter as that washes over me. Thanks, I tell her. Im sorry I didnt have yours more. I wish I had. Dont worry about it, she says. U were just a kid. Neither of us had much say over our lives but now we do. UR doing whats right for U.",
+    "D": "Mom will move past this in time, just as she did with my navel piercing. She never directly accepted it, but she stopped staring at my stomach and exhaling loudly. This will be easier for her than that was. I support you fully. I relax against the counter as her words comfort me. I appreciate it, I tell her. I regret not being more supportive of you. I wish I had been. Don't dwell on it, she says. We were just children. Neither of us controlled our lives but now we do. You're following your heart. "
+  },
+  "gold_letter": "C",
+  "predicted_letter": "D",
+  "is_correct": 0,
+  "timestamp": "2026-07-08 03:47:13"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "280a6d77ba6e0872289c0fb6d2d63ddd",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0027",
+  "book_id": "Wuthering_Heights_-_Emily_Bronte",
+  "label": 1,
+  "length": "medium",
+  "position": 19,
+  "prefix": "I never say to him, 'Let this or that enemy alone, because it would be ungener- ous or cruel",
+  "target_word": "to",
+  "sample_idx": 2,
+  "generated_text": "to inflict pain",
+  "generated_first_word": "to",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 07:11:57"
+}

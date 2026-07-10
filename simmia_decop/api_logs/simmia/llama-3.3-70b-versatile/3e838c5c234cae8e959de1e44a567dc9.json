@@ -1,0 +1,19 @@
+{
+  "query_id": "3e838c5c234cae8e959de1e44a567dc9",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0176",
+  "book_id": "The_Foxglove_King_-_Hannah_Whitten",
+  "label": 0,
+  "length": "medium",
+  "position": 1,
+  "prefix": "Men",
+  "target_word": "in",
+  "sample_idx": 1,
+  "generated_text": "are",
+  "generated_first_word": "are",
+  "similarity": 0.6952806711196899,
+  "timestamp": "2026-07-08 01:01:23"
+}

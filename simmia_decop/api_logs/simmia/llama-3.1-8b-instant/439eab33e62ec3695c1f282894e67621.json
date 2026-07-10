@@ -1,0 +1,19 @@
+{
+  "query_id": "439eab33e62ec3695c1f282894e67621",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0073",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 5,
+  "prefix": "‘Would it? Would any of",
+  "target_word": "you",
+  "sample_idx": 0,
+  "generated_text": "them work?'",
+  "generated_first_word": "them",
+  "similarity": 0.733344554901123,
+  "timestamp": "2026-06-30 11:09:26"
+}

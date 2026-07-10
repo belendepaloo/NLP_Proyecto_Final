@@ -1,0 +1,19 @@
+{
+  "query_id": "7cd22b9725148deff0e9b6179c3e58ed",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0091",
+  "book_id": "Hedge_-_Jane_Delury",
+  "label": 0,
+  "length": "medium",
+  "position": 11,
+  "prefix": "It was only an hour, Maud said. It turned out okay,",
+  "target_word": "didnt",
+  "sample_idx": 1,
+  "generated_text": "considering everything",
+  "generated_first_word": "considering",
+  "similarity": 0.6302069425582886,
+  "timestamp": "2026-06-30 12:43:37"
+}

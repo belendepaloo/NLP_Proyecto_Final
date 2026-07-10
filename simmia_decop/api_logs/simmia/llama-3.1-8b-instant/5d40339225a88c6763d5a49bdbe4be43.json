@@ -1,0 +1,19 @@
+{
+  "query_id": "5d40339225a88c6763d5a49bdbe4be43",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0154",
+  "book_id": "The_Alchemist_-_Paulo_Coelho",
+  "label": 1,
+  "length": "medium",
+  "position": 14,
+  "prefix": "The man still said nothing, and the boy sensed that he was going to",
+  "target_word": "have",
+  "sample_idx": 0,
+  "generated_text": "have to wait",
+  "generated_first_word": "have",
+  "similarity": 1.0,
+  "timestamp": "2026-06-30 18:25:48"
+}

@@ -1,0 +1,19 @@
+{
+  "query_id": "43f92b22fdc4770baf9760624d831f12",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0016",
+  "book_id": "The_Silmarillion_-_J._R._R._Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 12,
+  "prefix": "There he would often wander long, and late would return. Still therefore,",
+  "target_word": "after",
+  "sample_idx": 1,
+  "generated_text": "he found peace",
+  "generated_first_word": "he",
+  "similarity": 0.7029677033424377,
+  "timestamp": "2026-06-30 06:13:05"
+}

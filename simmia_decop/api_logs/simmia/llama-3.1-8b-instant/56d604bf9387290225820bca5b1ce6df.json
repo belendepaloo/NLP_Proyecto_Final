@@ -1,0 +1,19 @@
+{
+  "query_id": "56d604bf9387290225820bca5b1ce6df",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0142",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "I always worry more when Im tired.",
+  "target_word": "I",
+  "sample_idx": 0,
+  "generated_text": "because",
+  "generated_first_word": "because",
+  "similarity": 0.6916339993476868,
+  "timestamp": "2026-06-30 17:25:44"
+}

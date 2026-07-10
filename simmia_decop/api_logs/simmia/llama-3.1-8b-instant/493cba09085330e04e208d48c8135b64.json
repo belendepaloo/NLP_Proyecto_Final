@@ -1,0 +1,19 @@
+{
+  "query_id": "493cba09085330e04e208d48c8135b64",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0073",
+  "book_id": "Lord_of_the_Rings_The_Fellowship_of_the_Ring_-_J_R_R_Tolkien",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "‘Would it? Would any of you have",
+  "target_word": "believed",
+  "sample_idx": 2,
+  "generated_text": "the courage to",
+  "generated_first_word": "the",
+  "similarity": 0.6584161520004272,
+  "timestamp": "2026-06-30 11:10:08"
+}

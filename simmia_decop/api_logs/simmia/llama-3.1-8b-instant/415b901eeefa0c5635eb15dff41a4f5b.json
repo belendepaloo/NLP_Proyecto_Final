@@ -1,0 +1,19 @@
+{
+  "query_id": "415b901eeefa0c5635eb15dff41a4f5b",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0183",
+  "book_id": "The_Spectacular_-_Fiona_Davis",
+  "label": 0,
+  "length": "medium",
+  "position": 13,
+  "prefix": "Im nineteen and not married. And certainly not getting married anytime soon, after",
+  "target_word": "her",
+  "sample_idx": 2,
+  "generated_text": "the painful divorce",
+  "generated_first_word": "the",
+  "similarity": 0.772352397441864,
+  "timestamp": "2026-07-01 03:26:13"
+}

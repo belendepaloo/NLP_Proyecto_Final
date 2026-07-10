@@ -1,0 +1,19 @@
+{
+  "query_id": "886e3be18bfb72461b6467a2828e085c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0055",
+  "book_id": "Matilda_-_Roald_Dahl",
+  "label": 1,
+  "length": "medium",
+  "position": 4,
+  "prefix": "‘The speedometer,’ Mr Wormwood",
+  "target_word": "said,",
+  "sample_idx": 1,
+  "generated_text": "‘was stuck",
+  "generated_first_word": "was",
+  "similarity": 0.688650369644165,
+  "timestamp": "2026-06-30 09:36:00"
+}

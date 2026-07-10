@@ -1,0 +1,19 @@
+{
+  "query_id": "8094752ffca880c3946c71e5e8166d93",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0151",
+  "book_id": "Happy_Place_-_Emily_Henry",
+  "label": 0,
+  "length": "medium",
+  "position": 18,
+  "prefix": "Then I plop it onto the wheel and flatten it with the heels of my hands. The moment",
+  "target_word": "I",
+  "sample_idx": 2,
+  "generated_text": "it's flattened",
+  "generated_first_word": "it's",
+  "similarity": 0.6753602027893066,
+  "timestamp": "2026-07-06 16:22:32"
+}

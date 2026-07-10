@@ -1,0 +1,19 @@
+{
+  "query_id": "c913540ae8f05fd20cd4a540e1bc5887",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "BT_0150",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 4,
+  "prefix": "I had only met",
+  "target_word": "him",
+  "sample_idx": 0,
+  "generated_text": "him",
+  "generated_first_word": "him",
+  "similarity": 1.0,
+  "timestamp": "2026-07-06 16:14:08"
+}

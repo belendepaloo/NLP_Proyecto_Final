@@ -1,0 +1,19 @@
+{
+  "query_id": "f1de654fc18f9a17de6ed1dcedcdfcd1",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0141",
+  "book_id": "The_Wildest_Sun_A_Novel_-_Asha_Lemmie",
+  "label": 0,
+  "length": "medium",
+  "position": 7,
+  "prefix": "I am of average height, but as",
+  "target_word": "gangly",
+  "sample_idx": 1,
+  "generated_text": "I've grown",
+  "generated_first_word": "I've",
+  "similarity": 0.5802344679832458,
+  "timestamp": "2026-06-30 17:20:38"
+}

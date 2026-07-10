@@ -1,0 +1,19 @@
+{
+  "query_id": "2b2ad58843e24bc29b2f5622b002b6a7",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0188",
+  "book_id": "Bartleby_the_Scrivener_A_Story_of_Wall_Street_-_Herman_Melville",
+  "label": 1,
+  "length": "medium",
+  "position": 7,
+  "prefix": "At all events, if nothing else could",
+  "target_word": "be",
+  "sample_idx": 0,
+  "generated_text": "be done.",
+  "generated_first_word": "be",
+  "similarity": 1.0,
+  "timestamp": "2026-07-01 03:49:08"
+}

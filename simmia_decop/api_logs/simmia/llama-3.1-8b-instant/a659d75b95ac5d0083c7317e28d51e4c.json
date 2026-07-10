@@ -1,0 +1,19 @@
+{
+  "query_id": "a659d75b95ac5d0083c7317e28d51e4c",
+  "query_type": "normal",
+  "method": "simmia",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "BT_0038",
+  "book_id": "The_Darkness_Before_Them_-_Matthew_Ward",
+  "label": 0,
+  "length": "medium",
+  "position": 13,
+  "prefix": "But for all of that, it was a simple joy to come and",
+  "target_word": "go",
+  "sample_idx": 0,
+  "generated_text": "visit.",
+  "generated_first_word": "visit.",
+  "similarity": 0.7216441035270691,
+  "timestamp": "2026-06-30 08:07:52"
+}
