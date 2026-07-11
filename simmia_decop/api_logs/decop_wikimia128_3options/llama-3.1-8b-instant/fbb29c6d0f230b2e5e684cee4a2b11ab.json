@@ -1,0 +1,26 @@
+{
+  "query_id": "fbb29c6d0f230b2e5e684cee4a2b11ab",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00069.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00069.txt",
+  "label": 0,
+  "membership": "non_member",
+  "text_hash": "81162a379738f073a87e112ecffdcb7c",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. The 2023 Night of Champions is the upcoming 10th Night of Champions professional wrestling pay-per-view (PPV) and livestreaming event produced by the American promotion WWE. It will be held for wrestlers from the promotion's Raw and SmackDown brand divisions. The event is scheduled to be held on Saturday, May 27, 2023, at the Jeddah Super Dome in Jeddah, Saudi Arabia. This will be the first Night of Champions held on a Saturday and the first held in Saudi Arabia, subsequently being the ninth event that WWE will hold in the country under a 10-year partnership in support of Saudi Vision 2030. The previous theme of Night of Champions was that all main roster championships were contested at the event, but it is unclear if that theme will carry\nB. The 10th professional wrestling pay-per-view (PPV) and livestreaming event known as Night of Champions is an upcoming production by the American wrestling promotion, WWE, scheduled for 2023. This particular event is designated for competitors hailing from both the Raw and SmackDown brand divisions of the promotion. The chosen date for this spectacle is Saturday, May 27, 2023, and it will take place at the Jeddah Super Dome, located in Jeddah, Saudi Arabia. This occurrence marks several firsts: it will be the inaugural Night of Champions to be held on a Saturday, as well as the first time the event has been hosted in Saudi Arabia. Consequently, this event represents the ninth occasion that WWE has organized an event within the country, operating under a decade-long partnership established to support the Saudi Vision 2030 initiative. Historically, the Night of Champions events have featured contests for every championship across the main roster; however, it remains uncertain whether this established theme will be continued for the 2023 iteration.\nC. WWE is preparing for the 2023 Night of Champions, the 10th annual professional wrestling pay-per-view and livestreaming event, to be held on Saturday, May 27, 2023, at the Jeddah Super Dome in Jeddah, Saudi Arabia. The event will be the first Night of Champions and the first to be held in Saudi Arabia, following a 10-year partnership in support of Saudi Vision 2030.\n\nAnswer:",
+  "options": {
+    "A": "The 2023 Night of Champions is the upcoming 10th Night of Champions professional wrestling pay-per-view (PPV) and livestreaming event produced by the American promotion WWE. It will be held for wrestlers from the promotion's Raw and SmackDown brand divisions. The event is scheduled to be held on Saturday, May 27, 2023, at the Jeddah Super Dome in Jeddah, Saudi Arabia. This will be the first Night of Champions held on a Saturday and the first held in Saudi Arabia, subsequently being the ninth event that WWE will hold in the country under a 10-year partnership in support of Saudi Vision 2030. The previous theme of Night of Champions was that all main roster championships were contested at the event, but it is unclear if that theme will carry",
+    "B": "The 10th professional wrestling pay-per-view (PPV) and livestreaming event known as Night of Champions is an upcoming production by the American wrestling promotion, WWE, scheduled for 2023. This particular event is designated for competitors hailing from both the Raw and SmackDown brand divisions of the promotion. The chosen date for this spectacle is Saturday, May 27, 2023, and it will take place at the Jeddah Super Dome, located in Jeddah, Saudi Arabia. This occurrence marks several firsts: it will be the inaugural Night of Champions to be held on a Saturday, as well as the first time the event has been hosted in Saudi Arabia. Consequently, this event represents the ninth occasion that WWE has organized an event within the country, operating under a decade-long partnership established to support the Saudi Vision 2030 initiative. Historically, the Night of Champions events have featured contests for every championship across the main roster; however, it remains uncertain whether this established theme will be continued for the 2023 iteration.",
+    "C": "WWE is preparing for the 2023 Night of Champions, the 10th annual professional wrestling pay-per-view and livestreaming event, to be held on Saturday, May 27, 2023, at the Jeddah Super Dome in Jeddah, Saudi Arabia. The event will be the first Night of Champions and the first to be held in Saudi Arabia, following a 10-year partnership in support of Saudi Vision 2030."
+  },
+  "gold_letter": "A",
+  "predicted_letter": "A",
+  "is_correct": 1,
+  "timestamp": "2026-07-10 21:41:49"
+}

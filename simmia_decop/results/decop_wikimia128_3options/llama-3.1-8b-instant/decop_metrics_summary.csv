@@ -1,0 +1,2 @@
+method,model,backend,dataset,split,n_options,n_permutations,n_samples,n_members,n_non_members,mean_absolute_error,mean_error_members,mean_error_non_members,auc,tpr_at_5_fpr
+decop_wikimia128_3options,llama-3.1-8b-instant,groq,WikiMIA,WikiMIA_length128,3,6,200,100,100,0.485,0.55,0.42,0.5486500000000001,0.02

@@ -1,0 +1,26 @@
+{
+  "query_id": "095bd224fa1388ddf9e77ea662ee1f7c",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00037.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00037.txt",
+  "label": 0,
+  "membership": "non_member",
+  "text_hash": "6de65f35107f8ce575ec7d5159f6995e",
+  "permutation_index": 5,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. Marchetti's constant is the average time spent by a person commuting daily, which is approximately one hour or half an hour for a one-way trip. It was named after Cesare Marchetti, an Italian physicist, and was attributed to transportation analyst and engineer Yacov Zahavi.\nB. The average daily duration a person dedicates to commuting is known as Marchetti's constant. This constant is estimated to be around one hour, meaning a single journey typically takes about thirty minutes. The constant bears the name of Cesare Marchetti, an Italian physicist, even though Marchetti himself credited the \"one hour\" observation to Yacov Zahavi, a transportation analyst and engineer. Marchetti's hypothesis suggests that despite transformations in urban development and transportation methods, and regardless of whether individuals reside in rural areas or urban centers, people progressively modify their lifestyles to suit their circumstances (including the proximity of their residences to their places of employment). This adaptation ensures that the typical travel time remains relatively unchanged. Throughout history, starting from the Neolithic era, individuals have consistently maintained a consistent average daily travel time, even as improvements in transportation technologies have allowed for greater distances to be covered.\nC. Marchetti's constant is the average time spent by a person for commuting each day. Its value is approximately one hour, or half an hour for a one-way trip. It is named after Italian physicist Cesare Marchetti, though Marchetti himself attributed the \"one hour\" finding to transportation analyst and engineer Yacov Zahavi.Marchetti posits that although forms of urban planning and transport may change, and although some live in villages and others in cities, people gradually adjust their lives to their conditions (including location of their homes relative to their workplace) such that the average travel time stays approximately constant. Ever since Neolithic times, people have kept the average time spent per day for travel the same, even though the distance may increase due to the advancements in the means\n\nAnswer:",
+  "options": {
+    "A": "Marchetti's constant is the average time spent by a person commuting daily, which is approximately one hour or half an hour for a one-way trip. It was named after Cesare Marchetti, an Italian physicist, and was attributed to transportation analyst and engineer Yacov Zahavi.",
+    "B": "The average daily duration a person dedicates to commuting is known as Marchetti's constant. This constant is estimated to be around one hour, meaning a single journey typically takes about thirty minutes. The constant bears the name of Cesare Marchetti, an Italian physicist, even though Marchetti himself credited the \"one hour\" observation to Yacov Zahavi, a transportation analyst and engineer. Marchetti's hypothesis suggests that despite transformations in urban development and transportation methods, and regardless of whether individuals reside in rural areas or urban centers, people progressively modify their lifestyles to suit their circumstances (including the proximity of their residences to their places of employment). This adaptation ensures that the typical travel time remains relatively unchanged. Throughout history, starting from the Neolithic era, individuals have consistently maintained a consistent average daily travel time, even as improvements in transportation technologies have allowed for greater distances to be covered.",
+    "C": "Marchetti's constant is the average time spent by a person for commuting each day. Its value is approximately one hour, or half an hour for a one-way trip. It is named after Italian physicist Cesare Marchetti, though Marchetti himself attributed the \"one hour\" finding to transportation analyst and engineer Yacov Zahavi.Marchetti posits that although forms of urban planning and transport may change, and although some live in villages and others in cities, people gradually adjust their lives to their conditions (including location of their homes relative to their workplace) such that the average travel time stays approximately constant. Ever since Neolithic times, people have kept the average time spent per day for travel the same, even though the distance may increase due to the advancements in the means"
+  },
+  "gold_letter": "C",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-07-10 21:26:38"
+}

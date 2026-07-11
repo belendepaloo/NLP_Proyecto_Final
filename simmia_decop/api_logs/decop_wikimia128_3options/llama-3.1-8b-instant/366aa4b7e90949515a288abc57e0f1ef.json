@@ -1,0 +1,26 @@
+{
+  "query_id": "366aa4b7e90949515a288abc57e0f1ef",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00095.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00095.txt",
+  "label": 0,
+  "membership": "non_member",
+  "text_hash": "1cc648baba06ee7413ac4dc3b2ed9c51",
+  "permutation_index": 5,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. The 76th session of the United Nations General Assembly declared 2022 to be the International Year of Basic Sciences for Sustainable Development on December 2, 2021. This proclamation emphasized the critical role of basic sciences' applications in fostering progress across various sectors, including medicine, industry, agriculture, water resource management, energy strategy, environmental protection, communications, and cultural development. It further highlighted how technologies originating from basic sciences address human needs by facilitating information accessibility and enhancing societal welfare. Moreover, these sciences contribute to peace by improving cooperation aimed at achieving the Sustainable Development Goals (SDGs). The inaugural ceremony for this year was held at the UNESCO headquarters in Paris on July 8, 2022. The concluding event is scheduled to occur at CERN in Geneva on December 15, 2023. The International Union of Pure and Applied Physics (IUPAP), along with 28 other scientific organizations,\nB. The International Year of Basic Sciences for Sustainable Development was proclaimed by the 76th session of the United Nations General Assembly 2 December 2021 for 2022, stressing that the applications of basic sciences are vital for advances in medicine, industry, agriculture, water resources, energy planning, environment, communications and culture, and that basic sciences rupture technologies respond to the needs of humankind by providing access to information and increasing societal well-being, and promoting peace through improved collaboration toward Sustainable Development Goals (SDGs). The official opening ceremony of the year took place in UNESCO headquarters in Paris on 8 July 2022. The official closure is planned to take place at CERN in Geneva on 15 December 2023.The International Union of Pure and Applied Physics (IUPAP) and 28 other science unions\nC. The 76th session of the United Nations General Assembly declared 2022 as the International Year of Basic Sciences, highlighting the crucial role of basic sciences in promoting progress in medicine, industry, agriculture, water resources, and communication.\n\nAnswer:",
+  "options": {
+    "A": "The 76th session of the United Nations General Assembly declared 2022 to be the International Year of Basic Sciences for Sustainable Development on December 2, 2021. This proclamation emphasized the critical role of basic sciences' applications in fostering progress across various sectors, including medicine, industry, agriculture, water resource management, energy strategy, environmental protection, communications, and cultural development. It further highlighted how technologies originating from basic sciences address human needs by facilitating information accessibility and enhancing societal welfare. Moreover, these sciences contribute to peace by improving cooperation aimed at achieving the Sustainable Development Goals (SDGs). The inaugural ceremony for this year was held at the UNESCO headquarters in Paris on July 8, 2022. The concluding event is scheduled to occur at CERN in Geneva on December 15, 2023. The International Union of Pure and Applied Physics (IUPAP), along with 28 other scientific organizations,",
+    "B": "The International Year of Basic Sciences for Sustainable Development was proclaimed by the 76th session of the United Nations General Assembly 2 December 2021 for 2022, stressing that the applications of basic sciences are vital for advances in medicine, industry, agriculture, water resources, energy planning, environment, communications and culture, and that basic sciences rupture technologies respond to the needs of humankind by providing access to information and increasing societal well-being, and promoting peace through improved collaboration toward Sustainable Development Goals (SDGs). The official opening ceremony of the year took place in UNESCO headquarters in Paris on 8 July 2022. The official closure is planned to take place at CERN in Geneva on 15 December 2023.The International Union of Pure and Applied Physics (IUPAP) and 28 other science unions",
+    "C": "The 76th session of the United Nations General Assembly declared 2022 as the International Year of Basic Sciences, highlighting the crucial role of basic sciences in promoting progress in medicine, industry, agriculture, water resources, and communication."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-07-10 21:55:45"
+}

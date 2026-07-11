@@ -1,0 +1,26 @@
+{
+  "query_id": "4e25d14533297ea14c74fceb384ac941",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00204.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00204.txt",
+  "label": 0,
+  "membership": "non_member",
+  "text_hash": "e4c2563912cbed9aa506b5c8b11a0e3c",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. Tropical Cyclones Judy and Kevin constituted a pair of powerful tropical cyclones that struck the Pacific island country of Vanuatu within a 48-hour period in March 2023. These systems represented the fourth and fifth named storms, in order, of the 2022–23 South Pacific cyclone season, and furthermore, they were the season's second and third severe tropical cyclones. Towards the close of February, Judy had impacted the Solomon Islands, and not long after, Kevin started to affect that same nation. Both countries endured the onslaught of strong winds and devastating ocean conditions. Vanuatu experienced significant impact, having been hit by both cyclones separated by only two days. The government formally requested assistance from Australia and New Zealand shortly following Judy's transit. On March 3, while Kevin was still battering the islands, a 6.5 magnitude earthquake occurred.\nB. Cyclones Judy and Kevin, a pair of intense tropical cyclones, made landfall on the Pacific island nation of Vanuatu in March 2023. They were the fourth and fifth named storms of the 2022–23 South Pacific cyclone season, respectively. By the end of February, Judy had affected the Solomon Islands, and shortly after, Kevin began to affect the country, both affected by strong winds and destructive seas. Vanuatu was heavily affected by both cyclones, occurring two days apart.\nC. Cyclones Judy and Kevin were a pair of intense tropical cyclones that made landfall on the Pacific island nation of Vanuatu within 48 hours of each other in March 2023. They were the fourth and fifth named storms of the 2022–23 South Pacific cyclone season respectively, as well as the second and third severe tropical cyclones of the season. By the end of February, Judy had affected the Solomon Islands, and shortly after, Kevin began to affect the country. The nations were pounded by powerful winds and destructive seas. Vanuatu was heavily affected, being struck by both cyclones two days apart. The government asked Australia and New Zealand for aid shortly after Judy's passage. During 3 March, as Kevin was impacting the islands, a magnitude 6.5 earthquake hit\n\nAnswer:",
+  "options": {
+    "A": "Tropical Cyclones Judy and Kevin constituted a pair of powerful tropical cyclones that struck the Pacific island country of Vanuatu within a 48-hour period in March 2023. These systems represented the fourth and fifth named storms, in order, of the 2022–23 South Pacific cyclone season, and furthermore, they were the season's second and third severe tropical cyclones. Towards the close of February, Judy had impacted the Solomon Islands, and not long after, Kevin started to affect that same nation. Both countries endured the onslaught of strong winds and devastating ocean conditions. Vanuatu experienced significant impact, having been hit by both cyclones separated by only two days. The government formally requested assistance from Australia and New Zealand shortly following Judy's transit. On March 3, while Kevin was still battering the islands, a 6.5 magnitude earthquake occurred.",
+    "B": "Cyclones Judy and Kevin, a pair of intense tropical cyclones, made landfall on the Pacific island nation of Vanuatu in March 2023. They were the fourth and fifth named storms of the 2022–23 South Pacific cyclone season, respectively. By the end of February, Judy had affected the Solomon Islands, and shortly after, Kevin began to affect the country, both affected by strong winds and destructive seas. Vanuatu was heavily affected by both cyclones, occurring two days apart.",
+    "C": "Cyclones Judy and Kevin were a pair of intense tropical cyclones that made landfall on the Pacific island nation of Vanuatu within 48 hours of each other in March 2023. They were the fourth and fifth named storms of the 2022–23 South Pacific cyclone season respectively, as well as the second and third severe tropical cyclones of the season. By the end of February, Judy had affected the Solomon Islands, and shortly after, Kevin began to affect the country. The nations were pounded by powerful winds and destructive seas. Vanuatu was heavily affected, being struck by both cyclones two days apart. The government asked Australia and New Zealand for aid shortly after Judy's passage. During 3 March, as Kevin was impacting the islands, a magnitude 6.5 earthquake hit"
+  },
+  "gold_letter": "C",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-07-10 22:46:38"
+}

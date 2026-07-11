@@ -1,0 +1,26 @@
+{
+  "query_id": "184e341effc2d56a736115aaab72e88f",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00159.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00159.txt",
+  "label": 0,
+  "membership": "non_member",
+  "text_hash": "5d4f151c21ccfd514c0aaf3b69bac89a",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. On June 1, 1975, Jacqueline Montgomery, a 15-year-old female resident of Islington, located in North London, United Kingdom, was tragically killed. The perpetrator was Dennis McGrory, who was 28 years old and the estranged partner of Montgomery's aunt. During his court proceedings, McGrory was characterized as being \"wild with rage\" when he committed the acts of sexual assault, stabbing, and strangulation against Montgomery within her family's residence on Offord Road. Her father made the grim discovery of her body on the living room floor of their house during the early morning hours of June 2. McGrory was initially prosecuted in 1976, with the case relying on circumstantial evidence; however, he was acquitted of the murder charge. Subsequently, in 2022, he underwent a second trial, permissible under the principle of double jeopardy, after forensic analysis of swabs collected at the time of the homicide revealed a DNA match to him with a probability of one in a billion. This second legal proceeding followed the initial one.\nB. The murder of Jacqueline Montgomery, a 15-year-old girl from Islington, North London, United Kingdom, occurred on 1 June 1975. She was murdered by Dennis McGrory, her aunt's 28-year-old estranged partner, who was described at his trial as being \"wild with rage\" when he sexually assaulted, stabbed and strangled Montgomery at her family home in Offord Road. Her body was discovered by her father in the early hours of 2 June on the floor of the living room of their house. McGrory was tried on circumstantial evidence in 1976, but cleared of murder. He faced trial again in 2022 under the rule of double jeopardy after swabs taken at the time of the murder were tested for his DNA and found to be a one-in-a-billion match. Following the second\nC. Jacqueline Montgomery, a 15-year-old girl from Islington, North London, United Kingdom, was murdered on 1 June 1975 by Dennis McGrory, her estranged aunt's 28-year-old estranged partner, who was described as \"wild with rage\" during his trial. Her body was discovered by her father in the early hours of 2 June at her family home. Despite being tried on circumstantial evidence in 1976, he was cleared of murder. A second trial under double\n\nAnswer:",
+  "options": {
+    "A": "On June 1, 1975, Jacqueline Montgomery, a 15-year-old female resident of Islington, located in North London, United Kingdom, was tragically killed. The perpetrator was Dennis McGrory, who was 28 years old and the estranged partner of Montgomery's aunt. During his court proceedings, McGrory was characterized as being \"wild with rage\" when he committed the acts of sexual assault, stabbing, and strangulation against Montgomery within her family's residence on Offord Road. Her father made the grim discovery of her body on the living room floor of their house during the early morning hours of June 2. McGrory was initially prosecuted in 1976, with the case relying on circumstantial evidence; however, he was acquitted of the murder charge. Subsequently, in 2022, he underwent a second trial, permissible under the principle of double jeopardy, after forensic analysis of swabs collected at the time of the homicide revealed a DNA match to him with a probability of one in a billion. This second legal proceeding followed the initial one.",
+    "B": "The murder of Jacqueline Montgomery, a 15-year-old girl from Islington, North London, United Kingdom, occurred on 1 June 1975. She was murdered by Dennis McGrory, her aunt's 28-year-old estranged partner, who was described at his trial as being \"wild with rage\" when he sexually assaulted, stabbed and strangled Montgomery at her family home in Offord Road. Her body was discovered by her father in the early hours of 2 June on the floor of the living room of their house. McGrory was tried on circumstantial evidence in 1976, but cleared of murder. He faced trial again in 2022 under the rule of double jeopardy after swabs taken at the time of the murder were tested for his DNA and found to be a one-in-a-billion match. Following the second",
+    "C": "Jacqueline Montgomery, a 15-year-old girl from Islington, North London, United Kingdom, was murdered on 1 June 1975 by Dennis McGrory, her estranged aunt's 28-year-old estranged partner, who was described as \"wild with rage\" during his trial. Her body was discovered by her father in the early hours of 2 June at her family home. Despite being tried on circumstantial evidence in 1976, he was cleared of murder. A second trial under double"
+  },
+  "gold_letter": "B",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-07-10 22:25:22"
+}

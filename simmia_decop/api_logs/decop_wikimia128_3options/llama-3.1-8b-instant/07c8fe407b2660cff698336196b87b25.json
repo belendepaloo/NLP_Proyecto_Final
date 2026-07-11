@@ -1,0 +1,26 @@
+{
+  "query_id": "07c8fe407b2660cff698336196b87b25",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00135.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00135.txt",
+  "label": 1,
+  "membership": "member",
+  "text_hash": "0fb67957bbb1d34ee97d92db3682bf67",
+  "permutation_index": 2,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. The Kasta Tomb, which is also referred to as the Amphipolis Tomb (Greek: Τάφος της Αμφίπολης), holds the distinction of being the most expansive ancient tumulus, or burial mound, ever unearthed in Greece. Its sheer size significantly overshadows the tomb belonging to Philip II of Macedon, the father of Alexander the Great, located in Vergina. This ancient Macedonian burial site dates back to the final quarter of the 4th century BC and is situated within the Kasta mound, close to the ancient city of Amphipolis in Central Macedonia, a region in northern Greece. Initial archaeological digs at the mound in 1964 resulted in the unearthing of the perimeter wall. Subsequent excavations throughout the 1970s brought to light numerous additional ancient artifacts and structures. The interior of the tomb was first found in 2012, with entry into its chambers occurring in August 2014. The superior craftsmanship and aesthetic value of the items found within the tomb strongly suggest that it served as the final resting place for individuals of significant status.\nB. The Kasta Tomb (Greek: Τύμβος Καστά), also known as the Amphipolis Tomb (Greek: Τάφος της Αμφίπολης), is the largest ancient tumulus (burial mound) ever discovered in Greece, and by comparison dwarfs that of Philip II of Macedon, father of Alexander the Great, in Vergina.It is an ancient Macedonian tomb of the last quarter of the 4th c. BC, and is enclosed in the Kasta mound near the ancient city of Amphipolis, Central Macedonia, in northern Greece. The first excavations at the mound in 1964 led to exposure of the perimeter wall, and further excavations in the 1970s uncovered many other ancient remains. The inner tomb was first discovered in 2012 and entered in August 2014.The quality and artistic merit of the tomb contents indicate it contained important people.\nC. The Kasta Tomb, also known as the Amphipolis Tomb, is the largest burial site in Greece, dwarfing the tomb of Philip II of Macedon, father of Alexander the Great, in Vergina. The mound is located near the ancient city of Amphipolis in Central Macedonia and has been excavated since 1964.\n\nAnswer:",
+  "options": {
+    "A": "The Kasta Tomb, which is also referred to as the Amphipolis Tomb (Greek: Τάφος της Αμφίπολης), holds the distinction of being the most expansive ancient tumulus, or burial mound, ever unearthed in Greece. Its sheer size significantly overshadows the tomb belonging to Philip II of Macedon, the father of Alexander the Great, located in Vergina. This ancient Macedonian burial site dates back to the final quarter of the 4th century BC and is situated within the Kasta mound, close to the ancient city of Amphipolis in Central Macedonia, a region in northern Greece. Initial archaeological digs at the mound in 1964 resulted in the unearthing of the perimeter wall. Subsequent excavations throughout the 1970s brought to light numerous additional ancient artifacts and structures. The interior of the tomb was first found in 2012, with entry into its chambers occurring in August 2014. The superior craftsmanship and aesthetic value of the items found within the tomb strongly suggest that it served as the final resting place for individuals of significant status.",
+    "B": "The Kasta Tomb (Greek: Τύμβος Καστά), also known as the Amphipolis Tomb (Greek: Τάφος της Αμφίπολης), is the largest ancient tumulus (burial mound) ever discovered in Greece, and by comparison dwarfs that of Philip II of Macedon, father of Alexander the Great, in Vergina.It is an ancient Macedonian tomb of the last quarter of the 4th c. BC, and is enclosed in the Kasta mound near the ancient city of Amphipolis, Central Macedonia, in northern Greece. The first excavations at the mound in 1964 led to exposure of the perimeter wall, and further excavations in the 1970s uncovered many other ancient remains. The inner tomb was first discovered in 2012 and entered in August 2014.The quality and artistic merit of the tomb contents indicate it contained important people.",
+    "C": "The Kasta Tomb, also known as the Amphipolis Tomb, is the largest burial site in Greece, dwarfing the tomb of Philip II of Macedon, father of Alexander the Great, in Vergina. The mound is located near the ancient city of Amphipolis in Central Macedonia and has been excavated since 1964."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-07-10 22:13:56"
+}

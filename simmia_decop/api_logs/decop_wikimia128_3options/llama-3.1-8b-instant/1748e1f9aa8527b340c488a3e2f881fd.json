@@ -1,0 +1,26 @@
+{
+  "query_id": "1748e1f9aa8527b340c488a3e2f881fd",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00043.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00043.txt",
+  "label": 0,
+  "membership": "non_member",
+  "text_hash": "7809ee9f8ca0952486ead63921c92927",
+  "permutation_index": 0,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. The 2023 All In, also known as All in London at Wembley Stadium, is the second All In professional wrestling pay-per-view event. It will be produced by All Elite Wrestling (AEW) after the first All In was held independently in September 2018, a few months before AEW's formation in January 2019. The event will take place on August 27, 2023, at Wembley Stadium in London, England.\nB. The 2023 All In, also known as All in London at Wembley Stadium, is the upcoming second All In professional wrestling pay-per-view (PPV) event. It will be the first edition of the event to be produced by All Elite Wrestling (AEW) after the inaugural All In was held independently in September 2018, a few months prior to AEW's formation in January 2019. The event will take place on August 27, 2023, at Wembley Stadium in London, England. This will mark AEW's debut in the United Kingdom, their first PPV event held outside of North America, and the company's first event to be held entirely in a soccer stadium. This also marks the first professional wrestling event to be held at present day Wembley Stadium, with AEW promoting the\nC. The second All In professional wrestling pay-per-view (PPV) event, named the 2023 All In and also referred to as All In London at Wembley Stadium, is scheduled to occur. This will be the initial iteration of this particular event to be organized by All Elite Wrestling (AEW), contrasting with the inaugural All In event which was independently staged in September 2018, just a few months preceding the establishment of AEW in January 2019. The event is slated for August 27, 2023, at the Wembley Stadium located in London, England. This occasion signifies several milestones for AEW: it will be their first venture into the United Kingdom, their first PPV event to be hosted outside of the North American continent, and the company's inaugural event to be conducted entirely within a soccer stadium. Furthermore, this event denotes the first professional wrestling spectacle to take place at the current Wembley Stadium, with AEW actively promoting it.\n\nAnswer:",
+  "options": {
+    "A": "The 2023 All In, also known as All in London at Wembley Stadium, is the second All In professional wrestling pay-per-view event. It will be produced by All Elite Wrestling (AEW) after the first All In was held independently in September 2018, a few months before AEW's formation in January 2019. The event will take place on August 27, 2023, at Wembley Stadium in London, England.",
+    "B": "The 2023 All In, also known as All in London at Wembley Stadium, is the upcoming second All In professional wrestling pay-per-view (PPV) event. It will be the first edition of the event to be produced by All Elite Wrestling (AEW) after the inaugural All In was held independently in September 2018, a few months prior to AEW's formation in January 2019. The event will take place on August 27, 2023, at Wembley Stadium in London, England. This will mark AEW's debut in the United Kingdom, their first PPV event held outside of North America, and the company's first event to be held entirely in a soccer stadium. This also marks the first professional wrestling event to be held at present day Wembley Stadium, with AEW promoting the",
+    "C": "The second All In professional wrestling pay-per-view (PPV) event, named the 2023 All In and also referred to as All In London at Wembley Stadium, is scheduled to occur. This will be the initial iteration of this particular event to be organized by All Elite Wrestling (AEW), contrasting with the inaugural All In event which was independently staged in September 2018, just a few months preceding the establishment of AEW in January 2019. The event is slated for August 27, 2023, at the Wembley Stadium located in London, England. This occasion signifies several milestones for AEW: it will be their first venture into the United Kingdom, their first PPV event to be hosted outside of the North American continent, and the company's inaugural event to be conducted entirely within a soccer stadium. Furthermore, this event denotes the first professional wrestling spectacle to take place at the current Wembley Stadium, with AEW actively promoting it."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-07-10 21:28:37"
+}

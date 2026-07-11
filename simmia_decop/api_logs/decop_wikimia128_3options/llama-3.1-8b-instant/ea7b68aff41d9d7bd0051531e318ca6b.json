@@ -1,0 +1,26 @@
+{
+  "query_id": "ea7b68aff41d9d7bd0051531e318ca6b",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00240.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00240.txt",
+  "label": 1,
+  "membership": "member",
+  "text_hash": "3eb1481709e7df1743800a119fe693f7",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. The Trojan Horse scandal, also known as \"Operation Trojan Horse\" or the Trojan Horse affair, involves claims of an alleged conspiracy to introduce an \"Islamist\" or \"Salafist\" ethos into several schools in Birmingham, England. The name, based on the Greek legend, comes from an anonymous letter sent to Birmingham City Council in late 2013, alleged to be from Birmingham \"Islamists\" detailing how to wrest control of a school, and speculating about expanding the scheme to other cities. The letter was leaked to the press in March 2014. Around a month later, Birmingham City Council revealed that following the letter release it had received hundreds of allegations of plots similar to those described in the letter, some claims dating back over 20 years.Tahir Alam, former chairman of the Park\nB. The \"Trojan Horse\" scandal, also referred to as \"Operation Trojan Horse\" or the Trojan Horse incident, concerns accusations of a supposed plot to instill an \"Islamist\" or \"Salafist\" ideology within several educational institutions located in Birmingham, England. The moniker, derived from the ancient Greek myth, originates from an unsigned correspondence dispatched to the Birmingham City Council toward the end of 2013. This letter was purportedly written by Birmingham \"Islamists\" and outlined methods for seizing control of a school, additionally contemplating the expansion of this initiative to other urban areas. This communication was subsequently disclosed to the media in March 2014. Approximately one month thereafter, the Birmingham City Council announced that subsequent to the public release of the letter, it had been inundated with hundreds of accusations regarding schemes analogous to those depicted in the correspondence, with some of these allegations stretching back more than two decades. Tahir Alam, who previously served as the chairman of the Park\nC. The Trojan Horse scandal, also known as \"Operation Trojan Horse\" or the Trojan Horse affair, involves allegations of an alleged conspiracy to introduce an \"Islamist\" or \"Salafist\" ethos into multiple schools in Birmingham, England. The name was derived from an anonymous letter sent to Birmingham City Council in late 2013 detailing how to expand the scheme to other cities.\n\nAnswer:",
+  "options": {
+    "A": "The Trojan Horse scandal, also known as \"Operation Trojan Horse\" or the Trojan Horse affair, involves claims of an alleged conspiracy to introduce an \"Islamist\" or \"Salafist\" ethos into several schools in Birmingham, England. The name, based on the Greek legend, comes from an anonymous letter sent to Birmingham City Council in late 2013, alleged to be from Birmingham \"Islamists\" detailing how to wrest control of a school, and speculating about expanding the scheme to other cities. The letter was leaked to the press in March 2014. Around a month later, Birmingham City Council revealed that following the letter release it had received hundreds of allegations of plots similar to those described in the letter, some claims dating back over 20 years.Tahir Alam, former chairman of the Park",
+    "B": "The \"Trojan Horse\" scandal, also referred to as \"Operation Trojan Horse\" or the Trojan Horse incident, concerns accusations of a supposed plot to instill an \"Islamist\" or \"Salafist\" ideology within several educational institutions located in Birmingham, England. The moniker, derived from the ancient Greek myth, originates from an unsigned correspondence dispatched to the Birmingham City Council toward the end of 2013. This letter was purportedly written by Birmingham \"Islamists\" and outlined methods for seizing control of a school, additionally contemplating the expansion of this initiative to other urban areas. This communication was subsequently disclosed to the media in March 2014. Approximately one month thereafter, the Birmingham City Council announced that subsequent to the public release of the letter, it had been inundated with hundreds of accusations regarding schemes analogous to those depicted in the correspondence, with some of these allegations stretching back more than two decades. Tahir Alam, who previously served as the chairman of the Park",
+    "C": "The Trojan Horse scandal, also known as \"Operation Trojan Horse\" or the Trojan Horse affair, involves allegations of an alleged conspiracy to introduce an \"Islamist\" or \"Salafist\" ethos into multiple schools in Birmingham, England. The name was derived from an anonymous letter sent to Birmingham City Council in late 2013 detailing how to expand the scheme to other cities."
+  },
+  "gold_letter": "A",
+  "predicted_letter": "A",
+  "is_correct": 1,
+  "timestamp": "2026-07-10 23:03:29"
+}

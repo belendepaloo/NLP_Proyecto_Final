@@ -1,0 +1,26 @@
+{
+  "query_id": "29483056ab16e6e17d87860cacb1e4d1",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00076.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00076.txt",
+  "label": 1,
+  "membership": "member",
+  "text_hash": "9ab46890213edd465f8971594a1f480d",
+  "permutation_index": 5,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. The Toronto Rock are a lacrosse team based in Toronto playing in the National Lacrosse League (NLL). The 2014 season was the 17th in franchise history, and 16th as the Rock. After an up-and-down start to the season, the Rock acquired goaltender Brandon Miller from the Philadelphia Wings at the trade deadline hoping to revitalize their shaky defense. On April 5, star forward Garrett Billings tore his ACL during a game against the Vancouver Stealth and was lost for the remainder of the season. Despite losing the league's scoring leader, the Rock won that game, which started a four-game winning streak to finish the regular season and clinch second place in the Eastern division ahead of the slumping Buffalo Bandits. But the Bandits ended their 8-game losing streak\nB. The Toronto Rock, a lacrosse team in the National Lacrosse League (NLL), had a challenging start to their 2014 season. They signed goaltender Brandon Miller from the Philadelphia Wings at the trade deadline, with hopes of reinvigorating their defense. However, star forward Garrett Billings suffered an ACL injury during a game against the Vancouver Stealth, which led to a four-game winning streak.\nC. The Toronto Rock, a lacrosse team situated in Toronto, participates in the National Lacrosse League (NLL). The 2014 season marked the franchise's seventeenth year of operation, and its sixteenth year competing under the \"Rock\" moniker. Following an inconsistent beginning to their season, the Rock secured the services of goaltender Brandon Miller from the Philadelphia Wings at the trade deadline, a move intended to invigorate their struggling defensive unit. On April 5th, star forward Garrett Billings sustained an ACL tear during a match against the Vancouver Stealth, rendering him unavailable for the remainder of the season. Notwithstanding the loss of the league's top scorer, the Rock emerged victorious in that particular game, initiating a four-game winning streak that concluded the regular season and secured them the second position in the Eastern division, surpassing the struggling Buffalo Bandits. However, the Bandits put an end to their eight-game losing streak\n\nAnswer:",
+  "options": {
+    "A": "The Toronto Rock are a lacrosse team based in Toronto playing in the National Lacrosse League (NLL). The 2014 season was the 17th in franchise history, and 16th as the Rock. After an up-and-down start to the season, the Rock acquired goaltender Brandon Miller from the Philadelphia Wings at the trade deadline hoping to revitalize their shaky defense. On April 5, star forward Garrett Billings tore his ACL during a game against the Vancouver Stealth and was lost for the remainder of the season. Despite losing the league's scoring leader, the Rock won that game, which started a four-game winning streak to finish the regular season and clinch second place in the Eastern division ahead of the slumping Buffalo Bandits. But the Bandits ended their 8-game losing streak",
+    "B": "The Toronto Rock, a lacrosse team in the National Lacrosse League (NLL), had a challenging start to their 2014 season. They signed goaltender Brandon Miller from the Philadelphia Wings at the trade deadline, with hopes of reinvigorating their defense. However, star forward Garrett Billings suffered an ACL injury during a game against the Vancouver Stealth, which led to a four-game winning streak.",
+    "C": "The Toronto Rock, a lacrosse team situated in Toronto, participates in the National Lacrosse League (NLL). The 2014 season marked the franchise's seventeenth year of operation, and its sixteenth year competing under the \"Rock\" moniker. Following an inconsistent beginning to their season, the Rock secured the services of goaltender Brandon Miller from the Philadelphia Wings at the trade deadline, a move intended to invigorate their struggling defensive unit. On April 5th, star forward Garrett Billings sustained an ACL tear during a match against the Vancouver Stealth, rendering him unavailable for the remainder of the season. Notwithstanding the loss of the league's top scorer, the Rock emerged victorious in that particular game, initiating a four-game winning streak that concluded the regular season and secured them the second position in the Eastern division, surpassing the struggling Buffalo Bandits. However, the Bandits put an end to their eight-game losing streak"
+  },
+  "gold_letter": "A",
+  "predicted_letter": "A",
+  "is_correct": 1,
+  "timestamp": "2026-07-10 21:45:42"
+}

@@ -1,0 +1,26 @@
+{
+  "query_id": "5dd94538d7a222dae548cd96119f5d0f",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00165.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00165.txt",
+  "label": 1,
+  "membership": "member",
+  "text_hash": "0dc80c6b48236215764e02579fbf6466",
+  "permutation_index": 5,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. On the afternoon of 24 May 2014, a gunman opened fire at the Jewish Museum of Belgium in Brussels, killing four people. Three of them, an Israeli couple on holiday and a French woman, died at the scene. The fourth victim, a Belgian employee of the museum, was taken to the hospital but died of his injuries on 6 June. A little less than a week later, on 30 May 2014, a suspect was arrested in the French city of Marseille in connection with the shooting. The suspect was Mehdi Nemmouche, a 29-year-old French national of Algerian origin. A second suspect, Nacer Bendrer, was identified and arrested later. Prior to the shooting, Nemmouche had already spent time in French prisons, where he became involved in radical Islam. After\nB. The Jewish Museum of Belgium in Brussels was the site of a shooting spree on May 24, 2014, resulting in the deaths of four individuals. The victims included an Israeli couple on holiday and a French woman. The fourth victim, a Belgian museum worker, was taken to the hospital but died on June 6th. On May 30, 2014, Mehdi Nemmouche, a 29-year-old French national of Algerian origin, was arrested in Marseille. Nacer Bendrer, a second suspect, was also app\nC. On the afternoon of May 24, 2014, a shooter launched an attack at the Jewish Museum of Belgium in Brussels, resulting in the deaths of four individuals. Three of the victims, specifically an Israeli pair who were on vacation and a French woman, perished at the site of the incident. The fourth victim, a Belgian staff member employed by the museum, was transported to the hospital for treatment but ultimately succumbed to his wounds on June 6. Less than seven days subsequent to the event, on May 30, 2014, authorities apprehended a suspect in the French city of Marseille in relation to the gunfire. This suspect was identified as Mehdi Nemmouche, a 29-year-old French citizen with Algerian ancestry. Subsequently, a second individual, Nacer Bendrer, was identified and taken into custody. Before the shooting occurred, Nemmouche had already served periods of incarceration in French correctional facilities, during which he became indoctrinated into radical Islamic ideologies. Following this background,\n\nAnswer:",
+  "options": {
+    "A": "On the afternoon of 24 May 2014, a gunman opened fire at the Jewish Museum of Belgium in Brussels, killing four people. Three of them, an Israeli couple on holiday and a French woman, died at the scene. The fourth victim, a Belgian employee of the museum, was taken to the hospital but died of his injuries on 6 June. A little less than a week later, on 30 May 2014, a suspect was arrested in the French city of Marseille in connection with the shooting. The suspect was Mehdi Nemmouche, a 29-year-old French national of Algerian origin. A second suspect, Nacer Bendrer, was identified and arrested later. Prior to the shooting, Nemmouche had already spent time in French prisons, where he became involved in radical Islam. After",
+    "B": "The Jewish Museum of Belgium in Brussels was the site of a shooting spree on May 24, 2014, resulting in the deaths of four individuals. The victims included an Israeli couple on holiday and a French woman. The fourth victim, a Belgian museum worker, was taken to the hospital but died on June 6th. On May 30, 2014, Mehdi Nemmouche, a 29-year-old French national of Algerian origin, was arrested in Marseille. Nacer Bendrer, a second suspect, was also app",
+    "C": "On the afternoon of May 24, 2014, a shooter launched an attack at the Jewish Museum of Belgium in Brussels, resulting in the deaths of four individuals. Three of the victims, specifically an Israeli pair who were on vacation and a French woman, perished at the site of the incident. The fourth victim, a Belgian staff member employed by the museum, was transported to the hospital for treatment but ultimately succumbed to his wounds on June 6. Less than seven days subsequent to the event, on May 30, 2014, authorities apprehended a suspect in the French city of Marseille in relation to the gunfire. This suspect was identified as Mehdi Nemmouche, a 29-year-old French citizen with Algerian ancestry. Subsequently, a second individual, Nacer Bendrer, was identified and taken into custody. Before the shooting occurred, Nemmouche had already served periods of incarceration in French correctional facilities, during which he became indoctrinated into radical Islamic ideologies. Following this background,"
+  },
+  "gold_letter": "A",
+  "predicted_letter": "A",
+  "is_correct": 1,
+  "timestamp": "2026-07-10 22:28:57"
+}

@@ -1,0 +1,26 @@
+{
+  "query_id": "331cc2563384b2c5c5ae43b3040593d7",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00052.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00052.txt",
+  "label": 1,
+  "membership": "member",
+  "text_hash": "243836f92b779c592be05c72702d216c",
+  "permutation_index": 0,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. William Tyrrell (born 26 June 2011) is an Australian boy who disappeared at the age of three from Kendall, New South Wales, on 12 September 2014. He had been playing at his foster grandmother's house with his sister, and was wearing a Spider-Man suit at the time of his disappearance. For the first seven years of the investigation, Tyrrell was believed to have been abducted. On 12 September 2016, a reward of A$1 million was offered for the recovery of Tyrrell and did not require the arrest, charging or conviction of any person or persons.On 15 November 2021, after receiving new evidence, the New South Wales Police Force renewed the search for Tyrrell in three areas surrounding Kendall, assuming that they were searching for human remains. On 17\nB. William Tyrrell, an Australian male born on June 26, 2011, vanished when he was three years old from Kendall, New South Wales, on September 12, 2014. At the time he went missing, he was dressed in a Spider-Man costume and had been playing with his sister at his foster grandmother's residence. Throughout the initial seven years of the inquiry, the prevailing belief was that Tyrrell had been kidnapped. A reward of A$1 million was made available on September 12, 2016, for Tyrrell's safe return; this reward was not contingent on the apprehension, indictment, or conviction of any individual or individuals. Following the acquisition of fresh evidence, on November 15, 2021, the New South Wales Police Force recommenced the search for Tyrrell across three distinct zones near Kendall, operating under the premise that their objective was to locate human remains. On the 17th of [Missing date/information from original text].\nC. On 12 September 2014, an Australian boy named William Tyrrell (born 26 June 2011) vanished from Kendall, New South Wales, at the age of three. He was reported to have been abducted by his foster grandmother and wearing a Spider-Man suit during the initial seven years of the investigation. A reward of A$1 million was offered for the boy's recovery, which did not require the arrest, charging or conviction of anyone or persons. The New South Wales Police Force renewed the search for Tyrrell in three areas surrounding Kendall with the assumption that they were searching for human remains.\n\nAnswer:",
+  "options": {
+    "A": "William Tyrrell (born 26 June 2011) is an Australian boy who disappeared at the age of three from Kendall, New South Wales, on 12 September 2014. He had been playing at his foster grandmother's house with his sister, and was wearing a Spider-Man suit at the time of his disappearance. For the first seven years of the investigation, Tyrrell was believed to have been abducted. On 12 September 2016, a reward of A$1 million was offered for the recovery of Tyrrell and did not require the arrest, charging or conviction of any person or persons.On 15 November 2021, after receiving new evidence, the New South Wales Police Force renewed the search for Tyrrell in three areas surrounding Kendall, assuming that they were searching for human remains. On 17",
+    "B": "William Tyrrell, an Australian male born on June 26, 2011, vanished when he was three years old from Kendall, New South Wales, on September 12, 2014. At the time he went missing, he was dressed in a Spider-Man costume and had been playing with his sister at his foster grandmother's residence. Throughout the initial seven years of the inquiry, the prevailing belief was that Tyrrell had been kidnapped. A reward of A$1 million was made available on September 12, 2016, for Tyrrell's safe return; this reward was not contingent on the apprehension, indictment, or conviction of any individual or individuals. Following the acquisition of fresh evidence, on November 15, 2021, the New South Wales Police Force recommenced the search for Tyrrell across three distinct zones near Kendall, operating under the premise that their objective was to locate human remains. On the 17th of [Missing date/information from original text].",
+    "C": "On 12 September 2014, an Australian boy named William Tyrrell (born 26 June 2011) vanished from Kendall, New South Wales, at the age of three. He was reported to have been abducted by his foster grandmother and wearing a Spider-Man suit during the initial seven years of the investigation. A reward of A$1 million was offered for the boy's recovery, which did not require the arrest, charging or conviction of anyone or persons. The New South Wales Police Force renewed the search for Tyrrell in three areas surrounding Kendall with the assumption that they were searching for human remains."
+  },
+  "gold_letter": "A",
+  "predicted_letter": "A",
+  "is_correct": 1,
+  "timestamp": "2026-07-10 21:32:40"
+}

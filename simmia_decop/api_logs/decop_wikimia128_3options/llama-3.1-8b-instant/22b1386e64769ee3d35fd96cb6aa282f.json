@@ -1,0 +1,26 @@
+{
+  "query_id": "22b1386e64769ee3d35fd96cb6aa282f",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00174.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00174.txt",
+  "label": 0,
+  "membership": "non_member",
+  "text_hash": "0fed3359dd1511e3ddcd35bfbaf5e09c",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. Wrestle Kingdom 17 was a two-day professional wrestling pay-per-view event co-produced by the New Japan Pro-Wrestling (NJPW) and Pro Wrestling Noah (Noah) promotions. It took place on January 4, 2023, at the Tokyo Dome in Tokyo, Japan, and on January 21, 2023, at the Yokohama Arena in Yokohama, Japan, as the 17th Wrestle Kingdom Show, held in honor of the late Antonio Inoki.\nB. Wrestle Kingdom 17, a two-day professional wrestling pay-per-view (PPV) spectacular, was a collaborative effort between the New Japan Pro-Wrestling (NJPW) and Pro Wrestling Noah (Noah) promotions. The initial day of this event unfolded on January 4, 2023, at the Tokyo Dome situated in Tokyo, Japan. The subsequent day occurred on January 21, 2023, at the Yokohama Arena, located in Yokohama, Japan. This marked the 32nd iteration of the January 4 Tokyo Dome Show and the 17th event promoted under the Wrestle Kingdom banner. The entire event served as a tribute to Antonio Inoki, the founder of NJPW, who passed away on October 1, 2022. The headline match of the first night saw Kazuchika Okada emerge victorious over Jay White, thereby claiming the IWGP World Heavyweight Championship. Among other significant bouts, Kenny Omega triumphed over Will Ospreay.\nC. Wrestle Kingdom 17 was a two-day professional wrestling pay-per-view (PPV) event co-produced by the New Japan Pro-Wrestling (NJPW) and Pro Wrestling Noah (Noah) promotions. The first day of the event took place on January 4, 2023, at the Tokyo Dome in Tokyo, Japan and the second day of the event took place on January 21, 2023, at the Yokohama Arena in Yokohama, Japan. It is the 32nd January 4 Tokyo Dome Show and the 17th promoted under the Wrestle Kingdom name. The event was held in honor of the NJPW founder Antonio Inoki, who died on October 1, 2022. In the main event of night 1, Kazuchika Okada defeated Jay White to win the IWGP World Heavyweight Championship. In other prominent matches, Kenny Omega defeated Will Ospreay to\n\nAnswer:",
+  "options": {
+    "A": "Wrestle Kingdom 17 was a two-day professional wrestling pay-per-view event co-produced by the New Japan Pro-Wrestling (NJPW) and Pro Wrestling Noah (Noah) promotions. It took place on January 4, 2023, at the Tokyo Dome in Tokyo, Japan, and on January 21, 2023, at the Yokohama Arena in Yokohama, Japan, as the 17th Wrestle Kingdom Show, held in honor of the late Antonio Inoki.",
+    "B": "Wrestle Kingdom 17, a two-day professional wrestling pay-per-view (PPV) spectacular, was a collaborative effort between the New Japan Pro-Wrestling (NJPW) and Pro Wrestling Noah (Noah) promotions. The initial day of this event unfolded on January 4, 2023, at the Tokyo Dome situated in Tokyo, Japan. The subsequent day occurred on January 21, 2023, at the Yokohama Arena, located in Yokohama, Japan. This marked the 32nd iteration of the January 4 Tokyo Dome Show and the 17th event promoted under the Wrestle Kingdom banner. The entire event served as a tribute to Antonio Inoki, the founder of NJPW, who passed away on October 1, 2022. The headline match of the first night saw Kazuchika Okada emerge victorious over Jay White, thereby claiming the IWGP World Heavyweight Championship. Among other significant bouts, Kenny Omega triumphed over Will Ospreay.",
+    "C": "Wrestle Kingdom 17 was a two-day professional wrestling pay-per-view (PPV) event co-produced by the New Japan Pro-Wrestling (NJPW) and Pro Wrestling Noah (Noah) promotions. The first day of the event took place on January 4, 2023, at the Tokyo Dome in Tokyo, Japan and the second day of the event took place on January 21, 2023, at the Yokohama Arena in Yokohama, Japan. It is the 32nd January 4 Tokyo Dome Show and the 17th promoted under the Wrestle Kingdom name. The event was held in honor of the NJPW founder Antonio Inoki, who died on October 1, 2022. In the main event of night 1, Kazuchika Okada defeated Jay White to win the IWGP World Heavyweight Championship. In other prominent matches, Kenny Omega defeated Will Ospreay to"
+  },
+  "gold_letter": "C",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-07-10 22:33:40"
+}

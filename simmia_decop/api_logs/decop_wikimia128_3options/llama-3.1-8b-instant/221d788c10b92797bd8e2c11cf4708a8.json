@@ -1,0 +1,26 @@
+{
+  "query_id": "221d788c10b92797bd8e2c11cf4708a8",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00083.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00083.txt",
+  "label": 0,
+  "membership": "non_member",
+  "text_hash": "815419708b8d4462ff59c93453553d68",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. Supriyo a.k.a Supriya Chakraborty & Abhay Dang v. Union of India thr. Its Secretary, Ministry of Law and Justice & other connected cases (2023) is an ongoing collection of landmark cases of the Supreme Court of India, which are set to consider whether to extend right to marry and establish a family to queer Indians. A 5-judge Constitution Bench, consisting of Chief Justice of India D.Y. Chandrachud, Justice S.K. Kaul, Justice Ravindra Bhat, Justice Hima Kohli and Justice P.S. Narasimha, will hear 20 connected cases brought by 52 petitioners.The petitioners, consisting of queer couples and individuals, request recognition of the right to marry and establish a family based on protections from discrimination, the right to equality, dignity, personal liberty, privacy and personal autonomy, and freedom of conscience and\nB. A 5-judge Constitution Bench consisting of Chief Justice of India D.Y. Chandrachud, Justice S.K. Kaul, Justice Ravindra Bhat, Justice Hima Kohli and Justice P.S. Narasimha will hear 20 connected cases from 52 petitioners. The case is part of an ongoing series of landmark cases in Supriyo a.k.a. d. 2023.\nC. Supriyo, also known as Supriya Chakraborty, and Abhay Dang versus the Union of India, represented by its Secretary, Ministry of Law and Justice, along with other associated legal proceedings (2023), comprises a current series of significant cases before the Supreme Court of India. These cases are scheduled to examine the question of whether the right to marriage and the formation of a family should be granted to LGBTQ+ individuals in India. A Constitution Bench, composed of five judges including Chief Justice of India D.Y. Chandrachud, Justice S.K. Kaul, Justice Ravindra Bhat, Justice Hima Kohli, and Justice P.S. Narasimha, is slated to preside over twenty interconnected cases initiated by a total of fifty-two petitioners. These petitioners, who include same-sex couples and individuals, are seeking legal affirmation of the entitlement to marry and to establish a family. Their arguments are founded upon protections against discrimination, the right to equal treatment, the right to dignity, personal freedom, privacy, self-governance, and the freedom of belief.\n\nAnswer:",
+  "options": {
+    "A": "Supriyo a.k.a Supriya Chakraborty & Abhay Dang v. Union of India thr. Its Secretary, Ministry of Law and Justice & other connected cases (2023) is an ongoing collection of landmark cases of the Supreme Court of India, which are set to consider whether to extend right to marry and establish a family to queer Indians. A 5-judge Constitution Bench, consisting of Chief Justice of India D.Y. Chandrachud, Justice S.K. Kaul, Justice Ravindra Bhat, Justice Hima Kohli and Justice P.S. Narasimha, will hear 20 connected cases brought by 52 petitioners.The petitioners, consisting of queer couples and individuals, request recognition of the right to marry and establish a family based on protections from discrimination, the right to equality, dignity, personal liberty, privacy and personal autonomy, and freedom of conscience and",
+    "B": "A 5-judge Constitution Bench consisting of Chief Justice of India D.Y. Chandrachud, Justice S.K. Kaul, Justice Ravindra Bhat, Justice Hima Kohli and Justice P.S. Narasimha will hear 20 connected cases from 52 petitioners. The case is part of an ongoing series of landmark cases in Supriyo a.k.a. d. 2023.",
+    "C": "Supriyo, also known as Supriya Chakraborty, and Abhay Dang versus the Union of India, represented by its Secretary, Ministry of Law and Justice, along with other associated legal proceedings (2023), comprises a current series of significant cases before the Supreme Court of India. These cases are scheduled to examine the question of whether the right to marriage and the formation of a family should be granted to LGBTQ+ individuals in India. A Constitution Bench, composed of five judges including Chief Justice of India D.Y. Chandrachud, Justice S.K. Kaul, Justice Ravindra Bhat, Justice Hima Kohli, and Justice P.S. Narasimha, is slated to preside over twenty interconnected cases initiated by a total of fifty-two petitioners. These petitioners, who include same-sex couples and individuals, are seeking legal affirmation of the entitlement to marry and to establish a family. Their arguments are founded upon protections against discrimination, the right to equal treatment, the right to dignity, personal freedom, privacy, self-governance, and the freedom of belief."
+  },
+  "gold_letter": "A",
+  "predicted_letter": "A",
+  "is_correct": 1,
+  "timestamp": "2026-07-10 21:48:52"
+}

@@ -1,0 +1,26 @@
+{
+  "query_id": "ee9476fe3c7777d0de956395a3d812e5",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00246.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00246.txt",
+  "label": 1,
+  "membership": "member",
+  "text_hash": "80e0ab3dc78219d921ccd93a14643413",
+  "permutation_index": 3,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. The third competition weekend of the 2014–15 ISU Speed Skating World Cup will be held in Sportforum Hohenschönhausen in Berlin, Germany, from Friday, 5 December, until Sunday, 7 December 2014.Artur Waś of Poland both men's 500 m races. In the women's competitions, Ireen Wüst of the Netherlands won three gold medals; in the 1500 m and 3000 m races, as well as in the team pursuit. Lee Sang-hwa of South Korea won both 500 m races. Heather Richardson of the United States managed to take no less than four silver medals; in both 500 m races, as well as the 1000 m and 1500 m races.No world records were set during the weekend, but Christian Oberbichler of Switzerland set a new national record on in the B division\nB. The 2014-15 ISU Speed Skating World Cup will take place at Sportforum Hohenschönhausen in Berlin from Friday, 5 December, to Sunday, 7 December 2014. In the women's events, Ireen Wüst from the Netherlands won three gold medals in the 1500 m and 3000 m races, while Lee Sang-hwa from South Korea won two silver medals. Heather Richardson from the United States won four silver medals in both 500 m races, as well as the 1000 m and 1500 m races.\nC. The 2014–15 ISU Speed Skating World Cup's third competitive weekend is scheduled to take place at Sportforum Hohenschönhausen in Berlin, Germany. The events will commence on Friday, December 5th, and conclude on Sunday, December 7th, 2014. Artur Waś, representing Poland, emerged victorious in both of the men's 500-meter races. Among the women's events, Ireen Wüst from the Netherlands secured three gold medals, triumphing in the 1500-meter and 3000-meter races, in addition to the team pursuit. Lee Sang-hwa, hailing from South Korea, claimed victory in both 500-meter races. Heather Richardson, an athlete from the United States, achieved a remarkable feat by earning four silver medals across various disciplines, specifically in both 500-meter races, the 1000-meter race, and the 1500-meter race. Although no new world records were established during this weekend of competition, Christian Oberbichler of Switzerland successfully set a new national record within the B division.\n\nAnswer:",
+  "options": {
+    "A": "The third competition weekend of the 2014–15 ISU Speed Skating World Cup will be held in Sportforum Hohenschönhausen in Berlin, Germany, from Friday, 5 December, until Sunday, 7 December 2014.Artur Waś of Poland both men's 500 m races. In the women's competitions, Ireen Wüst of the Netherlands won three gold medals; in the 1500 m and 3000 m races, as well as in the team pursuit. Lee Sang-hwa of South Korea won both 500 m races. Heather Richardson of the United States managed to take no less than four silver medals; in both 500 m races, as well as the 1000 m and 1500 m races.No world records were set during the weekend, but Christian Oberbichler of Switzerland set a new national record on in the B division",
+    "B": "The 2014-15 ISU Speed Skating World Cup will take place at Sportforum Hohenschönhausen in Berlin from Friday, 5 December, to Sunday, 7 December 2014. In the women's events, Ireen Wüst from the Netherlands won three gold medals in the 1500 m and 3000 m races, while Lee Sang-hwa from South Korea won two silver medals. Heather Richardson from the United States won four silver medals in both 500 m races, as well as the 1000 m and 1500 m races.",
+    "C": "The 2014–15 ISU Speed Skating World Cup's third competitive weekend is scheduled to take place at Sportforum Hohenschönhausen in Berlin, Germany. The events will commence on Friday, December 5th, and conclude on Sunday, December 7th, 2014. Artur Waś, representing Poland, emerged victorious in both of the men's 500-meter races. Among the women's events, Ireen Wüst from the Netherlands secured three gold medals, triumphing in the 1500-meter and 3000-meter races, in addition to the team pursuit. Lee Sang-hwa, hailing from South Korea, claimed victory in both 500-meter races. Heather Richardson, an athlete from the United States, achieved a remarkable feat by earning four silver medals across various disciplines, specifically in both 500-meter races, the 1000-meter race, and the 1500-meter race. Although no new world records were established during this weekend of competition, Christian Oberbichler of Switzerland successfully set a new national record within the B division."
+  },
+  "gold_letter": "A",
+  "predicted_letter": "A",
+  "is_correct": 1,
+  "timestamp": "2026-07-10 23:05:57"
+}

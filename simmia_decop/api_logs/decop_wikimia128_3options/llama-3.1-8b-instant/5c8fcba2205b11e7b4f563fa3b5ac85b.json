@@ -1,0 +1,26 @@
+{
+  "query_id": "5c8fcba2205b11e7b4f563fa3b5ac85b",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00169.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00169.txt",
+  "label": 0,
+  "membership": "non_member",
+  "text_hash": "4796bce6d2982704499630b0b012355e",
+  "permutation_index": 5,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. On January 26, 2023, a military operation was carried out by elements of the Israeli army and the Israel Border Police against the Jenin refugee camp. This camp is situated within Area A of the Israeli-occupied West Bank, an area falling under Palestinian civil jurisdiction. As reported by The Jerusalem Post, the stated aim of this operation was to thwart an impending terrorist attack and to apprehend three Islamic Jihad operatives who were sought by authorities. During the confrontations that followed, nine Palestinians lost their lives at the hands of Israeli forces, among whom was an elderly female. Subsequently, on January 29, an additional Palestinian individual passed away due to injuries sustained during the aforementioned raid, escalating the final death toll to ten. This event marked the most lethal Israeli incursion into the Jenin refugee camp in almost two decades. The Israeli government declared that a minimum of six of the deceased were armed individuals. The fatalities contributed to the rising count of Palestinians killed.\nB. The Israel Border Police and Israeli army carried out an armed raid on the Jenin refugee camp on 26 January 2023 to prevent a planned terrorist strike and arrest three wanted Islamic Jihad militants. The clashes resulted in the deaths of nine Palestinians, including an elderly woman. On 29 January, another Palestinian was killed due to wounds received. The Israeli government reported that six of those killed were armed men.\nC. On 26 January 2023, the Israel Border Police and the Israeli army conducted an armed raid on the Jenin refugee camp, which is in Area A of the Israeli-occupied West Bank and under Palestinian civil authority. According to The Jerusalem Post, the objective was to prevent a planned terrorist strike and arrest three wanted Islamic Jihad militants.Nine Palestinians were killed by Israeli forces during the ensuing clashes, one of whom was an elderly woman. On 29 January, another Palestinian succumbed to wounds received during the raid, bringing the total killed to ten. It was the deadliest Israeli raid on the Jenin refugee camp in nearly 20 years. The Israeli government said at least six of those killed were armed men. The deaths brought the number of Palestinians killed\n\nAnswer:",
+  "options": {
+    "A": "On January 26, 2023, a military operation was carried out by elements of the Israeli army and the Israel Border Police against the Jenin refugee camp. This camp is situated within Area A of the Israeli-occupied West Bank, an area falling under Palestinian civil jurisdiction. As reported by The Jerusalem Post, the stated aim of this operation was to thwart an impending terrorist attack and to apprehend three Islamic Jihad operatives who were sought by authorities. During the confrontations that followed, nine Palestinians lost their lives at the hands of Israeli forces, among whom was an elderly female. Subsequently, on January 29, an additional Palestinian individual passed away due to injuries sustained during the aforementioned raid, escalating the final death toll to ten. This event marked the most lethal Israeli incursion into the Jenin refugee camp in almost two decades. The Israeli government declared that a minimum of six of the deceased were armed individuals. The fatalities contributed to the rising count of Palestinians killed.",
+    "B": "The Israel Border Police and Israeli army carried out an armed raid on the Jenin refugee camp on 26 January 2023 to prevent a planned terrorist strike and arrest three wanted Islamic Jihad militants. The clashes resulted in the deaths of nine Palestinians, including an elderly woman. On 29 January, another Palestinian was killed due to wounds received. The Israeli government reported that six of those killed were armed men.",
+    "C": "On 26 January 2023, the Israel Border Police and the Israeli army conducted an armed raid on the Jenin refugee camp, which is in Area A of the Israeli-occupied West Bank and under Palestinian civil authority. According to The Jerusalem Post, the objective was to prevent a planned terrorist strike and arrest three wanted Islamic Jihad militants.Nine Palestinians were killed by Israeli forces during the ensuing clashes, one of whom was an elderly woman. On 29 January, another Palestinian succumbed to wounds received during the raid, bringing the total killed to ten. It was the deadliest Israeli raid on the Jenin refugee camp in nearly 20 years. The Israeli government said at least six of those killed were armed men. The deaths brought the number of Palestinians killed"
+  },
+  "gold_letter": "C",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-07-10 22:30:44"
+}

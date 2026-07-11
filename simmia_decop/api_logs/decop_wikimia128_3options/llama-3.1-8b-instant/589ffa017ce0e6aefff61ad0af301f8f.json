@@ -1,0 +1,26 @@
+{
+  "query_id": "589ffa017ce0e6aefff61ad0af301f8f",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00108.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00108.txt",
+  "label": 0,
+  "membership": "non_member",
+  "text_hash": "3e319de0feda9aaeda46e14d59bf6da0",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. A motion of no confidence in the Spanish government of Pedro Sánchez was tabled by the far-right party Vox on 27 February 2023, and will be debated and voted in the Congress of Deputies between 21 and 22 March 2023. It was the sixth motion of no confidence in Spain since the country's transition to democracy.Vox announced the motion of no confidence on 9 December 2022, proposing it to be tabled under an independent candidate with government experience, voicing that Sánchez's proposed reforms of the Criminal Code to modify the embezzlement and sedition crimes were akin to a \"self-coup\" similar to \"that of Pedro Castillo in Peru\" two days earlier. The opposition People's Party (PP) under Alberto Núñez Feijóo stated that it would not vote against the motion,\nB. Vox, the far-right party, submitted a motion of no confidence in the Spanish government of Pedro Sánchez on 27 February 2023, which will be debated and voted in the Congress of Deputies between 21 and 22 March 2023.\nC. On February 27, 2023, the far-right political party Vox presented a motion of no confidence targeting the Spanish government led by Pedro Sánchez. This motion is scheduled for discussion and a vote in the Congress of Deputies on March 21 and 22, 2023. This marks the sixth instance of a no-confidence motion in Spain since the nation's transition to a democratic system of government. Vox had initially made public its intention to file this motion of no confidence on December 9, 2022. At that time, the party suggested that the motion should be put forward by an independent candidate possessing experience in government. Vox justified this action by asserting that the reforms proposed by Sánchez to the Criminal Code, which aimed to alter the offenses of embezzlement and sedition, amounted to a \"self-coup,\" drawing a parallel to the events involving \"Pedro Castillo in Peru\" that had transpired two days prior. The People's Party (PP), an opposition party headed by Alberto Núñez Feijóo, declared that its members would not cast votes opposing the motion.\n\nAnswer:",
+  "options": {
+    "A": "A motion of no confidence in the Spanish government of Pedro Sánchez was tabled by the far-right party Vox on 27 February 2023, and will be debated and voted in the Congress of Deputies between 21 and 22 March 2023. It was the sixth motion of no confidence in Spain since the country's transition to democracy.Vox announced the motion of no confidence on 9 December 2022, proposing it to be tabled under an independent candidate with government experience, voicing that Sánchez's proposed reforms of the Criminal Code to modify the embezzlement and sedition crimes were akin to a \"self-coup\" similar to \"that of Pedro Castillo in Peru\" two days earlier. The opposition People's Party (PP) under Alberto Núñez Feijóo stated that it would not vote against the motion,",
+    "B": "Vox, the far-right party, submitted a motion of no confidence in the Spanish government of Pedro Sánchez on 27 February 2023, which will be debated and voted in the Congress of Deputies between 21 and 22 March 2023.",
+    "C": "On February 27, 2023, the far-right political party Vox presented a motion of no confidence targeting the Spanish government led by Pedro Sánchez. This motion is scheduled for discussion and a vote in the Congress of Deputies on March 21 and 22, 2023. This marks the sixth instance of a no-confidence motion in Spain since the nation's transition to a democratic system of government. Vox had initially made public its intention to file this motion of no confidence on December 9, 2022. At that time, the party suggested that the motion should be put forward by an independent candidate possessing experience in government. Vox justified this action by asserting that the reforms proposed by Sánchez to the Criminal Code, which aimed to alter the offenses of embezzlement and sedition, amounted to a \"self-coup,\" drawing a parallel to the events involving \"Pedro Castillo in Peru\" that had transpired two days prior. The People's Party (PP), an opposition party headed by Alberto Núñez Feijóo, declared that its members would not cast votes opposing the motion."
+  },
+  "gold_letter": "A",
+  "predicted_letter": "C",
+  "is_correct": 0,
+  "timestamp": "2026-07-10 22:01:36"
+}

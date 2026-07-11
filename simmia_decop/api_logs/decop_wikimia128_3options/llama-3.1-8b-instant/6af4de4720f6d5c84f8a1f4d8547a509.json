@@ -1,0 +1,26 @@
+{
+  "query_id": "6af4de4720f6d5c84f8a1f4d8547a509",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00170.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00170.txt",
+  "label": 0,
+  "membership": "non_member",
+  "text_hash": "b2de7fc92b7a664d3c34ecf0ef510076",
+  "permutation_index": 3,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. On February 6, 2023, the China Coast Guard and the Philippine Coast Guard experienced an incident close to the Second Thomas Shoal. This shoal is among the geographical formations within the Spratly Islands, a region currently involved in an extensive territorial disagreement in the South China Sea. Several nations, including both China and the Philippines, assert claims over the Second Thomas Shoal. The Philippines currently maintains control over this particular feature by intentionally stranding the BRP Sierra Madre upon the shoal. The BRP Malapascua, a vessel belonging to the Philippine Coast Guard, was en route to the shoal to carry out a crew rotation and resupply operation for the BRP Sierra Madre. During its journey, the CCG 5205, a ship from the China Coast Guard, obstructed the path of the Filipino coast guard vessel. The Chinese ship undertook this action, perceiving the Philippine vessel's presence as an encroachment, and subsequently directed a green laser light toward it.\nB. On February 6, 2023, the China Coast Guard and Philippine Coast Guard engaged in a battle near the Second Thomas Shoal, a feature of the Spratly Islands that is a subject of global controversy in the South China Sea. China, like the Philippines, controls the Shoal by grounding the BRP Sierra Madre. During the mission, the Philippine Coast Guard blocked the Filipino coast guard ship and lit up a green laser light to intrude into the Shoal.\nC. On February 6, 2023, the China Coast Guard and Philippine Coast Guard had an encounter near the Second Thomas Shoal, one of the features of the Spratly Islands which is subject to a wider dispute in the South China Sea. The Second Thomas Shoal is claimed by multiple countries, including China and the Philippines. The latter controls the feature by having grounded the BRP Sierra Madre on the shoal. The BRP Malapascua of the Philippine Coast Guard was heading towards the shoal for a rotation and rotation and resupply mission for the BRP Sierra Madre crew when CCG 5205 of the China Coast Guard blocked the Filipino coast guard ship to act what it views as an intrusion of the Philippine vessel and aimed a green laser light\n\nAnswer:",
+  "options": {
+    "A": "On February 6, 2023, the China Coast Guard and the Philippine Coast Guard experienced an incident close to the Second Thomas Shoal. This shoal is among the geographical formations within the Spratly Islands, a region currently involved in an extensive territorial disagreement in the South China Sea. Several nations, including both China and the Philippines, assert claims over the Second Thomas Shoal. The Philippines currently maintains control over this particular feature by intentionally stranding the BRP Sierra Madre upon the shoal. The BRP Malapascua, a vessel belonging to the Philippine Coast Guard, was en route to the shoal to carry out a crew rotation and resupply operation for the BRP Sierra Madre. During its journey, the CCG 5205, a ship from the China Coast Guard, obstructed the path of the Filipino coast guard vessel. The Chinese ship undertook this action, perceiving the Philippine vessel's presence as an encroachment, and subsequently directed a green laser light toward it.",
+    "B": "On February 6, 2023, the China Coast Guard and Philippine Coast Guard engaged in a battle near the Second Thomas Shoal, a feature of the Spratly Islands that is a subject of global controversy in the South China Sea. China, like the Philippines, controls the Shoal by grounding the BRP Sierra Madre. During the mission, the Philippine Coast Guard blocked the Filipino coast guard ship and lit up a green laser light to intrude into the Shoal.",
+    "C": "On February 6, 2023, the China Coast Guard and Philippine Coast Guard had an encounter near the Second Thomas Shoal, one of the features of the Spratly Islands which is subject to a wider dispute in the South China Sea. The Second Thomas Shoal is claimed by multiple countries, including China and the Philippines. The latter controls the feature by having grounded the BRP Sierra Madre on the shoal. The BRP Malapascua of the Philippine Coast Guard was heading towards the shoal for a rotation and rotation and resupply mission for the BRP Sierra Madre crew when CCG 5205 of the China Coast Guard blocked the Filipino coast guard ship to act what it views as an intrusion of the Philippine vessel and aimed a green laser light"
+  },
+  "gold_letter": "C",
+  "predicted_letter": "C",
+  "is_correct": 1,
+  "timestamp": "2026-07-10 22:31:06"
+}

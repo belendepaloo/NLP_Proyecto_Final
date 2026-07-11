@@ -1,0 +1,26 @@
+{
+  "query_id": "279fae5ac5368b021130be5385f77d05",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00146.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00146.txt",
+  "label": 0,
+  "membership": "non_member",
+  "text_hash": "6bc45dfa7b2c502fe96d1d9090070959",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. On March 4, 2023, the 7th Crunchyroll Anime Awards were held at the Main Banquet Hall of the Grand Prince Hotel New Takanawa in Tokyo, Japan. This was the first time a ceremony had been held in person since 2020, with both ceremonies being conducted online in 2021 and 2022. Additionally, it was the first ceremony to be held in Japan, as previous physical ceremonies were held in the United States. Anime released on television or online in Japan from November 2021 to September 2022 were eligible for nomination of the first-\nB. The 7th Crunchyroll Anime Awards event took place on March 4, 2023, within the Main Banquet Hall of Tokyo, Japan's Grand Prince Hotel New Takanawa. This marked the initial in-person ceremony since 2020, as the 2021 and 2022 ceremonies had both been conducted virtually. Furthermore, it represented the inaugural ceremony to be staged in Japan, given that all preceding physical ceremonies had occurred in the United States. For this particular iteration, anime series that premiered on television or online in Japan between November 2021 and September 2022 were eligible for consideration for nominations. The event was emceed by voice actress Sally Amaki and presenter Jon Kabira, with Sony CEO Kenichiro Yoshida kicking off the proceedings. Musical performances during the ceremony included past award recipients ALI and AKLO, Yuki Kajiura, and Kohta Yamamoto, alongside singer Haruka Kaki.\nC. The 7th Crunchyroll Anime Awards was held on March 4, 2023, at the Main Banquet Hall of the Grand Prince Hotel New Takanawa in Tokyo, Japan. It was the first ceremony to be held in person since 2020; both ceremonies in 2021 and 2022 were held virtually. Additionally, it was the first ceremony to be held in Japan, as previous physical ceremonies were held in the United States. Anime released on television or online in Japan from November 2021 to September 2022 were eligible for nominations for this edition. The ceremony was hosted by voice actress Sally Amaki and presenter Jon Kabira, with Sony CEO Kenichiro Yoshida opening the show. Previous winners ALI and AKLO, Yuki Kajiura, and Kohta Yamamoto performed at the ceremony, while singer Haruka Kaki\n\nAnswer:",
+  "options": {
+    "A": "On March 4, 2023, the 7th Crunchyroll Anime Awards were held at the Main Banquet Hall of the Grand Prince Hotel New Takanawa in Tokyo, Japan. This was the first time a ceremony had been held in person since 2020, with both ceremonies being conducted online in 2021 and 2022. Additionally, it was the first ceremony to be held in Japan, as previous physical ceremonies were held in the United States. Anime released on television or online in Japan from November 2021 to September 2022 were eligible for nomination of the first-",
+    "B": "The 7th Crunchyroll Anime Awards event took place on March 4, 2023, within the Main Banquet Hall of Tokyo, Japan's Grand Prince Hotel New Takanawa. This marked the initial in-person ceremony since 2020, as the 2021 and 2022 ceremonies had both been conducted virtually. Furthermore, it represented the inaugural ceremony to be staged in Japan, given that all preceding physical ceremonies had occurred in the United States. For this particular iteration, anime series that premiered on television or online in Japan between November 2021 and September 2022 were eligible for consideration for nominations. The event was emceed by voice actress Sally Amaki and presenter Jon Kabira, with Sony CEO Kenichiro Yoshida kicking off the proceedings. Musical performances during the ceremony included past award recipients ALI and AKLO, Yuki Kajiura, and Kohta Yamamoto, alongside singer Haruka Kaki.",
+    "C": "The 7th Crunchyroll Anime Awards was held on March 4, 2023, at the Main Banquet Hall of the Grand Prince Hotel New Takanawa in Tokyo, Japan. It was the first ceremony to be held in person since 2020; both ceremonies in 2021 and 2022 were held virtually. Additionally, it was the first ceremony to be held in Japan, as previous physical ceremonies were held in the United States. Anime released on television or online in Japan from November 2021 to September 2022 were eligible for nominations for this edition. The ceremony was hosted by voice actress Sally Amaki and presenter Jon Kabira, with Sony CEO Kenichiro Yoshida opening the show. Previous winners ALI and AKLO, Yuki Kajiura, and Kohta Yamamoto performed at the ceremony, while singer Haruka Kaki"
+  },
+  "gold_letter": "C",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-07-10 22:20:48"
+}
