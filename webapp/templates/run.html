@@ -27,7 +27,7 @@
 <div class="pipeline-wrap">
   <div class="pipeline">
     {% for node in pipeline_nodes %}
-      <div class="pnode pnode--{{ node.status }}" title="{{ node.sublabel }}">
+      <div class="pnode pnode--{{ node.status }}" data-nodeid="{{ node.id }}" title="{{ node.sublabel }}">
         {% if node.status == "active" %}
           <div class="pnode__pulse"></div>
         {% endif %}
@@ -382,9 +382,9 @@
   {% endif %}
 </section>
 
-{# ── Botón flotante "Siguiente" — siempre en el DOM cuando el run es activo ── #}
+{# ── Botón flotante "Siguiente" — visible server-side si ya hay una pausa activa ── #}
 {% if run.status in ("running", "waiting_human") %}
-<div id="demo-next-bar" class="demo-next-bar" style="display:none" aria-live="polite">
+<div id="demo-next-bar" class="demo-next-bar" style="{{ 'display:flex' if run.demo_paused else 'display:none' }}" aria-live="polite">
   <div class="demo-next-inner">
     <span class="demo-next-label">Pipeline en pausa</span>
     <button id="demo-next-btn" class="btn btn--primary demo-next-btn" onclick="demoNext()">
@@ -405,12 +405,80 @@
       "bibliography_agent": "📚",
       "curator_agent": "✂️",
       "sage_qa_agent": "🔬",
-      "mia_agent-[de-cop]": "🎯",
-      "mia_agent-[dualtest]": "📐",
-      "mia_agent-[simia]": "🧬",
+      "mia_agent-de-cop": "🎯",
+      "mia_agent-dualtest": "📐",
+      "mia_agent-simia": "🧬",
       "ensemble": "⚖️",
       "system": "⚙️",
     };
+
+    // ── Pipeline node live-update ─────────────────────────────────────────────
+    var _nodeOrder = ["bibliography", "waiting", "authorship", "voice", "sage", "mia", "result"];
+    // Mapeo slug-de-agente → id de nodo
+    var _slugToNode = {
+      "bibliography_agent": "bibliography",
+      "human-in-the-loop": "waiting",
+      "curator_agent": "authorship",
+      "sage_qa_agent": "sage",
+      "mia_agent-de-cop": "mia",
+      "mia_agent-dualtest": "mia",
+      "mia_agent-simia": "mia",
+      "ensemble": "result",
+    };
+
+    // Inicializar desde el estado server-rendered para no retroceder nodos ya done
+    var _currentNodeIdx = -1;
+    _nodeOrder.forEach(function(id, idx) {
+      var el = document.querySelector(".pnode[data-nodeid='" + id + "']");
+      if (el && (el.classList.contains("pnode--done") || el.classList.contains("pnode--active"))) {
+        _currentNodeIdx = idx;
+      }
+    });
+
+    function _updateActivePnode(nodeId) {
+      var newIdx = _nodeOrder.indexOf(nodeId);
+      if (newIdx < 0 || newIdx <= _currentNodeIdx) return;
+      _currentNodeIdx = newIdx;
+
+      document.querySelectorAll(".pnode[data-nodeid]").forEach(function(el) {
+        var id = el.getAttribute("data-nodeid");
+        var idx = _nodeOrder.indexOf(id);
+        if (idx < 0) return;
+
+        if (idx < newIdx) {
+          // Marcar como done
+          el.classList.remove("pnode--active", "pnode--pending", "pnode--error");
+          el.classList.add("pnode--done");
+          var pulse = el.querySelector(".pnode__pulse");
+          if (pulse) pulse.remove();
+          if (!el.querySelector(".pnode__check")) {
+            var chk = document.createElement("div");
+            chk.className = "pnode__check";
+            chk.textContent = "✓";
+            el.appendChild(chk);
+          }
+        } else if (idx === newIdx) {
+          // Marcar como active
+          el.classList.remove("pnode--done", "pnode--pending", "pnode--error");
+          el.classList.add("pnode--active");
+          var existingChk = el.querySelector(".pnode__check");
+          if (existingChk) existingChk.remove();
+          if (!el.querySelector(".pnode__pulse")) {
+            var pulse2 = document.createElement("div");
+            pulse2.className = "pnode__pulse";
+            el.insertBefore(pulse2, el.firstChild);
+          }
+        }
+        // pending: no tocar
+      });
+
+      // Iluminar flechas hasta el nodo activo
+      document.querySelectorAll(".pipeline__arrow").forEach(function(arrow, i) {
+        if (i < newIdx) {
+          arrow.classList.add("pipeline__arrow--lit");
+        }
+      });
+    }
 
     function _appendEvent(ev) {
       if (_agentlogEmpty) { _agentlogEmpty.style.display = "none"; }
@@ -425,10 +493,12 @@
         '<span class="alog-action">' + ev.action + '</span>' +
         (ev.detail ? '<span class="alog-detail">' + ev.detail + '</span>' : '');
       _agentlogEl.appendChild(div);
-      // Scroll al fondo
       _agentlogEl.scrollTop = _agentlogEl.scrollHeight;
-      // Quitar clase de animación tras fade-in
       setTimeout(function() { div.classList.remove("alog-entry--new"); }, 600);
+
+      // Avanzar nodo activo si el agente cambió de etapa
+      var targetNode = _slugToNode[slug];
+      if (targetNode) { _updateActivePnode(targetNode); }
     }
 
     var es = new EventSource("/runs/{{ run.run_id }}/stream");
@@ -470,16 +540,12 @@
     });
 
     function demoNext() {
-      if (!_demoPauseBtn) return;
+      if (!_demoPauseBtn || _demoPauseBtn.disabled) return;
       _demoPauseBtn.disabled = true;
       _demoPauseBtn.textContent = "▶ …";
-      fetch("/runs/{{ run.run_id }}/demo-next", {method: "POST"})
-        .catch(function() {
-          if (_demoPauseBtn) {
-            _demoPauseBtn.disabled = false;
-            _demoPauseBtn.textContent = "▶ Siguiente";
-          }
-        });
+      // El botón solo se re-habilita cuando el SSE confirma una NUEVA pausa (paused:true).
+      // No re-habilitar en el catch: si la página recargó, el nuevo DOM toma el control.
+      fetch("/runs/{{ run.run_id }}/demo-next", {method: "POST"});
     }
 
     es.onerror = function() {
