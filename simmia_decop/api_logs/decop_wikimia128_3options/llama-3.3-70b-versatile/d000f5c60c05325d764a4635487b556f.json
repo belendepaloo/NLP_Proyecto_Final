@@ -1,0 +1,26 @@
+{
+  "query_id": "d000f5c60c05325d764a4635487b556f",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00180.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00180.txt",
+  "label": 1,
+  "membership": "member",
+  "text_hash": "dbf2ed9630d37cc5da51a8cab223d129",
+  "permutation_index": 2,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. Eleanor Poppy Miranda de Freitas, an English woman born on June 26, 1990, and deceased on April 4, 2014, ended her own life merely three days prior to the scheduled start of her legal proceedings. She was facing charges of obstructing justice, specifically for allegedly fabricating a rape accusation. Her passing ignited a significant public discussion concerning several critical issues: whether pursuing legal action against individuals accused of filing false rape reports might discourage actual victims from coming forward, and whether it is morally justifiable to prosecute individuals who are particularly susceptible, given that de Freitas had been diagnosed with bipolar disorder and depression and a psychiatrist had assessed her as being at risk of suicide. Despite these concerns, the decision to pursue legal action against de Freitas received endorsement from both the Director of Public Prosecutions and the Attorney General for England and Wales, and the Metropolitan Police Service subsequently compensated her family.\nB. Eleanor Poppy Miranda de Freitas (26 June 1990 – 4 April 2014) was an English woman who committed suicide three days before the commencement of her trial for perverting the course of justice for allegedly making a false accusation of rape. Her death prompted a debate over whether prosecuting people accused of making a false accusation of rape could deter rape victims from reporting the crime, as well as whether it was appropriate to prosecute vulnerable individuals (de Freitas had been diagnosed with bipolar disorder and depression and was judged by a psychiatrist to represent a suicide risk). The decision to prosecute de Freitas was ultimately upheld by both the Director of Public Prosecutions and the Attorney General for England and Wales, while the Metropolitan Police Service paid\nC. Eleanor Poppy Miranda de Freitas, who was diagnosed with bipolar disorder and depression, committed suicide three days before her trial for perverting the course of justice for allegedly making a false accusation of rape. The death sparked a debate over whether prosecutors should prosecute those accused of making such accusations or if vulnerable individuals should be prosecuted.\n\nAnswer:",
+  "options": {
+    "A": "Eleanor Poppy Miranda de Freitas, an English woman born on June 26, 1990, and deceased on April 4, 2014, ended her own life merely three days prior to the scheduled start of her legal proceedings. She was facing charges of obstructing justice, specifically for allegedly fabricating a rape accusation. Her passing ignited a significant public discussion concerning several critical issues: whether pursuing legal action against individuals accused of filing false rape reports might discourage actual victims from coming forward, and whether it is morally justifiable to prosecute individuals who are particularly susceptible, given that de Freitas had been diagnosed with bipolar disorder and depression and a psychiatrist had assessed her as being at risk of suicide. Despite these concerns, the decision to pursue legal action against de Freitas received endorsement from both the Director of Public Prosecutions and the Attorney General for England and Wales, and the Metropolitan Police Service subsequently compensated her family.",
+    "B": "Eleanor Poppy Miranda de Freitas (26 June 1990 – 4 April 2014) was an English woman who committed suicide three days before the commencement of her trial for perverting the course of justice for allegedly making a false accusation of rape. Her death prompted a debate over whether prosecuting people accused of making a false accusation of rape could deter rape victims from reporting the crime, as well as whether it was appropriate to prosecute vulnerable individuals (de Freitas had been diagnosed with bipolar disorder and depression and was judged by a psychiatrist to represent a suicide risk). The decision to prosecute de Freitas was ultimately upheld by both the Director of Public Prosecutions and the Attorney General for England and Wales, while the Metropolitan Police Service paid",
+    "C": "Eleanor Poppy Miranda de Freitas, who was diagnosed with bipolar disorder and depression, committed suicide three days before her trial for perverting the course of justice for allegedly making a false accusation of rape. The death sparked a debate over whether prosecutors should prosecute those accused of making such accusations or if vulnerable individuals should be prosecuted."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-07-10 23:58:37"
+}

@@ -1,0 +1,26 @@
+{
+  "query_id": "b00962dc697159c053c56d9bc4aea174",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00032.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00032.txt",
+  "label": 1,
+  "membership": "member",
+  "text_hash": "ca3c9e106868622896560a7675810d05",
+  "permutation_index": 0,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. Art Buff is a graffiti artwork by Banksy which was created in Folkestone in 2014, Banksy announcing it as \"part of the Folkestone triennial. Kind of\". The work depicts a woman wearing headphones and staring at a plinth, upon which rests a patch of painted-out graffiti. The name of the piece is a play on words, \"buff\" being a slang term for the painting over of graffiti.Reported on 13 October 2014, Art Buff was vandalized with the spray painting of a penis sitting on top of the plinth.During early November 2014 Robin Barton and Bankrobber London organized the removal of Art Buff from its Folkestone location following requests from the owners of the wall, and announced plans to put it up for sale in aid of a cancer\nB. In 2014, Banksy created a piece in Folkestone called Art Buff, which was part of the city's triennial triennial. Kind of. It features a woman wearing headphones and looking at a plinth with a patch of painted-out graffiti. The name of the piece is a play on words, as \"buff\" is a slang term for a painting over of graffiti. It was later reported that Art Buff was vandalized with a spray painted on top of the plinth.\nC. \"Art Buff,\" a graffiti piece by Banksy, came into existence in Folkestone during 2014, with Banksy declaring it to be \"part of the Folkestone triennial. Kind of\". This artwork portrays a female figure adorned with headphones, her gaze fixed on a plinth that supports a section of painted-over graffiti. The title of the artwork is a linguistic twist, as \"buff\" is a colloquial term referring to the act of painting over graffiti. On October 13, 2014, it was reported that \"Art Buff\" had been defaced by the spray-painting of a penis positioned atop the plinth. In the initial days of November 2014, Robin Barton and Bankrobber London orchestrated the removal of \"Art Buff\" from its original site in Folkestone, acceding to the wishes of the wall's proprietors, and subsequently disclosed their intentions to offer it for sale, with proceeds earmarked for cancer research.\n\nAnswer:",
+  "options": {
+    "A": "Art Buff is a graffiti artwork by Banksy which was created in Folkestone in 2014, Banksy announcing it as \"part of the Folkestone triennial. Kind of\". The work depicts a woman wearing headphones and staring at a plinth, upon which rests a patch of painted-out graffiti. The name of the piece is a play on words, \"buff\" being a slang term for the painting over of graffiti.Reported on 13 October 2014, Art Buff was vandalized with the spray painting of a penis sitting on top of the plinth.During early November 2014 Robin Barton and Bankrobber London organized the removal of Art Buff from its Folkestone location following requests from the owners of the wall, and announced plans to put it up for sale in aid of a cancer",
+    "B": "In 2014, Banksy created a piece in Folkestone called Art Buff, which was part of the city's triennial triennial. Kind of. It features a woman wearing headphones and looking at a plinth with a patch of painted-out graffiti. The name of the piece is a play on words, as \"buff\" is a slang term for a painting over of graffiti. It was later reported that Art Buff was vandalized with a spray painted on top of the plinth.",
+    "C": "\"Art Buff,\" a graffiti piece by Banksy, came into existence in Folkestone during 2014, with Banksy declaring it to be \"part of the Folkestone triennial. Kind of\". This artwork portrays a female figure adorned with headphones, her gaze fixed on a plinth that supports a section of painted-over graffiti. The title of the artwork is a linguistic twist, as \"buff\" is a colloquial term referring to the act of painting over graffiti. On October 13, 2014, it was reported that \"Art Buff\" had been defaced by the spray-painting of a penis positioned atop the plinth. In the initial days of November 2014, Robin Barton and Bankrobber London orchestrated the removal of \"Art Buff\" from its original site in Folkestone, acceding to the wishes of the wall's proprietors, and subsequently disclosed their intentions to offer it for sale, with proceeds earmarked for cancer research."
+  },
+  "gold_letter": "A",
+  "predicted_letter": "A",
+  "is_correct": 1,
+  "timestamp": "2026-07-10 23:25:37"
+}

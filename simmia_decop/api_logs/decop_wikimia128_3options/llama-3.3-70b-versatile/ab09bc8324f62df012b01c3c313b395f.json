@@ -1,0 +1,26 @@
+{
+  "query_id": "ab09bc8324f62df012b01c3c313b395f",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00031.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00031.txt",
+  "label": 0,
+  "membership": "non_member",
+  "text_hash": "db307262ee07f134061569e0fde0ab85",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. On February 23, 2023, the 35th Lo Nuestro Awards were held at the Dade Arena in Miami, hosted by television presenters Alejandra Espinoza and Adrián Uribe, and singers Sebastián Yatra and Paulina Rubio, will be televised by the TV network Univisión, and will recognize the best Spanish-language music of 2022. Nominations were announced for the following categories on January 23, 2023: Sebastián Yatra, Bad Bunny, and nine were the total of seven new categories added as\nB. The 35th Lo Nuestro Awards were held at the Dade Arena in Miami on February 23, 2023, to recognize the most popular Spanish-language music of 2022. The ceremony will be broadcast on Univisión and will be hosted by television presenters Alejandra Espinoza and Adrián Uribe and singers Sebastián Yatra and Paulina Rubio.The nominees were announced on January 23, 2023, with Colombian singer Sebastián Yatra leading with ten nominations, followed by Bad Bunny, Becky G, Camilo and Grupo Firme, all with nine. Seven new categories were added increasing the number of categories to thirty-nine, these categories are: Regional Mexican New Artist of the Year, Tour of the Year, Male Pop Artist of the Year, Female Pop Artist of the Year, Tropical Album of the Year, Male Regional Mexican Artist\nC. The 35th annual Lo Nuestro Awards took place on February 23, 2023, at the Dade Arena in Miami. This event was organized to honor the most favored Spanish-language musical creations from the year 2022. Univisión will air the awards show, which will feature television personalities Alejandra Espinoza and Adrián Uribe, alongside vocalists Sebastián Yatra and Paulina Rubio, as its hosts. The list of nominees was made public on January 23, 2023. Colombian musician Sebastián Yatra secured the highest number of nominations, with a total of ten. Following him were Bad Bunny, Becky G, Camilo, and Grupo Firme, each receiving nine nominations. The total number of categories increased to thirty-nine with the introduction of seven new categories. These new additions include: Regional Mexican New Artist of the Year, Tour of the Year, Male Pop Artist of the Year, Female Pop Artist of the Year, Tropical Album of the Year, and Male Regional Mexican Artist.\n\nAnswer:",
+  "options": {
+    "A": "On February 23, 2023, the 35th Lo Nuestro Awards were held at the Dade Arena in Miami, hosted by television presenters Alejandra Espinoza and Adrián Uribe, and singers Sebastián Yatra and Paulina Rubio, will be televised by the TV network Univisión, and will recognize the best Spanish-language music of 2022. Nominations were announced for the following categories on January 23, 2023: Sebastián Yatra, Bad Bunny, and nine were the total of seven new categories added as",
+    "B": "The 35th Lo Nuestro Awards were held at the Dade Arena in Miami on February 23, 2023, to recognize the most popular Spanish-language music of 2022. The ceremony will be broadcast on Univisión and will be hosted by television presenters Alejandra Espinoza and Adrián Uribe and singers Sebastián Yatra and Paulina Rubio.The nominees were announced on January 23, 2023, with Colombian singer Sebastián Yatra leading with ten nominations, followed by Bad Bunny, Becky G, Camilo and Grupo Firme, all with nine. Seven new categories were added increasing the number of categories to thirty-nine, these categories are: Regional Mexican New Artist of the Year, Tour of the Year, Male Pop Artist of the Year, Female Pop Artist of the Year, Tropical Album of the Year, Male Regional Mexican Artist",
+    "C": "The 35th annual Lo Nuestro Awards took place on February 23, 2023, at the Dade Arena in Miami. This event was organized to honor the most favored Spanish-language musical creations from the year 2022. Univisión will air the awards show, which will feature television personalities Alejandra Espinoza and Adrián Uribe, alongside vocalists Sebastián Yatra and Paulina Rubio, as its hosts. The list of nominees was made public on January 23, 2023. Colombian musician Sebastián Yatra secured the highest number of nominations, with a total of ten. Following him were Bad Bunny, Becky G, Camilo, and Grupo Firme, each receiving nine nominations. The total number of categories increased to thirty-nine with the introduction of seven new categories. These new additions include: Regional Mexican New Artist of the Year, Tour of the Year, Male Pop Artist of the Year, Female Pop Artist of the Year, Tropical Album of the Year, and Male Regional Mexican Artist."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-07-10 23:25:32"
+}

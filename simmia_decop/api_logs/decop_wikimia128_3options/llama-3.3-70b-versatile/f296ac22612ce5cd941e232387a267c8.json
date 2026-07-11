@@ -1,0 +1,26 @@
+{
+  "query_id": "f296ac22612ce5cd941e232387a267c8",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00047.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00047.txt",
+  "label": 0,
+  "membership": "non_member",
+  "text_hash": "17ddcb9b6efa091918480d82b72b71f7",
+  "permutation_index": 2,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. Berlin 2030 klimaneutral (English: Berlin 2030 climate-neutral) was a citizens' initiative launched in Berlin in 2018. It was the subject of a city-wide referendum scheduled for 26 March 2023, commonly called the Klima-Volksentscheid (English: climate referendum). Voters will be asked whether the Climate Protection and Energy Transition Act of 2016 should be amended. The primary goal of the referendum is to legislate a goal of carbon neutrality by the year 2030, rather than the existing goal of 2045. Since the referendum proposes specific amendments to the law, its result will be legally binding. In order to pass, the proposal must be approved by a majority on the day and receive approval from a quorum of over 25% of registered voters. While there were a majority of votes in\nB. A citizens' initiative in Berlin called Berlin 2030 klimaneutral was launched in 2018. It was subject to a city-wide referendum on 26 March 2023, called the Klima-Volksentscheid. The aim of the referendum is to legislate a goal of carbon neutrality by 2030, rather than the current goal of 2045. As a result, the proposal must be approved by a majority on the day and a quorum of over 25% of registered voters.\nC. Berlin 2030 climate-neutral, an initiative created by citizens, originated in Berlin during 2018. This initiative became the central topic of a city-wide public vote, commonly referred to as the Klima-Volksentscheid (climate referendum), which was slated for March 26, 2023. The electorate will be presented with the question of whether modifications should be made to the 2016 Climate Protection and Energy Transition Act. The main objective of this referendum is to legally establish a target of achieving carbon neutrality by 2030, in contrast to the current target year of 2045. Given that the referendum puts forth concrete alterations to the existing legislation, its outcome will carry legal enforceability. For the proposal to be successfully adopted, it needs to secure a majority of votes on the designated day and also achieve endorsement from a minimum participation threshold of more than 25% of all eligible voters. Despite a majority of votes being in favor,\n\nAnswer:",
+  "options": {
+    "A": "Berlin 2030 klimaneutral (English: Berlin 2030 climate-neutral) was a citizens' initiative launched in Berlin in 2018. It was the subject of a city-wide referendum scheduled for 26 March 2023, commonly called the Klima-Volksentscheid (English: climate referendum). Voters will be asked whether the Climate Protection and Energy Transition Act of 2016 should be amended. The primary goal of the referendum is to legislate a goal of carbon neutrality by the year 2030, rather than the existing goal of 2045. Since the referendum proposes specific amendments to the law, its result will be legally binding. In order to pass, the proposal must be approved by a majority on the day and receive approval from a quorum of over 25% of registered voters. While there were a majority of votes in",
+    "B": "A citizens' initiative in Berlin called Berlin 2030 klimaneutral was launched in 2018. It was subject to a city-wide referendum on 26 March 2023, called the Klima-Volksentscheid. The aim of the referendum is to legislate a goal of carbon neutrality by 2030, rather than the current goal of 2045. As a result, the proposal must be approved by a majority on the day and a quorum of over 25% of registered voters.",
+    "C": "Berlin 2030 climate-neutral, an initiative created by citizens, originated in Berlin during 2018. This initiative became the central topic of a city-wide public vote, commonly referred to as the Klima-Volksentscheid (climate referendum), which was slated for March 26, 2023. The electorate will be presented with the question of whether modifications should be made to the 2016 Climate Protection and Energy Transition Act. The main objective of this referendum is to legally establish a target of achieving carbon neutrality by 2030, in contrast to the current target year of 2045. Given that the referendum puts forth concrete alterations to the existing legislation, its outcome will carry legal enforceability. For the proposal to be successfully adopted, it needs to secure a majority of votes on the designated day and also achieve endorsement from a minimum participation threshold of more than 25% of all eligible voters. Despite a majority of votes being in favor,"
+  },
+  "gold_letter": "A",
+  "predicted_letter": "A",
+  "is_correct": 1,
+  "timestamp": "2026-07-10 23:28:28"
+}

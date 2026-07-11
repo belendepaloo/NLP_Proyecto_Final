@@ -1,0 +1,26 @@
+{
+  "query_id": "c2eed46a67acf263d1f3b1200c54d91e",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00220.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00220.txt",
+  "label": 1,
+  "membership": "member",
+  "text_hash": "78741138820faf9d45942254d4607b24",
+  "permutation_index": 0,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. S.A.S. v. France was a case brought for the European Court of Human Rights which ruled that the French ban on face covering did not violate European Convention on Human Rights's (ECHR) provisions on right to privacy or freedom of religion, nor other invoked provisions. On these two points, the Court held her decision by fifteen votes to two. The two judges in the minority expressed their partly dissenting opinion. The French ban against face covering, loi n° 2010-1192 du 11 octobre 2010 interdisant la dissimulation du visage dans l'espace public, was adopted on 11 October 2010 and went into effect on 11 April 2011. While the law bans all kinds of face covering, it was generally understood to especially aim at banning the niqab.On the same day\nB. The European Court of Human Rights ruled in the case of S.A.S. France that the French ban on face covering did not contravene European Convention on Human Rights provisions on right to privacy or freedom of religion. The Court's decision was made by a margin of fifteen votes to two. The two judges in the minority held a partially dissenting opinion. The French ban on face covering was adopted on 11 October 2010 and went into effect on 11 April 2011.\nC. S.A.S. v. France involved a legal challenge presented to the European Court of Human Rights, which determined that the French prohibition of face covering did not infringe upon the European Convention on Human Rights's (ECHR) stipulations concerning the right to privacy or freedom of religion, nor any other cited clauses. Regarding these twin issues, the Court upheld its judgment with a vote of fifteen in favor and two against. The two dissenting judges articulated their partially opposing viewpoint. The French prohibition against face covering, officially known as loi n° 2010-1192 du 11 octobre 2010 interdisant la dissimulation du visage dans l'espace public, was enacted on October 11, 2010, and became enforceable on April 11, 2011. Although the legislation restricts all forms of face concealment, it was widely perceived as being specifically directed at outlawing the niqab. On that same date,\n\nAnswer:",
+  "options": {
+    "A": "S.A.S. v. France was a case brought for the European Court of Human Rights which ruled that the French ban on face covering did not violate European Convention on Human Rights's (ECHR) provisions on right to privacy or freedom of religion, nor other invoked provisions. On these two points, the Court held her decision by fifteen votes to two. The two judges in the minority expressed their partly dissenting opinion. The French ban against face covering, loi n° 2010-1192 du 11 octobre 2010 interdisant la dissimulation du visage dans l'espace public, was adopted on 11 October 2010 and went into effect on 11 April 2011. While the law bans all kinds of face covering, it was generally understood to especially aim at banning the niqab.On the same day",
+    "B": "The European Court of Human Rights ruled in the case of S.A.S. France that the French ban on face covering did not contravene European Convention on Human Rights provisions on right to privacy or freedom of religion. The Court's decision was made by a margin of fifteen votes to two. The two judges in the minority held a partially dissenting opinion. The French ban on face covering was adopted on 11 October 2010 and went into effect on 11 April 2011.",
+    "C": "S.A.S. v. France involved a legal challenge presented to the European Court of Human Rights, which determined that the French prohibition of face covering did not infringe upon the European Convention on Human Rights's (ECHR) stipulations concerning the right to privacy or freedom of religion, nor any other cited clauses. Regarding these twin issues, the Court upheld its judgment with a vote of fifteen in favor and two against. The two dissenting judges articulated their partially opposing viewpoint. The French prohibition against face covering, officially known as loi n° 2010-1192 du 11 octobre 2010 interdisant la dissimulation du visage dans l'espace public, was enacted on October 11, 2010, and became enforceable on April 11, 2011. Although the legislation restricts all forms of face concealment, it was widely perceived as being specifically directed at outlawing the niqab. On that same date,"
+  },
+  "gold_letter": "A",
+  "predicted_letter": "A",
+  "is_correct": 1,
+  "timestamp": "2026-07-11 00:06:35"
+}

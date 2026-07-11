@@ -1,0 +1,26 @@
+{
+  "query_id": "b9d2ed2b0f690b0c9bba311ec5b03c75",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00141.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00141.txt",
+  "label": 1,
+  "membership": "member",
+  "text_hash": "ae1febba23069ec9675d7df552267e7c",
+  "permutation_index": 0,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. In 2014, a series of groundbreaking diplomatic meetings was held between Wang Yu-chi, in his official capacity as the Minister of the Mainland Affairs Council (MAC) of the Republic of China (ROC), and Zhang Zhijun, the Minister of the Taiwan Affairs Office (TAO) of the People's Republic of China (PRC). The first meeting took place in Nanjing on 11 February 2014 when Wang visited mainland China, the very first official contact between the two governments across the Taiwan Strait after the end of Chinese Civil War in 1949. The tour of Wang and his delegates lasted from 11 to 14 February in Nanjing and Shanghai.On 25–28 June 2014, Zhang paid a retrospective visit to Taiwan in order to rebuild ties in the aftermath of the Sunflower Movement. It\nB. During 2014, a set of historic diplomatic discussions transpired between Wang Yu-chi, who was serving as the Minister for the Republic of China's (ROC) Mainland Affairs Council (MAC), and Zhang Zhijun, the Minister for the People's Republic of China's (PRC) Taiwan Affairs Office (TAO). The initial gathering occurred in Nanjing on February 11, 2014, coinciding with Wang's visit to mainland China. This marked the inaugural official interaction between the two governments separated by the Taiwan Strait since the conclusion of the Chinese Civil War in 1949. Wang and his delegation conducted their visit to Nanjing and Shanghai from February 11 to February 14. Subsequently, from June 25 to June 28, 2014, Zhang undertook a reciprocal visit to Taiwan, aiming to mend relations following the Sunflower Movement.\nC. Wang Yu-chi and Zhang Zhijun, the Minister of the Mainland Affairs of the Republic of China (ROC) and the Minister of the Taiwan Affairs Office (TAO) of the People's Republic of China (PRC), had a series of groundbreaking diplomatic meetings in 2014. Wang's visit to mainland China on 11 February 2014 marked the first official official meeting between the two governments across the Taiwan Strait after the Chinese Civil War ended in 1949. The trip took place in Nanjing and Shanghai from 11 to 14 February, with Zhang's retrospectively visiting on 25 June 2014.\n\nAnswer:",
+  "options": {
+    "A": "In 2014, a series of groundbreaking diplomatic meetings was held between Wang Yu-chi, in his official capacity as the Minister of the Mainland Affairs Council (MAC) of the Republic of China (ROC), and Zhang Zhijun, the Minister of the Taiwan Affairs Office (TAO) of the People's Republic of China (PRC). The first meeting took place in Nanjing on 11 February 2014 when Wang visited mainland China, the very first official contact between the two governments across the Taiwan Strait after the end of Chinese Civil War in 1949. The tour of Wang and his delegates lasted from 11 to 14 February in Nanjing and Shanghai.On 25–28 June 2014, Zhang paid a retrospective visit to Taiwan in order to rebuild ties in the aftermath of the Sunflower Movement. It",
+    "B": "During 2014, a set of historic diplomatic discussions transpired between Wang Yu-chi, who was serving as the Minister for the Republic of China's (ROC) Mainland Affairs Council (MAC), and Zhang Zhijun, the Minister for the People's Republic of China's (PRC) Taiwan Affairs Office (TAO). The initial gathering occurred in Nanjing on February 11, 2014, coinciding with Wang's visit to mainland China. This marked the inaugural official interaction between the two governments separated by the Taiwan Strait since the conclusion of the Chinese Civil War in 1949. Wang and his delegation conducted their visit to Nanjing and Shanghai from February 11 to February 14. Subsequently, from June 25 to June 28, 2014, Zhang undertook a reciprocal visit to Taiwan, aiming to mend relations following the Sunflower Movement.",
+    "C": "Wang Yu-chi and Zhang Zhijun, the Minister of the Mainland Affairs of the Republic of China (ROC) and the Minister of the Taiwan Affairs Office (TAO) of the People's Republic of China (PRC), had a series of groundbreaking diplomatic meetings in 2014. Wang's visit to mainland China on 11 February 2014 marked the first official official meeting between the two governments across the Taiwan Strait after the Chinese Civil War ended in 1949. The trip took place in Nanjing and Shanghai from 11 to 14 February, with Zhang's retrospectively visiting on 25 June 2014."
+  },
+  "gold_letter": "A",
+  "predicted_letter": "A",
+  "is_correct": 1,
+  "timestamp": "2026-07-10 23:50:10"
+}

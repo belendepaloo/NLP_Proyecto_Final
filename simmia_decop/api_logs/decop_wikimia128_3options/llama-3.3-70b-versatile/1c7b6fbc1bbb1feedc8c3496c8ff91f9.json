@@ -1,0 +1,26 @@
+{
+  "query_id": "1c7b6fbc1bbb1feedc8c3496c8ff91f9",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00112.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00112.txt",
+  "label": 0,
+  "membership": "non_member",
+  "text_hash": "29c47a5722d5fdbca925fe23f1f95ad4",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. The 16th Congress of the Popular Front for the Liberation of Saguia El Hamra and Ro de Oro was held in the Dajla refugee camp in Tindouf, Algeria from 13 to 22 January 2023 to renovate the POLISARIO Front's governing bodies and establish the movement's main lines of action and strategy for the next leadership term.\nB. The 16th Congress of the Popular Front for the Liberation of Saguia El Hamra and Río de Oro (Arabic: المؤتمر السادس عشر للجبهة الشعبية لتحرير الساقية الحمراء ووادي الذهب, Spanish: XVI Congreso del Frente Popular para la Liberación de Saguia El Hamra y Río de Oro) was held in the Dajla refugee camp in Tindouf, Algeria between 13 and 22 January 2023 to renovate the governing bodies of the POLISARIO Front and establish the movement's main lines of action and strategy for the next leadership term. The Congress was also used to elect a new General-Secretary for the POLISARIO Front, which would automatically become the President of the Sahrawi Arab Democratic Republic. For the first time ever, the candidate for general-secretary was not agreed upon before the Congress.\nC. The 16th assembly of the Popular Front for the Liberation of Saguia El Hamra and Río de Oro (Arabic: المؤتمر السادس عشر للجبهة الشعبية لتحرير الساقية الحمراء ووادي الذهب, Spanish: XVI Congreso del Frente Popular para la Liberación de Saguia El Hamra y Río de Oro) convened in the Dajla refugee camp, located in Tindouf, Algeria, from January 13 to January 22, 2023. The primary objectives of this gathering were to overhaul the leadership structures of the POLISARIO Front and to define the core operational guidelines and strategic direction for the organization's subsequent period of governance. Furthermore, the Congress served as the forum for selecting a new General-Secretary for the POLISARIO Front. This individual would, by virtue of their election, automatically assume the presidency of the Sahrawi Arab Democratic Republic. Notably, this particular Congress marked a historic departure from previous practice, as it was the inaugural instance where the nominee for general-secretary had not been predetermined or mutually agreed upon in advance of the assembly.\n\nAnswer:",
+  "options": {
+    "A": "The 16th Congress of the Popular Front for the Liberation of Saguia El Hamra and Ro de Oro was held in the Dajla refugee camp in Tindouf, Algeria from 13 to 22 January 2023 to renovate the POLISARIO Front's governing bodies and establish the movement's main lines of action and strategy for the next leadership term.",
+    "B": "The 16th Congress of the Popular Front for the Liberation of Saguia El Hamra and Río de Oro (Arabic: المؤتمر السادس عشر للجبهة الشعبية لتحرير الساقية الحمراء ووادي الذهب, Spanish: XVI Congreso del Frente Popular para la Liberación de Saguia El Hamra y Río de Oro) was held in the Dajla refugee camp in Tindouf, Algeria between 13 and 22 January 2023 to renovate the governing bodies of the POLISARIO Front and establish the movement's main lines of action and strategy for the next leadership term. The Congress was also used to elect a new General-Secretary for the POLISARIO Front, which would automatically become the President of the Sahrawi Arab Democratic Republic. For the first time ever, the candidate for general-secretary was not agreed upon before the Congress.",
+    "C": "The 16th assembly of the Popular Front for the Liberation of Saguia El Hamra and Río de Oro (Arabic: المؤتمر السادس عشر للجبهة الشعبية لتحرير الساقية الحمراء ووادي الذهب, Spanish: XVI Congreso del Frente Popular para la Liberación de Saguia El Hamra y Río de Oro) convened in the Dajla refugee camp, located in Tindouf, Algeria, from January 13 to January 22, 2023. The primary objectives of this gathering were to overhaul the leadership structures of the POLISARIO Front and to define the core operational guidelines and strategic direction for the organization's subsequent period of governance. Furthermore, the Congress served as the forum for selecting a new General-Secretary for the POLISARIO Front. This individual would, by virtue of their election, automatically assume the presidency of the Sahrawi Arab Democratic Republic. Notably, this particular Congress marked a historic departure from previous practice, as it was the inaugural instance where the nominee for general-secretary had not been predetermined or mutually agreed upon in advance of the assembly."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "B",
+  "is_correct": 1,
+  "timestamp": "2026-07-10 23:43:19"
+}

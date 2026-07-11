@@ -1,0 +1,26 @@
+{
+  "query_id": "212baf065f8f5de84c2de1019a9a54f0",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00092.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00092.txt",
+  "label": 1,
+  "membership": "member",
+  "text_hash": "8bef5bbb6f5c4526a4fe5576223042ed",
+  "permutation_index": 0,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. Lars Joachim Mittank, a German national born on February 9, 1986, vanished on July 8, 2014, in the vicinity of Varna Airport, located in Varna, Bulgaria. Mittank had been on holiday at the Golden Sands resort when he reportedly became involved in an altercation. Due to health issues stemming from this incident, he was unable to return to his home country with his companions. While in Bulgaria and by himself, Mittank's behavior was observed to be peculiar. He contacted his mother by phone, expressing a belief that individuals were attempting to end his life. On the scheduled date of his flight back, Mittank proceeded to Varna Airport to seek medical advice from a physician. Subsequent airport surveillance footage captured him fleeing the airport premises and heading into a nearby woodland area. He has not been sighted since that time. This particular incident has garnered significant public attention and curiosity, and the case remains unsolved.\nB. On July 8, 2014, Lars Joachim Mittank, a German man born on February 9, 1986, vanished from the Golden Sands resort in Varna, Bulgaria. He was allegedly involved in a fight and was unable to fly home with his friends due to health issues. He was reported to be acting strangely while alone in Bulgaria and told his mother that people were trying to kill him. Airport security footage showed him running out of the airport and towards an adjacent forest, and he has not been heard from since.\nC. Lars Joachim Mittank (born February 9, 1986) is a German man who disappeared on July 8, 2014, near Varna Airport in Varna, Bulgaria. Mittank was vacationing at the Golden Sands resort, where he was supposedly involved in a fight, and was subsequently unable to fly home with his friends for health reasons. Mittank was documented acting strangely while alone in Bulgaria. He called home to his mother claiming that people were trying to kill him. On the day when he was supposed to fly home, Mittank went to the Varna Airport to consult with a doctor. He was later seen on airport security footage running out of the airport and towards an adjacent forest. He has never been seen since. The case has generated intense interest, and the\n\nAnswer:",
+  "options": {
+    "A": "Lars Joachim Mittank, a German national born on February 9, 1986, vanished on July 8, 2014, in the vicinity of Varna Airport, located in Varna, Bulgaria. Mittank had been on holiday at the Golden Sands resort when he reportedly became involved in an altercation. Due to health issues stemming from this incident, he was unable to return to his home country with his companions. While in Bulgaria and by himself, Mittank's behavior was observed to be peculiar. He contacted his mother by phone, expressing a belief that individuals were attempting to end his life. On the scheduled date of his flight back, Mittank proceeded to Varna Airport to seek medical advice from a physician. Subsequent airport surveillance footage captured him fleeing the airport premises and heading into a nearby woodland area. He has not been sighted since that time. This particular incident has garnered significant public attention and curiosity, and the case remains unsolved.",
+    "B": "On July 8, 2014, Lars Joachim Mittank, a German man born on February 9, 1986, vanished from the Golden Sands resort in Varna, Bulgaria. He was allegedly involved in a fight and was unable to fly home with his friends due to health issues. He was reported to be acting strangely while alone in Bulgaria and told his mother that people were trying to kill him. Airport security footage showed him running out of the airport and towards an adjacent forest, and he has not been heard from since.",
+    "C": "Lars Joachim Mittank (born February 9, 1986) is a German man who disappeared on July 8, 2014, near Varna Airport in Varna, Bulgaria. Mittank was vacationing at the Golden Sands resort, where he was supposedly involved in a fight, and was subsequently unable to fly home with his friends for health reasons. Mittank was documented acting strangely while alone in Bulgaria. He called home to his mother claiming that people were trying to kill him. On the day when he was supposed to fly home, Mittank went to the Varna Airport to consult with a doctor. He was later seen on airport security footage running out of the airport and towards an adjacent forest. He has never been seen since. The case has generated intense interest, and the"
+  },
+  "gold_letter": "C",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-07-10 23:38:45"
+}

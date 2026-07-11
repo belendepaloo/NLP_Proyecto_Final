@@ -1,0 +1,26 @@
+{
+  "query_id": "9a862f979d48bc94548820a71bcd21ec",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00051.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00051.txt",
+  "label": 1,
+  "membership": "member",
+  "text_hash": "2a58338cf30851cf7c23e402ac9774c4",
+  "permutation_index": 5,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. The BRICS summit was held for the sixth year in a row, and it was hosted by Brazil, which was the first host country of the current five-year summit cycle. Brazil had previously hosted a four-member BRIC summit in April 2010, but South Africa was not invited as guests. Argentine President Cristina Kirchner was a special guest and the BRICS summit leaders met with their UNASUR counterparts shortly after.\nB. The 6th BRICS summit was the sixth annual diplomatic meeting of the BRICS, a grouping of major emerging economies that includes Brazil, Russia, India, China and South Africa. It was hosted by Brazil, as the first host country of the current five-year summit cycle; the host city was Fortaleza. Though Brazil had previously hosted a four-member BRIC summit in April 2010, 2014 marked its first full BRICS summit; the 2010 summit in Brasília did not officially include South Africa, who were only invited as guests as a prelude to their gaining full membership in December 2010. Argentine President Cristina Kirchner was a special guest of the summit, and the BRICS leaders met with their UNASUR counterparts shortly after. The 6th BRICS summit resulted in the official inauguration of\nC. The sixth yearly diplomatic conference of the BRICS, an alliance comprised of significant developing economies such as Brazil, Russia, India, China, and South Africa, was the 6th BRICS summit. Brazil, acting as the inaugural host nation for the present five-year summit rotation, organized the event, with Fortaleza serving as the host city. While Brazil had previously hosted a BRIC summit involving four members in April 2010, the year 2014 represented its first comprehensive BRICS summit. The 2010 summit, held in Brasília, did not formally include South Africa, which attended solely as an invited guest in anticipation of achieving full membership in December 2010. Argentine President Cristina Kirchner attended the summit as a distinguished guest, and the leaders of the BRICS nations subsequently convened with their UNASUR counterparts. The 6th BRICS summit led to the formal establishment of\n\nAnswer:",
+  "options": {
+    "A": "The BRICS summit was held for the sixth year in a row, and it was hosted by Brazil, which was the first host country of the current five-year summit cycle. Brazil had previously hosted a four-member BRIC summit in April 2010, but South Africa was not invited as guests. Argentine President Cristina Kirchner was a special guest and the BRICS summit leaders met with their UNASUR counterparts shortly after.",
+    "B": "The 6th BRICS summit was the sixth annual diplomatic meeting of the BRICS, a grouping of major emerging economies that includes Brazil, Russia, India, China and South Africa. It was hosted by Brazil, as the first host country of the current five-year summit cycle; the host city was Fortaleza. Though Brazil had previously hosted a four-member BRIC summit in April 2010, 2014 marked its first full BRICS summit; the 2010 summit in Brasília did not officially include South Africa, who were only invited as guests as a prelude to their gaining full membership in December 2010. Argentine President Cristina Kirchner was a special guest of the summit, and the BRICS leaders met with their UNASUR counterparts shortly after. The 6th BRICS summit resulted in the official inauguration of",
+    "C": "The sixth yearly diplomatic conference of the BRICS, an alliance comprised of significant developing economies such as Brazil, Russia, India, China, and South Africa, was the 6th BRICS summit. Brazil, acting as the inaugural host nation for the present five-year summit rotation, organized the event, with Fortaleza serving as the host city. While Brazil had previously hosted a BRIC summit involving four members in April 2010, the year 2014 represented its first comprehensive BRICS summit. The 2010 summit, held in Brasília, did not formally include South Africa, which attended solely as an invited guest in anticipation of achieving full membership in December 2010. Argentine President Cristina Kirchner attended the summit as a distinguished guest, and the leaders of the BRICS nations subsequently convened with their UNASUR counterparts. The 6th BRICS summit led to the formal establishment of"
+  },
+  "gold_letter": "B",
+  "predicted_letter": "B",
+  "is_correct": 1,
+  "timestamp": "2026-07-10 23:29:06"
+}

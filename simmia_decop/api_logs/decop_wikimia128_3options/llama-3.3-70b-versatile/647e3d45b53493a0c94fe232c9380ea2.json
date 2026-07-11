@@ -1,0 +1,26 @@
+{
+  "query_id": "647e3d45b53493a0c94fe232c9380ea2",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00152.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00152.txt",
+  "label": 0,
+  "membership": "non_member",
+  "text_hash": "88668fce0c7ad078ab6814b6811396bf",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. Tropical Cyclone Cheneso, a powerful tropical cyclone, impacted Madagascar during January 2023. As the fourth tropical storm and fifth tropical cyclone of the 2022–23 South-West Indian Ocean cyclone season, Cheneso originated from an area of unsettled weather conditions that RSMC La Réunion initially observed on January 17. Despite the presence of convection aligning with a curved band pattern, the weather system evolved into a tropical depression on January 18. This depression intensified, becoming Severe Tropical Storm Cheneso the very next day. Cheneso subsequently made landfall in northern Madagascar and consequently diminished in intensity to an inland depression, prior to re-emerging into the Mozambique Channel. On January 25, Cheneso regained strength and was reclassified as a tropical cyclone. The system maintained its southeastward trajectory until it transitioned into a post-tropical depression on January 29. The National Office for Risk\nB. Tropical Cyclone Cheneso was a powerful tropical cyclone that touched down over Madagascar in January 2023. It was classified as the fourth tropical storm and fifth tropical cyclone of the South-West Indian Ocean cyclone season.\nC. Tropical Cyclone Cheneso was a strong tropical cyclone that affected Madagascar in January 2023. The fourth tropical storm and fifth tropical cyclone of the 2022–23 South-West Indian Ocean cyclone season, Cheneso developed out of a zone of disturbed weather status which was first monitored at RSMC La Réunion on 17 January. Despite convection wrapping into the curved band pattern, the system formed into a tropical depression on 18 January. The depression strengthened into Severe Tropical Storm Cheneso on the following day. Cheneso made landfall over northern Madagascar and weakened into an inland depression, before emerging into the Mozambique Channel. Cheneso later strengthened into a tropical cyclone on 25 January. The system continued moving southeast, before transitioning into a post-tropical depression on 29 January. The National Office for Risk\n\nAnswer:",
+  "options": {
+    "A": "Tropical Cyclone Cheneso, a powerful tropical cyclone, impacted Madagascar during January 2023. As the fourth tropical storm and fifth tropical cyclone of the 2022–23 South-West Indian Ocean cyclone season, Cheneso originated from an area of unsettled weather conditions that RSMC La Réunion initially observed on January 17. Despite the presence of convection aligning with a curved band pattern, the weather system evolved into a tropical depression on January 18. This depression intensified, becoming Severe Tropical Storm Cheneso the very next day. Cheneso subsequently made landfall in northern Madagascar and consequently diminished in intensity to an inland depression, prior to re-emerging into the Mozambique Channel. On January 25, Cheneso regained strength and was reclassified as a tropical cyclone. The system maintained its southeastward trajectory until it transitioned into a post-tropical depression on January 29. The National Office for Risk",
+    "B": "Tropical Cyclone Cheneso was a powerful tropical cyclone that touched down over Madagascar in January 2023. It was classified as the fourth tropical storm and fifth tropical cyclone of the South-West Indian Ocean cyclone season.",
+    "C": "Tropical Cyclone Cheneso was a strong tropical cyclone that affected Madagascar in January 2023. The fourth tropical storm and fifth tropical cyclone of the 2022–23 South-West Indian Ocean cyclone season, Cheneso developed out of a zone of disturbed weather status which was first monitored at RSMC La Réunion on 17 January. Despite convection wrapping into the curved band pattern, the system formed into a tropical depression on 18 January. The depression strengthened into Severe Tropical Storm Cheneso on the following day. Cheneso made landfall over northern Madagascar and weakened into an inland depression, before emerging into the Mozambique Channel. Cheneso later strengthened into a tropical cyclone on 25 January. The system continued moving southeast, before transitioning into a post-tropical depression on 29 January. The National Office for Risk"
+  },
+  "gold_letter": "C",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-07-10 23:52:26"
+}

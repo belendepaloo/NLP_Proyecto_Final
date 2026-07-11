@@ -1,0 +1,26 @@
+{
+  "query_id": "332c11b79c787eb9919070ab9e5e9d1e",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00085.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00085.txt",
+  "label": 1,
+  "membership": "member",
+  "text_hash": "ea6dca5beff069e50d46b313dc558a79",
+  "permutation_index": 2,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. The legal proceedings known as Karen Petrosyan v. Azerbaijan focused on the human rights of Artush Petrosyan and his offspring, Karen Petrosyan. Karen Petrosyan, an Armenian citizen hailing from Chinari village within Armenia's Tavush province, tragically perished while being held captive in Azerbaijan during 2014. The European Court of Human Rights rendered its verdict on this matter, following an application (numbered 32427/16) that was brought against the Republic of Azerbaijan. This application was officially filed with the Court on April 25, 2016, by Artush Petrosyan, in accordance with the stipulations of the Convention for the Protection of Human Rights and Fundamental Freedoms. Artush Petrosyan asserted that his son had endured public humiliation, torture, and ultimately, death by decapitation, at the hands of Azerbaijani State operatives. Furthermore, he claimed that the repatriation of his son's remains had been unduly delayed, and that no comprehensive or effective inquiry had been conducted regarding these grave circumstances.\nB. The case of Karen Petrosyan v. Azerbaijan concerned the human rights of Artush Petrosyan and his son Karen Petrosyan, who were held captive in Azerbaijan and had not been repatriated in a timely manner due to a lack of effective investigation.\nC. Karen Petrosyan v. Azerbaijan was an international human rights case regarding the rights of Artush Petrosyan and his son Karen Petrosyan – an Armenian national from Chinari village, Tavush province of Armenia, who died while in captivity in Azerbaijan in 2014. The judgment of the European Court of Human Rights on the case originated in an application (no. 32427/16) against the Republic of Azerbaijan lodged with the Court under the Convention for the Protection of Human Rights and Fundamental Freedoms by the applicant, Artush Petrosyan, on 25 April 2016. He Submitted that his son had been publicly humiliated, tortured and killed by decapitation by Azerbaijani State agents and that \"his son’s body had not been repatriated in a timely manner, that there had been no effective investigation on\n\nAnswer:",
+  "options": {
+    "A": "The legal proceedings known as Karen Petrosyan v. Azerbaijan focused on the human rights of Artush Petrosyan and his offspring, Karen Petrosyan. Karen Petrosyan, an Armenian citizen hailing from Chinari village within Armenia's Tavush province, tragically perished while being held captive in Azerbaijan during 2014. The European Court of Human Rights rendered its verdict on this matter, following an application (numbered 32427/16) that was brought against the Republic of Azerbaijan. This application was officially filed with the Court on April 25, 2016, by Artush Petrosyan, in accordance with the stipulations of the Convention for the Protection of Human Rights and Fundamental Freedoms. Artush Petrosyan asserted that his son had endured public humiliation, torture, and ultimately, death by decapitation, at the hands of Azerbaijani State operatives. Furthermore, he claimed that the repatriation of his son's remains had been unduly delayed, and that no comprehensive or effective inquiry had been conducted regarding these grave circumstances.",
+    "B": "The case of Karen Petrosyan v. Azerbaijan concerned the human rights of Artush Petrosyan and his son Karen Petrosyan, who were held captive in Azerbaijan and had not been repatriated in a timely manner due to a lack of effective investigation.",
+    "C": "Karen Petrosyan v. Azerbaijan was an international human rights case regarding the rights of Artush Petrosyan and his son Karen Petrosyan – an Armenian national from Chinari village, Tavush province of Armenia, who died while in captivity in Azerbaijan in 2014. The judgment of the European Court of Human Rights on the case originated in an application (no. 32427/16) against the Republic of Azerbaijan lodged with the Court under the Convention for the Protection of Human Rights and Fundamental Freedoms by the applicant, Artush Petrosyan, on 25 April 2016. He Submitted that his son had been publicly humiliated, tortured and killed by decapitation by Azerbaijani State agents and that \"his son’s body had not been repatriated in a timely manner, that there had been no effective investigation on"
+  },
+  "gold_letter": "C",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-07-10 23:37:18"
+}

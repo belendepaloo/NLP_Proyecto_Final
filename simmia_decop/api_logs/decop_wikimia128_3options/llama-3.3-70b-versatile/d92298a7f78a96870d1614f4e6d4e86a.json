@@ -1,0 +1,26 @@
+{
+  "query_id": "d92298a7f78a96870d1614f4e6d4e86a",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00210.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00210.txt",
+  "label": 1,
+  "membership": "member",
+  "text_hash": "9a8084d99a1c8271120acff35fb88855",
+  "permutation_index": 2,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. On May 25, 2014, Colombian citizens voted in the presidential election, but due to the lack of support from the first round, a run-off was held on June 15, 2014, where the two most popular candidates, Juan Manuel Santos and scar Iván Zuluaga, were declared the winners.\nB. On May 25, 2014, Colombia conducted its presidential elections. Because none of the candidates secured 50% or more of the votes during the initial round, a subsequent run-off election was scheduled three weeks thereafter, specifically on June 15, 2014, involving the two candidates who garnered the highest number of votes. The National Registry Office (Registraduría Nacional) published official statistics indicating that by May 22, 2014, which was the deadline for voter registration, a total of 32,975,158 Colombian citizens were officially registered and eligible to cast their ballots in the 2014 presidential election. This figure included 545,976 Colombians residing outside the country. The sitting president at the time, Juan Manuel Santos, was permitted to seek re-election for a subsequent term. During the first electoral round, Juan Manuel Santos and Óscar Iván Zuluaga, representing the Democratic Center (Centro Democrático) party, emerged as the two candidates with the greatest number of votes, thus qualifying them as the contenders for the run-off election held on June 15. In the second\nC. Presidential elections were held in Colombia on 25 May 2014. Since no candidate received 50% of the vote in the first round, a run-off between the two candidates with the most votes took place three weeks later on 15 June 2014. According to the official figures released by the National Registry office (Registraduría Nacional), as of 22 May 2014 (the cut-off date to register) 32,975,158 Colombians were registered and entitled to vote in the 2014 presidential election, including 545,976 Colombians resident abroad. Incumbent president Juan Manuel Santos was allowed to run for a second consecutive term. In the first round, Santos and Óscar Iván Zuluaga of the Democratic Center (Centro Democrático) were the two highest-polling candidates and were the contestants in the 15 June run-off. In the second\n\nAnswer:",
+  "options": {
+    "A": "On May 25, 2014, Colombian citizens voted in the presidential election, but due to the lack of support from the first round, a run-off was held on June 15, 2014, where the two most popular candidates, Juan Manuel Santos and scar Iván Zuluaga, were declared the winners.",
+    "B": "On May 25, 2014, Colombia conducted its presidential elections. Because none of the candidates secured 50% or more of the votes during the initial round, a subsequent run-off election was scheduled three weeks thereafter, specifically on June 15, 2014, involving the two candidates who garnered the highest number of votes. The National Registry Office (Registraduría Nacional) published official statistics indicating that by May 22, 2014, which was the deadline for voter registration, a total of 32,975,158 Colombian citizens were officially registered and eligible to cast their ballots in the 2014 presidential election. This figure included 545,976 Colombians residing outside the country. The sitting president at the time, Juan Manuel Santos, was permitted to seek re-election for a subsequent term. During the first electoral round, Juan Manuel Santos and Óscar Iván Zuluaga, representing the Democratic Center (Centro Democrático) party, emerged as the two candidates with the greatest number of votes, thus qualifying them as the contenders for the run-off election held on June 15. In the second",
+    "C": "Presidential elections were held in Colombia on 25 May 2014. Since no candidate received 50% of the vote in the first round, a run-off between the two candidates with the most votes took place three weeks later on 15 June 2014. According to the official figures released by the National Registry office (Registraduría Nacional), as of 22 May 2014 (the cut-off date to register) 32,975,158 Colombians were registered and entitled to vote in the 2014 presidential election, including 545,976 Colombians resident abroad. Incumbent president Juan Manuel Santos was allowed to run for a second consecutive term. In the first round, Santos and Óscar Iván Zuluaga of the Democratic Center (Centro Democrático) were the two highest-polling candidates and were the contestants in the 15 June run-off. In the second"
+  },
+  "gold_letter": "C",
+  "predicted_letter": "B",
+  "is_correct": 0,
+  "timestamp": "2026-07-11 00:04:49"
+}

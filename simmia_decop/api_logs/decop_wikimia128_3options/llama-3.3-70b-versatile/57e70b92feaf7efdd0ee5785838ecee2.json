@@ -1,0 +1,26 @@
+{
+  "query_id": "57e70b92feaf7efdd0ee5785838ecee2",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00073.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00073.txt",
+  "label": 1,
+  "membership": "member",
+  "text_hash": "80f86ed4cf4e1cb888f26241482cac3d",
+  "permutation_index": 2,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. Fantastica Mania 2014 was a series of five professional wrestling events co-produced by Japanese promotion New Japan Pro-Wrestling (NJPW) and Mexican promotion Consejo Mundial de Lucha Libre (CMLL) taking place between January 15 and 19, 2014. 2014 was the fourth year in which NJPW and CMLL come together to produce Fantastica Mania events, but the first time they held five events in one year, compared to two events in 2011 and 2012 and three in 2013. 2014 also marked the first time Fantasticamania events were held outside of Tokyo's Korakuen Hall, with the January 14 taking place in Osaka, Osaka at the Bodymaker Colosseum, the January 15 event in Kyoto, Kyoto at the KBS Hall and the January 17 event in Tokyo's Shin-Kiba 1st Ring, while the January\nB. Japanese promotion New Japan Pro-Wrestling (NJPW) and Mexican promotion Consejo Mundial de Lucha Libre (CMLL) co-produced Fantastica Mania 2014, a series of professional wrestling events held from January 15 to 19, 2014.\nC. Fantastica Mania 2014 comprised a sequence of five professional wrestling shows, jointly orchestrated by the Japanese professional wrestling organization New Japan Pro-Wrestling (NJPW) and its Mexican counterpart, Consejo Mundial de Lucha Libre (CMLL). These events were staged from January 15 through January 19, 2014. This marked the fourth consecutive year that NJPW and CMLL collaborated to present the Fantastica Mania series. Notably, 2014 was the inaugural year that featured five events within a single year, a significant increase from the two events held in both 2011 and 2012, and the three events organized in 2013. Furthermore, 2014 represented the first occasion that Fantastica Mania events ventured beyond Tokyo's Korakuen Hall. Specifically, the event on January 14 occurred in Osaka, Osaka, at the Bodymaker Colosseum, followed by the January 15 event in Kyoto, Kyoto, at the KBS Hall, and the January 17 event in Tokyo's Shin-Kiba 1st Ring.\n\nAnswer:",
+  "options": {
+    "A": "Fantastica Mania 2014 was a series of five professional wrestling events co-produced by Japanese promotion New Japan Pro-Wrestling (NJPW) and Mexican promotion Consejo Mundial de Lucha Libre (CMLL) taking place between January 15 and 19, 2014. 2014 was the fourth year in which NJPW and CMLL come together to produce Fantastica Mania events, but the first time they held five events in one year, compared to two events in 2011 and 2012 and three in 2013. 2014 also marked the first time Fantasticamania events were held outside of Tokyo's Korakuen Hall, with the January 14 taking place in Osaka, Osaka at the Bodymaker Colosseum, the January 15 event in Kyoto, Kyoto at the KBS Hall and the January 17 event in Tokyo's Shin-Kiba 1st Ring, while the January",
+    "B": "Japanese promotion New Japan Pro-Wrestling (NJPW) and Mexican promotion Consejo Mundial de Lucha Libre (CMLL) co-produced Fantastica Mania 2014, a series of professional wrestling events held from January 15 to 19, 2014.",
+    "C": "Fantastica Mania 2014 comprised a sequence of five professional wrestling shows, jointly orchestrated by the Japanese professional wrestling organization New Japan Pro-Wrestling (NJPW) and its Mexican counterpart, Consejo Mundial de Lucha Libre (CMLL). These events were staged from January 15 through January 19, 2014. This marked the fourth consecutive year that NJPW and CMLL collaborated to present the Fantastica Mania series. Notably, 2014 was the inaugural year that featured five events within a single year, a significant increase from the two events held in both 2011 and 2012, and the three events organized in 2013. Furthermore, 2014 represented the first occasion that Fantastica Mania events ventured beyond Tokyo's Korakuen Hall. Specifically, the event on January 14 occurred in Osaka, Osaka, at the Bodymaker Colosseum, followed by the January 15 event in Kyoto, Kyoto, at the KBS Hall, and the January 17 event in Tokyo's Shin-Kiba 1st Ring."
+  },
+  "gold_letter": "A",
+  "predicted_letter": "A",
+  "is_correct": 1,
+  "timestamp": "2026-07-10 23:34:30"
+}
