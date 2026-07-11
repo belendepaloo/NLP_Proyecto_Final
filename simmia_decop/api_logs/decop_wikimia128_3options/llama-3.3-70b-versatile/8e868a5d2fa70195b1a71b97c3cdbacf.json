@@ -1,0 +1,26 @@
+{
+  "query_id": "8e868a5d2fa70195b1a71b97c3cdbacf",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00164.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00164.txt",
+  "label": 0,
+  "membership": "non_member",
+  "text_hash": "c7c166b7ac35b0fa7043cf61f4a6b8fe",
+  "permutation_index": 3,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. The United Nations High Seas Treaty, formally known as the Agreement under the United Nations Convention on the Law of the Sea on the conservation and sustainable use of marine biological diversity of areas beyond national jurisdiction, and also referred to as the Biodiversity Beyond National Jurisdiction treaty, was ratified by an intergovernmental assembly at the United Nations on March 4, 2023. This agreement serves as a vital component of the broader United Nations Convention on the Law of the Sea (UNCLOS). It is structured around four primary aims: Firstly, it seeks the creation of marine protected zones to safeguard marine biodiversity. Secondly, it aims to govern the commercial exploitation of marine genetic resources, which possess potential applications in pharmaceutical development, with the goal of ensuring a fair distribution of the advantages derived from them. Thirdly, it strives to ensure impartial availability for research carried out in international waters. Fourthly, it is dedicated to establishing worldwide benchmarks.\nB. The Biodiversity Beyond National Jurisdiction Treaty, also known as the United Nations High Seas Treaty, was agreed upon by an intergovernmental conference at the UN on 4 March 2023. It aims to establish marine protected areas for the preservation and sustainable use of marine biological diversity in areas beyond national jurisdiction.\nC. The United Nations High Seas Treaty is an instrument of the United Nations Convention on the Law of the Sea (UNCLOS), agreed by an intergovernmental conference at the UN on 4 March 2023. Its full formal title is Agreement under the United Nations Convention on the Law of the Sea on the conservation and sustainable use of marine biological diversity of areas beyond national jurisdiction and is also known as the Biodiversity Beyond National Jurisdiction treaty.It has four main objectives: The establishment of marine protected areas to protect marine biodiversity. The regulation of commercialization of marine genetic resources, which can be used for the development of pharmaceuticals, in order to equitably share their benefits. The equitable access to research conducted in international waters. The setting of global standards\n\nAnswer:",
+  "options": {
+    "A": "The United Nations High Seas Treaty, formally known as the Agreement under the United Nations Convention on the Law of the Sea on the conservation and sustainable use of marine biological diversity of areas beyond national jurisdiction, and also referred to as the Biodiversity Beyond National Jurisdiction treaty, was ratified by an intergovernmental assembly at the United Nations on March 4, 2023. This agreement serves as a vital component of the broader United Nations Convention on the Law of the Sea (UNCLOS). It is structured around four primary aims: Firstly, it seeks the creation of marine protected zones to safeguard marine biodiversity. Secondly, it aims to govern the commercial exploitation of marine genetic resources, which possess potential applications in pharmaceutical development, with the goal of ensuring a fair distribution of the advantages derived from them. Thirdly, it strives to ensure impartial availability for research carried out in international waters. Fourthly, it is dedicated to establishing worldwide benchmarks.",
+    "B": "The Biodiversity Beyond National Jurisdiction Treaty, also known as the United Nations High Seas Treaty, was agreed upon by an intergovernmental conference at the UN on 4 March 2023. It aims to establish marine protected areas for the preservation and sustainable use of marine biological diversity in areas beyond national jurisdiction.",
+    "C": "The United Nations High Seas Treaty is an instrument of the United Nations Convention on the Law of the Sea (UNCLOS), agreed by an intergovernmental conference at the UN on 4 March 2023. Its full formal title is Agreement under the United Nations Convention on the Law of the Sea on the conservation and sustainable use of marine biological diversity of areas beyond national jurisdiction and is also known as the Biodiversity Beyond National Jurisdiction treaty.It has four main objectives: The establishment of marine protected areas to protect marine biodiversity. The regulation of commercialization of marine genetic resources, which can be used for the development of pharmaceuticals, in order to equitably share their benefits. The equitable access to research conducted in international waters. The setting of global standards"
+  },
+  "gold_letter": "C",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-07-10 23:54:53"
+}

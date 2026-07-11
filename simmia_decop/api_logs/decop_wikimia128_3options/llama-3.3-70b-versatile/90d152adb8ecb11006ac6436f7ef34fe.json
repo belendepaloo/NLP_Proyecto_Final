@@ -1,0 +1,26 @@
+{
+  "query_id": "90d152adb8ecb11006ac6436f7ef34fe",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00182.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00182.txt",
+  "label": 0,
+  "membership": "non_member",
+  "text_hash": "84d897b75cae3f6933d85fcf0c78b0f3",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. The 2022 Uganda Ebola outbreak was an outbreak of the Sudan ebolavirus, which causes Ebola, from 20 September 2022 until 10 January 2023 in the Western and Central Regions of Uganda. Over 160 people were infected, including 77 people who died. It was Uganda's fifth outbreak with Sudan ebolavirus. The Ugandan Ministry of Health declared the outbreak on 20 September 2022. As of 25 October 2022, there were confirmed cases in the Mubende, Kyegegwa, Kassanda, Kagadi, Bunyanga, Kampala and Wakiso districts. As of 24 October 2022, there were a total of 90 confirmed or probable cases and 44 deaths. On 12 October, the first recorded death in the capital of Kampala occurred; 12 days later on 24 October, there had been a total of 14 infections in the\nB. From September 20, 2022, to January 10, 2023, Uganda experienced an epidemic of the Sudan ebolavirus, the causative agent of Ebola, affecting its Western and Central Regions. This event, termed the 2022 Uganda Ebola outbreak, resulted in the infection of more than 160 individuals, with 77 fatalities among them. This marked the fifth instance of a Sudan ebolavirus outbreak in Uganda's history. The Ministry of Health of Uganda officially announced the commencement of this outbreak on September 20, 2022. By October 25, 2022, documented cases had been identified across several districts, specifically Mubende, Kyegegwa, Kassanda, Kagadi, Bunyanga, Kampala, and Wakiso. Looking at the situation as of October 24, 2022, the cumulative count of confirmed or probable cases reached 90, alongside 44 reported deaths. The capital city, Kampala, recorded its initial death on October 12; subsequently, by October 24, a span of 12 days, the total number of infections within the capital had risen to 14.\nC. The Sudan ebolavirus outbreak in the Western and Central Regions of Uganda from 20 September 2022 to 10 January 2023 resulted in over 160 people infected, including 77 fatalities. It was the fifth outbreak of Sudan ebolavirus in Uganda, as announced by the Ugandan Ministry of Health on 20 September 2022. The outbreak was spread across five districts including Mubende, Kyegegwa, Kassanda, Kagadi, Bunyanga, Kampala, and Wakiso.\n\nAnswer:",
+  "options": {
+    "A": "The 2022 Uganda Ebola outbreak was an outbreak of the Sudan ebolavirus, which causes Ebola, from 20 September 2022 until 10 January 2023 in the Western and Central Regions of Uganda. Over 160 people were infected, including 77 people who died. It was Uganda's fifth outbreak with Sudan ebolavirus. The Ugandan Ministry of Health declared the outbreak on 20 September 2022. As of 25 October 2022, there were confirmed cases in the Mubende, Kyegegwa, Kassanda, Kagadi, Bunyanga, Kampala and Wakiso districts. As of 24 October 2022, there were a total of 90 confirmed or probable cases and 44 deaths. On 12 October, the first recorded death in the capital of Kampala occurred; 12 days later on 24 October, there had been a total of 14 infections in the",
+    "B": "From September 20, 2022, to January 10, 2023, Uganda experienced an epidemic of the Sudan ebolavirus, the causative agent of Ebola, affecting its Western and Central Regions. This event, termed the 2022 Uganda Ebola outbreak, resulted in the infection of more than 160 individuals, with 77 fatalities among them. This marked the fifth instance of a Sudan ebolavirus outbreak in Uganda's history. The Ministry of Health of Uganda officially announced the commencement of this outbreak on September 20, 2022. By October 25, 2022, documented cases had been identified across several districts, specifically Mubende, Kyegegwa, Kassanda, Kagadi, Bunyanga, Kampala, and Wakiso. Looking at the situation as of October 24, 2022, the cumulative count of confirmed or probable cases reached 90, alongside 44 reported deaths. The capital city, Kampala, recorded its initial death on October 12; subsequently, by October 24, a span of 12 days, the total number of infections within the capital had risen to 14.",
+    "C": "The Sudan ebolavirus outbreak in the Western and Central Regions of Uganda from 20 September 2022 to 10 January 2023 resulted in over 160 people infected, including 77 fatalities. It was the fifth outbreak of Sudan ebolavirus in Uganda, as announced by the Ugandan Ministry of Health on 20 September 2022. The outbreak was spread across five districts including Mubende, Kyegegwa, Kassanda, Kagadi, Bunyanga, Kampala, and Wakiso."
+  },
+  "gold_letter": "A",
+  "predicted_letter": "A",
+  "is_correct": 1,
+  "timestamp": "2026-07-10 23:59:07"
+}

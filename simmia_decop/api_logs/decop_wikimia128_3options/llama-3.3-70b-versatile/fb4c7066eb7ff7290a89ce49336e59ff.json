@@ -1,0 +1,26 @@
+{
+  "query_id": "fb4c7066eb7ff7290a89ce49336e59ff",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00235.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00235.txt",
+  "label": 1,
+  "membership": "member",
+  "text_hash": "5dc725a14514eaa20c9d529a469a481d",
+  "permutation_index": 5,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. Azerbaijan participated in the Eurovision Song Contest 2014 with the song \"Start a Fire\" written by Stefan Örn, Johan Kronlund and Alessandra Günthardt. The song was performed by Dilara Kazimova. The Azerbaijani Eurovision entrant for the 2014 contest in Copenhagen, Denmark was selected through Böyük Səhnə, a talent show organised by the Azerbaijani broadcaster İctimai Television (İTV). Following three elimination shows and a final on 2 March 2014, a five-member jury selected Dilara Kazimova as the winner. The song \"Start a Fire\" was internally selected and presented to the public on 16 March. Azerbaijan was drawn to compete in the first semi-final of the Eurovision Song Contest which took place on 6 May 2014. Performing during the show in position 8, \"Start a Fire\" was announced among the\nB. The Eurovision Song Contest of 2014 saw Azerbaijan competing with the song \"Start a Fire\" written by Stefan rn, Johan Kronlund, and Alessandra Günthardt. Dilara Kazimova was selected as the winner of the song, which was presented to the public on 16 March after three elimination shows and a final on 2 March 2014.\nC. Azerbaijan entered the Eurovision Song Contest held in 2014 with their chosen track, \"Start a Fire.\" This song was composed by Stefan Örn, Johan Kronlund, and Alessandra Günthardt, and the vocal performance was delivered by Dilara Kazimova. The artist who would represent Azerbaijan at the 2014 Eurovision competition, hosted in Copenhagen, Denmark, was determined through a talent program called Böyük Səhnə, which was organized by the Azerbaijani public broadcaster, İctimai Television (İTV). After a series of three preliminary elimination rounds and a concluding final event on March 2, 2014, Dilara Kazimova was chosen as the victor by a panel consisting of five judges. The song itself, \"Start a Fire,\" underwent an internal selection process and was subsequently unveiled to the general public on March 16. Azerbaijan was assigned a slot in the initial semi-final of the Eurovision Song Contest, an event that occurred on May 6, 2014. During this broadcast, \"Start a Fire\" was performed as the eighth entry in the running order and was later declared as one of the entries that qualified for the next stage.\n\nAnswer:",
+  "options": {
+    "A": "Azerbaijan participated in the Eurovision Song Contest 2014 with the song \"Start a Fire\" written by Stefan Örn, Johan Kronlund and Alessandra Günthardt. The song was performed by Dilara Kazimova. The Azerbaijani Eurovision entrant for the 2014 contest in Copenhagen, Denmark was selected through Böyük Səhnə, a talent show organised by the Azerbaijani broadcaster İctimai Television (İTV). Following three elimination shows and a final on 2 March 2014, a five-member jury selected Dilara Kazimova as the winner. The song \"Start a Fire\" was internally selected and presented to the public on 16 March. Azerbaijan was drawn to compete in the first semi-final of the Eurovision Song Contest which took place on 6 May 2014. Performing during the show in position 8, \"Start a Fire\" was announced among the",
+    "B": "The Eurovision Song Contest of 2014 saw Azerbaijan competing with the song \"Start a Fire\" written by Stefan rn, Johan Kronlund, and Alessandra Günthardt. Dilara Kazimova was selected as the winner of the song, which was presented to the public on 16 March after three elimination shows and a final on 2 March 2014.",
+    "C": "Azerbaijan entered the Eurovision Song Contest held in 2014 with their chosen track, \"Start a Fire.\" This song was composed by Stefan Örn, Johan Kronlund, and Alessandra Günthardt, and the vocal performance was delivered by Dilara Kazimova. The artist who would represent Azerbaijan at the 2014 Eurovision competition, hosted in Copenhagen, Denmark, was determined through a talent program called Böyük Səhnə, which was organized by the Azerbaijani public broadcaster, İctimai Television (İTV). After a series of three preliminary elimination rounds and a concluding final event on March 2, 2014, Dilara Kazimova was chosen as the victor by a panel consisting of five judges. The song itself, \"Start a Fire,\" underwent an internal selection process and was subsequently unveiled to the general public on March 16. Azerbaijan was assigned a slot in the initial semi-final of the Eurovision Song Contest, an event that occurred on May 6, 2014. During this broadcast, \"Start a Fire\" was performed as the eighth entry in the running order and was later declared as one of the entries that qualified for the next stage."
+  },
+  "gold_letter": "A",
+  "predicted_letter": "A",
+  "is_correct": 1,
+  "timestamp": "2026-07-11 00:09:43"
+}

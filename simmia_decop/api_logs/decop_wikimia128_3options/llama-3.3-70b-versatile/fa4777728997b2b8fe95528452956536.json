@@ -1,0 +1,26 @@
+{
+  "query_id": "fa4777728997b2b8fe95528452956536",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00005.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00005.txt",
+  "label": 0,
+  "membership": "non_member",
+  "text_hash": "2bc914e66098abcf95fd6c0893e83d2a",
+  "permutation_index": 2,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. The 80th Golden Globe Awards honored the best in film and American television of 2022, as chosen by the Hollywood Foreign Press Association (HFPA). The ceremony was held on January 10, 2023, from The Beverly Hilton in Beverly Hills, California, produced by Dick Clark Productions and the HFPA, and aired live in the United States on NBC and streamed on Peacock. Jerrod Carmichael hosted the ceremony.The nominees were announced on December 12, 2022. Father-daughter duo George and Mayan Lopez were scheduled to announce the nominations together, but the former dropped out after testing positive for COVID-19; he was replaced by Selenis Leyva. Eddie Murphy and Ryan Murphy were announced as the recipients of the Cecil B. DeMille Award and Carol Burnett Award, respectively. The Banshees of Inisherin received\nB. The 80th annual Golden Globe Awards celebrated the top achievements in motion pictures and American television from the year 2022, selected by the Hollywood Foreign Press Association (HFPA). The event transpired on January 10, 2023, originating from The Beverly Hilton in Beverly Hills, California. Dick Clark Productions and the HFPA collaborated on its production, with a live broadcast in the United States via NBC and simultaneous streaming on Peacock. Jerrod Carmichael served as the host for the awards ceremony. The list of nominees was unveiled on December 12, 2022. Initially, George and Mayan Lopez, a father and daughter pair, were slated to reveal the nominations collectively. However, George Lopez withdrew after receiving a positive COVID-19 test result, leading to Selenis Leyva stepping in as his replacement. Eddie Murphy was proclaimed the recipient of the Cecil B. DeMille Award, and Ryan Murphy was named the honoree of the Carol Burnett Award. *The Banshees of Inisherin* garnered\nC. The 80th Golden Globe Awards were held on January 10, 2023, at The Beverly Hilton in Beverly Hills, California, produced by Dick Clark Productions and the HFPA. The ceremony was broadcast on NBC and streamed on Peacock, with Jerrod Carmichael as the host. The nominees were announced on December 12, 2022. Father-daughter duo George and Mayan Lopez were expected to announce the nominations, but the former dropped out due to COVID-19; Selenis Ley\n\nAnswer:",
+  "options": {
+    "A": "The 80th Golden Globe Awards honored the best in film and American television of 2022, as chosen by the Hollywood Foreign Press Association (HFPA). The ceremony was held on January 10, 2023, from The Beverly Hilton in Beverly Hills, California, produced by Dick Clark Productions and the HFPA, and aired live in the United States on NBC and streamed on Peacock. Jerrod Carmichael hosted the ceremony.The nominees were announced on December 12, 2022. Father-daughter duo George and Mayan Lopez were scheduled to announce the nominations together, but the former dropped out after testing positive for COVID-19; he was replaced by Selenis Leyva. Eddie Murphy and Ryan Murphy were announced as the recipients of the Cecil B. DeMille Award and Carol Burnett Award, respectively. The Banshees of Inisherin received",
+    "B": "The 80th annual Golden Globe Awards celebrated the top achievements in motion pictures and American television from the year 2022, selected by the Hollywood Foreign Press Association (HFPA). The event transpired on January 10, 2023, originating from The Beverly Hilton in Beverly Hills, California. Dick Clark Productions and the HFPA collaborated on its production, with a live broadcast in the United States via NBC and simultaneous streaming on Peacock. Jerrod Carmichael served as the host for the awards ceremony. The list of nominees was unveiled on December 12, 2022. Initially, George and Mayan Lopez, a father and daughter pair, were slated to reveal the nominations collectively. However, George Lopez withdrew after receiving a positive COVID-19 test result, leading to Selenis Leyva stepping in as his replacement. Eddie Murphy was proclaimed the recipient of the Cecil B. DeMille Award, and Ryan Murphy was named the honoree of the Carol Burnett Award. *The Banshees of Inisherin* garnered",
+    "C": "The 80th Golden Globe Awards were held on January 10, 2023, at The Beverly Hilton in Beverly Hills, California, produced by Dick Clark Productions and the HFPA. The ceremony was broadcast on NBC and streamed on Peacock, with Jerrod Carmichael as the host. The nominees were announced on December 12, 2022. Father-daughter duo George and Mayan Lopez were expected to announce the nominations, but the former dropped out due to COVID-19; Selenis Ley"
+  },
+  "gold_letter": "A",
+  "predicted_letter": "A",
+  "is_correct": 1,
+  "timestamp": "2026-07-10 23:18:41"
+}

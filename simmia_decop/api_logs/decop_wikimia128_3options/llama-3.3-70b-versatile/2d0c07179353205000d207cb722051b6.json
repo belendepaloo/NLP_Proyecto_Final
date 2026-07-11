@@ -1,0 +1,26 @@
+{
+  "query_id": "2d0c07179353205000d207cb722051b6",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00189.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00189.txt",
+  "label": 0,
+  "membership": "non_member",
+  "text_hash": "cf3fe6cf2afa7193c4faf8a3e2230e21",
+  "permutation_index": 3,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. The 29th yearly Screen Actors Guild Awards, which celebrated the most outstanding accomplishments in cinematic and television acting during 2022, took place on February 26, 2023. This event was held at the Fairmont Century Plaza, situated in Century City, California. The entire ceremony was broadcast live on the Netflix YouTube channel, commencing at 8:00 p.m. EST / 5:00 p.m. PST. The list of nominees was unveiled on January 11, 2023, by Ashley Park and Haley Lu Richardson, who made the announcement through Instagram Live. It was verified in May 2022 that the awards show would no longer be broadcast on TNT and TBS; the ceremony had been a fixture on TNT since 1998 and additionally aired on TBS starting in 2006. A representative emphasized that locating a new platform for the event \"is a common occurrence and has happened repeatedly throughout the SAG's history.\"\nB. The 29th Annual Screen Actors Guild Awards, honoring the best achievements in film and television performances for the year 2022, were presented on February 26, 2023 at the Fairmont Century Plaza in Century City, California. The ceremony streamed live on Netflix's YouTube channel, starting at 8:00 p.m. EST / 5:00 p.m. PST. The nominees were announced on January 11, 2023 by Ashley Park and Haley Lu Richardson via Instagram Live.In May 2022, it was confirmed that the ceremony would no longer air on TNT and TBS (the ceremony had aired on TNT since 1998 and had been also broadcast on TBS since 2006); a spokesperson insisted that finding a new home for the ceremony \"is not unusual and has occurred several times over the history of the SAG\nC. On February 26, 2023, the Screen Actors Guild Awards were held at the Fairmont Century Plaza in Century City, California, to showcase the best films and television performances for 2022. The awards were streamed live on Netflix's YouTube channel, starting at 8:00 p.m. EST / 5:00 p.m. PST, and nominees were announced by Ashley Park and Haley Lu Richardson on January 11, 2023 through Instagram Live. In May 2022, the ceremony was removed from TNT and TBS. A spokesperson denied\n\nAnswer:",
+  "options": {
+    "A": "The 29th yearly Screen Actors Guild Awards, which celebrated the most outstanding accomplishments in cinematic and television acting during 2022, took place on February 26, 2023. This event was held at the Fairmont Century Plaza, situated in Century City, California. The entire ceremony was broadcast live on the Netflix YouTube channel, commencing at 8:00 p.m. EST / 5:00 p.m. PST. The list of nominees was unveiled on January 11, 2023, by Ashley Park and Haley Lu Richardson, who made the announcement through Instagram Live. It was verified in May 2022 that the awards show would no longer be broadcast on TNT and TBS; the ceremony had been a fixture on TNT since 1998 and additionally aired on TBS starting in 2006. A representative emphasized that locating a new platform for the event \"is a common occurrence and has happened repeatedly throughout the SAG's history.\"",
+    "B": "The 29th Annual Screen Actors Guild Awards, honoring the best achievements in film and television performances for the year 2022, were presented on February 26, 2023 at the Fairmont Century Plaza in Century City, California. The ceremony streamed live on Netflix's YouTube channel, starting at 8:00 p.m. EST / 5:00 p.m. PST. The nominees were announced on January 11, 2023 by Ashley Park and Haley Lu Richardson via Instagram Live.In May 2022, it was confirmed that the ceremony would no longer air on TNT and TBS (the ceremony had aired on TNT since 1998 and had been also broadcast on TBS since 2006); a spokesperson insisted that finding a new home for the ceremony \"is not unusual and has occurred several times over the history of the SAG",
+    "C": "On February 26, 2023, the Screen Actors Guild Awards were held at the Fairmont Century Plaza in Century City, California, to showcase the best films and television performances for 2022. The awards were streamed live on Netflix's YouTube channel, starting at 8:00 p.m. EST / 5:00 p.m. PST, and nominees were announced by Ashley Park and Haley Lu Richardson on January 11, 2023 through Instagram Live. In May 2022, the ceremony was removed from TNT and TBS. A spokesperson denied"
+  },
+  "gold_letter": "B",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-07-11 00:00:15"
+}

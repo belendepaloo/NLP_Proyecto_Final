@@ -1,0 +1,26 @@
+{
+  "query_id": "f6f96f19ec481362e2325a6b9c18e227",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00136.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00136.txt",
+  "label": 0,
+  "membership": "non_member",
+  "text_hash": "83de3bf4d924fb9a838bdd7d0da8879e",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. An American musical group, The Reddings, specialized in the genres of funk, soul, and disco. It was established by the offspring of Otis Redding: Dexter, who contributed on bass and vocals, and Otis Redding III, who was born on December 17, 1963, and passed away on April 18, 2023, at the age of 59, handling the guitar. Mark Lockett also joined the band, playing drums, keyboards, and serving as the lead vocalist. Among their most recognized musical pieces are \"Remote Control\" from 1980, \"Doin' it,\" \"Funkin on the One,\" \"Class (Is What You Got)\" from 1981, \"Sittin' on the Dock of the Bay\" from 1982, \"Hand Dance\" from 1983, and \"The Awakening\" from 1980. The latter is a bass-drums duet that Les Claypool of Primus frequently performs during live shows and is also featured on his album, \"Highball with the Devil.\" The Reddings' album, also titled \"The Reddings,\" was made available to the public on November 26, 1988. This album achieved a notable position on the US Billboard album chart, peaking at number 88. It also contained a successful single.\nB. The Reddings was an American funk, soul and disco band, founded by Otis Redding's sons Dexter (bass and vocals) and Otis Redding III (December 17, 1963 – April 18, 2023 age 59; guitar) together with Mark Lockett (drums, keyboards, and lead vocal).Their most well-known songs include \"Remote Control\" (1980) / \"Doin' it\" / \"Funkin on the One\" / \"Class (Is What You Got)\" (1981) / \"Sittin' on the Dock of the Bay\" (1982) / \"Hand Dance\" (1983) and \"The Awakening\" (1980), a bass-drums-duet which is often performed live by Les Claypool (Primus) and on his album Highball with the Devil. Their album The Reddings was released on November 26, 1988, and reached a peak position of #88 on the US Billboard album chart. It featured a hit single\nC. The Reddings, an American funk, soul, and disco band, were founded by Otis Redding's sons, Dexter and Otis Redding III, and Mark Lockett. Their most popular songs include \"Remote Control\" (1980), \"Dominated\" / \"Dominated\" / \"Class (Is What You Got)\" (1981), \"Sittin' on the Dock of the Bay\" (1982), \"Hand Dance\" (1983), and \"The Awakening\" (1980), a popular\n\nAnswer:",
+  "options": {
+    "A": "An American musical group, The Reddings, specialized in the genres of funk, soul, and disco. It was established by the offspring of Otis Redding: Dexter, who contributed on bass and vocals, and Otis Redding III, who was born on December 17, 1963, and passed away on April 18, 2023, at the age of 59, handling the guitar. Mark Lockett also joined the band, playing drums, keyboards, and serving as the lead vocalist. Among their most recognized musical pieces are \"Remote Control\" from 1980, \"Doin' it,\" \"Funkin on the One,\" \"Class (Is What You Got)\" from 1981, \"Sittin' on the Dock of the Bay\" from 1982, \"Hand Dance\" from 1983, and \"The Awakening\" from 1980. The latter is a bass-drums duet that Les Claypool of Primus frequently performs during live shows and is also featured on his album, \"Highball with the Devil.\" The Reddings' album, also titled \"The Reddings,\" was made available to the public on November 26, 1988. This album achieved a notable position on the US Billboard album chart, peaking at number 88. It also contained a successful single.",
+    "B": "The Reddings was an American funk, soul and disco band, founded by Otis Redding's sons Dexter (bass and vocals) and Otis Redding III (December 17, 1963 – April 18, 2023 age 59; guitar) together with Mark Lockett (drums, keyboards, and lead vocal).Their most well-known songs include \"Remote Control\" (1980) / \"Doin' it\" / \"Funkin on the One\" / \"Class (Is What You Got)\" (1981) / \"Sittin' on the Dock of the Bay\" (1982) / \"Hand Dance\" (1983) and \"The Awakening\" (1980), a bass-drums-duet which is often performed live by Les Claypool (Primus) and on his album Highball with the Devil. Their album The Reddings was released on November 26, 1988, and reached a peak position of #88 on the US Billboard album chart. It featured a hit single",
+    "C": "The Reddings, an American funk, soul, and disco band, were founded by Otis Redding's sons, Dexter and Otis Redding III, and Mark Lockett. Their most popular songs include \"Remote Control\" (1980), \"Dominated\" / \"Dominated\" / \"Class (Is What You Got)\" (1981), \"Sittin' on the Dock of the Bay\" (1982), \"Hand Dance\" (1983), and \"The Awakening\" (1980), a popular"
+  },
+  "gold_letter": "B",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-07-10 23:48:54"
+}

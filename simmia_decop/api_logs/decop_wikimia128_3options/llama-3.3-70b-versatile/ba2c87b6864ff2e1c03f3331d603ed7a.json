@@ -1,0 +1,26 @@
+{
+  "query_id": "ba2c87b6864ff2e1c03f3331d603ed7a",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00015.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00015.txt",
+  "label": 0,
+  "membership": "non_member",
+  "text_hash": "f425ea4a93e74e68139d24509ea5b1ea",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. On January 19, 2023, the United States surpassed its debt ceiling, initiating an ongoing debt-ceiling crisis. Janet Yellen, the secretary of the treasury, responded by enacting temporary \"extraordinary measures\" as part of a political discussion within Congress about federal government spending and the national debt that the U.S. government incurs.\nB. On January 19, 2023, the United States hit its debt ceiling, beginning an ongoing debt-ceiling crisis. In response, Janet Yellen, the secretary of the treasury, began enacting temporary \"extraordinary measures\". The crisis is part of a political debate within Congress about federal government spending and the national debt that the U.S. government accrues.In the United States, the debt ceiling is a limit on how much national debt the Treasury Department may incur, defined by Congress. Although the debt ceiling does not authorize new spending, it grants the Treasury greater power over financial endeavors Congress may choose to take. In January 2013, the United States hit the debt ceiling, causing a crisis that persisted until that October, when the Continuing Appropriations Act of 2014 was signed into law by\nC. The United States reached its debt ceiling on January 19, 2023, initiating a persistent debt-ceiling crisis. As a direct consequence, Janet Yellen, who holds the position of secretary of the treasury, started implementing provisional \"extraordinary measures.\" This crisis is intrinsically linked to a political discourse within Congress concerning federal government expenditures and the accumulating national debt of the U.S. government. In the United States, the debt ceiling functions as a cap on the total amount of national debt the Treasury Department is permitted to accumulate, a limit established by Congress. While the debt ceiling doesn't grant authorization for novel spending, it does empower the Treasury with increased authority over financial undertakings that Congress might decide to pursue. Back in January 2013, the United States previously encountered the debt ceiling, which led to a crisis that endured until October of that year, at which point the Continuing Appropriations Act of 2014 received presidential assent.\n\nAnswer:",
+  "options": {
+    "A": "On January 19, 2023, the United States surpassed its debt ceiling, initiating an ongoing debt-ceiling crisis. Janet Yellen, the secretary of the treasury, responded by enacting temporary \"extraordinary measures\" as part of a political discussion within Congress about federal government spending and the national debt that the U.S. government incurs.",
+    "B": "On January 19, 2023, the United States hit its debt ceiling, beginning an ongoing debt-ceiling crisis. In response, Janet Yellen, the secretary of the treasury, began enacting temporary \"extraordinary measures\". The crisis is part of a political debate within Congress about federal government spending and the national debt that the U.S. government accrues.In the United States, the debt ceiling is a limit on how much national debt the Treasury Department may incur, defined by Congress. Although the debt ceiling does not authorize new spending, it grants the Treasury greater power over financial endeavors Congress may choose to take. In January 2013, the United States hit the debt ceiling, causing a crisis that persisted until that October, when the Continuing Appropriations Act of 2014 was signed into law by",
+    "C": "The United States reached its debt ceiling on January 19, 2023, initiating a persistent debt-ceiling crisis. As a direct consequence, Janet Yellen, who holds the position of secretary of the treasury, started implementing provisional \"extraordinary measures.\" This crisis is intrinsically linked to a political discourse within Congress concerning federal government expenditures and the accumulating national debt of the U.S. government. In the United States, the debt ceiling functions as a cap on the total amount of national debt the Treasury Department is permitted to accumulate, a limit established by Congress. While the debt ceiling doesn't grant authorization for novel spending, it does empower the Treasury with increased authority over financial undertakings that Congress might decide to pursue. Back in January 2013, the United States previously encountered the debt ceiling, which led to a crisis that endured until October of that year, at which point the Continuing Appropriations Act of 2014 received presidential assent."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-07-10 23:21:08"
+}

@@ -1,0 +1,26 @@
+{
+  "query_id": "7fdb1b89bfe7e81f35056040f46d598e",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00173.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00173.txt",
+  "label": 1,
+  "membership": "member",
+  "text_hash": "c8b5b6fdb3efdaa2c45a1a5f94605b5c",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. The Académie André Delvaux organized the 4th Magritte Awards ceremony, an event that recognized the most outstanding films produced in Belgium during 2013. This celebration occurred on February 1, 2014, commencing at 8:00 p.m. CET, at the Square, located within the historical Mont des Arts area in Brussels. Throughout the event, the Académie André Delvaux bestowed Magritte Awards across a total of 21 distinct categories. BeTV broadcasted the ceremony live to audiences throughout Belgium. Actress Émilie Dequenne took on the role of president for the ceremony, while actor Fabrizio Rongione served as the host for the second occasion. The list of nominees for the 4th Magritte Awards was made public on January 9, 2014. Among the nominated films, \"Tango libre\" received the highest number of nominations with ten, closely followed by \"In the Name of the Son\" which garnered seven nominations. The identities of the award recipients were unveiled during the actual awards ceremony on February 1, 2014. \"Ernest & Celestine\" also featured prominently.\nB. The 4th Magritte Awards ceremony, presented by the Académie André Delvaux, honored the best films of 2013 in Belgium and took place on 1 February 2014, at the Square in the historic site of Mont des Arts, Brussels beginning at 8:00 p.m. CET. During the ceremony, the Académie André Delvaux presented Magritte Awards in 21 categories. The ceremony was televised in Belgium by BeTV. Actress Émilie Dequenne presided the ceremony, while actor Fabrizio Rongione hosted the show for the second time.The nominees for the 4th Magritte Awards were announced on 9 January 2014. Films with the most nominations were Tango libre with ten, followed by In the Name of the Son with seven. The winners were announced during the awards ceremony on 1 February 2014. Ernest & Celestine\nC. On 1 February 2014, the 4th Magritte Awards ceremony was held at the Square in the historic site of Mont des Arts, Brussels, beginning at 8:00 p.m. CET, honoring the best films of 2013 in Belgium. The Académie André Delvaux presented Magritte Awards in 21 categories, with actress Émilie Dequenne presidedsided. Actress Fabrizio Rongione hosted the ceremony for the second time.\n\nAnswer:",
+  "options": {
+    "A": "The Académie André Delvaux organized the 4th Magritte Awards ceremony, an event that recognized the most outstanding films produced in Belgium during 2013. This celebration occurred on February 1, 2014, commencing at 8:00 p.m. CET, at the Square, located within the historical Mont des Arts area in Brussels. Throughout the event, the Académie André Delvaux bestowed Magritte Awards across a total of 21 distinct categories. BeTV broadcasted the ceremony live to audiences throughout Belgium. Actress Émilie Dequenne took on the role of president for the ceremony, while actor Fabrizio Rongione served as the host for the second occasion. The list of nominees for the 4th Magritte Awards was made public on January 9, 2014. Among the nominated films, \"Tango libre\" received the highest number of nominations with ten, closely followed by \"In the Name of the Son\" which garnered seven nominations. The identities of the award recipients were unveiled during the actual awards ceremony on February 1, 2014. \"Ernest & Celestine\" also featured prominently.",
+    "B": "The 4th Magritte Awards ceremony, presented by the Académie André Delvaux, honored the best films of 2013 in Belgium and took place on 1 February 2014, at the Square in the historic site of Mont des Arts, Brussels beginning at 8:00 p.m. CET. During the ceremony, the Académie André Delvaux presented Magritte Awards in 21 categories. The ceremony was televised in Belgium by BeTV. Actress Émilie Dequenne presided the ceremony, while actor Fabrizio Rongione hosted the show for the second time.The nominees for the 4th Magritte Awards were announced on 9 January 2014. Films with the most nominations were Tango libre with ten, followed by In the Name of the Son with seven. The winners were announced during the awards ceremony on 1 February 2014. Ernest & Celestine",
+    "C": "On 1 February 2014, the 4th Magritte Awards ceremony was held at the Square in the historic site of Mont des Arts, Brussels, beginning at 8:00 p.m. CET, honoring the best films of 2013 in Belgium. The Académie André Delvaux presented Magritte Awards in 21 categories, with actress Émilie Dequenne presidedsided. Actress Fabrizio Rongione hosted the ceremony for the second time."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-07-10 23:57:09"
+}

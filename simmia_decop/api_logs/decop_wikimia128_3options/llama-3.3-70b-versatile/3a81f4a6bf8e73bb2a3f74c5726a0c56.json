@@ -1,0 +1,26 @@
+{
+  "query_id": "3a81f4a6bf8e73bb2a3f74c5726a0c56",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00120.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00120.txt",
+  "label": 1,
+  "membership": "member",
+  "text_hash": "9576c5063b169a18331c8e428b06a4e3",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. In July 2014, an internationally publicised incident occurred in which a Thai woman, Pattaramon Janbua, who had been hired as a surrogate mother for an Australian couple, sought to raise money for her critically ill surrogate son. The baby had been in her care since she gave birth in December 2013; biological parents David John Farnell and Wenyu Wendy Li had left Thailand 2 months later with baby Gammy's twin sister Pipah.When ultrasound results seven months into the surrogate pregnancy indicated that Ms Pattaramon was carrying twins and that one of the twins, a boy, had Down syndrome, Farnell and Li requested that she abort him, and that they would keep only the child's twin sister. Ms Pattaramon refused, citing her Buddhist beliefs, and instead opted to raise\nB. An incident that gained international media attention took place in July 2014, involving Pattaramon Janbua, a Thai woman who had been engaged as a surrogate mother for an Australian couple. Ms. Janbua was attempting to secure financial assistance for her surrogate son, who was suffering from a critical illness. The infant had been under her care since his birth in December 2013; his biological parents, David John Farnell and Wenyu Wendy Li, departed Thailand two months subsequently, accompanied by baby Gammy's twin sister, Pipah. Following ultrasound findings seven months into the gestational period, which revealed that Ms. Pattaramon was expecting twins and that one of the twins, a boy, had Down syndrome, Farnell and Li made a request for her to terminate the pregnancy for the male twin, expressing their intention to only retain the child's twin sister. Ms. Pattaramon declined this request, referencing her Buddhist faith as the reason, and instead made the decision to raise the child.\nC. In July 2014, Pattaramon Janbua, a Thai woman employed as a surrogate mother for an Australian couple, attempted to raise funds for her son who was critically ill. The baby had been in her care since December 2013, and her biological parents, David John Farnell and Wenyu Wendy Li, left Thailand 2 months later with baby Gammy's twin sister Pipah. Despite this, she refused to abort the child and only kept the child's twin sister due to her Buddhist beliefs\n\nAnswer:",
+  "options": {
+    "A": "In July 2014, an internationally publicised incident occurred in which a Thai woman, Pattaramon Janbua, who had been hired as a surrogate mother for an Australian couple, sought to raise money for her critically ill surrogate son. The baby had been in her care since she gave birth in December 2013; biological parents David John Farnell and Wenyu Wendy Li had left Thailand 2 months later with baby Gammy's twin sister Pipah.When ultrasound results seven months into the surrogate pregnancy indicated that Ms Pattaramon was carrying twins and that one of the twins, a boy, had Down syndrome, Farnell and Li requested that she abort him, and that they would keep only the child's twin sister. Ms Pattaramon refused, citing her Buddhist beliefs, and instead opted to raise",
+    "B": "An incident that gained international media attention took place in July 2014, involving Pattaramon Janbua, a Thai woman who had been engaged as a surrogate mother for an Australian couple. Ms. Janbua was attempting to secure financial assistance for her surrogate son, who was suffering from a critical illness. The infant had been under her care since his birth in December 2013; his biological parents, David John Farnell and Wenyu Wendy Li, departed Thailand two months subsequently, accompanied by baby Gammy's twin sister, Pipah. Following ultrasound findings seven months into the gestational period, which revealed that Ms. Pattaramon was expecting twins and that one of the twins, a boy, had Down syndrome, Farnell and Li made a request for her to terminate the pregnancy for the male twin, expressing their intention to only retain the child's twin sister. Ms. Pattaramon declined this request, referencing her Buddhist faith as the reason, and instead made the decision to raise the child.",
+    "C": "In July 2014, Pattaramon Janbua, a Thai woman employed as a surrogate mother for an Australian couple, attempted to raise funds for her son who was critically ill. The baby had been in her care since December 2013, and her biological parents, David John Farnell and Wenyu Wendy Li, left Thailand 2 months later with baby Gammy's twin sister Pipah. Despite this, she refused to abort the child and only kept the child's twin sister due to her Buddhist beliefs"
+  },
+  "gold_letter": "A",
+  "predicted_letter": "A",
+  "is_correct": 1,
+  "timestamp": "2026-07-10 23:45:20"
+}

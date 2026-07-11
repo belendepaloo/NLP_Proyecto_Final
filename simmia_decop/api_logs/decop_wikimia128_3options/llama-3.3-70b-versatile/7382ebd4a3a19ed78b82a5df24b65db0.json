@@ -1,0 +1,26 @@
+{
+  "query_id": "7382ebd4a3a19ed78b82a5df24b65db0",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00199.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00199.txt",
+  "label": 1,
+  "membership": "member",
+  "text_hash": "b6de25868bc7e0d5b441d250591e264c",
+  "permutation_index": 0,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. José Salvador Alvarenga (Spanish: [xoˈse salβaˈðoɾ alβaˈɾeŋɡa]; born c. 1975) is a Salvadoran fisherman and author who was found on January 30, 2014, aged 36 or 37, on the Marshall Islands after spending 14 months adrift in a fishing boat in the Pacific Ocean beginning on November 17, 2012. He survived mainly on a diet of raw fish, turtles, small birds, sharks and rainwater. He swam to shore at Tile Islet, a small island that is part of Ebon Atoll, on January 30. Two locals, Emi Libokmeto and Russel Laikidrik, found him naked, clutching a knife and shouting in Spanish. He was treated in a hospital in Majuro before flying to his family home in El Salvador on February 10.Alvarenga's story was heavily reported worldwide despite initial criticism\nB. Following a 14-month absence on a fishing boat in the Pacific Ocean, José Salvador Alvarenga, a Salvadoran author and fisherman born in 1975, was discovered on January 30, 2014, at the age of 36 or 37 on the Marshall Islands. He survived primarily by consuming raw fish, turtles, small birds, sharks, and rainwater. He was found naked, clutching a knife and screaming in Spanish by two locals, Emi Libokmeto and Russel Laikidrik, who treated him in hospital in Majuro.\nC. José Salvador Alvarenga (Spanish: [xoˈse salβaˈðoɾ alβaˈɾeŋɡa]), whose birth year is around 1975, is a Salvadoran fisherman and writer. He was discovered on January 30, 2014, at the age of 36 or 37, in the Marshall Islands. This discovery occurred after he had spent 14 months cast away in a fishing vessel in the Pacific Ocean, an ordeal that commenced on November 17, 2012. His sustenance during this period primarily consisted of raw fish, turtles, small birds, sharks, and collected rainwater. On January 30, he reached the shoreline of Tile Islet, a minor island belonging to Ebon Atoll, by swimming. Emi Libokmeto and Russel Laikidrik, two local inhabitants, encountered him in a naked state, grasping a knife, and yelling in Spanish. He received medical care at a hospital in Majuro prior to his flight to his family residence in El Salvador on February 10. Alvarenga's narrative garnered extensive global media coverage, notwithstanding initial skepticism.\n\nAnswer:",
+  "options": {
+    "A": "José Salvador Alvarenga (Spanish: [xoˈse salβaˈðoɾ alβaˈɾeŋɡa]; born c. 1975) is a Salvadoran fisherman and author who was found on January 30, 2014, aged 36 or 37, on the Marshall Islands after spending 14 months adrift in a fishing boat in the Pacific Ocean beginning on November 17, 2012. He survived mainly on a diet of raw fish, turtles, small birds, sharks and rainwater. He swam to shore at Tile Islet, a small island that is part of Ebon Atoll, on January 30. Two locals, Emi Libokmeto and Russel Laikidrik, found him naked, clutching a knife and shouting in Spanish. He was treated in a hospital in Majuro before flying to his family home in El Salvador on February 10.Alvarenga's story was heavily reported worldwide despite initial criticism",
+    "B": "Following a 14-month absence on a fishing boat in the Pacific Ocean, José Salvador Alvarenga, a Salvadoran author and fisherman born in 1975, was discovered on January 30, 2014, at the age of 36 or 37 on the Marshall Islands. He survived primarily by consuming raw fish, turtles, small birds, sharks, and rainwater. He was found naked, clutching a knife and screaming in Spanish by two locals, Emi Libokmeto and Russel Laikidrik, who treated him in hospital in Majuro.",
+    "C": "José Salvador Alvarenga (Spanish: [xoˈse salβaˈðoɾ alβaˈɾeŋɡa]), whose birth year is around 1975, is a Salvadoran fisherman and writer. He was discovered on January 30, 2014, at the age of 36 or 37, in the Marshall Islands. This discovery occurred after he had spent 14 months cast away in a fishing vessel in the Pacific Ocean, an ordeal that commenced on November 17, 2012. His sustenance during this period primarily consisted of raw fish, turtles, small birds, sharks, and collected rainwater. On January 30, he reached the shoreline of Tile Islet, a minor island belonging to Ebon Atoll, by swimming. Emi Libokmeto and Russel Laikidrik, two local inhabitants, encountered him in a naked state, grasping a knife, and yelling in Spanish. He received medical care at a hospital in Majuro prior to his flight to his family residence in El Salvador on February 10. Alvarenga's narrative garnered extensive global media coverage, notwithstanding initial skepticism."
+  },
+  "gold_letter": "A",
+  "predicted_letter": "A",
+  "is_correct": 1,
+  "timestamp": "2026-07-11 00:01:59"
+}

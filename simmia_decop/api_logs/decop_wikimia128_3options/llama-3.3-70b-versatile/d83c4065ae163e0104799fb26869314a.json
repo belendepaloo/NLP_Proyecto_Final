@@ -1,0 +1,26 @@
+{
+  "query_id": "d83c4065ae163e0104799fb26869314a",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00087.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00087.txt",
+  "label": 1,
+  "membership": "member",
+  "text_hash": "9918068f41bf4f2ec9f274e5f937e9df",
+  "permutation_index": 5,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. The primary source of information on Flight 370's location and potential in-flight events is the analysis of communications between Malaysia Airlines Flight 370 and Inmarsat's satellite telecommunication network.\nB. The analysis of communications between Malaysia Airlines Flight 370 and Inmarsat's satellite telecommunication network provide the primary source of information about Flight 370's location and possible in-flight events after it disappeared from military radar coverage at 2:22 Malaysia Standard Time (MYT) on 8 March 2014 (17:22 UTC, 7 March), one hour after communication with air traffic control ended and the aircraft departed from its planned flight path while over the South China Sea. Flight 370 was a scheduled commercial flight with 227 passengers and 12 crew which departed Kuala Lumpur, Malaysia at 0:41 and was scheduled to land in Beijing, China at 6:30 China Standard Time (6:30 MYT; 22:30 UTC, 7 March). Malaysia has worked in conjunction with the Australian Transport Safety Bureau to co-ordinate the analysis, which\nC. The principal source of knowledge regarding the whereabouts of Flight 370 and potential occurrences during its flight after it vanished from military radar at 2:22 Malaysia Standard Time (MYT) on March 8, 2014 (17:22 UTC, March 7) stems from examining the exchanges between Malaysia Airlines Flight 370 and the satellite telecommunication network operated by Inmarsat. This disappearance occurred an hour after its contact with air traffic control ceased and the aircraft veered off its intended course while above the South China Sea. Flight 370 was a regular commercial journey carrying 227 passengers and a crew of 12; it had taken off from Kuala Lumpur, Malaysia, at 0:41, with an anticipated arrival time in Beijing, China, at 6:30 China Standard Time (6:30 MYT; 22:30 UTC, March 7). Malaysia has collaborated with the Australian Transport Safety Bureau to manage the interpretive process of this data, which\n\nAnswer:",
+  "options": {
+    "A": "The primary source of information on Flight 370's location and potential in-flight events is the analysis of communications between Malaysia Airlines Flight 370 and Inmarsat's satellite telecommunication network.",
+    "B": "The analysis of communications between Malaysia Airlines Flight 370 and Inmarsat's satellite telecommunication network provide the primary source of information about Flight 370's location and possible in-flight events after it disappeared from military radar coverage at 2:22 Malaysia Standard Time (MYT) on 8 March 2014 (17:22 UTC, 7 March), one hour after communication with air traffic control ended and the aircraft departed from its planned flight path while over the South China Sea. Flight 370 was a scheduled commercial flight with 227 passengers and 12 crew which departed Kuala Lumpur, Malaysia at 0:41 and was scheduled to land in Beijing, China at 6:30 China Standard Time (6:30 MYT; 22:30 UTC, 7 March). Malaysia has worked in conjunction with the Australian Transport Safety Bureau to co-ordinate the analysis, which",
+    "C": "The principal source of knowledge regarding the whereabouts of Flight 370 and potential occurrences during its flight after it vanished from military radar at 2:22 Malaysia Standard Time (MYT) on March 8, 2014 (17:22 UTC, March 7) stems from examining the exchanges between Malaysia Airlines Flight 370 and the satellite telecommunication network operated by Inmarsat. This disappearance occurred an hour after its contact with air traffic control ceased and the aircraft veered off its intended course while above the South China Sea. Flight 370 was a regular commercial journey carrying 227 passengers and a crew of 12; it had taken off from Kuala Lumpur, Malaysia, at 0:41, with an anticipated arrival time in Beijing, China, at 6:30 China Standard Time (6:30 MYT; 22:30 UTC, March 7). Malaysia has collaborated with the Australian Transport Safety Bureau to manage the interpretive process of this data, which"
+  },
+  "gold_letter": "B",
+  "predicted_letter": "B",
+  "is_correct": 1,
+  "timestamp": "2026-07-10 23:37:56"
+}

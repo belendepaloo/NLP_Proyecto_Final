@@ -1,0 +1,26 @@
+{
+  "query_id": "b0540449b4f4dc74e7c50cb4164d23b8",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00020.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00020.txt",
+  "label": 0,
+  "membership": "non_member",
+  "text_hash": "dd9b26dd45c8c89aadb8c650b3ad00e3",
+  "permutation_index": 5,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. In March 2023, a political controversy occurred over Indonesia's hosting of the FIFA U-20 World Cup 2023. The world governing body of association football, FIFA, decided to remove Indonesia from its hosting rights for the 2023 FIFA U-20 World Cup, a youth football tournament that was scheduled to take place in May 2023. This decision was made because of Indonesia's opposition to Israel's participation in the tournament, citing Indonesia's pro-Palestine stance and lack of diplomatic relations with Israel. FIFA also imposed a financial sanctions on P\nB. In March 2023, a significant political dispute unfolded regarding the FIFA U-20 World Cup 2023, as FIFA, the international governing organization for association football, opted to revoke Indonesia's designation as the host nation for the 2023 FIFA U-20 World Cup, a youth football competition slated for May 2023. This resolution stemmed from the \"prevailing conditions\" that emerged subsequent to Indonesia's objection to Israel's involvement in the tournament, attributed to Indonesia's firm pro-Palestine position and its absence of formal diplomatic relations with Israel. Furthermore, FIFA levied a monetary penalty against the Football Association of Indonesia (PSSI) for failing to uphold its commitments as the host country. This ruling provoked considerable disappointment and resentment among numerous Indonesian football enthusiasts and athletes, who had been eagerly anticipating the event.\nC. The removal of Indonesia as FIFA U-20 World Cup 2023 hosts was a political controversy that occurred in March 2023, when FIFA, the world governing body of association football, decided to strip Indonesia of its hosting rights for the 2023 FIFA U-20 World Cup, a youth football tournament that was scheduled to take place in May 2023. The decision was made due to the \"current circumstances\" that arose from Indonesia's opposition to Israel's participation in the tournament, citing Indonesia's pro-Palestine stance and lack of diplomatic ties with Israel. FIFA also imposed a financial sanction on the Football Association of Indonesia (PSSI) for breaching its obligations as a host country. The decision was met with disappointment and anger by many Indonesian football fans and players, who had hoped to\n\nAnswer:",
+  "options": {
+    "A": "In March 2023, a political controversy occurred over Indonesia's hosting of the FIFA U-20 World Cup 2023. The world governing body of association football, FIFA, decided to remove Indonesia from its hosting rights for the 2023 FIFA U-20 World Cup, a youth football tournament that was scheduled to take place in May 2023. This decision was made because of Indonesia's opposition to Israel's participation in the tournament, citing Indonesia's pro-Palestine stance and lack of diplomatic relations with Israel. FIFA also imposed a financial sanctions on P",
+    "B": "In March 2023, a significant political dispute unfolded regarding the FIFA U-20 World Cup 2023, as FIFA, the international governing organization for association football, opted to revoke Indonesia's designation as the host nation for the 2023 FIFA U-20 World Cup, a youth football competition slated for May 2023. This resolution stemmed from the \"prevailing conditions\" that emerged subsequent to Indonesia's objection to Israel's involvement in the tournament, attributed to Indonesia's firm pro-Palestine position and its absence of formal diplomatic relations with Israel. Furthermore, FIFA levied a monetary penalty against the Football Association of Indonesia (PSSI) for failing to uphold its commitments as the host country. This ruling provoked considerable disappointment and resentment among numerous Indonesian football enthusiasts and athletes, who had been eagerly anticipating the event.",
+    "C": "The removal of Indonesia as FIFA U-20 World Cup 2023 hosts was a political controversy that occurred in March 2023, when FIFA, the world governing body of association football, decided to strip Indonesia of its hosting rights for the 2023 FIFA U-20 World Cup, a youth football tournament that was scheduled to take place in May 2023. The decision was made due to the \"current circumstances\" that arose from Indonesia's opposition to Israel's participation in the tournament, citing Indonesia's pro-Palestine stance and lack of diplomatic ties with Israel. FIFA also imposed a financial sanction on the Football Association of Indonesia (PSSI) for breaching its obligations as a host country. The decision was met with disappointment and anger by many Indonesian football fans and players, who had hoped to"
+  },
+  "gold_letter": "C",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-07-10 23:22:40"
+}

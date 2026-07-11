@@ -1,0 +1,26 @@
+{
+  "query_id": "29b917099775526b7188f248eb2c9638",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00098.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00098.txt",
+  "label": 0,
+  "membership": "non_member",
+  "text_hash": "81b5d7693ce2deafda82e9d5b8390637",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. The 38th Artios Awards ceremony, which recognizes outstanding originality, creativity, and the significant impact of casting on the overall excellence of various productions including films, television series, short films, short-form series, and theatre, took place on March 9, 2023. This event marked a significant return to in-person gatherings after a two-year hiatus, being simultaneously hosted at two distinct venues: The Beverly Hilton in Los Angeles and the Edison Ballroom in New York. The nominations for the categories spanning television, short-form projects, and theatre were publicly revealed on October 17, 2022. Subsequently, the nominees for the film categories were unveiled on January 10, 2023. The hosting duties for this dual-location ceremony were shared by Yvette Nicole Brown and Amber Ruffin. Amber Ruffin presided over the proceedings in New York, while Yvette Nicole Brown led the event in Los Angeles. Notably, Brown had previously served as host for the inaugural virtual awards presentation.\nB. The 38th Artios Awards, presented by the Casting Society of America, honoring the best originality, creativity and the contribution of casting to the overall quality of a film, television series, short film, short-form series and theatre production, were held on March 9, 2023, simultaneously at The Beverly Hilton in Los Angeles and Edison Ballroom in New York, being the first time in two years that the ceremony was an in-person event.The nominations for the television, short-form project, and theatre categories were announced on October 17, 2022. The nominees for the film categories were announced on January 10, 2023.Yvette Nicole Brown and Amber Ruffin both hosted the event simultaneously. The latter hosted in New York while the former hosted in Los Angeles; Brown previously hosted the first virtual awards\nC. The Casting Society of America held the 38th Artios Awards on March 9, 2023, at The Beverly Hilton and Edison Ballroom, respectively, marking the first time in two years that the ceremony had been held in person. The awards recognized the most originality, creativity, and contribution of casting to the overall quality of a film, television series, short-form project, and theatre production.\n\nAnswer:",
+  "options": {
+    "A": "The 38th Artios Awards ceremony, which recognizes outstanding originality, creativity, and the significant impact of casting on the overall excellence of various productions including films, television series, short films, short-form series, and theatre, took place on March 9, 2023. This event marked a significant return to in-person gatherings after a two-year hiatus, being simultaneously hosted at two distinct venues: The Beverly Hilton in Los Angeles and the Edison Ballroom in New York. The nominations for the categories spanning television, short-form projects, and theatre were publicly revealed on October 17, 2022. Subsequently, the nominees for the film categories were unveiled on January 10, 2023. The hosting duties for this dual-location ceremony were shared by Yvette Nicole Brown and Amber Ruffin. Amber Ruffin presided over the proceedings in New York, while Yvette Nicole Brown led the event in Los Angeles. Notably, Brown had previously served as host for the inaugural virtual awards presentation.",
+    "B": "The 38th Artios Awards, presented by the Casting Society of America, honoring the best originality, creativity and the contribution of casting to the overall quality of a film, television series, short film, short-form series and theatre production, were held on March 9, 2023, simultaneously at The Beverly Hilton in Los Angeles and Edison Ballroom in New York, being the first time in two years that the ceremony was an in-person event.The nominations for the television, short-form project, and theatre categories were announced on October 17, 2022. The nominees for the film categories were announced on January 10, 2023.Yvette Nicole Brown and Amber Ruffin both hosted the event simultaneously. The latter hosted in New York while the former hosted in Los Angeles; Brown previously hosted the first virtual awards",
+    "C": "The Casting Society of America held the 38th Artios Awards on March 9, 2023, at The Beverly Hilton and Edison Ballroom, respectively, marking the first time in two years that the ceremony had been held in person. The awards recognized the most originality, creativity, and contribution of casting to the overall quality of a film, television series, short-form project, and theatre production."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-07-10 23:40:36"
+}

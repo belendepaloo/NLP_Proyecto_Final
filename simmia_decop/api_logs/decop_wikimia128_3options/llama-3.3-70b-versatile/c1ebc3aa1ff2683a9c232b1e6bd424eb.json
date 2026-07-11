@@ -1,0 +1,26 @@
+{
+  "query_id": "c1ebc3aa1ff2683a9c232b1e6bd424eb",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00113.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00113.txt",
+  "label": 1,
+  "membership": "member",
+  "text_hash": "9289754b72492423369f745ee8c33876",
+  "permutation_index": 2,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. The 2014 American immigration crisis was a surge in unaccompanied children and women from the Northern Triangle of Central America (NTCA) seeking entrance to the United States in 2014. According to U.S. law, an unaccompanied alien child refers to a person under 18 years of age, who has no lawful immigration status in the U.S., and who does not have a legal guardian to provide physical custody and care.Between 2013 and 2014, the number of unaccompanied children apprehended at the border increased nearly 80%, from 38,759 in fiscal year 2013 to 68,541 in fiscal year 2014. This influx in unaccompanied minor children has been attributed to a number of factors including the high rates of gang-related violent crime in the Northern Triangle; the promulgation of false \"permiso\" rumors\nB. In 2014, the American immigration crisis saw a rise in unaccompanied children and women from the Northern Triangle of Central America applying for entry into the United States. U.S. law defines an unaccompanied alien child as someone under 18 years old who has no legal status in the U.S., and who lacks a legal guardian to provide physical custody and care.\nC. In 2014, the United States experienced an immigration surge, often referred to as the 2014 American immigration crisis, which involved a significant increase in unaccompanied children and women originating from the Northern Triangle of Central America (NTCA) who were attempting to enter the country. Within the framework of U.S. legislation, an \"unaccompanied alien child\" is defined as an individual under the age of 18 who lacks a legitimate immigration status within the U.S. and is without a legal guardian capable of offering physical care and custody. From 2013 to 2014, there was a nearly 80% rise in the number of unaccompanied children detained at the border, climbing from 38,759 in the 2013 fiscal year to 68,541 in the 2014 fiscal year. Several elements have been identified as contributing to this substantial increase in unaccompanied minor children, including the pervasive levels of gang-related violent crime prevalent in the Northern Triangle, as well as the dissemination of erroneous \"permiso\" rumors.\n\nAnswer:",
+  "options": {
+    "A": "The 2014 American immigration crisis was a surge in unaccompanied children and women from the Northern Triangle of Central America (NTCA) seeking entrance to the United States in 2014. According to U.S. law, an unaccompanied alien child refers to a person under 18 years of age, who has no lawful immigration status in the U.S., and who does not have a legal guardian to provide physical custody and care.Between 2013 and 2014, the number of unaccompanied children apprehended at the border increased nearly 80%, from 38,759 in fiscal year 2013 to 68,541 in fiscal year 2014. This influx in unaccompanied minor children has been attributed to a number of factors including the high rates of gang-related violent crime in the Northern Triangle; the promulgation of false \"permiso\" rumors",
+    "B": "In 2014, the American immigration crisis saw a rise in unaccompanied children and women from the Northern Triangle of Central America applying for entry into the United States. U.S. law defines an unaccompanied alien child as someone under 18 years old who has no legal status in the U.S., and who lacks a legal guardian to provide physical custody and care.",
+    "C": "In 2014, the United States experienced an immigration surge, often referred to as the 2014 American immigration crisis, which involved a significant increase in unaccompanied children and women originating from the Northern Triangle of Central America (NTCA) who were attempting to enter the country. Within the framework of U.S. legislation, an \"unaccompanied alien child\" is defined as an individual under the age of 18 who lacks a legitimate immigration status within the U.S. and is without a legal guardian capable of offering physical care and custody. From 2013 to 2014, there was a nearly 80% rise in the number of unaccompanied children detained at the border, climbing from 38,759 in the 2013 fiscal year to 68,541 in the 2014 fiscal year. Several elements have been identified as contributing to this substantial increase in unaccompanied minor children, including the pervasive levels of gang-related violent crime prevalent in the Northern Triangle, as well as the dissemination of erroneous \"permiso\" rumors."
+  },
+  "gold_letter": "A",
+  "predicted_letter": "A",
+  "is_correct": 1,
+  "timestamp": "2026-07-10 23:43:30"
+}

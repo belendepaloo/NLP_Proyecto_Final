@@ -1,0 +1,26 @@
+{
+  "query_id": "b39feb4cb49f38b30fa6112087abeb1a",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00014.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00014.txt",
+  "label": 0,
+  "membership": "non_member",
+  "text_hash": "05665d487833ffbbb08473e8ce935c5e",
+  "permutation_index": 5,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. On February 22, 2023, a combined concert and rally was held at Moscow's Luzhniki Stadium. According to TASS, the event was organized to observe Defender of the Fatherland Day. Ukrainska Pravda, however, noted that the chosen date was thought to be significant because it was close to February 24, 2022, the day the 2022 Russian invasion of Ukraine began. RBC indicated that President Vladimir Putin was anticipated to attend, and RIA Novosti cited a parliamentary source who confirmed Putin would deliver a speech at the gathering. Ukrainska Pravda further mentioned that the event would feature historical displays and examples of Russian military hardware. Argumenty i Fakty estimated that approximately 200,000 individuals were projected to be in attendance. Radio Liberty reported that individuals in Moscow were being offered 500 RUB for their presence at a rally, speculating that this offer pertained to the aforementioned event.\nB. A concert and rally took place on 22 February 2023 at Luzhniki Stadium in Moscow. TASS reported that the rally commemorated Defender of the Fatherland Day. Ukrainska Pravda stated that the date was selected in reference to the starting date of the 2022 Russian invasion of Ukraine, 24 February 2022.RBC reported that President Vladimir Putin was expected to make an appearance, and RIA Novosti reported that a parliamentary source stated that Putin would speak at the rally. Ukrainska Pravda added that historical exhibits and Russian military equipment would also be on display. Argumenty i Fakty reported that around 200,000 people were expected to attend. Radio Liberty stated that people were being offered 500 RUB to attend a rally in Moscow, and presumed that the offer was for this\nC. According to TASS, a concert and rally was held at Luzhniki Stadium in Moscow on 22 February 2023 to celebrate Defender of the Fatherland Day. Ukrainska Pravda confirmed that the date was chosen because it coincided with the start of the 2022 Russian invasion of Ukraine. A parliamentary source informed RIA Novosti that Putin was expected to speak at the rally, along with historical exhibits and Russian military equipment. Approximately 200,000 people were expected to attend the rally.\n\nAnswer:",
+  "options": {
+    "A": "On February 22, 2023, a combined concert and rally was held at Moscow's Luzhniki Stadium. According to TASS, the event was organized to observe Defender of the Fatherland Day. Ukrainska Pravda, however, noted that the chosen date was thought to be significant because it was close to February 24, 2022, the day the 2022 Russian invasion of Ukraine began. RBC indicated that President Vladimir Putin was anticipated to attend, and RIA Novosti cited a parliamentary source who confirmed Putin would deliver a speech at the gathering. Ukrainska Pravda further mentioned that the event would feature historical displays and examples of Russian military hardware. Argumenty i Fakty estimated that approximately 200,000 individuals were projected to be in attendance. Radio Liberty reported that individuals in Moscow were being offered 500 RUB for their presence at a rally, speculating that this offer pertained to the aforementioned event.",
+    "B": "A concert and rally took place on 22 February 2023 at Luzhniki Stadium in Moscow. TASS reported that the rally commemorated Defender of the Fatherland Day. Ukrainska Pravda stated that the date was selected in reference to the starting date of the 2022 Russian invasion of Ukraine, 24 February 2022.RBC reported that President Vladimir Putin was expected to make an appearance, and RIA Novosti reported that a parliamentary source stated that Putin would speak at the rally. Ukrainska Pravda added that historical exhibits and Russian military equipment would also be on display. Argumenty i Fakty reported that around 200,000 people were expected to attend. Radio Liberty stated that people were being offered 500 RUB to attend a rally in Moscow, and presumed that the offer was for this",
+    "C": "According to TASS, a concert and rally was held at Luzhniki Stadium in Moscow on 22 February 2023 to celebrate Defender of the Fatherland Day. Ukrainska Pravda confirmed that the date was chosen because it coincided with the start of the 2022 Russian invasion of Ukraine. A parliamentary source informed RIA Novosti that Putin was expected to speak at the rally, along with historical exhibits and Russian military equipment. Approximately 200,000 people were expected to attend the rally."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-07-10 23:21:03"
+}

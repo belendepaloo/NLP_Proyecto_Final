@@ -1,0 +1,26 @@
+{
+  "query_id": "bb57408e24dab9f4000fc396de2a13f4",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00150.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00150.txt",
+  "label": 1,
+  "membership": "member",
+  "text_hash": "941708ac9cc1b1b70988e303f5efaeae",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. The Dzhumaya Mosque, also known as Hüdavendigâr Camii or Cuma Camii, is situated in the heart of Plovdiv, Bulgaria. It was built in 1363-1364 on the site of the Sveta Petka Tarnovska Cathedral Church after the Ottoman army conquered the city. The mosque was later renamed Main Friday Mosque and has nine domes, a minaret, and a minaret on the northeast corner.\nB. Dzhumaya Mosque (Bulgarian: Джумая джамия) is located in Plovdiv, Plovdiv Province, Bulgaria. Its Turkish name is Hüdavendigâr Camii or Cuma Camii. The mosque is located in the centre of Plovdiv and was built in 1363–1364 on the site of the Sveta Petka Tarnovska Cathedral Church after the conquest of Plovdiv by the Ottoman army. During the reign of Sultan Murad I in the 15th century the old building was demolished and replaced by the modern-day mosque. It was called Ulu Dzhumaya Mosque, or Main Friday Mosque.The mosque is large, with nine domes and a 33 m × 27 m (108 ft × 89 ft) prayer hall. There is a minaret at the northeast corner of the main façade. Interior wall paintings date to the late 18th to early\nC. The mosque known as Dzhumaya Mosque (Джумая джамия in Bulgarian) can be found in the city of Plovdiv, situated within the Plovdiv Province of Bulgaria. In Turkish, it bears the names Hüdavendigâr Camii or Cuma Camii. This mosque is positioned in the central area of Plovdiv and its construction commenced in the years 1363–1364. It was erected on the very spot where the Sveta Petka Tarnovska Cathedral Church previously stood, following the successful capture of Plovdiv by the Ottoman army. Subsequently, during the 15th century, while Sultan Murad I was in power, the initial structure was torn down and subsequently replaced by the mosque that stands today. It was also referred to as Ulu Dzhumaya Mosque, signifying the Main Friday Mosque. This mosque is quite sizable, featuring nine domes and a spacious prayer hall measuring 33 meters by 27 meters (108 feet by 89 feet). A minaret is conspicuously situated at the northeast corner of its primary façade. The internal wall paintings within the mosque originate from the period spanning the late 18th century to the early 19th century.\n\nAnswer:",
+  "options": {
+    "A": "The Dzhumaya Mosque, also known as Hüdavendigâr Camii or Cuma Camii, is situated in the heart of Plovdiv, Bulgaria. It was built in 1363-1364 on the site of the Sveta Petka Tarnovska Cathedral Church after the Ottoman army conquered the city. The mosque was later renamed Main Friday Mosque and has nine domes, a minaret, and a minaret on the northeast corner.",
+    "B": "Dzhumaya Mosque (Bulgarian: Джумая джамия) is located in Plovdiv, Plovdiv Province, Bulgaria. Its Turkish name is Hüdavendigâr Camii or Cuma Camii. The mosque is located in the centre of Plovdiv and was built in 1363–1364 on the site of the Sveta Petka Tarnovska Cathedral Church after the conquest of Plovdiv by the Ottoman army. During the reign of Sultan Murad I in the 15th century the old building was demolished and replaced by the modern-day mosque. It was called Ulu Dzhumaya Mosque, or Main Friday Mosque.The mosque is large, with nine domes and a 33 m × 27 m (108 ft × 89 ft) prayer hall. There is a minaret at the northeast corner of the main façade. Interior wall paintings date to the late 18th to early",
+    "C": "The mosque known as Dzhumaya Mosque (Джумая джамия in Bulgarian) can be found in the city of Plovdiv, situated within the Plovdiv Province of Bulgaria. In Turkish, it bears the names Hüdavendigâr Camii or Cuma Camii. This mosque is positioned in the central area of Plovdiv and its construction commenced in the years 1363–1364. It was erected on the very spot where the Sveta Petka Tarnovska Cathedral Church previously stood, following the successful capture of Plovdiv by the Ottoman army. Subsequently, during the 15th century, while Sultan Murad I was in power, the initial structure was torn down and subsequently replaced by the mosque that stands today. It was also referred to as Ulu Dzhumaya Mosque, signifying the Main Friday Mosque. This mosque is quite sizable, featuring nine domes and a spacious prayer hall measuring 33 meters by 27 meters (108 feet by 89 feet). A minaret is conspicuously situated at the northeast corner of its primary façade. The internal wall paintings within the mosque originate from the period spanning the late 18th century to the early 19th century."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-07-10 23:51:47"
+}

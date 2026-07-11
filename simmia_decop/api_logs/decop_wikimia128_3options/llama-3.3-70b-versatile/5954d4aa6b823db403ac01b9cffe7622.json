@@ -1,0 +1,26 @@
+{
+  "query_id": "5954d4aa6b823db403ac01b9cffe7622",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.3-70b-versatile",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00079.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00079.txt",
+  "label": 1,
+  "membership": "member",
+  "text_hash": "1772c887c1d9d28b39e91483d811d30e",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. Julieka Ivanna Dhu (commonly referred to as Ms Dhu; her first name was generally not used in media reports out of respect for Aboriginal naming customs) was a 22-year-old Aboriginal Australian woman who died in police custody in South Hedland, Western Australia, in 2014. On 2 August that year, police responded to a report that Dhu's partner had violated an apprehended violence order. Upon arriving at their address, the officers arrested both Dhu and her partner after realising there was also an outstanding arrest warrant for unpaid fines against Dhu. She was detained in police custody in South Hedland and was ordered to serve four days in custody in default of her debt. While in custody, Dhu complained of pain and was twice taken to the Hedland Health\nB. Julieka Ivanna Dhu, often known simply as Ms Dhu (her given name was typically avoided in news coverage to honor Indigenous naming traditions), was a 22-year-old Aboriginal Australian woman whose life ended while she was in police custody in South Hedland, Western Australia, during 2014. On August 2nd of that year, law enforcement officers were dispatched in response to a call indicating that Dhu's partner had breached an apprehended violence order. Upon their arrival at the couple's residence, the officers proceeded to arrest both Dhu and her partner after discovering that an active arrest warrant existed for Dhu due to unpaid fines. She was subsequently held in police custody in South Hedland, where she was mandated to spend four days incarcerated as a consequence of her outstanding financial obligations. Throughout her detention, Dhu expressed experiencing pain and was transported to the Hedland Health facility on two separate occasions.\nC. Ms Dhu, also known as Julieka Ivanna Dhu, was a 22-year-old Aboriginal Australian woman who died in police custody in South Hedland, Western Australia in 2014, following a report of her partner's violation of an apprehended violence order. The police arrested both parties after finding an outstanding arrest warrant for fines against Dhu. She was detained in South Hedland and was ordered to serve four days in jail in breach of her debt. She was also in possession of two additional times. Hedland.\n\nAnswer:",
+  "options": {
+    "A": "Julieka Ivanna Dhu (commonly referred to as Ms Dhu; her first name was generally not used in media reports out of respect for Aboriginal naming customs) was a 22-year-old Aboriginal Australian woman who died in police custody in South Hedland, Western Australia, in 2014. On 2 August that year, police responded to a report that Dhu's partner had violated an apprehended violence order. Upon arriving at their address, the officers arrested both Dhu and her partner after realising there was also an outstanding arrest warrant for unpaid fines against Dhu. She was detained in police custody in South Hedland and was ordered to serve four days in custody in default of her debt. While in custody, Dhu complained of pain and was twice taken to the Hedland Health",
+    "B": "Julieka Ivanna Dhu, often known simply as Ms Dhu (her given name was typically avoided in news coverage to honor Indigenous naming traditions), was a 22-year-old Aboriginal Australian woman whose life ended while she was in police custody in South Hedland, Western Australia, during 2014. On August 2nd of that year, law enforcement officers were dispatched in response to a call indicating that Dhu's partner had breached an apprehended violence order. Upon their arrival at the couple's residence, the officers proceeded to arrest both Dhu and her partner after discovering that an active arrest warrant existed for Dhu due to unpaid fines. She was subsequently held in police custody in South Hedland, where she was mandated to spend four days incarcerated as a consequence of her outstanding financial obligations. Throughout her detention, Dhu expressed experiencing pain and was transported to the Hedland Health facility on two separate occasions.",
+    "C": "Ms Dhu, also known as Julieka Ivanna Dhu, was a 22-year-old Aboriginal Australian woman who died in police custody in South Hedland, Western Australia in 2014, following a report of her partner's violation of an apprehended violence order. The police arrested both parties after finding an outstanding arrest warrant for fines against Dhu. She was detained in South Hedland and was ordered to serve four days in jail in breach of her debt. She was also in possession of two additional times. Hedland."
+  },
+  "gold_letter": "A",
+  "predicted_letter": "A",
+  "is_correct": 1,
+  "timestamp": "2026-07-10 23:36:00"
+}
