@@ -1,0 +1,26 @@
+{
+  "query_id": "ca57002fd343940b4811e6e95ceba2b4",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00239.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00239.txt",
+  "label": 0,
+  "membership": "non_member",
+  "text_hash": "8d6d5a0c9cd6e8565b7c357bbe6c96ab",
+  "permutation_index": 5,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. An improvised explosive device exploded at a home on NH Route 77 in Weare, New Hampshire on April 26, 2023 at approximately 6:10 PM EDT. ATF and FBI agents were present at the scene, and a second bomb exploded inside a van along Sugar Hill Road at 6:50 AM the following day. The driver of the van reacted and the bomb detonated in front of him, causing minor injuries. Those living within 2 miles of the two bombings have been asked to review tape for any information.\nB. On April 26, 2023, approximately at 6:10 PM EDT, an explosive device, subsequently identified as an improvised explosive device, detonated in Weare, New Hampshire. This incident occurred at a residence situated on NH Route 77. In response to the explosion, personnel from the ATF and FBI were dispatched to the location. The following morning, at 6:50 AM, a second bomb detonated within a van that was parked on Sugar Hill Road. The individual operating the van stated that he was in the process of driving when he observed the bomb. He then pulled the vehicle over with the intention of removing the device, at which point it exploded directly in front of him, resulting in minor injuries. Local residents residing within a two-mile radius of either of these bombing incidents have received a request to examine their surveillance recordings for any potentially suspicious activity. On April 27, 2023, Dale Stewart was apprehended in Webster, and a pipe bomb discovered inside his vehicle was successfully neutralized. He subsequently underwent arraignment.\nC. At around 6:10 PM EDT on April 26, 2023, what was later determined to be an improvised explosive device exploded in Weare, New Hampshire at a home on NH Route 77. ATF and FBI agents responded to the scene. A second bomb exploded at 6:50 AM the next day inside a van parked along Sugar Hill Road. The driver of the van reported that he was driving when he noticed the bomb, pulled over to remove it, and it exploded in front of him, causing minor injuries. Residents within 2 miles of either bombing have been asked to review their surveillance tapes for anything suspicious.On 27 April 2023, Dale Stewart was arrested in Webster and a pipe bomb was found in his car and neutralized. He was arraigned\n\nAnswer:",
+  "options": {
+    "A": "An improvised explosive device exploded at a home on NH Route 77 in Weare, New Hampshire on April 26, 2023 at approximately 6:10 PM EDT. ATF and FBI agents were present at the scene, and a second bomb exploded inside a van along Sugar Hill Road at 6:50 AM the following day. The driver of the van reacted and the bomb detonated in front of him, causing minor injuries. Those living within 2 miles of the two bombings have been asked to review tape for any information.",
+    "B": "On April 26, 2023, approximately at 6:10 PM EDT, an explosive device, subsequently identified as an improvised explosive device, detonated in Weare, New Hampshire. This incident occurred at a residence situated on NH Route 77. In response to the explosion, personnel from the ATF and FBI were dispatched to the location. The following morning, at 6:50 AM, a second bomb detonated within a van that was parked on Sugar Hill Road. The individual operating the van stated that he was in the process of driving when he observed the bomb. He then pulled the vehicle over with the intention of removing the device, at which point it exploded directly in front of him, resulting in minor injuries. Local residents residing within a two-mile radius of either of these bombing incidents have received a request to examine their surveillance recordings for any potentially suspicious activity. On April 27, 2023, Dale Stewart was apprehended in Webster, and a pipe bomb discovered inside his vehicle was successfully neutralized. He subsequently underwent arraignment.",
+    "C": "At around 6:10 PM EDT on April 26, 2023, what was later determined to be an improvised explosive device exploded in Weare, New Hampshire at a home on NH Route 77. ATF and FBI agents responded to the scene. A second bomb exploded at 6:50 AM the next day inside a van parked along Sugar Hill Road. The driver of the van reported that he was driving when he noticed the bomb, pulled over to remove it, and it exploded in front of him, causing minor injuries. Residents within 2 miles of either bombing have been asked to review their surveillance tapes for anything suspicious.On 27 April 2023, Dale Stewart was arrested in Webster and a pipe bomb was found in his car and neutralized. He was arraigned"
+  },
+  "gold_letter": "C",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-07-10 23:03:02"
+}

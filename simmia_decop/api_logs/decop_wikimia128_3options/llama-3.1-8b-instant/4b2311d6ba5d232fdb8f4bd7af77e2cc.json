@@ -1,0 +1,26 @@
+{
+  "query_id": "4b2311d6ba5d232fdb8f4bd7af77e2cc",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00061.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00061.txt",
+  "label": 0,
+  "membership": "non_member",
+  "text_hash": "5ee59f8a5336f919646ae2fedab8cb1c",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. The 8th Annual Latin American Music Awards was held on April 20, 2023, to recognize outstanding achievements for artists in the Latin music industry of 2022, voted by the public.The ceremony will took place at the MGM Grand Arena in Las Vegas, United States, and was broadcast simultaneously on Univision, UniMás and Galavisión in the United States, and Canal 5 in México. This marks the first time in the history of the awards that the ceremony was broadcast on Univision instead of Telemundo, this was the result of TelevisaUnivision acquiring rights to the ceremony from Dick Clark Productions in September 2022. It was hosted by Argentine-Puerto Rican actor Julián Gil, Mexican presenter Galilea Montijo, Dominican actor and model Clarissa Molina and Dominican singer Natti Natasha.The nominations were announced\nB. The 8th Annual Latin American Music Awards were held on April 20, 2023, at the MGM Grand Arena in Las Vegas, Nevada. It was held concurrently by Univision, UniMás, Galavisión, and Canal 5, and was hosted by Julián Gil, Galilea Montijo, Galilea Montijo, Clarissa Molina, and Natti Natasha. The awards were chosen by the public and were broadcasted simultaneously.\nC. The 8th yearly Latin American Music Awards ceremony, which honored exceptional accomplishments by artists within the 2022 Latin music industry, based on public voting, occurred on April 20, 2023. This event was hosted at the MGM Grand Garden Arena in Las Vegas, United States. Live broadcasts of the ceremony were simultaneously available through Univision, UniMás, and Galavisión across the United States, and on Canal 5 in Mexico. Notably, this occasion represented the first instance in the awards' history that the broadcast was aired on Univision rather than Telemundo. This shift resulted from TelevisaUnivision's acquisition of the ceremony's rights from Dick Clark Productions in September 2022. The hosts for the evening were Julián Gil, an Argentine-Puerto Rican actor; Galilea Montijo, a Mexican presenter; Clarissa Molina, a Dominican actress and model; and Natti Natasha, a Dominican singer. The announcement of the nominations preceded the event.\n\nAnswer:",
+  "options": {
+    "A": "The 8th Annual Latin American Music Awards was held on April 20, 2023, to recognize outstanding achievements for artists in the Latin music industry of 2022, voted by the public.The ceremony will took place at the MGM Grand Arena in Las Vegas, United States, and was broadcast simultaneously on Univision, UniMás and Galavisión in the United States, and Canal 5 in México. This marks the first time in the history of the awards that the ceremony was broadcast on Univision instead of Telemundo, this was the result of TelevisaUnivision acquiring rights to the ceremony from Dick Clark Productions in September 2022. It was hosted by Argentine-Puerto Rican actor Julián Gil, Mexican presenter Galilea Montijo, Dominican actor and model Clarissa Molina and Dominican singer Natti Natasha.The nominations were announced",
+    "B": "The 8th Annual Latin American Music Awards were held on April 20, 2023, at the MGM Grand Arena in Las Vegas, Nevada. It was held concurrently by Univision, UniMás, Galavisión, and Canal 5, and was hosted by Julián Gil, Galilea Montijo, Galilea Montijo, Clarissa Molina, and Natti Natasha. The awards were chosen by the public and were broadcasted simultaneously.",
+    "C": "The 8th yearly Latin American Music Awards ceremony, which honored exceptional accomplishments by artists within the 2022 Latin music industry, based on public voting, occurred on April 20, 2023. This event was hosted at the MGM Grand Garden Arena in Las Vegas, United States. Live broadcasts of the ceremony were simultaneously available through Univision, UniMás, and Galavisión across the United States, and on Canal 5 in Mexico. Notably, this occasion represented the first instance in the awards' history that the broadcast was aired on Univision rather than Telemundo. This shift resulted from TelevisaUnivision's acquisition of the ceremony's rights from Dick Clark Productions in September 2022. The hosts for the evening were Julián Gil, an Argentine-Puerto Rican actor; Galilea Montijo, a Mexican presenter; Clarissa Molina, a Dominican actress and model; and Natti Natasha, a Dominican singer. The announcement of the nominations preceded the event."
+  },
+  "gold_letter": "A",
+  "predicted_letter": "C",
+  "is_correct": 0,
+  "timestamp": "2026-07-10 21:37:53"
+}

@@ -1,0 +1,26 @@
+{
+  "query_id": "d73b394cbd31a788f71ad8b40cc6a4b5",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00163.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00163.txt",
+  "label": 0,
+  "membership": "non_member",
+  "text_hash": "d76cec0ba6c2f7501ed77d1348b0a7e8",
+  "permutation_index": 5,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. A news bureau is an office for gathering or distributing news. Similar terms are used for specialized bureaus, often to indicate a geographic location or scope of coverage: a ‘Tokyo bureau’ refers to a given news operation's office in Tokyo; 'foreign bureau' is a generic term for a news office set up in a country other than the primary operations center; a ‘Washington bureau’ is an office, typically located in Washington, D.C., that covers news related to national politics in the United States. The person in charge of a news bureau is often called the bureau chief. The term is distinct from a news desk, which refers to the editorial function of assigning reporters and other staff, and otherwise coordinating, news stories, and sometimes the physical desk where\nB. An office dedicated to the collection or dissemination of news is known as a news bureau. Corresponding terms are employed for particular bureaus, frequently to denote a geographical area or the extent of their reporting. For instance, a \"Tokyo bureau\" designates a specific news organization's branch office situated in Tokyo; a \"foreign bureau\" is a general descriptor for a news office established in a nation different from the main operational hub; and a \"Washington bureau\" signifies an office, generally located in Washington, D.C., that reports on events pertaining to national politics within the United States. The individual who manages a news bureau is commonly referred to as the bureau chief. This terminology is differentiated from a news desk, which pertains to the editorial responsibility of allocating reporters and other personnel, and generally orchestrating news narratives, and sometimes even the physical workstation where these tasks are performed.\nC. A news bureau is an establishment that gathers or disseminates news information. It is also referred to as a specialized bureau with specific coverage areas. A 'Tokyo bureau' refers to a news operation's office in Tokyo, while a 'foreign bureau' is a generic term for a news office in a different country. A 'Washington bureau' is an office that covers news related to national politics in the United States. The bureau chief is a separate term for assigning news desk.\n\nAnswer:",
+  "options": {
+    "A": "A news bureau is an office for gathering or distributing news. Similar terms are used for specialized bureaus, often to indicate a geographic location or scope of coverage: a ‘Tokyo bureau’ refers to a given news operation's office in Tokyo; 'foreign bureau' is a generic term for a news office set up in a country other than the primary operations center; a ‘Washington bureau’ is an office, typically located in Washington, D.C., that covers news related to national politics in the United States. The person in charge of a news bureau is often called the bureau chief. The term is distinct from a news desk, which refers to the editorial function of assigning reporters and other staff, and otherwise coordinating, news stories, and sometimes the physical desk where",
+    "B": "An office dedicated to the collection or dissemination of news is known as a news bureau. Corresponding terms are employed for particular bureaus, frequently to denote a geographical area or the extent of their reporting. For instance, a \"Tokyo bureau\" designates a specific news organization's branch office situated in Tokyo; a \"foreign bureau\" is a general descriptor for a news office established in a nation different from the main operational hub; and a \"Washington bureau\" signifies an office, generally located in Washington, D.C., that reports on events pertaining to national politics within the United States. The individual who manages a news bureau is commonly referred to as the bureau chief. This terminology is differentiated from a news desk, which pertains to the editorial responsibility of allocating reporters and other personnel, and generally orchestrating news narratives, and sometimes even the physical workstation where these tasks are performed.",
+    "C": "A news bureau is an establishment that gathers or disseminates news information. It is also referred to as a specialized bureau with specific coverage areas. A 'Tokyo bureau' refers to a news operation's office in Tokyo, while a 'foreign bureau' is a generic term for a news office in a different country. A 'Washington bureau' is an office that covers news related to national politics in the United States. The bureau chief is a separate term for assigning news desk."
+  },
+  "gold_letter": "A",
+  "predicted_letter": "A",
+  "is_correct": 1,
+  "timestamp": "2026-07-10 22:27:50"
+}

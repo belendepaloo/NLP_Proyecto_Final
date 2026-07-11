@@ -1,0 +1,26 @@
+{
+  "query_id": "5afc1f27bf13f9c081743f1dfdecea3b",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00153.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00153.txt",
+  "label": 0,
+  "membership": "non_member",
+  "text_hash": "a4bde1956650feb2fc72527d1b2e4b69",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. AAA Worldwide is responsible for the promotion and production of Triplemana XXI, a three-day professional wrestling event that will take place on April 16, July 15, and August 12, 2023. The April 16 event was held at Estadio de Béisbol Monterrey, July 15, at Estadio Chevron in Tijuana, and the August 12 event at Arena Ciudad de México in Mexico City.\nB. Triplemanía XXXI is an ongoing three-day professional wrestling pay-per-view (PPV) event promoted and produced by the Mexican professional wrestling promotion Lucha Libre AAA Worldwide (AAA or Triple A). The event is being held on April 16, July 15, and August 12, 2023. The April 16 event took place at Estadio de Béisbol Monterrey in Monterrey, the July 15 event will take place at Estadio Chevron in Tijuana and the August 12 event at Arena Ciudad de México in Mexico City. It marks the 31st year in a row that AAA will hold a Triplemanía show and comprises the 40th, 41st, and 42nd overall shows held under the Triplemanía banner since 1993. The annual Triplemanía show is AAA's biggest event of the year, serving as the culmination of major\nC. Triplemanía XXXI represents a professional wrestling pay-per-view (PPV) extravaganza spanning three days, currently in progress. This event is both promoted and brought to fruition by Lucha Libre AAA Worldwide (AAA or Triple A), a Mexican professional wrestling organization. The dates for this series of events are April 16, July 15, and August 12, 2023. The initial event on April 16 was hosted at Estadio de Béisbol Monterrey in Monterrey, while the event scheduled for July 15 will occur at Estadio Chevron in Tijuana, and the final event on August 12 is set to take place at Arena Ciudad de México in Mexico City. This marks the thirty-first consecutive year that AAA has put on a Triplemanía show. Furthermore, these events constitute the 40th, 41st, and 42nd shows overall that have been presented under the Triplemanía brand since its inception in 1993. The yearly Triplemanía show is considered AAA's most significant event of the calendar year, acting as the climax of prominent storylines.\n\nAnswer:",
+  "options": {
+    "A": "AAA Worldwide is responsible for the promotion and production of Triplemana XXI, a three-day professional wrestling event that will take place on April 16, July 15, and August 12, 2023. The April 16 event was held at Estadio de Béisbol Monterrey, July 15, at Estadio Chevron in Tijuana, and the August 12 event at Arena Ciudad de México in Mexico City.",
+    "B": "Triplemanía XXXI is an ongoing three-day professional wrestling pay-per-view (PPV) event promoted and produced by the Mexican professional wrestling promotion Lucha Libre AAA Worldwide (AAA or Triple A). The event is being held on April 16, July 15, and August 12, 2023. The April 16 event took place at Estadio de Béisbol Monterrey in Monterrey, the July 15 event will take place at Estadio Chevron in Tijuana and the August 12 event at Arena Ciudad de México in Mexico City. It marks the 31st year in a row that AAA will hold a Triplemanía show and comprises the 40th, 41st, and 42nd overall shows held under the Triplemanía banner since 1993. The annual Triplemanía show is AAA's biggest event of the year, serving as the culmination of major",
+    "C": "Triplemanía XXXI represents a professional wrestling pay-per-view (PPV) extravaganza spanning three days, currently in progress. This event is both promoted and brought to fruition by Lucha Libre AAA Worldwide (AAA or Triple A), a Mexican professional wrestling organization. The dates for this series of events are April 16, July 15, and August 12, 2023. The initial event on April 16 was hosted at Estadio de Béisbol Monterrey in Monterrey, while the event scheduled for July 15 will occur at Estadio Chevron in Tijuana, and the final event on August 12 is set to take place at Arena Ciudad de México in Mexico City. This marks the thirty-first consecutive year that AAA has put on a Triplemanía show. Furthermore, these events constitute the 40th, 41st, and 42nd shows overall that have been presented under the Triplemanía brand since its inception in 1993. The yearly Triplemanía show is considered AAA's most significant event of the calendar year, acting as the climax of prominent storylines."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-07-10 22:23:11"
+}

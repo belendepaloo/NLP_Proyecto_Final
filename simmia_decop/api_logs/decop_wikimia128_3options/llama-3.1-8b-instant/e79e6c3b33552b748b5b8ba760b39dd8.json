@@ -1,0 +1,26 @@
+{
+  "query_id": "e79e6c3b33552b748b5b8ba760b39dd8",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00078.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00078.txt",
+  "label": 1,
+  "membership": "member",
+  "text_hash": "5e18234cc78015ecbe030af5584be1b4",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. Declared in June 2014, the West and Central African cholera outbreak as of January 25, 2015 claimed 1,683 registered deaths and over 91,361 reported cases with a reported case fatality rate (CFR) of 2% in 11 countries, which is 3 times more than in 2013. The case fatality ratio is high in the Sahelian area, equal or greater than 2%, especially in Nigeria, Chad, Cameroon and Niger. Nigeria, Ghana and Democratic Republic of the Congo being the most affected countries with Ghana reporting its worst outbreak since 1982.In January 2015 the Greater Accra Region and Volta region still reported cases of Cholera while in the rest of Ghana the outbreak was declared over. As of January 11 the Democratic Republic of the Congo, Ghana and Nigeria are the\nB. The West and Central African cholera outbreak, which was declared in June 2014, resulted in 1,683 deaths and over 91,361 cases as of January 25, 2015, with a reported case fatality rate (CFR) of 2% in 11 countries. The worst affected countries were Nigeria, Ghana, and Democratic Republic of the Congo, with Ghana having reported its worst outbreak since 1982.\nC. The cholera epidemic affecting West and Central Africa, which was announced in June 2014, had resulted in 1,683 recorded fatalities and more than 91,361 documented infections across 11 nations by January 25, 2015. This outbreak showed a reported case fatality rate (CFR) of 2%, a figure three times higher than that observed in 2013. A particularly elevated case fatality ratio, at or exceeding 2%, was noted within the Sahelian region, particularly in countries such as Nigeria, Chad, Cameroon, and Niger. Among the most significantly impacted nations were Nigeria, Ghana, and the Democratic Republic of the Congo, with Ghana experiencing its most severe outbreak since 1982. During January 2015, cases of Cholera continued to be reported in Ghana's Greater Accra Region and Volta region, although the outbreak had been officially declared over in the remaining parts of the country. As of January 11, the Democratic Republic of the Congo, Ghana, and Nigeria remain the countries...\n\nAnswer:",
+  "options": {
+    "A": "Declared in June 2014, the West and Central African cholera outbreak as of January 25, 2015 claimed 1,683 registered deaths and over 91,361 reported cases with a reported case fatality rate (CFR) of 2% in 11 countries, which is 3 times more than in 2013. The case fatality ratio is high in the Sahelian area, equal or greater than 2%, especially in Nigeria, Chad, Cameroon and Niger. Nigeria, Ghana and Democratic Republic of the Congo being the most affected countries with Ghana reporting its worst outbreak since 1982.In January 2015 the Greater Accra Region and Volta region still reported cases of Cholera while in the rest of Ghana the outbreak was declared over. As of January 11 the Democratic Republic of the Congo, Ghana and Nigeria are the",
+    "B": "The West and Central African cholera outbreak, which was declared in June 2014, resulted in 1,683 deaths and over 91,361 cases as of January 25, 2015, with a reported case fatality rate (CFR) of 2% in 11 countries. The worst affected countries were Nigeria, Ghana, and Democratic Republic of the Congo, with Ghana having reported its worst outbreak since 1982.",
+    "C": "The cholera epidemic affecting West and Central Africa, which was announced in June 2014, had resulted in 1,683 recorded fatalities and more than 91,361 documented infections across 11 nations by January 25, 2015. This outbreak showed a reported case fatality rate (CFR) of 2%, a figure three times higher than that observed in 2013. A particularly elevated case fatality ratio, at or exceeding 2%, was noted within the Sahelian region, particularly in countries such as Nigeria, Chad, Cameroon, and Niger. Among the most significantly impacted nations were Nigeria, Ghana, and the Democratic Republic of the Congo, with Ghana experiencing its most severe outbreak since 1982. During January 2015, cases of Cholera continued to be reported in Ghana's Greater Accra Region and Volta region, although the outbreak had been officially declared over in the remaining parts of the country. As of January 11, the Democratic Republic of the Congo, Ghana, and Nigeria remain the countries..."
+  },
+  "gold_letter": "A",
+  "predicted_letter": "C",
+  "is_correct": 0,
+  "timestamp": "2026-07-10 21:46:46"
+}

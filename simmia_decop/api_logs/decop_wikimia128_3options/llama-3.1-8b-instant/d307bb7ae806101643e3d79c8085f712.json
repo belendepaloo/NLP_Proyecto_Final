@@ -1,0 +1,26 @@
+{
+  "query_id": "d307bb7ae806101643e3d79c8085f712",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00044.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00044.txt",
+  "label": 1,
+  "membership": "member",
+  "text_hash": "84c4dd8e72ddbb18bc0739e89df53b75",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. According to the Japan Whaling Association, Japanese whaling began in the 12th century through active hunting of whales, but developed in the 1890s through participation in the modern whaling industry. Since then, commercial whaling activities have been limited to its territorial waters and exclusive economic zone, with Japan continuing to hunt whales under the moratorium until 1986.\nB. Japanese whaling, in terms of active hunting of whales, is estimated by the Japan Whaling Association to have begun around the 12th century. However, Japanese whaling on an industrial scale began around the 1890s when Japan started to participate in the modern whaling industry, at that time an industry in which many countries participated. Japan resumed commercial whaling in July 2019, and since then whaling activities have been confined to its territorial waters and exclusive economic zone.During the 20th century, Japan was heavily involved in commercial whaling. This continued until the International Whaling Commission (IWC) moratorium on commercial whaling went into effect in 1986. Japan continued to hunt whales using the scientific research provision in the agreement and Japanese whaling was conducted by the Institute of Cetacean Research.\nC. The Japan Whaling Association estimates that the active pursuit of whales by the Japanese, involving their direct hunting, commenced approximately in the 12th century. Nevertheless, large-scale Japanese whaling operations, characterized by industrial methods, originated around the 1890s as Japan became involved in the contemporary whaling sector, an industry in which numerous nations were then engaged. Japan recommenced commercial whaling in July 2019, and ever since, its whaling endeavors have been restricted to its territorial seas and its exclusive economic zone. Throughout the 20th century, Japan played a significant role in the commercial whaling industry. This involvement persisted until 1986, when the International Whaling Commission's (IWC) prohibition on commercial whaling became effective. Japan proceeded with whale hunting under the provision for scientific research within the agreement, and the Institute of Cetacean Research carried out Japanese whaling activities.\n\nAnswer:",
+  "options": {
+    "A": "According to the Japan Whaling Association, Japanese whaling began in the 12th century through active hunting of whales, but developed in the 1890s through participation in the modern whaling industry. Since then, commercial whaling activities have been limited to its territorial waters and exclusive economic zone, with Japan continuing to hunt whales under the moratorium until 1986.",
+    "B": "Japanese whaling, in terms of active hunting of whales, is estimated by the Japan Whaling Association to have begun around the 12th century. However, Japanese whaling on an industrial scale began around the 1890s when Japan started to participate in the modern whaling industry, at that time an industry in which many countries participated. Japan resumed commercial whaling in July 2019, and since then whaling activities have been confined to its territorial waters and exclusive economic zone.During the 20th century, Japan was heavily involved in commercial whaling. This continued until the International Whaling Commission (IWC) moratorium on commercial whaling went into effect in 1986. Japan continued to hunt whales using the scientific research provision in the agreement and Japanese whaling was conducted by the Institute of Cetacean Research.",
+    "C": "The Japan Whaling Association estimates that the active pursuit of whales by the Japanese, involving their direct hunting, commenced approximately in the 12th century. Nevertheless, large-scale Japanese whaling operations, characterized by industrial methods, originated around the 1890s as Japan became involved in the contemporary whaling sector, an industry in which numerous nations were then engaged. Japan recommenced commercial whaling in July 2019, and ever since, its whaling endeavors have been restricted to its territorial seas and its exclusive economic zone. Throughout the 20th century, Japan played a significant role in the commercial whaling industry. This involvement persisted until 1986, when the International Whaling Commission's (IWC) prohibition on commercial whaling became effective. Japan proceeded with whale hunting under the provision for scientific research within the agreement, and the Institute of Cetacean Research carried out Japanese whaling activities."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-07-10 21:29:32"
+}

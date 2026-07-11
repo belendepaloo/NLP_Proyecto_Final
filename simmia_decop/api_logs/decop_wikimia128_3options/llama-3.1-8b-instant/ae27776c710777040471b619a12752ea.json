@@ -1,0 +1,26 @@
+{
+  "query_id": "ae27776c710777040471b619a12752ea",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00036.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00036.txt",
+  "label": 0,
+  "membership": "non_member",
+  "text_hash": "ea70c08300a2a381daa83204794ad291",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. The 2023 Rey de Reyes, which translates to \"2023 King of Kings\" in Spanish, constituted a professional wrestling competition and a major event presented by the Mexican Lucha Libre AAA Worldwide (AAA) organization. This spectacle took place on February 5, 2023, at the Poliforum Zamna, located in Merida, Yucatan, Mexico. The 2023 iteration marked the twenty-sixth occasion of the Rey de Reyes show and its accompanying tournament. Within the concluding main event bout, Sam Adonis emerged victorious over Bandido, Pagano, and Hijo del Vikingo, thereby securing the title of the 2023 Rey de Reyes. Among other notable contests, Sexy Star II bested Chik Tormenta, Lady Shani, La Hiedra, and Dalys in a five-person match to claim the 2023 Reina de Reinas title. Additionally, Negro Casas had his inaugural in-ring appearance for AAA, where he suffered a defeat at the hands of Hijo del Vikingo in a Rey de Reyes qualifying match that also featured Myzteziz Jr.\nB. The 2023 Rey de Reyes (Spanish for \"2023 King of Kings\") was a professional wrestling tournament and supercard event produced by the Mexican Lucha Libre AAA Worldwide (AAA) promotion. The event was held on February 5, 2023, at Poliforum Zamna in Merida, Yucatan, Mexico. The 2023 event was the 26th Rey de Reyes show and tournament. In the main event match, Sam Adonis defeated Bandido, Pagano, and Hijo del Vikingo to become the 2023 Rey de Reyes. In other prominent matches, Sexy Star II defeated Chik Tormenta, Lady Shani, La Hiedra, and Dalys in a five-way match to become the 2023 Reina de Reinas and Negro Casas made his AAA in-ring debut, losing to Hijo del Vikingo in a Rey de Reyes qualifier that also involved Myzteziz Jr.\nC. The Mexican Lucha Libre AAA Worldwide (AAA) promotion organized the 2023 Rey de Rey deyes show and supercard event on February 5, 2023, at Poliforum Zamna in Merida, Yucatan, Mexico. The main event featured Sam Adonis, who defeated Bandido, Pagano, and Hijo del Vikingo. Other notable matches included Sexy Star II, who defeated Chik Tormenta, Lady Shani, La Hiedra, and Dalys in a Rey de Redazos qualifier as Se\n\nAnswer:",
+  "options": {
+    "A": "The 2023 Rey de Reyes, which translates to \"2023 King of Kings\" in Spanish, constituted a professional wrestling competition and a major event presented by the Mexican Lucha Libre AAA Worldwide (AAA) organization. This spectacle took place on February 5, 2023, at the Poliforum Zamna, located in Merida, Yucatan, Mexico. The 2023 iteration marked the twenty-sixth occasion of the Rey de Reyes show and its accompanying tournament. Within the concluding main event bout, Sam Adonis emerged victorious over Bandido, Pagano, and Hijo del Vikingo, thereby securing the title of the 2023 Rey de Reyes. Among other notable contests, Sexy Star II bested Chik Tormenta, Lady Shani, La Hiedra, and Dalys in a five-person match to claim the 2023 Reina de Reinas title. Additionally, Negro Casas had his inaugural in-ring appearance for AAA, where he suffered a defeat at the hands of Hijo del Vikingo in a Rey de Reyes qualifying match that also featured Myzteziz Jr.",
+    "B": "The 2023 Rey de Reyes (Spanish for \"2023 King of Kings\") was a professional wrestling tournament and supercard event produced by the Mexican Lucha Libre AAA Worldwide (AAA) promotion. The event was held on February 5, 2023, at Poliforum Zamna in Merida, Yucatan, Mexico. The 2023 event was the 26th Rey de Reyes show and tournament. In the main event match, Sam Adonis defeated Bandido, Pagano, and Hijo del Vikingo to become the 2023 Rey de Reyes. In other prominent matches, Sexy Star II defeated Chik Tormenta, Lady Shani, La Hiedra, and Dalys in a five-way match to become the 2023 Reina de Reinas and Negro Casas made his AAA in-ring debut, losing to Hijo del Vikingo in a Rey de Reyes qualifier that also involved Myzteziz Jr.",
+    "C": "The Mexican Lucha Libre AAA Worldwide (AAA) promotion organized the 2023 Rey de Rey deyes show and supercard event on February 5, 2023, at Poliforum Zamna in Merida, Yucatan, Mexico. The main event featured Sam Adonis, who defeated Bandido, Pagano, and Hijo del Vikingo. Other notable matches included Sexy Star II, who defeated Chik Tormenta, Lady Shani, La Hiedra, and Dalys in a Rey de Redazos qualifier as Se"
+  },
+  "gold_letter": "B",
+  "predicted_letter": "B",
+  "is_correct": 1,
+  "timestamp": "2026-07-10 21:25:42"
+}

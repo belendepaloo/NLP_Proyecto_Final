@@ -1,0 +1,26 @@
+{
+  "query_id": "d42b03a5423f3cfaade3c9dbe8083058",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00045.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00045.txt",
+  "label": 1,
+  "membership": "member",
+  "text_hash": "4c0e8c0f3b3103063e90590623e258b3",
+  "permutation_index": 2,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. On October 12, 2014, Bosnia and Herzegovina conducted its general elections. These elections determined the composition of the country's Presidency, along with the national, entity, and cantonal administrations. A total of 54.4% of eligible voters participated. The elections for the House of Representatives were bifurcated: one segment was for the Federation of Bosnia and Herzegovina, and the other was for Republika Srpska. During the presidential election, citizens in the Federation once again chose Bosniak Bakir Izetbegović and selected Croat Dragan Čović, whereas those in Republika Srpska opted for Serb Mladen Ivanić. The Party of Democratic Action secured the most seats in the House of Representatives, obtaining 10 out of 42. Although Bakir Izetbegović, the Bosniak representative, was the sole incumbent member of the three-person Presidency to retain his position, Mladen Ivanić, the Serb representative, was chosen to join.\nB. The Presidency of Bosnia and Herzegovina, along with national, entity, and cantonal governments, were decided by general elections in 2014, with a 54.4% voter turnout. The House of Representatives was divided into two groups, with Bosniak Bakir Izetbegovi and Croat Dragan ovi in the presidential election, and Serb Mladen Ivani in the House of Representatives. The Party of Democratic Action emerged as the largest in the House of Representatives, winning 10 out of 42 seats.\nC. General elections were held in Bosnia and Herzegovina on 12 October 2014. They decided the makeup of Bosnia and Herzegovina's Presidency as well as national, entity, and cantonal governments. Voter turnout was 54.4%.The elections for the House of Representatives were divided into two; one for the Federation of Bosnia and Herzegovina and one for Republika Srpska. In the presidential election, voters in the Federation re-elected Bosniak Bakir Izetbegović and elected Croat Dragan Čović, while voters in Republika Srpska elected Serb Mladen Ivanić. The Party of Democratic Action emerged as the largest party in the House of Representatives, winning 10 of the 42 seats. While the Bosniak member Bakir Izetbegović was the only member of the tripartite Presidency to be re-elected, Serb member Mladen Ivanić was chosen as the\n\nAnswer:",
+  "options": {
+    "A": "On October 12, 2014, Bosnia and Herzegovina conducted its general elections. These elections determined the composition of the country's Presidency, along with the national, entity, and cantonal administrations. A total of 54.4% of eligible voters participated. The elections for the House of Representatives were bifurcated: one segment was for the Federation of Bosnia and Herzegovina, and the other was for Republika Srpska. During the presidential election, citizens in the Federation once again chose Bosniak Bakir Izetbegović and selected Croat Dragan Čović, whereas those in Republika Srpska opted for Serb Mladen Ivanić. The Party of Democratic Action secured the most seats in the House of Representatives, obtaining 10 out of 42. Although Bakir Izetbegović, the Bosniak representative, was the sole incumbent member of the three-person Presidency to retain his position, Mladen Ivanić, the Serb representative, was chosen to join.",
+    "B": "The Presidency of Bosnia and Herzegovina, along with national, entity, and cantonal governments, were decided by general elections in 2014, with a 54.4% voter turnout. The House of Representatives was divided into two groups, with Bosniak Bakir Izetbegovi and Croat Dragan ovi in the presidential election, and Serb Mladen Ivani in the House of Representatives. The Party of Democratic Action emerged as the largest in the House of Representatives, winning 10 out of 42 seats.",
+    "C": "General elections were held in Bosnia and Herzegovina on 12 October 2014. They decided the makeup of Bosnia and Herzegovina's Presidency as well as national, entity, and cantonal governments. Voter turnout was 54.4%.The elections for the House of Representatives were divided into two; one for the Federation of Bosnia and Herzegovina and one for Republika Srpska. In the presidential election, voters in the Federation re-elected Bosniak Bakir Izetbegović and elected Croat Dragan Čović, while voters in Republika Srpska elected Serb Mladen Ivanić. The Party of Democratic Action emerged as the largest party in the House of Representatives, winning 10 of the 42 seats. While the Bosniak member Bakir Izetbegović was the only member of the tripartite Presidency to be re-elected, Serb member Mladen Ivanić was chosen as the"
+  },
+  "gold_letter": "C",
+  "predicted_letter": "C",
+  "is_correct": 1,
+  "timestamp": "2026-07-10 21:29:57"
+}

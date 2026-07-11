@@ -1,0 +1,26 @@
+{
+  "query_id": "b77c6c37633bb1d963c0f45177e2deff",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00028.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00028.txt",
+  "label": 1,
+  "membership": "member",
+  "text_hash": "4a6d06f9779684eb3fda7042d34bf30a",
+  "permutation_index": 2,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. The gathering of Western Balkan nations, a conference held on August 28, 2014, brought together the leaders of states and governments from the Western Balkans area, an event first proposed by German Chancellor Angela Merkel. The concept for arranging this conference emerged from the commemoration of the centenary of the outbreak of World War I. This particular conference represents the inaugural event within this framework, and the organizers conveyed their aspiration for it to become an ongoing tradition, with Vienna and Paris identified as prospective subsequent host cities following Berlin (an initiative known as the Berlin Process). Günther Oettinger, during the conference, affirmed that this event would be held yearly, with Vienna slated to host in 2015 and Paris in 2016. The German Chancellor had previously declared her intention to arrange such a conference on June 7, 2014. Invitations to participate were extended to every nation in the region.\nB. Conference of Western Balkan States was a 28 August 2014 conference of heads of states and governments of Western Balkans region initiated by German chancellor Angela Merkel. An idea for organization of conference came in light of the celebration of the 100th anniversary of the beginning of World War I. It is the first conference in this framework and organizers expressed their desire to continue it in future with Vienna and Paris mentioned as a potential next hosts after Berlin (so called Berlin Process). Günther Oettinger confirmed at conference that event will be organised annually with Vienna as a host city in 2015 and Paris in 2016.The German chancellor announced intention to organize a conference on 7 June 2014. Invitation for participation was sent to all the countries\nC. The Conference of Western Balkan States was organized by Angela Merkel, a German chancellor, on 28 August 2014. The conference was initiated to commemorate the 100th anniversary of the start of World War I. It was the first conference to be held in this context, and organizers expressed their intention to continue it in the future, with Vienna and Paris being suggested as potential hosts. Günther Oettinger confirmed that the event would be held annually, with Vienna in 2015 and Paris in 2016.\n\nAnswer:",
+  "options": {
+    "A": "The gathering of Western Balkan nations, a conference held on August 28, 2014, brought together the leaders of states and governments from the Western Balkans area, an event first proposed by German Chancellor Angela Merkel. The concept for arranging this conference emerged from the commemoration of the centenary of the outbreak of World War I. This particular conference represents the inaugural event within this framework, and the organizers conveyed their aspiration for it to become an ongoing tradition, with Vienna and Paris identified as prospective subsequent host cities following Berlin (an initiative known as the Berlin Process). Günther Oettinger, during the conference, affirmed that this event would be held yearly, with Vienna slated to host in 2015 and Paris in 2016. The German Chancellor had previously declared her intention to arrange such a conference on June 7, 2014. Invitations to participate were extended to every nation in the region.",
+    "B": "Conference of Western Balkan States was a 28 August 2014 conference of heads of states and governments of Western Balkans region initiated by German chancellor Angela Merkel. An idea for organization of conference came in light of the celebration of the 100th anniversary of the beginning of World War I. It is the first conference in this framework and organizers expressed their desire to continue it in future with Vienna and Paris mentioned as a potential next hosts after Berlin (so called Berlin Process). Günther Oettinger confirmed at conference that event will be organised annually with Vienna as a host city in 2015 and Paris in 2016.The German chancellor announced intention to organize a conference on 7 June 2014. Invitation for participation was sent to all the countries",
+    "C": "The Conference of Western Balkan States was organized by Angela Merkel, a German chancellor, on 28 August 2014. The conference was initiated to commemorate the 100th anniversary of the start of World War I. It was the first conference to be held in this context, and organizers expressed their intention to continue it in the future, with Vienna and Paris being suggested as potential hosts. Günther Oettinger confirmed that the event would be held annually, with Vienna in 2015 and Paris in 2016."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "C",
+  "is_correct": 0,
+  "timestamp": "2026-07-10 21:22:12"
+}

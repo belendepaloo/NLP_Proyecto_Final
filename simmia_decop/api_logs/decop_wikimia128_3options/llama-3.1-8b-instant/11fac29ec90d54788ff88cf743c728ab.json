@@ -1,0 +1,26 @@
+{
+  "query_id": "11fac29ec90d54788ff88cf743c728ab",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00161.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00161.txt",
+  "label": 1,
+  "membership": "member",
+  "text_hash": "4f280eb1340bcaffd923c57eaa9aba66",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. The 2013-2014 chikungunya outbreak was the first to be recorded outside of tropical Africa and Asia. In December 2013, the first locally transmitted case of chikungunya in the Americas was detected in Saint Martin. Shortly after, the disease spread rapidly throughout the Caribbean region, with suspected cases in Saint Barthélemy and Martinique.\nB. The chikungunya outbreak that occurred between 2013 and 2014 marked the initial instance of the illness being documented beyond the geographical confines of tropical Africa and Asia. In December 2013, Saint Martin reported the first case of chikungunya in the Americas that was transmitted within the local population. Subsequent to this initial detection, the ailment quickly started to disseminate across the Caribbean area. Before the year concluded, its presence was noted in Martinique and Guadeloupe, and there were also suspected infections in Saint Barthélemy. By the close of January 2014, confirmed cases had been identified not only in Saint Barthélemy but also in the British Virgin Islands, Dominica, and French Guiana. Based on a total of 4,000 verified cases and an additional 30,000 cases that were suspected, the Caribbean Public Health Agency (CARPHA) announced in early May that the virus had reached epidemic proportions throughout the Caribbean. As May drew to a close, four\nC. The 2013–2014 chikungunya outbreak represented the first recorded outbreak of the disease outside of tropical Africa and Asia. In December 2013, the first locally transmitted case of chikungunya in the Americas was detected in Saint Martin. Shortly after the first case the disease began to spread rapidly throughout the Caribbean region. By the end of the year, it had spread to Martinique and Guadeloupe, with suspected cases in Saint Barthélemy. By the end of January 2014, cases had been confirmed in Saint Barthélemy, as well as the British Virgin Islands, Dominica, and French Guiana. On the basis of 4,000 confirmed cases and over 30,000 suspected cases, the Caribbean Public Health Agency (CARPHA) declared a Caribbean-wide epidemic of the virus in early May. By the end of May, four\n\nAnswer:",
+  "options": {
+    "A": "The 2013-2014 chikungunya outbreak was the first to be recorded outside of tropical Africa and Asia. In December 2013, the first locally transmitted case of chikungunya in the Americas was detected in Saint Martin. Shortly after, the disease spread rapidly throughout the Caribbean region, with suspected cases in Saint Barthélemy and Martinique.",
+    "B": "The chikungunya outbreak that occurred between 2013 and 2014 marked the initial instance of the illness being documented beyond the geographical confines of tropical Africa and Asia. In December 2013, Saint Martin reported the first case of chikungunya in the Americas that was transmitted within the local population. Subsequent to this initial detection, the ailment quickly started to disseminate across the Caribbean area. Before the year concluded, its presence was noted in Martinique and Guadeloupe, and there were also suspected infections in Saint Barthélemy. By the close of January 2014, confirmed cases had been identified not only in Saint Barthélemy but also in the British Virgin Islands, Dominica, and French Guiana. Based on a total of 4,000 verified cases and an additional 30,000 cases that were suspected, the Caribbean Public Health Agency (CARPHA) announced in early May that the virus had reached epidemic proportions throughout the Caribbean. As May drew to a close, four",
+    "C": "The 2013–2014 chikungunya outbreak represented the first recorded outbreak of the disease outside of tropical Africa and Asia. In December 2013, the first locally transmitted case of chikungunya in the Americas was detected in Saint Martin. Shortly after the first case the disease began to spread rapidly throughout the Caribbean region. By the end of the year, it had spread to Martinique and Guadeloupe, with suspected cases in Saint Barthélemy. By the end of January 2014, cases had been confirmed in Saint Barthélemy, as well as the British Virgin Islands, Dominica, and French Guiana. On the basis of 4,000 confirmed cases and over 30,000 suspected cases, the Caribbean Public Health Agency (CARPHA) declared a Caribbean-wide epidemic of the virus in early May. By the end of May, four"
+  },
+  "gold_letter": "C",
+  "predicted_letter": "C",
+  "is_correct": 1,
+  "timestamp": "2026-07-10 22:26:36"
+}

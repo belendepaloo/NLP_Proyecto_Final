@@ -1,0 +1,26 @@
+{
+  "query_id": "75b7fec9c04935539b3ee026ae0106f9",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00021.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00021.txt",
+  "label": 0,
+  "membership": "non_member",
+  "text_hash": "bf91ad4e1ae9b3e36e86617fafd8ce9b",
+  "permutation_index": 5,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. The People's Liberation Army (PLA) of the People's Republic of China (PRC) is currently conducting a sequence of military drills, known as the 2023 Chinese military exercises around Taiwan (simplified Chinese: 2023年环台军事演练; traditional Chinese: 2023年環台軍事演練), which involve the encirclement of Taiwan (the Republic of China, ROC). These exercises commenced on April 8, 2023, when the PLA declared the initiation of \"combat readiness patrols\" and deployed numerous fighter jets and multiple warships in the direction of Taiwan. The impetus for these drills was Taiwanese president Tsai Ing-wen's visit to meet with US Speaker of the House Kevin McCarthy. Preceding this, on March 4, 2023, McCarthy had disclosed his intention to hold a meeting with President Tsai, which was slated for early April. In anticipation of this, the PLA issued several warnings to the Taiwanese government. President Tsai subsequently arrived in the United States on April 4 and engaged in discussions with notable legislators, including Speaker McCarthy.\nB. The 2023 Chinese military exercises around Taiwan (simplified Chinese: 2023年环台军事演练; traditional Chinese: 2023年環台軍事演練) are a series of ongoing military exercises by the People's Liberation Army (PLA) of the People's Republic of China (PRC) encircling Taiwan (the Republic of China, ROC). On 8 April 2023, the PLA announced the start of \"combat readiness patrols\" and dispatched dozens of fighter jets and several warships toward Taiwan. The exercises occurred in response to Taiwanese president Tsai Ing-wen's visit to US Speaker of the House Kevin McCarthy.On 4 March 2023, McCarthy announced he had planned a meeting with president Tsai, which was scheduled for early April. In response, the PLA made multiple threats toward the Taiwanese government. Tsai arrived in the U.S. on 4 April and met with prominent lawmakers, including McCarthy.\nC. The PLA's ongoing military exercises in Taiwan are a series of \"combat readiness patrols\" that began on April 8, 2023. The PLA sent fighter jets and warships to Taiwan as a response to President Tsai's visit to US Speaker of the House Kevin McCarthy. In response, the PLA made threats against the Taiwanese government and Tsai arrived in the U.S. on April 4, 2023.\n\nAnswer:",
+  "options": {
+    "A": "The People's Liberation Army (PLA) of the People's Republic of China (PRC) is currently conducting a sequence of military drills, known as the 2023 Chinese military exercises around Taiwan (simplified Chinese: 2023年环台军事演练; traditional Chinese: 2023年環台軍事演練), which involve the encirclement of Taiwan (the Republic of China, ROC). These exercises commenced on April 8, 2023, when the PLA declared the initiation of \"combat readiness patrols\" and deployed numerous fighter jets and multiple warships in the direction of Taiwan. The impetus for these drills was Taiwanese president Tsai Ing-wen's visit to meet with US Speaker of the House Kevin McCarthy. Preceding this, on March 4, 2023, McCarthy had disclosed his intention to hold a meeting with President Tsai, which was slated for early April. In anticipation of this, the PLA issued several warnings to the Taiwanese government. President Tsai subsequently arrived in the United States on April 4 and engaged in discussions with notable legislators, including Speaker McCarthy.",
+    "B": "The 2023 Chinese military exercises around Taiwan (simplified Chinese: 2023年环台军事演练; traditional Chinese: 2023年環台軍事演練) are a series of ongoing military exercises by the People's Liberation Army (PLA) of the People's Republic of China (PRC) encircling Taiwan (the Republic of China, ROC). On 8 April 2023, the PLA announced the start of \"combat readiness patrols\" and dispatched dozens of fighter jets and several warships toward Taiwan. The exercises occurred in response to Taiwanese president Tsai Ing-wen's visit to US Speaker of the House Kevin McCarthy.On 4 March 2023, McCarthy announced he had planned a meeting with president Tsai, which was scheduled for early April. In response, the PLA made multiple threats toward the Taiwanese government. Tsai arrived in the U.S. on 4 April and met with prominent lawmakers, including McCarthy.",
+    "C": "The PLA's ongoing military exercises in Taiwan are a series of \"combat readiness patrols\" that began on April 8, 2023. The PLA sent fighter jets and warships to Taiwan as a response to President Tsai's visit to US Speaker of the House Kevin McCarthy. In response, the PLA made threats against the Taiwanese government and Tsai arrived in the U.S. on April 4, 2023."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-07-10 21:18:58"
+}

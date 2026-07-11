@@ -1,0 +1,26 @@
+{
+  "query_id": "d70ead5b3d4b966f967b17cc993c46f3",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00116.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00116.txt",
+  "label": 1,
+  "membership": "member",
+  "text_hash": "7ce2251e262ed9d72720518f6eb9c63f",
+  "permutation_index": 5,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. The Italian ferry company Visemar di Navigazione was the owner of MS Norman Atlantic, a roll-on/roll-off passenger ferry that was chartered by ANEK Lines in December 2014. On 28 December 2014, a fire erupted on the Strait of Otranto, carrying an estimated 475 people. This included 417 passengers, 55 crew members, and at least three illegal immigrants. Out of these, 452 people were rescued and the bodies of 11 were found. The death toll, which was unclear.\nB. The Italian ferry operator, Visemar di Navigazione, held ownership of the MS Norman Atlantic, which was a roll-on/roll-off passenger (ROPAX) ferry. Beginning in December 2014, ANEK Lines leased the vessel. A fire broke out on the ship on December 28, 2014, while it was located in the Strait of Otranto, within the Adriatic Sea. During the incident, approximately 475 individuals were present on board, comprising 417 passengers, 55 crew members, and a minimum of three undocumented immigrants. From this total, 452 individuals were successfully rescued, and the remains of 11 people were retrieved. It has been confirmed that 16 passengers perished, and the estimated total number of fatalities reached 28; this imprecision stemmed from the varying estimates regarding the number of undocumented immigrants on the ship. Furthermore, two crew members from the Albanian tugboat Iliria lost their lives while engaged in the salvage operations.\nC. MS Norman Atlantic was a roll-on/roll-off passenger (ROPAX) ferry owned by the Italian ferry company Visemar di Navigazione. The ferry was chartered by ANEK Lines from December 2014. On 28 December 2014, she caught fire in the Strait of Otranto, in the Adriatic Sea. At the time of the fire there were an estimated 475 people on board the ship including 417 passengers, 55 crew and at least three illegal immigrants. Of these, 452 people were rescued and the bodies of 11 were recovered. It is known that 16 passengers died and it was estimated that there were 28 deaths overall, the uncertainty arising from estimates of the number of illegal immigrants on board. Additionally, two crewmembers of the Albanian tug Iliria were killed during the salvage operations\n\nAnswer:",
+  "options": {
+    "A": "The Italian ferry company Visemar di Navigazione was the owner of MS Norman Atlantic, a roll-on/roll-off passenger ferry that was chartered by ANEK Lines in December 2014. On 28 December 2014, a fire erupted on the Strait of Otranto, carrying an estimated 475 people. This included 417 passengers, 55 crew members, and at least three illegal immigrants. Out of these, 452 people were rescued and the bodies of 11 were found. The death toll, which was unclear.",
+    "B": "The Italian ferry operator, Visemar di Navigazione, held ownership of the MS Norman Atlantic, which was a roll-on/roll-off passenger (ROPAX) ferry. Beginning in December 2014, ANEK Lines leased the vessel. A fire broke out on the ship on December 28, 2014, while it was located in the Strait of Otranto, within the Adriatic Sea. During the incident, approximately 475 individuals were present on board, comprising 417 passengers, 55 crew members, and a minimum of three undocumented immigrants. From this total, 452 individuals were successfully rescued, and the remains of 11 people were retrieved. It has been confirmed that 16 passengers perished, and the estimated total number of fatalities reached 28; this imprecision stemmed from the varying estimates regarding the number of undocumented immigrants on the ship. Furthermore, two crew members from the Albanian tugboat Iliria lost their lives while engaged in the salvage operations.",
+    "C": "MS Norman Atlantic was a roll-on/roll-off passenger (ROPAX) ferry owned by the Italian ferry company Visemar di Navigazione. The ferry was chartered by ANEK Lines from December 2014. On 28 December 2014, she caught fire in the Strait of Otranto, in the Adriatic Sea. At the time of the fire there were an estimated 475 people on board the ship including 417 passengers, 55 crew and at least three illegal immigrants. Of these, 452 people were rescued and the bodies of 11 were recovered. It is known that 16 passengers died and it was estimated that there were 28 deaths overall, the uncertainty arising from estimates of the number of illegal immigrants on board. Additionally, two crewmembers of the Albanian tug Iliria were killed during the salvage operations"
+  },
+  "gold_letter": "C",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-07-10 22:05:52"
+}

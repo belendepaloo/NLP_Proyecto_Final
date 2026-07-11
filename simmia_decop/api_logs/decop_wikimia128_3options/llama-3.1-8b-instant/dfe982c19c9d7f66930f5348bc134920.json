@@ -1,0 +1,26 @@
+{
+  "query_id": "dfe982c19c9d7f66930f5348bc134920",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00118.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00118.txt",
+  "label": 1,
+  "membership": "member",
+  "text_hash": "8a1f7ef4d08f0b163ed46d47be4ad931",
+  "permutation_index": 2,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. The Schellenberg smuggling incident is a case in which Canadian citizen Robert Lloyd Schellenberg was arrested, tried, and convicted on charges of smuggling drugs in the People's Republic of China. According to the prosecutors for the state, Schellenberg attempted to smuggle methamphetamine with a net weight of just over 222 kg (489 lb) from Dalian to Australia in November 2014, and after discovering that his translator had informed the police, he boarded a plane at Dalian Zhoushuizi International Airport with the intention of fleeing to Thailand. Schellenberg was arrested by Chinese police when the plane had a stopover at Guangzhou Baiyun International Airport. Schellenberg argued that he was framed by drug dealer Xu Qing and that he was an innocent tourist. On November 20, 2018, the Dalian Intermediate\nB. The Schellenberg smuggling affair refers to a situation where Robert Lloyd Schellenberg, a Canadian national, was apprehended, brought to trial, and found guilty of drug trafficking offenses within the People's Republic of China. State prosecutors asserted that Schellenberg tried to transport methamphetamine, weighing a total of slightly more than 222 kg (489 lb), from Dalian to Australia in November 2014. They further claimed that upon learning his translator had notified law enforcement, he boarded an aircraft at Dalian Zhoushuizi International Airport, aiming to escape to Thailand. Chinese authorities detained Schellenberg during a layover of his flight at Guangzhou Baiyun International Airport. Schellenberg maintained his innocence, claiming he was an unsuspecting tourist and had been set up by a drug trafficker named Xu Qing. On November 20, 2018, the Dalian Intermediate\nC. Canadian citizen Robert Lloyd Schellenberg was arrested and tried for smuggling drugs in the People's Republic of China. He attempted to smuggle methamphetamine with a net weight of just over 222 kg (489 lb) from Dalian to Australia in November 2014. He was arrested by Chinese police after a stopover at Guangzhou Baiyun International Airport, where he claimed to have been framed by drug dealer Xu Qing.\n\nAnswer:",
+  "options": {
+    "A": "The Schellenberg smuggling incident is a case in which Canadian citizen Robert Lloyd Schellenberg was arrested, tried, and convicted on charges of smuggling drugs in the People's Republic of China. According to the prosecutors for the state, Schellenberg attempted to smuggle methamphetamine with a net weight of just over 222 kg (489 lb) from Dalian to Australia in November 2014, and after discovering that his translator had informed the police, he boarded a plane at Dalian Zhoushuizi International Airport with the intention of fleeing to Thailand. Schellenberg was arrested by Chinese police when the plane had a stopover at Guangzhou Baiyun International Airport. Schellenberg argued that he was framed by drug dealer Xu Qing and that he was an innocent tourist. On November 20, 2018, the Dalian Intermediate",
+    "B": "The Schellenberg smuggling affair refers to a situation where Robert Lloyd Schellenberg, a Canadian national, was apprehended, brought to trial, and found guilty of drug trafficking offenses within the People's Republic of China. State prosecutors asserted that Schellenberg tried to transport methamphetamine, weighing a total of slightly more than 222 kg (489 lb), from Dalian to Australia in November 2014. They further claimed that upon learning his translator had notified law enforcement, he boarded an aircraft at Dalian Zhoushuizi International Airport, aiming to escape to Thailand. Chinese authorities detained Schellenberg during a layover of his flight at Guangzhou Baiyun International Airport. Schellenberg maintained his innocence, claiming he was an unsuspecting tourist and had been set up by a drug trafficker named Xu Qing. On November 20, 2018, the Dalian Intermediate",
+    "C": "Canadian citizen Robert Lloyd Schellenberg was arrested and tried for smuggling drugs in the People's Republic of China. He attempted to smuggle methamphetamine with a net weight of just over 222 kg (489 lb) from Dalian to Australia in November 2014. He was arrested by Chinese police after a stopover at Guangzhou Baiyun International Airport, where he claimed to have been framed by drug dealer Xu Qing."
+  },
+  "gold_letter": "A",
+  "predicted_letter": "A",
+  "is_correct": 1,
+  "timestamp": "2026-07-10 22:06:44"
+}

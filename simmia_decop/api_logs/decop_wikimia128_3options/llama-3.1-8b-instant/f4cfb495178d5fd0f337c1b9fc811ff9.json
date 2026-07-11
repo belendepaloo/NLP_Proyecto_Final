@@ -1,0 +1,26 @@
+{
+  "query_id": "f4cfb495178d5fd0f337c1b9fc811ff9",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00104.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00104.txt",
+  "label": 1,
+  "membership": "member",
+  "text_hash": "aaf870c3be50f7d906a656fb8fd45e0b",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. The Toronto Argonauts played their 57th season in the Canadian Football League during 2014, marking their 142nd season as a franchise. The Argonauts concluded the season in the third position within the East Division; however, they were unable to secure a playoff berth because of the crossover regulation. The BC Lions, who ended up in fourth place in the West Division with a 9–9 record, possessed a superior win-loss record, which consequently led to the Argos' elimination from postseason contention. Heading into their concluding game of the season with a 7–10 standing against the Ottawa Redblacks, the Argonauts were required to secure a victory to sustain their prospects of reaching the playoffs, which they successfully achieved. Furthermore, for the Argos to secure the second spot and advance to the playoffs ahead of the crossover team, the BC Lions, they also needed the Hamilton team to suffer a defeat against Montreal. Nevertheless, the Ti-Cats emerged victorious in that particular game, thereby resulting in the Argos' removal from the playoff race.\nB. The 2014 season saw the Toronto Argonauts participate in their 57th season in the Canadian Football League, which was also their 142nd season overall. The Argonauts finished third in the East Division but failed to make the playoffs due to the crossover rule. The BC Lions, who had a better record than the Argonauts, finished fourth in the West Division with a 9-0 record, eliminating the Argos from the playoffs.\nC. The 2014 Toronto Argonauts season was their 57th season in the Canadian Football League and their 142nd season overall. The Argonauts finished in third place in the East Division but missed out on a playoff spot due to the crossover rule. The 9–9 BC Lions, fourth place in the West Division, had a better record and therefore eliminated the Argos from the playoffs. Entering the final game of the season at 7–10 against the Ottawa Redblacks, the Argos needed to win to keep their playoff hopes alive, which they did. They also needed Hamilton to lose to Montreal for the Argos to finish second and make the playoffs ahead of the crossover team, the BC Lions. However, the Ti-Cats won that game, eliminating the Argos from the playoffs\n\nAnswer:",
+  "options": {
+    "A": "The Toronto Argonauts played their 57th season in the Canadian Football League during 2014, marking their 142nd season as a franchise. The Argonauts concluded the season in the third position within the East Division; however, they were unable to secure a playoff berth because of the crossover regulation. The BC Lions, who ended up in fourth place in the West Division with a 9–9 record, possessed a superior win-loss record, which consequently led to the Argos' elimination from postseason contention. Heading into their concluding game of the season with a 7–10 standing against the Ottawa Redblacks, the Argonauts were required to secure a victory to sustain their prospects of reaching the playoffs, which they successfully achieved. Furthermore, for the Argos to secure the second spot and advance to the playoffs ahead of the crossover team, the BC Lions, they also needed the Hamilton team to suffer a defeat against Montreal. Nevertheless, the Ti-Cats emerged victorious in that particular game, thereby resulting in the Argos' removal from the playoff race.",
+    "B": "The 2014 season saw the Toronto Argonauts participate in their 57th season in the Canadian Football League, which was also their 142nd season overall. The Argonauts finished third in the East Division but failed to make the playoffs due to the crossover rule. The BC Lions, who had a better record than the Argonauts, finished fourth in the West Division with a 9-0 record, eliminating the Argos from the playoffs.",
+    "C": "The 2014 Toronto Argonauts season was their 57th season in the Canadian Football League and their 142nd season overall. The Argonauts finished in third place in the East Division but missed out on a playoff spot due to the crossover rule. The 9–9 BC Lions, fourth place in the West Division, had a better record and therefore eliminated the Argos from the playoffs. Entering the final game of the season at 7–10 against the Ottawa Redblacks, the Argos needed to win to keep their playoff hopes alive, which they did. They also needed Hamilton to lose to Montreal for the Argos to finish second and make the playoffs ahead of the crossover team, the BC Lions. However, the Ti-Cats won that game, eliminating the Argos from the playoffs"
+  },
+  "gold_letter": "C",
+  "predicted_letter": "C",
+  "is_correct": 1,
+  "timestamp": "2026-07-10 21:58:58"
+}

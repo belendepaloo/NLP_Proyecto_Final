@@ -1,0 +1,26 @@
+{
+  "query_id": "ed52bf4eb57dc9ad32b1dde3c8b4c8c3",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00048.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00048.txt",
+  "label": 1,
+  "membership": "member",
+  "text_hash": "85f7081c0ae49e5d41f7ac09361e8f07",
+  "permutation_index": 3,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. Simon Hall, a British murderer, was wrongly supported by 'miscarriage of justice' campaigners, but he eventually confessed to the murder and was convicted two years later. The high-profile miscarriage of justice programme Rough Justice took up his case and aired it, along with his mother, girlfriend, and several MPs.\nB. Simon Hall (born in either 1977 or 1978 and deceased on February 23, 2014) was a British individual found guilty of murder. He received erroneous support from activists advocating for those believed to be victims of wrongful conviction. However, he subsequently admitted to the homicide for which he had been found guilty, thereby confirming the legitimacy of his conviction. Hall fatally stabbed Joan Albert, a 79-year-old retiree, at her residence in Capel St Mary, Suffolk, in 2001. He was subsequently found guilty of her murder in 2003. Following his conviction, the prominent television program \"Rough Justice,\" which focuses on miscarriages of justice, took an interest in his case and broadcast an episode lobbying on his behalf. A number of Members of Parliament, the \"Innocence Project\" advocacy organization at Bristol University, his mother, and his girlfriend were also misled into supporting his cause. The Criminal Cases Review Commission, an entity established in 1997 partly in response to the original \"Rough Justice\" program, also became involved.\nC. Simon Hall (1977 or 1978 – 23 February 2014) was a British murderer who was wrongly helped by 'miscarriage of justice' campaigners, only for him to go on to confess to the murder he was convicted of and prove he was rightly convicted. Hall stabbed 79-year-old pensioner Joan Albert to death in her home in Capel St Mary, Suffolk in 2001, and was convicted of her murder two years later. Subsequently, the high-profile miscarriage of justice programme Rough Justice took up his case and aired a programme campaigning for him. Several MPs, Bristol University's 'Innocence Project' campaign group, his mother and girlfriend were also deceived into campaigning for him, and the Criminal Cases Review Commission (which had itself been set up in response to Rough Justice in 1997)\n\nAnswer:",
+  "options": {
+    "A": "Simon Hall, a British murderer, was wrongly supported by 'miscarriage of justice' campaigners, but he eventually confessed to the murder and was convicted two years later. The high-profile miscarriage of justice programme Rough Justice took up his case and aired it, along with his mother, girlfriend, and several MPs.",
+    "B": "Simon Hall (born in either 1977 or 1978 and deceased on February 23, 2014) was a British individual found guilty of murder. He received erroneous support from activists advocating for those believed to be victims of wrongful conviction. However, he subsequently admitted to the homicide for which he had been found guilty, thereby confirming the legitimacy of his conviction. Hall fatally stabbed Joan Albert, a 79-year-old retiree, at her residence in Capel St Mary, Suffolk, in 2001. He was subsequently found guilty of her murder in 2003. Following his conviction, the prominent television program \"Rough Justice,\" which focuses on miscarriages of justice, took an interest in his case and broadcast an episode lobbying on his behalf. A number of Members of Parliament, the \"Innocence Project\" advocacy organization at Bristol University, his mother, and his girlfriend were also misled into supporting his cause. The Criminal Cases Review Commission, an entity established in 1997 partly in response to the original \"Rough Justice\" program, also became involved.",
+    "C": "Simon Hall (1977 or 1978 – 23 February 2014) was a British murderer who was wrongly helped by 'miscarriage of justice' campaigners, only for him to go on to confess to the murder he was convicted of and prove he was rightly convicted. Hall stabbed 79-year-old pensioner Joan Albert to death in her home in Capel St Mary, Suffolk in 2001, and was convicted of her murder two years later. Subsequently, the high-profile miscarriage of justice programme Rough Justice took up his case and aired a programme campaigning for him. Several MPs, Bristol University's 'Innocence Project' campaign group, his mother and girlfriend were also deceived into campaigning for him, and the Criminal Cases Review Commission (which had itself been set up in response to Rough Justice in 1997)"
+  },
+  "gold_letter": "C",
+  "predicted_letter": "B",
+  "is_correct": 0,
+  "timestamp": "2026-07-10 21:31:50"
+}

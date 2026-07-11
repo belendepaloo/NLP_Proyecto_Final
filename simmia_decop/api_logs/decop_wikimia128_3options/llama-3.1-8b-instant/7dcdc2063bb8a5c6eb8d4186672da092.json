@@ -1,0 +1,26 @@
+{
+  "query_id": "7dcdc2063bb8a5c6eb8d4186672da092",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00133.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00133.txt",
+  "label": 1,
+  "membership": "member",
+  "text_hash": "cb57e40f76e1d07b33bd3c0f2e5ca69f",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. Wrestle Kingdom 8, an event held at the Tokyo Dome on January 4, 2014, was a professional wrestling pay-per-view (PPV) program created by the New Japan Pro-Wrestling (NJPW) promotion. This particular event marked the 23rd occasion of the January 4 Tokyo Dome Show and the eighth instance of it being presented under the \"Wrestle Kingdom\" title. Consistent with the prior year's broadcast method, the event was made available globally through internet pay-per-view (iPPV). Wrestle Kingdom is recognized as NJPW's most significant annual event, often likened to the stature of WWE's WrestleMania. The program included a total of ten matches, with six of these bouts featuring championship defenses. Notably, for the first time in two decades, the National Wrestling Alliance (NWA) World Heavyweight Championship was contested at the event, where NWA representative Rob Conway put his title on the line against Satoshi Kojima.\nB. Wrestle Kingdom 8 in Tokyo Dome was a professional wrestling event produced by the New Japan Pro-Wrestling (NJPW) promotion and took place on January 4, 2014, at the Tokyo Dome. It was the eighth event under the \"Wrestle Kingdom\" name and was broadcasted globally on internet pay-per-view (iPPV) like the previous year. It featured ten matches, six of which were contested for championships, and the National Wrestling Alliance (NWA) World Heavyweight Championship was defended against Satoshi Koga during the event.\nC. Wrestle Kingdom 8 in Tokyo Dome was a professional wrestling pay-per-view (PPV) event produced by the New Japan Pro-Wrestling (NJPW) promotion, which took place at the Tokyo Dome in Tokyo, Japan on January 4, 2014. It was the 23rd January 4 Tokyo Dome Show and the eighth held under the \"Wrestle Kingdom\" name. Like the previous year, the event aired worldwide on internet pay-per-view (iPPV). Wrestle Kingdom is traditionally NJPW's biggest event of the year and has been described as their equivalent to WWE's WrestleMania.The event featured ten matches, six of which were contested for championships. For the first time in twenty years, the National Wrestling Alliance (NWA) World Heavyweight Championship was defended during the event with NWA representative Rob Conway defending against Satoshi Kojima. The event was\n\nAnswer:",
+  "options": {
+    "A": "Wrestle Kingdom 8, an event held at the Tokyo Dome on January 4, 2014, was a professional wrestling pay-per-view (PPV) program created by the New Japan Pro-Wrestling (NJPW) promotion. This particular event marked the 23rd occasion of the January 4 Tokyo Dome Show and the eighth instance of it being presented under the \"Wrestle Kingdom\" title. Consistent with the prior year's broadcast method, the event was made available globally through internet pay-per-view (iPPV). Wrestle Kingdom is recognized as NJPW's most significant annual event, often likened to the stature of WWE's WrestleMania. The program included a total of ten matches, with six of these bouts featuring championship defenses. Notably, for the first time in two decades, the National Wrestling Alliance (NWA) World Heavyweight Championship was contested at the event, where NWA representative Rob Conway put his title on the line against Satoshi Kojima.",
+    "B": "Wrestle Kingdom 8 in Tokyo Dome was a professional wrestling event produced by the New Japan Pro-Wrestling (NJPW) promotion and took place on January 4, 2014, at the Tokyo Dome. It was the eighth event under the \"Wrestle Kingdom\" name and was broadcasted globally on internet pay-per-view (iPPV) like the previous year. It featured ten matches, six of which were contested for championships, and the National Wrestling Alliance (NWA) World Heavyweight Championship was defended against Satoshi Koga during the event.",
+    "C": "Wrestle Kingdom 8 in Tokyo Dome was a professional wrestling pay-per-view (PPV) event produced by the New Japan Pro-Wrestling (NJPW) promotion, which took place at the Tokyo Dome in Tokyo, Japan on January 4, 2014. It was the 23rd January 4 Tokyo Dome Show and the eighth held under the \"Wrestle Kingdom\" name. Like the previous year, the event aired worldwide on internet pay-per-view (iPPV). Wrestle Kingdom is traditionally NJPW's biggest event of the year and has been described as their equivalent to WWE's WrestleMania.The event featured ten matches, six of which were contested for championships. For the first time in twenty years, the National Wrestling Alliance (NWA) World Heavyweight Championship was defended during the event with NWA representative Rob Conway defending against Satoshi Kojima. The event was"
+  },
+  "gold_letter": "C",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-07-10 22:13:31"
+}

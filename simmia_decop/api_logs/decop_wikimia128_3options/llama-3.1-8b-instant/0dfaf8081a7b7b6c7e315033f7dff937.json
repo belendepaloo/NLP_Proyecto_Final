@@ -1,0 +1,26 @@
+{
+  "query_id": "0dfaf8081a7b7b6c7e315033f7dff937",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00119.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00119.txt",
+  "label": 1,
+  "membership": "member",
+  "text_hash": "056b2c85339be4b285e69ed154a6ce90",
+  "permutation_index": 3,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. The 2014 UEC European Track Championships, the fifth iteration of the premier UEC European Track Championships for track cycling, transpired from October 16 to 19 at the Vélodrome Amédée Détraux in Baie-Mahault, Guadeloupe, France. The European Cycling Union was responsible for organizing this event. Every European champion is presented with the UEC European Champion jersey, a garment they are permitted to wear for the entire year when participating in the identical event at various other competitions. The schedule for the 2014 championships saw a substantial expansion, encompassing all World Championship track events. This included ten Olympic events—specifically sprint, team sprint, keirin, team pursuit, and omnium, for both male and female competitors—where qualification points for the 2016 Summer Olympics became available for the inaugural time, alongside nine non-Olympic events.\nB. The 2014 UEC European Track Championships was the fifth edition of the elite UEC European Track Championships in track cycling and took place at the Vélodrome Amédée Détraux in Baie-Mahault, Guadeloupe, France, between 16 and 19 October. The Event was organised by the European Cycling Union. All European champions are awarded the UEC European Champion jersey which may be worn by the champion throughout the year when competing in the same event at other competitions. The programme for the 2014 championships was considerably extended, and all World Championship track events were held; ten Olympic events, (sprint, team sprint, keirin, team pursuit and omnium, for both men and women), for which qualification points for the 2016 Summer Olympics were available for the first time, and nine non-Olympic events; the\nC. The European Cycling Union organised the 2014 UEC European Track Championships, which was the fifth edition held at the Vélodrome Amédée Détraux in Baie-Mahroupe, Guadeloupe, between 16 and 19 October. All European champions were granted the UEC European Champion jersey, which can be worn by the champion at other events. The 2014 championships were held in all track events, with a significantly longer schedule.\n\nAnswer:",
+  "options": {
+    "A": "The 2014 UEC European Track Championships, the fifth iteration of the premier UEC European Track Championships for track cycling, transpired from October 16 to 19 at the Vélodrome Amédée Détraux in Baie-Mahault, Guadeloupe, France. The European Cycling Union was responsible for organizing this event. Every European champion is presented with the UEC European Champion jersey, a garment they are permitted to wear for the entire year when participating in the identical event at various other competitions. The schedule for the 2014 championships saw a substantial expansion, encompassing all World Championship track events. This included ten Olympic events—specifically sprint, team sprint, keirin, team pursuit, and omnium, for both male and female competitors—where qualification points for the 2016 Summer Olympics became available for the inaugural time, alongside nine non-Olympic events.",
+    "B": "The 2014 UEC European Track Championships was the fifth edition of the elite UEC European Track Championships in track cycling and took place at the Vélodrome Amédée Détraux in Baie-Mahault, Guadeloupe, France, between 16 and 19 October. The Event was organised by the European Cycling Union. All European champions are awarded the UEC European Champion jersey which may be worn by the champion throughout the year when competing in the same event at other competitions. The programme for the 2014 championships was considerably extended, and all World Championship track events were held; ten Olympic events, (sprint, team sprint, keirin, team pursuit and omnium, for both men and women), for which qualification points for the 2016 Summer Olympics were available for the first time, and nine non-Olympic events; the",
+    "C": "The European Cycling Union organised the 2014 UEC European Track Championships, which was the fifth edition held at the Vélodrome Amédée Détraux in Baie-Mahroupe, Guadeloupe, between 16 and 19 October. All European champions were granted the UEC European Champion jersey, which can be worn by the champion at other events. The 2014 championships were held in all track events, with a significantly longer schedule."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-07-10 22:07:23"
+}

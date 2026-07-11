@@ -1,0 +1,26 @@
+{
+  "query_id": "33d33cf1cd6b421a08698caff19d3023",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00209.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00209.txt",
+  "label": 1,
+  "membership": "member",
+  "text_hash": "92a72511a1f0b80c3fc5bcffe5f62628",
+  "permutation_index": 1,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. Anti-government protests (Khmer: បាតុកម្មប្រឆាំងរាជរដ្ឋាភិបាល) were a series of protests in Cambodia from July 2013 to July 2014. Popular demonstrations in Phnom Penh took place against the government of Prime Minister Hun Sen, triggered by widespread allegations of electoral fraud during the Cambodian general election of 2013. Demands to raise the minimum wage to $160 a month and resentment at Vietnamese influence in Cambodia have also contributed to the protests. The main opposition party refused to participate in parliament after the elections, and major demonstrations took place throughout December 2013. A government crackdown in January 2014 led to the deaths of 4 people and the clearing of the main protest camp.Cambodian protests may have been partly precipitated by the perception of corruption, lack of freedom and poor quality of\nB. Cambodia experienced anti-government protests from July 2013 to July 2014, with popular demonstrations in Phnom Penh against the government of Prime Minister Hun Sen.\nC. A series of demonstrations against the government (Khmer: បាតុកម្មប្រឆាំងរាជរដ្ឋាភិបាល) occurred in Cambodia, spanning from July 2013 to July 2014. These widely-supported protests, primarily in Phnom Penh, were directed at Prime Minister Hun Sen's administration. The catalyst for these protests was extensive accusations of electoral fraud following the Cambodian general election in 2013. Additional factors fueling the unrest included calls for an increase in the minimum wage to $160 monthly and public dissatisfaction regarding Vietnamese involvement in Cambodia. The primary opposition party opted out of parliamentary participation subsequent to the elections, leading to significant protests throughout December 2013. A government intervention in January 2014 resulted in four fatalities and the dismantling of the primary protest encampment. It is plausible that the Cambodian protests were partially instigated by a prevailing sense of corruption, limited liberties, and inadequate standards of living.\n\nAnswer:",
+  "options": {
+    "A": "Anti-government protests (Khmer: បាតុកម្មប្រឆាំងរាជរដ្ឋាភិបាល) were a series of protests in Cambodia from July 2013 to July 2014. Popular demonstrations in Phnom Penh took place against the government of Prime Minister Hun Sen, triggered by widespread allegations of electoral fraud during the Cambodian general election of 2013. Demands to raise the minimum wage to $160 a month and resentment at Vietnamese influence in Cambodia have also contributed to the protests. The main opposition party refused to participate in parliament after the elections, and major demonstrations took place throughout December 2013. A government crackdown in January 2014 led to the deaths of 4 people and the clearing of the main protest camp.Cambodian protests may have been partly precipitated by the perception of corruption, lack of freedom and poor quality of",
+    "B": "Cambodia experienced anti-government protests from July 2013 to July 2014, with popular demonstrations in Phnom Penh against the government of Prime Minister Hun Sen.",
+    "C": "A series of demonstrations against the government (Khmer: បាតុកម្មប្រឆាំងរាជរដ្ឋាភិបាល) occurred in Cambodia, spanning from July 2013 to July 2014. These widely-supported protests, primarily in Phnom Penh, were directed at Prime Minister Hun Sen's administration. The catalyst for these protests was extensive accusations of electoral fraud following the Cambodian general election in 2013. Additional factors fueling the unrest included calls for an increase in the minimum wage to $160 monthly and public dissatisfaction regarding Vietnamese involvement in Cambodia. The primary opposition party opted out of parliamentary participation subsequent to the elections, leading to significant protests throughout December 2013. A government intervention in January 2014 resulted in four fatalities and the dismantling of the primary protest encampment. It is plausible that the Cambodian protests were partially instigated by a prevailing sense of corruption, limited liberties, and inadequate standards of living."
+  },
+  "gold_letter": "A",
+  "predicted_letter": "A",
+  "is_correct": 1,
+  "timestamp": "2026-07-10 22:49:19"
+}

@@ -1,0 +1,26 @@
+{
+  "query_id": "b39235db44f78d93904795d69d56c306",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00110.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00110.txt",
+  "label": 0,
+  "membership": "non_member",
+  "text_hash": "920a97f49710a9c4d0810fd27e2c6b5b",
+  "permutation_index": 3,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. The 2023 Summer Metro Manila Film Festival is an ongoing iteration of the annual Summer Metro Manila Film Festival held in Metro Manila and throughout the Philippines. It is to be organized by the Metropolitan Manila Development Authority (MMDA) in partnership with the Cinema Exhibitors Association of the Philippines. The theme of the film festival would be \"Tuloy-tuloy ang Saya\" (lit. 'The fun continues').The inaugural edition was supposed to be held in 2020, but was cancelled due to the COVID-19 pandemic. The 2023 edition is now considered to be the first iteration of the film festival. Following the organization of the 2022 Metro Manila Film Festival, the MMDA announced on January 9, 2023, that the summer film festival will be held from April 8 to 18, 2023. The\nB. The Metro Manila Film Festival's 2023 Summer Metro Manila Film Festival is an ongoing event coordinated by the MMDA and the Cinema Exhibitors Association of the Philippines. The festival's theme is \"Tuloy-tuloy ang Saya\" (lit. 'The fun continues'). The first edition was scheduled to take place in 2020 due to the COVID-19 pandemic, but the 2023 edition is now considered to be the first iteration of the film festival.\nC. The current version of the yearly Summer Metro Manila Film Festival, which takes place across Metro Manila and the entire Philippines, is the 2023 installment. The Metropolitan Manila Development Authority (MMDA), in collaboration with the Cinema Exhibitors Association of the Philippines, is slated to orchestrate this event. The chosen slogan for this cinematic celebration is \"Tuloy-tuloy ang Saya,\" which translates literally to 'The fun continues'. Initially, the very first edition was scheduled for 2020; however, it was called off because of the global COVID-19 pandemic. Consequently, the 2023 iteration is now recognized as the premiere staging of the film festival. After the successful execution of the 2022 Metro Manila Film Festival, the MMDA publicly declared on January 9, 2023, that the summer film festival would run from April 8 to 18, 2023.\n\nAnswer:",
+  "options": {
+    "A": "The 2023 Summer Metro Manila Film Festival is an ongoing iteration of the annual Summer Metro Manila Film Festival held in Metro Manila and throughout the Philippines. It is to be organized by the Metropolitan Manila Development Authority (MMDA) in partnership with the Cinema Exhibitors Association of the Philippines. The theme of the film festival would be \"Tuloy-tuloy ang Saya\" (lit. 'The fun continues').The inaugural edition was supposed to be held in 2020, but was cancelled due to the COVID-19 pandemic. The 2023 edition is now considered to be the first iteration of the film festival. Following the organization of the 2022 Metro Manila Film Festival, the MMDA announced on January 9, 2023, that the summer film festival will be held from April 8 to 18, 2023. The",
+    "B": "The Metro Manila Film Festival's 2023 Summer Metro Manila Film Festival is an ongoing event coordinated by the MMDA and the Cinema Exhibitors Association of the Philippines. The festival's theme is \"Tuloy-tuloy ang Saya\" (lit. 'The fun continues'). The first edition was scheduled to take place in 2020 due to the COVID-19 pandemic, but the 2023 edition is now considered to be the first iteration of the film festival.",
+    "C": "The current version of the yearly Summer Metro Manila Film Festival, which takes place across Metro Manila and the entire Philippines, is the 2023 installment. The Metropolitan Manila Development Authority (MMDA), in collaboration with the Cinema Exhibitors Association of the Philippines, is slated to orchestrate this event. The chosen slogan for this cinematic celebration is \"Tuloy-tuloy ang Saya,\" which translates literally to 'The fun continues'. Initially, the very first edition was scheduled for 2020; however, it was called off because of the global COVID-19 pandemic. Consequently, the 2023 iteration is now recognized as the premiere staging of the film festival. After the successful execution of the 2022 Metro Manila Film Festival, the MMDA publicly declared on January 9, 2023, that the summer film festival would run from April 8 to 18, 2023."
+  },
+  "gold_letter": "A",
+  "predicted_letter": "A",
+  "is_correct": 1,
+  "timestamp": "2026-07-10 22:02:05"
+}

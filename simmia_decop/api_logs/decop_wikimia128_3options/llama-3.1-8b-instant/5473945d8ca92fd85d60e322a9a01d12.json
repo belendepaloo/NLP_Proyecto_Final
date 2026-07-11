@@ -1,0 +1,26 @@
+{
+  "query_id": "5473945d8ca92fd85d60e322a9a01d12",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00191.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00191.txt",
+  "label": 0,
+  "membership": "non_member",
+  "text_hash": "a15a1b8c0eab41645053b0d37cc5dc3a",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. On 10 January 2023, Constantine II of Greece, Head of the Royal House of Greece, who reigned as the last King of the Hellenes from 6 March 1964 to 1 June 1973, died in Athens at the age of 82. After suffering a stroke in hospital, Constantine was placed in intensive care, before dying days later. His death was initially announced by an Associated Press report, which referenced hospital staff, however Constantine's private office later released a formal death statement. The Greek government declined the royal family's request for a state funeral, although it was later decided that Constantine should have a lying-in-state and a funeral procession. On 16 January, Constantine's body was laid for public viewing in the Agios Eleftherios Chapel in Athens from 6:00 am to\nB. Constantine II of Greece, who served as the Head of the Royal House of Greece and reigned as the final King of the Hellenes between March 6, 1964, and June 1, 1973, passed away in Athens on January 10, 2023, at 82 years old. Following a stroke he experienced while hospitalized, Constantine was admitted to intensive care, where he remained for several days before his demise. Initially, an Associated Press report, citing hospital personnel, broke the news of his death; however, his private office subsequently issued an official statement confirming his passing. The Greek government rejected the royal family's appeal for a state funeral, though a decision was later made to allow for a lying-in-state and a funeral procession for Constantine. On January 16, Constantine's remains were made accessible for public viewing within the Agios Eleftherios Chapel in Athens, commencing at 6:00 am.\nC. The last King of the Hellenes, Constantine II of Greece, who was Head of the Royal House of Greece from 6 March 1964 to 1 June 1973, died in Athens on 10 January 2023 at the age of 82. He was hospitalized for a stroke and died several days later. An Associated Press report, which mentioned hospital staff, initially reported his death. His private office later issued a formal death statement. The Greek government declined the royal family's request for a state funeral, but it was later decided that the funeral proces\n\nAnswer:",
+  "options": {
+    "A": "On 10 January 2023, Constantine II of Greece, Head of the Royal House of Greece, who reigned as the last King of the Hellenes from 6 March 1964 to 1 June 1973, died in Athens at the age of 82. After suffering a stroke in hospital, Constantine was placed in intensive care, before dying days later. His death was initially announced by an Associated Press report, which referenced hospital staff, however Constantine's private office later released a formal death statement. The Greek government declined the royal family's request for a state funeral, although it was later decided that Constantine should have a lying-in-state and a funeral procession. On 16 January, Constantine's body was laid for public viewing in the Agios Eleftherios Chapel in Athens from 6:00 am to",
+    "B": "Constantine II of Greece, who served as the Head of the Royal House of Greece and reigned as the final King of the Hellenes between March 6, 1964, and June 1, 1973, passed away in Athens on January 10, 2023, at 82 years old. Following a stroke he experienced while hospitalized, Constantine was admitted to intensive care, where he remained for several days before his demise. Initially, an Associated Press report, citing hospital personnel, broke the news of his death; however, his private office subsequently issued an official statement confirming his passing. The Greek government rejected the royal family's appeal for a state funeral, though a decision was later made to allow for a lying-in-state and a funeral procession for Constantine. On January 16, Constantine's remains were made accessible for public viewing within the Agios Eleftherios Chapel in Athens, commencing at 6:00 am.",
+    "C": "The last King of the Hellenes, Constantine II of Greece, who was Head of the Royal House of Greece from 6 March 1964 to 1 June 1973, died in Athens on 10 January 2023 at the age of 82. He was hospitalized for a stroke and died several days later. An Associated Press report, which mentioned hospital staff, initially reported his death. His private office later issued a formal death statement. The Greek government declined the royal family's request for a state funeral, but it was later decided that the funeral proces"
+  },
+  "gold_letter": "A",
+  "predicted_letter": "A",
+  "is_correct": 1,
+  "timestamp": "2026-07-10 22:40:38"
+}

@@ -1,0 +1,26 @@
+{
+  "query_id": "fbf3dc913e3bc2fbfe36c319e8fa6e6e",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00178.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00178.txt",
+  "label": 0,
+  "membership": "non_member",
+  "text_hash": "738b6d69532debe1ae0e5385f422c412",
+  "permutation_index": 4,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. On Thursday, April 20, 2023, a hybrid solar eclipse took place. A solar eclipse happens when the Moon positions itself between our planet, Earth, and the Sun, consequently blocking the Sun either completely or partially from an observer's perspective on Earth. A hybrid solar eclipse represents an infrequent category of solar eclipse, characterized by its transformation from an annular eclipse to a total eclipse and then back again, as the Moon's shadow traverses the Earth's surface. The phenomenon of totality manifests along a slender trajectory across the Earth's expanse, while a partial solar eclipse can be observed within an extensive adjacent area spanning thousands of kilometers. Hybrid solar eclipses are exceedingly uncommon, accounting for merely 3.1% of all solar eclipses observed during the 21st century. For this particular eclipse, the totality phase was observable from the North West Cape peninsula and Barrow Island in Western Australia, as well as the eastern regions of Timor-Leste and West Papua.\nB. A hybrid solar eclipse occurred on Thursday, April 20, 2023. A solar eclipse occurs when the Moon passes between Earth and the Sun thereby totally or partly obscuring the Sun for a viewer on Earth. A hybrid solar eclipse is a rare type of solar eclipse that changes its appearance from annular to total and back as the Moon's shadow moves across the Earth's surface. Totality occurs in a narrow path across the surface of the Earth, with the partial solar eclipse visible over a surrounding region thousands of kilometers wide. Hybrid solar eclipses are extremely rare, occurring in only 3.1% of solar eclipses in the 21st century.Totality for this eclipse was visible in the North West Cape peninsula and Barrow Island in Western Australia, eastern parts of\nC. On Thursday, April 20, 2023, a hybrid solar eclipse took place. This is a solar eclipse where the Moon moves between Earth and the Sun, resulting in the Sun being completely or partially obstructed by the Moon's shadow. This is a rare type of eclipse that changes from annular to total and backward as the shadow moves across the Earth's surface. Only 3.1% of solar eclipses in the 21st century can be found in hybrids.\n\nAnswer:",
+  "options": {
+    "A": "On Thursday, April 20, 2023, a hybrid solar eclipse took place. A solar eclipse happens when the Moon positions itself between our planet, Earth, and the Sun, consequently blocking the Sun either completely or partially from an observer's perspective on Earth. A hybrid solar eclipse represents an infrequent category of solar eclipse, characterized by its transformation from an annular eclipse to a total eclipse and then back again, as the Moon's shadow traverses the Earth's surface. The phenomenon of totality manifests along a slender trajectory across the Earth's expanse, while a partial solar eclipse can be observed within an extensive adjacent area spanning thousands of kilometers. Hybrid solar eclipses are exceedingly uncommon, accounting for merely 3.1% of all solar eclipses observed during the 21st century. For this particular eclipse, the totality phase was observable from the North West Cape peninsula and Barrow Island in Western Australia, as well as the eastern regions of Timor-Leste and West Papua.",
+    "B": "A hybrid solar eclipse occurred on Thursday, April 20, 2023. A solar eclipse occurs when the Moon passes between Earth and the Sun thereby totally or partly obscuring the Sun for a viewer on Earth. A hybrid solar eclipse is a rare type of solar eclipse that changes its appearance from annular to total and back as the Moon's shadow moves across the Earth's surface. Totality occurs in a narrow path across the surface of the Earth, with the partial solar eclipse visible over a surrounding region thousands of kilometers wide. Hybrid solar eclipses are extremely rare, occurring in only 3.1% of solar eclipses in the 21st century.Totality for this eclipse was visible in the North West Cape peninsula and Barrow Island in Western Australia, eastern parts of",
+    "C": "On Thursday, April 20, 2023, a hybrid solar eclipse took place. This is a solar eclipse where the Moon moves between Earth and the Sun, resulting in the Sun being completely or partially obstructed by the Moon's shadow. This is a rare type of eclipse that changes from annular to total and backward as the shadow moves across the Earth's surface. Only 3.1% of solar eclipses in the 21st century can be found in hybrids."
+  },
+  "gold_letter": "B",
+  "predicted_letter": "A",
+  "is_correct": 0,
+  "timestamp": "2026-07-10 22:35:57"
+}

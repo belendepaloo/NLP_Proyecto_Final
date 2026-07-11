@@ -1,0 +1,26 @@
+{
+  "query_id": "c562d8b88a841e7719221023c4d41939",
+  "method": "decop_wikimia128_3options",
+  "dataset": "WikiMIA",
+  "split": "WikiMIA_length128",
+  "model": "llama-3.1-8b-instant",
+  "backend": "groq",
+  "sample_id": "WikiMIA_WikiMIA_length128_00039.txt",
+  "file_name": "WikiMIA_WikiMIA_length128_00039.txt",
+  "label": 0,
+  "membership": "non_member",
+  "text_hash": "f333ec159f3b960936793bb72e697b65",
+  "permutation_index": 3,
+  "n_permutations": 6,
+  "n_options": 3,
+  "prompt": "Question: Which of the following passages is the original verbatim passage? The other passages are paraphrased versions of it.\n\nOptions:\nA. The 2023 DFB-Pokal Final will determine the winner of the 80th season of the German football cup, which will be played on June 3, 2023, at the Olympiastadion in Berlin. The winner will host the 2023 edition of the DFL-Supercup and face the champion of the next season, unless the same team wins the Bundesliga and the DFB-Pokal.\nB. The 2023 DFB-Pokal Final is set to determine the victor of the 2022–23 DFB-Pokal, which marks the 80th installment of Germany's yearly football cup competition. This championship game is scheduled for June 3, 2023, and will take place at Berlin's Olympiastadion. The team that emerges victorious will be granted the privilege of hosting the 2023 DFL-Supercup at the commencement of the subsequent season. They will then compete against the champion of the 2022–23 Bundesliga season. An exception arises if the same team manages to secure both the Bundesliga title and the DFB-Pokal, achieving what is known as a \"double.\" In such an event, the Bundesliga runner-up will step in to fill that role and host the DFL-Supercup. Furthermore, the DFB-Pokal winner secures a direct entry into the group stage of the 2023–24 UEFA Europa League. Nevertheless, if the winning team has already secured qualification for the 2023–24 UEFA Champions League through other means...\nC. The 2023 DFB-Pokal Final will decide the winner of the 2022–23 DFB-Pokal, the 80th season of the annual German football cup competition. The match will be played on 3 June 2023 at the Olympiastadion in Berlin.The winner will host the 2023 edition of the DFL-Supercup at the start of the following season, and will face the champion of the 2022–23 edition of the Bundesliga, unless the same team wins the Bundesliga and the DFB-Pokal, completing a double. In that case, the runner-up of the Bundesliga will take the spot and host instead. The winner of the DFB-Pokal also earns automatic qualification for the group stage of the 2023–24 edition of the UEFA Europa League. However, if the winner has already qualified for the 2023–24 edition of the UEFA\n\nAnswer:",
+  "options": {
+    "A": "The 2023 DFB-Pokal Final will determine the winner of the 80th season of the German football cup, which will be played on June 3, 2023, at the Olympiastadion in Berlin. The winner will host the 2023 edition of the DFL-Supercup and face the champion of the next season, unless the same team wins the Bundesliga and the DFB-Pokal.",
+    "B": "The 2023 DFB-Pokal Final is set to determine the victor of the 2022–23 DFB-Pokal, which marks the 80th installment of Germany's yearly football cup competition. This championship game is scheduled for June 3, 2023, and will take place at Berlin's Olympiastadion. The team that emerges victorious will be granted the privilege of hosting the 2023 DFL-Supercup at the commencement of the subsequent season. They will then compete against the champion of the 2022–23 Bundesliga season. An exception arises if the same team manages to secure both the Bundesliga title and the DFB-Pokal, achieving what is known as a \"double.\" In such an event, the Bundesliga runner-up will step in to fill that role and host the DFL-Supercup. Furthermore, the DFB-Pokal winner secures a direct entry into the group stage of the 2023–24 UEFA Europa League. Nevertheless, if the winning team has already secured qualification for the 2023–24 UEFA Champions League through other means...",
+    "C": "The 2023 DFB-Pokal Final will decide the winner of the 2022–23 DFB-Pokal, the 80th season of the annual German football cup competition. The match will be played on 3 June 2023 at the Olympiastadion in Berlin.The winner will host the 2023 edition of the DFL-Supercup at the start of the following season, and will face the champion of the 2022–23 edition of the Bundesliga, unless the same team wins the Bundesliga and the DFB-Pokal, completing a double. In that case, the runner-up of the Bundesliga will take the spot and host instead. The winner of the DFB-Pokal also earns automatic qualification for the group stage of the 2023–24 edition of the UEFA Europa League. However, if the winner has already qualified for the 2023–24 edition of the UEFA"
+  },
+  "gold_letter": "C",
+  "predicted_letter": "C",
+  "is_correct": 1,
+  "timestamp": "2026-07-10 21:27:04"
+}
