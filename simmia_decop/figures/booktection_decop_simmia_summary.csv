@@ -1,0 +1,3 @@
+Método,Modelo,Dataset,AUC,Muestras
+DE-COP,llama-3.1-8b-instant,BookTection medium,0.77565,200
+SimMIA,llama-3.1-8b-instant,BookTection medium,0.5201,200
