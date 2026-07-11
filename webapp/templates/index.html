@@ -52,6 +52,14 @@
         <p class="field__hint">Los proveedores sin key configurada en <code>.env</code> quedan deshabilitados.</p>
       </div>
 
+      <div class="field field--demo">
+        <label class="demo-toggle">
+          <input type="checkbox" name="demo_mode" value="1" id="demo_mode">
+          <span class="demo-toggle__label">🎬 Modo Demo</span>
+        </label>
+        <p class="field__hint">Si el autor ya fue procesado antes, el pipeline se simula paso a paso — avanzás con el botón "Siguiente". Requiere un run previo del mismo autor.</p>
+      </div>
+
       <button type="submit" class="btn btn--primary btn--block">📖 Arrancar run</button>
     </form>
   </section>

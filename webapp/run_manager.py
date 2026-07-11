@@ -18,6 +18,7 @@ from __future__ import annotations
 import glob
 import json
 import threading
+import time
 import uuid
 from dataclasses import dataclass, field
 from typing import Any, Literal
@@ -55,9 +56,24 @@ class RunHandle:
     final_message: str | None = None
     error: str | None = None
     status_detail: str | None = None  # mensaje de progreso visible en la UI
+    demo_mode: bool = False
+    donor_run_id: str | None = None                      # run del que se leen scores en modo demo
+    events: list[dict] = field(default_factory=list)   # log de acciones de agentes
+    event_count: int = 0                                 # incrementa con cada add_event
+    demo_paused: bool = False                            # True mientras espera click "Siguiente"
+    _demo_pause_seq: int = 0                             # incrementa en cada cambio de demo_paused
     _lock: threading.Lock = field(default_factory=threading.Lock)
     _decision_event: threading.Event = field(default_factory=threading.Event)
     _decisions: list[dict[str, Any]] | None = None
+    _demo_next: threading.Event = field(default_factory=threading.Event)
+
+    def add_event(self, agent: str, message: str, detail: str = "") -> None:
+        with self._lock:
+            self.events.append({"agent": agent, "message": message, "detail": detail})
+            self.event_count += 1
+
+    def demo_advance(self) -> None:
+        self._demo_next.set()
 
     def set_waiting(self, interrupt_value: dict[str, Any]) -> None:
         with self._lock:
@@ -132,10 +148,11 @@ _EMPTY_RETRY_NUDGE = (
 )
 
 
-def _find_donor_run(author_slug: str, exclude_run_id: str | None = None) -> str | None:
+def _find_donor_run(author_slug: str, exclude_run_id: str | None = None,
+                    require_mia_scores: bool = False) -> str | None:
     """Busca el run más reciente con curation completa para el mismo autor slug.
-    Devuelve el run_id del donor o None si no hay ninguno."""
-    from pathlib import Path
+    Si require_mia_scores=True, solo acepta donors con mia_scores completos
+    (necesario en demo mode para poder reproducir los resultados sin API)."""
     candidates = sorted(
         [d for d in settings.runs_dir.iterdir()
          if d.is_dir() and d.name.startswith(f"webapp_{author_slug}_")],
@@ -149,21 +166,38 @@ def _find_donor_run(author_slug: str, exclude_run_id: str | None = None) -> str 
         arts = list_run_artifacts(run_id)
         curation = arts.get("curation", [])
         has_chunks = any(f.startswith("chunk_") for f in curation)
-        has_keeps = any(
-            f.startswith("voice_") and _verdict_is_keep(run_id, f)
-            for f in curation if f.startswith("voice_")
-        )
-        if has_chunks and has_keeps:
-            return run_id
+        keep_files = [f for f in curation if f.startswith("voice_") and _verdict_is_keep(run_id, f)]
+        if not (has_chunks and keep_files):
+            continue
+        if require_mia_scores:
+            n_scored = len(arts.get("mia_scores", []))
+            if n_scored < len(keep_files):
+                continue
+        return run_id
     return None
 
 
-def _copy_artifacts_for_replay(donor_run_id: str, new_run_id: str) -> int:
-    """Copia bibliography + curation del run donor al nuevo run.
-    Omite mia_scores y sage (se computan frescos, aunque SAGE viene del cache)."""
+def _demo_pause(handle: RunHandle) -> None:
+    if not handle.demo_mode:
+        return
+    with handle._lock:
+        handle.demo_paused = True
+        handle._demo_pause_seq += 1
+    handle._demo_next.wait()
+    handle._demo_next.clear()
+    with handle._lock:
+        handle.demo_paused = False
+        handle._demo_pause_seq += 1
+
+
+def _copy_artifacts_for_replay(donor_run_id: str, new_run_id: str,
+                                stages: tuple[str, ...] = ("bibliography", "curation")) -> int:
+    """Copia stages indicados del run donor al nuevo run.
+    Si incluye 'curation', también backfilla el sage_cache cross-run desde los sage artifacts del donor."""
     count = 0
-    for stage in ("bibliography", "curation"):
-        for fname in list_run_artifacts(donor_run_id).get(stage, []):
+    donor_arts = list_run_artifacts(donor_run_id)
+    for stage in stages:
+        for fname in donor_arts.get(stage, []):
             name = fname.removesuffix(".json")
             try:
                 data = read_run_artifact(donor_run_id, stage, name)
@@ -171,6 +205,27 @@ def _copy_artifacts_for_replay(donor_run_id: str, new_run_id: str) -> int:
                 count += 1
             except Exception:
                 pass
+    if "curation" in stages:
+        try:
+            from mia_common import sage_cache as _sage_cache_mod
+            n_gen = settings.sage_n_candidates_generated
+            n_kept = settings.sage_n_candidates_kept
+            for fname in donor_arts.get("sage", []):
+                name = fname.removesuffix(".json")
+                try:
+                    sage_art = read_run_artifact(donor_run_id, "sage", name)
+                    chunk_id = sage_art.get("chunk_id", name.removeprefix("paraphrase_"))
+                    candidates = sage_art.get("paraphrase_candidates", [])
+                    if not candidates:
+                        continue
+                    chunk = read_run_artifact(donor_run_id, "curation", f"chunk_{chunk_id}")
+                    text = chunk.get("text", "")
+                    if text:
+                        _sage_cache_mod.put(text, n_gen, n_kept, candidates)
+                except Exception:
+                    pass
+        except Exception:
+            pass
     return count
 
 
@@ -251,68 +306,156 @@ def _run_sage_mia_direct(handle: RunHandle) -> None:
 
                 chunk = pending[0]
                 chunk_id = chunk["chunk_id"]
+                doc_id = chunk.get("document_id", chunk_id)
                 text = chunk["text"]
                 done = total - len(pending)
-                handle.set_detail(f"SAGE chunk {done + 1}/{total} — {chunk_id}")
+                chunk_label = f"chunk {done + 1}/{total}"
+                handle.set_detail(f"SAGE {chunk_label} — {chunk_id}")
                 client = pool.get()
 
-                # SAGE (con cache cross-run: si ya fue procesado, no recarga Gemma-2B)
-                decop_result = None
-                candidates: list[str] = []
-                try:
-                    from agents.tools.sage_tools import get_sage_candidates
-                    candidates = get_sage_candidates(text)
+                if handle.demo_mode and handle.donor_run_id:
+                    # ── Demo con donor: leer scores pre-calculados de disco, sin API ──
+                    donor = handle.donor_run_id
+
+                    # Leer paráfrasis del donor
+                    try:
+                        donor_sage = read_run_artifact(donor, "sage", f"paraphrase_{chunk_id}")
+                        candidates = donor_sage.get("paraphrase_candidates", [])
+                    except Exception:
+                        candidates = []
+
+                    # Leer scores del donor
+                    donor_scores: dict = {}
+                    try:
+                        donor_scores = read_run_artifact(donor, "mia_scores", chunk_id) or {}
+                    except Exception:
+                        pass
+                    decop_result = donor_scores.get("decop")
+                    dualtest_row = donor_scores.get("dualtest")
+                    simia_raw = donor_scores.get("simia")
+
+                    # Pausa 1: anuncio del chunk → click para "correr" SAGE
+                    handle.add_event("sage_qa_agent", f"Listo para analizar {chunk_label}", text[:80].replace("\n", " ") + "…")
+                    _demo_pause(handle)
+
+                    handle.add_event("sage_qa_agent", "Cargando Gemma-2B + Sparse Autoencoder…", chunk_label)
+                    time.sleep(1.5)
+                    handle.add_event("sage_qa_agent", "Extrayendo features SAE del texto original…", chunk_label)
+                    time.sleep(1.5)
+                    handle.add_event("sage_qa_agent", "Guiando generación T5 con features relevantes…", chunk_label)
+                    time.sleep(1.5)
                     write_run_artifact(run_id, "sage", f"paraphrase_{chunk_id}", {
                         "chunk_id": chunk_id, "paraphrase_candidates": candidates,
                     })
-                except Exception:
-                    pass  # SAGE fallo, DE-COP corre sin candidates (será skipped)
+                    handle.add_event("sage_qa_agent", f"Paráfrasis listas — {len(candidates)} candidatos", chunk_label)
 
-                # DE-COP (necesita >=3 candidates de SAGE)
-                try:
-                    from agents.tools.mia_tools import run_decop_tool
-                    out = run_decop_tool(
-                        verbatim_passage=text,
-                        paraphrase_candidates=candidates,
-                        book_title=chunk.get("document_id", "unknown"),
-                        author=_guess_author_from_run_id(run_id),
-                        client=client,
-                        n_permutations=3,
-                    )
-                    if not out["skipped"]:
-                        decop_result = out["result"]
-                except Exception:
-                    pass
+                    # Pausa 2: paráfrasis listas → click para "correr" DE-COP
+                    handle.add_event("mia_agent [DE-COP]", f"Listo para consultar {handle.target_model_name}", chunk_label)
+                    _demo_pause(handle)
 
-                # DUALTEST
-                dualtest_row = None
-                try:
-                    from agents.tools.mia_tools import run_dualtest_tool
-                    out = run_dualtest_tool(
-                        text=text, client=client,
-                        reference_model_name=settings.reference_model_name,
-                        prefix_len=settings.dualtest_prefix_len,
-                        continuation_len=settings.dualtest_continuation_len,
-                        max_new_tokens=settings.dualtest_max_new_tokens,
-                        label=0,
-                    )
-                    if not out["skipped"]:
-                        dualtest_row = out["result"]
-                except Exception:
-                    pass
+                    handle.add_event("mia_agent [DE-COP]", f"Consultando {handle.target_model_name}…", chunk_label)
+                    time.sleep(0.8)
+                    if decop_result is not None:
+                        acc = decop_result.get("accuracy", 0)
+                        handle.add_event("mia_agent [DE-COP]", f"Accuracy = {acc:.0%}", chunk_label)
+                    else:
+                        handle.add_event("mia_agent [DE-COP]", "Skipped — paráfrasis insuficientes", chunk_label)
 
-                # SiMIA
-                simia_raw = None
-                try:
-                    from agents.tools.mia_tools import run_simia_tool
-                    out = run_simia_tool(text=text, client=client)
-                    if not out["skipped"]:
-                        simia_raw = out["result"]
-                except Exception:
-                    pass
+                    # Pausa 3: resultado DE-COP → click para "correr" DUALTEST
+                    handle.add_event("mia_agent [DUALTEST]", "Listo para calcular run-length y edit-similarity", chunk_label)
+                    _demo_pause(handle)
 
-                write_run_artifact(run_id, "mia_scores", chunk_id,
-                                   {"decop": decop_result, "simia": simia_raw, "dualtest": dualtest_row})
+                    handle.add_event("mia_agent [DUALTEST]", "Calculando run-length y edit-similarity…", chunk_label)
+                    time.sleep(0.8)
+                    if dualtest_row is not None:
+                        p_rlb = dualtest_row.get("p_rlb", 1)
+                        handle.add_event("mia_agent [DUALTEST]", f"p_rlb = {p_rlb:.2e}", chunk_label)
+                    else:
+                        handle.add_event("mia_agent [DUALTEST]", "Skipped", chunk_label)
+
+                    # Pausa 4: resultado DUALTEST → click para "correr" SiMIA
+                    handle.add_event("mia_agent [SiMIA]", "Listo para medir similitud semántica con embeddings", chunk_label)
+                    _demo_pause(handle)
+
+                    handle.add_event("mia_agent [SiMIA]", "Calculando similitud semántica…", chunk_label)
+                    time.sleep(0.8)
+                    if simia_raw is not None:
+                        handle.add_event("mia_agent [SiMIA]", f"Score = {simia_raw:.4f}", chunk_label)
+                    else:
+                        handle.add_event("mia_agent [SiMIA]", "Skipped", chunk_label)
+
+                    # Escribir scores (replay del donor) y mostrar probabilidad
+                    write_run_artifact(run_id, "mia_scores", chunk_id, donor_scores or
+                                       {"decop": decop_result, "simia": simia_raw, "dualtest": dualtest_row})
+                    try:
+                        from agents.ensemble.combine import combine_scores
+                        combined = combine_scores(dualtest_row=dualtest_row, simia_raw=simia_raw, decop_result=decop_result)
+                        prob = combined.get("final_probability")
+                        if prob is not None:
+                            handle.add_event("ensemble", f"Probabilidad {chunk_label} = {prob:.1%}", doc_id)
+                        else:
+                            handle.add_event("ensemble", f"{chunk_label} procesado", doc_id)
+                    except Exception:
+                        handle.add_event("ensemble", f"{chunk_label} procesado", doc_id)
+
+                    # Pausa 5: probabilidad del chunk → click para avanzar al próximo
+                    _demo_pause(handle)
+
+                else:
+                    # ── Modo normal: computar con API (o api_cache) ────────────
+                    decop_result = None
+                    candidates: list[str] = []
+                    try:
+                        from agents.tools.sage_tools import get_sage_candidates
+                        candidates = get_sage_candidates(text)
+                        write_run_artifact(run_id, "sage", f"paraphrase_{chunk_id}", {
+                            "chunk_id": chunk_id, "paraphrase_candidates": candidates,
+                        })
+                    except Exception:
+                        pass
+
+                    try:
+                        from agents.tools.mia_tools import run_decop_tool
+                        out = run_decop_tool(
+                            verbatim_passage=text,
+                            paraphrase_candidates=candidates,
+                            book_title=doc_id,
+                            author=_guess_author_from_run_id(run_id),
+                            client=client,
+                            n_permutations=3,
+                        )
+                        if not out["skipped"]:
+                            decop_result = out["result"]
+                    except Exception:
+                        pass
+
+                    dualtest_row = None
+                    try:
+                        from agents.tools.mia_tools import run_dualtest_tool
+                        out = run_dualtest_tool(
+                            text=text, client=client,
+                            reference_model_name=settings.reference_model_name,
+                            prefix_len=settings.dualtest_prefix_len,
+                            continuation_len=settings.dualtest_continuation_len,
+                            max_new_tokens=settings.dualtest_max_new_tokens,
+                            label=0,
+                        )
+                        if not out["skipped"]:
+                            dualtest_row = out["result"]
+                    except Exception:
+                        pass
+
+                    simia_raw = None
+                    try:
+                        from agents.tools.mia_tools import run_simia_tool
+                        out = run_simia_tool(text=text, client=client)
+                        if not out["skipped"]:
+                            simia_raw = out["result"]
+                    except Exception:
+                        pass
+
+                    write_run_artifact(run_id, "mia_scores", chunk_id,
+                                       {"decop": decop_result, "simia": simia_raw, "dualtest": dualtest_row})
 
             handle.set_done("Pipeline completado: SAGE + DE-COP + DUALTEST corridos directo (sin LangGraph).")
         except Exception as exc:
@@ -378,29 +521,101 @@ def _run_loop(handle: RunHandle, initial_message: str, config: dict[str, Any]) -
 
 def _run_replay(handle: RunHandle, donor_run_id: str) -> None:
     """Copia artifacts de curation del run donor y corre SAGE+MIA directo.
-    SAGE viene del cache cross-run (instantaneo); DE-COP y DUALTEST del api_cache."""
-    handle.set_detail(f"Replay: copiando artifacts de {donor_run_id}…")
-    n = _copy_artifacts_for_replay(donor_run_id, handle.run_id)
-    handle.set_detail(f"Replay: {n} artifacts copiados — arrancando SAGE+MIA")
+    En modo demo simula el pipeline completo paso a paso con pausas manuales."""
+    if not handle.demo_mode:
+        handle.set_detail(f"Replay: copiando artifacts de {donor_run_id}…")
+        n = _copy_artifacts_for_replay(donor_run_id, handle.run_id)
+        handle.set_detail(f"Replay: {n} artifacts copiados — arrancando SAGE+MIA")
+        _run_sage_mia_direct(handle)
+        return
+
+    author = handle.author
+
+    # Leer datos del donor antes de cualquier copia
+    try:
+        bib_data = read_run_artifact(donor_run_id, "bibliography", "candidates") or {}
+        candidates_bib = bib_data.get("candidates", [])
+    except Exception:
+        candidates_bib = []
+
+    donor_arts = list_run_artifacts(donor_run_id)
+    n_keep = sum(
+        1 for f in donor_arts.get("curation", [])
+        if f.startswith("voice_") and _verdict_is_keep(donor_run_id, f)
+    )
+
+    # ── Búsqueda bibliográfica ──
+    handle.add_event("system", "Iniciando pipeline MIA", f"autor: {author}")
+    _demo_pause(handle)
+
+    handle.add_event("bibliography_agent", f"Buscando bibliografía de {author}", "Web search + Google Scholar")
+    _demo_pause(handle)
+
+    handle.add_event("bibliography_agent", "Analizando páginas del autor", "Extrayendo títulos y URLs")
+    _demo_pause(handle)
+
+    handle.add_event("bibliography_agent", f"{len(candidates_bib)} textos candidatos encontrados", "Propuesta lista para revisión")
+    _demo_pause(handle)
+
+    for i, cand in enumerate(candidates_bib[:4]):
+        title = cand.get("title") or cand.get("document_id", f"texto {i + 1}")
+        handle.add_event("bibliography_agent", f"Candidato {i + 1}: {title}", cand.get("source_url", ""))
+        _demo_pause(handle)
+
+    # Copiar solo bibliografía → Búsqueda card aparece en próximo reload
+    _copy_artifacts_for_replay(donor_run_id, handle.run_id, stages=("bibliography",))
+
+    # ── Revisión humana ──
+    handle.add_event("human-in-the-loop", f"Propuesta enviada — {len(candidates_bib)} candidatos", "Esperando aprobación")
+    _demo_pause(handle)
+
+    handle.add_event("human-in-the-loop", "Revisor evaluando candidatos", "Verificando fuentes y autoría")
+    _demo_pause(handle)
+
+    handle.add_event("human-in-the-loop", "APROBADO — pipeline continúa", "Textos confirmados para curación")
+    _demo_pause(handle)
+
+    # Copiar curación + backfill sage cache → Autoría+Voz cards aparecen en próximo reload
+    _copy_artifacts_for_replay(donor_run_id, handle.run_id, stages=("curation",))
+
+    # ── Curación ──
+    handle.add_event("curator_agent", "Descargando textos seleccionados", "Project Gutenberg + otras fuentes")
+    _demo_pause(handle)
+
+    handle.add_event("curator_agent", "Segmentando en chunks analizables", "~500 palabras por chunk")
+    _demo_pause(handle)
+
+    handle.add_event("curator_agent", "Verificando autoría y voz del autor", "Clasificando prosa original vs. boilerplate")
+    _demo_pause(handle)
+
+    handle.add_event("curator_agent", f"{n_keep} chunks seleccionados para análisis MIA", f"target: {handle.target_model_name}")
+    _demo_pause(handle)
+
+    handle.add_event("system", f"Listo para arrancar SAGE + MIA", f"{n_keep} chunks · {handle.target_model_name}")
+    _demo_pause(handle)
+
+    handle.donor_run_id = donor_run_id
     _run_sage_mia_direct(handle)
 
 
-def start_run(author: str, n_texts: int = 5, target_provider: str = "groq") -> str:
+def start_run(author: str, n_texts: int = 5, target_provider: str = "groq", demo_mode: bool = False) -> str:
     """Arranca un run nuevo en un thread de background y devuelve su run_id.
     Si ya existe un run completo para el mismo autor, usa modo replay: copia los
     artifacts de curation y salta directo a SAGE+MIA (todo desde cache, segundos
-    en vez de horas). Si no hay donor, corre el pipeline completo con LangGraph."""
+    en vez de horas). Si no hay donor, corre el pipeline completo con LangGraph.
+    En demo_mode=True, el replay pausa en cada paso hasta que el usuario haga click en "Siguiente"."""
     if target_provider not in TARGET_MODEL_CHOICES:
         raise ValueError(f"target_provider invalido: {target_provider!r} (opciones: {list(TARGET_MODEL_CHOICES)})")
     target_model_name = TARGET_MODEL_CHOICES[target_provider]
 
     author_slug = author.lower().replace(' ', '_')
     run_id = f"webapp_{author_slug}_{uuid.uuid4().hex[:8]}"
-    handle = RunHandle(run_id=run_id, author=author, target_provider=target_provider, target_model_name=target_model_name)
+    handle = RunHandle(run_id=run_id, author=author, target_provider=target_provider,
+                       target_model_name=target_model_name, demo_mode=demo_mode)
     with _RUNS_LOCK:
         _RUNS[run_id] = handle
 
-    donor = _find_donor_run(author_slug, exclude_run_id=run_id)
+    donor = _find_donor_run(author_slug, exclude_run_id=run_id, require_mia_scores=demo_mode)
     if donor:
         thread = threading.Thread(target=_run_replay, args=(handle, donor), daemon=True)
     else:

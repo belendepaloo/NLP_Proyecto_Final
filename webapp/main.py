@@ -22,7 +22,7 @@ from agents.tools.fs_tools import list_run_artifacts
 from mia_common.settings import settings
 from webapp.progress import build_pipeline_nodes, compute_pipeline_progress, detect_active_stage
 from webapp.results import build_results
-from webapp.run_manager import TARGET_MODEL_CHOICES, get_run, reconstruct_handle_from_disk, resume_run, start_run, submit_decision
+from webapp.run_manager import TARGET_MODEL_CHOICES, get_run, reconstruct_handle_from_disk, resume_run, start_run, submit_decision, RunHandle
 
 BASE_DIR = Path(__file__).resolve().parent
 
@@ -56,9 +56,32 @@ def index(request: Request) -> HTMLResponse:
 
 
 @app.post("/runs")
-def create_run(author: str = Form(...), n_texts: int = Form(5), target_provider: str = Form("groq")) -> RedirectResponse:
-    run_id = start_run(author.strip(), n_texts, target_provider=target_provider)
+def create_run(
+    author: str = Form(...),
+    n_texts: int = Form(5),
+    target_provider: str = Form("groq"),
+    demo_mode: str = Form(""),
+) -> RedirectResponse:
+    run_id = start_run(author.strip(), n_texts, target_provider=target_provider, demo_mode=bool(demo_mode))
     return RedirectResponse(url=f"/runs/{run_id}", status_code=303)
+
+
+@app.post("/runs/{run_id}/demo-next")
+def demo_next(run_id: str) -> dict:
+    handle = get_run(run_id)
+    if handle is None:
+        raise HTTPException(404, f"run '{run_id}' no encontrado")
+    handle.demo_advance()
+    return {"ok": True}
+
+
+@app.get("/runs/{run_id}/demo-state")
+def demo_state(run_id: str) -> dict:
+    handle = get_run(run_id)
+    if handle is None:
+        return {"paused": False, "event_count": 0}
+    with handle._lock:
+        return {"paused": handle.demo_paused, "event_count": handle.event_count}
 
 
 @app.get("/runs/{run_id}", response_class=HTMLResponse)
@@ -131,45 +154,79 @@ def decide(
 
 @app.get("/runs/{run_id}/stream")
 async def stream(run_id: str) -> StreamingResponse:
-    """SSE: un evento cada vez que cambia el status del run, para que la pantalla se
-    refresque sola (ver el <script> minimo en run.html) en vez de hacer polling manual."""
+    """SSE dual-canal:
+    - event: agentlog → nuevo evento de agente (sin reload, append al log en vivo)
+    - event: demopause → cambio de estado del botón Siguiente (demo mode)
+    - data: reload / done / error → recarga de página (artifact nuevo, status cambiado)
+    """
 
     async def event_source():
         handle = get_run(run_id)
         if handle is None:
             return
-        # Si el run ya terminó cuando el SSE conecta (ej. replay rápido), emitir
-        # de inmediato para que la página recargue sin esperar el fallback de 60s.
+
+        # Al conectar: emitir todos los eventos ya existentes (reconstruye log tras reload)
+        with handle._lock:
+            events_snapshot = list(handle.events)
+            last_event_count = handle.event_count
+            current_paused = handle.demo_paused
+            last_pause_seq = handle._demo_pause_seq
+
+        for ev in events_snapshot:
+            yield f"event: agentlog\ndata: {json.dumps(ev)}\n\n"
+
+        if handle.demo_mode:
+            yield f"event: demopause\ndata: {json.dumps({'paused': current_paused})}\n\n"
+
         if handle.status in ("done", "error"):
             yield f"data: {handle.status}\n\n"
             return
-        baseline_status = handle.status
-        baseline_detail = handle.status_detail
+
         baseline_artifact_count = sum(len(v) for v in list_run_artifacts(run_id).values())
-        ticks_since_emit = 0
+        baseline_status = handle.status
+        ticks_since_heartbeat = 0
+
         while True:
+            await asyncio.sleep(0.5)
             handle = get_run(run_id)
             if handle is None:
                 return
+
+            # Nuevos eventos → emitir sin reload
+            with handle._lock:
+                current_count = handle.event_count
+                new_events = list(handle.events[last_event_count:])
+                current_pause_seq = handle._demo_pause_seq
+                current_paused = handle.demo_paused
+
+            for ev in new_events:
+                yield f"event: agentlog\ndata: {json.dumps(ev)}\n\n"
+                ticks_since_heartbeat = 0
+            last_event_count = current_count
+
+            # Cambio en estado de pausa demo → emitir demopause
+            if handle.demo_mode and current_pause_seq != last_pause_seq:
+                last_pause_seq = current_pause_seq
+                yield f"event: demopause\ndata: {json.dumps({'paused': current_paused})}\n\n"
+                ticks_since_heartbeat = 0
+
+            # Cambio de status o nuevos artifacts → reload de página
+            current_status = handle.status
             current_artifact_count = sum(len(v) for v in list_run_artifacts(run_id).values())
-            status_changed = handle.status != baseline_status
-            detail_changed = handle.status_detail != baseline_detail
-            artifacts_changed = current_artifact_count != baseline_artifact_count
-            if status_changed or detail_changed or artifacts_changed:
-                yield f"data: {handle.status}\n\n"
-                baseline_status = handle.status
-                baseline_detail = handle.status_detail
+            if current_status != baseline_status or current_artifact_count != baseline_artifact_count:
+                baseline_status = current_status
                 baseline_artifact_count = current_artifact_count
-                ticks_since_emit = 0
+                yield f"data: reload\n\n"
+                ticks_since_heartbeat = 0
                 if handle.status in ("done", "error"):
                     return
-            else:
-                ticks_since_emit += 1
-                if ticks_since_emit >= 15:  # 15 × 2s = 30s sin cambios → heartbeat
-                    yield ": heartbeat\n\n"
-                    ticks_since_emit = 0
+
             if handle.status in ("done", "error"):
                 return
-            await asyncio.sleep(2.0)
+
+            ticks_since_heartbeat += 1
+            if ticks_since_heartbeat >= 60:  # 60 × 0.5s = 30s sin actividad → heartbeat
+                yield ": heartbeat\n\n"
+                ticks_since_heartbeat = 0
 
     return StreamingResponse(event_source(), media_type="text/event-stream")

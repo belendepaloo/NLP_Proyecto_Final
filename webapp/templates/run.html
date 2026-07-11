@@ -27,7 +27,7 @@
 <div class="pipeline-wrap">
   <div class="pipeline">
     {% for node in pipeline_nodes %}
-      <div class="pnode pnode--{{ node.status }}" title="{{ node.sublabel }}">
+      <div class="pnode pnode--{{ node.status }}" data-nodeid="{{ node.id }}" title="{{ node.sublabel }}">
         {% if node.status == "active" %}
           <div class="pnode__pulse"></div>
         {% endif %}
@@ -47,6 +47,30 @@
     {% endfor %}
   </div>
 </div>
+
+{# ── Botón "Siguiente" (solo demo mode) ──────────────────────────────────── #}
+{% if run.demo_mode %}
+<div id="demo-next-bar" class="demo-next-bar" style="{{ 'display:flex' if run.demo_paused else 'display:none' }}" aria-live="polite">
+  <button id="demo-next-btn" class="btn btn--primary demo-next-btn" onclick="demoNext()">▶ Siguiente</button>
+  <span class="demo-next-hint">Click para avanzar al próximo paso</span>
+</div>
+{% endif %}
+
+{# ── Log de actividad en vivo (demo mode) ────────────────────────────────── #}
+{% if run.demo_mode %}
+<section class="card card--agentlog" id="agent-log-card">
+  <h3 class="agentlog__title">🤖 Actividad del pipeline</h3>
+  <ul class="agentlog" id="agent-log">
+    {% for ev in run.events %}
+      <li class="agentlog__entry agentlog__entry--{{ ev.agent | replace(' ', '-') | replace('[', '') | replace(']', '') | lower }}">
+        <span class="agentlog__agent">{{ ev.agent }}</span>
+        <span class="agentlog__msg">{{ ev.message }}</span>
+        {% if ev.detail %}<span class="agentlog__detail">{{ ev.detail }}</span>{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
 
 {# ── Anomalías ────────────────────────────────────────────────────────────── #}
 {% if progress.anomalies %}
@@ -365,17 +389,167 @@
 </details>
 
 {% if run.status in ("running", "waiting_human") %}
-  <script>
-    // Refresca la página cada vez que el server notifica un cambio
-    // (ya sea cambio de status o nuevo artifact escrito en disco).
-    var es = new EventSource("/runs/{{ run.run_id }}/stream");
-    es.onmessage = function() { location.reload(); };
-    es.onerror = function() { es.close(); setTimeout(function() { location.reload(); }, 5000); };
-    // Fallback: si no llega ningún evento real en 60s, recargar igual
-    // (cubre el caso en que el SSE está vivo pero el servidor no emitió nada)
-    var _reloadTimer = setTimeout(function() { location.reload(); }, 60000);
-    es.addEventListener("message", function() { clearTimeout(_reloadTimer); _reloadTimer = setTimeout(function() { location.reload(); }, 60000); });
-  </script>
+<script>
+  // ── Pipeline node live update ──────────────────────────────────────────────
+  var _nodeOrder = ["bibliography", "waiting", "authorship", "voice", "sage", "mia", "result"];
+  var _slugToNode = {
+    "bibliography_agent":   "bibliography",
+    "human-in-the-loop":    "waiting",
+    "curator_agent":        "authorship",
+    "sage_qa_agent":        "sage",
+    "mia_agent-de-cop":     "mia",
+    "mia_agent-dualtest":   "mia",
+    "mia_agent-simia":      "mia",
+    "ensemble":             "result",
+  };
+
+  // Inicializar desde el DOM server-rendered (evita retroceder en reloads)
+  var _currentNodeIdx = -1;
+  _nodeOrder.forEach(function(id, idx) {
+    var el = document.querySelector(".pnode[data-nodeid='" + id + "']");
+    if (el && (el.classList.contains("pnode--done") || el.classList.contains("pnode--active"))) {
+      _currentNodeIdx = idx;
+    }
+  });
+
+  function _updateActivePnode(nodeId) {
+    var newIdx = _nodeOrder.indexOf(nodeId);
+    if (newIdx < 0 || newIdx <= _currentNodeIdx) return;
+    _currentNodeIdx = newIdx;
+    document.querySelectorAll(".pnode[data-nodeid]").forEach(function(el) {
+      var id = el.getAttribute("data-nodeid");
+      var idx = _nodeOrder.indexOf(id);
+      if (idx < newIdx) {
+        el.classList.remove("pnode--active", "pnode--pending", "pnode--error");
+        el.classList.add("pnode--done");
+        var pulse = el.querySelector(".pnode__pulse");
+        if (pulse) pulse.remove();
+        if (!el.querySelector(".pnode__check")) {
+          var chk = document.createElement("div");
+          chk.className = "pnode__check";
+          chk.textContent = "✓";
+          el.appendChild(chk);
+        }
+      } else if (idx === newIdx) {
+        el.classList.remove("pnode--done", "pnode--pending", "pnode--error");
+        el.classList.add("pnode--active");
+        var existingChk = el.querySelector(".pnode__check");
+        if (existingChk) existingChk.remove();
+        if (!el.querySelector(".pnode__pulse")) {
+          var p2 = document.createElement("div");
+          p2.className = "pnode__pulse";
+          el.insertBefore(p2, el.firstChild);
+        }
+      }
+    });
+    document.querySelectorAll(".pipeline__arrow").forEach(function(arrow, i) {
+      if (i < newIdx) arrow.classList.add("pipeline__arrow--lit");
+    });
+  }
+
+  // ── Agent log append ───────────────────────────────────────────────────────
+  var _agentIcons = {
+    "bibliography_agent":    "📚",
+    "curator_agent":         "✂️",
+    "sage_qa_agent":         "🔬",
+    "mia_agent-de-cop":      "🎯",
+    "mia_agent-dualtest":    "📐",
+    "mia_agent-simia":       "🧬",
+    "ensemble":              "⚖️",
+    "system":                "⚙️",
+    "human-in-the-loop":     "✋",
+  };
+
+  function _appendEvent(ev) {
+    var log = document.getElementById("agent-log");
+    if (!log) return;
+    var slug = ev.agent.replace(/ /g, "-").replace(/[\[\]]/g, "").toLowerCase();
+    var icon = _agentIcons[slug] || "🤖";
+    var li = document.createElement("li");
+    li.className = "agentlog__entry agentlog__entry--" + slug;
+    var agentSpan = document.createElement("span");
+    agentSpan.className = "agentlog__agent";
+    agentSpan.textContent = icon + " " + ev.agent;
+    var msgSpan = document.createElement("span");
+    msgSpan.className = "agentlog__msg";
+    msgSpan.textContent = ev.message;
+    li.appendChild(agentSpan);
+    li.appendChild(msgSpan);
+    if (ev.detail) {
+      var detailSpan = document.createElement("span");
+      detailSpan.className = "agentlog__detail";
+      detailSpan.textContent = ev.detail;
+      li.appendChild(detailSpan);
+    }
+    log.appendChild(li);
+    li.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    var targetNode = _slugToNode[slug];
+    if (targetNode) _updateActivePnode(targetNode);
+  }
+
+  // ── Demo pause button ──────────────────────────────────────────────────────
+  var _demoPauseBar = document.getElementById("demo-next-bar");
+  var _demoPauseBtn = document.getElementById("demo-next-btn");
+
+  function _setDemoPaused(paused) {
+    if (!_demoPauseBar) return;
+    _demoPauseBar.style.display = paused ? "flex" : "none";
+    if (_demoPauseBtn) {
+      _demoPauseBtn.disabled = false;
+      _demoPauseBtn.textContent = "▶ Siguiente";
+    }
+  }
+
+  function demoNext() {
+    if (!_demoPauseBtn || _demoPauseBtn.disabled) return;
+    _demoPauseBtn.disabled = true;
+    _demoPauseBtn.textContent = "▶ …";
+    fetch("/runs/{{ run.run_id }}/demo-next", { method: "POST" });
+  }
+
+  // ── SSE ────────────────────────────────────────────────────────────────────
+  var es = new EventSource("/runs/{{ run.run_id }}/stream");
+
+  // data: mensaje normal → reload de página
+  es.onmessage = function() { location.reload(); };
+
+  // event: agentlog → append al log sin reload
+  es.addEventListener("agentlog", function(e) {
+    try { _appendEvent(JSON.parse(e.data)); } catch(_) {}
+  });
+
+  // event: demopause → mostrar/ocultar botón
+  es.addEventListener("demopause", function(e) {
+    try {
+      var d = JSON.parse(e.data);
+      if (d.paused) _setDemoPaused(true);
+      else if (_demoPauseBtn && _demoPauseBtn.disabled) {
+        _demoPauseBar.style.display = "none";
+      }
+    } catch(_) {}
+  });
+
+  // Polling fallback: si el SSE pierde el evento demopause, el polling lo recupera en ≤1.5s
+  (function() {
+    var _pollTimer = setInterval(function() {
+      if (!_demoPauseBar) { clearInterval(_pollTimer); return; }
+      if (_demoPauseBar.style.display !== "none") return; // ya visible, no hace falta
+      fetch("/runs/{{ run.run_id }}/demo-state")
+        .then(function(r) { return r.json(); })
+        .then(function(d) { if (d.paused) _setDemoPaused(true); })
+        .catch(function() {});
+    }, 1500);
+    // Detener el poll cuando la página se va a recargar
+    window.addEventListener("beforeunload", function() { clearInterval(_pollTimer); });
+  })();
+
+  es.onerror = function() { es.close(); setTimeout(function() { location.reload(); }, 5000); };
+
+  // Fallback reload a los 90s de silencio total
+  var _reloadTimer = setTimeout(function() { location.reload(); }, 90000);
+  es.addEventListener("agentlog", function() { clearTimeout(_reloadTimer); _reloadTimer = setTimeout(function() { location.reload(); }, 90000); });
+  es.onmessage = function() { clearTimeout(_reloadTimer); location.reload(); };
+</script>
 {% endif %}
 
 {% endblock %}
